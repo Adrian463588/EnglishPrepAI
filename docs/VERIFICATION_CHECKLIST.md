@@ -3,8 +3,8 @@
 Status: Diverifikasi aktual pada **2026-11-16** (JVM + Robolectric + Lint + Debug APK + Perangkat Fisik `SM-G988B` Android 13 `arm64-v8a`).
 
 ## 1. Spec-Driven Development & Arsitektur
-- [x] **Spec Kit** terpasang & terisi: `.specify/memory/constitution.md`, `specs/001`..`004` (`spec.md`, `plan.md`, `tasks.md`, `acceptance.md`).
-- [x] **BMAD Reviews**: `docs/reviews/bmad-{analyst-goals,architect-choices,ux-journeys,qa-coverage}.md`.
+- [x] **Spec Kit** terpasang & terisi: `.specify/memory/constitution.md`, `specs/001`..`006` (`spec.md`, `plan.md`, `tasks.md`, `acceptance.md`).
+- [x] **BMAD Reviews**: `docs/reviews/bmad-{analyst-goals,architect-choices,ux-journeys,qa-coverage,security-devsecops,release-docs}.md`.
 - [x] **Clean MVVM + UDF + Single `:app` Module**: `ui -> domain <- data`, Hilt DI (`DatabaseModule`, `RepositoryModule`), DRY/KISS/SOLID/YAGNI/Ponytail.
 
 ## 2. Materi, Soal Tryout & Media Offline
@@ -41,3 +41,8 @@ Status: Diverifikasi aktual pada **2026-11-16** (JVM + Robolectric + Lint + Debu
   - `.\gradlew.bat lintDebug`: **0 error**, 74 warning.
   - `.\gradlew.bat assembleDebug` (`174.8 MB`) & `.\gradlew.bat assembleRelease` (`154.4 MB` — **menyusut ~20.4 MB via R8 + shrinkResources**): **sukses** dengan `mapping.txt` terverifikasi.
   - Uji perangkat fisik (`SM-G988B`, Android 13 `arm64-v8a`): Debug (`1374 ms` cold start, full TOEFL ITP flow `8/12 benar`, `Est. ITP 555 / 677`, `ProgressScreen` 66% + weak modules) DAN **R8 Release** (`307 ms` cold start, **Profil -> Keamanan & Integritas R8** menampilkan `Mode Release (R8/ProGuard Aktif)` + `Backup OS: Nonaktif`, pemutaran WAV + `Cek` `Benar` berjalan crash-free di `logcat`).
+
+## 7. Repository GitHub, README & Release (`specs/006`)
+- [x] **Repository GitHub (`gh`)**: `https://github.com/Adrian463588/EnglishPrepAI` (publik, branch default `main`), terisi deskripsi resmi & 15 topics (`android`, `jetpack-compose`, `kotlin`, `toefl`, `ielts`, `offline-first`, `on-device-ai`, `gemma-4`, `whisper-onnx`, `r8-proguard`, `devsecops`, `clean-architecture`, `mvvm`, `room-database`, `spec-driven-development`).
+- [x] **README.md & Tangkapan Layar Real-Time**: Tautan unduhan + versi `v1.0.0` di bagian paling atas, rincian proyek, 11 tangkapan layar perangkat fisik `SM-G988B` (`docs/screenshots/*.png`), struktur direktori, arsitektur Mermaid, cara pakai/build, spesifikasi 17 entitas Room + DataStore beserta diagram ER Mermaid, serta checklist verifikasi.
+- [x] **GitHub Release `v1.0.0`**: Diterbitkan melalui `gh release create v1.0.0` dengan aset `EnglishPrepAI-v1.0.0-universal-debug.apk` (`174,821,885` byte, SHA-256 `FDBFD27005EF2CED76CC90C233F3806B0217996D9010DA9AC0775B118E0025E1`).
