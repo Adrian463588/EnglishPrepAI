@@ -19,6 +19,7 @@ import com.englishprep.ai.domain.models.ContentPackSummary
 import com.englishprep.ai.domain.models.ExamId
 import com.englishprep.ai.domain.models.ExamMode
 import com.englishprep.ai.domain.models.ExamSection
+import com.englishprep.ai.domain.models.GradingOutcome
 import com.englishprep.ai.domain.models.MaterialBankEntry
 import com.englishprep.ai.domain.models.MediaAssetItem
 import com.englishprep.ai.domain.models.PackStatus
@@ -41,6 +42,9 @@ import com.englishprep.ai.ui.feature.profile.ProfileScreen
 import com.englishprep.ai.ui.feature.profile.ProfileUiState
 import com.englishprep.ai.ui.feature.progress.ProgressScreen
 import com.englishprep.ai.ui.feature.progress.ProgressUiState
+import com.englishprep.ai.ui.feature.results.QuestionReviewRow
+import com.englishprep.ai.ui.feature.results.ResultsScreen
+import com.englishprep.ai.ui.feature.results.ResultsUiState
 import com.englishprep.ai.ui.theme.EnglishPrepTheme
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertTrue
@@ -419,5 +423,194 @@ class UiAndAccessibilityTest {
         composeRule.onNodeWithText("Gerunds are -ing forms of verbs used as nouns.").assertIsDisplayed()
         composeRule.onNodeWithText("Tanya AI tentang materi ini").assertHeightIsAtLeast(48.dp).performClick()
         assertEquals("MB-OER-GRAM-01-SEC-1", tutorSrc)
+    }
+
+    @Test
+    @Config(qualifiers = "w320dp-h640dp")
+    fun `narrow 320dp phone at 2x font scale wraps exam bottom bar without button clipping`() {
+        val q = QuestionItem(
+            id = "ITP-L1-01-Q001",
+            packId = "ITP-L1-01",
+            section = ExamSection.STRUCTURE,
+            taskType = TaskType.CHOICE_SINGLE,
+            prompt = "Choose the best clause completion.",
+            options = listOf("Alpha", "Beta"),
+            answer = "Alpha",
+            explanation = "Reason",
+            rationaleSource = "ITP-MOD-03",
+        )
+        var nextClicked = false
+        composeRule.setContent {
+            val baseDensity = LocalDensity.current
+            CompositionLocalProvider(LocalDensity provides Density(baseDensity.density, 2.0f)) {
+                EnglishPrepTheme(reduceMotion = true) {
+                    ExamScreen(
+                        state = ExamUiState(
+                            isLoading = false,
+                            examId = ExamId.ITP_L1,
+                            mode = ExamMode.PRACTICE,
+                            questions = listOf(q, q.copy(id = "ITP-L1-01-Q002")),
+                            answers = mapOf("ITP-L1-01-Q001" to "Alpha"),
+                        ),
+                        onBack = {},
+                        onSelectAnswer = { _, _ -> },
+                        onToggleMulti = { _, _ -> },
+                        onSetMatching = { _, _, _ -> },
+                        onAppendSequence = { _, _ -> },
+                        onRemoveLastSequence = {},
+                        onToggleFlag = {},
+                        onCheckPractice = {},
+                        onEvaluateSubjective = {},
+                        onStartPrepCountdown = {},
+                        onStartRecording = { false },
+                        onStopRecording = {},
+                        onPlayOwnRecording = {},
+                        onSpeakTts = {},
+                        onNext = { nextClicked = true },
+                        onPrev = {},
+                        onGoTo = {},
+                        onSetNavigator = {},
+                        onSetPassageSheet = {},
+                        onToggleAudio = {},
+                        onReplayAudio = {},
+                        onSeekAudio = {},
+                        onSetAudioSpeed = {},
+                        onSubmit = {},
+                    )
+                }
+            }
+        }
+        composeRule.onNodeWithText("Kembali").assertIsDisplayed().assertHeightIsAtLeast(48.dp)
+        composeRule.onNodeWithText("Cek").assertIsDisplayed().assertHeightIsAtLeast(48.dp)
+        composeRule.onNodeWithText("Lanjut").assertIsDisplayed().assertHeightIsAtLeast(48.dp).performClick()
+        assertTrue(nextClicked)
+    }
+
+    @Test
+    @Config(qualifiers = "w960dp-h720dp")
+    fun `wide 960dp tablet displays dual-column practice packs cleanly`() {
+        val p1 = ContentPackSummary(
+            packId = "ITP-L1-01",
+            examId = ExamId.ITP_L1,
+            edition = "2026.2",
+            title = "ITP Paket 1",
+            theme = "Full 140",
+            status = PackStatus.READY,
+            blueprintCount = 140,
+            availableCount = 140,
+            durationMinutes = 115,
+            blueprintDurationMinutes = 115,
+            license = "Original",
+            provenance = "Original",
+            audioBytes = 4_600_000L,
+        )
+        val p2 = p1.copy(packId = "ITP-L1-02", title = "ITP Paket 2")
+        composeRule.setContent {
+            EnglishPrepTheme {
+                PracticeScreen(
+                    state = PracticeUiState(
+                        isLoading = false,
+                        selectedExam = ExamId.ITP_L1,
+                        packs = listOf(p1, p2),
+                    ),
+                    onStartPractice = {},
+                    onStartStrict = {},
+                    onImportPack = {},
+                    onDismissMessage = {},
+                )
+            }
+        }
+        composeRule.onNodeWithText("ITP Paket 1").assertIsDisplayed()
+        composeRule.onNodeWithText("ITP Paket 2").assertIsDisplayed()
+    }
+
+    @Test
+    fun `results screen filters wrong skipped and correct review rows accurately`() {
+        val qCorrect = QuestionItem(
+            id = "Q1",
+            packId = "ITP-L1-01",
+            section = ExamSection.LISTENING,
+            taskType = TaskType.CHOICE_SINGLE,
+            prompt = "Prompt Correct",
+            options = listOf("A", "B"),
+            answer = "A",
+            explanation = "Correct exp",
+            rationaleSource = "ITP-MOD-01",
+        )
+        val qWrong = qCorrect.copy(id = "Q2", prompt = "Prompt Wrong")
+        val qSkip = qCorrect.copy(id = "Q3", prompt = "Prompt Skipped")
+        composeRule.setContent {
+            EnglishPrepTheme {
+                ResultsScreen(
+                    state = ResultsUiState(
+                        isLoading = false,
+                        sessionTitle = "ITP Paket 1",
+                        examId = ExamId.ITP_L1,
+                        rows = listOf(
+                            QuestionReviewRow(qCorrect, "A", GradingOutcome.Objective(true, false, 1, 1, "A", "Tepat")),
+                            QuestionReviewRow(qWrong, "B", GradingOutcome.Objective(false, false, 0, 1, "B", "Salah")),
+                            QuestionReviewRow(qSkip, "", GradingOutcome.Objective(false, true, 0, 1, "", "Dilewati")),
+                        ),
+                        wrongQuestionIds = listOf("Q2"),
+                    ),
+                    onBackHome = {},
+                    onOpenModule = {},
+                    onRetryMistakes = {},
+                )
+            }
+        }
+        composeRule.onNodeWithText("Pembahasan Per Butir (3/3)").assertIsDisplayed()
+        composeRule.onNodeWithText("Salah").assertHeightIsAtLeast(48.dp).performClick()
+        composeRule.onNodeWithText("Prompt Wrong").assertIsDisplayed()
+        composeRule.onNodeWithText("Dilewati").assertHeightIsAtLeast(48.dp).performClick()
+        composeRule.onNodeWithText("Prompt Skipped").assertIsDisplayed()
+        composeRule.onNodeWithText("Benar").assertHeightIsAtLeast(48.dp).performClick()
+        composeRule.onNodeWithText("Prompt Correct").assertIsDisplayed()
+    }
+
+    @Test
+    fun `profile screen supports whole-row switch toggle and reflects updated 1725 ready copy`() {
+        var hapticsToggledTo: Boolean? = null
+        composeRule.setContent {
+            EnglishPrepTheme {
+                ProfileScreen(
+                    state = ProfileUiState(
+                        securityPosture = SecurityPostureEvaluator.evaluate(
+                            isDebuggable = false,
+                            isDebuggerAttached = false,
+                            signingSha256 = "ABC1234567890DEF",
+                            expectedReleaseSha256 = "",
+                            rootIndicatorsFound = false,
+                            allowBackupEnabled = false,
+                        ),
+                    ),
+                    onSelectLanguage = {},
+                    onSelectTheme = {},
+                    onSelectSpeed = {},
+                    onToggleFontBoost = {},
+                    onToggleReduceMotion = {},
+                    onToggleHaptics = { hapticsToggledTo = it },
+                    onToggleReminder = {},
+                    onImportGemma4 = {},
+                    onImportWhisper = {},
+                    onImportPack = {},
+                    onActivateModel = {},
+                    onDeleteModel = {},
+                    onOpenExternalUrl = {},
+                    onExportBackup = {},
+                    onRestoreBackup = {},
+                    onDeleteAllData = {},
+                    onDismissBanner = {},
+                )
+            }
+        }
+        composeRule.onNode(hasScrollAction()).performScrollToNode(hasText("Getar Haptik Saat Selesai"))
+        composeRule.onNodeWithText("Getar Haptik Saat Selesai").assertHeightIsAtLeast(48.dp).performClick()
+        assertEquals(false, hapticsToggledTo)
+        composeRule.onNode(hasScrollAction()).performScrollToNode(hasText("Lihat Lisensi Open-Source & Pihak Ketiga"))
+        composeRule.onNodeWithText(
+            "1.725 butir READY",
+            substring = true,
+        ).assertIsDisplayed()
     }
 }

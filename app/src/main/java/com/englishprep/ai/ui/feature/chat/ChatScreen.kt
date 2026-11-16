@@ -2,6 +2,7 @@ package com.englishprep.ai.ui.feature.chat
 
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
@@ -13,8 +14,10 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.imePadding
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.layout.widthIn
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material.icons.automirrored.filled.Send
@@ -31,15 +34,19 @@ import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.testTag
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.englishprep.ai.domain.engines.LlmModelState
+import com.englishprep.ai.ui.components.ResponsiveScreenContainer
 import com.englishprep.ai.ui.theme.AppSpacing
+import com.englishprep.ai.ui.theme.LocalSemanticStatusColors
 
 @Composable
 fun ChatRoute(
@@ -83,11 +90,18 @@ fun ChatScreen(
             TopAppBar(
                 title = {
                     Column {
-                        Text("Tutor AI Offline", style = MaterialTheme.typography.titleMedium)
+                        Text(
+                            text = "Tutor AI Offline",
+                            style = MaterialTheme.typography.titleMedium,
+                            maxLines = 1,
+                            overflow = TextOverflow.Ellipsis,
+                        )
                         Text(
                             text = modelStatusLabel,
                             style = MaterialTheme.typography.labelSmall,
                             color = MaterialTheme.colorScheme.onSurfaceVariant,
+                            maxLines = 1,
+                            overflow = TextOverflow.Ellipsis,
                         )
                     }
                 },
@@ -121,11 +135,12 @@ fun ChatScreen(
         },
         bottomBar = {
             Surface(tonalElevation = 1.dp, modifier = Modifier.fillMaxWidth().imePadding()) {
-                Column {
+                Column(horizontalAlignment = Alignment.CenterHorizontally) {
                     HorizontalDivider()
                     Row(
                         modifier = Modifier
                             .fillMaxWidth()
+                            .widthIn(max = 760.dp)
                             .padding(horizontal = AppSpacing.md, vertical = AppSpacing.sm),
                         verticalAlignment = Alignment.CenterVertically,
                     ) {
@@ -168,14 +183,28 @@ fun ChatScreen(
         },
         modifier = modifier.testTag("chat_screen_root"),
     ) { padding ->
+        val listState = rememberLazyListState()
+        val reduceMotion = LocalSemanticStatusColors.current.reduceMotion
+        val targetScrollCount = state.messages.size + if (state.streamingReply.isNotEmpty()) 1 else 0
+        LaunchedEffect(state.messages.size, state.streamingReply.isNotEmpty()) {
+            if (targetScrollCount > 0) {
+                val lastIdx = (listState.layoutInfo.totalItemsCount - 1).coerceAtLeast(0)
+                if (reduceMotion) {
+                    listState.scrollToItem(lastIdx)
+                } else {
+                    listState.animateScrollToItem(lastIdx)
+                }
+            }
+        }
+
         // Deliberately zero suggestion chip bar above messages per DESIGN.md
-        LazyColumn(
-            modifier = Modifier
-                .fillMaxSize()
-                .padding(padding),
-            contentPadding = PaddingValues(AppSpacing.md),
-            verticalArrangement = Arrangement.spacedBy(AppSpacing.sm),
-        ) {
+        ResponsiveScreenContainer(maxWidth = 760.dp, modifier = Modifier.padding(padding)) {
+            LazyColumn(
+                state = listState,
+                modifier = Modifier.fillMaxSize(),
+                contentPadding = PaddingValues(AppSpacing.md),
+                verticalArrangement = Arrangement.spacedBy(AppSpacing.sm),
+            ) {
             if (state.strictMockActive) {
                 item {
                     Surface(
@@ -224,30 +253,39 @@ fun ChatScreen(
 
             items(state.messages, key = { it.id }) { msg ->
                 val isUser = msg.role == "USER"
-                Surface(
-                    shape = MaterialTheme.shapes.medium,
-                    color = if (isUser) MaterialTheme.colorScheme.primaryContainer.copy(alpha = 0.6f) else MaterialTheme.colorScheme.surfaceContainerLow,
-                    border = BorderStroke(1.dp, MaterialTheme.colorScheme.outline.copy(alpha = 0.7f)),
-                    modifier = Modifier.fillMaxWidth(),
+                Box(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(
+                            start = if (isUser) AppSpacing.xl else 0.dp,
+                            end = if (isUser) 0.dp else AppSpacing.lg,
+                        ),
                 ) {
-                    Column(modifier = Modifier.padding(AppSpacing.md)) {
-                        Text(
-                            text = if (isUser) "Anda" else "Tutor Lokal",
-                            style = MaterialTheme.typography.labelMedium,
-                            color = MaterialTheme.colorScheme.primary,
-                        )
-                        Spacer(modifier = Modifier.height(AppSpacing.xs))
-                        Text(
-                            text = msg.text,
-                            style = MaterialTheme.typography.bodyLarge,
-                        )
-                        msg.citationsJson?.takeIf { it.isNotBlank() }?.let { cites ->
+                    Surface(
+                        shape = MaterialTheme.shapes.medium,
+                        color = if (isUser) MaterialTheme.colorScheme.primaryContainer.copy(alpha = 0.6f) else MaterialTheme.colorScheme.surfaceContainerLow,
+                        border = BorderStroke(1.dp, MaterialTheme.colorScheme.outline.copy(alpha = 0.7f)),
+                        modifier = Modifier.fillMaxWidth(),
+                    ) {
+                        Column(modifier = Modifier.padding(AppSpacing.md)) {
+                            Text(
+                                text = if (isUser) "Anda" else "Tutor Lokal",
+                                style = MaterialTheme.typography.labelMedium,
+                                color = MaterialTheme.colorScheme.primary,
+                            )
                             Spacer(modifier = Modifier.height(AppSpacing.xs))
                             Text(
-                                text = "Referensi lokal: $cites",
-                                style = MaterialTheme.typography.labelSmall,
-                                color = MaterialTheme.colorScheme.onSurfaceVariant,
+                                text = msg.text,
+                                style = MaterialTheme.typography.bodyLarge,
                             )
+                            msg.citationsJson?.takeIf { it.isNotBlank() }?.let { cites ->
+                                Spacer(modifier = Modifier.height(AppSpacing.xs))
+                                Text(
+                                    text = "Referensi lokal: $cites",
+                                    style = MaterialTheme.typography.labelSmall,
+                                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                                )
+                            }
                         }
                     }
                 }
@@ -259,7 +297,9 @@ fun ChatScreen(
                         shape = MaterialTheme.shapes.medium,
                         color = MaterialTheme.colorScheme.surfaceContainerLow,
                         border = BorderStroke(1.dp, MaterialTheme.colorScheme.primary),
-                        modifier = Modifier.fillMaxWidth(),
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(end = AppSpacing.lg),
                     ) {
                         Column(modifier = Modifier.padding(AppSpacing.md)) {
                             Text(
@@ -273,6 +313,7 @@ fun ChatScreen(
                     }
                 }
             }
+        }
         }
     }
 }

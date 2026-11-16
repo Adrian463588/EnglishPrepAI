@@ -1,5 +1,12 @@
 package com.englishprep.ai.ui.feature.learn
 
+import androidx.compose.animation.AnimatedVisibility
+import androidx.compose.animation.core.animateFloatAsState
+import androidx.compose.animation.core.tween
+import androidx.compose.animation.expandVertically
+import androidx.compose.animation.fadeIn
+import androidx.compose.animation.fadeOut
+import androidx.compose.animation.shrinkVertically
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
@@ -23,6 +30,7 @@ import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material.icons.automirrored.filled.Chat
 import androidx.compose.material.icons.filled.Bookmark
 import androidx.compose.material.icons.filled.BookmarkBorder
+import androidx.compose.material.icons.filled.KeyboardArrowDown
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.FilterChip
@@ -40,9 +48,11 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.semantics.heading
 import androidx.compose.ui.semantics.semantics
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
@@ -55,9 +65,12 @@ import com.englishprep.ai.ui.components.AudioPlayerBar
 import com.englishprep.ai.ui.components.InlineFeedback
 import com.englishprep.ai.ui.components.ModuleRow
 import com.englishprep.ai.ui.components.QuestionCard
+import com.englishprep.ai.ui.components.ResponsiveScreenContainer
 import com.englishprep.ai.ui.components.SectionHeading
 import com.englishprep.ai.ui.components.SelectableOptionRow
 import com.englishprep.ai.ui.theme.AppSpacing
+import com.englishprep.ai.ui.theme.LocalSemanticStatusColors
+import com.englishprep.ai.ui.theme.MotionTokens
 
 @Composable
 fun LearnRoute(
@@ -104,108 +117,110 @@ fun LearnScreen(
         )
     }
 
-    LazyColumn(
-        modifier = modifier.fillMaxSize(),
-        contentPadding = PaddingValues(vertical = AppSpacing.md),
-    ) {
-        item {
-            Column(modifier = Modifier.padding(horizontal = AppSpacing.md)) {
-                Text(
-                    text = "Kurikulum ${state.selectedExam.title}",
-                    style = MaterialTheme.typography.headlineMedium,
-                    modifier = Modifier.semantics { heading() },
-                )
-                Spacer(modifier = Modifier.height(AppSpacing.xs))
-                Text(
-                    text = if (state.selectedExam == ExamId.ITP_L1) {
-                        "TOEFL ITP Level 1 berfokus pada Listening, Structure/Written Expression, dan Reading (Speaking/Writing tidak diujikan pada tes inti)."
-                    } else {
-                        "Setiap modul berisi teori ringkas, contoh kerja, jebakan umum, dan latihan interaktif."
-                    },
-                    style = MaterialTheme.typography.bodyMedium,
-                    color = MaterialTheme.colorScheme.onSurfaceVariant,
-                )
-                Spacer(modifier = Modifier.height(AppSpacing.md))
-                FlowRow(
-                    horizontalArrangement = Arrangement.spacedBy(AppSpacing.sm),
-                    verticalArrangement = Arrangement.spacedBy(AppSpacing.sm),
-                ) {
-                    FilterChip(
-                        selected = state.selectedSection == null,
-                        onClick = { onSelectSection(null) },
-                        label = { Text("Semua") },
-                        modifier = Modifier.defaultMinSize(minHeight = AppSpacing.minTouchTarget),
-                    )
-                    availableSections.forEach { sec ->
-                        FilterChip(
-                            selected = !state.bookmarkedOnly && state.selectedSection == sec,
-                            onClick = { onSelectSection(sec) },
-                            label = { Text(sec.label) },
-                            modifier = Modifier.defaultMinSize(minHeight = AppSpacing.minTouchTarget),
-                        )
-                    }
-                    FilterChip(
-                        selected = state.bookmarkedOnly,
-                        onClick = onToggleBookmarked,
-                        label = { Text("Tersimpan (${state.bookmarkedIds.size})") },
-                        modifier = Modifier.defaultMinSize(minHeight = AppSpacing.minTouchTarget),
-                    )
-                }
-                state.lastReadModuleId?.let { lastId ->
-                    Spacer(modifier = Modifier.height(AppSpacing.xs))
-                    Text(
-                        text = "Terakhir dibaca: $lastId",
-                        style = MaterialTheme.typography.labelMedium,
-                        color = MaterialTheme.colorScheme.primary,
-                    )
-                }
-                Spacer(modifier = Modifier.height(AppSpacing.sm))
-            }
-        }
-
-        if (state.modules.isEmpty()) {
+    ResponsiveScreenContainer(maxWidth = 760.dp, modifier = modifier) {
+        LazyColumn(
+            modifier = Modifier.fillMaxSize(),
+            contentPadding = PaddingValues(vertical = AppSpacing.md),
+        ) {
             item {
-                Text(
-                    text = if (state.bookmarkedOnly) {
-                        "Belum ada modul yang ditandai. Ketuk ikon Bookmark di dalam modul untuk menyimpannya."
-                    } else {
-                        "Tidak ada modul pada kategori ini."
-                    },
-                    style = MaterialTheme.typography.bodyMedium,
-                    color = MaterialTheme.colorScheme.onSurfaceVariant,
-                    modifier = Modifier.padding(AppSpacing.md),
-                )
-            }
-        }
-
-        items(state.modules, key = { it.id }) { mod ->
-            ModuleRow(
-                module = mod,
-                masteryPercent = state.masteryByModuleId[mod.id],
-                onClick = { onOpenModule(mod.id) },
-            )
-        }
-
-        if (!state.bookmarkedOnly && state.materialBankEntries.isNotEmpty()) {
-            item(key = "material_bank_header") {
-                Column(modifier = Modifier.padding(horizontal = AppSpacing.md, vertical = AppSpacing.md)) {
-                    SectionHeading(text = "Bank Materi OER & Panduan PDF (${state.materialBankEntries.size})")
+                Column(modifier = Modifier.padding(horizontal = AppSpacing.md)) {
+                    Text(
+                        text = "Kurikulum ${state.selectedExam.title}",
+                        style = MaterialTheme.typography.headlineMedium,
+                        modifier = Modifier.semantics { heading() },
+                    )
                     Spacer(modifier = Modifier.height(AppSpacing.xs))
                     Text(
-                        text = "Kutipan terverifikasi dari repositori OER terbuka (CC BY/Public Domain) dan spesifikasi resmi publik untuk bahan baca offline & AI Tutor.",
+                        text = if (state.selectedExam == ExamId.ITP_L1) {
+                            "TOEFL ITP Level 1 berfokus pada Listening, Structure/Written Expression, dan Reading (Speaking/Writing tidak diujikan pada tes inti)."
+                        } else {
+                            "Setiap modul berisi teori ringkas, contoh kerja, jebakan umum, dan latihan interaktif."
+                        },
                         style = MaterialTheme.typography.bodyMedium,
                         color = MaterialTheme.colorScheme.onSurfaceVariant,
                     )
+                    Spacer(modifier = Modifier.height(AppSpacing.md))
+                    FlowRow(
+                        horizontalArrangement = Arrangement.spacedBy(AppSpacing.sm),
+                        verticalArrangement = Arrangement.spacedBy(AppSpacing.sm),
+                    ) {
+                        FilterChip(
+                            selected = !state.bookmarkedOnly && state.selectedSection == null,
+                            onClick = { onSelectSection(null) },
+                            label = { Text("Semua") },
+                            modifier = Modifier.defaultMinSize(minHeight = AppSpacing.minTouchTarget),
+                        )
+                        availableSections.forEach { sec ->
+                            FilterChip(
+                                selected = !state.bookmarkedOnly && state.selectedSection == sec,
+                                onClick = { onSelectSection(sec) },
+                                label = { Text(sec.label) },
+                                modifier = Modifier.defaultMinSize(minHeight = AppSpacing.minTouchTarget),
+                            )
+                        }
+                        FilterChip(
+                            selected = state.bookmarkedOnly,
+                            onClick = onToggleBookmarked,
+                            label = { Text("Tersimpan (${state.bookmarkedIds.size})") },
+                            modifier = Modifier.defaultMinSize(minHeight = AppSpacing.minTouchTarget),
+                        )
+                    }
+                    state.lastReadModuleId?.let { lastId ->
+                        Spacer(modifier = Modifier.height(AppSpacing.xs))
+                        Text(
+                            text = "Terakhir dibaca: $lastId",
+                            style = MaterialTheme.typography.labelMedium,
+                            color = MaterialTheme.colorScheme.primary,
+                        )
+                    }
+                    Spacer(modifier = Modifier.height(AppSpacing.sm))
                 }
             }
-            items(state.materialBankEntries, key = { "mb_${it.id}" }) { entry ->
-                MaterialBankRow(
-                    entry = entry,
-                    expanded = state.expandedMaterialId == entry.id,
-                    onToggleExpand = { onToggleMaterialExpanded(entry.id) },
-                    onAskTutor = { onAskTutor(entry.id) },
-                    modifier = Modifier.padding(horizontal = AppSpacing.md, vertical = AppSpacing.xs),
+
+            if (state.modules.isEmpty()) {
+                item {
+                    Text(
+                        text = if (state.bookmarkedOnly) {
+                            "Belum ada modul yang ditandai. Ketuk ikon Bookmark di dalam modul untuk menyimpannya."
+                        } else {
+                            "Tidak ada modul pada kategori ini."
+                        },
+                        style = MaterialTheme.typography.bodyMedium,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant,
+                        modifier = Modifier.padding(AppSpacing.md),
+                    )
+                }
+            }
+
+            items(state.modules, key = { it.id }) { mod ->
+                ModuleRow(
+                    module = mod,
+                    masteryPercent = state.masteryByModuleId[mod.id],
+                    onClick = { onOpenModule(mod.id) },
                 )
+            }
+
+            if (!state.bookmarkedOnly && state.materialBankEntries.isNotEmpty()) {
+                item(key = "material_bank_header") {
+                    Column(modifier = Modifier.padding(horizontal = AppSpacing.md, vertical = AppSpacing.md)) {
+                        SectionHeading(text = "Bank Materi OER & Panduan PDF (${state.materialBankEntries.size})")
+                        Spacer(modifier = Modifier.height(AppSpacing.xs))
+                        Text(
+                            text = "Kutipan terverifikasi dari repositori OER terbuka (CC BY/Public Domain) dan spesifikasi resmi publik untuk bahan baca offline & AI Tutor.",
+                            style = MaterialTheme.typography.bodyMedium,
+                            color = MaterialTheme.colorScheme.onSurfaceVariant,
+                        )
+                    }
+                }
+                items(state.materialBankEntries, key = { "mb_${it.id}" }) { entry ->
+                    MaterialBankRow(
+                        entry = entry,
+                        expanded = state.expandedMaterialId == entry.id,
+                        onToggleExpand = { onToggleMaterialExpanded(entry.id) },
+                        onAskTutor = { onAskTutor(entry.id) },
+                        modifier = Modifier.padding(horizontal = AppSpacing.md, vertical = AppSpacing.xs),
+                    )
+                }
             }
         }
     }
@@ -219,6 +234,14 @@ private fun MaterialBankRow(
     onAskTutor: () -> Unit,
     modifier: Modifier = Modifier,
 ) {
+    val reduceMotion = LocalSemanticStatusColors.current.reduceMotion
+    val animMs = if (reduceMotion) 0 else MotionTokens.AnswerCheckMs
+    val chevronRotation by animateFloatAsState(
+        targetValue = if (expanded) 180f else 0f,
+        animationSpec = tween(animMs),
+        label = "materialChevron",
+    )
+
     Surface(
         shape = MaterialTheme.shapes.medium,
         color = MaterialTheme.colorScheme.surfaceContainerLow,
@@ -253,27 +276,41 @@ private fun MaterialBankRow(
                     )
                 }
                 Spacer(modifier = Modifier.width(AppSpacing.sm))
-                Text(
-                    text = if (expanded) "Tutup" else "Baca",
-                    style = MaterialTheme.typography.labelLarge,
-                    color = MaterialTheme.colorScheme.primary,
-                )
+                Row(verticalAlignment = Alignment.CenterVertically) {
+                    Text(
+                        text = if (expanded) "Tutup" else "Baca",
+                        style = MaterialTheme.typography.labelLarge,
+                        color = MaterialTheme.colorScheme.primary,
+                    )
+                    Icon(
+                        imageVector = Icons.Default.KeyboardArrowDown,
+                        contentDescription = null,
+                        tint = MaterialTheme.colorScheme.primary,
+                        modifier = Modifier.graphicsLayer { rotationZ = chevronRotation },
+                    )
+                }
             }
-            if (expanded) {
-                Spacer(modifier = Modifier.height(AppSpacing.sm))
-                Text(
-                    text = entry.excerpt,
-                    style = MaterialTheme.typography.bodyMedium,
-                    color = MaterialTheme.colorScheme.onSurface,
-                )
-                Spacer(modifier = Modifier.height(AppSpacing.sm))
-                TextButton(
-                    onClick = onAskTutor,
-                    modifier = Modifier.defaultMinSize(minHeight = AppSpacing.minTouchTarget),
-                ) {
-                    Icon(Icons.AutoMirrored.Filled.Chat, contentDescription = null)
-                    Spacer(modifier = Modifier.width(AppSpacing.xs))
-                    Text("Tanya AI tentang materi ini")
+            AnimatedVisibility(
+                visible = expanded,
+                enter = if (reduceMotion) fadeIn(tween(0)) else fadeIn(tween(animMs)) + expandVertically(tween(animMs)),
+                exit = if (reduceMotion) fadeOut(tween(0)) else fadeOut(tween(animMs / 2)) + shrinkVertically(tween(animMs)),
+            ) {
+                Column {
+                    Spacer(modifier = Modifier.height(AppSpacing.sm))
+                    Text(
+                        text = entry.excerpt,
+                        style = MaterialTheme.typography.bodyMedium,
+                        color = MaterialTheme.colorScheme.onSurface,
+                    )
+                    Spacer(modifier = Modifier.height(AppSpacing.sm))
+                    TextButton(
+                        onClick = onAskTutor,
+                        modifier = Modifier.defaultMinSize(minHeight = AppSpacing.minTouchTarget),
+                    ) {
+                        Icon(Icons.AutoMirrored.Filled.Chat, contentDescription = null)
+                        Spacer(modifier = Modifier.width(AppSpacing.xs))
+                        Text("Tanya AI tentang materi ini")
+                    }
                 }
             }
         }
@@ -319,7 +356,13 @@ fun ModuleDetailScreen(
     Scaffold(
         topBar = {
             TopAppBar(
-                title = { Text(state.module?.id ?: "Materi") },
+                title = {
+                    Text(
+                        text = state.module?.id ?: "Materi",
+                        maxLines = 1,
+                        overflow = TextOverflow.Ellipsis,
+                    )
+                },
                 navigationIcon = {
                     IconButton(
                         onClick = onBack,
@@ -360,13 +403,12 @@ fun ModuleDetailScreen(
             return@Scaffold
         }
 
-        LazyColumn(
-            modifier = Modifier
-                .fillMaxSize()
-                .padding(padding),
-            contentPadding = PaddingValues(AppSpacing.md),
-            verticalArrangement = Arrangement.spacedBy(AppSpacing.md),
-        ) {
+        ResponsiveScreenContainer(maxWidth = 760.dp, modifier = Modifier.padding(padding)) {
+            LazyColumn(
+                modifier = Modifier.fillMaxSize(),
+                contentPadding = PaddingValues(AppSpacing.md),
+                verticalArrangement = Arrangement.spacedBy(AppSpacing.md),
+            ) {
             item {
                 Text(
                     text = mod.title,
@@ -515,6 +557,7 @@ fun ModuleDetailScreen(
                     )
                 }
             }
+        }
         }
     }
 }

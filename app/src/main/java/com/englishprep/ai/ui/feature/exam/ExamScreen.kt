@@ -32,7 +32,9 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.imePadding
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.layout.widthIn
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.rememberScrollState
@@ -75,10 +77,12 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.semantics.heading
 import androidx.compose.ui.semantics.semantics
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.core.content.ContextCompat
 import androidx.hilt.navigation.compose.hiltViewModel
@@ -95,9 +99,11 @@ import com.englishprep.ai.ui.components.AppButton
 import com.englishprep.ai.ui.components.AudioPlayerBar
 import com.englishprep.ai.ui.components.InlineFeedback
 import com.englishprep.ai.ui.components.QuestionCard
+import com.englishprep.ai.ui.components.ResponsiveScreenContainer
 import com.englishprep.ai.ui.components.SectionHeading
 import com.englishprep.ai.ui.components.SelectableOptionRow
 import com.englishprep.ai.ui.components.formatTimeMs
+import com.englishprep.ai.ui.components.tabular
 import com.englishprep.ai.ui.theme.AppSpacing
 import com.englishprep.ai.ui.theme.LocalSemanticStatusColors
 import com.englishprep.ai.ui.theme.MotionTokens
@@ -185,79 +191,92 @@ fun ExamScreen(
         }
     }
 
-    val isExpanded = LocalConfiguration.current.screenWidthDp >= 840
+    val config = LocalConfiguration.current
+    val isExpanded = config.screenWidthDp >= 840
+    val compactWrapBottomBar = LocalDensity.current.fontScale >= 1.5f && config.screenWidthDp < 400
     val q = state.currentQuestion
 
     Scaffold(
         topBar = {
-            TopAppBar(
-                title = {
-                    Column {
-                        val countLabel = if (state.questions.isNotEmpty()) {
-                            "Soal ${state.currentIndex + 1}/${state.questions.size}"
-                        } else {
-                            "Ujian"
-                        }
-                        val timerText = when {
-                            state.remainingMs != null -> "Sisa ${formatTimeMs(state.remainingMs)}"
-                            else -> formatTimeMs(state.elapsedMs)
-                        }
-                        Text(
-                            text = "$countLabel • $timerText",
-                            style = MaterialTheme.typography.titleMedium,
-                        )
-                        if (state.savedBadgeText.isNotEmpty()) {
+            Column {
+                TopAppBar(
+                    title = {
+                        Column {
+                            val countLabel = if (state.questions.isNotEmpty()) {
+                                "Soal ${state.currentIndex + 1}/${state.questions.size}"
+                            } else {
+                                "Ujian"
+                            }
+                            val timerText = when {
+                                state.remainingMs != null -> "Sisa ${formatTimeMs(state.remainingMs)}"
+                                else -> formatTimeMs(state.elapsedMs)
+                            }
                             Text(
-                                text = "${state.mode.name} • ${state.savedBadgeText}",
-                                style = MaterialTheme.typography.labelSmall,
-                                color = MaterialTheme.colorScheme.onSurfaceVariant,
+                                text = "$countLabel • $timerText",
+                                style = MaterialTheme.typography.titleMedium.tabular(),
+                                maxLines = 1,
+                                overflow = TextOverflow.Ellipsis,
                             )
+                            if (state.savedBadgeText.isNotEmpty()) {
+                                Text(
+                                    text = "${state.mode.name} • ${state.savedBadgeText}",
+                                    style = MaterialTheme.typography.labelSmall,
+                                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                                    maxLines = 1,
+                                    overflow = TextOverflow.Ellipsis,
+                                )
+                            }
                         }
-                    }
-                },
-                navigationIcon = {
-                    IconButton(
-                        onClick = { showQuitDialog = true },
-                        modifier = Modifier.defaultMinSize(minWidth = AppSpacing.minTouchTarget, minHeight = AppSpacing.minTouchTarget),
-                    ) {
-                        Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = "Keluar ujian")
-                    }
-                },
-                actions = {
-                    if (q != null) {
-                        val isFlagged = q.id in state.flaggedIds
+                    },
+                    navigationIcon = {
                         IconButton(
-                            onClick = { onToggleFlag(q.id) },
+                            onClick = { showQuitDialog = true },
                             modifier = Modifier.defaultMinSize(minWidth = AppSpacing.minTouchTarget, minHeight = AppSpacing.minTouchTarget),
                         ) {
-                            Icon(
-                                imageVector = if (isFlagged) Icons.Default.Flag else Icons.Default.OutlinedFlag,
-                                contentDescription = if (isFlagged) "Hapus tanda ragu" else "Tandai soal",
-                                tint = if (isFlagged) MaterialTheme.colorScheme.tertiary else MaterialTheme.colorScheme.onSurfaceVariant,
-                            )
+                            Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = "Keluar ujian")
                         }
-                    }
-                    IconButton(
-                        onClick = { onSetNavigator(true) },
-                        modifier = Modifier.defaultMinSize(minWidth = AppSpacing.minTouchTarget, minHeight = AppSpacing.minTouchTarget),
-                    ) {
-                        Icon(Icons.Default.GridView, contentDescription = "Daftar nomor soal")
-                    }
-                },
-            )
+                    },
+                    actions = {
+                        if (q != null) {
+                            val isFlagged = q.id in state.flaggedIds
+                            IconButton(
+                                onClick = { onToggleFlag(q.id) },
+                                modifier = Modifier.defaultMinSize(minWidth = AppSpacing.minTouchTarget, minHeight = AppSpacing.minTouchTarget),
+                            ) {
+                                Icon(
+                                    imageVector = if (isFlagged) Icons.Default.Flag else Icons.Default.OutlinedFlag,
+                                    contentDescription = if (isFlagged) "Hapus tanda ragu" else "Tandai soal",
+                                    tint = if (isFlagged) MaterialTheme.colorScheme.tertiary else MaterialTheme.colorScheme.onSurfaceVariant,
+                                )
+                            }
+                        }
+                        IconButton(
+                            onClick = { onSetNavigator(true) },
+                            modifier = Modifier.defaultMinSize(minWidth = AppSpacing.minTouchTarget, minHeight = AppSpacing.minTouchTarget),
+                        ) {
+                            Icon(Icons.Default.GridView, contentDescription = "Daftar nomor soal")
+                        }
+                    },
+                )
+                if (!state.isLoading && state.questions.isNotEmpty()) {
+                    LinearProgressIndicator(
+                        progress = { ((state.currentIndex + 1f) / state.questions.size.toFloat()).coerceIn(0f, 1f) },
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .height(3.dp),
+                    )
+                }
+            }
         },
         bottomBar = {
             if (q != null) {
                 Surface(tonalElevation = 2.dp, modifier = Modifier.fillMaxWidth().imePadding()) {
-                    Column {
+                    Column(horizontalAlignment = Alignment.CenterHorizontally) {
                         HorizontalDivider()
-                        Row(
-                            modifier = Modifier
-                                .fillMaxWidth()
-                                .padding(horizontal = AppSpacing.md, vertical = AppSpacing.sm),
-                            horizontalArrangement = Arrangement.spacedBy(AppSpacing.sm),
-                            verticalAlignment = Alignment.CenterVertically,
-                        ) {
+                        val showCheck = state.mode == ExamMode.PRACTICE &&
+                            q.taskType !in listOf(TaskType.WRITING_RESPONSE, TaskType.SPEAKING_RESPONSE)
+                        val isLast = state.currentIndex >= state.questions.lastIndex
+                        val backButton: @Composable () -> Unit = {
                             OutlinedButton(
                                 onClick = onPrev,
                                 enabled = state.currentIndex > 0,
@@ -265,17 +284,17 @@ fun ExamScreen(
                             ) {
                                 Text("Kembali")
                             }
-                            if (state.mode == ExamMode.PRACTICE && q.taskType !in listOf(TaskType.WRITING_RESPONSE, TaskType.SPEAKING_RESPONSE)) {
-                                OutlinedButton(
-                                    onClick = onCheckPractice,
-                                    enabled = state.answers[q.id]?.isNotBlank() == true,
-                                    modifier = Modifier.defaultMinSize(minHeight = AppSpacing.minTouchTarget),
-                                ) {
-                                    Text("Cek")
-                                }
+                        }
+                        val checkButton: @Composable () -> Unit = {
+                            OutlinedButton(
+                                onClick = onCheckPractice,
+                                enabled = state.answers[q.id]?.isNotBlank() == true,
+                                modifier = Modifier.defaultMinSize(minHeight = AppSpacing.minTouchTarget),
+                            ) {
+                                Text("Cek")
                             }
-                            Spacer(modifier = Modifier.weight(1f))
-                            val isLast = state.currentIndex >= state.questions.lastIndex
+                        }
+                        val nextOrSubmitButton: @Composable () -> Unit = {
                             AppButton(
                                 text = if (isLast) "Kumpulkan" else "Lanjut",
                                 hapticOnTap = isLast,
@@ -283,6 +302,35 @@ fun ExamScreen(
                                     if (isLast) showSubmitConfirmDialog = true else onNext()
                                 },
                             )
+                        }
+
+                        if (compactWrapBottomBar) {
+                            FlowRow(
+                                modifier = Modifier
+                                    .fillMaxWidth()
+                                    .widthIn(max = 840.dp)
+                                    .padding(horizontal = AppSpacing.md, vertical = AppSpacing.sm),
+                                horizontalArrangement = Arrangement.spacedBy(AppSpacing.sm),
+                                verticalArrangement = Arrangement.spacedBy(AppSpacing.sm),
+                            ) {
+                                backButton()
+                                if (showCheck) checkButton()
+                                nextOrSubmitButton()
+                            }
+                        } else {
+                            Row(
+                                modifier = Modifier
+                                    .fillMaxWidth()
+                                    .widthIn(max = 840.dp)
+                                    .padding(horizontal = AppSpacing.md, vertical = AppSpacing.sm),
+                                horizontalArrangement = Arrangement.spacedBy(AppSpacing.sm),
+                                verticalAlignment = Alignment.CenterVertically,
+                            ) {
+                                backButton()
+                                if (showCheck) checkButton()
+                                Spacer(modifier = Modifier.weight(1f))
+                                nextOrSubmitButton()
+                            }
                         }
                     }
                 }
@@ -364,34 +412,36 @@ fun ExamScreen(
                     )
                 }
             } else {
-                QuestionBodyPane(
-                    state = state,
-                    q = displayedQ,
-                    currentPassage = displayedPassage,
-                    micDeniedNote = micDeniedNote,
-                    onOpenPassageSheet = { onSetPassageSheet(true) },
-                    onSelectAnswer = onSelectAnswer,
-                    onToggleMulti = onToggleMulti,
-                    onSetMatching = onSetMatching,
-                    onAppendSequence = onAppendSequence,
-                    onRemoveLastSequence = onRemoveLastSequence,
-                    onEvaluateSubjective = onEvaluateSubjective,
-                    onStartPrepCountdown = onStartPrepCountdown,
-                    onRequestMicAndRecord = {
-                        val ok = ContextCompat.checkSelfPermission(context, Manifest.permission.RECORD_AUDIO) ==
-                            PackageManager.PERMISSION_GRANTED
-                        if (ok) onStartRecording() else micPermissionLauncher.launch(Manifest.permission.RECORD_AUDIO)
-                    },
-                    onStopRecording = onStopRecording,
-                    onPlayOwnRecording = onPlayOwnRecording,
-                    onDeleteRecording = onDeleteRecording,
-                    onSpeakTts = onSpeakTts,
-                    onToggleAudio = onToggleAudio,
-                    onReplayAudio = onReplayAudio,
-                    onSeekAudio = onSeekAudio,
-                    onSetAudioSpeed = onSetAudioSpeed,
-                    modifier = Modifier.fillMaxSize(),
-                )
+                ResponsiveScreenContainer(maxWidth = 760.dp) {
+                    QuestionBodyPane(
+                        state = state,
+                        q = displayedQ,
+                        currentPassage = displayedPassage,
+                        micDeniedNote = micDeniedNote,
+                        onOpenPassageSheet = { onSetPassageSheet(true) },
+                        onSelectAnswer = onSelectAnswer,
+                        onToggleMulti = onToggleMulti,
+                        onSetMatching = onSetMatching,
+                        onAppendSequence = onAppendSequence,
+                        onRemoveLastSequence = onRemoveLastSequence,
+                        onEvaluateSubjective = onEvaluateSubjective,
+                        onStartPrepCountdown = onStartPrepCountdown,
+                        onRequestMicAndRecord = {
+                            val ok = ContextCompat.checkSelfPermission(context, Manifest.permission.RECORD_AUDIO) ==
+                                PackageManager.PERMISSION_GRANTED
+                            if (ok) onStartRecording() else micPermissionLauncher.launch(Manifest.permission.RECORD_AUDIO)
+                        },
+                        onStopRecording = onStopRecording,
+                        onPlayOwnRecording = onPlayOwnRecording,
+                        onDeleteRecording = onDeleteRecording,
+                        onSpeakTts = onSpeakTts,
+                        onToggleAudio = onToggleAudio,
+                        onReplayAudio = onReplayAudio,
+                        onSeekAudio = onSeekAudio,
+                        onSetAudioSpeed = onSetAudioSpeed,
+                        modifier = Modifier.fillMaxSize(),
+                    )
+                }
             }
         }
     }
@@ -458,11 +508,16 @@ fun ExamScreen(
 
     val passageModal = state.currentPassage
     if (state.showPassageSheet && passageModal != null) {
-        ModalBottomSheet(onDismissRequest = { onSetPassageSheet(false) }) {
+        val passageSheetState = rememberModalBottomSheetState(skipPartiallyExpanded = true)
+        ModalBottomSheet(
+            sheetState = passageSheetState,
+            onDismissRequest = { onSetPassageSheet(false) },
+        ) {
             PassagePane(
                 passage = passageModal,
                 modifier = Modifier
                     .fillMaxWidth()
+                    .heightIn(max = 560.dp)
                     .padding(AppSpacing.md),
             )
         }
@@ -906,6 +961,19 @@ internal fun QuestionNavigatorSheetContent(
             .padding(horizontal = AppSpacing.md),
     ) {
         SectionHeading(text = "Navigasi Soal ($answeredTotal/${questions.size} terjawab)")
+        Spacer(modifier = Modifier.height(AppSpacing.xs))
+        FlowRow(
+            horizontalArrangement = Arrangement.spacedBy(AppSpacing.md),
+            verticalArrangement = Arrangement.spacedBy(AppSpacing.xs),
+        ) {
+            NavigatorLegendItem("Aktif", MaterialTheme.colorScheme.primaryContainer, MaterialTheme.colorScheme.primary)
+            NavigatorLegendItem("Terjawab", MaterialTheme.colorScheme.secondaryContainer, MaterialTheme.colorScheme.outline)
+            Text(
+                text = "* Ditandai ragu",
+                style = MaterialTheme.typography.labelMedium,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+            )
+        }
         Spacer(modifier = Modifier.height(AppSpacing.sm))
         if (sections.size > 1) {
             FlowRow(
@@ -980,9 +1048,9 @@ internal fun QuestionNavigatorSheetContent(
                                 modifier = Modifier.padding(horizontal = AppSpacing.xs, vertical = AppSpacing.xs),
                                 contentAlignment = Alignment.Center,
                             ) {
-                                Text(
-                                    text = label,
-                                    style = MaterialTheme.typography.labelLarge,
+                                    Text(
+                                        text = label,
+                                        style = MaterialTheme.typography.labelLarge.tabular(),
                                     color = when {
                                         isCurrent -> MaterialTheme.colorScheme.onPrimaryContainer
                                         answered -> MaterialTheme.colorScheme.onSecondaryContainer
@@ -999,5 +1067,26 @@ internal fun QuestionNavigatorSheetContent(
                 }
             }
         }
+    }
+}
+
+@Composable
+private fun NavigatorLegendItem(
+    label: String,
+    fill: androidx.compose.ui.graphics.Color,
+    border: androidx.compose.ui.graphics.Color,
+) {
+    Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(AppSpacing.xs)) {
+        Surface(
+            shape = MaterialTheme.shapes.extraSmall,
+            color = fill,
+            border = BorderStroke(1.dp, border),
+            modifier = Modifier.size(12.dp),
+        ) {}
+        Text(
+            text = label,
+            style = MaterialTheme.typography.labelMedium,
+            color = MaterialTheme.colorScheme.onSurfaceVariant,
+        )
     }
 }

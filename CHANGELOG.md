@@ -1,5 +1,17 @@
 # Changelog
 
+## 1.1.1 — 2026-11-16
+### Added & Improved
+- **Custom Android Adaptive & Monochrome App Icon (`specs/009`)**: Replaced placeholder icon with bespoke vector/radial-teal open-book/audio/bookmark/check artwork (`ic_launcher_foreground.xml`, `ic_launcher_background.xml`, `ic_launcher_monochrome.xml`, `mipmap-anydpi-v26/*`) plus symmetric 4x-supersampled raster mipmap icons across `mdpi`..`xxxhdpi` and `docs/screenshots/app-icon-512.png` via `tools/generate_app_icon.py`. Removed unused `values/ic_launcher_background.xml` so `IconLauncherShape` and `UnusedResources` lint warnings dropped to 0.
+- **Menu-by-Menu Responsive & Adaptive UI/UX Polish**:
+  - `AppComponents.kt`: Added `rememberIsExpandedWidth()`, `ResponsiveScreenContainer`, `TextStyle.tabular()` (`tnum`), centered `AppButton` text wrapping, `SelectableOptionRow` press scale (`0.985f`) + `LocalIndication.current` ripple, and `AudioPlayerBar` title ellipsis + `tnum` timestamps + animated Surface speed pills.
+  - `HomeScreen` & `PracticeScreen`: 2-column Expanded tablet/landscape layouts (`840dp+`), `FlowRow` Hero CTAs safe at `320dp @ 2.0x`, `skipPartiallyExpanded` switcher sheet.
+  - `LearnViewModel` & `LearnScreens`: Fixed mutually-exclusive `Semua`/`Tersimpan` filter chip selection, `AnimatedVisibility` + rotating chevron on `MaterialBankRow`, and single-line ellipsis on `ModuleDetailScreen` `TopAppBar`.
+  - `ExamScreen`: Tabular timer (`tnum`), thin `3dp` progress strip, wrapping bottom action bar (`fontScale >= 1.5f` on narrow phones), `skipPartiallyExpanded` passage sheet, and Navigator color legend.
+  - `ResultsScreen` & `ChatScreen`: `Semua`/`Salah`/`Dilewati`/`Benar` `FilterChip` bar over 85-140 review items; `ChatScreen` TopBar ellipsis, auto-scroll on stream/reply, and asymmetric bubbles.
+  - `ProgressScreen` & `ProfileScreen`: Fixed `fillMaxWidth()` on `"Akurasi per Seksi"` card, animated section bars, paired Trend Chart in Expanded view, whole-row `Modifier.toggleable` switches, and updated `"1.725 butir READY"` compliance copy.
+- **Verification**: `40/40` JVM + Robolectric Compose UI tests pass (0 failures, 0 skipped), `lintDebug` `0` errors (`76` warnings), `assembleDebug` (`210,344,064` bytes / `200.6 MB`), R8 `assembleRelease` (`189,909,942` bytes / `181.11 MB` + `mapping.txt`), and full live click-through on physical `SM-G988B` (`versionCode = 3`) with refreshed screenshots and zero crashes.
+
 ## 1.1.0 — 2026-11-16
 ### Added
 - **Material Bank PDF Pipeline & In-App Reader (`specs/008`)**: Added `tools/fetch_material_bank.py`, `tools/build_material_bank.py`, and `material_bank/` (`17` verified PDFs, `1,652` pages -> `31` clean study digests in `app/src/main/assets/material_bank/material_bank.json`, FTS4-indexed by `AssetSeeder` & browsable inside `LearnScreen` with license attribution and 1-tap Tutor AI ask). Copyrighted official ETS/IELTS reference PDFs stay excluded via `.gitignore` per Rule 8.

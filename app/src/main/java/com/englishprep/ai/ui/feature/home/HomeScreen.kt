@@ -5,6 +5,8 @@ import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.ExperimentalLayoutApi
+import androidx.compose.foundation.layout.FlowRow
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -14,6 +16,8 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Check
 import androidx.compose.material3.CircularProgressIndicator
@@ -25,12 +29,14 @@ import androidx.compose.material3.ModalBottomSheet
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
+import androidx.compose.material3.rememberModalBottomSheetState
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.semantics.heading
 import androidx.compose.ui.semantics.semantics
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
@@ -41,7 +47,9 @@ import com.englishprep.ai.ui.components.ExamSelector
 import com.englishprep.ai.ui.components.ModuleRow
 import com.englishprep.ai.ui.components.OfflineModelState
 import com.englishprep.ai.ui.components.ProgressSummary
+import com.englishprep.ai.ui.components.ResponsiveScreenContainer
 import com.englishprep.ai.ui.components.SectionHeading
+import com.englishprep.ai.ui.components.rememberIsExpandedWidth
 import com.englishprep.ai.ui.theme.AppSpacing
 
 @Composable
@@ -67,7 +75,7 @@ fun HomeRoute(
     )
 }
 
-@OptIn(ExperimentalMaterial3Api::class)
+@OptIn(ExperimentalMaterial3Api::class, ExperimentalLayoutApi::class)
 @Composable
 fun HomeScreen(
     state: HomeUiState,
@@ -88,126 +96,155 @@ fun HomeScreen(
         return
     }
 
-    LazyColumn(
-        modifier = modifier.fillMaxSize(),
-        contentPadding = PaddingValues(horizontal = AppSpacing.md, vertical = AppSpacing.sm + 4.dp),
-        verticalArrangement = Arrangement.spacedBy(AppSpacing.sm + 4.dp),
-    ) {
-        item {
-            Text(
-                text = "English Prep AI",
-                style = MaterialTheme.typography.headlineMedium,
-                color = MaterialTheme.colorScheme.onSurface,
-                modifier = Modifier.semantics { heading() },
-            )
-            Spacer(modifier = Modifier.height(AppSpacing.xs))
-            Text(
-                text = "Mode offline penuh • Materi, tryout, audio & AI lokal di perangkat.",
-                style = MaterialTheme.typography.bodyMedium,
-                color = MaterialTheme.colorScheme.onSurfaceVariant,
-            )
-        }
+    val isExpanded = rememberIsExpandedWidth()
 
-        item {
-            ExamSelector(
-                activeExam = state.selectedExam,
-                onOpenSwitcher = onOpenSwitcher,
-            )
-        }
+    ResponsiveScreenContainer(maxWidth = if (isExpanded) 960.dp else 720.dp, modifier = modifier) {
+        LazyColumn(
+            modifier = Modifier.fillMaxSize(),
+            contentPadding = PaddingValues(horizontal = AppSpacing.md, vertical = AppSpacing.sm + 4.dp),
+            verticalArrangement = Arrangement.spacedBy(AppSpacing.sm + 4.dp),
+        ) {
+            item {
+                Text(
+                    text = "English Prep AI",
+                    style = MaterialTheme.typography.headlineMedium,
+                    color = MaterialTheme.colorScheme.onSurface,
+                    modifier = Modifier.semantics { heading() },
+                )
+                Spacer(modifier = Modifier.height(AppSpacing.xs))
+                Text(
+                    text = "Mode offline penuh • Materi, tryout, audio & AI lokal di perangkat.",
+                    style = MaterialTheme.typography.bodyMedium,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                )
+            }
 
-        item {
-            Surface(
-                shape = MaterialTheme.shapes.medium,
-                color = MaterialTheme.colorScheme.primaryContainer.copy(alpha = 0.45f),
-                border = BorderStroke(1.dp, MaterialTheme.colorScheme.primary.copy(alpha = 0.3f)),
-                modifier = Modifier.fillMaxWidth(),
-            ) {
-                Column(modifier = Modifier.padding(AppSpacing.md)) {
-                    val heroTitle = state.activeSessionTitle
-                        ?: state.recommendedPack?.title
-                        ?: state.selectedExam.title
-                    Text(
-                        text = heroTitle,
-                        style = MaterialTheme.typography.titleLarge,
-                        color = MaterialTheme.colorScheme.onSurface,
-                        modifier = Modifier.semantics { heading() },
-                    )
-                    Spacer(modifier = Modifier.height(AppSpacing.xs))
-                    Text(
-                        text = state.selectedExam.subtitle,
-                        style = MaterialTheme.typography.bodyMedium,
-                        color = MaterialTheme.colorScheme.onSurfaceVariant,
-                    )
-                    Spacer(modifier = Modifier.height(AppSpacing.md))
-                    Row(
-                        horizontalArrangement = Arrangement.spacedBy(AppSpacing.sm),
-                        verticalAlignment = Alignment.CenterVertically,
-                        modifier = Modifier.fillMaxWidth(),
+            item {
+                ExamSelector(
+                    activeExam = state.selectedExam,
+                    onOpenSwitcher = onOpenSwitcher,
+                )
+            }
+
+            item {
+                val heroCard: @Composable (Modifier) -> Unit = { cardMod ->
+                    Surface(
+                        shape = MaterialTheme.shapes.medium,
+                        color = MaterialTheme.colorScheme.primaryContainer.copy(alpha = 0.45f),
+                        border = BorderStroke(1.dp, MaterialTheme.colorScheme.primary.copy(alpha = 0.3f)),
+                        modifier = cardMod.fillMaxWidth(),
                     ) {
-                        AppButton(
-                            text = if (state.activeSessionId != null) "Lanjutkan" else "Mulai Latihan",
-                            onClick = onPrimaryAction,
-                        )
-                        TextButton(
-                            onClick = onOpenPractice,
-                            modifier = Modifier.defaultMinSize(minHeight = AppSpacing.minTouchTarget),
-                        ) {
-                            Text("Lihat 5 Paket")
+                        Column(modifier = Modifier.padding(AppSpacing.md)) {
+                            val heroTitle = state.activeSessionTitle
+                                ?: state.recommendedPack?.title
+                                ?: state.selectedExam.title
+                            Text(
+                                text = heroTitle,
+                                style = MaterialTheme.typography.titleLarge,
+                                color = MaterialTheme.colorScheme.onSurface,
+                                maxLines = 3,
+                                overflow = TextOverflow.Ellipsis,
+                                modifier = Modifier.semantics { heading() },
+                            )
+                            Spacer(modifier = Modifier.height(AppSpacing.xs))
+                            Text(
+                                text = state.selectedExam.subtitle,
+                                style = MaterialTheme.typography.bodyMedium,
+                                color = MaterialTheme.colorScheme.onSurfaceVariant,
+                            )
+                            Spacer(modifier = Modifier.height(AppSpacing.md))
+                            FlowRow(
+                                horizontalArrangement = Arrangement.spacedBy(AppSpacing.sm),
+                                verticalArrangement = Arrangement.spacedBy(AppSpacing.sm),
+                                modifier = Modifier.fillMaxWidth(),
+                            ) {
+                                AppButton(
+                                    text = if (state.activeSessionId != null) "Lanjutkan" else "Mulai Latihan",
+                                    onClick = onPrimaryAction,
+                                )
+                                TextButton(
+                                    onClick = onOpenPractice,
+                                    modifier = Modifier.defaultMinSize(minHeight = AppSpacing.minTouchTarget),
+                                ) {
+                                    Text("Lihat 5 Paket")
+                                }
+                            }
                         }
                     }
                 }
+                val summaryCard: @Composable (Modifier) -> Unit = { sumMod ->
+                    ProgressSummary(
+                        title = "Ringkasan ${state.selectedExam.title}",
+                        accuracyPercent = state.averageAccuracyPercent,
+                        completedSessions = state.completedSessionCount,
+                        subtitle = state.selectedExam.scaleLabel,
+                        modifier = sumMod,
+                    )
+                }
+
+                if (isExpanded) {
+                    Row(
+                        modifier = Modifier.fillMaxWidth(),
+                        horizontalArrangement = Arrangement.spacedBy(AppSpacing.md),
+                        verticalAlignment = Alignment.Top,
+                    ) {
+                        heroCard(Modifier.weight(1.15f))
+                        summaryCard(Modifier.weight(0.85f))
+                    }
+                } else {
+                    Column(verticalArrangement = Arrangement.spacedBy(AppSpacing.sm + 4.dp)) {
+                        heroCard(Modifier)
+                        summaryCard(Modifier)
+                    }
+                }
             }
-        }
 
-        item {
-            ProgressSummary(
-                title = "Ringkasan ${state.selectedExam.title}",
-                accuracyPercent = state.averageAccuracyPercent,
-                completedSessions = state.completedSessionCount,
-                subtitle = state.selectedExam.scaleLabel,
-            )
-        }
+            state.recommendedModule?.let { module ->
+                item {
+                    Spacer(modifier = Modifier.height(AppSpacing.xs))
+                    SectionHeading(text = "Materi Berikutnya")
+                    Spacer(modifier = Modifier.height(AppSpacing.xs))
+                    HorizontalDivider(color = MaterialTheme.colorScheme.outline.copy(alpha = 0.5f))
+                    ModuleRow(
+                        module = module,
+                        masteryPercent = null,
+                        onClick = { onOpenModule(module.id) },
+                    )
+                }
+            }
 
-        state.recommendedModule?.let { module ->
             item {
                 Spacer(modifier = Modifier.height(AppSpacing.xs))
-                SectionHeading(text = "Materi Berikutnya")
+                SectionHeading(text = "Tutor AI Lokal (Gemma 4 / FTS)")
                 Spacer(modifier = Modifier.height(AppSpacing.xs))
-                HorizontalDivider(color = MaterialTheme.colorScheme.outline.copy(alpha = 0.5f))
-                ModuleRow(
-                    module = module,
-                    masteryPercent = null,
-                    onClick = { onOpenModule(module.id) },
+                val llmReady = state.llmState is LlmModelState.Ready
+                val detail = when (val llm = state.llmState) {
+                    is LlmModelState.Ready -> "Aktif offline: ${llm.modelName} (${llm.variant})"
+                    is LlmModelState.Loading -> "Memuat model lokal: ${llm.modelName}..."
+                    is LlmModelState.Error -> llm.message
+                    LlmModelState.Unloaded -> "Model belum diimpor; pencarian materi FTS offline tetap aktif."
+                }
+                OfflineModelState(
+                    modelLabel = "Asisten Belajar Offline",
+                    isReady = llmReady,
+                    detail = detail,
+                    actionLabel = "Tanya AI",
+                    onAction = onOpenChat,
                 )
             }
-        }
-
-        item {
-            Spacer(modifier = Modifier.height(AppSpacing.xs))
-            SectionHeading(text = "Tutor AI Lokal (Gemma 4 / FTS)")
-            Spacer(modifier = Modifier.height(AppSpacing.xs))
-            val llmReady = state.llmState is LlmModelState.Ready
-            val detail = when (val llm = state.llmState) {
-                is LlmModelState.Ready -> "Aktif offline: ${llm.modelName} (${llm.variant})"
-                is LlmModelState.Loading -> "Memuat model lokal: ${llm.modelName}..."
-                is LlmModelState.Error -> llm.message
-                LlmModelState.Unloaded -> "Model belum diimpor; pencarian materi FTS offline tetap aktif."
-            }
-            OfflineModelState(
-                modelLabel = "Asisten Belajar Offline",
-                isReady = llmReady,
-                detail = detail,
-                actionLabel = "Tanya AI",
-                onAction = onOpenChat,
-            )
         }
     }
 
     if (state.showExamSwitcher) {
-        ModalBottomSheet(onDismissRequest = onDismissSwitcher) {
+        val sheetState = rememberModalBottomSheetState(skipPartiallyExpanded = true)
+        ModalBottomSheet(
+            sheetState = sheetState,
+            onDismissRequest = onDismissSwitcher,
+        ) {
             Column(
                 modifier = Modifier
                     .fillMaxWidth()
+                    .verticalScroll(rememberScrollState())
                     .padding(horizontal = AppSpacing.md, vertical = AppSpacing.sm),
             ) {
                 SectionHeading(text = "Pilih Target Ujian")

@@ -1,10 +1,10 @@
 # Checklist Verifikasi Implementasi — English Prep AI
 
-Status: Diverifikasi aktual pada **2026-11-16** (`v1.1.0` / `versionCode = 2` — JVM + Robolectric + Lint + Debug APK + R8 Release APK + Perangkat Fisik `SM-G988B` Android 13 `arm64-v8a`).
+Status: Diverifikasi aktual pada **2026-11-16** (`v1.1.1` / `versionCode = 3` — JVM + Robolectric + Lint + Debug APK + R8 Release APK + Perangkat Fisik `SM-G988B` Android 13 `arm64-v8a`).
 
 ## 1. Spec-Driven Development & Arsitektur
-- [x] **Spec Kit** terpasang & terisi: `.specify/memory/constitution.md`, `specs/001`..`008` (`spec.md`, `plan.md`, `tasks.md`, `acceptance.md`).
-- [x] **BMAD Reviews**: `docs/reviews/bmad-{analyst-goals,architect-choices,ux-journeys,qa-coverage,security-devsecops,release-docs,epic-closure,material-bank-full-packs}.md`.
+- [x] **Spec Kit** terpasang & terisi: `.specify/memory/constitution.md`, `specs/001`..`009` (`spec.md`, `plan.md`, `tasks.md`, `acceptance.md`).
+- [x] **BMAD Reviews**: `docs/reviews/bmad-{analyst-goals,architect-choices,ux-journeys,qa-coverage,security-devsecops,release-docs,epic-closure,material-bank-full-packs,uiux-responsive-icon}.md`.
 - [x] **QA & SBOM Traceability Ledger**: `docs/qa/EPIC_STATUS.md` & `docs/qa/LICENSE_AND_SBOM_AUDIT.md` (menilai jujur item terverifikasi vs item yang memerlukan bobot `.litertlm`/`.onnx` eksternal, Switch Access fisik, atau tinjauan ahli manusia untuk bank soal baru).
 - [x] **Clean MVVM + UDF + Single `:app` Module**: `ui -> domain <- data`, Hilt DI (`DatabaseModule`, `RepositoryModule`), DRY/KISS/SOLID/YAGNI/Ponytail.
 
@@ -40,14 +40,14 @@ Status: Diverifikasi aktual pada **2026-11-16** (`v1.1.0` / `versionCode = 2` �
 
 ## 6. UI/UX Best Practices, Tap Budget & Pengujian Aktual
 - [x] **Tap Budget dari Beranda**: `<=1` tap ke Lanjutkan/Mulai Paket Utama & Tanya AI; `2` tap ke Ganti Jenis Ujian atau Mulai Paket Tryout; `<=3` tap ke Detail Modul Materi.
-- [x] **Anti-AI-Slop & Micro-Interactions**: Desain editorial tenang beraksen *deep teal*, transisi `NavHost` + `AnimatedContent` antar soal + sorotan opsi animatif `SelectableOptionRow`, kontrol `hapticsEnabled` & *reduce motion* terhubung di `SemanticStatusColors`, tanpa gradien mencolok, tanpa deretan chip di atas pesan Chat, tanpa tombol mengambang di layar ujian, `imePadding()`, target sentuh `>=48dp`, *font scale* `2.0x` teruji.
+- [x] **Anti-AI-Slop, Responsivitas & Ikon Aplikasi (`specs/009`)**: Desain editorial tenang beraksen *deep teal*, ikon aplikasi adaptif + monochrome + 5 densitas mipmap (`ic_launcher*.xml`, `mipmap-{mdpi..xxxhdpi}/ic_launcher*.png`, `docs/screenshots/app-icon-512.png`), `ResponsiveScreenContainer` & tata letak 2 kolom (`840dp+` Home/Practice/Progress), `FlowRow` CTA/bottom-bar anti-kliping untuk `320dp @ 2.0x`, mikro-interaksi (`SelectableOptionRow` press scale + ripple, `AudioPlayerBar` speed pills, progress strip `3dp`, `MaterialBankRow` animasi ekspansi + chevron), eksklusivitas chip `Semua`/`Tersimpan`, filter chip `ResultsScreen`, switch row `toggleable`, angka tabular `tnum`, `imePadding()`, target sentuh `>=48dp`.
 - [x] **Izin & Offline-First**: `dumpsys package` memastikan `android.permission.INTERNET` **tidak** diminta (`RECORD_AUDIO`, `POST_NOTIFICATIONS`, `WAKE_LOCK`, `ACCESS_NETWORK_STATE`, `RECEIVE_BOOT_COMPLETED` saja); `RECORD_AUDIO` dan `POST_NOTIFICATIONS` diminta just-in-time.
 - [x] **Hasil Pengujian Terakhir**:
-  - `.\gradlew.bat testDebugUnitTest`: **36/36 lulus** (0 gagal, 0 error, 0 dilewati — termasuk `AssetSeederAndFtsTest` untuk 30 modul/15 paket `1,725` soal/Material Bank/upgrade DB, `ToeflSessionFlowIntegrationTest` untuk ITP 140 + iBT 120 + IELTS 85, `RoomIntegrityAndRecoveryTest`, `SecurityHardeningTest`, dan 10 Compose `UiAndAccessibilityTest`).
-  - `.\gradlew.bat lintDebug`: **0 error**, 78 warning.
-  - `.\gradlew.bat assembleDebug` (`210,216,727` byte / `200.5 MB`) & `.\gradlew.bat assembleRelease` (`189,804,162` byte / `181.0 MB` — **menyusut ~20.4 MB via R8 + shrinkResources**): **sukses** dengan `mapping.txt` terverifikasi.
-  - Uji perangkat fisik (`SM-G988B`, Android 13 `arm64-v8a`): instalasi upgrade `v1.1.0` (`versionCode = 2`) R8 Release mengonfirmasi preservasi riwayat belajar lama, `Ready • 140 soal` (`Full Mock Strict`), pemutaran audio MS IMA-ADPCM (`00:04 / 00:11`), navigator 140 soal berfilter seksi melompat ke `Soal 91/140` Reading, pembaca Bank Materi OER PDF (`13-material-bank-oer.png`), serta nol crash di `logcat`.
+  - `.\gradlew.bat testDebugUnitTest`: **40/40 lulus** (0 gagal, 0 error, 0 dilewati — termasuk `AssetSeederAndFtsTest`, `ToeflSessionFlowIntegrationTest`, `RoomIntegrityAndRecoveryTest`, `SecurityHardeningTest`, dan 14 Compose `UiAndAccessibilityTest` termasuk uji `w320dp-h640dp @ 2.0f`, `w960dp-h720dp`, filter chip hasil, switch baris penuh, dan teks `1.725 butir READY`).
+  - `.\gradlew.bat lintDebug`: **0 error**, 76 warning (`IconLauncherShape` & `UnusedResources` nol).
+  - `.\gradlew.bat assembleDebug` (`210,344,064` byte / `200.6 MB`, SHA-256 `A72C06A5C38E3A81463B6F66CBC9ED27D780BEFDB373366092426570956DF0CE`) & `.\gradlew.bat assembleRelease` (`189,909,942` byte / `181.11 MB` — **menyusut ~19.5 MB via R8 + shrinkResources**): **sukses** dengan `mapping.txt` (`61,494,600` byte) terverifikasi.
+  - Uji perangkat fisik (`SM-G988B`, Android 13 `arm64-v8a`): instalasi `v1.1.1` (`versionCode = 3`) R8 Release mengonfirmasi Home, Materi chip eksklusif & Bank Materi OER `Baca v`, Latihan `Ready • 140 soal`, Exam timer tabular & progress strip `3dp`, Navigator legend (`Aktif`, `Terjawab`, `* Ditandai ragu`), Results `1/140 (1%)` + FilterChip `Semua`/`Salah`/`Dilewati`/`Benar`, Tutor AI Chat ellipsis & auto-scroll, Progress `fillMaxWidth`, serta Profil `R8 Aktif` & teks `1.725 butir READY` dengan nol crash di `logcat`.
 
-## 7. Repository GitHub, README & Release (`specs/006`, `specs/008`)
-- [x] **Repository GitHub (`gh`)**: `https://github.com/Adrian463588/EnglishPrepAI` (publik, branch default `main`), deskripsi & topics terisi, 13 screenshot nyata `docs/screenshots/*.png`, `README.md` versi `v1.1.0`.
-- [x] **GitHub Release `v1.1.0`**: Diterbitkan melalui `gh release create v1.1.0` dengan aset `EnglishPrepAI-v1.1.0-universal-debug.apk` (`210,216,727` byte / `200.5 MB`, SHA-256 `A80E8F52F7FD1AAF8E6C6F1FC8ED9C6E11D18B1B27E6D9A91B2298627B0F931F`).
+## 7. Repository GitHub, README & Release (`specs/006`, `specs/008`, `specs/009`)
+- [x] **Repository GitHub (`gh`)**: `https://github.com/Adrian463588/EnglishPrepAI` (publik, branch default `main`), deskripsi & topics terisi, 13 screenshot nyata + `app-icon-512.png` di `docs/screenshots/`, `README.md` versi `v1.1.1`.
+- [x] **GitHub Release `v1.1.1`**: Diterbitkan melalui `gh release create v1.1.1` dengan aset `EnglishPrepAI-v1.1.1-universal-debug.apk` (`210,344,064` byte / `200.6 MB`, SHA-256 `A72C06A5C38E3A81463B6F66CBC9ED27D780BEFDB373366092426570956DF0CE`).

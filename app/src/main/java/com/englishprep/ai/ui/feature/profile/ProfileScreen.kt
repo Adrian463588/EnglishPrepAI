@@ -20,7 +20,9 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.selection.toggleable
 import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.FilterChip
 import androidx.compose.material3.LinearProgressIndicator
@@ -38,6 +40,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.semantics.heading
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.unit.dp
@@ -52,6 +55,7 @@ import com.englishprep.ai.domain.engines.SttModelState
 import com.englishprep.ai.ui.components.AppButton
 import com.englishprep.ai.ui.components.InlineFeedback
 import com.englishprep.ai.ui.components.OfflineModelState
+import com.englishprep.ai.ui.components.ResponsiveScreenContainer
 import com.englishprep.ai.ui.components.SectionHeading
 import com.englishprep.ai.ui.theme.AppSpacing
 
@@ -140,11 +144,12 @@ fun ProfileScreen(
 ) {
     var showDeleteConfirm by remember { mutableStateOf(false) }
 
-    LazyColumn(
-        modifier = modifier.fillMaxSize(),
-        contentPadding = PaddingValues(AppSpacing.md),
-        verticalArrangement = Arrangement.spacedBy(AppSpacing.md),
-    ) {
+    ResponsiveScreenContainer(maxWidth = 760.dp, modifier = modifier) {
+        LazyColumn(
+            modifier = Modifier.fillMaxSize(),
+            contentPadding = PaddingValues(AppSpacing.md),
+            verticalArrangement = Arrangement.spacedBy(AppSpacing.md),
+        ) {
         item {
             Text(
                 text = "Profil, AI Offline & Pengaturan",
@@ -406,7 +411,7 @@ fun ProfileScreen(
             }
             Spacer(modifier = Modifier.height(AppSpacing.sm))
             Text(
-                text = "Lisensi & Kepatuhan: Seluruh 15 paket soal bawaan dan audio WAV adalah materi latihan orisinal berstatus Sample (bukan produk resmi ETS/British Council/IELTS). Skor mentah & umpan balik AI lokal bukan nilai resmi.",
+                text = "Lisensi & Kepatuhan: Seluruh 30 modul, 15 paket tryout penuh (1.725 butir READY), kutipan OER Bank Materi PDF, dan 390 audio WAV IMA-ADPCM adalah konten belajar orisinal atau OER CC-BY/Public Domain (bukan soal resmi ETS/British Council/IELTS). Skor mentah & umpan balik AI lokal bukan nilai resmi.",
                 style = MaterialTheme.typography.bodyMedium,
                 color = MaterialTheme.colorScheme.onSurfaceVariant,
             )
@@ -440,6 +445,7 @@ fun ProfileScreen(
             }
         }
     }
+    }
 
     if (showDeleteConfirm) {
         AlertDialog(
@@ -471,11 +477,17 @@ private fun ToggleRow(
         modifier = Modifier
             .fillMaxWidth()
             .defaultMinSize(minHeight = AppSpacing.minTouchTarget)
+            .toggleable(
+                value = checked,
+                role = Role.Switch,
+                onValueChange = onCheckedChange,
+            )
             .padding(vertical = AppSpacing.xs),
         verticalAlignment = Alignment.CenterVertically,
         horizontalArrangement = Arrangement.SpaceBetween,
     ) {
         Text(text = label, style = MaterialTheme.typography.bodyLarge, modifier = Modifier.weight(1f))
-        Switch(checked = checked, onCheckedChange = onCheckedChange)
+        Spacer(modifier = Modifier.width(AppSpacing.md))
+        Switch(checked = checked, onCheckedChange = null)
     }
 }

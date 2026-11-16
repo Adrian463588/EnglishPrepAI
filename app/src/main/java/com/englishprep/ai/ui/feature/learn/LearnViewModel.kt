@@ -88,6 +88,7 @@ class LearnViewModel @Inject constructor(
     )
 
     fun selectSection(section: ExamSection?) {
+        bookmarkFilter.value = false
         sectionFilter.value = section
     }
 

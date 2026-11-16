@@ -7,22 +7,27 @@ import androidx.compose.animation.core.tween
 import androidx.compose.animation.fadeIn
 import androidx.compose.animation.fadeOut
 import androidx.compose.foundation.BorderStroke
+import androidx.compose.foundation.LocalIndication
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.interaction.MutableInteractionSource
 import androidx.compose.foundation.interaction.collectIsPressedAsState
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.BoxScope
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.ExperimentalLayoutApi
 import androidx.compose.foundation.layout.FlowRow
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.defaultMinSize
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.layout.widthIn
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.KeyboardArrowRight
 import androidx.compose.material.icons.filled.CheckCircle
@@ -51,11 +56,16 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.hapticfeedback.HapticFeedbackType
+import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.platform.LocalHapticFeedback
 import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.semantics.heading
 import androidx.compose.ui.semantics.semantics
+import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.text.style.TextOverflow
+import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import com.englishprep.ai.domain.models.ContentPackSummary
 import com.englishprep.ai.domain.models.CourseModuleItem
@@ -64,6 +74,30 @@ import com.englishprep.ai.domain.models.PackStatus
 import com.englishprep.ai.ui.theme.AppSpacing
 import com.englishprep.ai.ui.theme.LocalSemanticStatusColors
 import com.englishprep.ai.ui.theme.MotionTokens
+
+@Composable
+fun rememberIsExpandedWidth(): Boolean = LocalConfiguration.current.screenWidthDp >= 840
+
+@Composable
+fun ResponsiveScreenContainer(
+    modifier: Modifier = Modifier,
+    maxWidth: Dp = 760.dp,
+    content: @Composable BoxScope.() -> Unit,
+) {
+    Box(
+        modifier = modifier.fillMaxSize(),
+        contentAlignment = Alignment.TopCenter,
+    ) {
+        Box(
+            modifier = Modifier
+                .fillMaxSize()
+                .widthIn(max = maxWidth),
+            content = content,
+        )
+    }
+}
+
+fun TextStyle.tabular(): TextStyle = copy(fontFeatureSettings = "tnum")
 
 @Composable
 fun SectionHeading(
@@ -118,7 +152,11 @@ fun AppButton(
                     scaleY = scale
                 },
         ) {
-            Text(text = text, style = MaterialTheme.typography.labelLarge)
+            Text(
+                text = text,
+                style = MaterialTheme.typography.labelLarge,
+                textAlign = TextAlign.Center,
+            )
         }
     } else {
         Button(
@@ -137,7 +175,11 @@ fun AppButton(
                     scaleY = scale
                 },
         ) {
-            Text(text = text, style = MaterialTheme.typography.labelLarge)
+            Text(
+                text = text,
+                style = MaterialTheme.typography.labelLarge,
+                textAlign = TextAlign.Center,
+            )
         }
     }
 }
@@ -415,13 +457,15 @@ fun AudioPlayerBar(
                             text = title,
                             style = MaterialTheme.typography.titleMedium,
                             color = MaterialTheme.colorScheme.onSurface,
+                            maxLines = 2,
+                            overflow = TextOverflow.Ellipsis,
                         )
                         val durLabel = formatTimeMs(durationMs)
                         val posLabel = formatTimeMs(positionMs)
                         val replayInfo = if (maxReplays != null) " • Putar $replaysUsed/$maxReplays" else ""
                         Text(
                             text = "$posLabel / $durLabel$replayInfo",
-                            style = MaterialTheme.typography.labelMedium,
+                            style = MaterialTheme.typography.labelMedium.tabular(),
                             color = MaterialTheme.colorScheme.onSurfaceVariant,
                         )
                     }
@@ -456,21 +500,44 @@ fun AudioPlayerBar(
             }
 
             if (allowSpeedControl) {
+                val animMs = if (LocalSemanticStatusColors.current.reduceMotion) 0 else MotionTokens.PressFeedbackMs
                 FlowRow(
                     horizontalArrangement = Arrangement.spacedBy(AppSpacing.sm),
                     verticalArrangement = Arrangement.spacedBy(AppSpacing.xs),
                 ) {
                     listOf(0.85f, 1.0f, 1.25f).forEach { targetSpeed ->
                         val selected = kotlin.math.abs(speed - targetSpeed) < 0.05f
-                        TextButton(
-                            onClick = { onChangeSpeed(targetSpeed) },
-                            modifier = Modifier.defaultMinSize(minHeight = AppSpacing.minTouchTarget),
+                        val chipBg by animateColorAsState(
+                            targetValue = if (selected) {
+                                MaterialTheme.colorScheme.primaryContainer.copy(alpha = 0.7f)
+                            } else {
+                                MaterialTheme.colorScheme.surfaceContainerLow
+                            },
+                            animationSpec = tween(animMs),
+                            label = "speedChipBg",
+                        )
+                        Surface(
+                            shape = MaterialTheme.shapes.small,
+                            color = chipBg,
+                            border = BorderStroke(
+                                width = 1.dp,
+                                color = if (selected) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.outline.copy(alpha = 0.5f),
+                            ),
+                            modifier = Modifier
+                                .defaultMinSize(minWidth = AppSpacing.minTouchTarget, minHeight = AppSpacing.minTouchTarget)
+                                .clickable(role = Role.RadioButton) { onChangeSpeed(targetSpeed) },
                         ) {
-                            Text(
-                                text = "${targetSpeed}x",
-                                fontWeight = if (selected) FontWeight.Bold else FontWeight.Normal,
-                                color = if (selected) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.onSurfaceVariant,
-                            )
+                            Box(
+                                modifier = Modifier.padding(horizontal = AppSpacing.md, vertical = AppSpacing.sm),
+                                contentAlignment = Alignment.Center,
+                            ) {
+                                Text(
+                                    text = "${targetSpeed}x",
+                                    style = MaterialTheme.typography.labelLarge.tabular(),
+                                    fontWeight = if (selected) FontWeight.Bold else FontWeight.Medium,
+                                    color = if (selected) MaterialTheme.colorScheme.onPrimaryContainer else MaterialTheme.colorScheme.onSurfaceVariant,
+                                )
+                            }
                         }
                     }
                 }
@@ -673,7 +740,14 @@ fun SelectableOptionRow(
 ) {
     val statusColors = LocalSemanticStatusColors.current
     val haptics = LocalHapticFeedback.current
+    val interactionSource = remember { MutableInteractionSource() }
+    val pressed by interactionSource.collectIsPressedAsState()
     val animMs = if (statusColors.reduceMotion) 0 else MotionTokens.PressFeedbackMs
+    val scale by animateFloatAsState(
+        targetValue = if (!statusColors.reduceMotion && pressed) 0.985f else 1f,
+        animationSpec = tween(animMs),
+        label = "optionScale",
+    )
     val bgColor by animateColorAsState(
         targetValue = if (selected) {
             MaterialTheme.colorScheme.primaryContainer.copy(alpha = 0.45f)
@@ -701,7 +775,15 @@ fun SelectableOptionRow(
             .fillMaxWidth()
             .padding(vertical = AppSpacing.xs)
             .defaultMinSize(minHeight = AppSpacing.minTouchTarget)
-            .clickable(role = role) {
+            .graphicsLayer {
+                scaleX = scale
+                scaleY = scale
+            }
+            .clickable(
+                interactionSource = interactionSource,
+                indication = LocalIndication.current,
+                role = role,
+            ) {
                 if (statusColors.hapticsEnabled) {
                     haptics.performHapticFeedback(HapticFeedbackType.TextHandleMove)
                 }

@@ -1,12 +1,16 @@
 # English Prep AI
 
-> **Versi Aplikasi:** `v1.1.0` (`versionCode = 2`) | **Minimum Android:** Android 8.0+ (API 26) | **Target SDK:** 35 | **Offline-First:** Tanpa izin `INTERNET`
+<p align="left">
+  <img src="docs/screenshots/app-icon-512.png" alt="English Prep AI App Icon" width="88" />
+</p>
+
+> **Versi Aplikasi:** `v1.1.1` (`versionCode = 3`) | **Minimum Android:** Android 8.0+ (API 26) | **Target SDK:** 35 | **Offline-First:** Tanpa izin `INTERNET`
 >
 > **Unduhan APK Terbaru (GitHub Releases):**
-> - **Halaman Rilis:** [English Prep AI v1.1.0 Release](https://github.com/Adrian463588/EnglishPrepAI/releases/latest)
-> - **Unduh Langsung APK (`200.5 MB`, Universal 4-ABI, Sideload QA Build):** [`EnglishPrepAI-v1.1.0-universal-debug.apk`](https://github.com/Adrian463588/EnglishPrepAI/releases/download/v1.1.0/EnglishPrepAI-v1.1.0-universal-debug.apk)
-> - **SHA-256 Checksum:** `A80E8F52F7FD1AAF8E6C6F1FC8ED9C6E11D18B1B27E6D9A91B2298627B0F931F`
-> - **Build Rilis R8 / Play Store:** R8, ProGuard, dan Resource Shrinking aktif pada varian `release` (`isMinifyEnabled = true`, `isShrinkResources = true`, menghasilkan `181.0 MB` unsigned R8 APK). Developer dapat membangun `.apk` rilis yang ditandatangani dengan `keystore.properties` pribadi lewat `./gradlew assembleRelease`.
+> - **Halaman Rilis:** [English Prep AI v1.1.1 Release](https://github.com/Adrian463588/EnglishPrepAI/releases/latest)
+> - **Unduh Langsung APK (`200.6 MB`, Universal 4-ABI, Sideload QA Build):** [`EnglishPrepAI-v1.1.1-universal-debug.apk`](https://github.com/Adrian463588/EnglishPrepAI/releases/download/v1.1.1/EnglishPrepAI-v1.1.1-universal-debug.apk)
+> - **SHA-256 Checksum:** `A72C06A5C38E3A81463B6F66CBC9ED27D780BEFDB373366092426570956DF0CE`
+> - **Build Rilis R8 / Play Store:** R8, ProGuard, dan Resource Shrinking aktif pada varian `release` (`isMinifyEnabled = true`, `isShrinkResources = true`, menghasilkan `181.11 MB` unsigned R8 APK). Developer dapat membangun `.apk` rilis yang ditandatangani dengan `keystore.properties` pribadi lewat `./gradlew assembleRelease`.
 
 ---
 
@@ -45,21 +49,21 @@ Seluruh tangkapan layar di bawah diambil langsung dari perangkat fisik **Samsung
 | Beranda (Home) | Pemilih jenis tes (Exam Switcher) | Kurikulum & materi (Learn) | Detail modul & drill |
 | :---: | :---: | :---: | :---: |
 | ![Beranda](docs/screenshots/01-home.png) | ![Exam Switcher](docs/screenshots/02-exam-switcher.png) | ![Kurikulum Materi](docs/screenshots/03-learn-modules.png) | ![Detail Modul](docs/screenshots/04-module-detail.png) |
-| Ringkasan paket cepat, target skor aktif, materi lanjutan, dan akses 1 ketukan ke Tutor AI. | Pergantian instan antara TOEFL ITP Level 1, TOEFL iBT (2026), dan IELTS Academic. | Penyaringan materi per seksi (`Listening`, `Structure`, `Reading`, dll.) sesuai tes aktif. | Tujuan belajar, konsep inti, contoh terjawab, jebakan umum, drill, dan tautan Tutor AI. |
+| Ringkasan paket cepat, target skor aktif, materi lanjutan, responsif hingga layar tablet, dan akses 1 ketukan ke Tutor AI. | Pergantian instan antara TOEFL ITP Level 1, TOEFL iBT (2026), dan IELTS Academic. | Penyaringan materi eksklusif per seksi (`Semua`, `Tersimpan`, dll.) sesuai tes aktif. | Tujuan belajar, konsep inti, contoh terjawab, jebakan umum, drill, dan tautan Tutor AI. |
 
 ### Latihan tryout penuh, pemutar audio, scoring & navigator 140 soal
 
 | Daftar 5 paket tryout penuh (`Ready`) | Simulasi exam & audio Media3 | Navigator 140 soal terfilter seksi | Bank Materi OER & Panduan PDF |
 | :---: | :---: | :---: | :---: |
 | ![Daftar Paket](docs/screenshots/05-practice-packs.png) | ![Exam Listening Audio](docs/screenshots/06-exam-listening.png) | ![Navigator 140 Soal](docs/screenshots/12-navigator-140.png) | ![Bank Materi OER](docs/screenshots/13-material-bank-oer.png) |
-| Label `Ready • 140 soal`, durasi `115m`, ukuran audio terkompresi, Mode Latihan & `Full Mock Strict`. | Pemutar audio Media3 IMA-ADPCM (`0.85x-1.25x`), opsi beranimasi, transkrip Latihan & `Cek`. | Filter seksi cepat (`Listening`, `Structure`, `Reading`) pada grid 5 kolom >=48dp. | Ekstrak OER & Public Domain terverifikasi langsung di menu Materi dengan tautan Tutor AI. |
+| Label `Ready • 140 soal`, durasi `115m`, ukuran audio terkompresi, Mode Latihan & `Full Mock Strict`. | Pemutar audio Media3 IMA-ADPCM (`0.85x-1.25x`), timer tabular `tnum`, progress strip tipis, transkrip Latihan & `Cek`. | Legenda warna navigator + filter seksi (`Listening`, `Structure`, `Reading`) pada grid 5 kolom >=48dp. | Ekstrak OER & Public Domain dengan animasi ekspansi halus dan tautan Tutor AI. |
 
 ### Hasil skor, analitik progres, AI offline & DevSecOps R8
 
 | Skor & pembahasan per butir | Analitik progres lokal | Tutor AI Offline (Gemma 4 / FTS4 RAG) | Profil & impor AI via SAF | Keamanan R8 & cadangan JSON |
 | :---: | :---: | :---: | :---: | :---: |
 | ![Hasil dan Pembahasan](docs/screenshots/07-results.png) | ![Analitik Progres](docs/screenshots/08-progress-analytics.png) | ![Tutor AI RAG](docs/screenshots/09-ai-chat-rag.png) | ![Profil AI SAF](docs/screenshots/10-profile-ai-saf.png) | ![Profil Keamanan R8](docs/screenshots/11-profile-security-r8.png) |
-| Skor mentah non-resmi, jumlah dilewati, pembahasan per butir, & `Ulangi Soal Salah`. | Akurasi objektif lokal, rincian per seksi, deteksi modul lemah `<80%`, & riwayat sesi. | Pencarian FTS4 offline (modul + Material Bank) mengutip ID sumber secara lokal. | Impor file `.litertlm` / folder Whisper ONNX / paket soal via SAF + katalog Hugging Face. | Status runtime R8/ProGuard aktif, SHA-256 sertifikat, `allowBackup` nonaktif, & JSON backup. |
+| Skor mentah non-resmi, filter butir (`Semua`/`Salah`/`Dilewati`/`Benar`), & `Ulangi Soal Salah`. | Akurasi objektif lokal, kartu `fillMaxWidth` seragam, bar teranimasi, deteksi modul lemah `<80%`. | Pencarian FTS4 offline (modul + Material Bank) dengan auto-scroll & gelembung asimetris. | Impor file `.litertlm` / folder Whisper ONNX / paket soal via SAF + katalog Hugging Face. | Status runtime R8/ProGuard aktif, switch baris penuh `toggleable`, SHA-256 sertifikat, & cadangan JSON. |
 
 ---
 
@@ -79,11 +83,12 @@ EnglishPrepAI/
 │   ├── 005-devsecops-r8-hardening/        # Spec, plan, tasks, acceptance: R8/ProGuard, RASP, Keystore
 │   ├── 006-github-repo-docs-release/      # Spec, plan, tasks, acceptance: Repo GitHub, README & Release
 │   ├── 007-epic-audit-polish-gates/       # Spec, plan, tasks, acceptance: Audit EPIC-00..21 & anti-slop craft
-│   └── 008-material-bank-full-packs/      # Spec, plan, tasks, acceptance: Bank Materi PDF, 30 modul, 1.725 soal
+│   ├── 008-material-bank-full-packs/      # Spec, plan, tasks, acceptance: Bank Materi PDF, 30 modul, 1.725 soal
+│   └── 009-uiux-responsive-icon-polish/   # Spec, plan, tasks, acceptance: Audit UI/UX responsif & ikon adaptif aplikasi
 ├── docs/
 │   ├── qa/                                # EPIC_STATUS.md (matrix bukti) & LICENSE_AND_SBOM_AUDIT.md
-│   ├── reviews/                           # Laporan tinjauan BMAD (Analyst, Architect, UX, QA, Security, Release, Closure, Material Bank)
-│   ├── screenshots/                       # 13 tangkapan layar nyata dari perangkat fisik SM-G988B
+│   ├── reviews/                           # Laporan tinjauan BMAD (Analyst, Architect, UX, QA, Security, Release, Closure, Material Bank, UI/UX Icon)
+│   ├── screenshots/                       # 13 tangkapan layar nyata dari SM-G988B + pratinjau app-icon-512.png
 │   ├── REFERENCES.md                      # Katalog model Hugging Face, dataset terbuka & referensi GitHub
 │   └── VERIFICATION_CHECKLIST.md          # Checklist bukti uji unit, lint, R8 & perangkat fisik
 ├── material_bank/
@@ -102,6 +107,7 @@ EnglishPrepAI/
 │   ├── curriculum_data.py / curriculum_extra_oer.py
 │   ├── bank_itp/ bank_ibt/ bank_ielts/    # Generator bank soal modular 1.725 butir
 │   ├── packs_itp.py / packs_ibt.py / packs_ielts.py
+│   ├── generate_app_icon.py               # Generator ikon launcher adaptif + monochrome + 5 densitas mipmap
 │   └── generate_assets.py                 # Generator 390 berkas audio IMA-ADPCM & sinkronisasi aset
 └── app/
     ├── build.gradle.kts                   # Konfigurasi Android SDK 35, R8 release minify, signing opsional
@@ -111,6 +117,7 @@ EnglishPrepAI/
         ├── main/
         │   ├── AndroidManifest.xml        # Tanpa INTERNET permission; allowBackup="false"
         │   ├── assets/{audio,curriculum,material_bank,packs}/
+        │   ├── res/drawable/ic_launcher*.xml & mipmap-*/  # Ikon adaptif vektor, monochrome Android 13+, 5 mipmap PNG
         │   ├── res/xml/{backup_rules,data_extraction_rules}.xml
         │   └── java/com/englishprep/ai/
         │       ├── data/
@@ -136,7 +143,7 @@ EnglishPrepAI/
         │           ├── feature/           # 9 layar + ViewModel UDF (home, learn, practice, exam, results, chat, progress, profile)
         │           ├── navigation/        # Type-safe Compose Navigation routes
         │           └── theme/             # Palette deep teal, Tokens (MotionTokens, AppSpacing), Theme
-        └── test/                          # 36 unit & Robolectric integration/UI accessibility tests
+        └── test/                          # 40 unit & Robolectric integration/UI accessibility tests
 ```
 
 ---
@@ -158,7 +165,7 @@ flowchart LR
 ## Cara menggunakan aplikasi & panduan developer
 
 ### A. Untuk pengguna (instalasi APK & fitur AI opsional)
-1. Unduh **`EnglishPrepAI-v1.1.0-universal-debug.apk`** dari tautan rilis di bagian atas README dan pasang pada perangkat Android 8.0+ (API 26 atau lebih baru).
+1. Unduh **`EnglishPrepAI-v1.1.1-universal-debug.apk`** dari tautan rilis di bagian atas README dan pasang pada perangkat Android 8.0+ (API 26 atau lebih baru).
 2. Aplikasi langsung berfungsi penuh tanpa internet: pilih target ujian di kartu atas **Beranda** (`TOEFL ITP Level 1`, `TOEFL iBT (2026)`, atau `IELTS Academic`), buka **Materi** untuk teori 30 modul + Bank Materi OER PDF, atau masuk ke **Latihan** untuk mengerjakan 15 paket tryout penuh (`140`/`120`/`85` soal) beserta audio listening IMA-ADPCM bawaan.
 3. *(Opsional)* Mengaktifkan **Chatbot Gemma 4** offline:
    - Unduh file `.litertlm` resmi (misalnya `gemma-4-E2B-it.litertlm`, ~2.6 GB) lewat browser eksternal dari koleksi [Hugging Face LiteRT Gemma 4](https://huggingface.co/collections/google/gemma-4).
@@ -175,7 +182,7 @@ Prasyarat: **JDK 17**, Android SDK (Compile SDK 35), dan Python 3 (opsional bila
 git clone https://github.com/Adrian463588/EnglishPrepAI.git
 cd EnglishPrepAI
 
-# 2. Jalankan seluruh unit test & Robolectric Compose UI test (36 tests)
+# 2. Jalankan seluruh unit test & Robolectric Compose UI test (40 tests)
 ./gradlew testDebugUnitTest
 
 # 3. Jalankan pemeriksaan Android Lint
@@ -258,7 +265,7 @@ Menyimpan preferensi ringan non-relasional: `selected_exam`, `language`, `audio_
 
 ## Ringkasan keamanan & DevSecOps
 
-- **R8 + ProGuard Full Optimization**: Aktif pada build `release` ([`proguard-rules.pro`](app/proguard-rules.pro)) dengan `-repackageclasses 'o'`, redaksi `SourceFile`, dan stripping `android.util.Log` (`v`/`d`/`i`/`w`), mengurangi ukuran APK dari `200.5 MB` (debug) ke `181.0 MB` (unsigned release).
+- **R8 + ProGuard Full Optimization**: Aktif pada build `release` ([`proguard-rules.pro`](app/proguard-rules.pro)) dengan `-repackageclasses 'o'`, redaksi `SourceFile`, dan stripping `android.util.Log` (`v`/`d`/`i`/`w`), mengurangi ukuran APK dari `200.6 MB` (debug) ke `181.11 MB` (unsigned release).
 - **Kebijakan Privasi Offline & Backup**: `INTERNET` permission tidak pernah dideklarasikan di [`AndroidManifest.xml`](app/src/main/AndroidManifest.xml), `android:allowBackup="false"`, serta eksklusi penuh `database`, `sharedpref`, dan `file` pada aturan backup XML.
 - **RASP & Kriptografi Lokal**: `AndroidAppIntegrityInspector` membaca flag debuggable, status debugger, heuristik root dasar, status `allowBackup`, dan SHA-256 sertifikat penandatangan. Verifikasi paket eksternal bertanda tangan memakai `DetachedSignatureVerifier` (`SHA256withECDSA`), sementara kunci lokal memakai `AndroidKeystoreSealer` (`AES/GCM/NoPadding` pada `AndroidKeyStore`).
 - **Catatan batas objektif**: Aplikasi yang berjalan 100% offline tanpa server tepercaya tidak dapat menjamin perlindungan mutlak terhadap pemodifikasian binary pada perangkat yang telah di-root. Kontrol di atas bertujuan meningkatkan transparansi integritas lokal dan biaya analisis balik.
@@ -269,9 +276,10 @@ Menyimpan preferensi ringan non-relasional: `selected_exam`, `language`, `audio_
 
 Dokumen rinci tersedia pada [VERIFICATION_CHECKLIST.md](docs/VERIFICATION_CHECKLIST.md), [EPIC_STATUS.md](docs/qa/EPIC_STATUS.md), audit lisensi pada [LICENSE_AND_SBOM_AUDIT.md](docs/qa/LICENSE_AND_SBOM_AUDIT.md), dan referensi model/dataset/repo di [REFERENCES.md](docs/REFERENCES.md).
 
-- [x] **Spec-Driven Development**: Konstitusi Spec Kit (`.specify/memory/constitution.md`), 8 fitur terdokumentasi di `specs/001` sampai `specs/008`, serta 8 laporan tinjauan BMAD di `docs/reviews/`.
+- [x] **Spec-Driven Development**: Konstitusi Spec Kit (`.specify/memory/constitution.md`), 9 fitur terdokumentasi di `specs/001` sampai `specs/009`, serta 9 laporan tinjauan BMAD di `docs/reviews/`.
 - [x] **Bank Materi PDF, 30 Modul & 15 Paket Penuh (1.725 Soal)**: 17 PDF Material Bank (`31` entri studi + indeks FTS4 di tab Materi), 30 modul (dengan bookmark & last-read), 90 drill interaktif, 15 paket soal berstatus `READY` penuh (`5x140` ITP, `5x120` iBT 2026, `5x85` IELTS Academic), serta 390 berkas audio MS IMA-ADPCM offline (`57.00 MB`).
-- [x] **Mesin Inti Aplikasi**: `QuizGradingEngine` (10 tipe tugas + normalisasi `TFNG`/`YNNG`), `PackIntegrityValidator` (15 paket penuh valid), `ExamScoreEstimator` (skor mentah deterministik non-resmi `v1.1-raw-deterministic`), `Media3AudioEngine` (ExoPlayer `1.5.1` IMA-ADPCM + kontinuitas audio antarmulti-soal), `QuestionNavigatorSheetContent` (navigator terfilter 140 item), `WavAudioRecorder` + hapus rekaman, `WhisperOnnxSpeechEngine` (ORT `1.22.0`), `LiteRtLmGemma4Engine` (`0.13.1`), FTS4 RAG fallback (dengan lock Strict Mode), Room `@Upsert` DB upgrade non-destruktif + DataStore, `SafSecurityValidator`, dan `ProgressScreen`.
+- [x] **Mesin Inti Aplikasi**: `QuizGradingEngine` (10 tipe tugas + normalisasi `TFNG`/`YNNG`), `PackIntegrityValidator` (15 paket penuh valid), `ExamScoreEstimator` (skor mentah deterministik non-resmi `v1.1-raw-deterministic`), `Media3AudioEngine` (ExoPlayer `1.5.1` IMA-ADPCM + kontinuitas audio antarmulti-soal), `QuestionNavigatorSheetContent` (navigator terfilter 140 item + legenda), `WavAudioRecorder` + hapus rekaman, `WhisperOnnxSpeechEngine` (ORT `1.22.0`), `LiteRtLmGemma4Engine` (`0.13.1`), FTS4 RAG fallback (dengan lock Strict Mode), Room `@Upsert` DB upgrade non-destruktif + DataStore, `SafSecurityValidator`, dan `ProgressScreen`.
+- [x] **UI/UX Responsif, Anti-AI-Slop & Ikon Adaptif (`specs/009`)**: Tata letak adaptif `320dp @ 2.0x` hingga tablet 2 kolom `840dp+` (`ResponsiveScreenContainer`), `FlowRow` CTA/bottom-bar anti-kliping, mikro-interaksi `SelectableOptionRow`/`AudioPlayerBar`/progress strip `3dp`/ekspansi Bank Materi, filter hasil `ResultsScreen`, switch baris penuh `toggleable`, angka tabular `tnum`, serta ikon adaptif + monochrome + 5 densitas mipmap (`docs/screenshots/app-icon-512.png`).
 - [x] **DevSecOps, R8 & RASP**: `isMinifyEnabled = true`, `isShrinkResources = true`, ProGuard hardening, `allowBackup="false"`, ECDSA & AES-GCM, Workflow CI GitHub Actions (`.github/workflows/android-devsecops.yml`).
-- [x] **Pengujian Terverifikasi**: 36/36 unit, DB migration/upgrade & Robolectric Compose UI tests lulus (`testDebugUnitTest`), `lintDebug` 0 error, `assembleDebug` & R8 `assembleRelease` sukses (`mapping.txt` terverifikasi), dan QA fisik `v1.1.0` pada `SM-G988B` (upgrade DB non-destruktif, `Ready • 140 soal`, playback IMA-ADPCM, navigator 140 item, dan Bank Materi OER).
-- [x] **Distribusi GitHub CLI**: Repository publik `Adrian463588/EnglishPrepAI`, deskripsi, topics, `README.md` dengan tautan unduhan & 13 tangkapan layar real-time, serta GitHub Release `v1.1.0`.
+- [x] **Pengujian Terverifikasi**: 40/40 unit, DB migration/upgrade & Robolectric Compose UI tests lulus (`testDebugUnitTest`), `lintDebug` 0 error (`76` warning), `assembleDebug` & R8 `assembleRelease` sukses (`mapping.txt` terverifikasi), dan QA fisik `v1.1.1` pada `SM-G988B` (ikon adaptif, semua menu responsif, filter Materi/Results, `Ready • 140 soal`, playback IMA-ADPCM, navigator 140 item, Tutor AI Chat, R8 status, dan Bank Materi OER).
+- [x] **Distribusi GitHub CLI**: Repository publik `Adrian463588/EnglishPrepAI`, deskripsi, topics, `README.md` dengan tautan unduhan & 13 tangkapan layar real-time + ikon aplikasi, serta GitHub Release `v1.1.1`.

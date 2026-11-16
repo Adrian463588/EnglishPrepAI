@@ -1,5 +1,7 @@
 package com.englishprep.ai.ui.feature.progress
 
+import androidx.compose.animation.core.animateFloatAsState
+import androidx.compose.animation.core.tween
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.clickable
@@ -35,8 +37,13 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.englishprep.ai.ui.components.AppButton
 import com.englishprep.ai.ui.components.ProgressSummary
+import com.englishprep.ai.ui.components.ResponsiveScreenContainer
 import com.englishprep.ai.ui.components.SectionHeading
+import com.englishprep.ai.ui.components.rememberIsExpandedWidth
+import com.englishprep.ai.ui.components.tabular
 import com.englishprep.ai.ui.theme.AppSpacing
+import com.englishprep.ai.ui.theme.LocalSemanticStatusColors
+import com.englishprep.ai.ui.theme.MotionTokens
 
 @Composable
 fun ProgressRoute(
@@ -69,134 +76,132 @@ fun ProgressScreen(
         return
     }
 
-    LazyColumn(
-        modifier = modifier.fillMaxSize(),
-        contentPadding = PaddingValues(AppSpacing.md),
-        verticalArrangement = Arrangement.spacedBy(AppSpacing.md),
-    ) {
-        item {
-            Text(
-                text = "Analitik Progres • ${state.selectedExam.title}",
-                style = MaterialTheme.typography.headlineMedium,
-                modifier = Modifier.semantics { heading() },
-            )
-            Spacer(modifier = Modifier.height(AppSpacing.xs))
-            Text(
-                text = "Seluruh statistik dihitung lokal dari riwayat latihan nyata di perangkat.",
-                style = MaterialTheme.typography.bodyMedium,
-                color = MaterialTheme.colorScheme.onSurfaceVariant,
-            )
-        }
+    val isExpanded = rememberIsExpandedWidth()
+    val reduceMotion = LocalSemanticStatusColors.current.reduceMotion
 
-        item {
-            ProgressSummary(
-                title = "Ringkasan Objektif",
-                accuracyPercent = state.overallAccuracyPercent,
-                completedSessions = state.recentSessions.size,
-                subtitle = state.selectedExam.scaleLabel,
-            )
-        }
-
-        if (state.recentSessions.isEmpty() && state.weakModules.isEmpty()) {
+    ResponsiveScreenContainer(maxWidth = if (isExpanded) 960.dp else 720.dp, modifier = modifier) {
+        LazyColumn(
+            modifier = Modifier.fillMaxSize(),
+            contentPadding = PaddingValues(AppSpacing.md),
+            verticalArrangement = Arrangement.spacedBy(AppSpacing.md),
+        ) {
             item {
-                Surface(
-                    shape = MaterialTheme.shapes.medium,
-                    color = MaterialTheme.colorScheme.surfaceContainerLow,
-                    border = BorderStroke(1.dp, MaterialTheme.colorScheme.outline),
-                    modifier = Modifier.fillMaxWidth(),
-                ) {
-                    Column(modifier = Modifier.padding(AppSpacing.md)) {
-                        Text(
-                            text = "Belum Ada Riwayat Tryout",
-                            style = MaterialTheme.typography.titleMedium,
-                        )
-                        Spacer(modifier = Modifier.height(AppSpacing.xs))
-                        Text(
-                            text = "Selesaikan satu paket latihan atau simulasi agar grafik tren akurasi dan pemetaan kelemahan per seksi tampil di sini.",
-                            style = MaterialTheme.typography.bodyMedium,
-                            color = MaterialTheme.colorScheme.onSurfaceVariant,
-                        )
-                        Spacer(modifier = Modifier.height(AppSpacing.md))
-                        AppButton(text = "Mulai Paket Pertama", onClick = onOpenPractice)
-                    }
-                }
+                Text(
+                    text = "Analitik Progres • ${state.selectedExam.title}",
+                    style = MaterialTheme.typography.headlineMedium,
+                    modifier = Modifier.semantics { heading() },
+                )
+                Spacer(modifier = Modifier.height(AppSpacing.xs))
+                Text(
+                    text = "Seluruh statistik dihitung lokal dari riwayat latihan nyata di perangkat.",
+                    style = MaterialTheme.typography.bodyMedium,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                )
             }
-        }
 
-        if (state.recentTrendPercents.size >= 2) {
             item {
-                SectionHeading(text = "Tren Akurasi Sesi Terakhir")
-                Spacer(modifier = Modifier.height(AppSpacing.sm))
-                val lineColor = MaterialTheme.colorScheme.primary
-                val gridColor = MaterialTheme.colorScheme.outline.copy(alpha = 0.5f)
-                Surface(
-                    shape = MaterialTheme.shapes.medium,
-                    color = MaterialTheme.colorScheme.surfaceContainerLow,
-                    border = BorderStroke(1.dp, MaterialTheme.colorScheme.outline),
-                    modifier = Modifier.fillMaxWidth(),
-                ) {
-                    Column(modifier = Modifier.padding(AppSpacing.md)) {
-                        Canvas(
-                            modifier = Modifier
-                                .fillMaxWidth()
-                                .height(110.dp),
-                        ) {
-                            val pts = state.recentTrendPercents
-                            val stepX = size.width / (pts.size - 1).coerceAtLeast(1)
-                            drawLine(gridColor, Offset(0f, size.height * 0.5f), Offset(size.width, size.height * 0.5f), 1.dp.toPx())
-                            for (i in 0 until pts.size - 1) {
-                                val x1 = i * stepX
-                                val y1 = size.height * (1f - pts[i] / 100f)
-                                val x2 = (i + 1) * stepX
-                                val y2 = size.height * (1f - pts[i + 1] / 100f)
-                                drawLine(lineColor, Offset(x1, y1), Offset(x2, y2), strokeWidth = 3.dp.toPx(), cap = StrokeCap.Round)
-                            }
-                            pts.forEachIndexed { idx, pct ->
-                                val x = idx * stepX
-                                val y = size.height * (1f - pct / 100f)
-                                drawCircle(lineColor, radius = 4.dp.toPx(), center = Offset(x, y))
-                            }
-                        }
-                        Spacer(modifier = Modifier.height(AppSpacing.xs))
-                        Text(
-                            text = "Urutan kronologis: ${state.recentTrendPercents.joinToString(" → ") { "$it%" }}",
-                            style = MaterialTheme.typography.labelMedium,
-                            color = MaterialTheme.colorScheme.onSurfaceVariant,
+                val summaryCard: @Composable (Modifier) -> Unit = { cardMod ->
+                    ProgressSummary(
+                        title = "Ringkasan Objektif",
+                        accuracyPercent = state.overallAccuracyPercent,
+                        completedSessions = state.recentSessions.size,
+                        subtitle = state.selectedExam.scaleLabel,
+                        modifier = cardMod,
+                    )
+                }
+                if (isExpanded && state.recentTrendPercents.size >= 2) {
+                    Row(
+                        modifier = Modifier.fillMaxWidth(),
+                        horizontalArrangement = Arrangement.spacedBy(AppSpacing.md),
+                        verticalAlignment = Alignment.Top,
+                    ) {
+                        summaryCard(Modifier.weight(1f))
+                        TrendChartCard(
+                            points = state.recentTrendPercents,
+                            modifier = Modifier.weight(1f),
                         )
                     }
+                } else {
+                    summaryCard(Modifier)
                 }
             }
-        }
 
-        if (state.sectionRows.isNotEmpty()) {
-            item {
-                SectionHeading(text = "Akurasi per Seksi")
-                Spacer(modifier = Modifier.height(AppSpacing.sm))
-                Surface(
-                    shape = MaterialTheme.shapes.medium,
-                    color = MaterialTheme.colorScheme.surface,
-                    border = BorderStroke(1.dp, MaterialTheme.colorScheme.outline),
-                ) {
-                    Column(modifier = Modifier.padding(AppSpacing.md)) {
-                        state.sectionRows.forEach { row ->
-                            Row(
-                                modifier = Modifier.fillMaxWidth(),
-                                horizontalArrangement = Arrangement.SpaceBetween,
-                            ) {
-                                Text(text = row.section, style = MaterialTheme.typography.titleMedium)
-                                Text(text = "${row.correct}/${row.total} (${row.percent}%)", style = MaterialTheme.typography.bodyMedium)
-                            }
+            if (state.recentSessions.isEmpty() && state.weakModules.isEmpty()) {
+                item {
+                    Surface(
+                        shape = MaterialTheme.shapes.medium,
+                        color = MaterialTheme.colorScheme.surfaceContainerLow,
+                        border = BorderStroke(1.dp, MaterialTheme.colorScheme.outline),
+                        modifier = Modifier.fillMaxWidth(),
+                    ) {
+                        Column(modifier = Modifier.padding(AppSpacing.md)) {
+                            Text(
+                                text = "Belum Ada Riwayat Tryout",
+                                style = MaterialTheme.typography.titleMedium,
+                            )
                             Spacer(modifier = Modifier.height(AppSpacing.xs))
-                            LinearProgressIndicator(
-                                progress = { (row.percent / 100f).coerceIn(0f, 1f) },
-                                modifier = Modifier.fillMaxWidth(),
+                            Text(
+                                text = "Selesaikan satu paket latihan atau simulasi agar grafik tren akurasi dan pemetaan kelemahan per seksi tampil di sini.",
+                                style = MaterialTheme.typography.bodyMedium,
+                                color = MaterialTheme.colorScheme.onSurfaceVariant,
                             )
                             Spacer(modifier = Modifier.height(AppSpacing.md))
+                            AppButton(text = "Mulai Paket Pertama", onClick = onOpenPractice)
                         }
                     }
                 }
             }
-        }
+
+            if (state.recentTrendPercents.size >= 2 && !isExpanded) {
+                item {
+                    SectionHeading(text = "Tren Akurasi Sesi Terakhir")
+                    Spacer(modifier = Modifier.height(AppSpacing.sm))
+                    TrendChartCard(points = state.recentTrendPercents)
+                }
+            }
+
+            if (state.sectionRows.isNotEmpty()) {
+                item {
+                    SectionHeading(text = "Akurasi per Seksi")
+                    Spacer(modifier = Modifier.height(AppSpacing.sm))
+                    Surface(
+                        shape = MaterialTheme.shapes.medium,
+                        color = MaterialTheme.colorScheme.surface,
+                        border = BorderStroke(1.dp, MaterialTheme.colorScheme.outline),
+                        modifier = Modifier.fillMaxWidth(),
+                    ) {
+                        Column(
+                            modifier = Modifier.padding(AppSpacing.md),
+                            verticalArrangement = Arrangement.spacedBy(AppSpacing.md),
+                        ) {
+                            state.sectionRows.forEach { row ->
+                                val animProg by animateFloatAsState(
+                                    targetValue = (row.percent / 100f).coerceIn(0f, 1f),
+                                    animationSpec = tween(if (reduceMotion) 0 else MotionTokens.AnswerCheckMs),
+                                    label = "secBar_${row.section}",
+                                )
+                                Column {
+                                    Row(
+                                        modifier = Modifier.fillMaxWidth(),
+                                        horizontalArrangement = Arrangement.SpaceBetween,
+                                    ) {
+                                        Text(text = row.section, style = MaterialTheme.typography.titleMedium)
+                                        Text(
+                                            text = "${row.correct}/${row.total} (${row.percent}%)",
+                                            style = MaterialTheme.typography.bodyMedium.tabular(),
+                                        )
+                                    }
+                                    Spacer(modifier = Modifier.height(AppSpacing.xs))
+                                    LinearProgressIndicator(
+                                        progress = { animProg },
+                                        modifier = Modifier.fillMaxWidth(),
+                                    )
+                                }
+                            }
+                        }
+                    }
+                }
+            }
 
         if (state.weakModules.isNotEmpty()) {
             item {
@@ -253,6 +258,51 @@ fun ProgressScreen(
                 }
                 HorizontalDivider()
             }
+        }
+    }
+    }
+}
+
+@Composable
+private fun TrendChartCard(
+    points: List<Int>,
+    modifier: Modifier = Modifier,
+) {
+    val lineColor = MaterialTheme.colorScheme.primary
+    val gridColor = MaterialTheme.colorScheme.outline.copy(alpha = 0.5f)
+    Surface(
+        shape = MaterialTheme.shapes.medium,
+        color = MaterialTheme.colorScheme.surfaceContainerLow,
+        border = BorderStroke(1.dp, MaterialTheme.colorScheme.outline),
+        modifier = modifier.fillMaxWidth(),
+    ) {
+        Column(modifier = Modifier.padding(AppSpacing.md)) {
+            Canvas(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(110.dp),
+            ) {
+                val stepX = size.width / (points.size - 1).coerceAtLeast(1)
+                drawLine(gridColor, Offset(0f, size.height * 0.5f), Offset(size.width, size.height * 0.5f), 1.dp.toPx())
+                for (i in 0 until points.size - 1) {
+                    val x1 = i * stepX
+                    val y1 = size.height * (1f - points[i] / 100f)
+                    val x2 = (i + 1) * stepX
+                    val y2 = size.height * (1f - points[i + 1] / 100f)
+                    drawLine(lineColor, Offset(x1, y1), Offset(x2, y2), strokeWidth = 3.dp.toPx(), cap = StrokeCap.Round)
+                }
+                points.forEachIndexed { idx, pct ->
+                    val x = idx * stepX
+                    val y = size.height * (1f - pct / 100f)
+                    drawCircle(lineColor, radius = 4.dp.toPx(), center = Offset(x, y))
+                }
+            }
+            Spacer(modifier = Modifier.height(AppSpacing.xs))
+            Text(
+                text = "Urutan kronologis: ${points.joinToString(" → ") { "$it%" }}",
+                style = MaterialTheme.typography.labelMedium.tabular(),
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+            )
         }
     }
 }
