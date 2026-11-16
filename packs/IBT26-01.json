@@ -1,0 +1,371 @@
+{
+  "schemaVersion": 1,
+  "exam": "IBT_2026",
+  "edition": "2026.1",
+  "packId": "IBT26-01",
+  "title": "iBT 2026 Paket 1 — Campus Operations & Environmental Science",
+  "theme": "Complete the Words, campus notices, biochar soil trials, email & interview tasks.",
+  "status": "SAMPLE",
+  "blueprintCount": 120,
+  "availableCount": 12,
+  "durationMinutes": 25,
+  "blueprintDurationMinutes": 90,
+  "license": "Original",
+  "provenance": "EnglishPrepAI-Original-2026",
+  "passages": [
+    {
+      "id": "IBT01-P1",
+      "title": "Daily Life Notice: Campus Makerspace Safety Upgrade",
+      "body": "To: Engineering & Design Students\nSubject: Laser Cutter Access Starting Monday, March 9\n\nDuring spring break, technicians installed upgraded exhaust filters in Makerspace Room 104. Effective Monday, students may reserve 45-minute cutting slots online only after passing the updated ten-minute ventilation quiz. Previous semester badges will remain valid for 3D printers, but laser cutter access pauses automatically until the new quiz appears on your student ID profile. Drop-in orientation runs Tuesday and Thursday at 1:00 PM.",
+      "readingOrder": 1
+    },
+    {
+      "id": "IBT01-P2",
+      "title": "Biochar Amendments in Sandy Agricultural Soils",
+      "body": "Farmers cultivating sandy coastal plains face rapid nutrient leaching whenever heavy rain flushes nitrogen past shallow crop roots. Agronomists have increasingly tested biochar—charcoal produced by heating crop husks in low-oxygen kilns—as a porous soil amendment. Under scanning electron microscopes, biochar granules exhibit honeycomb micro-channels that hold both moisture and positively charged ammonium ions. In three-year field trials, plots blended with five percent biochar retained twenty-eight percent more plant-available water during dry spells without altering soil acidity dramatically.",
+      "readingOrder": 2
+    }
+  ],
+  "assets": [
+    {
+      "id": "IBT01-A01",
+      "relativePath": "audio/IBT01-A01.wav",
+      "kind": "AUDIO",
+      "caption": "W: Excuse me, isn't the campus bookstore still on the ground floor of Miller Hall?",
+      "license": "Original",
+      "sha256": "9215e3aad0876123d7b597159d24ec2f06d641de314f11e372b61f7f6fe82eb8",
+      "byteSize": 176684,
+      "durationMs": 5520
+    },
+    {
+      "id": "IBT01-A02",
+      "relativePath": "audio/IBT01-A02.wav",
+      "kind": "AUDIO",
+      "caption": "M: Attention campus riders: because crews are repairing a water main near East Stadium, Green Route buses will skip the stadium loop until 5 PM today. Please board at Oak Commons instead. N: Which stop is temporarily suspended?",
+      "license": "Original",
+      "sha256": "08f8beed040d1515f5e84e811b5ce81831a1151c373069a56bbecac6d3c50fcb",
+      "byteSize": 519404,
+      "durationMs": 16230
+    },
+    {
+      "id": "IBT01-A03",
+      "relativePath": "audio/IBT01-A03.wav",
+      "kind": "AUDIO",
+      "caption": "W: When agricultural husks burn in open air, almost everything turns to fine ash. By restricting oxygen inside a pyrolysis kiln, however, heat drives off volatile gases while locking carbon into a rigid porous sponge. N: What distinguishes low-oxygen kiln heating?",
+      "license": "Original",
+      "sha256": "5c267868f5fa7b30677153f1e6f118af14bcc590bde02bc124f3b73d91dbbbc4",
+      "byteSize": 594924,
+      "durationMs": 18590
+    },
+    {
+      "id": "IBT01-A04",
+      "relativePath": "audio/IBT01-A04.wav",
+      "kind": "AUDIO",
+      "caption": "W: Please submit your revised field report before noon on Friday.",
+      "license": "Original",
+      "sha256": "d111e0fa441251de8e0f3e91539702f52106dd3b131a5ac0a2bdbd984a00ec6f",
+      "byteSize": 135084,
+      "durationMs": 4220
+    }
+  ],
+  "items": [
+    {
+      "id": "IBT26-01-Q01",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Complete the Word: 'Library staff will arch___ fragile 19th-century maps inside humidity-controlled vaults.' (Write the full verb matching 'arch___')",
+      "options": [],
+      "answer": "archive",
+      "acceptedAnswers": [
+        "archive"
+      ],
+      "explanation": "Kata kerja 'archive' melengkapi potongan 'arch___' agar sesuai konteks penyimpanan peta tua di brankas khusus.",
+      "rationaleSource": "IBT-MOD-01",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 1
+    },
+    {
+      "id": "IBT26-01-Q02",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Based on the Makerspace Notice, what must a student with last semester's badge do to use the laser cutter?",
+      "options": [
+        "Pass the updated ten-minute ventilation quiz before booking a slot.",
+        "Re-take the full 3D printer orientation course.",
+        "Request a paper form from the engineering dean.",
+        "Wait until next autumn semester to reserve Room 104."
+      ],
+      "answer": "Pass the updated ten-minute ventilation quiz before booking a slot.",
+      "acceptedAnswers": [
+        "Pass the updated ten-minute ventilation quiz before booking a slot."
+      ],
+      "explanation": "Pengumuman menjelaskan badge lama tetap berlaku untuk printer 3D, namun akses laser cutter tertahan sampai kuis ventilasi baru selesai.",
+      "rationaleSource": "IBT-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT01-P1",
+      "audioAssetId": null,
+      "sortIndex": 2
+    },
+    {
+      "id": "IBT26-01-Q03",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "In Passage 2 ('Biochar Amendments'), why does the author mention honeycomb micro-channels?",
+      "options": [
+        "To explain the physical structure enabling biochar to retain water and nutrients",
+        "To criticize high costs of scanning electron microscopes",
+        "To show biochar dissolves sandy clay within three seasons",
+        "To argue kilns release excessive oxygen into coastal plains"
+      ],
+      "answer": "To explain the physical structure enabling biochar to retain water and nutrients",
+      "acceptedAnswers": [
+        "To explain the physical structure enabling biochar to retain water and nutrients"
+      ],
+      "explanation": "Struktur pori mikro seperti sarang lebah menjelaskan mekanisme fisik daya ikat air dan ion amonium.",
+      "rationaleSource": "IBT-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT01-P2",
+      "audioAssetId": null,
+      "sortIndex": 3
+    },
+    {
+      "id": "IBT26-01-Q04",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen and Choose a Response: Select the most natural reply to the speaker.",
+      "options": [
+        "Actually, the bookstore moved next to the dining commons last week.",
+        "Yes, I read three chapters of economics yesterday.",
+        "No, I rarely carry heavy winter coats in July.",
+        "Thank you, the printer cartridge arrived on Tuesday."
+      ],
+      "answer": "Actually, the bookstore moved next to the dining commons last week.",
+      "acceptedAnswers": [
+        "Actually, the bookstore moved next to the dining commons last week."
+      ],
+      "explanation": "Pembicara menanyakan arah ke toko buku kampus; balasan paling tepat memberi informasi lokasi terbaru toko buku.",
+      "rationaleSource": "IBT-MOD-03",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT01-A01",
+      "sortIndex": 4
+    },
+    {
+      "id": "IBT26-01-Q05",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to the campus shuttle announcement. Which stop is temporarily suspended today?",
+      "options": [
+        "The East Stadium loop stop until 5 PM",
+        "The Main Library gate all weekend",
+        "The Science Quad terminal next Monday",
+        "All evening routes after 9 PM"
+      ],
+      "answer": "The East Stadium loop stop until 5 PM",
+      "acceptedAnswers": [
+        "The East Stadium loop stop until 5 PM"
+      ],
+      "explanation": "Pengumuman menyebut perhentian East Stadium ditutup hingga pukul 17.00 akibat perbaikan pipa air.",
+      "rationaleSource": "IBT-MOD-03",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT01-A02",
+      "sortIndex": 5
+    },
+    {
+      "id": "IBT26-01-Q06",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to the short environmental science talk. What key advantage of biochar kilns is emphasized?",
+      "options": [
+        "Heating husks without abundant oxygen preserves porous carbon structures instead of turning biomass purely into ash.",
+        "Open bonfires produce stronger soil granules than sealed kilns.",
+        "Biochar eliminates the need for rainfall across desert regions.",
+        "Crop husks must be soaked in seawater before heating."
+      ],
+      "answer": "Heating husks without abundant oxygen preserves porous carbon structures instead of turning biomass purely into ash.",
+      "acceptedAnswers": [
+        "Heating husks without abundant oxygen preserves porous carbon structures instead of turning biomass purely into ash."
+      ],
+      "explanation": "Pembicara mengontraskan pirolisis rendah oksigen (mempertahankan pori karbon) dengan pembakaran terbuka yang menyisakan abu.",
+      "rationaleSource": "IBT-MOD-04",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT01-A03",
+      "sortIndex": 6
+    },
+    {
+      "id": "IBT26-01-Q07",
+      "section": "WRITING",
+      "taskType": "SENTENCE_BUILD",
+      "prompt": "Build a grammatical question from the word tiles: 'Could you tell me ___?'",
+      "options": [
+        "where",
+        "the",
+        "chemistry",
+        "tutoring",
+        "center",
+        "moved"
+      ],
+      "answer": "where|the|chemistry|tutoring|center|moved",
+      "acceptedAnswers": [
+        "where|the|chemistry|tutoring|center|moved"
+      ],
+      "explanation": "Embedded question sesudah 'Could you tell me' mengikuti pola Subjek + Kata Kerja ('where the chemistry tutoring center moved').",
+      "rationaleSource": "IBT-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 7
+    },
+    {
+      "id": "IBT26-01-Q08",
+      "section": "WRITING",
+      "taskType": "WRITING_RESPONSE",
+      "prompt": "Write an Email (60–100 words): You missed Friday's mandatory lab safety orientation due to a documented clinic visit. Email your lab supervisor (Dr. Rivera) to apologize briefly, explain the situation, and request one alternative completion option before next week's lab.",
+      "options": [],
+      "answer": "",
+      "acceptedAnswers": [],
+      "explanation": "Email iBT 2026 dinilai dari kejelasan tujuan, nada profesional, pemenuhan ketiga poin prompt, dan ketepatan tata bahasa.",
+      "rationaleSource": "IBT-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "minWords": 50,
+      "recommendedWords": 80,
+      "rubricCriteria": [
+        "Clear greeting & purpose",
+        "All 3 prompt points covered",
+        "Polite academic tone",
+        "Clean sentence mechanics"
+      ],
+      "sortIndex": 8
+    },
+    {
+      "id": "IBT26-01-Q09",
+      "section": "WRITING",
+      "taskType": "WRITING_RESPONSE",
+      "prompt": "Write for an Academic Discussion (100–140 words): Professor Kim asks: 'Should universities require all undergraduate students, regardless of major, to complete at least one environmental literacy course?' Maya argues yes because climate decisions affect every profession; Liam argues electives should remain flexible so technical majors graduate on time. State your view and engage their points.",
+      "options": [],
+      "answer": "",
+      "acceptedAnswers": [],
+      "explanation": "Diskusi akademik menuntut posisi tegas, respons langsung ke poin Maya/Liam, alasan mendalam, dan contoh spesifik.",
+      "rationaleSource": "IBT-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "minWords": 95,
+      "recommendedWords": 120,
+      "rubricCriteria": [
+        "Clear stance",
+        "Engages Maya/Liam",
+        "Original reasoning + example",
+        "Cohesive academic prose"
+      ],
+      "sortIndex": 9
+    },
+    {
+      "id": "IBT26-01-Q10",
+      "section": "SPEAKING",
+      "taskType": "LISTEN_REPEAT",
+      "prompt": "Listen and Repeat: Play the audio prompt once, then record yourself repeating the exact sentence clearly with natural phrasing.",
+      "options": [],
+      "answer": "Please submit your revised field report before noon on Friday.",
+      "acceptedAnswers": [
+        "Please submit your revised field report before noon on Friday."
+      ],
+      "explanation": "Perhatikan kejelasan konsonan akhir ('submit', 'revised', 'report') dan jeda alami sebelum 'before noon'.",
+      "rationaleSource": "IBT-MOD-06",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT01-A04",
+      "referenceText": "Please submit your revised field report before noon on Friday.",
+      "sortIndex": 10
+    },
+    {
+      "id": "IBT26-01-Q11",
+      "section": "SPEAKING",
+      "taskType": "SPEAKING_RESPONSE",
+      "prompt": "Take an Interview (Question 1 · ~45s): 'When learning a new technical skill, do you prefer following structured video demonstrations or experimenting directly with hands-on projects? Give one reason and an example.'",
+      "options": [],
+      "answer": "",
+      "acceptedAnswers": [],
+      "explanation": "Pakai pola Direct Answer -> Reason -> Concrete Example; jaga tempo stabil tanpa jeda panjang.",
+      "rationaleSource": "IBT-MOD-06",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "prepSeconds": 0,
+      "speakSeconds": 45,
+      "rubricCriteria": [
+        "Direct opinion",
+        "Supporting reason + example",
+        "Intelligibility & pacing",
+        "Grammatical accuracy"
+      ],
+      "sortIndex": 11
+    },
+    {
+      "id": "IBT26-01-Q12",
+      "section": "SPEAKING",
+      "taskType": "SPEAKING_RESPONSE",
+      "prompt": "Take an Interview (Question 2 · ~45s): 'Some student clubs restrict meetings to members in a single major, while others stay open to everyone. Which policy benefits campus life more, and why?'",
+      "options": [],
+      "answer": "",
+      "acceptedAnswers": [],
+      "explanation": "Bandingkan kedua sisi secara singkat lalu tekankan satu manfaat utama dengan contoh kegiatan nyata.",
+      "rationaleSource": "IBT-MOD-06",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "prepSeconds": 0,
+      "speakSeconds": 45,
+      "rubricCriteria": [
+        "Clear comparison",
+        "Coherent elaboration",
+        "Natural lexical range",
+        "Fluency"
+      ],
+      "sortIndex": 12
+    }
+  ],
+  "checksum": "7cc84418600ec81d3b26ae01710610c6a108139f0987389f441919c9c6fd9f98"
+}

@@ -1,0 +1,369 @@
+{
+  "schemaVersion": 1,
+  "exam": "IELTS_ACADEMIC",
+  "edition": "2026.1",
+  "packId": "IELTS-A-03",
+  "title": "IELTS Paket 3 — Materials Engineering, Agriculture & Education",
+  "theme": "Cross-laminated timber, process diagrams, sequence ordering, and matching researchers.",
+  "status": "SAMPLE",
+  "blueprintCount": 85,
+  "availableCount": 12,
+  "durationMinutes": 35,
+  "blueprintDurationMinutes": 165,
+  "license": "Original",
+  "provenance": "EnglishPrepAI-Original-2026",
+  "passages": [
+    {
+      "id": "IELTS03-P1",
+      "title": "Cross-Laminated Timber in Mid-Rise Architecture",
+      "body": "Steel and concrete frames have dominated multi-story buildings since 1900, yet cement production alone accounts for roughly eight percent of global carbon emissions. Cross-laminated timber (CLT) offers an engineered alternative: kiln-dried spruce or pine boards are stacked in alternating ninety-degree grain layers and bonded under hydraulic press into rigid structural panels. Dr. Helen Lindqvist notes that perpendicular layering prevents warping along seasonal humidity swings, while Dr. Mateo Silva found prefabricated CLT walls cut on-site crane assembly time by forty percent compared with poured concrete. Critics initially questioned fire safety, yet thick charred outer wood layers actually insulate inner structural cores slowly enough to meet two-hour commercial fire ratings.",
+      "readingOrder": 1
+    }
+  ],
+  "assets": [
+    {
+      "id": "IELTS03-A01",
+      "relativePath": "audio/IELTS03-A01.wav",
+      "kind": "AUDIO",
+      "caption": "M: Are we still gathering at Gate 2 before the farm shuttle arrives? W: Wait—fertilizer trucks are blocking Gate 2 tomorrow, so meet outside Gate 4 instead at 8:15.",
+      "license": "Original",
+      "sha256": "4c71596a844c9916c4a8316c9ebdc9d1d5d42e08d81e80019fa30955643a4319",
+      "byteSize": 366764,
+      "durationMs": 11460
+    },
+    {
+      "id": "IELTS03-A02",
+      "relativePath": "audio/IELTS03-A02.wav",
+      "kind": "AUDIO",
+      "caption": "W: Our presentation runs too long if we read those five spreadsheets aloud. M: Agreed—let's swap the dense tables for a clean field diagram and trim the history overview down to ninety seconds.",
+      "license": "Original",
+      "sha256": "5d4a0e61f346f48fba678efe08d75511cfb094ea7ca201eef3aa48124dd86783",
+      "byteSize": 387244,
+      "durationMs": 12100
+    },
+    {
+      "id": "IELTS03-A03",
+      "relativePath": "audio/IELTS03-A03.wav",
+      "kind": "AUDIO",
+      "caption": "W: Instead of relying solely on synthetic fertilizer, rotating clover or vetch between grain harvests harnesses Rhizobium bacteria in root nodules to convert atmospheric nitrogen directly into soil nitrates.",
+      "license": "Original",
+      "sha256": "9ad170dca1d47059dd22e86b3f01347b40088bfdc1f5a9354110e390def92f30",
+      "byteSize": 415564,
+      "durationMs": 12985
+    }
+  ],
+  "items": [
+    {
+      "id": "IELTS-A-03-Q01",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 1 (ONE WORD AND/OR A NUMBER): 'Agronomy Field Visit — Bring waterproof boots and meet outside Gate ___ at 8:15 AM.'",
+      "options": [],
+      "answer": "4",
+      "acceptedAnswers": [
+        "4",
+        "four"
+      ],
+      "explanation": "Koordinator awalnya menyebut Gate 2, lalu meralat karena truk kirim pupuk di Gate 2 -> 'meet at Gate 4 instead.'",
+      "rationaleSource": "IELTS-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS03-A01",
+      "maxWords": 1,
+      "sortIndex": 1
+    },
+    {
+      "id": "IELTS-A-03-Q02",
+      "section": "LISTENING",
+      "taskType": "CHOICE_MULTI",
+      "prompt": "Listening Part 3 (Choose TWO options): Which TWO changes will the seminar students make to their drip-irrigation presentation?",
+      "options": [
+        "Replace dense data tables with a clear field diagram",
+        "Add a twenty-minute live soil moisture demo",
+        "Shorten the historical introduction to 90 seconds",
+        "Remove cost comparisons between pump models"
+      ],
+      "answer": "Replace dense data tables with a clear field diagram|Shorten the historical introduction to 90 seconds",
+      "acceptedAnswers": [
+        "Replace dense data tables with a clear field diagram|Shorten the historical introduction to 90 seconds"
+      ],
+      "explanation": "Keduanya sepakat menyederhanakan tabel menjadi diagram dan memangkas pengantar sejarah menjadi 90 detik.",
+      "rationaleSource": "IELTS-MOD-01",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS03-A02",
+      "sortIndex": 2
+    },
+    {
+      "id": "IELTS-A-03-Q03",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 4 (ONE WORD ONLY): 'Legume cover crops host root bacteria that convert atmospheric nitrogen into usable ___.'",
+      "options": [],
+      "answer": "nitrates",
+      "acceptedAnswers": [
+        "nitrates",
+        "nitrate"
+      ],
+      "explanation": "Kuliah menyebut bakteri pengikat nitrogen mengubah gas nitrogen atmosfer menjadi 'nitrates' yang siap diserap tanaman.",
+      "rationaleSource": "IELTS-MOD-01",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS03-A03",
+      "maxWords": 1,
+      "sortIndex": 3
+    },
+    {
+      "id": "IELTS-A-03-Q04",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 1 ('Cross-Laminated Timber'): 'Cement manufacturing contributes nearly one-tenth of worldwide carbon emissions.' -> TRUE, FALSE, or NOT GIVEN?",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": "TRUE",
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "explanation": "'Roughly eight percent' sesuai/mendukung klaim 'nearly one-tenth' (sekitar 8–10%).",
+      "rationaleSource": "IELTS-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS03-P1",
+      "audioAssetId": null,
+      "sortIndex": 4
+    },
+    {
+      "id": "IELTS-A-03-Q05",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 1: 'Thin outer layers of CLT ignite uncontrollably, causing inner wood beams to fail within minutes.' -> TRUE, FALSE, or NOT GIVEN?",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": "FALSE",
+      "acceptedAnswers": [
+        "FALSE"
+      ],
+      "explanation": "Kalimat terakhir menegaskan lapisan arang luar justru mengisolasi inti struktural hingga memenuhi standar tahan api 2 jam.",
+      "rationaleSource": "IELTS-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS03-P1",
+      "audioAssetId": null,
+      "sortIndex": 5
+    },
+    {
+      "id": "IELTS-A-03-Q06",
+      "section": "READING",
+      "taskType": "MATCHING",
+      "prompt": "Match each researcher in Passage 1 to their specific finding:",
+      "options": [
+        "Dr. Helen Lindqvist :: Alternating grain direction limits seasonal warping",
+        "Dr. Mateo Silva :: Factory-built CLT panels speed up site assembly"
+      ],
+      "answer": "Dr. Helen Lindqvist::Alternating grain direction limits seasonal warping|Dr. Mateo Silva::Factory-built CLT panels speed up site assembly",
+      "acceptedAnswers": [
+        "Dr. Helen Lindqvist::Alternating grain direction limits seasonal warping|Dr. Mateo Silva::Factory-built CLT panels speed up site assembly"
+      ],
+      "explanation": "Lindqvist meneliti ketahanan lengkung akibat arah serat tegak lurus; Silva mengukur penghematan 40% waktu derek di lokasi.",
+      "rationaleSource": "IELTS-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS03-P1",
+      "audioAssetId": null,
+      "pairs": [
+        {
+          "left": "Dr. Helen Lindqvist",
+          "rightOptions": [
+            "Alternating grain direction limits seasonal warping",
+            "Factory-built CLT panels speed up site assembly"
+          ]
+        },
+        {
+          "left": "Dr. Mateo Silva",
+          "rightOptions": [
+            "Alternating grain direction limits seasonal warping",
+            "Factory-built CLT panels speed up site assembly"
+          ]
+        }
+      ],
+      "sortIndex": 6
+    },
+    {
+      "id": "IELTS-A-03-Q07",
+      "section": "READING",
+      "taskType": "REORDER",
+      "prompt": "Order the four CLT manufacturing stages described in Passage 1 (1 = first, 4 = final):",
+      "options": [
+        "Kiln-dry spruce or pine boards",
+        "Stack layers at ninety-degree angles",
+        "Bond panels under hydraulic press",
+        "Lift prefabricated panels on site by crane"
+      ],
+      "answer": "Kiln-dry spruce or pine boards|Stack layers at ninety-degree angles|Bond panels under hydraulic press|Lift prefabricated panels on site by crane",
+      "acceptedAnswers": [
+        "Kiln-dry spruce or pine boards|Stack layers at ninety-degree angles|Bond panels under hydraulic press|Lift prefabricated panels on site by crane"
+      ],
+      "explanation": "Tahapan berurutan dari pengeringan kayu -> penyusunan serat silang -> pengepresan hidrolik -> pemasangan derek di lapangan.",
+      "rationaleSource": "IELTS-MOD-03",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS03-P1",
+      "audioAssetId": null,
+      "sortIndex": 7
+    },
+    {
+      "id": "IELTS-A-03-Q08",
+      "section": "WRITING",
+      "taskType": "WRITING_RESPONSE",
+      "prompt": "IELTS Academic Writing Task 1 Process Description (>=150 words, 20 min): Describe the closed-loop glass bottle recycling process shown in these stages:\n1. Household sorting -> collection trucks -> washing & color separation\n2. Crushing into cullet -> magnetic & optical impurity removal\n3. Melting in furnace (1,500°C) with silica sand -> molding new bottles\n4. Cooling inspection -> refilling at bottling plant.\nWrite a structured process report with an Overview and cohesive passive steps.",
+      "options": [],
+      "answer": "",
+      "acceptedAnswers": [],
+      "explanation": "Gunakan kata sambung urutan (Initially, Subsequently, Once melted) dan bentuk pasif tepat untuk tiap tahap.",
+      "rationaleSource": "IELTS-MOD-04",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "minWords": 150,
+      "recommendedWords": 170,
+      "rubricCriteria": [
+        "Clear Overview of circular flow",
+        "All stages covered accurately",
+        "Passive voice & sequencers",
+        "Lexical accuracy"
+      ],
+      "sortIndex": 8
+    },
+    {
+      "id": "IELTS-A-03-Q09",
+      "section": "WRITING",
+      "taskType": "WRITING_RESPONSE",
+      "prompt": "IELTS Academic Writing Task 2 (>=250 words, 40 min): Practical vocational subjects such as carpentry, coding, and sustainable agriculture are increasingly sidelined in secondary schools in favor of exam-focused theory. What are the causes of this trend, and what effects might it have on graduates?",
+      "options": [],
+      "answer": "",
+      "acceptedAnswers": [],
+      "explanation": "Ini adalah soal Two-Part (Causes & Effects): pastikan kedua bagian terjawab seimbang dengan paragraf terpisah.",
+      "rationaleSource": "IELTS-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "minWords": 250,
+      "recommendedWords": 275,
+      "rubricCriteria": [
+        "Answers Causes AND Effects",
+        "Well-supported examples",
+        "Coherence & paragraphing",
+        "Grammatical range"
+      ],
+      "sortIndex": 9
+    },
+    {
+      "id": "IELTS-A-03-Q10",
+      "section": "SPEAKING",
+      "taskType": "SPEAKING_RESPONSE",
+      "prompt": "IELTS Speaking Part 1 (~30–45s): 'Did you learn any practical hands-on skills—like cooking, gardening, or repairing items—when you were younger? Which skill do you find most useful now?'",
+      "options": [],
+      "answer": "",
+      "acceptedAnswers": [],
+      "explanation": "Jawab ringkas dengan pengalaman spesifik dan manfaat nyatanya saat ini.",
+      "rationaleSource": "IELTS-MOD-06",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "prepSeconds": 0,
+      "speakSeconds": 45,
+      "rubricCriteria": [
+        "Fluency",
+        "Natural past/present tenses",
+        "Vocabulary",
+        "Pronunciation"
+      ],
+      "sortIndex": 10
+    },
+    {
+      "id": "IELTS-A-03-Q11",
+      "section": "SPEAKING",
+      "taskType": "SPEAKING_RESPONSE",
+      "prompt": "IELTS Speaking Part 2 Cue Card (1 min prep · 2 min speak): Describe an everyday object made from wood, clay, or recycled material that you admire.\nYou should say:\n- what the object is\n- where you saw or received it\n- how it was made\n- and explain why you appreciate its craftsmanship or design.",
+      "options": [],
+      "answer": "",
+      "acceptedAnswers": [],
+      "explanation": "Fokus pada tekstur, cara pembuatan, dan nilai fungsional/emosional benda tersebut.",
+      "rationaleSource": "IELTS-MOD-06",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "prepSeconds": 60,
+      "speakSeconds": 120,
+      "rubricCriteria": [
+        "Coherent narrative",
+        "Descriptive vocabulary",
+        "Fluency",
+        "Grammar control"
+      ],
+      "sortIndex": 11
+    },
+    {
+      "id": "IELTS-A-03-Q12",
+      "section": "SPEAKING",
+      "taskType": "SPEAKING_RESPONSE",
+      "prompt": "IELTS Speaking Part 3 (~60s): 'Why do some consumers still prefer disposable convenience items even when durable repairable goods save money over time?'",
+      "options": [],
+      "answer": "",
+      "acceptedAnswers": [],
+      "explanation": "Analisis faktor biaya awal, keterbatasan suku cadang, dan norma pemasaran cepat.",
+      "rationaleSource": "IELTS-MOD-06",
+      "difficulty": "C1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "prepSeconds": 0,
+      "speakSeconds": 60,
+      "rubricCriteria": [
+        "Abstract reasoning",
+        "Cause-effect links",
+        "Lexical precision",
+        "Fluency"
+      ],
+      "sortIndex": 12
+    }
+  ],
+  "checksum": "d31c3a8d6a19a3477c72434360261bbaba8c729812a3eab05fbeaa8d2eb3407d"
+}

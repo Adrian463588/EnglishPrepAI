@@ -1,0 +1,880 @@
+package com.englishprep.ai.ui.feature.exam
+
+import android.Manifest
+import android.content.pm.PackageManager
+import androidx.activity.compose.rememberLauncherForActivityResult
+import androidx.activity.result.contract.ActivityResultContracts
+import androidx.compose.animation.AnimatedContent
+import androidx.compose.animation.ContentTransform
+import androidx.compose.animation.EnterTransition
+import androidx.compose.animation.ExitTransition
+import androidx.compose.animation.animateColorAsState
+import androidx.compose.animation.core.tween
+import androidx.compose.animation.fadeIn
+import androidx.compose.animation.fadeOut
+import androidx.compose.animation.slideInHorizontally
+import androidx.compose.animation.slideOutHorizontally
+import androidx.compose.animation.togetherWith
+import androidx.compose.foundation.BorderStroke
+import androidx.compose.foundation.clickable
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.ExperimentalLayoutApi
+import androidx.compose.foundation.layout.FlowRow
+import androidx.compose.foundation.layout.PaddingValues
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.defaultMinSize
+import androidx.compose.foundation.layout.fillMaxHeight
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.imePadding
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.filled.ArrowBack
+import androidx.compose.material.icons.automirrored.filled.MenuBook
+import androidx.compose.material.icons.filled.Flag
+import androidx.compose.material.icons.filled.GridView
+import androidx.compose.material.icons.filled.Mic
+import androidx.compose.material.icons.filled.OutlinedFlag
+import androidx.compose.material.icons.filled.PlayArrow
+import androidx.compose.material.icons.filled.Stop
+import androidx.compose.material3.AlertDialog
+import androidx.compose.material3.Checkbox
+import androidx.compose.material3.CircularProgressIndicator
+import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.FilterChip
+import androidx.compose.material3.HorizontalDivider
+import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
+import androidx.compose.material3.LinearProgressIndicator
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.ModalBottomSheet
+import androidx.compose.material3.OutlinedButton
+import androidx.compose.material3.OutlinedTextField
+import androidx.compose.material3.RadioButton
+import androidx.compose.material3.Scaffold
+import androidx.compose.material3.Surface
+import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
+import androidx.compose.material3.TopAppBar
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.hapticfeedback.HapticFeedbackType
+import androidx.compose.ui.platform.LocalConfiguration
+import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.platform.LocalHapticFeedback
+import androidx.compose.ui.semantics.Role
+import androidx.compose.ui.semantics.heading
+import androidx.compose.ui.semantics.semantics
+import androidx.compose.ui.unit.dp
+import androidx.core.content.ContextCompat
+import androidx.hilt.navigation.compose.hiltViewModel
+import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import com.englishprep.ai.domain.engines.SttModelState
+import com.englishprep.ai.domain.grading.QuizGradingEngine
+import com.englishprep.ai.domain.models.ExamMode
+import com.englishprep.ai.domain.models.GradingOutcome
+import com.englishprep.ai.domain.models.PassageItem
+import com.englishprep.ai.domain.models.QuestionItem
+import com.englishprep.ai.domain.models.TaskType
+import com.englishprep.ai.ui.components.AppButton
+import com.englishprep.ai.ui.components.AudioPlayerBar
+import com.englishprep.ai.ui.components.InlineFeedback
+import com.englishprep.ai.ui.components.QuestionCard
+import com.englishprep.ai.ui.components.SectionHeading
+import com.englishprep.ai.ui.components.formatTimeMs
+import com.englishprep.ai.ui.theme.AppSpacing
+import com.englishprep.ai.ui.theme.LocalSemanticStatusColors
+import com.englishprep.ai.ui.theme.MotionTokens
+
+@Composable
+fun ExamRoute(
+    onBack: () -> Unit,
+    onCompleted: (String) -> Unit,
+    viewModel: ExamViewModel = hiltViewModel(),
+) {
+    val state by viewModel.uiState.collectAsStateWithLifecycle()
+    ExamScreen(
+        state = state,
+        onBack = onBack,
+        onSelectAnswer = viewModel::selectAnswer,
+        onToggleMulti = viewModel::toggleMultiChoice,
+        onSetMatching = viewModel::setMatchingPair,
+        onAppendSequence = viewModel::appendSequenceItem,
+        onRemoveLastSequence = viewModel::removeLastSequenceItem,
+        onToggleFlag = viewModel::toggleFlag,
+        onCheckPractice = viewModel::checkCurrentInPractice,
+        onEvaluateSubjective = viewModel::evaluateSubjectiveDraft,
+        onStartPrepCountdown = viewModel::startPrepCountdown,
+        onStartRecording = viewModel::startSpeakingRecording,
+        onStopRecording = viewModel::stopSpeakingRecordingAndTranscribe,
+        onPlayOwnRecording = viewModel::playOwnRecording,
+        onSpeakTts = viewModel::speakPromptViaTts,
+        onNext = viewModel::nextQuestion,
+        onPrev = viewModel::prevQuestion,
+        onGoTo = viewModel::goToQuestion,
+        onSetNavigator = viewModel::setNavigatorVisible,
+        onSetPassageSheet = viewModel::setPassageSheetVisible,
+        onToggleAudio = viewModel::toggleAudio,
+        onReplayAudio = viewModel::replayAudio,
+        onSeekAudio = viewModel::seekAudio,
+        onSetAudioSpeed = viewModel::setAudioSpeed,
+        onSubmit = { viewModel.submitExam(onCompleted) },
+    )
+}
+
+@OptIn(ExperimentalMaterial3Api::class, ExperimentalLayoutApi::class)
+@Composable
+fun ExamScreen(
+    state: ExamUiState,
+    onBack: () -> Unit,
+    onSelectAnswer: (String, String) -> Unit,
+    onToggleMulti: (String, String) -> Unit,
+    onSetMatching: (String, String, String) -> Unit,
+    onAppendSequence: (String, String) -> Unit,
+    onRemoveLastSequence: (String) -> Unit,
+    onToggleFlag: (String) -> Unit,
+    onCheckPractice: () -> Unit,
+    onEvaluateSubjective: () -> Unit,
+    onStartPrepCountdown: (Int) -> Unit,
+    onStartRecording: () -> Boolean,
+    onStopRecording: () -> Unit,
+    onPlayOwnRecording: (String) -> Unit,
+    onSpeakTts: (String) -> Unit,
+    onNext: () -> Unit,
+    onPrev: () -> Unit,
+    onGoTo: (Int) -> Unit,
+    onSetNavigator: (Boolean) -> Unit,
+    onSetPassageSheet: (Boolean) -> Unit,
+    onToggleAudio: () -> Unit,
+    onReplayAudio: () -> Unit,
+    onSeekAudio: (Long) -> Unit,
+    onSetAudioSpeed: (Float) -> Unit,
+    onSubmit: () -> Unit,
+    modifier: Modifier = Modifier,
+) {
+    val context = LocalContext.current
+    var showQuitDialog by remember { mutableStateOf(false) }
+    var micDeniedNote by remember { mutableStateOf(false) }
+    val micPermissionLauncher = rememberLauncherForActivityResult(
+        contract = ActivityResultContracts.RequestPermission(),
+    ) { granted ->
+        if (granted) {
+            micDeniedNote = false
+            onStartRecording()
+        } else {
+            micDeniedNote = true
+        }
+    }
+
+    val isExpanded = LocalConfiguration.current.screenWidthDp >= 840
+    val q = state.currentQuestion
+
+    Scaffold(
+        topBar = {
+            TopAppBar(
+                title = {
+                    Column {
+                        val countLabel = if (state.questions.isNotEmpty()) {
+                            "Soal ${state.currentIndex + 1}/${state.questions.size}"
+                        } else {
+                            "Ujian"
+                        }
+                        val timerText = when {
+                            state.remainingMs != null -> "Sisa ${formatTimeMs(state.remainingMs)}"
+                            else -> formatTimeMs(state.elapsedMs)
+                        }
+                        Text(
+                            text = "$countLabel • $timerText",
+                            style = MaterialTheme.typography.titleMedium,
+                        )
+                        if (state.savedBadgeText.isNotEmpty()) {
+                            Text(
+                                text = "${state.mode.name} • ${state.savedBadgeText}",
+                                style = MaterialTheme.typography.labelSmall,
+                                color = MaterialTheme.colorScheme.onSurfaceVariant,
+                            )
+                        }
+                    }
+                },
+                navigationIcon = {
+                    IconButton(
+                        onClick = { showQuitDialog = true },
+                        modifier = Modifier.defaultMinSize(minWidth = AppSpacing.minTouchTarget, minHeight = AppSpacing.minTouchTarget),
+                    ) {
+                        Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = "Keluar ujian")
+                    }
+                },
+                actions = {
+                    if (q != null) {
+                        val isFlagged = q.id in state.flaggedIds
+                        IconButton(
+                            onClick = { onToggleFlag(q.id) },
+                            modifier = Modifier.defaultMinSize(minWidth = AppSpacing.minTouchTarget, minHeight = AppSpacing.minTouchTarget),
+                        ) {
+                            Icon(
+                                imageVector = if (isFlagged) Icons.Default.Flag else Icons.Default.OutlinedFlag,
+                                contentDescription = if (isFlagged) "Hapus tanda ragu" else "Tandai soal",
+                                tint = if (isFlagged) MaterialTheme.colorScheme.tertiary else MaterialTheme.colorScheme.onSurfaceVariant,
+                            )
+                        }
+                    }
+                    IconButton(
+                        onClick = { onSetNavigator(true) },
+                        modifier = Modifier.defaultMinSize(minWidth = AppSpacing.minTouchTarget, minHeight = AppSpacing.minTouchTarget),
+                    ) {
+                        Icon(Icons.Default.GridView, contentDescription = "Daftar nomor soal")
+                    }
+                },
+            )
+        },
+        bottomBar = {
+            if (q != null) {
+                Surface(tonalElevation = 2.dp, modifier = Modifier.fillMaxWidth().imePadding()) {
+                    Column {
+                        HorizontalDivider()
+                        Row(
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .padding(horizontal = AppSpacing.md, vertical = AppSpacing.sm),
+                            horizontalArrangement = Arrangement.spacedBy(AppSpacing.sm),
+                            verticalAlignment = Alignment.CenterVertically,
+                        ) {
+                            OutlinedButton(
+                                onClick = onPrev,
+                                enabled = state.currentIndex > 0,
+                                modifier = Modifier.defaultMinSize(minHeight = AppSpacing.minTouchTarget),
+                            ) {
+                                Text("Kembali")
+                            }
+                            if (state.mode == ExamMode.PRACTICE && q.taskType !in listOf(TaskType.WRITING_RESPONSE, TaskType.SPEAKING_RESPONSE)) {
+                                OutlinedButton(
+                                    onClick = onCheckPractice,
+                                    enabled = state.answers[q.id]?.isNotBlank() == true,
+                                    modifier = Modifier.defaultMinSize(minHeight = AppSpacing.minTouchTarget),
+                                ) {
+                                    Text("Cek")
+                                }
+                            }
+                            Spacer(modifier = Modifier.weight(1f))
+                            val isLast = state.currentIndex >= state.questions.lastIndex
+                            AppButton(
+                                text = if (isLast) "Kumpulkan" else "Lanjut",
+                                hapticOnTap = isLast,
+                                onClick = { if (isLast) onSubmit() else onNext() },
+                            )
+                        }
+                    }
+                }
+            }
+        },
+        modifier = modifier,
+    ) { padding ->
+        if (state.isLoading || q == null) {
+            Box(modifier = Modifier.fillMaxSize().padding(padding), contentAlignment = Alignment.Center) {
+                if (state.isLoading) {
+                    CircularProgressIndicator()
+                } else {
+                    Column(horizontalAlignment = Alignment.CenterHorizontally, modifier = Modifier.padding(AppSpacing.lg)) {
+                        Text(text = state.errorMessage ?: "Tidak ada soal tersedia.")
+                        Spacer(modifier = Modifier.height(AppSpacing.md))
+                        AppButton(text = "Kembali", onClick = onBack)
+                    }
+                }
+            }
+            return@Scaffold
+        }
+
+        val reduceMotion = LocalSemanticStatusColors.current.reduceMotion
+        AnimatedContent(
+            targetState = state.currentIndex,
+            transitionSpec = {
+                if (reduceMotion) {
+                    ContentTransform(EnterTransition.None, ExitTransition.None)
+                } else {
+                    val ms = MotionTokens.ScreenTransitionMs
+                    val forward = targetState >= initialState
+                    (fadeIn(tween(ms)) + slideInHorizontally(tween(ms)) { if (forward) it / 8 else -it / 8 }) togetherWith
+                        (fadeOut(tween(ms / 2)) + slideOutHorizontally(tween(ms)) { if (forward) -it / 8 else it / 8 })
+                }
+            },
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(padding),
+            label = "examQuestionTransition",
+        ) { idx ->
+            val displayedQ = state.questions.getOrNull(idx) ?: q
+            val displayedPassage = displayedQ.passageId?.let { state.passages[it] }
+            if (isExpanded && displayedPassage != null) {
+                Row(modifier = Modifier.fillMaxSize()) {
+                    PassagePane(
+                        passage = displayedPassage,
+                        modifier = Modifier
+                            .weight(0.45f)
+                            .fillMaxHeight()
+                            .padding(AppSpacing.md),
+                    )
+                    QuestionBodyPane(
+                        state = state,
+                        q = displayedQ,
+                        currentPassage = null,
+                        micDeniedNote = micDeniedNote,
+                        onOpenPassageSheet = {},
+                        onSelectAnswer = onSelectAnswer,
+                        onToggleMulti = onToggleMulti,
+                        onSetMatching = onSetMatching,
+                        onAppendSequence = onAppendSequence,
+                        onRemoveLastSequence = onRemoveLastSequence,
+                        onEvaluateSubjective = onEvaluateSubjective,
+                        onStartPrepCountdown = onStartPrepCountdown,
+                        onRequestMicAndRecord = {
+                            val ok = ContextCompat.checkSelfPermission(context, Manifest.permission.RECORD_AUDIO) ==
+                                PackageManager.PERMISSION_GRANTED
+                            if (ok) onStartRecording() else micPermissionLauncher.launch(Manifest.permission.RECORD_AUDIO)
+                        },
+                        onStopRecording = onStopRecording,
+                        onPlayOwnRecording = onPlayOwnRecording,
+                        onSpeakTts = onSpeakTts,
+                        onToggleAudio = onToggleAudio,
+                        onReplayAudio = onReplayAudio,
+                        onSeekAudio = onSeekAudio,
+                        onSetAudioSpeed = onSetAudioSpeed,
+                        modifier = Modifier.weight(0.55f).fillMaxHeight(),
+                    )
+                }
+            } else {
+                QuestionBodyPane(
+                    state = state,
+                    q = displayedQ,
+                    currentPassage = displayedPassage,
+                    micDeniedNote = micDeniedNote,
+                    onOpenPassageSheet = { onSetPassageSheet(true) },
+                    onSelectAnswer = onSelectAnswer,
+                    onToggleMulti = onToggleMulti,
+                    onSetMatching = onSetMatching,
+                    onAppendSequence = onAppendSequence,
+                    onRemoveLastSequence = onRemoveLastSequence,
+                    onEvaluateSubjective = onEvaluateSubjective,
+                    onStartPrepCountdown = onStartPrepCountdown,
+                    onRequestMicAndRecord = {
+                        val ok = ContextCompat.checkSelfPermission(context, Manifest.permission.RECORD_AUDIO) ==
+                            PackageManager.PERMISSION_GRANTED
+                        if (ok) onStartRecording() else micPermissionLauncher.launch(Manifest.permission.RECORD_AUDIO)
+                    },
+                    onStopRecording = onStopRecording,
+                    onPlayOwnRecording = onPlayOwnRecording,
+                    onSpeakTts = onSpeakTts,
+                    onToggleAudio = onToggleAudio,
+                    onReplayAudio = onReplayAudio,
+                    onSeekAudio = onSeekAudio,
+                    onSetAudioSpeed = onSetAudioSpeed,
+                    modifier = Modifier.fillMaxSize(),
+                )
+            }
+        }
+    }
+
+    if (showQuitDialog) {
+        AlertDialog(
+            onDismissRequest = { showQuitDialog = false },
+            title = { Text("Keluar dari sesi?") },
+            text = { Text("Jawaban yang sudah dipilih tersimpan otomatis di perangkat dan dapat dilanjutkan kembali.") },
+            confirmButton = {
+                TextButton(onClick = {
+                    showQuitDialog = false
+                    onBack()
+                }) { Text("Keluar") }
+            },
+            dismissButton = {
+                TextButton(onClick = { showQuitDialog = false }) { Text("Batal") }
+            },
+        )
+    }
+
+    if (state.showNavigator) {
+        ModalBottomSheet(onDismissRequest = { onSetNavigator(false) }) {
+            Column(modifier = Modifier.padding(AppSpacing.md)) {
+                SectionHeading(text = "Navigasi Soal")
+                Spacer(modifier = Modifier.height(AppSpacing.md))
+                FlowRow(
+                    horizontalArrangement = Arrangement.spacedBy(AppSpacing.sm),
+                    verticalArrangement = Arrangement.spacedBy(AppSpacing.sm),
+                ) {
+                    state.questions.forEachIndexed { idx, item ->
+                        val answered = !state.answers[item.id].isNullOrBlank()
+                        val flagged = item.id in state.flaggedIds
+                        val isCurrent = idx == state.currentIndex
+                        val label = buildString {
+                            append(idx + 1)
+                            if (flagged) append("*")
+                        }
+                        FilterChip(
+                            selected = isCurrent || answered,
+                            onClick = { onGoTo(idx) },
+                            label = { Text(label) },
+                            modifier = Modifier.defaultMinSize(minWidth = AppSpacing.minTouchTarget, minHeight = AppSpacing.minTouchTarget),
+                        )
+                    }
+                }
+                Spacer(modifier = Modifier.height(AppSpacing.lg))
+            }
+        }
+    }
+
+    val passageModal = state.currentPassage
+    if (state.showPassageSheet && passageModal != null) {
+        ModalBottomSheet(onDismissRequest = { onSetPassageSheet(false) }) {
+            PassagePane(
+                passage = passageModal,
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(AppSpacing.md),
+            )
+        }
+    }
+}
+
+@Composable
+private fun PassagePane(passage: PassageItem, modifier: Modifier = Modifier) {
+    Surface(
+        shape = MaterialTheme.shapes.medium,
+        color = MaterialTheme.colorScheme.surfaceContainerLow,
+        border = BorderStroke(1.dp, MaterialTheme.colorScheme.outline),
+        modifier = modifier,
+    ) {
+        Column(
+            modifier = Modifier
+                .padding(AppSpacing.md)
+                .verticalScroll(rememberScrollState()),
+        ) {
+            Text(
+                text = passage.title,
+                style = MaterialTheme.typography.titleLarge,
+                modifier = Modifier.semantics { heading() },
+            )
+            Spacer(modifier = Modifier.height(AppSpacing.sm))
+            Text(
+                text = passage.body,
+                style = MaterialTheme.typography.bodyLarge,
+            )
+        }
+    }
+}
+
+@OptIn(ExperimentalLayoutApi::class)
+@Composable
+private fun QuestionBodyPane(
+    state: ExamUiState,
+    q: QuestionItem,
+    currentPassage: PassageItem?,
+    micDeniedNote: Boolean,
+    onOpenPassageSheet: () -> Unit,
+    onSelectAnswer: (String, String) -> Unit,
+    onToggleMulti: (String, String) -> Unit,
+    onSetMatching: (String, String, String) -> Unit,
+    onAppendSequence: (String, String) -> Unit,
+    onRemoveLastSequence: (String) -> Unit,
+    onEvaluateSubjective: () -> Unit,
+    onStartPrepCountdown: (Int) -> Unit,
+    onRequestMicAndRecord: () -> Unit,
+    onStopRecording: () -> Unit,
+    onPlayOwnRecording: (String) -> Unit,
+    onSpeakTts: (String) -> Unit,
+    onToggleAudio: () -> Unit,
+    onReplayAudio: () -> Unit,
+    onSeekAudio: (Long) -> Unit,
+    onSetAudioSpeed: (Float) -> Unit,
+    modifier: Modifier = Modifier,
+) {
+    val userAnswer = state.answers[q.id].orEmpty()
+    val isPractice = state.mode == ExamMode.PRACTICE
+
+    LazyColumn(
+        modifier = modifier,
+        contentPadding = PaddingValues(AppSpacing.md),
+        verticalArrangement = Arrangement.spacedBy(AppSpacing.md),
+    ) {
+        if (currentPassage != null) {
+            item {
+                OutlinedButton(
+                    onClick = onOpenPassageSheet,
+                    modifier = Modifier.defaultMinSize(minHeight = AppSpacing.minTouchTarget),
+                ) {
+                    Icon(Icons.AutoMirrored.Filled.MenuBook, contentDescription = null)
+                    Spacer(modifier = Modifier.width(AppSpacing.sm))
+                    Text("Baca Teks: ${currentPassage.title}")
+                }
+            }
+        }
+
+        if (state.currentAsset != null) {
+            item {
+                AudioPlayerBar(
+                    title = state.audioState.currentTitle.ifBlank { "Audio Soal" },
+                    isPlaying = state.audioState.isPlaying,
+                    positionMs = state.audioState.positionMs,
+                    durationMs = state.audioState.durationMs,
+                    speed = state.audioState.speed,
+                    allowSpeedControl = isPractice,
+                    allowSeek = isPractice,
+                    replaysUsed = state.audioState.replaysUsed,
+                    maxReplays = state.audioState.maxReplays,
+                    errorMessage = state.audioState.errorMessage,
+                    onTogglePlay = onToggleAudio,
+                    onReplay = onReplayAudio,
+                    onSeekTo = onSeekAudio,
+                    onChangeSpeed = onSetAudioSpeed,
+                )
+            }
+        }
+
+        item {
+            QuestionCard(
+                headerLabel = "${q.section.label} • ${q.taskType.name}",
+                prompt = q.prompt,
+            ) {
+                when (q.taskType) {
+                    TaskType.CHOICE_SINGLE,
+                    TaskType.ERROR_IDENTIFICATION -> {
+                        q.options.forEach { opt ->
+                            val selected = userAnswer == opt
+                            SelectableOptionRow(
+                                selected = selected,
+                                label = opt,
+                                role = Role.RadioButton,
+                                onClick = { onSelectAnswer(q.id, opt) },
+                            ) {
+                                RadioButton(selected = selected, onClick = null)
+                            }
+                        }
+                    }
+
+                    TaskType.CHOICE_MULTI -> {
+                        val chosen = userAnswer.split("|").filter { it.isNotBlank() }.toSet()
+                        q.options.forEach { opt ->
+                            val checked = opt in chosen
+                            SelectableOptionRow(
+                                selected = checked,
+                                label = opt,
+                                role = Role.Checkbox,
+                                onClick = { onToggleMulti(q.id, opt) },
+                            ) {
+                                Checkbox(checked = checked, onCheckedChange = null)
+                            }
+                        }
+                    }
+
+                    TaskType.FILL_BLANK -> {
+                        OutlinedTextField(
+                            value = userAnswer,
+                            onValueChange = { onSelectAnswer(q.id, it) },
+                            label = {
+                                Text(q.maxWords?.let { "Ketik jawaban (maks. $it kata)" } ?: "Ketik jawaban Anda")
+                            },
+                            singleLine = true,
+                            modifier = Modifier.fillMaxWidth(),
+                        )
+                    }
+
+                    TaskType.MATCHING -> {
+                        val currentMap = userAnswer.split("|")
+                            .filter { it.contains("::") }
+                            .associate {
+                                val p = it.split("::", limit = 2)
+                                p[0] to p.getOrElse(1) { "" }
+                            }
+                        q.pairs.forEach { pair ->
+                            Text(
+                                text = pair.left,
+                                style = MaterialTheme.typography.titleMedium,
+                                color = MaterialTheme.colorScheme.onSurface,
+                            )
+                            Spacer(modifier = Modifier.height(AppSpacing.xs))
+                            pair.rightOptions.forEach { right ->
+                                val selected = currentMap[pair.left] == right
+                                SelectableOptionRow(
+                                    selected = selected,
+                                    label = right,
+                                    role = Role.RadioButton,
+                                    onClick = { onSetMatching(q.id, pair.left, right) },
+                                ) {
+                                    RadioButton(selected = selected, onClick = null)
+                                }
+                            }
+                            Spacer(modifier = Modifier.height(AppSpacing.sm))
+                        }
+                    }
+
+                    TaskType.REORDER,
+                    TaskType.SENTENCE_BUILD -> {
+                        val chosen = userAnswer.split("|").filter { it.isNotBlank() }
+                        val remaining = q.options.filterNot { it in chosen }
+                        Text(
+                            text = if (chosen.isEmpty()) "Susunan Anda akan muncul di sini." else chosen.joinToString(" "),
+                            style = MaterialTheme.typography.titleMedium,
+                            color = MaterialTheme.colorScheme.primary,
+                        )
+                        Spacer(modifier = Modifier.height(AppSpacing.sm))
+                        FlowRow(
+                            horizontalArrangement = Arrangement.spacedBy(AppSpacing.sm),
+                            verticalArrangement = Arrangement.spacedBy(AppSpacing.sm),
+                        ) {
+                            remaining.forEach { item ->
+                                FilterChip(
+                                    selected = false,
+                                    onClick = { onAppendSequence(q.id, item) },
+                                    label = { Text(item) },
+                                    modifier = Modifier.defaultMinSize(minHeight = AppSpacing.minTouchTarget),
+                                )
+                            }
+                        }
+                        if (chosen.isNotEmpty()) {
+                            Spacer(modifier = Modifier.height(AppSpacing.sm))
+                            Row(horizontalArrangement = Arrangement.spacedBy(AppSpacing.sm)) {
+                                TextButton(
+                                    onClick = { onRemoveLastSequence(q.id) },
+                                    modifier = Modifier.defaultMinSize(minHeight = AppSpacing.minTouchTarget),
+                                ) { Text("Hapus Terakhir") }
+                                TextButton(
+                                    onClick = { onSelectAnswer(q.id, "") },
+                                    modifier = Modifier.defaultMinSize(minHeight = AppSpacing.minTouchTarget),
+                                ) { Text("Reset") }
+                            }
+                        }
+                    }
+
+                    TaskType.WRITING_RESPONSE -> {
+                        val wc = QuizGradingEngine.countWords(userAnswer)
+                        val minW = q.minWords ?: 50
+                        Text(
+                            text = "Jumlah kata: $wc / min. $minW kata • Disimpan otomatis",
+                            style = MaterialTheme.typography.labelMedium,
+                            color = if (wc >= minW) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.onSurfaceVariant,
+                        )
+                        Spacer(modifier = Modifier.height(AppSpacing.sm))
+                        OutlinedTextField(
+                            value = userAnswer,
+                            onValueChange = { onSelectAnswer(q.id, it) },
+                            label = { Text("Tulis jawaban Anda di sini") },
+                            minLines = 6,
+                            modifier = Modifier.fillMaxWidth(),
+                        )
+                        Spacer(modifier = Modifier.height(AppSpacing.sm))
+                        AppButton(
+                            text = if (state.isEvaluatingAi) "Mengevaluasi..." else "Evaluasi Draf (Non-Resmi)",
+                            enabled = userAnswer.isNotBlank() && !state.isEvaluatingAi,
+                            outlined = true,
+                            onClick = onEvaluateSubjective,
+                        )
+                        state.aiFeedbackByQuestion[q.id]?.let { fb ->
+                            Spacer(modifier = Modifier.height(AppSpacing.sm))
+                            InlineFeedback(
+                                visible = true,
+                                isSuccess = true,
+                                title = "Umpan Balik Pelatih Lokal (Non-Resmi)",
+                                body = fb,
+                            )
+                        }
+                    }
+
+                    TaskType.SPEAKING_RESPONSE,
+                    TaskType.LISTEN_REPEAT -> {
+                        if (q.prepSeconds > 0) {
+                            Row(
+                                verticalAlignment = Alignment.CenterVertically,
+                                horizontalArrangement = Arrangement.spacedBy(AppSpacing.sm),
+                            ) {
+                                OutlinedButton(
+                                    onClick = { onStartPrepCountdown(q.prepSeconds) },
+                                    modifier = Modifier.defaultMinSize(minHeight = AppSpacing.minTouchTarget),
+                                ) {
+                                    Text(
+                                        state.prepCountdownSec?.let { "Persiapan: ${it}d" }
+                                            ?: "Mulai Timer Persiapan (${q.prepSeconds}d)",
+                                    )
+                                }
+                            }
+                            Spacer(modifier = Modifier.height(AppSpacing.sm))
+                        }
+                        if (q.taskType == TaskType.LISTEN_REPEAT && q.referenceText != null) {
+                            TextButton(
+                                onClick = { onSpeakTts(q.referenceText) },
+                                modifier = Modifier.defaultMinSize(minHeight = AppSpacing.minTouchTarget),
+                            ) {
+                                Text("Putar Ulang Suara Referensi (TTS)")
+                            }
+                        }
+
+                        FlowRow(
+                            horizontalArrangement = Arrangement.spacedBy(AppSpacing.sm),
+                            verticalArrangement = Arrangement.spacedBy(AppSpacing.sm),
+                        ) {
+                            if (state.recordingState.isRecording) {
+                                AppButton(
+                                    text = "Stop Rekam (${formatTimeMs(state.recordingState.elapsedMs)})",
+                                    onClick = onStopRecording,
+                                )
+                            } else {
+                                AppButton(
+                                    text = "Rekam Jawaban (${q.speakSeconds}d)",
+                                    onClick = onRequestMicAndRecord,
+                                )
+                            }
+                            if (state.recordingPaths.containsKey(q.id)) {
+                                OutlinedButton(
+                                    onClick = { onPlayOwnRecording(q.id) },
+                                    modifier = Modifier.defaultMinSize(minHeight = AppSpacing.minTouchTarget),
+                                ) {
+                                    Icon(Icons.Default.PlayArrow, contentDescription = null)
+                                    Spacer(modifier = Modifier.width(AppSpacing.xs))
+                                    Text("Putar Rekaman Saya")
+                                }
+                            }
+                        }
+
+                        if (state.recordingState.isRecording) {
+                            Spacer(modifier = Modifier.height(AppSpacing.sm))
+                            Row(verticalAlignment = Alignment.CenterVertically) {
+                                Icon(Icons.Default.Mic, contentDescription = null, tint = MaterialTheme.colorScheme.error)
+                                Spacer(modifier = Modifier.width(AppSpacing.sm))
+                                LinearProgressIndicator(
+                                    progress = { state.recordingState.amplitudeLevel.coerceIn(0.05f, 1f) },
+                                    modifier = Modifier.weight(1f),
+                                )
+                            }
+                        }
+
+                        if (micDeniedNote) {
+                            Spacer(modifier = Modifier.height(AppSpacing.sm))
+                            InlineFeedback(
+                                visible = true,
+                                isSuccess = false,
+                                title = "Izin Mikrofon Diperlukan",
+                                body = "Berikan izin mikrofon saat diminta untuk merekam Speaking secara lokal. Anda tetap dapat mengetik catatan latihan di bawah.",
+                            )
+                        }
+
+                        if (state.isTranscribing) {
+                            Spacer(modifier = Modifier.height(AppSpacing.sm))
+                            Text("Mentranskripsi rekaman lewat Whisper ONNX...", style = MaterialTheme.typography.labelMedium)
+                        }
+
+                        Spacer(modifier = Modifier.height(AppSpacing.sm))
+                        val sttStatusNote = if (state.sttState is SttModelState.Ready) {
+                            "Transkrip otomatis (Whisper ONNX — dapat diedit)"
+                        } else {
+                            "Catatan / transkrip manual (Whisper ONNX opsional di Profil > AI Offline)"
+                        }
+                        OutlinedTextField(
+                            value = userAnswer,
+                            onValueChange = { onSelectAnswer(q.id, it) },
+                            label = { Text(sttStatusNote) },
+                            minLines = 3,
+                            modifier = Modifier.fillMaxWidth(),
+                        )
+
+                        state.speakingMetricsByQuestion[q.id]?.let { metrics ->
+                            Spacer(modifier = Modifier.height(AppSpacing.sm))
+                            val overlapStr = metrics.overlapRatioWithReference?.let {
+                                " • Kemiripan kalimat: ${(it * 100).toInt()}%"
+                            }.orEmpty()
+                            Text(
+                                text = "Metrik lokal (non-resmi): ${metrics.wordCount} kata • ${metrics.wordsPerMinute} WPM • Filler: ${metrics.fillerCount}$overlapStr",
+                                style = MaterialTheme.typography.labelMedium,
+                                color = MaterialTheme.colorScheme.primary,
+                            )
+                        }
+                    }
+                }
+            }
+        }
+
+        val outcome = state.checkedOutcomes[q.id]
+        if (outcome != null && isPractice) {
+            item {
+                when (outcome) {
+                    is GradingOutcome.Objective -> InlineFeedback(
+                        visible = true,
+                        isSuccess = outcome.isCorrect,
+                        title = if (outcome.isCorrect) "Benar" else "Perlu Tinjauan",
+                        body = "${outcome.feedbackMessage}\n\n${q.explanation}\nSumber: [${q.rationaleSource}]",
+                    )
+                    is GradingOutcome.SubjectivePending -> InlineFeedback(
+                        visible = true,
+                        isSuccess = outcome.meetsMinimumWords,
+                        title = "Catatan Subyektif",
+                        body = outcome.feedbackMessage,
+                    )
+                }
+            }
+        }
+    }
+}
+
+@Composable
+private fun SelectableOptionRow(
+    selected: Boolean,
+    label: String,
+    role: Role,
+    onClick: () -> Unit,
+    leading: @Composable () -> Unit,
+) {
+    val statusColors = LocalSemanticStatusColors.current
+    val haptics = LocalHapticFeedback.current
+    val animMs = if (statusColors.reduceMotion) 0 else MotionTokens.PressFeedbackMs
+    val bgColor by animateColorAsState(
+        targetValue = if (selected) {
+            MaterialTheme.colorScheme.primaryContainer.copy(alpha = 0.45f)
+        } else {
+            MaterialTheme.colorScheme.surface
+        },
+        animationSpec = tween(animMs),
+        label = "optionBg",
+    )
+    val borderColor by animateColorAsState(
+        targetValue = if (selected) {
+            MaterialTheme.colorScheme.primary
+        } else {
+            MaterialTheme.colorScheme.outline.copy(alpha = 0.45f)
+        },
+        animationSpec = tween(animMs),
+        label = "optionBorder",
+    )
+
+    Surface(
+        shape = MaterialTheme.shapes.small,
+        color = bgColor,
+        border = BorderStroke(if (selected) 1.5.dp else 1.dp, borderColor),
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(vertical = AppSpacing.xs)
+            .defaultMinSize(minHeight = AppSpacing.minTouchTarget)
+            .clickable(role = role) {
+                if (statusColors.hapticsEnabled) {
+                    haptics.performHapticFeedback(HapticFeedbackType.TextHandleMove)
+                }
+                onClick()
+            },
+    ) {
+        Row(
+            verticalAlignment = Alignment.CenterVertically,
+            modifier = Modifier.padding(horizontal = AppSpacing.sm, vertical = AppSpacing.xs),
+        ) {
+            leading()
+            Spacer(modifier = Modifier.width(AppSpacing.sm))
+            Text(text = label, style = MaterialTheme.typography.bodyLarge)
+        }
+    }
+}

@@ -1,0 +1,374 @@
+{
+  "schemaVersion": 1,
+  "exam": "ITP_L1",
+  "edition": "2026.1",
+  "packId": "ITP-L1-05",
+  "title": "ITP Paket 5 — Astronomy, Linguistics & Public Policy",
+  "theme": "Integrated diagnostic sample covering exoplanet spectroscopy, writing systems, and subjunctives.",
+  "status": "SAMPLE",
+  "blueprintCount": 140,
+  "availableCount": 12,
+  "durationMinutes": 20,
+  "blueprintDurationMinutes": 115,
+  "license": "Original",
+  "provenance": "EnglishPrepAI-Original-2026",
+  "passages": [
+    {
+      "id": "ITP05-P1",
+      "title": "Reading Starlight Through Exoplanet Atmospheres",
+      "body": "Most planets orbiting distant stars lie too close to their host star's glare to be photographed directly. Instead, astronomers study exoplanet air using transit spectroscopy. Whenever an orbiting planet crosses directly in front of its star, a tiny fraction of starlight skims through the planet's thin atmospheric rim before reaching space telescopes. Because specific gases—such as water vapor, methane, or sodium—absorb narrow wavelengths of light, dark gaps in the recorded spectrum act like chemical fingerprints revealing what gases surround a world trillions of kilometers away.",
+      "readingOrder": 1
+    },
+    {
+      "id": "ITP05-P2",
+      "title": "How Sequoyah Engineered the Cherokee Syllabary",
+      "body": "In the early 1800s, Cherokee silversmith Sequoyah recognized that written symbols enabled rapid long-distance communication, yet English spelling poorly matched Cherokee speech sounds. Working over twelve years without formal linguistic training, he listened closely to everyday conversation and distilled the entire spoken language into eighty-five distinct syllable characters. Because each symbol stood consistently for one syllable rather than ambiguous silent letters, Cherokee learners often mastered reading and writing their own language within weeks.",
+      "readingOrder": 2
+    }
+  ],
+  "assets": [
+    {
+      "id": "ITP05-A01",
+      "relativePath": "audio/ITP05-A01.wav",
+      "kind": "AUDIO",
+      "caption": "W: Do you think our posters will finish printing before noon? M: Don't hold your breath—there are still twenty jobs ahead of us in the queue. N: What does the man imply?",
+      "license": "Original",
+      "sha256": "c328bf4333ffe3712d107fadbca9465ebde0be45f9073eaef3fc00b3de844f7a",
+      "byteSize": 352044,
+      "durationMs": 11000
+    },
+    {
+      "id": "ITP05-A02",
+      "relativePath": "audio/ITP05-A02.wav",
+      "kind": "AUDIO",
+      "caption": "M: Everyone says Dr. Tanaka's applied statistics class is brutal. W: Her problem sets are tough, no doubt, yet her examples are the clearest I've ever seen. N: What is the woman's opinion of the course?",
+      "license": "Original",
+      "sha256": "a075cd35b87dd6e00fdcc4fcc637d1216a500f64914407c9eca4c7db68ab7ce8",
+      "byteSize": 456524,
+      "durationMs": 14265
+    },
+    {
+      "id": "ITP05-A03",
+      "relativePath": "audio/ITP05-A03.wav",
+      "kind": "AUDIO",
+      "caption": "M: Are we still leaving at seven Saturday for the limestone quarry trip? W: Yes, just remember no one boards the van unless the signed safety waiver reaches my mailbox by Thursday noon. N: What requirement must students fulfill?",
+      "license": "Original",
+      "sha256": "35cdfac55ab6100a5f762b3e8e06f8937fd71c4abf4064c669590cebcf1f29b9",
+      "byteSize": 492364,
+      "durationMs": 15385
+    },
+    {
+      "id": "ITP05-A04",
+      "relativePath": "audio/ITP05-A04.wav",
+      "kind": "AUDIO",
+      "caption": "M: Taking a direct photograph of an exoplanet is like spotting a firefly beside a lighthouse. Because host-star glare overwhelms faint planetary light, astronomers watch tiny dips and chemical absorptions during planetary transits. N: Why is direct imaging of exoplanets difficult?",
+      "license": "Original",
+      "sha256": "be2f26d13eeecb4a85fae79aebf1d7a7c79da7c5397ef8bda1350460af0b01dc",
+      "byteSize": 607084,
+      "durationMs": 18970
+    }
+  ],
+  "items": [
+    {
+      "id": "ITP-L1-05-Q01",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to the short exchange. What does the man mean?",
+      "options": [
+        "He doubts the library printing queue will clear quickly.",
+        "He already picked up his printed thesis.",
+        "He thinks the color printer is out of paper.",
+        "He wants to switch topics for his presentation."
+      ],
+      "answer": "He doubts the library printing queue will clear quickly.",
+      "acceptedAnswers": [
+        "He doubts the library printing queue will clear quickly."
+      ],
+      "explanation": "Ungkapan 'Don't hold your breath—there are twenty people ahead of us' menandakan antrean akan lama.",
+      "rationaleSource": "ITP-MOD-01",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP05-A01",
+      "sortIndex": 1
+    },
+    {
+      "id": "ITP-L1-05-Q02",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to the conversation. What does the woman imply about Dr. Tanaka's statistics course?",
+      "options": [
+        "It is challenging but clearly organized.",
+        "It requires no prior algebra knowledge.",
+        "It has been moved to an online-only format.",
+        "Few students enjoy Dr. Tanaka's office hours."
+      ],
+      "answer": "It is challenging but clearly organized.",
+      "acceptedAnswers": [
+        "It is challenging but clearly organized."
+      ],
+      "explanation": "'Tough grading, sure, but her lecture notes are crystal clear' menunjukkan mata kuliah sulit namun sangat terstruktur.",
+      "rationaleSource": "ITP-MOD-01",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP05-A02",
+      "sortIndex": 2
+    },
+    {
+      "id": "ITP-L1-05-Q03",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to the campus announcement dialogue. What must students do to join the weekend field trip?",
+      "options": [
+        "Submit the signed safety waiver by Thursday noon.",
+        "Pay fifty dollars directly to the bus driver.",
+        "Bring personal geological hammers from home.",
+        "Pass an oral quiz before boarding."
+      ],
+      "answer": "Submit the signed safety waiver by Thursday noon.",
+      "acceptedAnswers": [
+        "Submit the signed safety waiver by Thursday noon."
+      ],
+      "explanation": "Asisten dosen mengingatkan formulir persetujuan keselamatan bertanda tangan wajib dikumpulkan sebelum Kamis siang.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP05-A03",
+      "sortIndex": 3
+    },
+    {
+      "id": "ITP-L1-05-Q04",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to the astronomy talk. What limits direct photography of most exoplanets?",
+      "options": [
+        "Bright glare from their host stars hides faint planets.",
+        "Space telescopes cannot operate outside Earth's clouds.",
+        "Exoplanets reflect zero light from nearby stars.",
+        "Cosmic dust blocks every radio signal from space."
+      ],
+      "answer": "Bright glare from their host stars hides faint planets.",
+      "acceptedAnswers": [
+        "Bright glare from their host stars hides faint planets."
+      ],
+      "explanation": "Pembicara menjelaskan silau bintang induk mengaburkan planet di sekitarnya sehingga astronom memakai spektroskopi transit.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP05-A04",
+      "sortIndex": 4
+    },
+    {
+      "id": "ITP-L1-05-Q05",
+      "section": "STRUCTURE",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Public health officials recommended that the municipal reservoir ___ tested twice weekly after heavy rains.",
+      "options": [
+        "be",
+        "is",
+        "was",
+        "will be"
+      ],
+      "answer": "be",
+      "acceptedAnswers": [
+        "be"
+      ],
+      "explanation": "Kata kerja mandative subjunctive setelah 'recommended that ...' menggunakan bare infinitive 'be'.",
+      "rationaleSource": "ITP-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 5
+    },
+    {
+      "id": "ITP-L1-05-Q06",
+      "section": "STRUCTURE",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "___ its low density, aerogel supports thousands of times its own weight without collapsing.",
+      "options": [
+        "Despite",
+        "Although",
+        "Because",
+        "Unless"
+      ],
+      "answer": "Despite",
+      "acceptedAnswers": [
+        "Despite"
+      ],
+      "explanation": "Diikuti noun phrase ('its low density') dan menyatakan kontras -> preposisi 'Despite'.",
+      "rationaleSource": "ITP-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 6
+    },
+    {
+      "id": "ITP-L1-05-Q07",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "Neither the [A] chief meteorologist [B] nor her junior forecasters [C] was able to predict [D] the sudden hailstorm.",
+      "options": [
+        "[A] chief meteorologist",
+        "[B] nor",
+        "[C] was able",
+        "[D] the sudden hailstorm"
+      ],
+      "answer": "[C] was able",
+      "acceptedAnswers": [
+        "[C] was able"
+      ],
+      "explanation": "Pada 'Neither A nor B', kata kerja mengikuti subjek terdekat ('her junior forecasters' jamak) sehingga harus 'were able'.",
+      "rationaleSource": "ITP-MOD-04",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 7
+    },
+    {
+      "id": "ITP-L1-05-Q08",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "The [A] newly discovered manuscripts [B] provide [C] valuable insights [D] onto seventeenth-century maritime trade.",
+      "options": [
+        "[A] newly discovered",
+        "[B] provide",
+        "[C] valuable insights",
+        "[D] onto"
+      ],
+      "answer": "[D] onto",
+      "acceptedAnswers": [
+        "[D] onto"
+      ],
+      "explanation": "Kolokasi preposisi baku untuk 'insights' adalah 'insights into', bukan 'onto'.",
+      "rationaleSource": "ITP-MOD-04",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 8
+    },
+    {
+      "id": "ITP-L1-05-Q09",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "According to Passage 1 ('Reading Starlight Through Exoplanet Atmospheres'), how do astronomers identify specific atmospheric gases?",
+      "options": [
+        "By matching missing light wavelengths to known gas absorption signatures",
+        "By collecting dust samples with orbiting probes",
+        "By measuring the planet's color in visible photographs",
+        "By timing solar flares between adjacent galaxies"
+      ],
+      "answer": "By matching missing light wavelengths to known gas absorption signatures",
+      "acceptedAnswers": [
+        "By matching missing light wavelengths to known gas absorption signatures"
+      ],
+      "explanation": "Teks menyebut celah gelap pada panjang gelombang tertentu bertindak sebagai sidik jari kimia tiap gas.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP05-P1",
+      "audioAssetId": null,
+      "sortIndex": 9
+    },
+    {
+      "id": "ITP-L1-05-Q10",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "In Passage 1, the word 'skims' is closest in meaning to:",
+      "options": [
+        "passes lightly across",
+        "bounces violently back",
+        "freezes inside",
+        "blocks completely"
+      ],
+      "answer": "passes lightly across",
+      "acceptedAnswers": [
+        "passes lightly across"
+      ],
+      "explanation": "'Skims through the planet's thin atmospheric rim' bermakna melintas tipis menyapu lapisan luar atmosfer.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP05-P1",
+      "audioAssetId": null,
+      "sortIndex": 10
+    },
+    {
+      "id": "ITP-L1-05-Q11",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "According to Passage 2 ('How Sequoyah Engineered the Cherokee Syllabary'), why could learners master the system quickly?",
+      "options": [
+        "Each written character corresponded reliably to one spoken syllable.",
+        "It borrowed English spelling conventions directly.",
+        "Sequoyah taught every household in person.",
+        "It reduced Cherokee speech to ten numerical digits."
+      ],
+      "answer": "Each written character corresponded reliably to one spoken syllable.",
+      "acceptedAnswers": [
+        "Each written character corresponded reliably to one spoken syllable."
+      ],
+      "explanation": "Paragraf menjelaskan konsistensi satu simbol per suku kata tanpa huruf bisu mempercepat penguasaan baca-tulis.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP05-P2",
+      "audioAssetId": null,
+      "sortIndex": 11
+    },
+    {
+      "id": "ITP-L1-05-Q12",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "In Passage 2, the word 'distilled' is closest in meaning to:",
+      "options": [
+        "condensed",
+        "translated",
+        "erased",
+        "complicated"
+      ],
+      "answer": "condensed",
+      "acceptedAnswers": [
+        "condensed"
+      ],
+      "explanation": "Menyaring bahasa lisan ke dalam 85 karakter suku kata berarti merangkum/menyuling ('condensed').",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP05-P2",
+      "audioAssetId": null,
+      "sortIndex": 12
+    }
+  ],
+  "checksum": "9463571387329ffa4ed2113a94642daa26fd47c1dcc258b7726b8d9cb4566dfc"
+}

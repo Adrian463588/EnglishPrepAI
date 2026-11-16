@@ -1,0 +1,371 @@
+{
+  "schemaVersion": 1,
+  "exam": "IBT_2026",
+  "edition": "2026.1",
+  "packId": "IBT26-03",
+  "title": "iBT 2026 Paket 3 — Biological Systems & Academic Seminars",
+  "theme": "Mycorrhizal fungi, lab safety scheduling, sentence construction, and research seminar talks.",
+  "status": "SAMPLE",
+  "blueprintCount": 120,
+  "availableCount": 12,
+  "durationMinutes": 25,
+  "blueprintDurationMinutes": 90,
+  "license": "Original",
+  "provenance": "EnglishPrepAI-Original-2026",
+  "passages": [
+    {
+      "id": "IBT03-P1",
+      "title": "Daily Life Portal Message: Campus Clinic Flu Immunization",
+      "body": "Student Health Services Notice:\nWalk-in seasonal immunizations run Wednesday through Friday from 9:00 AM to 4:00 PM inside Pavilion B. Bring your physical or mobile Student ID; insurance co-pays are waived for enrolled undergraduates. Students with severe egg allergies should check the 'Alternative Form' box during pre-screening at the reception tablet so nurses prepare a cell-based dose.",
+      "readingOrder": 1
+    },
+    {
+      "id": "IBT03-P2",
+      "title": "Mycorrhizal Carbon Exchange Beneath Boreal Forests",
+      "body": "Beneath northern pine forests, threadlike fungal filaments known as mycorrhizae wrap around tree roots to form a mutualistic trade network. Because fungi lack chlorophyll, they depend on trees for up to twenty percent of the sugars synthesized via sunlight. In return, microscopic fungal hyphae penetrate soil crevices far narrower than root hairs, mining bound phosphorus and nitrogen that trees cannot extract alone. Isotopic tracer experiments demonstrate that shaded understory saplings even receive emergency carbon pulses transferred from sunlit canopy trees through shared fungal threads.",
+      "readingOrder": 2
+    }
+  ],
+  "assets": [
+    {
+      "id": "IBT03-A01",
+      "relativePath": "audio/IBT03-A01.wav",
+      "kind": "AUDIO",
+      "caption": "W: All regular copies of the genetics textbook are checked out, and I need Chapter 4 tonight!",
+      "license": "Original",
+      "sha256": "d308e8575dcdc8e36c977d43631ef1944a5d01b44c81afbe2ac3f7ea755c4db2",
+      "byteSize": 192844,
+      "durationMs": 6025
+    },
+    {
+      "id": "IBT03-A02",
+      "relativePath": "audio/IBT03-A02.wav",
+      "kind": "AUDIO",
+      "caption": "M: My last PCR run gave blank bands again. W: Before loading today's tray, double-check pipette calibration and label each cap clearly so control tubes aren't swapped. N: What does the TA advise doing first?",
+      "license": "Original",
+      "sha256": "8013143b3078041ed91cb00c4a232104df6288b68dd75180d12a45554e21f292",
+      "byteSize": 477004,
+      "durationMs": 14905
+    },
+    {
+      "id": "IBT03-A03",
+      "relativePath": "audio/IBT03-A03.wav",
+      "kind": "AUDIO",
+      "caption": "W: A single tree root hair looks huge next to a mycorrhizal filament. Because fungal hyphae are roughly one-tenth as wide, they thread into microscopic soil pores where phosphorus clings tightly to mineral grains. N: Why can fungal filaments access phosphorus trees miss?",
+      "license": "Original",
+      "sha256": "4375ea295bde407e7ec17a08b63faf46e9ef19f7729b81ae98c13cc7dcaa3b92",
+      "byteSize": 559564,
+      "durationMs": 17485
+    },
+    {
+      "id": "IBT03-A04",
+      "relativePath": "audio/IBT03-A04.wav",
+      "kind": "AUDIO",
+      "caption": "W: Please wear protective eyewear whenever entering the microscopy suite.",
+      "license": "Original",
+      "sha256": "7daf16d9fee141e7fba61128ea92f75fb63a89a8efd4b2b2454afef022fb1332",
+      "byteSize": 141324,
+      "durationMs": 4415
+    }
+  ],
+  "items": [
+    {
+      "id": "IBT26-03-Q01",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Complete the Word: 'Symbiotic fungi sign_______ expand the nutrient-absorbing surface area of pine roots.' (Write the full adverb matching 'sign_______')",
+      "options": [],
+      "answer": "significantly",
+      "acceptedAnswers": [
+        "significantly"
+      ],
+      "explanation": "Adverb 'significantly' memodifikasi kata kerja 'expand' ('meningkatkan secara signifikan').",
+      "rationaleSource": "IBT-MOD-01",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 1
+    },
+    {
+      "id": "IBT26-03-Q02",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "According to the Campus Clinic Notice, how do students with severe egg allergies receive an appropriate vaccine?",
+      "options": [
+        "By selecting the 'Alternative Form' option during tablet check-in at reception",
+        "By emailing Pavilion B three weeks prior to Wednesday",
+        "By paying an extra laboratory fee at the pharmacy",
+        "By visiting only on Monday mornings"
+      ],
+      "answer": "By selecting the 'Alternative Form' option during tablet check-in at reception",
+      "acceptedAnswers": [
+        "By selecting the 'Alternative Form' option during tablet check-in at reception"
+      ],
+      "explanation": "Catatan menyatakan penderita alergi telur cukup menandai kotak 'Alternative Form' saat pra-skrining di tablet resepsionis.",
+      "rationaleSource": "IBT-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT03-P1",
+      "audioAssetId": null,
+      "sortIndex": 2
+    },
+    {
+      "id": "IBT26-03-Q03",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "In Passage 2 ('Mycorrhizal Carbon Exchange'), what evidence supports the claim that canopy trees subsidize shaded saplings?",
+      "options": [
+        "Isotopic tracer tests tracking carbon movement along shared fungal filaments",
+        "Measurements of needle color along sunlit forest edges",
+        "Counts of fallen pine cones during snowy winters",
+        "Records of commercial fertilizer spread in boreal plots"
+      ],
+      "answer": "Isotopic tracer tests tracking carbon movement along shared fungal filaments",
+      "acceptedAnswers": [
+        "Isotopic tracer tests tracking carbon movement along shared fungal filaments"
+      ],
+      "explanation": "Kalimat terakhir menyebut eksperimen pelacak isotop membuktikan aliran karbon dari pohon kanopi ke anakan ternaungi.",
+      "rationaleSource": "IBT-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT03-P2",
+      "audioAssetId": null,
+      "sortIndex": 3
+    },
+    {
+      "id": "IBT26-03-Q04",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen and Choose a Response: Select the most helpful reply.",
+      "options": [
+        "Check the reserve shelf behind the circulation desk—the professor placed two copies there.",
+        "No, the biology building closes at six on Saturdays.",
+        "I bought three highlighters and a blue binder this morning.",
+        "Yes, genetics homework usually takes an hour."
+      ],
+      "answer": "Check the reserve shelf behind the circulation desk—the professor placed two copies there.",
+      "acceptedAnswers": [
+        "Check the reserve shelf behind the circulation desk—the professor placed two copies there."
+      ],
+      "explanation": "Pembicara mencari buku ajar yang habis dipinjam; memberi tahu adanya salinan cadangan di rak reserve adalah balasan paling relevan.",
+      "rationaleSource": "IBT-MOD-03",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT03-A01",
+      "sortIndex": 4
+    },
+    {
+      "id": "IBT26-03-Q05",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to the conversation. What does the teaching assistant recommend before running the PCR machine?",
+      "options": [
+        "Verify pipette calibration and label every sample tube clearly.",
+        "Double the sample volume inside each micro-tube.",
+        "Skip the control tube to save reagents.",
+        "Turn off the cooling fan prior to loading tubes."
+      ],
+      "answer": "Verify pipette calibration and label every sample tube clearly.",
+      "acceptedAnswers": [
+        "Verify pipette calibration and label every sample tube clearly."
+      ],
+      "explanation": "Asisten laboratorium menekankan pengecekan kalibrasi pipet dan pelabelan tabung untuk menghindari kontaminasi silang.",
+      "rationaleSource": "IBT-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT03-A02",
+      "sortIndex": 5
+    },
+    {
+      "id": "IBT26-03-Q06",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to the biology lecture clip. Why are fungal hyphae more effective than tree roots at gathering phosphorus?",
+      "options": [
+        "Hyphae are far thinner, allowing them to squeeze into tiny mineral pores.",
+        "Hyphae perform faster photosynthesis underground.",
+        "Tree roots repel dissolved water molecules.",
+        "Fungi convert granite stones directly into nitrogen gas."
+      ],
+      "answer": "Hyphae are far thinner, allowing them to squeeze into tiny mineral pores.",
+      "acceptedAnswers": [
+        "Hyphae are far thinner, allowing them to squeeze into tiny mineral pores."
+      ],
+      "explanation": "Pembicara menyoroti diameter hifa yang jauh lebih halus dibanding rambut akar sehingga sanggup menembus celah tanah sempit.",
+      "rationaleSource": "IBT-MOD-04",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT03-A03",
+      "sortIndex": 6
+    },
+    {
+      "id": "IBT26-03-Q07",
+      "section": "WRITING",
+      "taskType": "SENTENCE_BUILD",
+      "prompt": "Build a grammatical sentence from the tiles: 'Researchers tested ___.'",
+      "options": [
+        "whether",
+        "shaded",
+        "seedlings",
+        "received",
+        "extra",
+        "sugars"
+      ],
+      "answer": "whether|shaded|seedlings|received|extra|sugars",
+      "acceptedAnswers": [
+        "whether|shaded|seedlings|received|extra|sugars"
+      ],
+      "explanation": "Klausa nomina 'whether shaded seedlings received extra sugars' berfungsi sebagai objek langsung kata kerja 'tested'.",
+      "rationaleSource": "IBT-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 7
+    },
+    {
+      "id": "IBT26-03-Q08",
+      "section": "WRITING",
+      "taskType": "WRITING_RESPONSE",
+      "prompt": "Write an Email (60–100 words): You noticed a scheduling clash between your Botany field trip and an honors colloquium on April 14. Email your Botany instructor (Prof. Nair) politely asking if you may complete an independent specimen log instead of attending the field trip.",
+      "options": [],
+      "answer": "",
+      "acceptedAnswers": [],
+      "explanation": "Cantumkan tanggal bentrok (April 14), alasan akademis singkat, dan usulan tugas pengganti konkret.",
+      "rationaleSource": "IBT-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "minWords": 50,
+      "recommendedWords": 80,
+      "rubricCriteria": [
+        "Clear purpose & date",
+        "Concrete alternative proposal",
+        "Respectful academic register",
+        "Grammar precision"
+      ],
+      "sortIndex": 8
+    },
+    {
+      "id": "IBT26-03-Q09",
+      "section": "WRITING",
+      "taskType": "WRITING_RESPONSE",
+      "prompt": "Write for an Academic Discussion (100–140 words): Dr. Sato asks: 'Should undergraduate biology programs replace some dissection labs with interactive 3D simulations?' Sofia supports simulations for repeatability and ethical benefits; Noah believes real tissue texture teaches essential clinical judgment. State and defend your view.",
+      "options": [],
+      "answer": "",
+      "acceptedAnswers": [],
+      "explanation": "Pertimbangkan kedua argumen Sofia & Noah lalu jelaskan pendekatan terbaik beserta alasan praktis.",
+      "rationaleSource": "IBT-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "minWords": 95,
+      "recommendedWords": 120,
+      "rubricCriteria": [
+        "Addresses peers directly",
+        "Well-developed argument",
+        "Domain vocabulary",
+        "Cohesive structure"
+      ],
+      "sortIndex": 9
+    },
+    {
+      "id": "IBT26-03-Q10",
+      "section": "SPEAKING",
+      "taskType": "LISTEN_REPEAT",
+      "prompt": "Listen and Repeat: Play the audio prompt, then record yourself repeating it clearly.",
+      "options": [],
+      "answer": "Please wear protective eyewear whenever entering the microscopy suite.",
+      "acceptedAnswers": [
+        "Please wear protective eyewear whenever entering the microscopy suite."
+      ],
+      "explanation": "Jaga penekanan di 'protective eyewear' dan bunyi akhir 'microscopy suite'.",
+      "rationaleSource": "IBT-MOD-06",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT03-A04",
+      "referenceText": "Please wear protective eyewear whenever entering the microscopy suite.",
+      "sortIndex": 10
+    },
+    {
+      "id": "IBT26-03-Q11",
+      "section": "SPEAKING",
+      "taskType": "SPEAKING_RESPONSE",
+      "prompt": "Take an Interview (Question 1 · ~45s): 'Do you learn science concepts more effectively through solo reading or small-group lab discussions? Give one specific example.'",
+      "options": [],
+      "answer": "",
+      "acceptedAnswers": [],
+      "explanation": "Mulai dengan preferensi tegas, beri alasan kognitif/praktis, lalu sertakan contoh proyek kelas.",
+      "rationaleSource": "IBT-MOD-06",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "prepSeconds": 0,
+      "speakSeconds": 45,
+      "rubricCriteria": [
+        "Clear stance",
+        "Specific example",
+        "Natural pacing",
+        "Accuracy"
+      ],
+      "sortIndex": 11
+    },
+    {
+      "id": "IBT26-03-Q12",
+      "section": "SPEAKING",
+      "taskType": "SPEAKING_RESPONSE",
+      "prompt": "Take an Interview (Question 2 · ~45s): 'Should universities fund long-term basic ecological research even when commercial applications remain uncertain? Why or why not?'",
+      "options": [],
+      "answer": "",
+      "acceptedAnswers": [],
+      "explanation": "Hubungkan penelitian dasar dengan ketahanan ekosistem jangka panjang atau temuan tak terduga.",
+      "rationaleSource": "IBT-MOD-06",
+      "difficulty": "C1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "prepSeconds": 0,
+      "speakSeconds": 45,
+      "rubricCriteria": [
+        "Analytical depth",
+        "Clear signposting",
+        "Vocabulary range",
+        "Fluency"
+      ],
+      "sortIndex": 12
+    }
+  ],
+  "checksum": "b0ae43f7200aa6f3484f2b77256e604623bf97278119911a7fb7daf151c06644"
+}

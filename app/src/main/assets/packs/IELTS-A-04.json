@@ -1,0 +1,349 @@
+{
+  "schemaVersion": 1,
+  "exam": "IELTS_ACADEMIC",
+  "edition": "2026.1",
+  "packId": "IELTS-A-04",
+  "title": "IELTS Paket 4 — Behavioral Science, Heritage & Adaptation",
+  "theme": "Spatial memory maps, museum acoustics, multi-metric summaries, and opinion essays.",
+  "status": "SAMPLE",
+  "blueprintCount": 85,
+  "availableCount": 12,
+  "durationMinutes": 35,
+  "blueprintDurationMinutes": 165,
+  "license": "Original",
+  "provenance": "EnglishPrepAI-Original-2026",
+  "passages": [
+    {
+      "id": "IELTS04-P1",
+      "title": "Wayfinding Without Screens: How Spatial Memory Strengthens",
+      "body": "Paragraph A: Turn-by-turn satellite navigation trims wrong turns on unfamiliar highways, yet neuroscientists warn constant reliance leaves commuters with fragmented mental maps. In controlled maze and city-walk experiments, drivers following voice prompts recalled fewer side-street junctions afterward than peers navigating from brief landmark briefings.\n\nParagraph B: Dr. Priya Subramanian found hippocampal blood flow dropped measurably when GPS directions automated every turn, whereas manual route planning activated spatial grid cells tied to long-term orientation. Interestingly, glancing at a static overview map before departure preserved high spatial recall even when participants kept backup navigation silenced inside a pocket.",
+      "readingOrder": 1
+    }
+  ],
+  "assets": [
+    {
+      "id": "IELTS04-A01",
+      "relativePath": "audio/IELTS04-A01.wav",
+      "kind": "AUDIO",
+      "caption": "W: Welcome aboard! Normally volunteers check in at the Main Lobby, though painters are working there Saturday—please report to the West Wing Desk by 9:30 AM instead.",
+      "license": "Original",
+      "sha256": "a8de8437c33725a04a3a4a804d49d367ff38ae6a97f581e27862aec05fc45b49",
+      "byteSize": 344364,
+      "durationMs": 10760
+    },
+    {
+      "id": "IELTS04-A02",
+      "relativePath": "audio/IELTS04-A02.wav",
+      "kind": "AUDIO",
+      "caption": "M: Did the laptop group outperform note-takers because they typed twice as many words? W: Actually the reverse—students writing brief margin summaries by hand scored higher on conceptual synthesis questions.",
+      "license": "Original",
+      "sha256": "37ae30378503120ec144c73d90eef8dca1f98c7d84170b8247a3a35c98cfa6b3",
+      "byteSize": 409804,
+      "durationMs": 12805
+    },
+    {
+      "id": "IELTS04-A03",
+      "relativePath": "audio/IELTS04-A03.wav",
+      "kind": "AUDIO",
+      "caption": "M: Because harsh chemical brushes can etch ancient marble carvings, museum conservators calibrate millisecond laser pulses that vaporize dark urban soot crusts instantly while leaving pale white stone untouched.",
+      "license": "Original",
+      "sha256": "895d04a48cb0733ab51abe4c63bad8c2a377982de2458f33c85d90afb8a5f932",
+      "byteSize": 407564,
+      "durationMs": 12735
+    }
+  ],
+  "items": [
+    {
+      "id": "IELTS-A-04-Q01",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 1 (NO MORE THAN TWO WORDS AND/OR A NUMBER): 'Museum Volunteer Orientation — Report to the ___ Desk by 9:30 AM.'",
+      "options": [],
+      "answer": "West Wing",
+      "acceptedAnswers": [
+        "west wing",
+        "west"
+      ],
+      "explanation": "Pustakawan menyebut Main Lobby penuh renovasi sehingga orientasi pindah ke West Wing Desk.",
+      "rationaleSource": "IELTS-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS04-A01",
+      "maxWords": 2,
+      "sortIndex": 1
+    },
+    {
+      "id": "IELTS-A-04-Q02",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 3: What surprise did the psychology students discover in their attention-span pilot study?",
+      "options": [
+        "Students taking handwritten margin notes recalled conceptual links better than laptop typists.",
+        "Laptop typists achieved higher scores on every conceptual question.",
+        "Silent rooms lowered reading speed by twenty percent.",
+        "Background alarms improved exam accuracy significantly."
+      ],
+      "answer": "Students taking handwritten margin notes recalled conceptual links better than laptop typists.",
+      "acceptedAnswers": [
+        "Students taking handwritten margin notes recalled conceptual links better than laptop typists."
+      ],
+      "explanation": "Dialog menyoroti pencatat tangan lebih efektif menyarikan hubungan konsep dibanding pengetik verbatim di laptop.",
+      "rationaleSource": "IELTS-MOD-01",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS04-A02",
+      "sortIndex": 2
+    },
+    {
+      "id": "IELTS-A-04-Q03",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 4 (ONE WORD ONLY): 'Conservators use gentle laser pulses to lift dark ___ crusts off marble sculptures without scratching stone.'",
+      "options": [],
+      "answer": "soot",
+      "acceptedAnswers": [
+        "soot"
+      ],
+      "explanation": "Dosen menjelaskan pulsa laser mengangkat kerak jelaga ('soot') gelap tanpa menyentuh permukaan marmer.",
+      "rationaleSource": "IELTS-MOD-01",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS04-A03",
+      "maxWords": 1,
+      "sortIndex": 3
+    },
+    {
+      "id": "IELTS-A-04-Q04",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 1 ('Wayfinding Without Screens'): 'People following voice GPS directions remember more side-street intersections than landmark navigators.' -> TRUE, FALSE, or NOT GIVEN?",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": "FALSE",
+      "acceptedAnswers": [
+        "FALSE"
+      ],
+      "explanation": "Paragraf A menyatakan pengemudi yang mengikuti GPS suara mengingat LEBIH SEDIKIT persimpangan jalan kecil ('recalled fewer side-street junctions').",
+      "rationaleSource": "IELTS-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS04-P1",
+      "audioAssetId": null,
+      "sortIndex": 4
+    },
+    {
+      "id": "IELTS-A-04-Q05",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 1: 'Reviewing a static overview map prior to departure prevents spatial memory loss even with a backup phone nearby.' -> TRUE, FALSE, or NOT GIVEN?",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": "TRUE",
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "explanation": "Kalimat terakhir Paragraf B mengonfirmasi melihat peta ringkas statis sebelum berangkat mempertahankan daya ingat spasial walau membawa navigasi cadangan dalam saku.",
+      "rationaleSource": "IELTS-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS04-P1",
+      "audioAssetId": null,
+      "sortIndex": 5
+    },
+    {
+      "id": "IELTS-A-04-Q06",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 1: 'Dr. Priya Subramanian recommends banning turn-by-turn navigation apps for commercial ambulance drivers.' -> TRUE, FALSE, or NOT GIVEN?",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": "NOT GIVEN",
+      "acceptedAnswers": [
+        "NOT GIVEN"
+      ],
+      "explanation": "Teks membahas temuan aliran darah hipokampus, namun sama sekali tidak menyebut pengemudi ambulans atau usulan pelarangan aplikasi.",
+      "rationaleSource": "IELTS-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS04-P1",
+      "audioAssetId": null,
+      "sortIndex": 6
+    },
+    {
+      "id": "IELTS-A-04-Q07",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Summary Completion (ONE WORD ONLY from Passage 1): 'Manual route planning engages spatial ___ cells associated with long-term orientation.'",
+      "options": [],
+      "answer": "grid",
+      "acceptedAnswers": [
+        "grid"
+      ],
+      "explanation": "Paragraf B menyebut secara tepat 'activated spatial grid cells'.",
+      "rationaleSource": "IELTS-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS04-P1",
+      "audioAssetId": null,
+      "maxWords": 1,
+      "sortIndex": 7
+    },
+    {
+      "id": "IELTS-A-04-Q08",
+      "section": "WRITING",
+      "taskType": "WRITING_RESPONSE",
+      "prompt": "IELTS Academic Writing Task 1 (>=150 words, 20 min): The data below show the primary navigation methods used by adult travelers across three trip types in 2025 (%):\n- Daily Work Commute: GPS App 62%, Memory/Landmarks 34%, Paper Map 4%\n- Domestic Weekend Trip: GPS App 78%, Memory/Landmarks 15%, Paper Map 7%\n- Hiking Trail Navigation: GPS App 44%, Memory/Landmarks 22%, Paper Map 34%\nSummarize and compare the main patterns.",
+      "options": [],
+      "answer": "",
+      "acceptedAnswers": [],
+      "explanation": "Sorot dominasi GPS di perjalanan akhir pekan/komuter kontras dengan porsi peta kertas yang masih tinggi (34%) pada jalur pendakian.",
+      "rationaleSource": "IELTS-MOD-04",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "minWords": 150,
+      "recommendedWords": 175,
+      "rubricCriteria": [
+        "Clear Overview",
+        "Accurate comparisons across 3 trip types",
+        "Cohesion",
+        "Grammar accuracy"
+      ],
+      "sortIndex": 8
+    },
+    {
+      "id": "IELTS-A-04-Q09",
+      "section": "WRITING",
+      "taskType": "WRITING_RESPONSE",
+      "prompt": "IELTS Academic Writing Task 2 (>=250 words, 40 min): Public museums increasingly spend major budgets on interactive touchscreen displays rather than traditional labeled artifact cabinets. Do the advantages of high-tech museum displays outweigh the disadvantages?",
+      "options": [],
+      "answer": "",
+      "acceptedAnswers": [],
+      "explanation": "Evaluasi kedua sisi (keterlibatan pengunjung vs biaya pemeliharaan/gangguan fokus pada artefak asli) lalu nyatakan apakah keunggulannya lebih besar.",
+      "rationaleSource": "IELTS-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "minWords": 250,
+      "recommendedWords": 275,
+      "rubricCriteria": [
+        "Outweigh evaluation clear",
+        "Balanced mechanism analysis",
+        "Precise vocabulary",
+        "Cohesive structure"
+      ],
+      "sortIndex": 9
+    },
+    {
+      "id": "IELTS-A-04-Q10",
+      "section": "SPEAKING",
+      "taskType": "SPEAKING_RESPONSE",
+      "prompt": "IELTS Speaking Part 1 (~30–45s): 'Are you good at remembering directions in a new town without checking your phone? How do you usually find your way?'",
+      "options": [],
+      "answer": "",
+      "acceptedAnswers": [],
+      "explanation": "Jawab santai dalam 3–4 kalimat dengan menyebut penanda visual (landmarks) atau peta.",
+      "rationaleSource": "IELTS-MOD-06",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "prepSeconds": 0,
+      "speakSeconds": 45,
+      "rubricCriteria": [
+        "Fluency",
+        "Natural tone",
+        "Vocabulary",
+        "Clarity"
+      ],
+      "sortIndex": 10
+    },
+    {
+      "id": "IELTS-A-04-Q11",
+      "section": "SPEAKING",
+      "taskType": "SPEAKING_RESPONSE",
+      "prompt": "IELTS Speaking Part 2 Cue Card (1 min prep · 2 min speak): Describe a museum, exhibition, or historical landmark that taught you something memorable.\nYou should say:\n- where it was\n- what you saw there\n- how information was presented\n- and explain why the visit stayed in your memory.",
+      "options": [],
+      "answer": "",
+      "acceptedAnswers": [],
+      "explanation": "Bangun alur cerita dari kedatangan -> pameran paling berkesan -> pelajaran/insight yang terbawa hingga kini.",
+      "rationaleSource": "IELTS-MOD-06",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "prepSeconds": 60,
+      "speakSeconds": 120,
+      "rubricCriteria": [
+        "Narrative structure",
+        "Lexical resource",
+        "Fluency",
+        "Grammar range"
+      ],
+      "sortIndex": 11
+    },
+    {
+      "id": "IELTS-A-04-Q12",
+      "section": "SPEAKING",
+      "taskType": "SPEAKING_RESPONSE",
+      "prompt": "IELTS Speaking Part 3 (~60s): 'Should city governments preserve free entry to national museums even when budgets tighten, or charge visitors to fund conservation?'",
+      "options": [],
+      "answer": "",
+      "acceptedAnswers": [],
+      "explanation": "Bahas akses pendidikan setara bagi masyarakat vs model tiket bertingkat (gratis bagi pelajar/warga lokal, tiket bagi turis).",
+      "rationaleSource": "IELTS-MOD-06",
+      "difficulty": "C1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "prepSeconds": 0,
+      "speakSeconds": 60,
+      "rubricCriteria": [
+        "Policy nuance",
+        "Coherence",
+        "Academic lexis",
+        "Pronunciation"
+      ],
+      "sortIndex": 12
+    }
+  ],
+  "checksum": "1fee169f498355e7c1511e48b5f74828854ab37bbb40cddf34380388660f0c63"
+}

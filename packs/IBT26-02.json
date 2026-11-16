@@ -1,0 +1,372 @@
+{
+  "schemaVersion": 1,
+  "exam": "IBT_2026",
+  "edition": "2026.1",
+  "packId": "IBT26-02",
+  "title": "iBT 2026 Paket 2 — Digital Humanities & Urban Transit",
+  "theme": "Morphological word completion, transit policy announcements, OCR archives, and discussion writing.",
+  "status": "SAMPLE",
+  "blueprintCount": 120,
+  "availableCount": 12,
+  "durationMinutes": 25,
+  "blueprintDurationMinutes": 90,
+  "license": "Original",
+  "provenance": "EnglishPrepAI-Original-2026",
+  "passages": [
+    {
+      "id": "IBT02-P1",
+      "title": "Daily Life Email: City Bike-Share Semester Pass",
+      "body": "Dear Commuter Pass Holder,\nEffective April 1, your Student Transit Card unlocks unlimited 30-minute rides on CivicCycle electric bikes at no extra charge. Trips exceeding 30 minutes incur a $0.15 per-minute fee unless the bike is docked for at least two minutes before starting a fresh ride. To link your transit ID, tap 'University Benefit' inside the station kiosk before your first unlock; customer service cannot apply the waiver retroactively to past trips.",
+      "readingOrder": 1
+    },
+    {
+      "id": "IBT02-P2",
+      "title": "Optical Character Recognition on Nineteenth-Century Newspapers",
+      "body": "Historians digitizing nineteenth-century gazettes rely heavily on Optical Character Recognition (OCR) software to convert scanned column images into searchable text. Yet early rotary presses produced uneven ink smudges, broken serifs, and tightly packed typefaces that cause generic OCR engines to misread 'f' as long 's' or fuse adjacent words. Rather than manually retyping millions of pages, computational linguists now train post-correction transformers on historical spelling dictionaries—cutting character error rates below two percent across fragile regional archives.",
+      "readingOrder": 2
+    }
+  ],
+  "assets": [
+    {
+      "id": "IBT02-A01",
+      "relativePath": "audio/IBT02-A01.wav",
+      "kind": "AUDIO",
+      "caption": "M: Half the design team has an exam during our two o'clock project check-in.",
+      "license": "Original",
+      "sha256": "37c9fe3723fa7d37d71fa7f9cb9e03efe9599136731476c460da1be7c1f54157",
+      "byteSize": 154444,
+      "durationMs": 4825
+    },
+    {
+      "id": "IBT02-A02",
+      "relativePath": "audio/IBT02-A02.wav",
+      "kind": "AUDIO",
+      "caption": "W: Do I have to scroll through twenty microfilm reels just to find one county census table? M: Not at all—open the digitized archive index on Terminal 4 first; it lists the exact reel and frame number. N: What does the staff member advise?",
+      "license": "Original",
+      "sha256": "f17e2da9de0cbe9ccc5c9c824a8223d0f7ef49b6ab36566ad3cac664c704ab6e",
+      "byteSize": 523084,
+      "durationMs": 16344
+    },
+    {
+      "id": "IBT02-A03",
+      "relativePath": "audio/IBT02-A03.wav",
+      "kind": "AUDIO",
+      "caption": "M: Merchants initially worried that converting Oak Avenue parking bays into dedicated bus lanes would hurt retail sales. Instead, bus travel times fell by thirty-one percent, and pedestrian foot traffic to shops actually climbed twelve percent. N: What happened after bus lanes replaced curbside parking?",
+      "license": "Original",
+      "sha256": "145beb3df03aad2a95080c2ae3f750c050466e8611c8ca7626f1c22f3575b405",
+      "byteSize": 649324,
+      "durationMs": 20290
+    },
+    {
+      "id": "IBT02-A04",
+      "relativePath": "audio/IBT02-A04.wav",
+      "kind": "AUDIO",
+      "caption": "M: Express buses depart every twelve minutes from the northern transit hub.",
+      "license": "Original",
+      "sha256": "58123b8dd28a54cccdab851be3c319bd165362a512e031e198444b7e13fccea9",
+      "byteSize": 157804,
+      "durationMs": 4930
+    }
+  ],
+  "items": [
+    {
+      "id": "IBT26-02-Q01",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Complete the Word: 'Automated scanners now pre_____ fragile leather bindings from harsh direct light.' (Write the full verb matching 'pre_____')",
+      "options": [],
+      "answer": "preserve",
+      "acceptedAnswers": [
+        "preserve"
+      ],
+      "explanation": "'Preserve' melengkapi bentuk kata kerja dasar yang sesuai dengan makna melindungi jilid buku rapuh.",
+      "rationaleSource": "IBT-MOD-01",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 1
+    },
+    {
+      "id": "IBT26-02-Q02",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "According to the Bike-Share Email, how can a rider take a 50-minute journey without paying extra per-minute fees?",
+      "options": [
+        "Dock the bike after 30 minutes, wait at least two minutes, then start a second ride.",
+        "Call customer service afterward to waive the 20-minute surcharge.",
+        "Unlock a non-electric bike instead of an electric model.",
+        "Activate the 'University Benefit' option after finishing the trip."
+      ],
+      "answer": "Dock the bike after 30 minutes, wait at least two minutes, then start a second ride.",
+      "acceptedAnswers": [
+        "Dock the bike after 30 minutes, wait at least two minutes, then start a second ride."
+      ],
+      "explanation": "Email menyatakan perjalanan >30 menit dikenai biaya kecuali sepeda dikembalikan minimal 2 menit sebelum memulai sesi baru.",
+      "rationaleSource": "IBT-MOD-01",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT02-P1",
+      "audioAssetId": null,
+      "sortIndex": 2
+    },
+    {
+      "id": "IBT26-02-Q03",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "In Passage 2 ('OCR on Newspapers'), why did older OCR engines perform poorly on nineteenth-century gazettes?",
+      "options": [
+        "Smudged ink and closely set historic typefaces confused character recognition.",
+        "Microfilm reels were recorded exclusively in handwritten cursive.",
+        "Modern keyboards lack nineteenth-century punctuation marks.",
+        "Newspapers printed all columns in color ink."
+      ],
+      "answer": "Smudged ink and closely set historic typefaces confused character recognition.",
+      "acceptedAnswers": [
+        "Smudged ink and closely set historic typefaces confused character recognition."
+      ],
+      "explanation": "Teks menunjuk noda tinta, serif patah, dan huruf rapat pada mesin cetak putar awal sebagai sumber kesalahan.",
+      "rationaleSource": "IBT-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT02-P2",
+      "audioAssetId": null,
+      "sortIndex": 3
+    },
+    {
+      "id": "IBT26-02-Q04",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen and Choose a Response: Select the most appropriate reply.",
+      "options": [
+        "Let's reschedule to Thursday at ten so both teams can join.",
+        "The conference room holds roughly forty wooden chairs.",
+        "I took the commuter rail back home last Friday.",
+        "Yes, the coffee machine has already been unplugged."
+      ],
+      "answer": "Let's reschedule to Thursday at ten so both teams can join.",
+      "acceptedAnswers": [
+        "Let's reschedule to Thursday at ten so both teams can join."
+      ],
+      "explanation": "Pembicara mengeluhkan bentrok jadwal jam 2 siang; respons paling tepat menawarkan penjadwalan ulang yang masuk akal.",
+      "rationaleSource": "IBT-MOD-03",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT02-A01",
+      "sortIndex": 4
+    },
+    {
+      "id": "IBT26-02-Q05",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to the conversation. What does the librarian suggest for finding regional census tables?",
+      "options": [
+        "Use the digitized archive index before requesting physical microfilm.",
+        "Wait until next month for the printed annex catalog.",
+        "Search only local newspaper headlines from 1950.",
+        "Visit the city hall basement without an appointment."
+      ],
+      "answer": "Use the digitized archive index before requesting physical microfilm.",
+      "acceptedAnswers": [
+        "Use the digitized archive index before requesting physical microfilm."
+      ],
+      "explanation": "Pustakawan menjelaskan indeks digital memetakan nomor gulungan mikrofilm secara langsung.",
+      "rationaleSource": "IBT-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT02-A02",
+      "sortIndex": 5
+    },
+    {
+      "id": "IBT26-02-Q06",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to the urban planning talk. What changed after Oak Avenue removed curbside parking for dedicated bus lanes?",
+      "options": [
+        "Bus travel times dropped by nearly a third while total corridor shopper counts rose.",
+        "Traffic delays tripled across adjacent residential alleys.",
+        "Local bakery sales vanished completely within sixty days.",
+        "Buses stopped running after seven o'clock each evening."
+      ],
+      "answer": "Bus travel times dropped by nearly a third while total corridor shopper counts rose.",
+      "acceptedAnswers": [
+        "Bus travel times dropped by nearly a third while total corridor shopper counts rose."
+      ],
+      "explanation": "Pembicara melaporkan penurunan waktu tempuh bus hampir sepertiga serta peningkatan jumlah pengunjung koridor.",
+      "rationaleSource": "IBT-MOD-04",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT02-A03",
+      "sortIndex": 6
+    },
+    {
+      "id": "IBT26-02-Q07",
+      "section": "WRITING",
+      "taskType": "SENTENCE_BUILD",
+      "prompt": "Build a grammatical sentence from the tiles: 'The historian wondered ___.'",
+      "options": [
+        "how",
+        "many",
+        "issues",
+        "survived",
+        "the",
+        "1906",
+        "fire"
+      ],
+      "answer": "how|many|issues|survived|the|1906|fire",
+      "acceptedAnswers": [
+        "how|many|issues|survived|the|1906|fire"
+      ],
+      "explanation": "Susunan yang benar adalah 'how many issues survived the 1906 fire'.",
+      "rationaleSource": "IBT-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 7
+    },
+    {
+      "id": "IBT26-02-Q08",
+      "section": "WRITING",
+      "taskType": "WRITING_RESPONSE",
+      "prompt": "Write an Email (60–100 words): You are coordinating a student urban-design exhibit and need permission from the Facilities Manager (Mr. Okafor) to display three lightweight poster boards in the Atrium Lobby next Friday. State event timing, confirm no wall tape will be used, and ask for approval.",
+      "options": [],
+      "answer": "",
+      "acceptedAnswers": [],
+      "explanation": "Pastikan detail waktu, jaminan tidak merusak dinding atrium, dan permintaan konfirmasi tertulis tercakup ringkas.",
+      "rationaleSource": "IBT-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "minWords": 50,
+      "recommendedWords": 80,
+      "rubricCriteria": [
+        "Clear subject & purpose",
+        "Time + zero-damage assurance",
+        "Polite closing CTA",
+        "Accurate grammar"
+      ],
+      "sortIndex": 8
+    },
+    {
+      "id": "IBT26-02-Q09",
+      "section": "WRITING",
+      "taskType": "WRITING_RESPONSE",
+      "prompt": "Write for an Academic Discussion (100–140 words): Dr. Alvarez asks: 'Should cities convert downtown streets into car-free pedestrian zones even if delivery trucks face stricter morning schedules?' Elena supports the shift for cleaner air and small cafes; Marcus warns elder commuters rely on drop-off lanes. Contribute your perspective.",
+      "options": [],
+      "answer": "",
+      "acceptedAnswers": [],
+      "explanation": "Sebutkan sudut pandang Elena/Marcus lalu bangun solusi atau posisi yang terstruktur dan spesifik.",
+      "rationaleSource": "IBT-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "minWords": 95,
+      "recommendedWords": 120,
+      "rubricCriteria": [
+        "Addresses both peers' trade-offs",
+        "Clear stance",
+        "Concrete urban example",
+        "Cohesion"
+      ],
+      "sortIndex": 9
+    },
+    {
+      "id": "IBT26-02-Q10",
+      "section": "SPEAKING",
+      "taskType": "LISTEN_REPEAT",
+      "prompt": "Listen and Repeat: Play the audio prompt once, then record yourself repeating the sentence clearly.",
+      "options": [],
+      "answer": "Express buses depart every twelve minutes from the northern transit hub.",
+      "acceptedAnswers": [
+        "Express buses depart every twelve minutes from the northern transit hub."
+      ],
+      "explanation": "Latih pengucapan tepat angka 'twelve' dan artikulasi 'northern transit hub'.",
+      "rationaleSource": "IBT-MOD-06",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT02-A04",
+      "referenceText": "Express buses depart every twelve minutes from the northern transit hub.",
+      "sortIndex": 10
+    },
+    {
+      "id": "IBT26-02-Q11",
+      "section": "SPEAKING",
+      "taskType": "SPEAKING_RESPONSE",
+      "prompt": "Take an Interview (Question 1 · ~45s): 'When researching a historical topic, do you think digitized searchable archives make physical library visits unnecessary? Explain your reasoning.'",
+      "options": [],
+      "answer": "",
+      "acceptedAnswers": [],
+      "explanation": "Nyatakan sikap jelas, jelaskan satu kelebihan arsip digital sekaligus satu nilai unik kunjungan fisik.",
+      "rationaleSource": "IBT-MOD-06",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "prepSeconds": 0,
+      "speakSeconds": 45,
+      "rubricCriteria": [
+        "Balanced thesis",
+        "Concrete example",
+        "Fluid delivery",
+        "Vocabulary precision"
+      ],
+      "sortIndex": 11
+    },
+    {
+      "id": "IBT26-02-Q12",
+      "section": "SPEAKING",
+      "taskType": "SPEAKING_RESPONSE",
+      "prompt": "Take an Interview (Question 2 · ~45s): 'Would you prefer living in a compact walkable neighborhood with small apartments or a quieter suburb requiring a daily commute? Why?'",
+      "options": [],
+      "answer": "",
+      "acceptedAnswers": [],
+      "explanation": "Fokus pada satu alasan utama (waktu komuter atau ketenangan) + contoh rutinitas harian.",
+      "rationaleSource": "IBT-MOD-06",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "prepSeconds": 0,
+      "speakSeconds": 45,
+      "rubricCriteria": [
+        "Direct answer",
+        "Practical reason",
+        "Smooth pacing",
+        "Grammar control"
+      ],
+      "sortIndex": 12
+    }
+  ],
+  "checksum": "77830bff852820790cb76ad2a9956a3ea26f1b3dce2290b8ebdd71fb70660d88"
+}

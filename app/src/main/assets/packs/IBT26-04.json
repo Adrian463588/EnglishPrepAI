@@ -1,0 +1,371 @@
+{
+  "schemaVersion": 1,
+  "exam": "IBT_2026",
+  "edition": "2026.1",
+  "packId": "IBT26-04",
+  "title": "iBT 2026 Paket 4 — Economics, Daily Life & Technical Interviews",
+  "theme": "Behavioral nudges, refund policies, paragraph ordering, and professional email tasks.",
+  "status": "SAMPLE",
+  "blueprintCount": 120,
+  "availableCount": 12,
+  "durationMinutes": 25,
+  "blueprintDurationMinutes": 90,
+  "license": "Original",
+  "provenance": "EnglishPrepAI-Original-2026",
+  "passages": [
+    {
+      "id": "IBT04-P1",
+      "title": "Daily Life Policy: Campus Conference Registration Refunds",
+      "body": "Annual Undergraduate Research Symposium — Fee Policy:\nPresenters pay a $25 registration fee covering lunch and printed abstracts. Cancellations submitted via the portal at least ten calendar days prior to May 2 receive a full refund minus a $3 processing charge. Within ten days of the event, refunds are unavailable, though presenters may transfer their slot to a co-author without penalty by emailing symposium@campus.edu.",
+      "readingOrder": 1
+    },
+    {
+      "id": "IBT04-P2",
+      "title": "Default Choices in Household Energy Conservation",
+      "body": "Conventional public-utility campaigns often assume consumers adopt cleaner electricity plans purely after reading cost spreadsheets. Field experiments across mid-sized towns reveal a stronger behavioral lever: default enrollment. When municipalities set modest time-of-use conservation plans as the automatic option while letting households opt out via a single postcard, participation climbed from eighteen percent to over seventy-four percent. Economists attribute this gap to status-quo bias rather than indifference, since exit rates remained below five percent even one year later.",
+      "readingOrder": 2
+    }
+  ],
+  "assets": [
+    {
+      "id": "IBT04-A01",
+      "relativePath": "audio/IBT04-A01.wav",
+      "kind": "AUDIO",
+      "caption": "M: Would you like me to send over the club budget draft before tomorrow's finance meeting?",
+      "license": "Original",
+      "sha256": "b7df01fb9b7cbf0bcb5309359796e98fe4115f0e6139fe6f7678f55514ab9a0c",
+      "byteSize": 168684,
+      "durationMs": 5270
+    },
+    {
+      "id": "IBT04-A02",
+      "relativePath": "audio/IBT04-A02.wav",
+      "kind": "AUDIO",
+      "caption": "W: I currently work eight hours weekly at the library, and the economics lab offered me ten hours. Does campus policy allow eighteen total hours? M: During regular terms the cap is twenty hours combined, so eighteen stays safely within guidelines. N: Why did the student inquire about hours?",
+      "license": "Original",
+      "sha256": "695a097b38d9476ce8ed7c11ae637d176596179cf370746ec8bae143d0def5b8",
+      "byteSize": 653484,
+      "durationMs": 20420
+    },
+    {
+      "id": "IBT04-A03",
+      "relativePath": "audio/IBT04-A03.wav",
+      "kind": "AUDIO",
+      "caption": "M: Why did switching from opt-in to opt-out quadruple clean-energy enrollment even though leaving took one stamp? Behavioral economists point to friction and status-quo bias—people stick with sensible defaults when no penalty blocks opting out. N: What drives high retention in default programs?",
+      "license": "Original",
+      "sha256": "0880c4297a94956b02ee21d5f07a6cd1da8311d7dbc91f6d9b695ce136ccb9a1",
+      "byteSize": 599404,
+      "durationMs": 18730
+    },
+    {
+      "id": "IBT04-A04",
+      "relativePath": "audio/IBT04-A04.wav",
+      "kind": "AUDIO",
+      "caption": "M: Quarterly reimbursement forms must include itemized receipts and advisor signatures.",
+      "license": "Original",
+      "sha256": "3955893f163163ba3cb60969770d4f2d1f04e81d111159f8d4c84502860825c8",
+      "byteSize": 184524,
+      "durationMs": 5765
+    }
+  ],
+  "items": [
+    {
+      "id": "IBT26-04-Q01",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Complete the Word: 'Households could easily opt out without paying any admin________ penalty.' (Write the full adjective matching 'admin________')",
+      "options": [],
+      "answer": "administrative",
+      "acceptedAnswers": [
+        "administrative"
+      ],
+      "explanation": "Adjektiva 'administrative' memodifikasi nomina 'penalty' (denda administratif).",
+      "rationaleSource": "IBT-MOD-01",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 1
+    },
+    {
+      "id": "IBT26-04-Q02",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "If a presenter cancels 4 days before May 2, what option avoids losing the registration value?",
+      "options": [
+        "Transferring the presentation slot to a co-author by email",
+        "Requesting a full $25 refund on the portal",
+        "Paying a $3 late cancellation charge",
+        "Submitting abstract edits after May 2"
+      ],
+      "answer": "Transferring the presentation slot to a co-author by email",
+      "acceptedAnswers": [
+        "Transferring the presentation slot to a co-author by email"
+      ],
+      "explanation": "Dalam rentang kurang dari 10 hari, pengembalian dana tidak tersedia, namun pengalihan ke rekan penulis melalui email bebas penalti.",
+      "rationaleSource": "IBT-MOD-01",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT04-P1",
+      "audioAssetId": null,
+      "sortIndex": 2
+    },
+    {
+      "id": "IBT26-04-Q03",
+      "section": "READING",
+      "taskType": "REORDER",
+      "prompt": "Order these 4 research steps from Passage 2 logically (1 = earliest step, 4 = conclusion):",
+      "options": [
+        "Utility mails default enrollment notice with simple opt-out card",
+        "Households remain enrolled unless opting out",
+        "Participation exceeds 74% compared with 18% opt-in rate",
+        "Economists verify low 1-year exit rates reflect status-quo bias"
+      ],
+      "answer": "Utility mails default enrollment notice with simple opt-out card|Households remain enrolled unless opting out|Participation exceeds 74% compared with 18% opt-in rate|Economists verify low 1-year exit rates reflect status-quo bias",
+      "acceptedAnswers": [
+        "Utility mails default enrollment notice with simple opt-out card|Households remain enrolled unless opting out|Participation exceeds 74% compared with 18% opt-in rate|Economists verify low 1-year exit rates reflect status-quo bias"
+      ],
+      "explanation": "Urutan kausal bergerak dari intervensi default -> perilaku rumah tangga -> hasil partisipasi -> interpretasi ekonomi setahun kemudian.",
+      "rationaleSource": "IBT-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT04-P2",
+      "audioAssetId": null,
+      "sortIndex": 3
+    },
+    {
+      "id": "IBT26-04-Q04",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen and Choose a Response: Select the most appropriate reply.",
+      "options": [
+        "Yes, please attach the latest budget spreadsheet so I can review it beforehand.",
+        "The elevator on the west side stops at floor four.",
+        "I ordered two boxes of envelopes yesterday afternoon.",
+        "No, the stadium lights stay off until Friday."
+      ],
+      "answer": "Yes, please attach the latest budget spreadsheet so I can review it beforehand.",
+      "acceptedAnswers": [
+        "Yes, please attach the latest budget spreadsheet so I can review it beforehand."
+      ],
+      "explanation": "Menjawab tawaran pengiriman agenda dan angka anggaran rapat secara konstruktif.",
+      "rationaleSource": "IBT-MOD-03",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT04-A01",
+      "sortIndex": 4
+    },
+    {
+      "id": "IBT26-04-Q05",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to the conversation. Why is the student asking about work-study hours?",
+      "options": [
+        "She wants to check if adding a second campus job exceeds weekly limits.",
+        "She forgot how to submit her bank account form.",
+        "She plans to graduate two semesters early.",
+        "She needs permission to miss economics class."
+      ],
+      "answer": "She wants to check if adding a second campus job exceeds weekly limits.",
+      "acceptedAnswers": [
+        "She wants to check if adding a second campus job exceeds weekly limits."
+      ],
+      "explanation": "Mahasiswa memastikan total jam kerja gabungan antara perpustakaan dan lab komputer tidak melampaui batas mingguan.",
+      "rationaleSource": "IBT-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT04-A02",
+      "sortIndex": 5
+    },
+    {
+      "id": "IBT26-04-Q06",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to the economics talk. Why did default enrollment raise participation dramatically without coercion?",
+      "options": [
+        "Many residents stick with pre-selected options when switching feels mildly effortful.",
+        "Utilities charged triple fees to anyone returning opt-out postcards.",
+        "Residents had no legal right to switch back later.",
+        "Advertisements ran continuously on local television."
+      ],
+      "answer": "Many residents stick with pre-selected options when switching feels mildly effortful.",
+      "acceptedAnswers": [
+        "Many residents stick with pre-selected options when switching feels mildly effortful."
+      ],
+      "explanation": "Pembicara menjelaskan bias status-quo: masyarakat cenderung bertahan pada opsi bawaan saat opsi keluar tetap bebas dan mudah.",
+      "rationaleSource": "IBT-MOD-04",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT04-A03",
+      "sortIndex": 6
+    },
+    {
+      "id": "IBT26-04-Q07",
+      "section": "WRITING",
+      "taskType": "SENTENCE_BUILD",
+      "prompt": "Build a grammatical sentence from the tiles: 'Economists measured ___.'",
+      "options": [
+        "how",
+        "quickly",
+        "households",
+        "adjusted",
+        "peak",
+        "usage"
+      ],
+      "answer": "how|quickly|households|adjusted|peak|usage",
+      "acceptedAnswers": [
+        "how|quickly|households|adjusted|peak|usage"
+      ],
+      "explanation": "Susunan tepat: 'how quickly households adjusted peak usage'.",
+      "rationaleSource": "IBT-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 7
+    },
+    {
+      "id": "IBT26-04-Q08",
+      "section": "WRITING",
+      "taskType": "WRITING_RESPONSE",
+      "prompt": "Write an Email (60–100 words): You are treasurer of the Economics Society and accidentally submitted an outdated receipt PDF in your reimbursement request to Student Activities (Ms. Brooks). Apologize concisely, explain that the corrected receipt is attached, and confirm the final total ($48.50).",
+      "options": [],
+      "answer": "",
+      "acceptedAnswers": [],
+      "explanation": "Email harus jelas menyebutkan kesalahan dokumen lama, lampiran baru, dan angka pasti $48.50.",
+      "rationaleSource": "IBT-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "minWords": 50,
+      "recommendedWords": 75,
+      "rubricCriteria": [
+        "States exact correction ($48.50)",
+        "Concise professional apology",
+        "Clear follow-up",
+        "Grammar accuracy"
+      ],
+      "sortIndex": 8
+    },
+    {
+      "id": "IBT26-04-Q09",
+      "section": "WRITING",
+      "taskType": "WRITING_RESPONSE",
+      "prompt": "Write for an Academic Discussion (100–140 words): Prof. Chen asks: 'Should undergraduate economics courses focus more on real-world policy case studies even if it leaves less time for abstract mathematical proofs?' Clara favors case studies for career readiness; Ben argues mathematical foundations prevent shallow analysis. Share your stance.",
+      "options": [],
+      "answer": "",
+      "acceptedAnswers": [],
+      "explanation": "Integrasikan kedua poin Clara dan Ben sambil merumuskan keseimbangan atau prioritas yang didukung alasan.",
+      "rationaleSource": "IBT-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "minWords": 95,
+      "recommendedWords": 120,
+      "rubricCriteria": [
+        "Engages both classmates",
+        "Coherent stance",
+        "Relevant illustration",
+        "Academic vocabulary"
+      ],
+      "sortIndex": 9
+    },
+    {
+      "id": "IBT26-04-Q10",
+      "section": "SPEAKING",
+      "taskType": "LISTEN_REPEAT",
+      "prompt": "Listen and Repeat: Play the audio prompt once, then record yourself clearly.",
+      "options": [],
+      "answer": "Quarterly reimbursement forms must include itemized receipts and advisor signatures.",
+      "acceptedAnswers": [
+        "Quarterly reimbursement forms must include itemized receipts and advisor signatures."
+      ],
+      "explanation": "Pertahankan kejelasan gugus konsonan pada 'Quarterly', 'reimbursement', dan 'itemized receipts'.",
+      "rationaleSource": "IBT-MOD-06",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT04-A04",
+      "referenceText": "Quarterly reimbursement forms must include itemized receipts and advisor signatures.",
+      "sortIndex": 10
+    },
+    {
+      "id": "IBT26-04-Q11",
+      "section": "SPEAKING",
+      "taskType": "SPEAKING_RESPONSE",
+      "prompt": "Take an Interview (Question 1 · ~45s): 'When managing personal finances as a student, is a fixed weekly budget or tracking every transaction in an app more helpful for you? Explain why.'",
+      "options": [],
+      "answer": "",
+      "acceptedAnswers": [],
+      "explanation": "Pilih satu pendekatan, jelaskan alasannya secara praktis, dan beri satu contoh kebiasaan pribadi.",
+      "rationaleSource": "IBT-MOD-06",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "prepSeconds": 0,
+      "speakSeconds": 45,
+      "rubricCriteria": [
+        "Direct choice",
+        "Concrete reason",
+        "Clear pronunciation",
+        "Coherence"
+      ],
+      "sortIndex": 11
+    },
+    {
+      "id": "IBT26-04-Q12",
+      "section": "SPEAKING",
+      "taskType": "SPEAKING_RESPONSE",
+      "prompt": "Take an Interview (Question 2 · ~45s): 'Do automatic reminders help people build sustainable habits, or do too many notifications eventually get ignored? Explain with an example.'",
+      "options": [],
+      "answer": "",
+      "acceptedAnswers": [],
+      "explanation": "Beri perspektif bernuansa tentang manfaat awal vs kejenuhan notifikasi disertai contoh nyata.",
+      "rationaleSource": "IBT-MOD-06",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "prepSeconds": 0,
+      "speakSeconds": 45,
+      "rubricCriteria": [
+        "Nuanced stance",
+        "Concrete illustration",
+        "Smooth flow",
+        "Lexical range"
+      ],
+      "sortIndex": 12
+    }
+  ],
+  "checksum": "353b64f718ed1bebeb3abdc2fa38ce26ecc812be2caa6ab9096d086287b5ff08"
+}

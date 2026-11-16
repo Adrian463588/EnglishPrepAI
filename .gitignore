@@ -1,0 +1,23 @@
+# Android & Spec Kit
+*.iml
+.gradle/
+/.kotlin/
+/local.properties
+/.idea/
+/build/
+/app/build/
+/captures/
+*.hprof
+*.apk
+*.aab
+.DS_Store
+__pycache__/
+*.pyc
+.gemini/settings.local.json
+
+# DevSecOps: never commit release keystores or signing secrets
+*.jks
+*.keystore
+*.p12
+keystore.properties
+local-signing/

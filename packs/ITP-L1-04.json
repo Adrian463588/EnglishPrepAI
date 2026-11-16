@@ -1,0 +1,374 @@
+{
+  "schemaVersion": 1,
+  "exam": "ITP_L1",
+  "edition": "2026.1",
+  "packId": "ITP-L1-04",
+  "title": "ITP Paket 4 — Economics, Marine Biology & Culture",
+  "theme": "Double negatives, appositives, marine kelp ecosystems, and historic paper currency.",
+  "status": "SAMPLE",
+  "blueprintCount": 140,
+  "availableCount": 12,
+  "durationMinutes": 20,
+  "blueprintDurationMinutes": 115,
+  "license": "Original",
+  "provenance": "EnglishPrepAI-Original-2026",
+  "passages": [
+    {
+      "id": "ITP04-P1",
+      "title": "Sea Otters and Kelp Forest Stability",
+      "body": "Along rocky North Pacific coastlines, towering kelp forests shelter juvenile fish and dampen destructive ocean swells. Yet kelp canopies can vanish within months when purple sea urchins multiply unchecked and graze kelp holdfasts down to bare stone—forming 'urchin barrens'. Sea otters act as a keystone predator in this chain: lacking thick blubber, otters sustain an elevated metabolic rate by consuming roughly a quarter of their body weight daily, largely in urchins and shellfish. Wherever otter populations rebound, urchin grazing declines and dense kelp forests rapidly regenerate.",
+      "readingOrder": 1
+    },
+    {
+      "id": "ITP04-P2",
+      "title": "Cotton-Linen Durability in Banknotes",
+      "body": "Ordinary office paper tears after a few dozen folds because wood pulp contains short cellulose fibers and lignin that turns brittle with oxidation. Conversely, central banks print traditional banknotes on blends of long-staple cotton and linen rag fibers. Because cotton-linen sheets weave long, flexible fibers under high pressure without acid sizing, banknotes withstand thousands of creases, accidental laundry cycles, and humid climates far longer than wood-derived paper.",
+      "readingOrder": 2
+    }
+  ],
+  "assets": [
+    {
+      "id": "ITP04-A01",
+      "relativePath": "audio/ITP04-A01.wav",
+      "kind": "AUDIO",
+      "caption": "M: I thought the economic policy lecture would be standing room only. W: Me too—I couldn't believe how many empty rows were left in the back! N: What does the woman mean?",
+      "license": "Original",
+      "sha256": "8c45ab26e5e48933fea851f1d0ab4625deef1599092d711a4aca5f5e0bf6e833",
+      "byteSize": 355724,
+      "durationMs": 11115
+    },
+    {
+      "id": "ITP04-A02",
+      "relativePath": "audio/ITP04-A02.wav",
+      "kind": "AUDIO",
+      "caption": "M: My microscope image stays blurry even after adjusting the fine focus knob. W: Why don't you have the lab coordinator clean the objective lens before you restart? M: Good idea, I'll take it to her desk now. N: What will the man do?",
+      "license": "Original",
+      "sha256": "6aa46459cc123379666c7331e1add66c0cefd90093f84f2014eb196011f24894",
+      "byteSize": 528524,
+      "durationMs": 16515
+    },
+    {
+      "id": "ITP04-A03",
+      "relativePath": "audio/ITP04-A03.wav",
+      "kind": "AUDIO",
+      "caption": "W: Did you read Professor Gomez's announcement about the economics draft? M: Yes, she pushed the peer-review deadline from Wednesday back to Friday at four. N: What changed about the draft deadline?",
+      "license": "Original",
+      "sha256": "1139f54e203c25b57eedaa380a959234986811d650dba4d8d6698e28f4c1588c",
+      "byteSize": 432044,
+      "durationMs": 13500
+    },
+    {
+      "id": "ITP04-A04",
+      "relativePath": "audio/ITP04-A04.wav",
+      "kind": "AUDIO",
+      "caption": "W: Unlike seals, sea otters lack thick blubber to trap body heat in frigid Pacific water, so they rely on dense fur and eat nearly twenty-five percent of their body weight every day. N: Why do sea otters consume so much food daily?",
+      "license": "Original",
+      "sha256": "f3202578cb93824d683e2adde9486b63f76f34e75845fe3065f614cc2cfe8725",
+      "byteSize": 480524,
+      "durationMs": 15015
+    }
+  ],
+  "items": [
+    {
+      "id": "ITP-L1-04-Q01",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to the dialogue. What does the woman mean?",
+      "options": [
+        "She was surprised the economic policy talk had empty seats.",
+        "She expected the auditorium to hold twice as many students.",
+        "She disliked the speaker's examples on trade tariffs.",
+        "She arrived twenty minutes after the talk ended."
+      ],
+      "answer": "She was surprised the economic policy talk had empty seats.",
+      "acceptedAnswers": [
+        "She was surprised the economic policy talk had empty seats."
+      ],
+      "explanation": "Pria berkata ia mengira ruangan akan penuh; wanita menjawab 'I couldn't believe how many empty rows there were either!' (sama-sama terkejut).",
+      "rationaleSource": "ITP-MOD-01",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP04-A01",
+      "sortIndex": 1
+    },
+    {
+      "id": "ITP-L1-04-Q02",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to the conversation. What does the man decide to do?",
+      "options": [
+        "Ask the lab coordinator to check the microscope lens.",
+        "Skip tomorrow's biology lab entirely.",
+        "Buy a replacement glass slide set tonight.",
+        "Write his report using someone else's data."
+      ],
+      "answer": "Ask the lab coordinator to check the microscope lens.",
+      "acceptedAnswers": [
+        "Ask the lab coordinator to check the microscope lens."
+      ],
+      "explanation": "Wanita menyarankan menghubungi koordinator lab sebelum menunda eksperimen.",
+      "rationaleSource": "ITP-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP04-A02",
+      "sortIndex": 2
+    },
+    {
+      "id": "ITP-L1-04-Q03",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to the student conversation. What is the deadline change mentioned?",
+      "options": [
+        "The draft review shifted from Wednesday to Friday afternoon.",
+        "The final portfolio is canceled this semester.",
+        "Group presentations moved up to Monday morning.",
+        "Online submissions closed two days early."
+      ],
+      "answer": "The draft review shifted from Wednesday to Friday afternoon.",
+      "acceptedAnswers": [
+        "The draft review shifted from Wednesday to Friday afternoon."
+      ],
+      "explanation": "Pembicara mengonfirmasi email dosen yang menggeser tenggat draf ke Jumat sore.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP04-A03",
+      "sortIndex": 3
+    },
+    {
+      "id": "ITP-L1-04-Q04",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to the marine biology segment. Why must sea otters eat so frequently?",
+      "options": [
+        "They lack an insulating blubber layer and burn calories rapidly.",
+        "Sea urchins contain almost no water.",
+        "Cold ocean currents carry them away from kelp beds.",
+        "Otters hibernate throughout December."
+      ],
+      "answer": "They lack an insulating blubber layer and burn calories rapidly.",
+      "acceptedAnswers": [
+        "They lack an insulating blubber layer and burn calories rapidly."
+      ],
+      "explanation": "Pembicara menyatakan berang-berang laut tidak memiliki lapisan lemak tebal (*blubber*) sehingga membutuhkan metabolisme tinggi.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP04-A04",
+      "sortIndex": 4
+    },
+    {
+      "id": "ITP-L1-04-Q05",
+      "section": "STRUCTURE",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Dr. Lin, ___ research on coastal estuaries spans three decades, received the national ecology prize.",
+      "options": [
+        "whose",
+        "who",
+        "which",
+        "whom"
+      ],
+      "answer": "whose",
+      "acceptedAnswers": [
+        "whose"
+      ],
+      "explanation": "Klausa kepemilikan non-restriktif ('Dr. Lin's research') memakai 'whose'.",
+      "rationaleSource": "ITP-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 5
+    },
+    {
+      "id": "ITP-L1-04-Q06",
+      "section": "STRUCTURE",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Only after inspecting all thirty bridge joints ___ the county reopen the river crossing.",
+      "options": [
+        "did",
+        "had",
+        "was",
+        "were"
+      ],
+      "answer": "did",
+      "acceptedAnswers": [
+        "did"
+      ],
+      "explanation": "'Only after + prepositional phrase' di awal kalimat mewajibkan inversi auxiliary 'did' sebelum subjek 'the county' dan verb 'reopen'.",
+      "rationaleSource": "ITP-MOD-03",
+      "difficulty": "C1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 6
+    },
+    {
+      "id": "ITP-L1-04-Q07",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "Because kelp [A] absorbs dissolved carbon rapidly, [B] marine botanists view [C] it as an [D] extreme valuable coastal habitat.",
+      "options": [
+        "[A] absorbs",
+        "[B] marine botanists",
+        "[C] it as an",
+        "[D] extreme valuable"
+      ],
+      "answer": "[D] extreme valuable",
+      "acceptedAnswers": [
+        "[D] extreme valuable"
+      ],
+      "explanation": "Untuk memodifikasi adjektiva 'valuable', diperlukan adverb 'extremely', bukan adjektiva 'extreme'.",
+      "rationaleSource": "ITP-MOD-04",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 7
+    },
+    {
+      "id": "ITP-L1-04-Q08",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "The newly [A] minted coins weigh [B] slightly heavier [C] than those produced [D] in the previous decade.",
+      "options": [
+        "[A] minted coins",
+        "[B] slightly heavier",
+        "[C] than those",
+        "[D] in the previous decade"
+      ],
+      "answer": "[B] slightly heavier",
+      "acceptedAnswers": [
+        "[B] slightly heavier"
+      ],
+      "explanation": "Kata kerja 'weigh' diikuti keterangan ukuran atau adverb/nominal; perbandingan yang tepat: 'are slightly heavier than' atau 'weigh slightly more than'.",
+      "rationaleSource": "ITP-MOD-04",
+      "difficulty": "C1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 8
+    },
+    {
+      "id": "ITP-L1-04-Q09",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "In Passage 1 ('Sea Otters and Kelp Forest Stability'), what happens when sea otters disappear from a coastal zone?",
+      "options": [
+        "Sea urchins multiply and strip kelp forests down to bare rock.",
+        "Juvenile fish rapidly replace kelp holdfasts.",
+        "Ocean swells flatten rocky shorelines completely.",
+        "Kelp canopies grow twice as thick without grazing."
+      ],
+      "answer": "Sea urchins multiply and strip kelp forests down to bare rock.",
+      "acceptedAnswers": [
+        "Sea urchins multiply and strip kelp forests down to bare rock."
+      ],
+      "explanation": "Teks menjelaskan ledakan populasi bulu babi memakan pangkal kelp hingga menyisakan 'urchin barrens'.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP04-P1",
+      "audioAssetId": null,
+      "sortIndex": 9
+    },
+    {
+      "id": "ITP-L1-04-Q10",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "In Passage 1, the word 'dampen' is closest in meaning to:",
+      "options": [
+        "weaken",
+        "soak",
+        "amplify",
+        "freeze"
+      ],
+      "answer": "weaken",
+      "acceptedAnswers": [
+        "weaken"
+      ],
+      "explanation": "Dalam konteks 'dampen destructive ocean swells', 'dampen' bermakna meredam/melemahkan kekuatan ombak.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP04-P1",
+      "audioAssetId": null,
+      "sortIndex": 10
+    },
+    {
+      "id": "ITP-L1-04-Q11",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "According to Passage 2 ('Cotton-Linen Durability in Banknotes'), why does ordinary office paper turn brittle over time?",
+      "options": [
+        "It is made from wood pulp containing short fibers and lignin.",
+        "It is washed inside high-temperature machines.",
+        "It lacks metallic security threads.",
+        "It uses too much long-staple cotton."
+      ],
+      "answer": "It is made from wood pulp containing short fibers and lignin.",
+      "acceptedAnswers": [
+        "It is made from wood pulp containing short fibers and lignin."
+      ],
+      "explanation": "Kalimat pertama menyebut 'wood pulp contains short cellulose fibers and lignin that turns brittle with oxidation'.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP04-P2",
+      "audioAssetId": null,
+      "sortIndex": 11
+    },
+    {
+      "id": "ITP-L1-04-Q12",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "What does Passage 2 imply about banknote paper compared with office paper?",
+      "options": [
+        "Acid-free long fibers make banknotes far more resistant to repeated folding.",
+        "Banknotes tear faster when exposed to humid air.",
+        "Office paper costs central banks more to weave.",
+        "Lignin increases the lifespan of currency bills."
+      ],
+      "answer": "Acid-free long fibers make banknotes far more resistant to repeated folding.",
+      "acceptedAnswers": [
+        "Acid-free long fibers make banknotes far more resistant to repeated folding."
+      ],
+      "explanation": "Teks mengkontraskan daya tahan lipatan ribuan kali dari campuran kapas-linen bebas asam.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP04-P2",
+      "audioAssetId": null,
+      "sortIndex": 12
+    }
+  ],
+  "checksum": "82535fa11434796d0d67707a6b6db8da43e431e6ad3d17ce5a102f070e8707f7"
+}

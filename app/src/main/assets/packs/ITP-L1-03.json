@@ -1,0 +1,374 @@
+{
+  "schemaVersion": 1,
+  "exam": "ITP_L1",
+  "edition": "2026.1",
+  "packId": "ITP-L1-03",
+  "title": "ITP Paket 3 — Engineering, Acoustics & Scientific Prose",
+  "theme": "Negative inversions, paired conjunctions, acoustic engineering, and glacial geology.",
+  "status": "SAMPLE",
+  "blueprintCount": 140,
+  "availableCount": 12,
+  "durationMinutes": 20,
+  "blueprintDurationMinutes": 115,
+  "license": "Original",
+  "provenance": "EnglishPrepAI-Original-2026",
+  "passages": [
+    {
+      "id": "ITP03-P1",
+      "title": "Acoustic Shaping in Concert Halls",
+      "body": "Listeners often assume auditorium acoustics depend primarily on speaker power, yet unamplified symphony halls rely on subtle wall geometry. Flat, parallel concrete panels bounce sound waves back and forth in harsh 'flutter echoes' that blur musical articulation. By angling timber side balconies and adding stepped wooden diffusers, acousticians scatter early reflections laterally toward listeners' ears within thirty milliseconds of the direct sound. This brief lateral delay creates an enveloping spatial warmth without muddying rapid violin passages.",
+      "readingOrder": 1
+    },
+    {
+      "id": "ITP03-P2",
+      "title": "Glacial Varves as Climate Calendars",
+      "body": "Each spring, meltwater streams carry coarse pale sand into lakes bordering retreating glaciers, while calm winter ice cover lets fine dark clay settle slowly to the lakebed. Together, one pale summer band and one dark winter band form an annual couplet known as a varve. By extracting sediment cores and counting thousands of varves under microscopes, paleoclimatologists reconstruct year-by-year shifts in melt intensity—achieving seasonal precision rarely possible with radiometric dating alone.",
+      "readingOrder": 2
+    }
+  ],
+  "assets": [
+    {
+      "id": "ITP03-A01",
+      "relativePath": "audio/ITP03-A01.wav",
+      "kind": "AUDIO",
+      "caption": "M: That robotics calibration exercise was a breeze. W: Easy for you to say! It took me four hours just to steady the sensor. N: What does the woman mean?",
+      "license": "Original",
+      "sha256": "1b42a9691b2255eabf758d7c65f83248a9097711ef1a6de3b396bb8f5facc3b3",
+      "byteSize": 377644,
+      "durationMs": 11800
+    },
+    {
+      "id": "ITP03-A02",
+      "relativePath": "audio/ITP03-A02.wav",
+      "kind": "AUDIO",
+      "caption": "M: I saved my presentation on this flash drive for our 2 PM talk. W: Good thing I saw you—the podium computer only reads files from the shared course folder. M: Thanks, I'll upload it right away. N: What will the man probably do next?",
+      "license": "Original",
+      "sha256": "8b53240bbf72c7502483ac8bca16d7ab0f9a52848120986a06e39c989012016e",
+      "byteSize": 545644,
+      "durationMs": 17050
+    },
+    {
+      "id": "ITP03-A03",
+      "relativePath": "audio/ITP03-A03.wav",
+      "kind": "AUDIO",
+      "caption": "W: Are you signing up for Friday's observatory open house? M: Definitely. Now that the 1912 brass refractor has been restored, they're aiming it at Jupiter all evening. N: Why is the man eager to attend?",
+      "license": "Original",
+      "sha256": "97cde113fb7977858403608114369e4dcb5b3ce93612515b60d41bfd88c7b406",
+      "byteSize": 477324,
+      "durationMs": 14915
+    },
+    {
+      "id": "ITP03-A04",
+      "relativePath": "audio/ITP03-A04.wav",
+      "kind": "AUDIO",
+      "caption": "M: Because fast spring melt deposits coarse pale silt while quiet winter water drops fine dark clay, each light-and-dark layer pair in a glacial lake records one exact calendar year. N: What does one pair of sediment layers represent?",
+      "license": "Original",
+      "sha256": "5714719016b8af3234548001361061d6c6c30ae1768313a4c59563f7bc23f9d9",
+      "byteSize": 475084,
+      "durationMs": 14845
+    }
+  ],
+  "items": [
+    {
+      "id": "ITP-L1-03-Q01",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to the short exchange. What does the woman imply?",
+      "options": [
+        "She disagrees that the lab assignment was effortless.",
+        "She finished the assignment in half an hour.",
+        "She plans to drop the robotics class.",
+        "She lost her lab instructions yesterday."
+      ],
+      "answer": "She disagrees that the lab assignment was effortless.",
+      "acceptedAnswers": [
+        "She disagrees that the lab assignment was effortless."
+      ],
+      "explanation": "Ungkapan 'Easy for you to say—I spent four hours calibrating the sensor!' menandakan tugas terasa sulit baginya.",
+      "rationaleSource": "ITP-MOD-01",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP03-A01",
+      "sortIndex": 1
+    },
+    {
+      "id": "ITP-L1-03-Q02",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to the dialogue. What will the man probably do next?",
+      "options": [
+        "Upload his slides to the shared folder before class.",
+        "Print fifty color copies for every student.",
+        "Ask the professor to postpone the presentation.",
+        "Buy a new USB adapter from the bookstore."
+      ],
+      "answer": "Upload his slides to the shared folder before class.",
+      "acceptedAnswers": [
+        "Upload his slides to the shared folder before class."
+      ],
+      "explanation": "Wanita mengingatkan proyektor tidak memakai USB langsung, sehingga pria setuju mengunggah ke folder kelas.",
+      "rationaleSource": "ITP-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP03-A02",
+      "sortIndex": 2
+    },
+    {
+      "id": "ITP-L1-03-Q03",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to the longer dialogue. Why is the student excited about the observatory tour?",
+      "options": [
+        "Students will view Jupiter through the restored brass refractor.",
+        "Attendance grants automatic exemption from the final exam.",
+        "The observatory sits inside the student union roof.",
+        "Tour guides will distribute free telescopes."
+      ],
+      "answer": "Students will view Jupiter through the restored brass refractor.",
+      "acceptedAnswers": [
+        "Students will view Jupiter through the restored brass refractor."
+      ],
+      "explanation": "Percakapan menyebut teleskop refraktor perunggu yang baru direstorasi akan dipakai mengamati Jupiter.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP03-A03",
+      "sortIndex": 3
+    },
+    {
+      "id": "ITP-L1-03-Q04",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to the geology lecture clip. Why are varves useful to researchers?",
+      "options": [
+        "Each light-and-dark sediment pair marks one exact year.",
+        "They contain intact dinosaur fossils in every layer.",
+        "They form exclusively in tropical coral lagoons.",
+        "They reveal future earthquake dates directly."
+      ],
+      "answer": "Each light-and-dark sediment pair marks one exact year.",
+      "acceptedAnswers": [
+        "Each light-and-dark sediment pair marks one exact year."
+      ],
+      "explanation": "Pembicara mendefinisikan varve sebagai pasangan lapisan musiman yang terbentuk satu pasangan per tahun.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP03-A04",
+      "sortIndex": 4
+    },
+    {
+      "id": "ITP-L1-03-Q05",
+      "section": "STRUCTURE",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Not only ___ wind shear near runways, but Doppler radar also estimates rainfall intensity.",
+      "options": [
+        "does it detect",
+        "it detects",
+        "detects it",
+        "is detected"
+      ],
+      "answer": "does it detect",
+      "acceptedAnswers": [
+        "does it detect"
+      ],
+      "explanation": "'Not only' di awal kalimat memicu inversi auxiliary 'does' + subject 'it' + bare verb 'detect'.",
+      "rationaleSource": "ITP-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 5
+    },
+    {
+      "id": "ITP-L1-03-Q06",
+      "section": "STRUCTURE",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "The telescope mirror, ___ curvature was polished over eighteen months, resolves faint moons clearly.",
+      "options": [
+        "whose",
+        "which",
+        "that",
+        "whom"
+      ],
+      "answer": "whose",
+      "acceptedAnswers": [
+        "whose"
+      ],
+      "explanation": "Possessive relative pronoun 'whose' menghubungkan 'mirror' dengan 'curvature' ('the mirror's curvature').",
+      "rationaleSource": "ITP-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 6
+    },
+    {
+      "id": "ITP-L1-03-Q07",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "Despite [A] of heavy fog along the coast, [B] the ferry docked [C] safely within [D] five minutes of schedule.",
+      "options": [
+        "[A] of heavy fog",
+        "[B] the ferry docked",
+        "[C] safely",
+        "[D] five minutes of schedule"
+      ],
+      "answer": "[A] of heavy fog",
+      "acceptedAnswers": [
+        "[A] of heavy fog"
+      ],
+      "explanation": "'Despite' tidak memakai preposisi 'of' (gunakan 'Despite heavy fog' atau 'In spite of heavy fog').",
+      "rationaleSource": "ITP-MOD-04",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 7
+    },
+    {
+      "id": "ITP-L1-03-Q08",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "Every battery cell [A] inside the prototype pack [B] undergo thermal cycling [C] prior to [D] final certification.",
+      "options": [
+        "[A] inside",
+        "[B] undergo",
+        "[C] prior to",
+        "[D] final certification"
+      ],
+      "answer": "[B] undergo",
+      "acceptedAnswers": [
+        "[B] undergo"
+      ],
+      "explanation": "Kata penentu 'Every' mewajibkan subjek tunggal sehingga kata kerjanya harus 'undergoes'.",
+      "rationaleSource": "ITP-MOD-04",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 8
+    },
+    {
+      "id": "ITP-L1-03-Q09",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "According to Passage 1 ('Acoustic Shaping in Concert Halls'), what problem do parallel flat concrete walls cause?",
+      "options": [
+        "Harsh flutter echoes that blur rapid notes",
+        "Weak bass frequencies below twenty hertz",
+        "Excessive absorption of violin timber resonance",
+        "Delay exceeding three full seconds"
+      ],
+      "answer": "Harsh flutter echoes that blur rapid notes",
+      "acceptedAnswers": [
+        "Harsh flutter echoes that blur rapid notes"
+      ],
+      "explanation": "Kalimat kedua menyatakan dinding beton datar paralel memantulkan suara bolak-balik menjadi 'flutter echoes' yang mengaburkan artikulasi.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP03-P1",
+      "audioAssetId": null,
+      "sortIndex": 9
+    },
+    {
+      "id": "ITP-L1-03-Q10",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "In Passage 1, the word 'laterally' is closest in meaning to:",
+      "options": [
+        "from the sides",
+        "from directly overhead",
+        "beneath the floor",
+        "after the concert"
+      ],
+      "answer": "from the sides",
+      "acceptedAnswers": [
+        "from the sides"
+      ],
+      "explanation": "'Laterally' merujuk arah samping ('side balconies' ke telinga pendengar).",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP03-P1",
+      "audioAssetId": null,
+      "sortIndex": 10
+    },
+    {
+      "id": "ITP-L1-03-Q11",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "In Passage 2 ('Glacial Varves as Climate Calendars'), when is the fine dark clay layer deposited?",
+      "options": [
+        "During calm winter ice cover",
+        "During rapid spring snowmelt",
+        "During autumn windstorms",
+        "During volcanic eruptions"
+      ],
+      "answer": "During calm winter ice cover",
+      "acceptedAnswers": [
+        "During calm winter ice cover"
+      ],
+      "explanation": "Teks menyebut 'calm winter ice cover lets fine dark clay settle slowly'.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP03-P2",
+      "audioAssetId": null,
+      "sortIndex": 11
+    },
+    {
+      "id": "ITP-L1-03-Q12",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "What advantage of varves over radiometric dating is noted in Passage 2?",
+      "options": [
+        "Annual and seasonal resolution",
+        "Lower laboratory microscope cost",
+        "Applicability to ocean lava flows",
+        "Elimination of lake core drilling"
+      ],
+      "answer": "Annual and seasonal resolution",
+      "acceptedAnswers": [
+        "Annual and seasonal resolution"
+      ],
+      "explanation": "Kalimat terakhir menyebut 'seasonal precision rarely possible with radiometric dating alone'.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP03-P2",
+      "audioAssetId": null,
+      "sortIndex": 12
+    }
+  ],
+  "checksum": "7366e125ebae4fdebc0fbf6ef1750d241023a3dd0e70113b5ef0fa317e1ad0bf"
+}

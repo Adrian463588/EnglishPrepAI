@@ -1,0 +1,404 @@
+package com.englishprep.ai.ui.feature.learn
+
+import androidx.compose.foundation.BorderStroke
+import androidx.compose.foundation.clickable
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.ExperimentalLayoutApi
+import androidx.compose.foundation.layout.FlowRow
+import androidx.compose.foundation.layout.PaddingValues
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.defaultMinSize
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.filled.ArrowBack
+import androidx.compose.material.icons.automirrored.filled.Chat
+import androidx.compose.material3.CircularProgressIndicator
+import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.FilterChip
+import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.OutlinedTextField
+import androidx.compose.material3.RadioButton
+import androidx.compose.material3.Scaffold
+import androidx.compose.material3.Surface
+import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
+import androidx.compose.material3.TopAppBar
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.semantics.heading
+import androidx.compose.ui.semantics.semantics
+import androidx.compose.ui.unit.dp
+import androidx.hilt.navigation.compose.hiltViewModel
+import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import com.englishprep.ai.domain.models.ExamId
+import com.englishprep.ai.domain.models.ExamSection
+import com.englishprep.ai.domain.models.TaskType
+import com.englishprep.ai.ui.components.AppButton
+import com.englishprep.ai.ui.components.AudioPlayerBar
+import com.englishprep.ai.ui.components.InlineFeedback
+import com.englishprep.ai.ui.components.ModuleRow
+import com.englishprep.ai.ui.components.QuestionCard
+import com.englishprep.ai.ui.components.SectionHeading
+import com.englishprep.ai.ui.theme.AppSpacing
+
+@Composable
+fun LearnRoute(
+    onOpenModule: (String) -> Unit,
+    viewModel: LearnViewModel = hiltViewModel(),
+) {
+    val state by viewModel.uiState.collectAsStateWithLifecycle()
+    LearnScreen(
+        state = state,
+        onSelectSection = viewModel::selectSection,
+        onOpenModule = onOpenModule,
+    )
+}
+
+@OptIn(ExperimentalLayoutApi::class)
+@Composable
+fun LearnScreen(
+    state: LearnUiState,
+    onSelectSection: (ExamSection?) -> Unit,
+    onOpenModule: (String) -> Unit,
+    modifier: Modifier = Modifier,
+) {
+    if (state.isLoading) {
+        Box(modifier = modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
+            CircularProgressIndicator()
+        }
+        return
+    }
+
+    val availableSections = when (state.selectedExam) {
+        ExamId.ITP_L1 -> listOf(ExamSection.LISTENING, ExamSection.STRUCTURE, ExamSection.READING)
+        ExamId.IBT_2026, ExamId.IELTS_ACADEMIC -> listOf(
+            ExamSection.LISTENING,
+            ExamSection.READING,
+            ExamSection.WRITING,
+            ExamSection.SPEAKING,
+        )
+    }
+
+    LazyColumn(
+        modifier = modifier.fillMaxSize(),
+        contentPadding = PaddingValues(vertical = AppSpacing.md),
+    ) {
+        item {
+            Column(modifier = Modifier.padding(horizontal = AppSpacing.md)) {
+                Text(
+                    text = "Kurikulum ${state.selectedExam.title}",
+                    style = MaterialTheme.typography.headlineMedium,
+                    modifier = Modifier.semantics { heading() },
+                )
+                Spacer(modifier = Modifier.height(AppSpacing.xs))
+                Text(
+                    text = if (state.selectedExam == ExamId.ITP_L1) {
+                        "TOEFL ITP Level 1 berfokus pada Listening, Structure/Written Expression, dan Reading (Speaking/Writing tidak diujikan pada tes inti)."
+                    } else {
+                        "Setiap modul berisi teori ringkas, contoh kerja, jebakan umum, dan latihan interaktif."
+                    },
+                    style = MaterialTheme.typography.bodyMedium,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                )
+                Spacer(modifier = Modifier.height(AppSpacing.md))
+                FlowRow(
+                    horizontalArrangement = Arrangement.spacedBy(AppSpacing.sm),
+                    verticalArrangement = Arrangement.spacedBy(AppSpacing.sm),
+                ) {
+                    FilterChip(
+                        selected = state.selectedSection == null,
+                        onClick = { onSelectSection(null) },
+                        label = { Text("Semua") },
+                        modifier = Modifier.defaultMinSize(minHeight = AppSpacing.minTouchTarget),
+                    )
+                    availableSections.forEach { sec ->
+                        FilterChip(
+                            selected = state.selectedSection == sec,
+                            onClick = { onSelectSection(sec) },
+                            label = { Text(sec.label) },
+                            modifier = Modifier.defaultMinSize(minHeight = AppSpacing.minTouchTarget),
+                        )
+                    }
+                }
+                Spacer(modifier = Modifier.height(AppSpacing.sm))
+            }
+        }
+
+        items(state.modules, key = { it.id }) { mod ->
+            ModuleRow(
+                module = mod,
+                masteryPercent = state.masteryByModuleId[mod.id],
+                onClick = { onOpenModule(mod.id) },
+            )
+        }
+    }
+}
+
+@Composable
+fun ModuleDetailRoute(
+    onBack: () -> Unit,
+    onAskTutor: (String) -> Unit,
+    viewModel: ModuleDetailViewModel = hiltViewModel(),
+) {
+    val state by viewModel.uiState.collectAsStateWithLifecycle()
+    ModuleDetailScreen(
+        state = state,
+        onBack = onBack,
+        onAskTutor = { state.module?.id?.let(onAskTutor) },
+        onAnswerDrill = viewModel::answerDrill,
+        onCheckDrill = viewModel::checkDrill,
+        onToggleAudio = viewModel::toggleAudio,
+        onReplayAudio = viewModel::replayAudio,
+        onSeekAudio = viewModel::seekAudio,
+        onSetSpeed = viewModel::setAudioSpeed,
+    )
+}
+
+@OptIn(ExperimentalMaterial3Api::class, ExperimentalLayoutApi::class)
+@Composable
+fun ModuleDetailScreen(
+    state: ModuleDetailUiState,
+    onBack: () -> Unit,
+    onAskTutor: () -> Unit,
+    onAnswerDrill: (String, String) -> Unit,
+    onCheckDrill: (String, String, List<String>) -> Unit,
+    onToggleAudio: () -> Unit,
+    onReplayAudio: () -> Unit,
+    onSeekAudio: (Long) -> Unit,
+    onSetSpeed: (Float) -> Unit,
+    modifier: Modifier = Modifier,
+) {
+    Scaffold(
+        topBar = {
+            TopAppBar(
+                title = { Text(state.module?.id ?: "Materi") },
+                navigationIcon = {
+                    IconButton(
+                        onClick = onBack,
+                        modifier = Modifier.defaultMinSize(minWidth = AppSpacing.minTouchTarget, minHeight = AppSpacing.minTouchTarget),
+                    ) {
+                        Icon(Icons.AutoMirrored.Filled.ArrowBack, contentDescription = "Kembali")
+                    }
+                },
+                actions = {
+                    TextButton(
+                        onClick = onAskTutor,
+                        modifier = Modifier.defaultMinSize(minHeight = AppSpacing.minTouchTarget),
+                    ) {
+                        Icon(Icons.AutoMirrored.Filled.Chat, contentDescription = null)
+                        Spacer(modifier = Modifier.width(AppSpacing.xs))
+                        Text("Tanya AI")
+                    }
+                },
+            )
+        },
+        modifier = modifier,
+    ) { padding ->
+        val mod = state.module
+        if (state.isLoading || mod == null) {
+            Box(modifier = Modifier.fillMaxSize().padding(padding), contentAlignment = Alignment.Center) {
+                if (state.isLoading) CircularProgressIndicator() else Text("Modul tidak ditemukan.")
+            }
+            return@Scaffold
+        }
+
+        LazyColumn(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(padding),
+            contentPadding = PaddingValues(AppSpacing.md),
+            verticalArrangement = Arrangement.spacedBy(AppSpacing.md),
+        ) {
+            item {
+                Text(
+                    text = mod.title,
+                    style = MaterialTheme.typography.headlineSmall,
+                    modifier = Modifier.semantics { heading() },
+                )
+                Spacer(modifier = Modifier.height(AppSpacing.xs))
+                Text(
+                    text = "${mod.section.label} • ${mod.difficulty} • ${mod.estimatedMinutes}m • Sumber: ${mod.provenance}",
+                    style = MaterialTheme.typography.labelMedium,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                )
+            }
+
+            item {
+                LessonBlock(title = "Tujuan Pembelajaran", body = mod.objective)
+                Spacer(modifier = Modifier.height(AppSpacing.sm))
+                LessonBlock(title = "Konsep & Aturan Inti", body = mod.theory)
+                Spacer(modifier = Modifier.height(AppSpacing.sm))
+                LessonBlock(title = "Contoh Kerja", body = mod.workedExample)
+                Spacer(modifier = Modifier.height(AppSpacing.sm))
+                LessonBlock(title = "Kesalahan Umum", body = mod.commonMistake)
+            }
+
+            if (mod.audioAssetPath != null) {
+                item {
+                    SectionHeading(text = "Contoh Audio Lokal")
+                    Spacer(modifier = Modifier.height(AppSpacing.sm))
+                    AudioPlayerBar(
+                        title = state.audioState.currentTitle.ifBlank { "Contoh Dialog" },
+                        isPlaying = state.audioState.isPlaying,
+                        positionMs = state.audioState.positionMs,
+                        durationMs = state.audioState.durationMs,
+                        speed = state.audioState.speed,
+                        allowSpeedControl = true,
+                        allowSeek = true,
+                        replaysUsed = state.audioState.replaysUsed,
+                        maxReplays = null,
+                        errorMessage = state.audioState.errorMessage,
+                        onTogglePlay = onToggleAudio,
+                        onReplay = onReplayAudio,
+                        onSeekTo = onSeekAudio,
+                        onChangeSpeed = onSetSpeed,
+                    )
+                    mod.audioScript?.let { script ->
+                        Spacer(modifier = Modifier.height(AppSpacing.xs))
+                        Text(
+                            text = "Skrip: $script",
+                            style = MaterialTheme.typography.bodyMedium,
+                            color = MaterialTheme.colorScheme.onSurfaceVariant,
+                        )
+                    }
+                }
+            }
+
+            item {
+                SectionHeading(text = "Latihan Singkat (${mod.drills.size} Soal)")
+            }
+
+            items(mod.drills, key = { it.id }) { drill ->
+                val userAnswer = state.drillAnswers[drill.id].orEmpty()
+                val checked = state.drillChecked[drill.id]
+                QuestionCard(
+                    headerLabel = "${drill.taskType.name} • ${drill.id}",
+                    prompt = drill.prompt,
+                ) {
+                    if (drill.taskType == TaskType.FILL_BLANK) {
+                        OutlinedTextField(
+                            value = userAnswer,
+                            onValueChange = { onAnswerDrill(drill.id, it) },
+                            label = { Text("Jawaban Anda") },
+                            singleLine = true,
+                            modifier = Modifier.fillMaxWidth(),
+                        )
+                    } else if (drill.taskType == TaskType.SENTENCE_BUILD) {
+                        val selectedWords = if (userAnswer.isBlank()) emptyList() else userAnswer.split("|")
+                        val remainingWords = drill.options.filter { !selectedWords.contains(it) }
+                        Text(
+                            text = if (selectedWords.isEmpty()) "Ketuk kata berurutan:" else selectedWords.joinToString(" "),
+                            style = MaterialTheme.typography.titleMedium,
+                            color = MaterialTheme.colorScheme.primary,
+                        )
+                        Spacer(modifier = Modifier.height(AppSpacing.sm))
+                        FlowRow(
+                            horizontalArrangement = Arrangement.spacedBy(AppSpacing.sm),
+                            verticalArrangement = Arrangement.spacedBy(AppSpacing.sm),
+                        ) {
+                            remainingWords.forEach { word ->
+                                FilterChip(
+                                    selected = false,
+                                    onClick = {
+                                        val next = (selectedWords + word).joinToString("|")
+                                        onAnswerDrill(drill.id, next)
+                                    },
+                                    label = { Text(word) },
+                                    modifier = Modifier.defaultMinSize(minHeight = AppSpacing.minTouchTarget),
+                                )
+                            }
+                            if (selectedWords.isNotEmpty()) {
+                                TextButton(
+                                    onClick = { onAnswerDrill(drill.id, "") },
+                                    modifier = Modifier.defaultMinSize(minHeight = AppSpacing.minTouchTarget),
+                                ) {
+                                    Text("Reset")
+                                }
+                            }
+                        }
+                    } else {
+                        drill.options.forEach { option ->
+                            val isSelected = userAnswer == option
+                            Row(
+                                verticalAlignment = Alignment.CenterVertically,
+                                modifier = Modifier
+                                    .fillMaxWidth()
+                                    .defaultMinSize(minHeight = AppSpacing.minTouchTarget)
+                                    .clickable { onAnswerDrill(drill.id, option) }
+                                    .padding(vertical = AppSpacing.xs),
+                            ) {
+                                RadioButton(selected = isSelected, onClick = { onAnswerDrill(drill.id, option) })
+                                Spacer(modifier = Modifier.width(AppSpacing.sm))
+                                Text(text = option, style = MaterialTheme.typography.bodyLarge)
+                            }
+                        }
+                    }
+                    Spacer(modifier = Modifier.height(AppSpacing.sm))
+                    AppButton(
+                        text = "Periksa Jawaban",
+                        enabled = userAnswer.isNotBlank(),
+                        onClick = { onCheckDrill(drill.id, drill.answer, drill.acceptedAnswers) },
+                    )
+                    if (checked != null) {
+                        Spacer(modifier = Modifier.height(AppSpacing.sm))
+                        InlineFeedback(
+                            visible = true,
+                            isSuccess = checked,
+                            title = if (checked) "Tepat" else "Belum tepat (Kunci: ${drill.answer.replace("|", " ")})",
+                            body = drill.explanation,
+                        )
+                    }
+                }
+            }
+
+            state.drillSavedMessage?.let { msg ->
+                item {
+                    InlineFeedback(
+                        visible = true,
+                        isSuccess = true,
+                        title = "Latihan Modul Selesai",
+                        body = msg,
+                    )
+                }
+            }
+        }
+    }
+}
+
+@Composable
+private fun LessonBlock(title: String, body: String) {
+    Surface(
+        shape = MaterialTheme.shapes.medium,
+        color = MaterialTheme.colorScheme.surfaceContainerLow,
+        border = BorderStroke(1.dp, MaterialTheme.colorScheme.outline),
+        modifier = Modifier.fillMaxWidth(),
+    ) {
+        Column(modifier = Modifier.padding(AppSpacing.md)) {
+            Text(
+                text = title,
+                style = MaterialTheme.typography.labelLarge,
+                color = MaterialTheme.colorScheme.primary,
+                modifier = Modifier.semantics { heading() },
+            )
+            Spacer(modifier = Modifier.height(AppSpacing.xs))
+            Text(
+                text = body,
+                style = MaterialTheme.typography.bodyLarge,
+                color = MaterialTheme.colorScheme.onSurface,
+            )
+        }
+    }
+}

@@ -1,0 +1,371 @@
+{
+  "schemaVersion": 1,
+  "exam": "IBT_2026",
+  "edition": "2026.1",
+  "packId": "IBT26-05",
+  "title": "iBT 2026 Paket 5 — Earth & Cognitive Sciences Simulation",
+  "theme": "Sleep memory consolidation, dormitory lab advisories, comprehensive 2026 task mix.",
+  "status": "SAMPLE",
+  "blueprintCount": 120,
+  "availableCount": 12,
+  "durationMinutes": 25,
+  "blueprintDurationMinutes": 90,
+  "license": "Original",
+  "provenance": "EnglishPrepAI-Original-2026",
+  "passages": [
+    {
+      "id": "IBT05-P1",
+      "title": "Daily Life Notice: Geology Specimen Cabinet Relocation",
+      "body": "Department Announcement:\nMineral reference trays normally stored in Hall 210 are moving to Earth Sciences Room 118 between May 4 and May 6. During those three days, students studying for mineralogy lab practicals may inspect high-resolution 3D scans via the course portal or check out portable sample kits for 2-hour library use with a faculty signature.",
+      "readingOrder": 1
+    },
+    {
+      "id": "IBT05-P2",
+      "title": "Slow-Wave Sleep and Declarative Memory Transfer",
+      "body": "Neuroscientists long wondered why short nightly study reviews consistently outperform marathon all-night cramming before exams. Polysomnography studies show that during deep slow-wave sleep, brief electrical bursts called sleep spindles coordinate synchronized firing between the hippocampus—which holds fragile newly learned facts—and the neocortex, where durable long-term memories reside. When volunteers stay awake through the night after memorizing vocabulary pairs, this overnight transfer fails to occur, leaving recall accuracy nearly forty percent lower two days later even after recovery sleep.",
+      "readingOrder": 2
+    }
+  ],
+  "assets": [
+    {
+      "id": "IBT05-A01",
+      "relativePath": "audio/IBT05-A01.wav",
+      "kind": "AUDIO",
+      "caption": "W: Want to divide Monday's cognitive science slides before we rehearse tonight?",
+      "license": "Original",
+      "sha256": "131ad3c912e2f1f41555d37ae81cc8b5a051633a41de30adac4e0a291e529514",
+      "byteSize": 156044,
+      "durationMs": 4875
+    },
+    {
+      "id": "IBT05-A02",
+      "relativePath": "audio/IBT05-A02.wav",
+      "kind": "AUDIO",
+      "caption": "M: I reread my neuroscience chapters four times, yet froze on the quiz. W: Passive rereading creates familiarity without retrieval practice. Testing yourself from memory—even briefly—builds stronger recall pathways. N: What advice does the professor give?",
+      "license": "Original",
+      "sha256": "1bbcabf819ef6478960c1bbba24be03bcfc78a89ee7227f5e081df8ffcc3a502",
+      "byteSize": 575884,
+      "durationMs": 17995
+    },
+    {
+      "id": "IBT05-A03",
+      "relativePath": "audio/IBT05-A03.wav",
+      "kind": "AUDIO",
+      "caption": "M: When fault lines grind suddenly during an earthquake, frictional heat flashes along mineral veins. Microscopic fluid inclusions sealed inside fractured quartz crystals act like tiny thermometers preserving evidence of ancient slip events. N: How do quartz crystals preserve earthquake evidence?",
+      "license": "Original",
+      "sha256": "02d4a838242b3a0b9108dd9dcd2cefa247877c83e21f8143243c5f0c0d94cd66",
+      "byteSize": 614444,
+      "durationMs": 19200
+    },
+    {
+      "id": "IBT05-A04",
+      "relativePath": "audio/IBT05-A04.wav",
+      "kind": "AUDIO",
+      "caption": "W: Consistent nightly rest supports faster recall during complex problem solving.",
+      "license": "Original",
+      "sha256": "9c1376f206adac5b6c97cdf748653177505ddbf789641856eab032bae4716a17",
+      "byteSize": 169164,
+      "durationMs": 5285
+    }
+  ],
+  "items": [
+    {
+      "id": "IBT26-05-Q01",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Complete the Word: 'Repeated sleep spindles help cons_______ fragile facts into durable cortical memory.' (Write the full verb matching 'cons_______')",
+      "options": [],
+      "answer": "consolidate",
+      "acceptedAnswers": [
+        "consolidate"
+      ],
+      "explanation": "'Consolidate' berarti menguatkan/memadatkan ingatan baru menjadi memori jangka panjang.",
+      "rationaleSource": "IBT-MOD-01",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 1
+    },
+    {
+      "id": "IBT26-05-Q02",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "During May 4–6, how can a student physically examine mineral samples while Hall 210 cabinets are moving?",
+      "options": [
+        "Borrow a portable sample kit for two hours in the library with faculty approval.",
+        "Enter Hall 210 after 6 PM when movers leave.",
+        "Pick up trays directly from Room 118 without permission.",
+        "Wait until May 10 because no kits or scans exist."
+      ],
+      "answer": "Borrow a portable sample kit for two hours in the library with faculty approval.",
+      "acceptedAnswers": [
+        "Borrow a portable sample kit for two hours in the library with faculty approval."
+      ],
+      "explanation": "Pengumuman menyebut mahasiswa bisa meminjam kit sampel portabel selama 2 jam di perpustakaan dengan tanda tangan dosen.",
+      "rationaleSource": "IBT-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT05-P1",
+      "audioAssetId": null,
+      "sortIndex": 2
+    },
+    {
+      "id": "IBT26-05-Q03",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "According to Passage 2 ('Slow-Wave Sleep'), what happens if learners miss sleep on the night immediately following study?",
+      "options": [
+        "Recovery sleep two nights later cannot fully restore the lost consolidation transfer.",
+        "The hippocampus erases all prior childhood memories.",
+        "Sleep spindles double in speed during daytime classes.",
+        "All-night cramming produces higher retention after 48 hours."
+      ],
+      "answer": "Recovery sleep two nights later cannot fully restore the lost consolidation transfer.",
+      "acceptedAnswers": [
+        "Recovery sleep two nights later cannot fully restore the lost consolidation transfer."
+      ],
+      "explanation": "Kalimat terakhir menegaskan akurasi mengingat tetap ~40% lebih rendah dua hari kemudian meski sudah mengganti tidur.",
+      "rationaleSource": "IBT-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT05-P2",
+      "audioAssetId": null,
+      "sortIndex": 3
+    },
+    {
+      "id": "IBT26-05-Q04",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen and Choose a Response: Select the most appropriate reply.",
+      "options": [
+        "Sure, let's split the slides so you cover methods and I present results.",
+        "I left my umbrella inside the campus cafeteria.",
+        "Actually, psychology exams always include fifty desks.",
+        "No, the fountain near West Gate runs every spring."
+      ],
+      "answer": "Sure, let's split the slides so you cover methods and I present results.",
+      "acceptedAnswers": [
+        "Sure, let's split the slides so you cover methods and I present results."
+      ],
+      "explanation": "Pembicara menawarkan pembagian bagian presentasi; membagi porsi metode dan hasil adalah respons paling logis.",
+      "rationaleSource": "IBT-MOD-03",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT05-A01",
+      "sortIndex": 4
+    },
+    {
+      "id": "IBT26-05-Q05",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to the conversation. What misconception does the professor correct about memory?",
+      "options": [
+        "Rereading notes feels productive yet yields weaker recall than active self-testing.",
+        "Highlighting every sentence boosts long-term recall best.",
+        "Listening to music eliminates the need for sleep.",
+        "Flashcards work only for mathematics formulas."
+      ],
+      "answer": "Rereading notes feels productive yet yields weaker recall than active self-testing.",
+      "acceptedAnswers": [
+        "Rereading notes feels productive yet yields weaker recall than active self-testing."
+      ],
+      "explanation": "Dosen menjelaskan ilusi kelancaran dari membaca ulang pasif dibanding kekuatan *retrieval practice*.",
+      "rationaleSource": "IBT-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT05-A02",
+      "sortIndex": 5
+    },
+    {
+      "id": "IBT26-05-Q06",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to the geology talk. How do quartz crystals record past earthquakes along fault zones?",
+      "options": [
+        "Trace heat fractures and fluid inclusions capture brief high-temperature slip events.",
+        "Quartz dissolves completely during minor earth tremors.",
+        "Earthquakes turn quartz into soft liquid clay.",
+        "Crystals emit audible chimes before faults shift."
+      ],
+      "answer": "Trace heat fractures and fluid inclusions capture brief high-temperature slip events.",
+      "acceptedAnswers": [
+        "Trace heat fractures and fluid inclusions capture brief high-temperature slip events."
+      ],
+      "explanation": "Pembicara menjelaskan retakan termal dan inklusi fluida pada kuarsa merekam riwayat gesekan panas gempa purba.",
+      "rationaleSource": "IBT-MOD-04",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT05-A03",
+      "sortIndex": 6
+    },
+    {
+      "id": "IBT26-05-Q07",
+      "section": "WRITING",
+      "taskType": "SENTENCE_BUILD",
+      "prompt": "Build a grammatical sentence from the tiles: 'Neuroscientists investigated ___.'",
+      "options": [
+        "why",
+        "sleep",
+        "spindles",
+        "strengthen",
+        "overnight",
+        "memory"
+      ],
+      "answer": "why|sleep|spindles|strengthen|overnight|memory",
+      "acceptedAnswers": [
+        "why|sleep|spindles|strengthen|overnight|memory"
+      ],
+      "explanation": "Susunan klausa objek yang tepat adalah 'why sleep spindles strengthen overnight memory'.",
+      "rationaleSource": "IBT-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 7
+    },
+    {
+      "id": "IBT26-05-Q08",
+      "section": "WRITING",
+      "taskType": "WRITING_RESPONSE",
+      "prompt": "Write an Email (60–100 words): You need access to the Psychology Quiet Testing Booth on Wednesday from 2:00 to 3:30 PM to pilot-test an offline reading comprehension task with 4 volunteers. Email Lab Coordinator Ms. Park stating date/time, equipment needed (none—students bring tablets), and requesting booking confirmation.",
+      "options": [],
+      "answer": "",
+      "acceptedAnswers": [],
+      "explanation": "Email efektif mencakup waktu persis, jumlah peserta, kebutuhan peralatan, dan permintaan konfirmasi.",
+      "rationaleSource": "IBT-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "minWords": 50,
+      "recommendedWords": 80,
+      "rubricCriteria": [
+        "Clear reservation details",
+        "All prompt items covered",
+        "Concise tone",
+        "Clean grammar"
+      ],
+      "sortIndex": 8
+    },
+    {
+      "id": "IBT26-05-Q09",
+      "section": "WRITING",
+      "taskType": "WRITING_RESPONSE",
+      "prompt": "Write for an Academic Discussion (100–140 words): Dr. Morales asks: 'Should courses replace traditional two-hour final exams with multiple smaller cumulative quizzes throughout the term?' Dana argues smaller quizzes lower cramming stress and boost sleep; Trevor counters that comprehensive finals test deep synthesis across topics. Give your reasoned contribution.",
+      "options": [],
+      "answer": "",
+      "acceptedAnswers": [],
+      "explanation": "Tanggapi argumen Dana dan Trevor dengan perspektif terstruktur serta contoh pelaksanaan konkret.",
+      "rationaleSource": "IBT-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "minWords": 95,
+      "recommendedWords": 120,
+      "rubricCriteria": [
+        "Engages Dana/Trevor",
+        "Clear thesis",
+        "Practical rationale",
+        "Academic cohesion"
+      ],
+      "sortIndex": 9
+    },
+    {
+      "id": "IBT26-05-Q10",
+      "section": "SPEAKING",
+      "taskType": "LISTEN_REPEAT",
+      "prompt": "Listen and Repeat: Play the audio prompt once, then record yourself accurately.",
+      "options": [],
+      "answer": "Consistent nightly rest supports faster recall during complex problem solving.",
+      "acceptedAnswers": [
+        "Consistent nightly rest supports faster recall during complex problem solving."
+      ],
+      "explanation": "Jaga artikulasi 'consistent nightly rest' serta jeda singkat sebelum 'during complex'.",
+      "rationaleSource": "IBT-MOD-06",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT05-A04",
+      "referenceText": "Consistent nightly rest supports faster recall during complex problem solving.",
+      "sortIndex": 10
+    },
+    {
+      "id": "IBT26-05-Q11",
+      "section": "SPEAKING",
+      "taskType": "SPEAKING_RESPONSE",
+      "prompt": "Take an Interview (Question 1 · ~45s): 'Do you study more effectively in short focused intervals across several days or in longer uninterrupted blocks? Explain what works for you.'",
+      "options": [],
+      "answer": "",
+      "acceptedAnswers": [],
+      "explanation": "Gunakan contoh jadwal belajar nyata untuk memperkuat alasan Anda.",
+      "rationaleSource": "IBT-MOD-06",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "prepSeconds": 0,
+      "speakSeconds": 45,
+      "rubricCriteria": [
+        "Direct answer",
+        "Real study example",
+        "Fluency",
+        "Grammar"
+      ],
+      "sortIndex": 11
+    },
+    {
+      "id": "IBT26-05-Q12",
+      "section": "SPEAKING",
+      "taskType": "SPEAKING_RESPONSE",
+      "prompt": "Take an Interview (Question 2 · ~45s): 'Should universities offer quiet, device-free study halls without Wi-Fi alongside modern digital labs? Why?'",
+      "options": [],
+      "answer": "",
+      "acceptedAnswers": [],
+      "explanation": "Jelaskan dampak distraksi digital vs kebutuhan akses sumber daya dengan alasan seimbang.",
+      "rationaleSource": "IBT-MOD-06",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "prepSeconds": 0,
+      "speakSeconds": 45,
+      "rubricCriteria": [
+        "Clear stance",
+        "Cause-effect reasoning",
+        "Vocabulary",
+        "Delivery"
+      ],
+      "sortIndex": 12
+    }
+  ],
+  "checksum": "3201e03c0c4f7604a7e23c501c0e3cd98424641b03f5975158c405b62deb7693"
+}

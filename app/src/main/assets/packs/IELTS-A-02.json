@@ -1,0 +1,375 @@
+{
+  "schemaVersion": 1,
+  "exam": "IELTS_ACADEMIC",
+  "edition": "2026.1",
+  "packId": "IELTS-A-02",
+  "title": "IELTS Paket 2 — Coastal Conservation, Public Health & Reports",
+  "theme": "Oyster reef restoration, noise pollution trials, bar-chart comparisons, and cue card speaking.",
+  "status": "SAMPLE",
+  "blueprintCount": 85,
+  "availableCount": 12,
+  "durationMinutes": 35,
+  "blueprintDurationMinutes": 165,
+  "license": "Original",
+  "provenance": "EnglishPrepAI-Original-2026",
+  "passages": [
+    {
+      "id": "IELTS02-P1",
+      "title": "Living Breakwaters: Oyster Reefs Against Storm Erosion",
+      "body": "Paragraph A: Vertical concrete seawalls reflect incoming wave energy downward, scouring sandy beaches right in front of the barrier until footings collapse. Coastal engineers testing 'living shorelines' instead submerge biodegradable limestone cages seeded with juvenile oysters along shallow bays.\n\nParagraph B: Within three years, interlocking oyster shells cement themselves into dense reefs that rise naturally alongside gradual sea-level rise—something static concrete walls cannot do without costly rebuilding. Field sensors in Chesapeake tributaries recorded a forty-five percent drop in shoreline wave height behind mature oyster bars.\n\nParagraph C: However, oyster reefs fail in severely polluted harbors lacking dissolved oxygen or where heavy cargo wakes strike within twenty meters of shore. Under extreme industrial shipping traffic, engineers combine stone sills offshore with restored salt marshes behind them.",
+      "readingOrder": 1
+    }
+  ],
+  "assets": [
+    {
+      "id": "IELTS02-A01",
+      "relativePath": "audio/IELTS02-A01.wav",
+      "kind": "AUDIO",
+      "caption": "M: So I just wear this decibel clip Monday through Friday? W: We used five weekdays last pilot, actually—please wear it for seven days so weekend street noise is captured too.",
+      "license": "Original",
+      "sha256": "77b5ecfb204e08e5e72d67c12d8c249d975ee92e684bedc014547e94c88dffec",
+      "byteSize": 376044,
+      "durationMs": 11750
+    },
+    {
+      "id": "IELTS02-A02",
+      "relativePath": "audio/IELTS02-A02.wav",
+      "kind": "AUDIO",
+      "caption": "W: Welcome to the wetland boardwalk. Previously, heavy rain washed gravel and mud from flat footpaths straight into the duck nesting reeds. Raising visitors onto cedar planks lets rainwater filter cleanly through native sedges below.",
+      "license": "Original",
+      "sha256": "9ec01b8236e86a2a2b55c612d4945b5cc02a9386f6a1a77505d94310916457f5",
+      "byteSize": 476204,
+      "durationMs": 14880
+    },
+    {
+      "id": "IELTS02-A03",
+      "relativePath": "audio/IELTS02-A03.wav",
+      "kind": "AUDIO",
+      "caption": "M: While thin rows of saplings block very little highway rumble, thick belts of evergreen shrubs and broad tree foliage scatter high-frequency tire hiss, softening perceived loudness along sidewalks.",
+      "license": "Original",
+      "sha256": "cc5a3d3a3fba32dbf560bd8b05f9fa340eae81f614dec0175222a09d6c4dbbc5",
+      "byteSize": 392684,
+      "durationMs": 12270
+    }
+  ],
+  "items": [
+    {
+      "id": "IELTS-A-02-Q01",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 1 (NO MORE THAN TWO WORDS AND/OR A NUMBER): Complete the health survey line: 'Participants wear the acoustic monitor for ___ days before returning it.'",
+      "options": [],
+      "answer": "7",
+      "acceptedAnswers": [
+        "7",
+        "seven"
+      ],
+      "explanation": "Pewawancara sempat menyebut lima hari kerja, lalu mengoreksi: 'actually, please keep it on for seven full days so weekends are included.'",
+      "rationaleSource": "IELTS-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS02-A01",
+      "maxWords": 2,
+      "sortIndex": 1
+    },
+    {
+      "id": "IELTS-A-02-Q02",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 2: Why did the botanical park replace paved gravel paths along the duck pond with boardwalks?",
+      "options": [
+        "To stop muddy runoff from washing into shallow nesting reeds",
+        "To double the speed of electric maintenance carts",
+        "To save money on recycled timber planks",
+        "To keep visitors completely outside the south gate"
+      ],
+      "answer": "To stop muddy runoff from washing into shallow nesting reeds",
+      "acceptedAnswers": [
+        "To stop muddy runoff from washing into shallow nesting reeds"
+      ],
+      "explanation": "Pemandu menjelaskan limpasan kerikil berlumpur saat hujan deras mengganggu zona sarang burung air.",
+      "rationaleSource": "IELTS-MOD-01",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS02-A02",
+      "sortIndex": 2
+    },
+    {
+      "id": "IELTS-A-02-Q03",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 4 (ONE WORD ONLY): 'Urban street trees lower ambient traffic noise slightly by scattering high-frequency sound waves across dense ___.'",
+      "options": [],
+      "answer": "foliage",
+      "acceptedAnswers": [
+        "foliage"
+      ],
+      "explanation": "Dosen menyebut daun/tajuk rapat ('foliage') menyebarkan gelombang frekuensi tinggi.",
+      "rationaleSource": "IELTS-MOD-01",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS02-A03",
+      "maxWords": 1,
+      "sortIndex": 3
+    },
+    {
+      "id": "IELTS-A-02-Q04",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 1 ('Living Breakwaters'): 'Vertical concrete seawalls eliminate beach erosion completely in front of the wall.' -> TRUE, FALSE, or NOT GIVEN?",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": "FALSE",
+      "acceptedAnswers": [
+        "FALSE"
+      ],
+      "explanation": "Paragraf A menyatakan dinding beton memantulkan energi gelombang ke bawah dan justru menggerus pantai berpasir di depannya ('scouring sandy beaches').",
+      "rationaleSource": "IELTS-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS02-P1",
+      "audioAssetId": null,
+      "sortIndex": 4
+    },
+    {
+      "id": "IELTS-A-02-Q05",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 1: 'Oyster reefs grow fast enough to outpace every severe hurricane worldwide.' -> TRUE, FALSE, or NOT GIVEN?",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": "NOT GIVEN",
+      "acceptedAnswers": [
+        "NOT GIVEN"
+      ],
+      "explanation": "Paragraf B hanya menyebut terumbu tiram tumbuh naik mengikuti kenaikan muka air laut bertahap, tanpa klaim mengalahkan semua badai besar di seluruh dunia.",
+      "rationaleSource": "IELTS-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS02-P1",
+      "audioAssetId": null,
+      "sortIndex": 5
+    },
+    {
+      "id": "IELTS-A-02-Q06",
+      "section": "READING",
+      "taskType": "MATCHING",
+      "prompt": "Match each paragraph (A, B, C) of Passage 1 to its core idea:",
+      "options": [
+        "Paragraph A :: Contrasting rigid seawalls with seeded oyster cages",
+        "Paragraph B :: Self-adjusting vertical growth and wave-height reduction",
+        "Paragraph C :: Ecological and shipping limits requiring hybrid designs"
+      ],
+      "answer": "Paragraph A::Contrasting rigid seawalls with seeded oyster cages|Paragraph B::Self-adjusting vertical growth and wave-height reduction|Paragraph C::Ecological and shipping limits requiring hybrid designs",
+      "acceptedAnswers": [
+        "Paragraph A::Contrasting rigid seawalls with seeded oyster cages|Paragraph B::Self-adjusting vertical growth and wave-height reduction|Paragraph C::Ecological and shipping limits requiring hybrid designs"
+      ],
+      "explanation": "A membandingkan seawall dengan sangkar tiram; B memaparkan pertumbuhan alami & penurunan gelombang 45%; C mengulas batas oksigen/kapal kargo.",
+      "rationaleSource": "IELTS-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS02-P1",
+      "audioAssetId": null,
+      "pairs": [
+        {
+          "left": "Paragraph A",
+          "rightOptions": [
+            "Contrasting rigid seawalls with seeded oyster cages",
+            "Self-adjusting vertical growth and wave-height reduction",
+            "Ecological and shipping limits requiring hybrid designs"
+          ]
+        },
+        {
+          "left": "Paragraph B",
+          "rightOptions": [
+            "Contrasting rigid seawalls with seeded oyster cages",
+            "Self-adjusting vertical growth and wave-height reduction",
+            "Ecological and shipping limits requiring hybrid designs"
+          ]
+        },
+        {
+          "left": "Paragraph C",
+          "rightOptions": [
+            "Contrasting rigid seawalls with seeded oyster cages",
+            "Self-adjusting vertical growth and wave-height reduction",
+            "Ecological and shipping limits requiring hybrid designs"
+          ]
+        }
+      ],
+      "sortIndex": 6
+    },
+    {
+      "id": "IELTS-A-02-Q07",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Summary Completion (ONE WORD ONLY from Passage 1): 'Because oyster shells attach together over time, living reefs adapt naturally to gradual sea-level ___.'",
+      "options": [],
+      "answer": "rise",
+      "acceptedAnswers": [
+        "rise"
+      ],
+      "explanation": "Paragraf B secara harfiah memuat frasa 'gradual sea-level rise'.",
+      "rationaleSource": "IELTS-MOD-03",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS02-P1",
+      "audioAssetId": null,
+      "maxWords": 1,
+      "sortIndex": 7
+    },
+    {
+      "id": "IELTS-A-02-Q08",
+      "section": "WRITING",
+      "taskType": "WRITING_RESPONSE",
+      "prompt": "IELTS Academic Writing Task 1 (>=150 words, 20 min): The figures below show average daily minutes spent walking or cycling by adults in Metro City (2010 vs 2024) by age group:\n- Ages 18–29: 22 min (2010) -> 38 min (2024)\n- Ages 30–49: 16 min (2010) -> 29 min (2024)\n- Ages 50–64: 19 min (2010) -> 27 min (2024)\n- Ages 65+: 14 min (2010) -> 18 min (2024)\nSummarize the main trends and compare age groups.",
+      "options": [],
+      "answer": "",
+      "acceptedAnswers": [],
+      "explanation": "Tekankan dalam Overview bahwa seluruh kelompok usia meningkat, dengan lonjakan terbesar pada dewasa muda 18–29 dan kenaikan terendah pada 65+.",
+      "rationaleSource": "IELTS-MOD-04",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "minWords": 150,
+      "recommendedWords": 175,
+      "rubricCriteria": [
+        "Overview clarity",
+        "Accurate group comparisons",
+        "Cohesive flow",
+        "Grammar & lexical range"
+      ],
+      "sortIndex": 8
+    },
+    {
+      "id": "IELTS-A-02-Q09",
+      "section": "WRITING",
+      "taskType": "WRITING_RESPONSE",
+      "prompt": "IELTS Academic Writing Task 2 (>=250 words, 40 min): In many cities, public funding prioritizes expanding road networks rather than public parks and coastal wetlands. To what extent do you agree or disagree that green spaces deserve equal priority for public health?",
+      "options": [],
+      "answer": "",
+      "acceptedAnswers": [],
+      "explanation": "Nyatakan tingkat persetujuan tegas sejak pendahuluan dan dukung dengan dua argumen kesehatan fisik/mental + keseimbangan anggaran transportasi.",
+      "rationaleSource": "IELTS-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "minWords": 250,
+      "recommendedWords": 275,
+      "rubricCriteria": [
+        "Clear extent of agreement",
+        "Paragraph development",
+        "Topic-specific vocabulary",
+        "Grammatical accuracy"
+      ],
+      "sortIndex": 9
+    },
+    {
+      "id": "IELTS-A-02-Q10",
+      "section": "SPEAKING",
+      "taskType": "SPEAKING_RESPONSE",
+      "prompt": "IELTS Speaking Part 1 (~30–45s): 'Do you enjoy spending time near rivers, lakes, or the sea? What activities do people usually do there in your area?'",
+      "options": [],
+      "answer": "",
+      "acceptedAnswers": [],
+      "explanation": "Berikan 3–4 kalimat alami disertai detail suasana atau aktivitas lokal.",
+      "rationaleSource": "IELTS-MOD-06",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "prepSeconds": 0,
+      "speakSeconds": 45,
+      "rubricCriteria": [
+        "Fluency",
+        "Natural vocabulary",
+        "Sentence variety",
+        "Pronunciation"
+      ],
+      "sortIndex": 10
+    },
+    {
+      "id": "IELTS-A-02-Q11",
+      "section": "SPEAKING",
+      "taskType": "SPEAKING_RESPONSE",
+      "prompt": "IELTS Speaking Part 2 Cue Card (1 min prep · 2 min speak): Describe an outdoor park, beach, or natural place you visited that felt peaceful.\nYou should say:\n- where it is\n- who you went there with\n- what you saw and heard\n- and explain why this place felt restorative.",
+      "options": [],
+      "answer": "",
+      "acceptedAnswers": [],
+      "explanation": "Gunakan detail sensorik (udara, suara ombak/angin, vegetasi) untuk berbicara utuh hingga 90–120 detik.",
+      "rationaleSource": "IELTS-MOD-06",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "prepSeconds": 60,
+      "speakSeconds": 120,
+      "rubricCriteria": [
+        "Descriptive detail",
+        "Smooth storytelling",
+        "Lexical precision",
+        "Grammar"
+      ],
+      "sortIndex": 11
+    },
+    {
+      "id": "IELTS-A-02-Q12",
+      "section": "SPEAKING",
+      "taskType": "SPEAKING_RESPONSE",
+      "prompt": "IELTS Speaking Part 3 (~60s): 'How can coastal communities balance economic shipping needs with marine habitat conservation?'",
+      "options": [],
+      "answer": "",
+      "acceptedAnswers": [],
+      "explanation": "Bahas zonasi pelabuhan, regulasi limbah/kecepatan kapal, dan solusi teknik seperti terumbu pelindung.",
+      "rationaleSource": "IELTS-MOD-06",
+      "difficulty": "C1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "prepSeconds": 0,
+      "speakSeconds": 60,
+      "rubricCriteria": [
+        "Balanced analysis",
+        "Coherence",
+        "Precision",
+        "Fluency"
+      ],
+      "sortIndex": 12
+    }
+  ],
+  "checksum": "24c4bc4befd775b614bf86e8a590ff2596c589527b446ed6d65967b177354028"
+}

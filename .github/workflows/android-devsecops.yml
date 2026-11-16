@@ -1,0 +1,48 @@
+name: Android DevSecOps Gate
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+
+jobs:
+  verify-devsecops:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+          cache: gradle
+
+      - name: Secret & Manifest Security Hygiene Check
+        run: |
+          if git ls-files | grep -E '\.(jks|keystore|p12)$|keystore\.properties$'; then
+            echo "ERROR: Signing keystore or secret properties tracked in Git!"
+            exit 1
+          fi
+          if grep -q 'android.permission.INTERNET' app/src/main/AndroidManifest.xml; then
+            echo "ERROR: Unexpected INTERNET permission found in AndroidManifest.xml!"
+            exit 1
+          fi
+          if ! grep -q 'android:allowBackup="false"' app/src/main/AndroidManifest.xml; then
+            echo "ERROR: android:allowBackup=\"false\" missing in AndroidManifest.xml!"
+            exit 1
+          fi
+
+      - name: Run Unit & Integration Tests
+        run: ./gradlew testDebugUnitTest --console=plain
+
+      - name: Run Android Lint Security & Quality Gate
+        run: ./gradlew lintDebug --console=plain
+
+      - name: Build Hardened Release APK with R8 + Resource Shrinking
+        run: |
+          ./gradlew assembleRelease --console=plain
+          test -s app/build/outputs/mapping/release/mapping.txt
+          test -s app/build/outputs/apk/release/app-release-unsigned.apk || test -s app/build/outputs/apk/release/app-release.apk

@@ -1,0 +1,364 @@
+{
+  "schemaVersion": 1,
+  "exam": "IELTS_ACADEMIC",
+  "edition": "2026.1",
+  "packId": "IELTS-A-05",
+  "title": "IELTS Paket 5 — Ocean Acoustics & Future of Work",
+  "theme": "Quiet ship propellers, underwater bioacoustics, matching claims, and Problem-Solution essays.",
+  "status": "SAMPLE",
+  "blueprintCount": 85,
+  "availableCount": 12,
+  "durationMinutes": 35,
+  "blueprintDurationMinutes": 165,
+  "license": "Original",
+  "provenance": "EnglishPrepAI-Original-2026",
+  "passages": [
+    {
+      "id": "IELTS05-P1",
+      "title": "Quieting Cargo Ships to Protect Whale Acoustic Habitat",
+      "body": "Paragraph A: Sound travels nearly five times faster in seawater than in air, turning commercial shipping lanes into continuous low-frequency corridors. Most vessel noise originates not from engine rooms, but from propeller cavitation—microscopic vacuum bubbles forming and imploding violently along spinning blade tips.\n\nParagraph B: During a voluntary slowdown trial off Vancouver Island, container ships cutting speed by just eleven percent reduced underwater acoustic intensity by roughly half, allowing humpback and killer whales to detect echolocation clicks across wider feeding ranges. Meanwhile, naval architects now sculpt swept, five-blade propellers that delay cavitation onset while lowering fuel burn by four percent.",
+      "readingOrder": 1
+    }
+  ],
+  "assets": [
+    {
+      "id": "IELTS05-A01",
+      "relativePath": "audio/IELTS05-A01.wav",
+      "kind": "AUDIO",
+      "caption": "M: Do I need a paper medical copy at the dock tomorrow? W: Medical forms are online already—just bring your current swim certificate before boarding the research boat.",
+      "license": "Original",
+      "sha256": "823255e4ab6d418fcb6a22bf91c836d472b5c8cff5033aad5dbc8a3ebea06f7c",
+      "byteSize": 329164,
+      "durationMs": 10285
+    },
+    {
+      "id": "IELTS05-A02",
+      "relativePath": "audio/IELTS05-A02.wav",
+      "kind": "AUDIO",
+      "caption": "W: Did shipping companies resist the eleven-percent speed reduction near the bay? M: Actually, fuel logs won them over—not only did underwater cavitation noise plummet, but bunker fuel consumption also dropped measurably.",
+      "license": "Original",
+      "sha256": "01366dff49c29c737c045394fc0634d7b52b3de27f3fbd409ad6ae6467d84910",
+      "byteSize": 454124,
+      "durationMs": 14190
+    },
+    {
+      "id": "IELTS05-A03",
+      "relativePath": "audio/IELTS05-A03.wav",
+      "kind": "AUDIO",
+      "caption": "W: Modern passive acoustic monitoring deploys battery-powered hydrophones onto the continental shelf for six months at a time, capturing seasonal whale songs quietly without disturbing marine mammals.",
+      "license": "Original",
+      "sha256": "cc205fb31f6facdf01080a2bf05aba3214030acb3efd4c4f006faa1607c28b26",
+      "byteSize": 374284,
+      "durationMs": 11695
+    }
+  ],
+  "items": [
+    {
+      "id": "IELTS-A-05-Q01",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 1 (NO MORE THAN TWO WORDS AND/OR A NUMBER): 'Marine Field Station Registration — Bring a current ___ certificate before boarding research boats.'",
+      "options": [],
+      "answer": "swim",
+      "acceptedAnswers": [
+        "swim",
+        "swimming"
+      ],
+      "explanation": "Staf menyebutkan peserta perlu sertifikat berenang ('swim certificate') terbaru; formulir medis opsional sudah diisi daring.",
+      "rationaleSource": "IELTS-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS05-A01",
+      "maxWords": 2,
+      "sortIndex": 1
+    },
+    {
+      "id": "IELTS-A-05-Q02",
+      "section": "LISTENING",
+      "taskType": "CHOICE_MULTI",
+      "prompt": "Listening Part 3 (Choose TWO items): Which TWO benefits did port trials report when cargo ships slowed down near the harbor?",
+      "options": [
+        "Reduced underwater cavitation noise",
+        "Lower bunker fuel consumption",
+        "Zero container unloading delays",
+        "Elimination of harbor tugboats"
+      ],
+      "answer": "Reduced underwater cavitation noise|Lower bunker fuel consumption",
+      "acceptedAnswers": [
+        "Reduced underwater cavitation noise|Lower bunker fuel consumption"
+      ],
+      "explanation": "Peneliti menyoroti dua manfaat langsung: penurunan bising kavitasi bawah air dan penghematan bahan bakar kapal.",
+      "rationaleSource": "IELTS-MOD-01",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS05-A02",
+      "sortIndex": 2
+    },
+    {
+      "id": "IELTS-A-05-Q03",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 4 (ONE WORD ONLY): 'Autonomous hydrophones anchored on the seabed record whale calls without disturbing marine ___.'",
+      "options": [],
+      "answer": "mammals",
+      "acceptedAnswers": [
+        "mammals"
+      ],
+      "explanation": "Kuliah menggunakan frasa 'without disturbing marine mammals'.",
+      "rationaleSource": "IELTS-MOD-01",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS05-A03",
+      "maxWords": 1,
+      "sortIndex": 3
+    },
+    {
+      "id": "IELTS-A-05-Q04",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 1 ('Quieting Cargo Ships'): 'Diesel engine vibrations account for the majority of commercial vessel noise underwater.' -> TRUE, FALSE, or NOT GIVEN?",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": "FALSE",
+      "acceptedAnswers": [
+        "FALSE"
+      ],
+      "explanation": "Paragraf A menegaskan sumber utama bising kapal berasal dari kavitasi baling-baling ('not from engine rooms, but from propeller cavitation').",
+      "rationaleSource": "IELTS-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS05-P1",
+      "audioAssetId": null,
+      "sortIndex": 4
+    },
+    {
+      "id": "IELTS-A-05-Q05",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 1: 'Slowing ship speed near Vancouver Island measurably expanded the effective range of whale vocal communication.' -> TRUE, FALSE, or NOT GIVEN?",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": "TRUE",
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "explanation": "Paragraf B mengonfirmasi penurunan intensitas akustik hingga setengahnya memungkinkan paus mendeteksi klik ekolokasi pada rentang makan lebih luas.",
+      "rationaleSource": "IELTS-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS05-P1",
+      "audioAssetId": null,
+      "sortIndex": 5
+    },
+    {
+      "id": "IELTS-A-05-Q06",
+      "section": "READING",
+      "taskType": "MATCHING",
+      "prompt": "Match each mechanism in Passage 1 to its documented effect:",
+      "options": [
+        "11% speed reduction :: Halved underwater acoustic intensity during trials",
+        "Swept five-blade propeller :: Delayed bubble collapse while cutting fuel use 4%"
+      ],
+      "answer": "11% speed reduction::Halved underwater acoustic intensity during trials|Swept five-blade propeller::Delayed bubble collapse while cutting fuel use 4%",
+      "acceptedAnswers": [
+        "11% speed reduction::Halved underwater acoustic intensity during trials|Swept five-blade propeller::Delayed bubble collapse while cutting fuel use 4%"
+      ],
+      "explanation": "Paragraf B membedakan dampak operasional penurunan kecepatan 11% dari dampak desain baling-baling 5 bilah.",
+      "rationaleSource": "IELTS-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS05-P1",
+      "audioAssetId": null,
+      "pairs": [
+        {
+          "left": "11% speed reduction",
+          "rightOptions": [
+            "Halved underwater acoustic intensity during trials",
+            "Delayed bubble collapse while cutting fuel use 4%"
+          ]
+        },
+        {
+          "left": "Swept five-blade propeller",
+          "rightOptions": [
+            "Halved underwater acoustic intensity during trials",
+            "Delayed bubble collapse while cutting fuel use 4%"
+          ]
+        }
+      ],
+      "sortIndex": 6
+    },
+    {
+      "id": "IELTS-A-05-Q07",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Summary Completion (ONE WORD ONLY from Passage 1): 'Propeller noise arises primarily when tiny vacuum ___ form and implode near spinning blade tips.'",
+      "options": [],
+      "answer": "bubbles",
+      "acceptedAnswers": [
+        "bubbles"
+      ],
+      "explanation": "Paragraf A secara persis menyebut 'microscopic vacuum bubbles forming and imploding'.",
+      "rationaleSource": "IELTS-MOD-03",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS05-P1",
+      "audioAssetId": null,
+      "maxWords": 1,
+      "sortIndex": 7
+    },
+    {
+      "id": "IELTS-A-05-Q08",
+      "section": "WRITING",
+      "taskType": "WRITING_RESPONSE",
+      "prompt": "IELTS Academic Writing Task 1 (>=150 words, 20 min): The figures below present median underwater noise intensity (dB) and fuel use per nautical mile (liters) across three container-ship speeds:\n- 20 knots (Standard): 184 dB | 310 L/nm\n- 16 knots (Moderate): 178 dB | 255 L/nm\n- 12 knots (Eco-Zone): 171 dB | 220 L/nm\nSummarize the key relationships and compare the three speed profiles.",
+      "options": [],
+      "answer": "",
+      "acceptedAnswers": [],
+      "explanation": "Sorot korelasi langsung penurunan kecepatan dengan turunnya kebisingan dB sekaligus konsumsi bahan bakar per mil laut.",
+      "rationaleSource": "IELTS-MOD-04",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "minWords": 150,
+      "recommendedWords": 175,
+      "rubricCriteria": [
+        "Clear Overview",
+        "Accurate comparative metrics",
+        "Cohesion",
+        "Grammar"
+      ],
+      "sortIndex": 8
+    },
+    {
+      "id": "IELTS-A-05-Q09",
+      "section": "WRITING",
+      "taskType": "WRITING_RESPONSE",
+      "prompt": "IELTS Academic Writing Task 2 (>=250 words, 40 min): As automation and remote collaboration reshape entry-level office roles, many recent graduates struggle to gain mentored workplace experience. Why is this happening, and what measures can universities and employers take to solve it?",
+      "options": [],
+      "answer": "",
+      "acceptedAnswers": [],
+      "explanation": "Struktur Problem/Causes -> Solutions oleh universitas dan perusahaan dengan contoh magang terstruktur.",
+      "rationaleSource": "IELTS-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "minWords": 250,
+      "recommendedWords": 275,
+      "rubricCriteria": [
+        "Causes AND actionable solutions",
+        "Paragraph unity",
+        "Academic lexis",
+        "Grammar accuracy"
+      ],
+      "sortIndex": 9
+    },
+    {
+      "id": "IELTS-A-05-Q10",
+      "section": "SPEAKING",
+      "taskType": "SPEAKING_RESPONSE",
+      "prompt": "IELTS Speaking Part 1 (~30–45s): 'Let's talk about work and study habits. Do you prefer collaborating on team projects or completing tasks independently? Why?'",
+      "options": [],
+      "answer": "",
+      "acceptedAnswers": [],
+      "explanation": "Nyatakan preferensi jujur beserta 1 alasan + situasi kerja/kuliah singkat.",
+      "rationaleSource": "IELTS-MOD-06",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "prepSeconds": 0,
+      "speakSeconds": 45,
+      "rubricCriteria": [
+        "Fluency",
+        "Natural register",
+        "Vocabulary",
+        "Clarity"
+      ],
+      "sortIndex": 10
+    },
+    {
+      "id": "IELTS-A-05-Q11",
+      "section": "SPEAKING",
+      "taskType": "SPEAKING_RESPONSE",
+      "prompt": "IELTS Speaking Part 2 Cue Card (1 min prep · 2 min speak): Describe a job or career field you think will change significantly over the next ten years.\nYou should say:\n- what the job is\n- what skills it currently requires\n- how technology or society may reshape it\n- and explain whether you think those changes will be mostly positive or negative.",
+      "options": [],
+      "answer": "",
+      "acceptedAnswers": [],
+      "explanation": "Pastikan keempat poin Cue Card terjawab berurutan dengan contoh keterampilan manusia yang tetap relevan.",
+      "rationaleSource": "IELTS-MOD-06",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "prepSeconds": 60,
+      "speakSeconds": 120,
+      "rubricCriteria": [
+        "Task coverage",
+        "Cohesive flow",
+        "Lexical precision",
+        "Pronunciation"
+      ],
+      "sortIndex": 11
+    },
+    {
+      "id": "IELTS-A-05-Q12",
+      "section": "SPEAKING",
+      "taskType": "SPEAKING_RESPONSE",
+      "prompt": "IELTS Speaking Part 3 (~60s): 'How can young professionals keep their skills adaptable when technical tools evolve every few years?'",
+      "options": [],
+      "answer": "",
+      "acceptedAnswers": [],
+      "explanation": "Tekankan pembelajaran berkelanjutan, penguasaan prinsip dasar lintas alat, dan umpan balik mentor.",
+      "rationaleSource": "IELTS-MOD-06",
+      "difficulty": "C1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "prepSeconds": 0,
+      "speakSeconds": 60,
+      "rubricCriteria": [
+        "Abstract analytical depth",
+        "Discourse markers",
+        "Vocabulary",
+        "Fluency"
+      ],
+      "sortIndex": 12
+    }
+  ],
+  "checksum": "b749419bdcde5dc0265b441a76cfc868445f625aee70e046f8c78480a1af19f8"
+}

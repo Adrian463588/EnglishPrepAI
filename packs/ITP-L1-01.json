@@ -1,0 +1,374 @@
+{
+  "schemaVersion": 1,
+  "exam": "ITP_L1",
+  "edition": "2026.1",
+  "packId": "ITP-L1-01",
+  "title": "ITP Paket 1 — Campus Routines & Natural Systems",
+  "theme": "Diagnostic foundations across campus dialogues, passive solar biology, and clause grammar.",
+  "status": "SAMPLE",
+  "blueprintCount": 140,
+  "availableCount": 12,
+  "durationMinutes": 20,
+  "blueprintDurationMinutes": 115,
+  "license": "Original",
+  "provenance": "EnglishPrepAI-Original-2026",
+  "passages": [
+    {
+      "id": "ITP01-P1",
+      "title": "How Desert Succulents Conserve Water",
+      "body": "Unlike temperate woodland trees that open leaf pores throughout daylight hours, desert succulents rely on Crassulacean acid metabolism to curb moisture loss. At night, when desert air cools and humidity rises slightly, these plants open tiny stomata to absorb carbon dioxide, storing it as malic acid inside vacuole chambers. Once sunlight returns, stomata seal shut while photosynthesis converts the stored carbon into sugars. Because waxy cuticles and swollen stems simultaneously limit evaporation, succulents endure multi-month droughts without shedding vital tissue.",
+      "readingOrder": 1
+    },
+    {
+      "id": "ITP01-P2",
+      "title": "Early Marine Chronometers",
+      "body": "Before the 1760s, ocean navigators determined latitude easily from solar elevation, yet establishing longitude remained dangerously imprecise. Without knowing the exact time at a reference port, a clock error of merely four minutes shifted a ship's calculated position by sixty nautical miles near the equator. English carpenter John Harrison countered temperature swings and rolling decks by pairing bimetallic strips with low-friction bearings in his fourth sea watch, H4. Trial voyages across the Atlantic proved its accuracy within a single nautical mile, revolutionizing maritime cartography.",
+      "readingOrder": 2
+    }
+  ],
+  "assets": [
+    {
+      "id": "ITP01-A01",
+      "relativePath": "audio/ITP01-A01.wav",
+      "kind": "AUDIO",
+      "caption": "M: Could I borrow your digital voice recorder for this afternoon? W: I wish I could help, but Maya borrowed it for her linguistics interview. N: What does the woman mean?",
+      "license": "Original",
+      "sha256": "e435d83c30c2f15a3e603083dc0133d6e4753f6477e448e93cc4e6d9a2744350",
+      "byteSize": 366284,
+      "durationMs": 11445
+    },
+    {
+      "id": "ITP01-A02",
+      "relativePath": "audio/ITP01-A02.wav",
+      "kind": "AUDIO",
+      "caption": "W: Should we review the graphs before Professor Lin arrives? M: Sure, though did someone turn this room into an icebox? N: What does the man imply?",
+      "license": "Original",
+      "sha256": "b58140ac9166c4985f50655aa2837bab3597fb10dae5cb195c959ef725b39dfd",
+      "byteSize": 345964,
+      "durationMs": 10810
+    },
+    {
+      "id": "ITP01-A03",
+      "relativePath": "audio/ITP01-A03.wav",
+      "kind": "AUDIO",
+      "caption": "W: Hello, I noticed Geology 105 has a field component. Does it count toward my natural science lab credit? M: Let me check the catalog code. Yes, any four-credit course ending in five qualifies. N: Why did the student visit the office?",
+      "license": "Original",
+      "sha256": "29b9d88a023c2c13f9a1a4b78db13daad622d9162baed205618034f79c0bd1a4",
+      "byteSize": 611564,
+      "durationMs": 19110
+    },
+    {
+      "id": "ITP01-A04",
+      "relativePath": "audio/ITP01-A04.wav",
+      "kind": "AUDIO",
+      "caption": "M: In arid regions, thick adobe walls utilize thermal mass. They absorb daytime heat gradually, keeping interior rooms cool until nightfall releases that stored warmth outside. N: How do adobe walls moderate indoor temperatures?",
+      "license": "Original",
+      "sha256": "8cb0351d8a0202336af2a59db8ffae32206c8b8446538b9dab7276a9db9f561c",
+      "byteSize": 514284,
+      "durationMs": 16070
+    }
+  ],
+  "items": [
+    {
+      "id": "ITP-L1-01-Q01",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to the short dialogue. What does the woman mean?",
+      "options": [
+        "She cannot lend the recorder because another classmate has it.",
+        "She forgot to bring batteries for the recorder.",
+        "She will meet the man at the media counter at five.",
+        "She plans to sell her audio recorder tomorrow."
+      ],
+      "answer": "She cannot lend the recorder because another classmate has it.",
+      "acceptedAnswers": [
+        "She cannot lend the recorder because another classmate has it."
+      ],
+      "explanation": "Pembicara kedua menyebut 'Maya borrowed it for her linguistics interview', artinya alat sedang dipinjam orang lain.",
+      "rationaleSource": "ITP-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP01-A01",
+      "sortIndex": 1
+    },
+    {
+      "id": "ITP-L1-01-Q02",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to the conversation between two students. What does the man imply?",
+      "options": [
+        "He thinks the seminar room feels unusually cold.",
+        "He wants to cancel today's afternoon seminar.",
+        "He prefers sitting beside the open window.",
+        "He already turned off the air conditioner."
+      ],
+      "answer": "He thinks the seminar room feels unusually cold.",
+      "acceptedAnswers": [
+        "He thinks the seminar room feels unusually cold."
+      ],
+      "explanation": "'Did someone turn this room into an icebox?' adalah ungkapan hiperbolis bahwa ruangan terasa sangat dingin.",
+      "rationaleSource": "ITP-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP01-A02",
+      "sortIndex": 2
+    },
+    {
+      "id": "ITP-L1-01-Q03",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to the advisor dialogue. Why does the student visit the registrar office?",
+      "options": [
+        "To clarify whether an elective fulfills her science requirement.",
+        "To withdraw from all spring courses.",
+        "To request an extension on tuition payment.",
+        "To replace a lost dormitory key."
+      ],
+      "answer": "To clarify whether an elective fulfills her science requirement.",
+      "acceptedAnswers": [
+        "To clarify whether an elective fulfills her science requirement."
+      ],
+      "explanation": "Mahasiswa menanyakan apakah mata kuliah Geology 105 dapat dihitung sebagai kredit laboratorium sains.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP01-A03",
+      "sortIndex": 3
+    },
+    {
+      "id": "ITP-L1-01-Q04",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to the mini-lecture excerpt. According to the speaker, what keeps adobe walls cool during afternoon heat?",
+      "options": [
+        "Thick earthen walls absorb heat slowly and release it at night.",
+        "Reflective metal sheets block all infrared rays.",
+        "Underground pipes pump chilled groundwater.",
+        "High ceilings push humid air through roof vents."
+      ],
+      "answer": "Thick earthen walls absorb heat slowly and release it at night.",
+      "acceptedAnswers": [
+        "Thick earthen walls absorb heat slowly and release it at night."
+      ],
+      "explanation": "Pembicara menjelaskan prinsip thermal mass: dinding tanah liat tebal menyerap panas lambat di siang hari lalu melepasnya saat malam.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP01-A04",
+      "sortIndex": 4
+    },
+    {
+      "id": "ITP-L1-01-Q05",
+      "section": "STRUCTURE",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Rarely ___ a volcanic eruption monitored from so many underwater sensors simultaneously.",
+      "options": [
+        "was",
+        "has",
+        "were",
+        "have"
+      ],
+      "answer": "was",
+      "acceptedAnswers": [
+        "was"
+      ],
+      "explanation": "Adverb negatif 'Rarely' di awal kalimat memicu inversi auxiliary 'was' + subjek tunggal 'a volcanic eruption' + past participle 'monitored'.",
+      "rationaleSource": "ITP-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 5
+    },
+    {
+      "id": "ITP-L1-01-Q06",
+      "section": "STRUCTURE",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "The university's archive of nineteenth-century maps, along with several brass compasses, ___ stored in climate-controlled drawers.",
+      "options": [
+        "is",
+        "are",
+        "were",
+        "have"
+      ],
+      "answer": "is",
+      "acceptedAnswers": [
+        "is"
+      ],
+      "explanation": "Inti subjek adalah kata benda tunggal 'archive'; frasa 'along with...' tidak menjadikan subjek jamak.",
+      "rationaleSource": "ITP-MOD-03",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 6
+    },
+    {
+      "id": "ITP-L1-01-Q07",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "Migratory whales [A] rely on low-frequency calls [B] to coordinate feeding, [C] avoid reefs, and [D] finding distant mates.",
+      "options": [
+        "[A] rely on",
+        "[B] to coordinate",
+        "[C] avoid reefs",
+        "[D] finding distant mates"
+      ],
+      "answer": "[D] finding distant mates",
+      "acceptedAnswers": [
+        "[D] finding distant mates"
+      ],
+      "explanation": "Paralelisme sesudah 'to' menuntut bentuk dasar 'find distant mates' sejajar dengan 'coordinate' dan 'avoid'.",
+      "rationaleSource": "ITP-MOD-04",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 7
+    },
+    {
+      "id": "ITP-L1-01-Q08",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "Although [A] the bridge looks [B] similarly to Victorian steel spans, [C] its core cables use [D] modern carbon composites.",
+      "options": [
+        "[A] the bridge looks",
+        "[B] similarly to",
+        "[C] its core cables",
+        "[D] modern carbon composites"
+      ],
+      "answer": "[B] similarly to",
+      "acceptedAnswers": [
+        "[B] similarly to"
+      ],
+      "explanation": "Linking verb 'looks' diikuti adjektiva 'similar to', bukan adverb 'similarly'.",
+      "rationaleSource": "ITP-MOD-04",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 8
+    },
+    {
+      "id": "ITP-L1-01-Q09",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Based on Passage 1 ('How Desert Succulents Conserve Water'), why do succulents open their stomata at night?",
+      "options": [
+        "Cooler night air lowers the amount of water lost through evaporation.",
+        "Photosynthesis occurs faster in darkness than in sunlight.",
+        "Night winds supply higher nitrogen levels to roots.",
+        "Insects pollinate stomata only after sunset."
+      ],
+      "answer": "Cooler night air lowers the amount of water lost through evaporation.",
+      "acceptedAnswers": [
+        "Cooler night air lowers the amount of water lost through evaporation."
+      ],
+      "explanation": "Paragraf menjelaskan pembukaan stomata terjadi saat udara malam lebih dingin dan lembap untuk menekan kehilangan air.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP01-P1",
+      "audioAssetId": null,
+      "sortIndex": 9
+    },
+    {
+      "id": "ITP-L1-01-Q10",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "In Passage 1, the word 'curb' in line 2 is closest in meaning to:",
+      "options": [
+        "restrain",
+        "measure",
+        "accelerate",
+        "reverse"
+      ],
+      "answer": "restrain",
+      "acceptedAnswers": [
+        "restrain"
+      ],
+      "explanation": "Dalam konteks 'curb moisture loss', 'curb' berarti menahan atau membatasi ('restrain').",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP01-P1",
+      "audioAssetId": null,
+      "sortIndex": 10
+    },
+    {
+      "id": "ITP-L1-01-Q11",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "In Passage 2 ('Early Marine Chronometers'), what does the pronoun 'its' in the final sentence refer to?",
+      "options": [
+        "H4",
+        "the equator",
+        "latitude",
+        "cartography"
+      ],
+      "answer": "H4",
+      "acceptedAnswers": [
+        "H4"
+      ],
+      "explanation": "'its accuracy within a single nautical mile' merujuk pada jam laut keempat karya Harrison, yakni H4.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP01-P2",
+      "audioAssetId": null,
+      "sortIndex": 11
+    },
+    {
+      "id": "ITP-L1-01-Q12",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "According to Passage 2, why was an accurate clock essential for measuring longitude at sea?",
+      "options": [
+        "Small timing errors translated into large directional distance errors.",
+        "Clocks powered ship compasses near magnetic poles.",
+        "Captains needed alarms to wake harbor pilots.",
+        "Solar angles disappeared completely near the equator."
+      ],
+      "answer": "Small timing errors translated into large directional distance errors.",
+      "acceptedAnswers": [
+        "Small timing errors translated into large directional distance errors."
+      ],
+      "explanation": "Teks menyebutkan kesalahan 4 menit menggeser posisi hingga 60 mil laut.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP01-P2",
+      "audioAssetId": null,
+      "sortIndex": 12
+    }
+  ],
+  "checksum": "fc1f42ae3e78e6643837f94b74a47e0269461a2e3f1b3027cedaee408f32c427"
+}

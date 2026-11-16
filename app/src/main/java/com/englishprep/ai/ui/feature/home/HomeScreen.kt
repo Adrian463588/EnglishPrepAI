@@ -1,0 +1,266 @@
+package com.englishprep.ai.ui.feature.home
+
+import androidx.compose.foundation.BorderStroke
+import androidx.compose.foundation.clickable
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.PaddingValues
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.defaultMinSize
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Check
+import androidx.compose.material3.CircularProgressIndicator
+import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.Icon
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.ModalBottomSheet
+import androidx.compose.material3.Surface
+import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.semantics.heading
+import androidx.compose.ui.semantics.semantics
+import androidx.compose.ui.unit.dp
+import androidx.hilt.navigation.compose.hiltViewModel
+import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import com.englishprep.ai.domain.engines.LlmModelState
+import com.englishprep.ai.domain.models.ExamId
+import com.englishprep.ai.ui.components.AppButton
+import com.englishprep.ai.ui.components.ExamSelector
+import com.englishprep.ai.ui.components.ModuleRow
+import com.englishprep.ai.ui.components.OfflineModelState
+import com.englishprep.ai.ui.components.ProgressSummary
+import com.englishprep.ai.ui.components.SectionHeading
+import com.englishprep.ai.ui.theme.AppSpacing
+
+@Composable
+fun HomeRoute(
+    onOpenSession: (String) -> Unit,
+    onOpenModule: (String) -> Unit,
+    onOpenPractice: () -> Unit,
+    onOpenChat: (String?) -> Unit,
+    onOpenProfileAi: () -> Unit,
+    viewModel: HomeViewModel = hiltViewModel(),
+) {
+    val state by viewModel.uiState.collectAsStateWithLifecycle()
+    HomeScreen(
+        state = state,
+        onOpenSwitcher = { viewModel.setSwitcherVisible(true) },
+        onDismissSwitcher = { viewModel.setSwitcherVisible(false) },
+        onSelectExam = viewModel::selectExam,
+        onPrimaryAction = { viewModel.startPrimaryAction(onOpenSession) },
+        onOpenModule = onOpenModule,
+        onOpenPractice = onOpenPractice,
+        onOpenChat = { onOpenChat(state.recommendedModule?.id) },
+        onOpenProfileAi = onOpenProfileAi,
+    )
+}
+
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+fun HomeScreen(
+    state: HomeUiState,
+    onOpenSwitcher: () -> Unit,
+    onDismissSwitcher: () -> Unit,
+    onSelectExam: (ExamId) -> Unit,
+    onPrimaryAction: () -> Unit,
+    onOpenModule: (String) -> Unit,
+    onOpenPractice: () -> Unit,
+    onOpenChat: () -> Unit,
+    onOpenProfileAi: () -> Unit,
+    modifier: Modifier = Modifier,
+) {
+    if (state.isLoading) {
+        Box(modifier = modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
+            CircularProgressIndicator()
+        }
+        return
+    }
+
+    LazyColumn(
+        modifier = modifier.fillMaxSize(),
+        contentPadding = PaddingValues(horizontal = AppSpacing.md, vertical = AppSpacing.sm + 4.dp),
+        verticalArrangement = Arrangement.spacedBy(AppSpacing.sm + 4.dp),
+    ) {
+        item {
+            Text(
+                text = "English Prep AI",
+                style = MaterialTheme.typography.headlineMedium,
+                color = MaterialTheme.colorScheme.onSurface,
+                modifier = Modifier.semantics { heading() },
+            )
+            Spacer(modifier = Modifier.height(AppSpacing.xs))
+            Text(
+                text = "Mode offline penuh • Materi, tryout, audio & AI lokal di perangkat.",
+                style = MaterialTheme.typography.bodyMedium,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+            )
+        }
+
+        item {
+            ExamSelector(
+                activeExam = state.selectedExam,
+                onOpenSwitcher = onOpenSwitcher,
+            )
+        }
+
+        item {
+            Surface(
+                shape = MaterialTheme.shapes.medium,
+                color = MaterialTheme.colorScheme.primaryContainer.copy(alpha = 0.45f),
+                border = BorderStroke(1.dp, MaterialTheme.colorScheme.primary.copy(alpha = 0.3f)),
+                modifier = Modifier.fillMaxWidth(),
+            ) {
+                Column(modifier = Modifier.padding(AppSpacing.md)) {
+                    Text(
+                        text = if (state.activeSessionId != null) "Lanjutkan Sesi" else "Mulai Cepat",
+                        style = MaterialTheme.typography.labelMedium,
+                        color = MaterialTheme.colorScheme.primary,
+                    )
+                    Spacer(modifier = Modifier.height(AppSpacing.xs))
+                    Text(
+                        text = state.activeSessionTitle
+                            ?: state.recommendedPack?.title
+                            ?: state.selectedExam.title,
+                        style = MaterialTheme.typography.titleLarge,
+                        color = MaterialTheme.colorScheme.onSurface,
+                    )
+                    Spacer(modifier = Modifier.height(AppSpacing.xs))
+                    Text(
+                        text = state.selectedExam.subtitle,
+                        style = MaterialTheme.typography.bodyMedium,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    )
+                    Spacer(modifier = Modifier.height(AppSpacing.md))
+                    Row(
+                        horizontalArrangement = Arrangement.spacedBy(AppSpacing.sm),
+                        modifier = Modifier.fillMaxWidth(),
+                    ) {
+                        AppButton(
+                            text = if (state.activeSessionId != null) "Lanjutkan" else "Mulai Latihan",
+                            onClick = onPrimaryAction,
+                        )
+                        AppButton(
+                            text = "Lihat 5 Paket",
+                            onClick = onOpenPractice,
+                            outlined = true,
+                        )
+                    }
+                }
+            }
+        }
+
+        item {
+            ProgressSummary(
+                title = "Ringkasan ${state.selectedExam.title}",
+                accuracyPercent = state.averageAccuracyPercent,
+                completedSessions = state.completedSessionCount,
+                subtitle = state.selectedExam.scaleLabel,
+            )
+        }
+
+        state.recommendedModule?.let { module ->
+            item {
+                SectionHeading(text = "Materi Berikutnya")
+                Spacer(modifier = Modifier.height(AppSpacing.sm))
+                Surface(
+                    shape = MaterialTheme.shapes.medium,
+                    color = MaterialTheme.colorScheme.surface,
+                    border = BorderStroke(1.dp, MaterialTheme.colorScheme.outline),
+                ) {
+                    ModuleRow(
+                        module = module,
+                        masteryPercent = null,
+                        onClick = { onOpenModule(module.id) },
+                    )
+                }
+            }
+        }
+
+        item {
+            SectionHeading(text = "Tutor AI Lokal (Gemma 4 / FTS)")
+            Spacer(modifier = Modifier.height(AppSpacing.sm))
+            val llmReady = state.llmState is LlmModelState.Ready
+            val detail = when (val llm = state.llmState) {
+                is LlmModelState.Ready -> "Aktif offline: ${llm.modelName} (${llm.variant})"
+                is LlmModelState.Loading -> "Memuat model lokal: ${llm.modelName}..."
+                is LlmModelState.Error -> llm.message
+                LlmModelState.Unloaded -> "Model belum diimpor; pencarian materi FTS offline tetap aktif."
+            }
+            OfflineModelState(
+                modelLabel = "Asisten Belajar Offline",
+                isReady = llmReady,
+                detail = detail,
+                actionLabel = "Tanya AI",
+                onAction = onOpenChat,
+            )
+            if (!llmReady) {
+                Spacer(modifier = Modifier.height(AppSpacing.xs))
+                TextButton(
+                    onClick = onOpenProfileAi,
+                    modifier = Modifier.defaultMinSize(minHeight = AppSpacing.minTouchTarget),
+                ) {
+                    Text(text = "Atur / Impor Model Gemma 4 di Profil")
+                }
+            }
+        }
+    }
+
+    if (state.showExamSwitcher) {
+        ModalBottomSheet(onDismissRequest = onDismissSwitcher) {
+            Column(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(horizontal = AppSpacing.md, vertical = AppSpacing.sm),
+            ) {
+                SectionHeading(text = "Pilih Target Ujian")
+                Spacer(modifier = Modifier.height(AppSpacing.sm))
+                ExamId.entries.forEach { exam ->
+                    val selected = exam == state.selectedExam
+                    Surface(
+                        shape = MaterialTheme.shapes.medium,
+                        color = if (selected) MaterialTheme.colorScheme.primaryContainer.copy(alpha = 0.5f) else MaterialTheme.colorScheme.surface,
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .defaultMinSize(minHeight = AppSpacing.minTouchTarget)
+                            .clickable { onSelectExam(exam) },
+                    ) {
+                        Row(
+                            modifier = Modifier.padding(AppSpacing.md),
+                            verticalAlignment = Alignment.CenterVertically,
+                            horizontalArrangement = Arrangement.SpaceBetween,
+                        ) {
+                            Column(modifier = Modifier.weight(1f)) {
+                                Text(text = exam.title, style = MaterialTheme.typography.titleMedium)
+                                Text(
+                                    text = "${exam.subtitle} • ${exam.scaleLabel}",
+                                    style = MaterialTheme.typography.bodyMedium,
+                                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                                )
+                            }
+                            if (selected) {
+                                Icon(
+                                    imageVector = Icons.Default.Check,
+                                    contentDescription = "Aktif",
+                                    tint = MaterialTheme.colorScheme.primary,
+                                )
+                            }
+                        }
+                    }
+                    Spacer(modifier = Modifier.height(AppSpacing.sm))
+                }
+                Spacer(modifier = Modifier.height(AppSpacing.md))
+            }
+        }
+    }
+}

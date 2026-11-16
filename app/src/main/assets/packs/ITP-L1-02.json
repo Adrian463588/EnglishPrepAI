@@ -1,0 +1,374 @@
+{
+  "schemaVersion": 1,
+  "exam": "ITP_L1",
+  "edition": "2026.1",
+  "packId": "ITP-L1-02",
+  "title": "ITP Paket 2 — History, Architecture & Urban Ecology",
+  "theme": "Idiomatic campus exchanges, participle clauses, and industrial urban waterways.",
+  "status": "SAMPLE",
+  "blueprintCount": 140,
+  "availableCount": 12,
+  "durationMinutes": 20,
+  "blueprintDurationMinutes": 115,
+  "license": "Original",
+  "provenance": "EnglishPrepAI-Original-2026",
+  "passages": [
+    {
+      "id": "ITP02-P1",
+      "title": "Daylighting Buried Urban Streams",
+      "body": "During rapid nineteenth-century industrialization, dozens of cities enclosed small creeks inside brick culverts to clear land for factories and roads. While convenient initially, buried pipes accelerated stormwater runoff, triggering severe downstream flash floods whenever intense rain overwhelmed drain capacity. Urban planners now practice 'daylighting'—uncovering buried channels and restoring vegetated floodplains. Once reopened, meandering banks slow peak discharge, filter road pollutants through root systems, and cool adjacent neighborhoods by up to two degrees Celsius.",
+      "readingOrder": 1
+    },
+    {
+      "id": "ITP02-P2",
+      "title": "Roman Hydraulic Concrete",
+      "body": "Modern Portland cement piers immersed in seawater frequently crack within decades as saltwater corrodes embedded steel reinforcement. By contrast, harbor breakwaters constructed along the Mediterranean two millennia ago remain intact despite relentless wave impact. Materials analyses indicate Roman builders mixed slaked lime with volcanic pozzolana ash, creating mineral crystals that actually interlock tighter when exposed to seawater percolation. Instead of weakening over time, microscopic fractures self-heal as aluminum-silicate compounds precipitate inside pores.",
+      "readingOrder": 2
+    }
+  ],
+  "assets": [
+    {
+      "id": "ITP02-A01",
+      "relativePath": "audio/ITP02-A01.wav",
+      "kind": "AUDIO",
+      "caption": "W: Should I add three more quotations to my history essay? M: Before adding sources, I'd sharpen your topic sentences so each paragraph's point stands out. N: What does the man suggest?",
+      "license": "Original",
+      "sha256": "699c9257e669de325c466c6d435100c5568e1a731daaf2311760109c353f1991",
+      "byteSize": 426604,
+      "durationMs": 13330
+    },
+    {
+      "id": "ITP02-A02",
+      "relativePath": "audio/ITP02-A02.wav",
+      "kind": "AUDIO",
+      "caption": "M: Did you grab the new biology lab manual yet? W: No luck—the bookstore sold out this morning, though a shipment arrives Thursday. N: What is true about the lab manual?",
+      "license": "Original",
+      "sha256": "40009eb5e089634f7f3113fafd59f84da0c5838e144cc6a13cb92b5bbf37f700",
+      "byteSize": 385804,
+      "durationMs": 12055
+    },
+    {
+      "id": "ITP02-A03",
+      "relativePath": "audio/ITP02-A03.wav",
+      "kind": "AUDIO",
+      "caption": "M: I can't find the 1924 city newspaper reel on the third floor. W: That reel is archived at our downtown branch. I can place a transfer hold so it arrives here by noon tomorrow. N: What does the librarian offer to do?",
+      "license": "Original",
+      "sha256": "e5c74693634bd7dbf45e6ebe17b7dbe8aaa2dd1468238c4640b19bef7952e224",
+      "byteSize": 517324,
+      "durationMs": 16165
+    },
+    {
+      "id": "ITP02-A04",
+      "relativePath": "audio/ITP02-A04.wav",
+      "kind": "AUDIO",
+      "caption": "W: Because prepared animal skin parchment was expensive and scarce, medieval scribes sometimes scraped off older writing to copy new manuscripts—creating layered documents called palimpsests. N: Why were parchment sheets reused?",
+      "license": "Original",
+      "sha256": "af246e38d7a0a16e7bae8a13bf2ee10cc70e3b574229091c407a3cf1eaacbb79",
+      "byteSize": 464044,
+      "durationMs": 14500
+    }
+  ],
+  "items": [
+    {
+      "id": "ITP-L1-02-Q01",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to the conversation. What does the man mean?",
+      "options": [
+        "He thinks the essay outline needs clearer topic sentences.",
+        "He has already finished grading all student outlines.",
+        "He disagrees with every point in the woman's essay.",
+        "He plans to skip the writing center workshop."
+      ],
+      "answer": "He thinks the essay outline needs clearer topic sentences.",
+      "acceptedAnswers": [
+        "He thinks the essay outline needs clearer topic sentences."
+      ],
+      "explanation": "Pria menyarankan penajaman topic sentences sebelum menambahkan lebih banyak kutipan.",
+      "rationaleSource": "ITP-MOD-01",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP02-A01",
+      "sortIndex": 1
+    },
+    {
+      "id": "ITP-L1-02-Q02",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to the dialogue. What can be inferred about the campus bookstore?",
+      "options": [
+        "It ran out of the biology lab manual temporarily.",
+        "It closed permanently last Friday.",
+        "It only accepts cash payments for manuals.",
+        "It moved into the chemistry annex."
+      ],
+      "answer": "It ran out of the biology lab manual temporarily.",
+      "acceptedAnswers": [
+        "It ran out of the biology lab manual temporarily."
+      ],
+      "explanation": "Wanita menyebut stok manual habis sementara ('sold out until Thursday').",
+      "rationaleSource": "ITP-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP02-A02",
+      "sortIndex": 2
+    },
+    {
+      "id": "ITP-L1-02-Q03",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to the student-librarian conversation. What does the librarian offer to do?",
+      "options": [
+        "Place a hold on a microfilm reel from another branch.",
+        "Scan the entire newspaper archive immediately.",
+        "Extend the library closing hour until midnight.",
+        "Waive all late fees from previous semesters."
+      ],
+      "answer": "Place a hold on a microfilm reel from another branch.",
+      "acceptedAnswers": [
+        "Place a hold on a microfilm reel from another branch."
+      ],
+      "explanation": "Pustakawan menawarkan pemesanan silang antar-cabang ('request the reel from our downtown branch').",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP02-A03",
+      "sortIndex": 3
+    },
+    {
+      "id": "ITP-L1-02-Q04",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to the archaeology talk. Why did scribes reuse ancient parchment leaves?",
+      "options": [
+        "Prepared animal skin was costly and scarce.",
+        "Ink faded completely within three days.",
+        "Laws prohibited keeping older religious texts.",
+        "Wood pulp paper had already replaced parchment."
+      ],
+      "answer": "Prepared animal skin was costly and scarce.",
+      "acceptedAnswers": [
+        "Prepared animal skin was costly and scarce."
+      ],
+      "explanation": "Pembicara menjelaskan kelangkaan dan tingginya biaya pembuatan perkamen mendorong praktik palimpsest.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP02-A04",
+      "sortIndex": 4
+    },
+    {
+      "id": "ITP-L1-02-Q05",
+      "section": "STRUCTURE",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "___ along shallow tidal flats, mangrove roots trap floating silt and protect shorelines from storm surges.",
+      "options": [
+        "Growing",
+        "Grown they",
+        "To grow it",
+        "Having grew"
+      ],
+      "answer": "Growing",
+      "acceptedAnswers": [
+        "Growing"
+      ],
+      "explanation": "Reduced active participle clause ('Growing along shallow tidal flats...') menjelaskan subjek 'mangrove roots'.",
+      "rationaleSource": "ITP-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 5
+    },
+    {
+      "id": "ITP-L1-02-Q06",
+      "section": "STRUCTURE",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Architects designed the reading hall with north-facing skylights ___ direct glare across study tables.",
+      "options": [
+        "to minimize",
+        "minimize",
+        "minimizing it",
+        "for minimize"
+      ],
+      "answer": "to minimize",
+      "acceptedAnswers": [
+        "to minimize"
+      ],
+      "explanation": "Infinitive of purpose 'to minimize' menyatakan tujuan perancangan jendela atap.",
+      "rationaleSource": "ITP-MOD-03",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 6
+    },
+    {
+      "id": "ITP-L1-02-Q07",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "Between 1910 and 1930, [A] the number of municipal libraries [B] across the Midwest [C] have tripled despite [D] tight budgets.",
+      "options": [
+        "[A] the number of",
+        "[B] across",
+        "[C] have tripled",
+        "[D] tight budgets"
+      ],
+      "answer": "[C] have tripled",
+      "acceptedAnswers": [
+        "[C] have tripled"
+      ],
+      "explanation": "Rentang waktu lampau spesifik ('Between 1910 and 1930') serta subjek tunggal 'the number' menuntut simple past 'tripled', bukan 'have tripled'.",
+      "rationaleSource": "ITP-MOD-04",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 7
+    },
+    {
+      "id": "ITP-L1-02-Q08",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "No [A] other playwright of that era [B] wrote dialogue [C] as realistic and witty [D] like Maria Alvarez did.",
+      "options": [
+        "[A] other",
+        "[B] wrote",
+        "[C] as realistic and witty",
+        "[D] like Maria Alvarez did"
+      ],
+      "answer": "[D] like Maria Alvarez did",
+      "acceptedAnswers": [
+        "[D] like Maria Alvarez did"
+      ],
+      "explanation": "Pasangan perbandingan setara 'as ... as' menuntut 'as Maria Alvarez did', bukan 'like'.",
+      "rationaleSource": "ITP-MOD-04",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 8
+    },
+    {
+      "id": "ITP-L1-02-Q09",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "What is the main topic of Passage 1 ('Daylighting Buried Urban Streams')?",
+      "options": [
+        "Reopening enclosed city streams to reduce floods and improve local ecology",
+        "Building deeper brick sewers beneath historic factory districts",
+        "Replacing coastal ports with artificial drainage canals",
+        "Stopping all rainfall runoff in residential streets"
+      ],
+      "answer": "Reopening enclosed city streams to reduce floods and improve local ecology",
+      "acceptedAnswers": [
+        "Reopening enclosed city streams to reduce floods and improve local ecology"
+      ],
+      "explanation": "Seluruh bacaan membandingkan masalah pipa bawah tanah dengan manfaat pembukaan kembali aliran air ('daylighting').",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP02-P1",
+      "audioAssetId": null,
+      "sortIndex": 9
+    },
+    {
+      "id": "ITP-L1-02-Q10",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "In Passage 1, what drawback of nineteenth-century culverts is mentioned?",
+      "options": [
+        "They speeded up water flow, worsening downstream flooding.",
+        "They dissolved rapidly in clean rainwater.",
+        "They cooled surrounding streets excessively.",
+        "They prevented factories from obtaining electricity."
+      ],
+      "answer": "They speeded up water flow, worsening downstream flooding.",
+      "acceptedAnswers": [
+        "They speeded up water flow, worsening downstream flooding."
+      ],
+      "explanation": "Kalimat kedua menyebut 'buried pipes accelerated stormwater runoff, triggering severe downstream flash floods'.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP02-P1",
+      "audioAssetId": null,
+      "sortIndex": 10
+    },
+    {
+      "id": "ITP-L1-02-Q11",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "According to Passage 2 ('Roman Hydraulic Concrete'), how does seawater affect Roman piers?",
+      "options": [
+        "It reacts with volcanic ash minerals to seal tiny cracks.",
+        "It rusts internal steel rods within twenty years.",
+        "It dissolves slaked lime immediately upon contact.",
+        "It turns breakwaters into porous limestone caves."
+      ],
+      "answer": "It reacts with volcanic ash minerals to seal tiny cracks.",
+      "acceptedAnswers": [
+        "It reacts with volcanic ash minerals to seal tiny cracks."
+      ],
+      "explanation": "Teks menerangkan reaksi air laut dan abu pozzolana membentuk kristal pengunci yang menyembuhkan retakan mikro.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP02-P2",
+      "audioAssetId": null,
+      "sortIndex": 11
+    },
+    {
+      "id": "ITP-L1-02-Q12",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "In Passage 2, the word 'intact' is closest in meaning to:",
+      "options": [
+        "undamaged",
+        "submerged",
+        "hollow",
+        "abandoned"
+      ],
+      "answer": "undamaged",
+      "acceptedAnswers": [
+        "undamaged"
+      ],
+      "explanation": "'Intact' berarti utuh dan tidak rusak meskipun diterjang ombak selama dua milenium.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP02-P2",
+      "audioAssetId": null,
+      "sortIndex": 12
+    }
+  ],
+  "checksum": "a97877ab6f76f0f77e4af395ec687d91e90c328e7dbcfc21ff217db7e669b4b5"
+}
