@@ -1,6 +1,6 @@
-# Dependency SBOM & License Audit — English Prep AI (`v1.0.0`)
+# Dependency SBOM & License Audit — English Prep AI (`v1.1.0`)
 
-Source manifest: `gradle/libs.versions.toml`, `app/build.gradle.kts`
+Source manifest: `gradle/libs.versions.toml`, `app/build.gradle.kts`, `material_bank/MANIFEST.json`
 Audit date: `2026-11-16`
 
 ## 1. Runtime & Jetpack / Google Dependencies
@@ -36,5 +36,8 @@ Audit date: `2026-11-16`
 
 ## 3. Content, Secret & Trademark Compliance
 - Zero hardcoded API keys, keystores, or passwords tracked in Git (verified via `git ls-files` and CI workflow `.github/workflows/android-devsecops.yml`).
-- All 18 modules, 54 drills, 15 sample packs (`180` items), and 62 WAV files are original (`EnglishPrepAI-Original-2026`).
-- Zero copyrighted ETS TOEFL or Cambridge/British Council/IDP IELTS items copied; trademark disclaimers displayed in `ProfileScreen` & `README.md`.
+- All 30 curriculum modules, 90 drills, 15 full-blueprint packs (`1,725` items: 700 ITP L1 + 600 iBT 2026 + 425 IELTS Academic), and 390 IMA-ADPCM 16 kHz mono WAV audio files (`57.00 MB`) are original (`EnglishPrepAI-Original-2026`).
+- Material Bank PDF governance (`material_bank/MANIFEST.json`):
+  - `material_bank/open_oer_pdfs/` (`10` PDFs, tracked in Git): Open Educational Resources under `CC BY 4.0` (LibreTexts / Iowa State / USA Journals), `CC BY-NC-SA 4.0` (LibreTexts ESOL), and `Public Domain (US Gov)` (NOAA, NASA). Extracted into `material_bank/extracted/*.md` and `app/src/main/assets/material_bank/material_bank.json` (`31` offline study excerpts) with author & license headers preserved.
+  - `material_bank/official_reference_pdfs/` (`7` PDFs, excluded from Git via `.gitignore` per `AGENTS.md` Rule 8): ETS TOEFL ITP/iBT 2026 specifications & handbooks and IELTS public descriptors remain local-only audit references; zero copyrighted ETS/Cambridge/British Council/IDP test questions or audio tracks are copied into Git or APK assets.
+- Trademark disclaimers displayed in `ProfileScreen` & `README.md`.

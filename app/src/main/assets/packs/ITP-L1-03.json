@@ -1,365 +1,2943 @@
 {
   "schemaVersion": 1,
   "exam": "ITP_L1",
-  "edition": "2026.1",
+  "edition": "2026.2",
   "packId": "ITP-L1-03",
-  "title": "ITP Paket 3 — Engineering, Acoustics & Scientific Prose",
-  "theme": "Negative inversions, paired conjunctions, acoustic engineering, and glacial geology.",
-  "status": "SAMPLE",
+  "title": "ITP Paket 3 — Engineering, Acoustics & Glacial Systems",
+  "theme": "Full 140-item TOEFL ITP simulation testing concert hall acoustics, glacier dynamics, infrasound, and parallel syntax.",
+  "status": "READY",
   "blueprintCount": 140,
-  "availableCount": 12,
-  "durationMinutes": 20,
+  "availableCount": 140,
+  "durationMinutes": 115,
   "blueprintDurationMinutes": 115,
   "license": "Original",
   "provenance": "EnglishPrepAI-Original-2026",
   "passages": [
     {
       "id": "ITP03-P1",
-      "title": "Acoustic Shaping in Concert Halls",
-      "body": "Listeners often assume auditorium acoustics depend primarily on speaker power, yet unamplified symphony halls rely on subtle wall geometry. Flat, parallel concrete panels bounce sound waves back and forth in harsh 'flutter echoes' that blur musical articulation. By angling timber side balconies and adding stepped wooden diffusers, acousticians scatter early reflections laterally toward listeners' ears within thirty milliseconds of the direct sound. This brief lateral delay creates an enveloping spatial warmth without muddying rapid violin passages.",
+      "title": "Acoustic Shadows and Concert Hall Diffusion",
+      "body": "Visitors stepping inside an acoustically praised nineteenth-century shoebox concert hall often attribute crystalline violin detail strictly to rare spruce stage floors, yet geometry silently dictates clarity first. When a trumpet blasts toward smooth concave concrete walls, sound focuses unevenly—creating harsh 'hotspots' along center seats while leaving balcony corners trapped inside dull acoustic shadows. Conversely, ornamental Victorian plaster moldings, fluted columns, and recessed coffered ceilings act unintentionally as broadband sound diffusers—scattering crisp reflections harmlessly in dozens of directions instead of blasting one hard mirror bounce. Modern acousticians quantify such irregular textures precisely with mathematical Quadratic Residue Diffusers (QRDs): calculated rows of varying-depth wooden wells tuned so high-frequency treble scatters uniformly across every audience seat without absorbing natural orchestral energy like heavy foam carpets.",
       "readingOrder": 1
     },
     {
       "id": "ITP03-P2",
-      "title": "Glacial Varves as Climate Calendars",
-      "body": "Each spring, meltwater streams carry coarse pale sand into lakes bordering retreating glaciers, while calm winter ice cover lets fine dark clay settle slowly to the lakebed. Together, one pale summer band and one dark winter band form an annual couplet known as a varve. By extracting sediment cores and counting thousands of varves under microscopes, paleoclimatologists reconstruct year-by-year shifts in melt intensity—achieving seasonal precision rarely possible with radiometric dating alone.",
+      "title": "Glacier Surges and Subglacial Basal Water",
+      "body": "While most mountain glaciers creep steadily seaward only centimeters daily through gradual internal ice crystal deformation, certain 'surge-type' glaciers in Alaska, Svalbard, and the Karakoram behave startlingly otherwise. For decades a surging glacier rests nearly stalled—slowly thickening high up in its upper snowy basin while its lower tongue wastes thin—until a sudden hydrologic switch flips beneath hundreds of meters of ice. As trapped basal meltwater pressures rise inside choked subglacial gravel channels, pressurized water literally buoys up the glacier base slightly off rough granite bedrock, slashing basal drag. Within weeks, ice velocity rockets up tenfold to fiftyfold, sliding forward several meters hourly while tearing the glacier tongue into jumbled spires of fractured crevasses before choked drainage tunnels abruptly burst open at the snout, dumping muddy floods and dropping the glacier back into decades of sluggish dormancy.",
       "readingOrder": 2
+    },
+    {
+      "id": "ITP03-P3",
+      "title": "Anechoic Chambers and Quiet Engineering Metrics",
+      "body": "Step inside a precision acoustic anechoic chamber—a heavy floating concrete box decoupled by coiled steel springs from building foundations—and eerie silence drops background hiss below human hearing thresholds. Walls, floor mesh, and ceiling alike bristle with meter-long fiberglass acoustic wedges alternating vertically and horizontally. Sound striking a tapered porous wedge bends repeatedly inside microscopic fibers, converting air vibration into negligible fractions of a degree of heat rather than reflecting echoes back toward test microphones. Because reflected room interference disappears cleanly, loudspeaker engineers and smartphone designers isolate exact off-axis radiation patterns and raw transducer distortion inside free-field space without outdoor wind gusts or bird interference. Notably, sitting alone inside total darkness inside a quiet chamber feels disorienting within five minutes: absent normal room reflections, visitors soon hear the rhythmic whoosh of blood pulsing inside ear arteries alongside faint ringing nerves.",
+      "readingOrder": 3
+    },
+    {
+      "id": "ITP03-P4",
+      "title": "Ice-Core Archives of Ancient Earth Atmospheres",
+      "body": "Deep atop inland Antarctic domes, winter snow scarcely melts; each annual layer gently buries prior snowflakes under mounting weight until loose snow compresses into porous granular 'firn.' Around sixty to one hundred meters down, overburden crushing pressure finally pinches off tiny air channels completely, trapping genuine microscopic bubbles of ancient atmosphere inside solid crystalline glacial ice. Unlike loose marine sediment cores that blend over centuries, deep polar ice cores preserve sharp yearly volcanic ash layers alongside sealed prehistoric greenhouse gas samples stretching back eight hundred thousand years. Note one crucial analytical subtlety known as 'gas-ice age delta': because open firn air continues exchanging down toward the sixty-meter seal zone, trapped air bubbles systematically record an atmosphere younger than the frozen water crystals encasing them by centuries—requiring careful snow-accumulation modeling before aligning ancient warmth spikes with exact CO2 trends.",
+      "readingOrder": 4
+    },
+    {
+      "id": "ITP03-P5",
+      "title": "Infrasound Navigation in Migratory Birds and Elephants",
+      "body": "Humans hear air pressure waves ranging smoothly between twenty hertz and twenty thousand hertz, leaving a vast silent world humming slowly beneath twenty hertz known as infrasound. Because ultra-long wavelengths suffer virtually zero scattering against tree trunks, mountain ridges, or dry desert air, twenty-hertz thunder or ocean waves striking distant coastlines carry reliably over hundreds of kilometers. Low-frequency elephant rumbles—dropping near fourteen hertz—travel across dense savanna woodlands cleanly for up to ten kilometers, allowing separated family herds to coordinate group turns along waterholes effortlessly. Laboratory tests further show homing pigeons respond distinctly to micro-barometric atmospheric infrasound below two hertz radiating continuously from stationary Atlantic ocean swells and familiar mountain air currents—building a vast invisible acoustic weather map across foggy coastlines.",
+      "readingOrder": 5
     }
   ],
   "assets": [
     {
-      "id": "ITP03-A01",
-      "relativePath": "audio/ITP03-A01.wav",
+      "id": "ITP03-L01",
+      "relativePath": "audio/ITP03-L01.wav",
       "kind": "AUDIO",
-      "caption": "M: That robotics calibration exercise was a breeze. W: Easy for you to say! It took me four hours just to steady the sensor. N: What does the woman mean?",
+      "caption": "M: Notice how clearly the harp rings out from even the back balcony row? W: That's what hanging those angled birch canopies overhead achieved last summer. N: What does the woman mean?",
       "license": "Original",
-      "sha256": "1b42a9691b2255eabf758d7c65f83248a9097711ef1a6de3b396bb8f5facc3b3",
-      "byteSize": 377644,
-      "durationMs": 11800
+      "sha256": "3cb3c41678d466e5b101c7fa6c1c35f40485264d42bc83d52fb08907bfb48877",
+      "byteSize": 96316,
+      "durationMs": 11855
     },
     {
-      "id": "ITP03-A02",
-      "relativePath": "audio/ITP03-A02.wav",
+      "id": "ITP03-L02",
+      "relativePath": "audio/ITP03-L02.wav",
       "kind": "AUDIO",
-      "caption": "M: I saved my presentation on this flash drive for our 2 PM talk. W: Good thing I saw you—the podium computer only reads files from the shared course folder. M: Thanks, I'll upload it right away. N: What will the man probably do next?",
+      "caption": "W: Is a light fleece pullover enough once we reach the upper icefield station? M: Once afternoon katabatic winds pick up off the glacier, a light fleece feels like paper. N: What does the man imply?",
       "license": "Original",
-      "sha256": "8b53240bbf72c7502483ac8bca16d7ab0f9a52848120986a06e39c989012016e",
-      "byteSize": 545644,
-      "durationMs": 17050
+      "sha256": "d1e061513647836bf93cd3743329ec39594df8904c36de9d204af8501600936a",
+      "byteSize": 108604,
+      "durationMs": 13360
     },
     {
-      "id": "ITP03-A03",
-      "relativePath": "audio/ITP03-A03.wav",
+      "id": "ITP03-L03",
+      "relativePath": "audio/ITP03-L03.wav",
       "kind": "AUDIO",
-      "caption": "W: Are you signing up for Friday's observatory open house? M: Definitely. Now that the 1912 brass refractor has been restored, they're aiming it at Jupiter all evening. N: Why is the man eager to attend?",
+      "caption": "M: Why are the sonar depth readings ten meters shallower than last June's chart? W: Look at your settings—someone toggled the gauge from brackish water to open ocean density. N: What does the woman explain?",
       "license": "Original",
-      "sha256": "97cde113fb7977858403608114369e4dcb5b3ce93612515b60d41bfd88c7b406",
-      "byteSize": 477324,
-      "durationMs": 14915
+      "sha256": "5dc61f96e50cb8c8baf04682634cb647d6a959d1787695812689fdc2e4475900",
+      "byteSize": 112188,
+      "durationMs": 13820
     },
     {
-      "id": "ITP03-A04",
-      "relativePath": "audio/ITP03-A04.wav",
+      "id": "ITP03-L04",
+      "relativePath": "audio/ITP03-L04.wav",
       "kind": "AUDIO",
-      "caption": "M: Because fast spring melt deposits coarse pale silt while quiet winter water drops fine dark clay, each light-and-dark layer pair in a glacial lake records one exact calendar year. N: What does one pair of sediment layers represent?",
+      "caption": "W: Should I tune the recital grand piano right now while carpenters finish the drywall? M: Hold off until dust settles and HVAC stabilizes humidity, or you'll tune it twice. N: What does the man recommend?",
       "license": "Original",
-      "sha256": "5714719016b8af3234548001361061d6c6c30ae1768313a4c59563f7bc23f9d9",
-      "byteSize": 475084,
-      "durationMs": 14845
+      "sha256": "ce8f097a36722e802b6089a56ec45eae42fdcdfbc6e9a11ba1d8a90db4896fb3",
+      "byteSize": 121148,
+      "durationMs": 14905
+    },
+    {
+      "id": "ITP03-L05",
+      "relativePath": "audio/ITP03-L05.wav",
+      "kind": "AUDIO",
+      "caption": "M: Weird—this glacier pond glows milky emerald yet shows zero algae under my microscope. W: That bright color comes from suspended silt ground fine beneath moving ice, not plankton. N: What does the woman explain?",
+      "license": "Original",
+      "sha256": "a25da509529a4923bd8263b267a144784a969178c70a67c241154f6bc6225b16",
+      "byteSize": 124732,
+      "durationMs": 15350
+    },
+    {
+      "id": "ITP03-L06",
+      "relativePath": "audio/ITP03-L06.wav",
+      "kind": "AUDIO",
+      "caption": "W: Where is that sixty-cycle hum sneaking into our acoustic guitar track from? M: Check where the microphone XLR cable crosses that fluorescent desk lamp cord. N: What does the man suggest?",
+      "license": "Original",
+      "sha256": "dbabadb5759cc810f8b550c7a0928ec2e63aab177c1faf04c56b347077f281d8",
+      "byteSize": 106556,
+      "durationMs": 13130
+    },
+    {
+      "id": "ITP03-L07",
+      "relativePath": "audio/ITP03-L07.wav",
+      "kind": "AUDIO",
+      "caption": "M: Mind if we leave these Greenland ice cylinders on the bench during lunch? W: Sure, unless you want forty-thousand-year-old climate bubbles melting into tap water! N: What does the woman mean?",
+      "license": "Original",
+      "sha256": "6ed0456b688cbda14bafa7c3bde21b99e8348cf97d921c3c6c33de7eb7c3950e",
+      "byteSize": 107580,
+      "durationMs": 13250
+    },
+    {
+      "id": "ITP03-L08",
+      "relativePath": "audio/ITP03-L08.wav",
+      "kind": "AUDIO",
+      "caption": "W: Why hasn't the violin maker strung up that spruce instrument finished last Tuesday? M: Oil varnish takes weeks to cure evenly under UV light before bridge tension goes on. N: What does the man explain?",
+      "license": "Original",
+      "sha256": "f0f59fd33035569ce3d062dd473b1f9f87a50a0c9ef1c724e3966ac2fc53854f",
+      "byteSize": 110396,
+      "durationMs": 13585
+    },
+    {
+      "id": "ITP03-L09",
+      "relativePath": "audio/ITP03-L09.wav",
+      "kind": "AUDIO",
+      "caption": "M: Think that snow bridge over the meltwater creek will hold our survey packs? W: I wouldn't chance it—there's a sturdy timber footbridge fifty meters upstream. N: What does the woman advise?",
+      "license": "Original",
+      "sha256": "206f6e92aaf4e56cd93ab88a80fe753e6aabf0d4fb50fe4f290f8129e00f04ac",
+      "byteSize": 102972,
+      "durationMs": 12680
+    },
+    {
+      "id": "ITP03-L10",
+      "relativePath": "audio/ITP03-L10.wav",
+      "kind": "AUDIO",
+      "caption": "W: What causes those tiny pitted craters along the hydroelectric impeller blades? M: Rapid pressure drops collapse vapor bubbles violently right against the steel surface. N: What does the man explain?",
+      "license": "Original",
+      "sha256": "4c409d911d8ad5119d9a3ce71c7af1094862b650ec8159f2c812d3c1a4945da1",
+      "byteSize": 110652,
+      "durationMs": 13625
+    },
+    {
+      "id": "ITP03-L11",
+      "relativePath": "audio/ITP03-L11.wav",
+      "kind": "AUDIO",
+      "caption": "M: Can I test my raw wav field recordings on the main library computers? W: Sure, just borrow closed-back headphones at the tech desk so sound doesn't leak. N: What does the woman mean?",
+      "license": "Original",
+      "sha256": "b86d0587f71db558d8870436d23d9a0583cc79e1f16059b1aca4a5d51ce98999",
+      "byteSize": 108092,
+      "durationMs": 13295
+    },
+    {
+      "id": "ITP03-L12",
+      "relativePath": "audio/ITP03-L12.wav",
+      "kind": "AUDIO",
+      "caption": "W: Notice how crooked those spruce trees lean across the muddy valley slope? M: Wait until you see the foundation cracks under the highway bridge—permafrost is softening fast. N: What does the man imply?",
+      "license": "Original",
+      "sha256": "acd1f913003e1c883c42b27fe92663d4296d29e400fdbd151ed332773d7dd0ae",
+      "byteSize": 110652,
+      "durationMs": 13620
+    },
+    {
+      "id": "ITP03-L13",
+      "relativePath": "audio/ITP03-L13.wav",
+      "kind": "AUDIO",
+      "caption": "M: Our rehearsal booth still booms unevenly whenever cellos play low C. W: Hanging flat panels on mid-walls misses low waves; try thick corner bass traps first. N: What does the woman recommend?",
+      "license": "Original",
+      "sha256": "927b7f6df9ab75c9eb5b57a20e802a920b7913754be91e387e58511fb75b3e9c",
+      "byteSize": 112188,
+      "durationMs": 13820
+    },
+    {
+      "id": "ITP03-L14",
+      "relativePath": "audio/ITP03-L14.wav",
+      "kind": "AUDIO",
+      "caption": "M: My drone controller dropped from eighty percent to dead within ten minutes on the glacier! W: Cold kills lithium voltage—tuck spare packs inside your inner fleece pocket until launch. N: What does the woman advise?",
+      "license": "Original",
+      "sha256": "86f4d269eeb987178352ecc1ecc8f5dcede962abbb7a0a5d1153b70ddde3971c",
+      "byteSize": 117052,
+      "durationMs": 14405
+    },
+    {
+      "id": "ITP03-L15",
+      "relativePath": "audio/ITP03-L15.wav",
+      "kind": "AUDIO",
+      "caption": "W: Why run slow sine-wave sweeps before letting musicians practice inside the hall? M: Every ceiling vent or loose music stand rattles loudly at one exact resonant pitch. N: What does the man explain?",
+      "license": "Original",
+      "sha256": "14a893c2462dfd658534b701c6a80f1b6b3598e987df3b762eb3d493e32e9684",
+      "byteSize": 110908,
+      "durationMs": 13655
+    },
+    {
+      "id": "ITP03-L16",
+      "relativePath": "audio/ITP03-L16.wav",
+      "kind": "AUDIO",
+      "caption": "W: Did all twelve bamboo ablation stakes stay standing along the upper glacier ridge? M: Four melted clean out—two meters of surface ice vanished in six warm weeks. N: What does the man report?",
+      "license": "Original",
+      "sha256": "310bdca093e518cb84adba7430efe725269cec3621ee5b9e0efd33fd39976bba",
+      "byteSize": 110908,
+      "durationMs": 13640
+    },
+    {
+      "id": "ITP03-L17",
+      "relativePath": "audio/ITP03-L17.wav",
+      "kind": "AUDIO",
+      "caption": "M: This field hydrophone crackles whenever waves tug the dock cable. W: I'd resolder and heat-shrink that junction box before dropping it overboard again. N: What does the woman advise?",
+      "license": "Original",
+      "sha256": "04972b20318a33b5da611598f579b66254073023d4cd921b927d1beadcd5fd1e",
+      "byteSize": 100924,
+      "durationMs": 12430
+    },
+    {
+      "id": "ITP03-L18",
+      "relativePath": "audio/ITP03-L18.wav",
+      "kind": "AUDIO",
+      "caption": "W: How come our decibel meter barely reads fifty inside this booming gymnasium? M: Check the selector switch—it's set to C-weighted peak hold instead of A-weighted slow. N: What does the man mean?",
+      "license": "Original",
+      "sha256": "2327601581928a4b76982eeb31e4de53c541eab9e4dcd1149e65365f229a3be3",
+      "byteSize": 107324,
+      "durationMs": 13215
+    },
+    {
+      "id": "ITP03-L19",
+      "relativePath": "audio/ITP03-L19.wav",
+      "kind": "AUDIO",
+      "caption": "M: Too bad those fragile bone flutes stay behind thick glass cases. W: Actually, scan the QR plaque—the curator uploaded studio recordings played on exact modern replicas. N: What does the woman tell the man?",
+      "license": "Original",
+      "sha256": "c6adffeb99515e20579c9d0334cd8ad85349e4650ca54f971be9cd0825b9cb80",
+      "byteSize": 124220,
+      "durationMs": 15280
+    },
+    {
+      "id": "ITP03-L20",
+      "relativePath": "audio/ITP03-L20.wav",
+      "kind": "AUDIO",
+      "caption": "M: Waiting for five students to strike the steel plate cleanly takes forever. W: Wait until you try our spring-loaded thumper—identical energy every shot. N: What does the woman imply?",
+      "license": "Original",
+      "sha256": "f03f6dc50ea60a585155f4d0c1278e317e553bb4772224021d8f41ce1875c291",
+      "byteSize": 104508,
+      "durationMs": 12875
+    },
+    {
+      "id": "ITP03-L21",
+      "relativePath": "audio/ITP03-L21.wav",
+      "kind": "AUDIO",
+      "caption": "M: Standard foam earplugs muffle every cymbal overtone and snare snap during band mixdown. W: Try flat-response musician filters—they shave off fifteen decibels evenly across all pitches. N: What does the woman recommend?",
+      "license": "Original",
+      "sha256": "35f468ddbab7cb2ea7b22d3535164eb314fea0acd59295410ed9a644e55888ec",
+      "byteSize": 128316,
+      "durationMs": 15800
+    },
+    {
+      "id": "ITP03-L22",
+      "relativePath": "audio/ITP03-L22.wav",
+      "kind": "AUDIO",
+      "caption": "W: Can we drink directly from this crystal glacial brook without filtering? M: Look closely—even clear meltwater packs razor-sharp silica silt plus mountain microbes. N: What does the man imply?",
+      "license": "Original",
+      "sha256": "d4a7b4dd0a95a8ffd15fbc8fef4a130468121a0865453267e6722ca15902074f",
+      "byteSize": 111932,
+      "durationMs": 13775
+    },
+    {
+      "id": "ITP03-L23",
+      "relativePath": "audio/ITP03-L23.wav",
+      "kind": "AUDIO",
+      "caption": "M: Notice that high whine on the 1978 field tape? Think we should scrub it completely flat? W: Careful—heavy noise reduction leaves human vowels sounding watery and metallic. N: What does the woman warn against?",
+      "license": "Original",
+      "sha256": "a82e8657b1d8f546137bd6bcd5456f902875fedea40aa8e529b279741dc4744e",
+      "byteSize": 128060,
+      "durationMs": 15755
+    },
+    {
+      "id": "ITP03-L24",
+      "relativePath": "audio/ITP03-L24.wav",
+      "kind": "AUDIO",
+      "caption": "W: I already ran my acoustic impedance sweep—do I really need a lab partner watching? M: High-voltage amplifier racks require two-person signoff regardless of how brief the test is. N: What does the man mean?",
+      "license": "Original",
+      "sha256": "e9e4c5987b6c7811143c46351eacb34d01ba05dc79c6e7b72b4ac087a31e08a2",
+      "byteSize": 119100,
+      "durationMs": 14665
+    },
+    {
+      "id": "ITP03-L25",
+      "relativePath": "audio/ITP03-L25.wav",
+      "kind": "AUDIO",
+      "caption": "M: These flat snowfields barely look steep—do we really need to rope up? W: Hairline snow bridges hide deep crevasses that don't advertise themselves on mild slopes. N: What does the woman emphasize?",
+      "license": "Original",
+      "sha256": "45a737801e287943942d17bb30403a746f8f348d1cb935d25a275505cac85a9f",
+      "byteSize": 113980,
+      "durationMs": 14045
+    },
+    {
+      "id": "ITP03-L26",
+      "relativePath": "audio/ITP03-L26.wav",
+      "kind": "AUDIO",
+      "caption": "M: Students in the back row keep asking me to repeat definitions during afternoon talks. W: Toggle off that noisy window unit while lecturing—it sits right at vocal consonant frequencies. N: What does the woman suggest?",
+      "license": "Original",
+      "sha256": "89e1b9dd8cdf9f868db1e071de65c0d40375ded8fb3f65addc0d2aed4512e562",
+      "byteSize": 121404,
+      "durationMs": 14960
+    },
+    {
+      "id": "ITP03-L27",
+      "relativePath": "audio/ITP03-L27.wav",
+      "kind": "AUDIO",
+      "caption": "W: Can I warm up my brass horn right outside the seminar door? M: Try the basement practice modules instead—the wall between Room 2 and 3 is practically tissue paper. N: What does the man imply?",
+      "license": "Original",
+      "sha256": "bd0d3b413e502a699a70913dd685970e6c6ec99e9c4b13da58d25e96b6f07e09",
+      "byteSize": 112188,
+      "durationMs": 13795
+    },
+    {
+      "id": "ITP03-L28",
+      "relativePath": "audio/ITP03-L28.wav",
+      "kind": "AUDIO",
+      "caption": "W: Wait—why does our GPS distance look half as long as the blue trail line on this old map? M: Notice the date in the lower margin—this hiking brochure was drafted at 1:50,000 scale in 1962. N: What does the man mean?",
+      "license": "Original",
+      "sha256": "6c52cdacb1cd1d05fb90e1724924dc7b974d8437e863e144253be8d2a3f91ce8",
+      "byteSize": 146748,
+      "durationMs": 18075
+    },
+    {
+      "id": "ITP03-L29",
+      "relativePath": "audio/ITP03-L29.wav",
+      "kind": "AUDIO",
+      "caption": "M: Let's slip into Booth B for ten minutes—nobody's inside right now. W: Check the glowing red dot above the frame—the linguistics club booked it through five. N: What does the woman mean?",
+      "license": "Original",
+      "sha256": "f7365f46d540bb6f00b07515ca6d0cd34757f4761cb3444b249fb2157aec82cb",
+      "byteSize": 106812,
+      "durationMs": 13155
+    },
+    {
+      "id": "ITP03-L30",
+      "relativePath": "audio/ITP03-L30.wav",
+      "kind": "AUDIO",
+      "caption": "W: Wait—every time I climb steeper drifts, my heel slips straight out of the rubber strap! M: Shift your boot toe two notches forward and yank the heel ratchet tight before we ascend. N: What does the man suggest?",
+      "license": "Original",
+      "sha256": "b768f316085cc0606e6862ce86650f50ab03825f9ffcd607d55a4de98378beca",
+      "byteSize": 119612,
+      "durationMs": 14710
+    },
+    {
+      "id": "ITP03-PB1",
+      "relativePath": "audio/ITP03-PB1.wav",
+      "kind": "AUDIO",
+      "caption": "M: Dr. Park, the municipal chamber symphony wants to test our adjustable wool acoustic banners in the recital hall before opening night. W: Smart call. When all side velvet drapes stay rolled up inside ceiling pockets, reverberation jumps past two point two seconds—great for organ chords, muddy for fast string quartets. M: Should we lower banners completely along both sidewalls for tonight's Haydn quartet rehearsal? W: Drop only every alternating panel half-way down first; total absorption deadens cello warmth and leaves violinists straining too hard on stage.",
+      "license": "Original",
+      "sha256": "6e6b78579f1210b0a51b2e2e9a91cd73761c488ad76ce2ba584d44b183033819",
+      "byteSize": 308284,
+      "durationMs": 37995
+    },
+    {
+      "id": "ITP03-PB2",
+      "relativePath": "audio/ITP03-PB2.wav",
+      "kind": "AUDIO",
+      "caption": "W: Look at last month's helicopter elevation markers on South Cascade Glacier—ice surface levels dipped almost one-point-eight meters right beside Moraine Ridge. M: Dark wildfire soot blowing in from inland grass fires coated the snowpack gray in June, cutting sunlight reflection sharply. W: Makes total sense. Did our automated weather tripod survive strong ridge gusts, or did the anemometer freeze up again? M: Heated ultrasonic wind sensors held steady throughout both gales, transmitting continuous barometric data straight onto our valley base laptop.",
+      "license": "Original",
+      "sha256": "4ab5e4c78fefa81bd8dadc86ac1af60805e8274f902b536c738f467743c59f1c",
+      "byteSize": 298300,
+      "durationMs": 36745
+    },
+    {
+      "id": "ITP03-PC1",
+      "relativePath": "audio/ITP03-PC1.wav",
+      "kind": "AUDIO",
+      "caption": "M: Why do nineteenth-century rectangular halls like Vienna's Musikverein win universal praise from classical conductors compared with sweeping modern fan-shaped arenas? M: Acoustic engineers discovered human ears judge spatial richness largely through early lateral reflections—sound waves bouncing gently off close parallel side walls milliseconds after direct stage waves. M: In ultra-wide fan-shaped halls, side walls flare far outward, starving central seats of lateral envelope while dumping echoes too late from distant rear curves. M: Modern vineyard halls bridge that gap by grouping audiences into small terraced hillside plots surrounded by short vertical reflector walls, placing lively side bounces near every listener.",
+      "license": "Original",
+      "sha256": "6a15ed1f4de28b8d89c74fef20f1c91680dc464a77bfc5693d05739f666e59cc",
+      "byteSize": 372796,
+      "durationMs": 45930
+    },
+    {
+      "id": "ITP03-PC2",
+      "relativePath": "audio/ITP03-PC2.wav",
+      "kind": "AUDIO",
+      "caption": "W: When continental ice sheets grow two kilometers thick during glacial peaks, sheer planetary mass literally pushes Earth's solid rocky crust down dozens of meters into the softer warm mantle below. W: As coastal ice sheets thin swiftly—as observed across tectonically active southern Alaska—removing billions of tons of overburden ice triggers slow upward flexing called post-glacial rebound. W: Notice the secondary effect tracked cleanly by GPS stations and NASA radar: easing downward clamp pressure across strained tectonic strike-slip faults can subtly alter local earthquake timing. W: While rapid ice loss itself does not create tectonic stress from scratch, unloading old weight helps pre-loaded crustal faults slip slightly sooner along rugged fjords.",
+      "license": "Original",
+      "sha256": "151d32c5fc3b4df34f2930ad35b3e5bee7187e6c93904e5e7e4c447f6eda0e1f",
+      "byteSize": 386620,
+      "durationMs": 47655
+    },
+    {
+      "id": "ITP03-PC3",
+      "relativePath": "audio/ITP03-PC3.wav",
+      "kind": "AUDIO",
+      "caption": "M: Aerospace acoustic researchers frequently marvel at nocturnal barn owls gliding within centimeters of field mice without emitting detectable wing whoosh. M: Conventional turbine and airplane wings shed chaotic turbulent air vortices off trailing edges, broadcasting loud broadband roar as blades slice wind. M: Microscopic inspection of owl primary feathers reveals three coordinated quiet traits: stiff comb-like serrations along the leading edge, velvety downy barbs across upper surfaces, and flexible fringed trailing plumes. M: Together, these adaptations smoothly break large noisy air eddies into tiny silent micro-eddies—inspiring serrated wind-turbine blade tips reducing night noise beside rural towns.",
+      "license": "Original",
+      "sha256": "c6b5b13cffe11317be03546ab878744f4fd87f5036ef79307d46ccf075b26a26",
+      "byteSize": 371772,
+      "durationMs": 45805
     }
   ],
   "items": [
     {
-      "id": "ITP-L1-03-Q01",
+      "id": "ITP-L1-03-Q001",
       "section": "LISTENING",
       "taskType": "CHOICE_SINGLE",
-      "prompt": "Listen to the short exchange. What does the woman imply?",
+      "prompt": "Listen to Part A dialogue 1 (orchestra hall acoustics). What does the woman mean?",
       "options": [
-        "She disagrees that the lab assignment was effortless.",
-        "She finished the assignment in half an hour.",
-        "She plans to drop the robotics class.",
-        "She lost her lab instructions yesterday."
+        "Summer humidity distorted upper balcony acoustics.",
+        "Architects removed wooden seating last summer.",
+        "Newly suspended wooden reflector panels improved clarity in rear seats.",
+        "The harpist moved closer to the back balcony."
       ],
-      "answer": "She disagrees that the lab assignment was effortless.",
+      "answer": "Newly suspended wooden reflector panels improved clarity in rear seats.",
       "acceptedAnswers": [
-        "She disagrees that the lab assignment was effortless."
+        "Newly suspended wooden reflector panels improved clarity in rear seats."
       ],
-      "explanation": "Ungkapan 'Easy for you to say—I spent four hours calibrating the sensor!' menandakan tugas terasa sulit baginya.",
-      "rationaleSource": "ITP-MOD-01",
+      "explanation": "Kanopi kayu birch yang dipasang musim panas lalu memantulkan suara jernih ke balkon belakang.",
+      "rationaleSource": "ITP-MOD-02",
       "difficulty": "B2",
       "points": 1,
       "license": "Original",
       "reviewStatus": "VERIFIED_ORIGINAL",
       "passageId": null,
-      "audioAssetId": "ITP03-A01",
+      "audioAssetId": "ITP03-L01",
       "sortIndex": 1
     },
     {
-      "id": "ITP-L1-03-Q02",
+      "id": "ITP-L1-03-Q002",
       "section": "LISTENING",
       "taskType": "CHOICE_SINGLE",
-      "prompt": "Listen to the dialogue. What will the man probably do next?",
+      "prompt": "Listen to Part A dialogue 2 (glacier field jacket). What does the man imply?",
       "options": [
-        "Upload his slides to the shared folder before class.",
-        "Print fifty color copies for every student.",
-        "Ask the professor to postpone the presentation.",
-        "Buy a new USB adapter from the bookstore."
+        "Glacier field trips are canceled when snow falls.",
+        "She needs heavy windproof winter gear instead of a thin fleece.",
+        "Afternoon winds near glaciers bring warm valley air.",
+        "Upper icefield stations distribute complimentary paper coats."
       ],
-      "answer": "Upload his slides to the shared folder before class.",
+      "answer": "She needs heavy windproof winter gear instead of a thin fleece.",
       "acceptedAnswers": [
-        "Upload his slides to the shared folder before class."
+        "She needs heavy windproof winter gear instead of a thin fleece."
       ],
-      "explanation": "Wanita mengingatkan proyektor tidak memakai USB langsung, sehingga pria setuju mengunggah ke folder kelas.",
+      "explanation": "'Feels like paper' menekankan bahwa jaket tipis tidak cukup menahan angin es yang tajam.",
+      "rationaleSource": "ITP-MOD-01",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP03-L02",
+      "sortIndex": 2
+    },
+    {
+      "id": "ITP-L1-03-Q003",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 3 (sonar calibration check). What does the woman tell the man?",
+      "options": [
+        "A wrong water-density preset is skewing the sonar readings.",
+        "Sediment filled ten meters of the harbor since June.",
+        "Sound travels slower through denser ocean water.",
+        "All June depth charts used faulty brass weights."
+      ],
+      "answer": "A wrong water-density preset is skewing the sonar readings.",
+      "acceptedAnswers": [
+        "A wrong water-density preset is skewing the sonar readings."
+      ],
+      "explanation": "Pengaturan salinitas/densitas air yang keliru menggeser kalkulasi kedalaman.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP03-L03",
+      "sortIndex": 3
+    },
+    {
+      "id": "ITP-L1-03-Q004",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 4 (piano tuning timing). What does the man recommend?",
+      "options": [
+        "Tune the piano twice while carpenters sand drywall.",
+        "Move the grand piano outdoors onto the courtyard lawn.",
+        "Turn off the hall's humidity control permanently.",
+        "Wait until construction dust and indoor humidity stabilize before tuning."
+      ],
+      "answer": "Wait until construction dust and indoor humidity stabilize before tuning.",
+      "acceptedAnswers": [
+        "Wait until construction dust and indoor humidity stabilize before tuning."
+      ],
+      "explanation": "Perubahan kelembapan dan debu merusak setelan baru jika disetem sebelum konstruksi selesai.",
+      "rationaleSource": "ITP-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP03-L04",
+      "sortIndex": 4
+    },
+    {
+      "id": "ITP-L1-03-Q005",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 5 (rock flour turbidity). What does the woman mean?",
+      "options": [
+        "His microscope glass needs stronger green dyes.",
+        "Warm springs drain green minerals into granite caves.",
+        "Tiny crushed rock particles scattering sunlight create the turquoise hue.",
+        "Algae blooms freeze invisible inside icy melt ponds."
+      ],
+      "answer": "Tiny crushed rock particles scattering sunlight create the turquoise hue.",
+      "acceptedAnswers": [
+        "Tiny crushed rock particles scattering sunlight create the turquoise hue."
+      ],
+      "explanation": "Silt halus ('rock flour') hasil gerusan gletser memantulkan warna hijau zamrud.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP03-L05",
+      "sortIndex": 5
+    },
+    {
+      "id": "ITP-L1-03-Q006",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 6 (recording studio hiss). What does the man diagnose?",
+      "options": [
+        "Installing louder amplifier speakers in the booth.",
+        "Separating the microphone line from nearby electrical power cords.",
+        "Replacing acoustic steel strings with nylon strings.",
+        "Deleting all lamp tracks inside the audio workstation."
+      ],
+      "answer": "Separating the microphone line from nearby electrical power cords.",
+      "acceptedAnswers": [
+        "Separating the microphone line from nearby electrical power cords."
+      ],
+      "explanation": "Kabel audio seimbang bersilangan dengan kabel daya lampu memicu dengung listrik.",
+      "rationaleSource": "ITP-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP03-L06",
+      "sortIndex": 6
+    },
+    {
+      "id": "ITP-L1-03-Q007",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 7 (ice core freezer). What does the woman imply?",
+      "options": [
+        "Put the ice cores back inside cold storage immediately to prevent melting.",
+        "Forty-thousand-year-old ice melts slower than modern hail.",
+        "Lunchtime room temperatures keep cores solid enough.",
+        "Tasting ancient melted bubbles improves lab morale."
+      ],
+      "answer": "Put the ice cores back inside cold storage immediately to prevent melting.",
+      "acceptedAnswers": [
+        "Put the ice cores back inside cold storage immediately to prevent melting."
+      ],
+      "explanation": "Sarkasme peringatan agar sampel es segera dikembalikan ke pendingin.",
+      "rationaleSource": "ITP-MOD-01",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP03-L07",
+      "sortIndex": 7
+    },
+    {
+      "id": "ITP-L1-03-Q008",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 8 (violin varnish cure). What does the man mean?",
+      "options": [
+        "Spruce wood shrinks sharply unless stored in dark closets.",
+        "Violin strings take several weeks to ship from Milan.",
+        "Guest soloists broke the wooden bridge last Tuesday.",
+        "The newly applied varnish still needs time to harden safely."
+      ],
+      "answer": "The newly applied varnish still needs time to harden safely.",
+      "acceptedAnswers": [
+        "The newly applied varnish still needs time to harden safely."
+      ],
+      "explanation": "Pernis minyak butuh curing bertahap sebelum mendapat tekanan senar dan bridge.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP03-L08",
+      "sortIndex": 8
+    },
+    {
+      "id": "ITP-L1-03-Q009",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 9 (mountain trail sign). What does the woman mean?",
+      "options": [
+        "Step quickly across the thin snow crust one at a time.",
+        "Build a rope bridge from pine branches.",
+        "Walk upstream slightly to cross safely over the wooden bridge.",
+        "Drop heavy survey backpacks into the shallow creek."
+      ],
+      "answer": "Walk upstream slightly to cross safely over the wooden bridge.",
+      "acceptedAnswers": [
+        "Walk upstream slightly to cross safely over the wooden bridge."
+      ],
+      "explanation": "'I wouldn't chance it' menolak risiko jembatan salju dan mengarahkan ke jembatan kayu.",
+      "rationaleSource": "ITP-MOD-07",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP03-L09",
+      "sortIndex": 9
+    },
+    {
+      "id": "ITP-L1-03-Q010",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 10 (turbine cavitation). What does the man explain?",
+      "options": [
+        "Electric sparks arc inside submerged oil bearings.",
+        "Collapsing vapor bubbles create shock pitting on metal blades.",
+        "Winter icebergs strike upper reservoir spillways.",
+        "Acid rain dissolves painted aluminum turbine casings."
+      ],
+      "answer": "Collapsing vapor bubbles create shock pitting on metal blades.",
+      "acceptedAnswers": [
+        "Collapsing vapor bubbles create shock pitting on metal blades."
+      ],
+      "explanation": "Kavitasi: gelembung uap pecah akibat turunnya tekanan mengikis permukaan logam.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP03-L10",
+      "sortIndex": 10
+    },
+    {
+      "id": "ITP-L1-03-Q011",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 11 (library quiet headphones). What does the woman tell the man?",
+      "options": [
+        "Use enclosed headphones from the desk so others aren't disturbed.",
+        "Library terminals lack basic sound output jacks.",
+        "Acoustic WAV files cannot open outside engineering labs.",
+        "Speak softly whenever recording voice tracks at desks."
+      ],
+      "answer": "Use enclosed headphones from the desk so others aren't disturbed.",
+      "acceptedAnswers": [
+        "Use enclosed headphones from the desk so others aren't disturbed."
+      ],
+      "explanation": "Ia diminta meminjam headphone tertutup agar suara tidak bocor ke ruang baca.",
       "rationaleSource": "ITP-MOD-01",
       "difficulty": "B1",
       "points": 1,
       "license": "Original",
       "reviewStatus": "VERIFIED_ORIGINAL",
       "passageId": null,
-      "audioAssetId": "ITP03-A02",
-      "sortIndex": 2
-    },
-    {
-      "id": "ITP-L1-03-Q03",
-      "section": "LISTENING",
-      "taskType": "CHOICE_SINGLE",
-      "prompt": "Listen to the longer dialogue. Why is the student excited about the observatory tour?",
-      "options": [
-        "Students will view Jupiter through the restored brass refractor.",
-        "Attendance grants automatic exemption from the final exam.",
-        "The observatory sits inside the student union roof.",
-        "Tour guides will distribute free telescopes."
-      ],
-      "answer": "Students will view Jupiter through the restored brass refractor.",
-      "acceptedAnswers": [
-        "Students will view Jupiter through the restored brass refractor."
-      ],
-      "explanation": "Percakapan menyebut teleskop refraktor perunggu yang baru direstorasi akan dipakai mengamati Jupiter.",
-      "rationaleSource": "ITP-MOD-02",
-      "difficulty": "B2",
-      "points": 1,
-      "license": "Original",
-      "reviewStatus": "VERIFIED_ORIGINAL",
-      "passageId": null,
-      "audioAssetId": "ITP03-A03",
-      "sortIndex": 3
-    },
-    {
-      "id": "ITP-L1-03-Q04",
-      "section": "LISTENING",
-      "taskType": "CHOICE_SINGLE",
-      "prompt": "Listen to the geology lecture clip. Why are varves useful to researchers?",
-      "options": [
-        "Each light-and-dark sediment pair marks one exact year.",
-        "They contain intact dinosaur fossils in every layer.",
-        "They form exclusively in tropical coral lagoons.",
-        "They reveal future earthquake dates directly."
-      ],
-      "answer": "Each light-and-dark sediment pair marks one exact year.",
-      "acceptedAnswers": [
-        "Each light-and-dark sediment pair marks one exact year."
-      ],
-      "explanation": "Pembicara mendefinisikan varve sebagai pasangan lapisan musiman yang terbentuk satu pasangan per tahun.",
-      "rationaleSource": "ITP-MOD-02",
-      "difficulty": "B2",
-      "points": 1,
-      "license": "Original",
-      "reviewStatus": "VERIFIED_ORIGINAL",
-      "passageId": null,
-      "audioAssetId": "ITP03-A04",
-      "sortIndex": 4
-    },
-    {
-      "id": "ITP-L1-03-Q05",
-      "section": "STRUCTURE",
-      "taskType": "CHOICE_SINGLE",
-      "prompt": "Not only ___ wind shear near runways, but Doppler radar also estimates rainfall intensity.",
-      "options": [
-        "does it detect",
-        "it detects",
-        "detects it",
-        "is detected"
-      ],
-      "answer": "does it detect",
-      "acceptedAnswers": [
-        "does it detect"
-      ],
-      "explanation": "'Not only' di awal kalimat memicu inversi auxiliary 'does' + subject 'it' + bare verb 'detect'.",
-      "rationaleSource": "ITP-MOD-03",
-      "difficulty": "B2",
-      "points": 1,
-      "license": "Original",
-      "reviewStatus": "VERIFIED_ORIGINAL",
-      "passageId": null,
-      "audioAssetId": null,
-      "sortIndex": 5
-    },
-    {
-      "id": "ITP-L1-03-Q06",
-      "section": "STRUCTURE",
-      "taskType": "CHOICE_SINGLE",
-      "prompt": "The telescope mirror, ___ curvature was polished over eighteen months, resolves faint moons clearly.",
-      "options": [
-        "whose",
-        "which",
-        "that",
-        "whom"
-      ],
-      "answer": "whose",
-      "acceptedAnswers": [
-        "whose"
-      ],
-      "explanation": "Possessive relative pronoun 'whose' menghubungkan 'mirror' dengan 'curvature' ('the mirror's curvature').",
-      "rationaleSource": "ITP-MOD-03",
-      "difficulty": "B2",
-      "points": 1,
-      "license": "Original",
-      "reviewStatus": "VERIFIED_ORIGINAL",
-      "passageId": null,
-      "audioAssetId": null,
-      "sortIndex": 6
-    },
-    {
-      "id": "ITP-L1-03-Q07",
-      "section": "STRUCTURE",
-      "taskType": "ERROR_IDENTIFICATION",
-      "prompt": "Despite [A] of heavy fog along the coast, [B] the ferry docked [C] safely within [D] five minutes of schedule.",
-      "options": [
-        "[A] of heavy fog",
-        "[B] the ferry docked",
-        "[C] safely",
-        "[D] five minutes of schedule"
-      ],
-      "answer": "[A] of heavy fog",
-      "acceptedAnswers": [
-        "[A] of heavy fog"
-      ],
-      "explanation": "'Despite' tidak memakai preposisi 'of' (gunakan 'Despite heavy fog' atau 'In spite of heavy fog').",
-      "rationaleSource": "ITP-MOD-04",
-      "difficulty": "B1",
-      "points": 1,
-      "license": "Original",
-      "reviewStatus": "VERIFIED_ORIGINAL",
-      "passageId": null,
-      "audioAssetId": null,
-      "sortIndex": 7
-    },
-    {
-      "id": "ITP-L1-03-Q08",
-      "section": "STRUCTURE",
-      "taskType": "ERROR_IDENTIFICATION",
-      "prompt": "Every battery cell [A] inside the prototype pack [B] undergo thermal cycling [C] prior to [D] final certification.",
-      "options": [
-        "[A] inside",
-        "[B] undergo",
-        "[C] prior to",
-        "[D] final certification"
-      ],
-      "answer": "[B] undergo",
-      "acceptedAnswers": [
-        "[B] undergo"
-      ],
-      "explanation": "Kata penentu 'Every' mewajibkan subjek tunggal sehingga kata kerjanya harus 'undergoes'.",
-      "rationaleSource": "ITP-MOD-04",
-      "difficulty": "B2",
-      "points": 1,
-      "license": "Original",
-      "reviewStatus": "VERIFIED_ORIGINAL",
-      "passageId": null,
-      "audioAssetId": null,
-      "sortIndex": 8
-    },
-    {
-      "id": "ITP-L1-03-Q09",
-      "section": "READING",
-      "taskType": "CHOICE_SINGLE",
-      "prompt": "According to Passage 1 ('Acoustic Shaping in Concert Halls'), what problem do parallel flat concrete walls cause?",
-      "options": [
-        "Harsh flutter echoes that blur rapid notes",
-        "Weak bass frequencies below twenty hertz",
-        "Excessive absorption of violin timber resonance",
-        "Delay exceeding three full seconds"
-      ],
-      "answer": "Harsh flutter echoes that blur rapid notes",
-      "acceptedAnswers": [
-        "Harsh flutter echoes that blur rapid notes"
-      ],
-      "explanation": "Kalimat kedua menyatakan dinding beton datar paralel memantulkan suara bolak-balik menjadi 'flutter echoes' yang mengaburkan artikulasi.",
-      "rationaleSource": "ITP-MOD-05",
-      "difficulty": "B2",
-      "points": 1,
-      "license": "Original",
-      "reviewStatus": "VERIFIED_ORIGINAL",
-      "passageId": "ITP03-P1",
-      "audioAssetId": null,
-      "sortIndex": 9
-    },
-    {
-      "id": "ITP-L1-03-Q10",
-      "section": "READING",
-      "taskType": "CHOICE_SINGLE",
-      "prompt": "In Passage 1, the word 'laterally' is closest in meaning to:",
-      "options": [
-        "from the sides",
-        "from directly overhead",
-        "beneath the floor",
-        "after the concert"
-      ],
-      "answer": "from the sides",
-      "acceptedAnswers": [
-        "from the sides"
-      ],
-      "explanation": "'Laterally' merujuk arah samping ('side balconies' ke telinga pendengar).",
-      "rationaleSource": "ITP-MOD-05",
-      "difficulty": "B2",
-      "points": 1,
-      "license": "Original",
-      "reviewStatus": "VERIFIED_ORIGINAL",
-      "passageId": "ITP03-P1",
-      "audioAssetId": null,
-      "sortIndex": 10
-    },
-    {
-      "id": "ITP-L1-03-Q11",
-      "section": "READING",
-      "taskType": "CHOICE_SINGLE",
-      "prompt": "In Passage 2 ('Glacial Varves as Climate Calendars'), when is the fine dark clay layer deposited?",
-      "options": [
-        "During calm winter ice cover",
-        "During rapid spring snowmelt",
-        "During autumn windstorms",
-        "During volcanic eruptions"
-      ],
-      "answer": "During calm winter ice cover",
-      "acceptedAnswers": [
-        "During calm winter ice cover"
-      ],
-      "explanation": "Teks menyebut 'calm winter ice cover lets fine dark clay settle slowly'.",
-      "rationaleSource": "ITP-MOD-05",
-      "difficulty": "B1",
-      "points": 1,
-      "license": "Original",
-      "reviewStatus": "VERIFIED_ORIGINAL",
-      "passageId": "ITP03-P2",
-      "audioAssetId": null,
+      "audioAssetId": "ITP03-L11",
       "sortIndex": 11
     },
     {
-      "id": "ITP-L1-03-Q12",
+      "id": "ITP-L1-03-Q012",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 12 (permafrost thaw). What does the man imply?",
+      "options": [
+        "Spruce trees always grow tilted toward afternoon sunshine.",
+        "Highway bridges prevent permafrost from melting beneath soil.",
+        "Winter snowplows knocked down valley spruce stands.",
+        "Warming frozen ground is already destabilizing nearby roads and bridges as well."
+      ],
+      "answer": "Warming frozen ground is already destabilizing nearby roads and bridges as well.",
+      "acceptedAnswers": [
+        "Warming frozen ground is already destabilizing nearby roads and bridges as well."
+      ],
+      "explanation": "Pencairan permafrost tidak hanya memiringkan pohon, melainkan merusak pondasi jembatan.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP03-L12",
+      "sortIndex": 12
+    },
+    {
+      "id": "ITP-L1-03-Q013",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 13 (bass trap corners). What does the woman mean?",
+      "options": [
+        "Remove all wall panels and add glass mirrors.",
+        "Ask cellists to sit outside the booth doorway.",
+        "Place thick acoustic absorbers in room corners to tame low frequencies.",
+        "Tune orchestral cellos an octave higher during rehearsals."
+      ],
+      "answer": "Place thick acoustic absorbers in room corners to tame low frequencies.",
+      "acceptedAnswers": [
+        "Place thick acoustic absorbers in room corners to tame low frequencies."
+      ],
+      "explanation": "Frekuensi bass terkumpul di sudut ruangan sehingga butuh peredam sudut.",
+      "rationaleSource": "ITP-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP03-L13",
+      "sortIndex": 13
+    },
+    {
+      "id": "ITP-L1-03-Q014",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 14 (battery cold drain). What does the woman advise?",
+      "options": [
+        "Charge controller packs using melting snow water.",
+        "Keep spare batteries warm against his body before flying.",
+        "Paint drone batteries black so sunlight melts casing ice.",
+        "Fly heavy drones exclusively during humid rainstorms."
+      ],
+      "answer": "Keep spare batteries warm against his body before flying.",
+      "acceptedAnswers": [
+        "Keep spare batteries warm against his body before flying."
+      ],
+      "explanation": "Suhu dingin ekstrem menjatuhkan tegangan baterai sehingga perlu dihangatkan di saku dalam.",
+      "rationaleSource": "ITP-MOD-07",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP03-L14",
+      "sortIndex": 14
+    },
+    {
+      "id": "ITP-L1-03-Q015",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 15 (subwoofer test tone). What does the man mean?",
+      "options": [
+        "Sine-wave tests reveal hidden fixtures that rattle at specific frequencies.",
+        "Musicians prefer tuning instruments to synthesized computer sweeps.",
+        "Ceiling vents cool loudspeaker coils evenly.",
+        "Broken music stands emit ultrasonic alarms automatically."
+      ],
+      "answer": "Sine-wave tests reveal hidden fixtures that rattle at specific frequencies.",
+      "acceptedAnswers": [
+        "Sine-wave tests reveal hidden fixtures that rattle at specific frequencies."
+      ],
+      "explanation": "Uji sapuan nada menemukan komponen longgar yang bergetar pada frekuensi resonansi tertentu.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP03-L15",
+      "sortIndex": 15
+    },
+    {
+      "id": "ITP-L1-03-Q016",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 16 (glacier survey stakes). What does the man mean?",
+      "options": [
+        "Four new bamboo huts were built atop the upper ridge.",
+        "Cold winds froze all twelve stakes deeper into solid ice.",
+        "Warm summers slowed glacier flow for six weeks.",
+        "Rapid surface melting knocked out a third of their glacier measurement poles."
+      ],
+      "answer": "Rapid surface melting knocked out a third of their glacier measurement poles.",
+      "acceptedAnswers": [
+        "Rapid surface melting knocked out a third of their glacier measurement poles."
+      ],
+      "explanation": "Empat dari dua belas tongkat pengukur lepas akibat lapisan es mencair setebal dua meter.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP03-L16",
+      "sortIndex": 16
+    },
+    {
+      "id": "ITP-L1-03-Q017",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 17 (copper wire splice). What does the woman mean?",
+      "options": [
+        "Buy a louder underwater speaker instead.",
+        "Drop salt crystals into the cracked junction box.",
+        "Repair and waterproof the cable joint before testing in water again.",
+        "Cut the dock cable shorter so waves skip over it."
+      ],
+      "answer": "Repair and waterproof the cable joint before testing in water again.",
+      "acceptedAnswers": [
+        "Repair and waterproof the cable joint before testing in water again."
+      ],
+      "explanation": "Ia menyarankan menyolder ulang dan menyegel sambungan sebelum masuk air.",
+      "rationaleSource": "ITP-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP03-L17",
+      "sortIndex": 17
+    },
+    {
+      "id": "ITP-L1-03-Q018",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 18 (decibel meter setting). What does the man point out?",
+      "options": [
+        "Battery leakage reset her display digits.",
+        "Wrong meter weighting mode is distorting her indoor noise reading.",
+        "Gymnasium bleachers absorb nearly half of all concert sound.",
+        "Fifty decibels equals dangerously loud rock concert volume."
+      ],
+      "answer": "Wrong meter weighting mode is distorting her indoor noise reading.",
+      "acceptedAnswers": [
+        "Wrong meter weighting mode is distorting her indoor noise reading."
+      ],
+      "explanation": "Mode pengukuran pada alat ukur keliru sehingga angka tidak sesuai kondisi.",
+      "rationaleSource": "ITP-MOD-01",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP03-L18",
+      "sortIndex": 18
+    },
+    {
+      "id": "ITP-L1-03-Q019",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 19 (museum flute exhibit). What does the woman mean?",
+      "options": [
+        "He can listen to accurate audio recreations of how the ancient flutes sound.",
+        "Visitors may unlock glass cases to handle delicate bone artifacts.",
+        "Curators banned phone QR codes inside ancient music galleries.",
+        "Modern replicas broke during winter museum concerts."
+      ],
+      "answer": "He can listen to accurate audio recreations of how the ancient flutes sound.",
+      "acceptedAnswers": [
+        "He can listen to accurate audio recreations of how the ancient flutes sound."
+      ],
+      "explanation": "Pengunjung dapat memutar rekaman suara replika alat musik purba.",
+      "rationaleSource": "ITP-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP03-L19",
+      "sortIndex": 19
+    },
+    {
+      "id": "ITP-L1-03-Q020",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 20 (seismic hammer trigger). What does the woman mean?",
+      "options": [
+        "Five sledgehammers generate stronger waves simultaneously.",
+        "Steel strike plates crack rapidly under heavy springs.",
+        "Seismic lines require no calibration on soft grass.",
+        "A mechanical thumper delivers faster and more consistent seismic blows."
+      ],
+      "answer": "A mechanical thumper delivers faster and more consistent seismic blows.",
+      "acceptedAnswers": [
+        "A mechanical thumper delivers faster and more consistent seismic blows."
+      ],
+      "explanation": "Alat mekanis pemicu pukulan jauh lebih seragam dan cepat dibanding manual.",
+      "rationaleSource": "ITP-MOD-01",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP03-L20",
+      "sortIndex": 20
+    },
+    {
+      "id": "ITP-L1-03-Q021",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 21 (earplug recommendation). What does the woman recommend?",
+      "options": [
+        "Skipping hearing protection inside rehearsal basements.",
+        "Replacing bronze cymbals with wooden blocks.",
+        "Using high-fidelity earplugs that lower volume without distorting tone.",
+        "Increasing amplifier volume above cymbal overtones."
+      ],
+      "answer": "Using high-fidelity earplugs that lower volume without distorting tone.",
+      "acceptedAnswers": [
+        "Using high-fidelity earplugs that lower volume without distorting tone."
+      ],
+      "explanation": "Earplug khusus musisi meredam desibel secara merata tanpa menumpulkan frekuensi tinggi.",
+      "rationaleSource": "ITP-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP03-L21",
+      "sortIndex": 21
+    },
+    {
+      "id": "ITP-L1-03-Q022",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 22 (alpine stream turbidity). What does the man mean?",
+      "options": [
+        "Boiling silt water removes heavy granite boulders.",
+        "Filter or treat glacial water properly rather than drinking it raw.",
+        "Clear alpine brooks remain sterile year-round.",
+        "Microbes die instantly inside icy rock flour."
+      ],
+      "answer": "Filter or treat glacial water properly rather than drinking it raw.",
+      "acceptedAnswers": [
+        "Filter or treat glacial water properly rather than drinking it raw."
+      ],
+      "explanation": "Ia memperingatkan air tampak jernih pun mengandung debu silika halus dan mikroba.",
+      "rationaleSource": "ITP-MOD-01",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP03-L22",
+      "sortIndex": 22
+    },
+    {
+      "id": "ITP-L1-03-Q023",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 23 (tape recorder hiss fix). What does the man imply?",
+      "options": [
+        "Over-aggressive noise filtering degrades natural voice quality.",
+        "1978 cassette motors spin too slowly for field voices.",
+        "Metallic microphones amplify underwater frog calls.",
+        "Old field reels melt under soft studio lamps."
+      ],
+      "answer": "Over-aggressive noise filtering degrades natural voice quality.",
+      "acceptedAnswers": [
+        "Over-aggressive noise filtering degrades natural voice quality."
+      ],
+      "explanation": "Penghilang derau berlebihan menimbulkan artefak vokal seperti suara logam berair.",
+      "rationaleSource": "ITP-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP03-L23",
+      "sortIndex": 23
+    },
+    {
+      "id": "ITP-L1-03-Q024",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 24 (lab safety checklist). What does the man tell the woman?",
+      "options": [
+        "Acoustic sweeps work faster when two operators turn dials together.",
+        "High-voltage racks stay powered on overnight safely.",
+        "Short five-minute tests waive all safety checklists.",
+        "Campus policy requires a partner present whenever high-voltage racks operate."
+      ],
+      "answer": "Campus policy requires a partner present whenever high-voltage racks operate.",
+      "acceptedAnswers": [
+        "Campus policy requires a partner present whenever high-voltage racks operate."
+      ],
+      "explanation": "Aturan wajib mengharuskan pengawasan dua orang untuk perangkat tegangan tinggi.",
+      "rationaleSource": "ITP-MOD-01",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP03-L24",
+      "sortIndex": 24
+    },
+    {
+      "id": "ITP-L1-03-Q025",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 25 (ice crevasse rope). What does the woman emphasize?",
+      "options": [
+        "Flat snowfields never develop subsurface cracks.",
+        "Rope lines interfere with snowshoe pacing.",
+        "Safety ropes remain essential even across seemingly gentle glacial slopes.",
+        "Steeper slopes hold fewer hidden crevasses than cliffs."
+      ],
+      "answer": "Safety ropes remain essential even across seemingly gentle glacial slopes.",
+      "acceptedAnswers": [
+        "Safety ropes remain essential even across seemingly gentle glacial slopes."
+      ],
+      "explanation": "Celah es tersembunyi bisa tertutup lapisan salju tipis walau lereng terlihat landai.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP03-L25",
+      "sortIndex": 25
+    },
+    {
+      "id": "ITP-L1-03-Q026",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 26 (classroom fan echo). What does the woman mean?",
+      "options": [
+        "Opening hallway windows near traffic lanes.",
+        "Switching off the loud fan while speaking so students hear clearly.",
+        "Moving rear desks directly beside the window fan.",
+        "Speaking slowly only for vocal consonant words."
+      ],
+      "answer": "Switching off the loud fan while speaking so students hear clearly.",
+      "acceptedAnswers": [
+        "Switching off the loud fan while speaking so students hear clearly."
+      ],
+      "explanation": "Derau kipas jendela bertumpuk di rentang frekuensi konsonan bicara.",
+      "rationaleSource": "ITP-MOD-07",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP03-L26",
+      "sortIndex": 26
+    },
+    {
+      "id": "ITP-L1-03-Q027",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 27 (baritone horn mute). What does the man imply?",
+      "options": [
+        "Hallway brass practice would carry loudly straight into adjacent classrooms.",
+        "Walls inside the basement practice wing are painted thin pink.",
+        "Brass mutes are stored behind the seminar door.",
+        "Room 3 welcomes spontaneous trumpet warmups."
+      ],
+      "answer": "Hallway brass practice would carry loudly straight into adjacent classrooms.",
+      "acceptedAnswers": [
+        "Hallway brass practice would carry loudly straight into adjacent classrooms."
+      ],
+      "explanation": "'Practically tissue paper' menandakan dinding tipis dan tidak kedap suara.",
+      "rationaleSource": "ITP-MOD-01",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP03-L27",
+      "sortIndex": 27
+    },
+    {
+      "id": "ITP-L1-03-Q028",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 28 (glacier map scale). What does the man notice?",
+      "options": [
+        "GPS satellites fail reliably near granite cliffs.",
+        "Older brochures enlarged blue glaciers dramatically.",
+        "Trail crews cut modern hiking paths in half.",
+        "Outdated glacial extents and map scale explain why her route looks different."
+      ],
+      "answer": "Outdated glacial extents and map scale explain why her route looks different.",
+      "acceptedAnswers": [
+        "Outdated glacial extents and map scale explain why her route looks different."
+      ],
+      "explanation": "Peta cetak 1962 dengan skala lama tidak lagi merepresentasikan batas gletser terkini.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP03-L28",
+      "sortIndex": 28
+    },
+    {
+      "id": "ITP-L1-03-Q029",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 29 (podcast room sign). What does the woman mean?",
+      "options": [
+        "Linguistics club members already vacated Booth B.",
+        "Podcast microphones automatically mute past five PM.",
+        "Booth B is actively reserved even though empty at that second.",
+        "A red warning light signals faulty ventilation filters."
+      ],
+      "answer": "Booth B is actively reserved even though empty at that second.",
+      "acceptedAnswers": [
+        "Booth B is actively reserved even though empty at that second."
+      ],
+      "explanation": "Lampu indikator merah berarti bilik rekaman sedang dipesan aktif hingga pukul lima.",
+      "rationaleSource": "ITP-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP03-L29",
+      "sortIndex": 29
+    },
+    {
+      "id": "ITP-L1-03-Q030",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 30 (snowshoe binding strap). What does the man suggest?",
+      "options": [
+        "Climbing slippery trails backward.",
+        "Adjusting the snowshoe boot position and tightening the heel buckle.",
+        "Carrying snowshoes inside her backpack uphill.",
+        "Wrapping extra cotton socks around aluminum rails."
+      ],
+      "answer": "Adjusting the snowshoe boot position and tightening the heel buckle.",
+      "acceptedAnswers": [
+        "Adjusting the snowshoe boot position and tightening the heel buckle."
+      ],
+      "explanation": "Menggeser posisi ujung sepatu dan mengencangkan kunci tumit mengatasi selip.",
+      "rationaleSource": "ITP-MOD-07",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP03-L30",
+      "sortIndex": 30
+    },
+    {
+      "id": "ITP-L1-03-Q031",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part B Conversation 1 (Concert Hall Acoustic Calibration) — Item 1/4. Why will the students adjust wool acoustic banners tonight?",
+      "options": [
+        "To tailor hall reverberation clarity for a visiting string quartet rehearsal.",
+        "To block drafty evening winds blowing off rear hall exits.",
+        "To prepare seating backdrops for an organ solo festival.",
+        "To protect stone balconies during drywall sanding."
+      ],
+      "answer": "To tailor hall reverberation clarity for a visiting string quartet rehearsal.",
+      "acceptedAnswers": [
+        "To tailor hall reverberation clarity for a visiting string quartet rehearsal."
+      ],
+      "explanation": "Mereka mengatur spanduk peredam demi kejernihan akustik latihan kuartet gesek.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP03-PB1",
+      "sortIndex": 31
+    },
+    {
+      "id": "ITP-L1-03-Q032",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part B Conversation 1 (Concert Hall Acoustic Calibration) — Item 2/4. What happens to sound inside the hall when all velvet drapes remain tucked away?",
+      "options": [
+        "Violin pitches turn unpleasantly metallic and hollow.",
+        "Stage lighting heats upper ceiling motors dangerously.",
+        "Audio microphones feed back loudly into basement offices.",
+        "Long reverberation suits heavy organ tones but blurs rapid quartet passages."
+      ],
+      "answer": "Long reverberation suits heavy organ tones but blurs rapid quartet passages.",
+      "acceptedAnswers": [
+        "Long reverberation suits heavy organ tones but blurs rapid quartet passages."
+      ],
+      "explanation": "Gema di atas 2,2 detik membuat permainan cepat kuartet gesek terasa kabur.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP03-PB1",
+      "sortIndex": 32
+    },
+    {
+      "id": "ITP-L1-03-Q033",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part B Conversation 1 (Concert Hall Acoustic Calibration) — Item 3/4. Why does Dr. Park advise lowering banners only halfway on alternating panels?",
+      "options": [
+        "City fire codes prohibit lowering corner fabric curtains.",
+        "Every odd wall panel hides vintage brass wall sconces.",
+        "Excessive fabric muffles cello richness and forces musicians to overplay.",
+        "Ceiling motors overheat if lowering full banners simultaneously."
+      ],
+      "answer": "Excessive fabric muffles cello richness and forces musicians to overplay.",
+      "acceptedAnswers": [
+        "Excessive fabric muffles cello richness and forces musicians to overplay."
+      ],
+      "explanation": "Penyerapan penuh mematikan kehangatan nada selo sehingga musisi memaksakan volume.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP03-PB1",
+      "sortIndex": 33
+    },
+    {
+      "id": "ITP-L1-03-Q034",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part B Conversation 1 (Concert Hall Acoustic Calibration) — Item 4/4. Which musical genre actually benefits from the hall's longer un-damped decay time?",
+      "options": [
+        "Electronic rock bass demonstrations.",
+        "Full-bodied pipe organ music.",
+        "Fast unaccompanied jazz percussion solos.",
+        "Quiet spoken chamber poetry readings."
+      ],
+      "answer": "Full-bodied pipe organ music.",
+      "acceptedAnswers": [
+        "Full-bodied pipe organ music."
+      ],
+      "explanation": "Ia mencontohkan permainan organ cocok dengan gema di atas 2,2 detik.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP03-PB1",
+      "sortIndex": 34
+    },
+    {
+      "id": "ITP-L1-03-Q035",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part B Conversation 2 (Alpine Glacier Ablation Stake Fieldwork) — Item 1/4. What rapid change did survey markers reveal on South Cascade Glacier?",
+      "options": [
+        "Almost one-point-eight meters of surface ice melted within a single month.",
+        "Heavy July blizzards added two meters of fresh blue firn.",
+        "Glacier margins surged rapidly downstream past Moraine Ridge.",
+        "Helicopter landing pads slid fifty meters uphill."
+      ],
+      "answer": "Almost one-point-eight meters of surface ice melted within a single month.",
+      "acceptedAnswers": [
+        "Almost one-point-eight meters of surface ice melted within a single month."
+      ],
+      "explanation": "Penanda mencatat permukaan es surut 1,8 meter di dekat punggungan morain.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP03-PB2",
+      "sortIndex": 35
+    },
+    {
+      "id": "ITP-L1-03-Q036",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part B Conversation 2 (Alpine Glacier Ablation Stake Fieldwork) — Item 2/4. According to the man, what accelerated surface melting in June?",
+      "options": [
+        "Warm underground hot springs thawed granite bedrock.",
+        "Increased river barge exhaust drifted high onto mountain ridges.",
+        "July cloud cover trapped warm ocean air.",
+        "Dark airborne wildfire soot lowered snow reflectivity so surfaces absorbed more sun."
+      ],
+      "answer": "Dark airborne wildfire soot lowered snow reflectivity so surfaces absorbed more sun.",
+      "acceptedAnswers": [
+        "Dark airborne wildfire soot lowered snow reflectivity so surfaces absorbed more sun."
+      ],
+      "explanation": "Abu/jelaga kebakaran menghitamkan permukaan salju sehingga albedo turun dan panas terserap.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP03-PB2",
+      "sortIndex": 36
+    },
+    {
+      "id": "ITP-L1-03-Q037",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part B Conversation 2 (Alpine Glacier Ablation Stake Fieldwork) — Item 3/4. What concern does the woman raise about their weather tripod?",
+      "options": [
+        "Whether valley residents disconnected wireless radio relays.",
+        "Whether mountain goats chewed insulated sensor wires.",
+        "Whether fierce mountain gusts or icing halted its wind gauges.",
+        "Whether helicopter rotors bumped into its solar mast."
+      ],
+      "answer": "Whether fierce mountain gusts or icing halted its wind gauges.",
+      "acceptedAnswers": [
+        "Whether fierce mountain gusts or icing halted its wind gauges."
+      ],
+      "explanation": "Ia mengkhawatirkan hembusan angin kuat atau pembekuan membuat anemometer mati lagi.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP03-PB2",
+      "sortIndex": 37
+    },
+    {
+      "id": "ITP-L1-03-Q038",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part B Conversation 2 (Alpine Glacier Ablation Stake Fieldwork) — Item 4/4. How did the ultrasonic wind station perform during winter gales?",
+      "options": [
+        "Radio batteries died before transmitting pressure tables.",
+        "It operated continuously via internal heating and logged data to the valley laptop.",
+        "Ice sealed spinning mechanical cups solid for forty hours.",
+        "Gales blew the tripod cleanly down onto wet gravel."
+      ],
+      "answer": "It operated continuously via internal heating and logged data to the valley laptop.",
+      "acceptedAnswers": [
+        "It operated continuously via internal heating and logged data to the valley laptop."
+      ],
+      "explanation": "Sensor ultrasonik berpemanas bertahan lancar dan mengirim data tekanan berkala.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP03-PB2",
+      "sortIndex": 38
+    },
+    {
+      "id": "ITP-L1-03-Q039",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part C Mini-Lecture 1 (Architectural Concert Hall Shape: Shoebox vs Vineyard) — Item 1/4. What gives classic narrow 'shoebox' concert halls superior acoustic warmth?",
+      "options": [
+        "Parallel close sidewalls deliver prompt horizontal reflections to listeners' ears.",
+        "Deep plush carpet absorbs every late horizontal sound wave.",
+        "High copper domes focus faint cello notes cleanly toward rear aisles.",
+        "Narrow balcony entrances trap outdoor street rumble."
+      ],
+      "answer": "Parallel close sidewalls deliver prompt horizontal reflections to listeners' ears.",
+      "acceptedAnswers": [
+        "Parallel close sidewalls deliver prompt horizontal reflections to listeners' ears."
+      ],
+      "explanation": "Pantulan lateral cepat dari dinding samping paralel menciptakan keutuhan bunyi hangat.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP03-PC1",
+      "sortIndex": 39
+    },
+    {
+      "id": "ITP-L1-03-Q040",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part C Mini-Lecture 1 (Architectural Concert Hall Shape: Shoebox vs Vineyard) — Item 2/4. What acoustic drawback frequently plagues wide fan-shaped auditoriums?",
+      "options": [
+        "Front seats absorb excessive shrill trumpet reflections.",
+        "Curved rear glass panels generate infinite sub-bass feedback.",
+        "Stage musicians hear no sound from rear orchestra risers.",
+        "Distant flaring walls delay early side reflections for center-row listeners."
+      ],
+      "answer": "Distant flaring walls delay early side reflections for center-row listeners.",
+      "acceptedAnswers": [
+        "Distant flaring walls delay early side reflections for center-row listeners."
+      ],
+      "explanation": "Dinding melebar membuat baris tengah kehilangan pantulan lateral dini.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP03-PC1",
+      "sortIndex": 40
+    },
+    {
+      "id": "ITP-L1-03-Q041",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part C Mini-Lecture 1 (Architectural Concert Hall Shape: Shoebox vs Vineyard) — Item 3/4. How do modern 'vineyard' concert halls solve the width limitation?",
+      "options": [
+        "Overhead fiberglass parachutes cancel side echoes altogether.",
+        "Circular stages spin musicians toward outer balconies continuously.",
+        "Short terraced retaining walls surround staggered seating blocks as local reflectors.",
+        "Massive central pillars scatter bass tones evenly underneath seats."
+      ],
+      "answer": "Short terraced retaining walls surround staggered seating blocks as local reflectors.",
+      "acceptedAnswers": [
+        "Short terraced retaining walls surround staggered seating blocks as local reflectors."
+      ],
+      "explanation": "Dinding penahan teras bertingkat menghadirkan pemantul lokal dekat setiap blok kursi.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP03-PC1",
+      "sortIndex": 41
+    },
+    {
+      "id": "ITP-L1-03-Q042",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part C Mini-Lecture 1 (Architectural Concert Hall Shape: Shoebox vs Vineyard) — Item 4/4. Which sensory factor mainly defines listener perception of acoustic intimacy?",
+      "options": [
+        "Strict microphone amplification levels inside control booths.",
+        "Tiny millisecond timing gaps between direct sound and first side-wall bounces.",
+        "Visual wood color lining curved stage overhangs.",
+        "Sub-audible air drafts circling beneath timber floorboards."
+      ],
+      "answer": "Tiny millisecond timing gaps between direct sound and first side-wall bounces.",
+      "acceptedAnswers": [
+        "Tiny millisecond timing gaps between direct sound and first side-wall bounces."
+      ],
+      "explanation": "Selang waktu beberapa milidetik antara bunyi langsung dan pantulan samping awal menentukan sensasi ruang.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "C1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP03-PC1",
+      "sortIndex": 42
+    },
+    {
+      "id": "ITP-L1-03-Q043",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part C Mini-Lecture 2 (Rebounding Lithosphere Beneath Melting Glaciers) — Item 1/4. What happens to Earth's rocky crust under towering continental glaciers?",
+      "options": [
+        "Massive ice weight depresses crustal rock slowly downward into the pliant mantle.",
+        "Freezing ground freezes deep mantle magma completely solid.",
+        "Mountain peaks crack violently straight upward under snow loads.",
+        "Ocean currents push coastal cliffs inward by forty kilometers."
+      ],
+      "answer": "Massive ice weight depresses crustal rock slowly downward into the pliant mantle.",
+      "acceptedAnswers": [
+        "Massive ice weight depresses crustal rock slowly downward into the pliant mantle."
+      ],
+      "explanation": "Massa es raksasa menekan kerak bumi melesak ke mantel lunak di bawahnya.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP03-PC2",
+      "sortIndex": 43
+    },
+    {
+      "id": "ITP-L1-03-Q044",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part C Mini-Lecture 2 (Rebounding Lithosphere Beneath Melting Glaciers) — Item 2/4. What geological phenomenon is called 'post-glacial rebound'?",
+      "options": [
+        "Sudden volcanic mudslides rushing through dry valley troughs.",
+        "Glacial boulders bouncing downhill during steep spring thaws.",
+        "Winter sea ice colliding repeatedly against fjord walls.",
+        "The gradual upward rise of crust after thick ice loads melt away."
+      ],
+      "answer": "The gradual upward rise of crust after thick ice loads melt away.",
+      "acceptedAnswers": [
+        "The gradual upward rise of crust after thick ice loads melt away."
+      ],
+      "explanation": "Pelentingan ke atas kerak bumi setelah beban es mencair hilang.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP03-PC2",
+      "sortIndex": 44
+    },
+    {
+      "id": "ITP-L1-03-Q045",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part C Mini-Lecture 2 (Rebounding Lithosphere Beneath Melting Glaciers) — Item 3/4. How can swift glacial thinning influence regional seismic fault activity?",
+      "options": [
+        "Floating icebergs jam coastal tectonic trenches shut.",
+        "Tectonic plates halt sideways drifting throughout glacial retreats.",
+        "Reduced downward overburden friction can let pre-strained tectonic faults slip earlier.",
+        "Melted cold water explodes deep granite seams into gravel."
+      ],
+      "answer": "Reduced downward overburden friction can let pre-strained tectonic faults slip earlier.",
+      "acceptedAnswers": [
+        "Reduced downward overburden friction can let pre-strained tectonic faults slip earlier."
+      ],
+      "explanation": "Berdasarkan riset Alaska NASA/USGS, berkurangnya tekanan beban vertikal memengaruhi waktu selip sesar aktif.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "C1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP03-PC2",
+      "sortIndex": 45
+    },
+    {
+      "id": "ITP-L1-03-Q046",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part C Mini-Lecture 2 (Rebounding Lithosphere Beneath Melting Glaciers) — Item 4/4. Which instruments measure millennial-scale millimeter crustal uplift today?",
+      "options": [
+        "Handheld optical compasses checked once every century.",
+        "High-precision GPS monuments paired with satellite interferometric radar.",
+        "Wooden depth soundings hung down coastal dock walls.",
+        "Portable mercury barometers nailed atop maple trees."
+      ],
+      "answer": "High-precision GPS monuments paired with satellite interferometric radar.",
+      "acceptedAnswers": [
+        "High-precision GPS monuments paired with satellite interferometric radar."
+      ],
+      "explanation": "Stasiun GPS presisi dan radar satelit mengukur pelentingan milimeter kerak.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP03-PC2",
+      "sortIndex": 46
+    },
+    {
+      "id": "ITP-L1-03-Q047",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part C Mini-Lecture 3 (Bio-Inspired Owl Silent Flight Engineering) — Item 1/4. What aerodynamic noise source plagues standard industrial wind turbine blades?",
+      "options": [
+        "Chaotic air turbulence shedding off crisp wing trailing edges.",
+        "Electric humming traveling down concrete base pylons.",
+        "Sand pellets pinging rapidly across steel hub domes.",
+        "Hollow inner pipes whistling whenever humidity spikes."
+      ],
+      "answer": "Chaotic air turbulence shedding off crisp wing trailing edges.",
+      "acceptedAnswers": [
+        "Chaotic air turbulence shedding off crisp wing trailing edges."
+      ],
+      "explanation": "Pusaran udara turbulen di tepi belakang bilah memicu kebisingan pita lebar.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP03-PC3",
+      "sortIndex": 47
+    },
+    {
+      "id": "ITP-L1-03-Q048",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part C Mini-Lecture 3 (Bio-Inspired Owl Silent Flight Engineering) — Item 2/4. Which three feather features work together to silence owl wings?",
+      "options": [
+        "Hollow lead shafts, oily wax coats, and stiff curved claws.",
+        "Rigid double bone ribs, heavy calcium tips, and glossy black spots.",
+        "Wide fanned tail rudders without front flight barbs.",
+        "Leading-edge combs, velvety soft topsides, and flexible fringed trailing edges."
+      ],
+      "answer": "Leading-edge combs, velvety soft topsides, and flexible fringed trailing edges.",
+      "acceptedAnswers": [
+        "Leading-edge combs, velvety soft topsides, and flexible fringed trailing edges."
+      ],
+      "explanation": "Tiga fitur kunci: gerigi tepi depan, permukaan atas beludru, serta rumbai tepi belakang fleksibel.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP03-PC3",
+      "sortIndex": 48
+    },
+    {
+      "id": "ITP-L1-03-Q049",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part C Mini-Lecture 3 (Bio-Inspired Owl Silent Flight Engineering) — Item 3/4. Physically, how do owl trailing-edge fringes suppress audible flight noise?",
+      "options": [
+        "They generate opposing sound pitches canceling low frequencies out.",
+        "They raise air density cleanly below owl bellies.",
+        "They fracture large thunderous air swirls into gentle tiny silent vortices.",
+        "They glue swirling air molecules motionless atop wingtips."
+      ],
+      "answer": "They fracture large thunderous air swirls into gentle tiny silent vortices.",
+      "acceptedAnswers": [
+        "They fracture large thunderous air swirls into gentle tiny silent vortices."
+      ],
+      "explanation": "Rumbai memecah pusaran besar bising menjadi pusaran mikro jauh lebih senyap.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP03-PC3",
+      "sortIndex": 49
+    },
+    {
+      "id": "ITP-L1-03-Q050",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part C Mini-Lecture 3 (Bio-Inspired Owl Silent Flight Engineering) — Item 4/4. Which modern engineering component directly adopts biomimetic serrations from owl feathers?",
+      "options": [
+        "Supersonic rocket ceramic nose shields.",
+        "Quiet wind-turbine blade trailing edges near populated communities.",
+        "Heavy cargo ship diesel propellers beneath ocean hulls.",
+        "High-temperature brass trumpet valves."
+      ],
+      "answer": "Quiet wind-turbine blade trailing edges near populated communities.",
+      "acceptedAnswers": [
+        "Quiet wind-turbine blade trailing edges near populated communities."
+      ],
+      "explanation": "Ujung bergerigi diadopsi pada bilah turbin angin untuk menekan bising.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP03-PC3",
+      "sortIndex": 50
+    },
+    {
+      "id": "ITP-L1-03-Q051",
+      "section": "STRUCTURE",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Never before ___ acoustic engineers measured reverberation times inside such a cavernous limestone chamber.",
+      "options": [
+        "did",
+        "were",
+        "have",
+        "has"
+      ],
+      "answer": "have",
+      "acceptedAnswers": [
+        "have"
+      ],
+      "explanation": "'Never before' di awal kalimat memicu inversi dengan 'have' sebelum subjek jamak 'engineers'.",
+      "rationaleSource": "ITP-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 51
+    },
+    {
+      "id": "ITP-L1-03-Q052",
+      "section": "STRUCTURE",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Because glacial meltwater carries suspended rock flour, Alpine lakes often exhibit ___ turquoise hues.",
+      "options": [
+        "more vividly",
+        "vividly",
+        "vivid",
+        "vividness"
+      ],
+      "answer": "vivid",
+      "acceptedAnswers": [
+        "vivid"
+      ],
+      "explanation": "Adjektiva 'vivid' menerangkan frasa nomina 'turquoise hues' secara langsung.",
+      "rationaleSource": "ITP-MOD-04",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 52
+    },
+    {
+      "id": "ITP-L1-03-Q053",
+      "section": "STRUCTURE",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Each of the parabolic dishes installed at the observatory ___ equipped with helium-cooled receivers.",
+      "options": [
+        "is",
+        "are",
+        "were",
+        "have been"
+      ],
+      "answer": "is",
+      "acceptedAnswers": [
+        "is"
+      ],
+      "explanation": "Subjek inti adalah pronomina tunggal 'Each', sehingga wajib diikuti 'is'.",
+      "rationaleSource": "ITP-MOD-03",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 53
+    },
+    {
+      "id": "ITP-L1-03-Q054",
+      "section": "STRUCTURE",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Only after comparing thirty ice cores from Antarctica ___ scientists isolate the volcanic sulfur spike.",
+      "options": [
+        "they could",
+        "were",
+        "did they be",
+        "could"
+      ],
+      "answer": "could",
+      "acceptedAnswers": [
+        "could"
+      ],
+      "explanation": "'Only after...' di posisi awal memicu inversi modal 'could' sebelum subjek 'scientists'.",
+      "rationaleSource": "ITP-MOD-03",
+      "difficulty": "C1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 54
+    },
+    {
+      "id": "ITP-L1-03-Q055",
+      "section": "STRUCTURE",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Engineers must verify that acoustic baffles neither block ventilation shafts ___ rattle at low bass frequencies.",
+      "options": [
+        "and not",
+        "either",
+        "nor",
+        "or"
+      ],
+      "answer": "nor",
+      "acceptedAnswers": [
+        "nor"
+      ],
+      "explanation": "Pasangan korelatif wajib adalah 'neither ... nor ...'.",
+      "rationaleSource": "ITP-MOD-09",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 55
+    },
+    {
+      "id": "ITP-L1-03-Q056",
+      "section": "STRUCTURE",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "___ by intense tectonic shearing along coastal faults, metamorphic schists frequently split into thin sheets.",
+      "options": [
+        "Having compress",
+        "Compressed",
+        "Compressing",
+        "Compress"
+      ],
+      "answer": "Compressed",
+      "acceptedAnswers": [
+        "Compressed"
+      ],
+      "explanation": "Past participle 'Compressed' menerangkan sifat pasif dari subjek 'schists'.",
+      "rationaleSource": "ITP-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 56
+    },
+    {
+      "id": "ITP-L1-03-Q057",
+      "section": "STRUCTURE",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "The orchestra hall renovation avoided ___ historical plasterwork along the upper balconies.",
+      "options": [
+        "altering",
+        "to alter",
+        "altered",
+        "alter"
+      ],
+      "answer": "altering",
+      "acceptedAnswers": [
+        "altering"
+      ],
+      "explanation": "Verba 'avoid' mewajibkan gerund ('altering').",
+      "rationaleSource": "ITP-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 57
+    },
+    {
+      "id": "ITP-L1-03-Q058",
+      "section": "STRUCTURE",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Noise-canceling microphones capture close vocal vibrations while ___ steady background machinery hum.",
+      "options": [
+        "suppress",
+        "suppressed them",
+        "to suppressing",
+        "suppressing"
+      ],
+      "answer": "suppressing",
+      "acceptedAnswers": [
+        "suppressing"
+      ],
+      "explanation": "Reduksi klausa sesudah 'while' menggunakan present participle aktif 'suppressing'.",
+      "rationaleSource": "ITP-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 58
+    },
+    {
+      "id": "ITP-L1-03-Q059",
+      "section": "STRUCTURE",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "The more precisely surveyors level railway gradients, ___ heavy freight locomotives require.",
+      "options": [
+        "the least traction power",
+        "less traction power than",
+        "the less traction power",
+        "lesser the traction power"
+      ],
+      "answer": "the less traction power",
+      "acceptedAnswers": [
+        "the less traction power"
+      ],
+      "explanation": "Struktur proporsional ganda wajib berpola 'the more..., the less...'.",
+      "rationaleSource": "ITP-MOD-04",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 59
+    },
+    {
+      "id": "ITP-L1-03-Q060",
+      "section": "STRUCTURE",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "It is imperative that bridge inspectors ___ ultrasonic weld scans before winter frost arrives.",
+      "options": [
+        "will complete",
+        "complete",
+        "completes",
+        "completed"
+      ],
+      "answer": "complete",
+      "acceptedAnswers": [
+        "complete"
+      ],
+      "explanation": "'It is imperative that...' menuntut subjunctive bare infinitive 'complete'.",
+      "rationaleSource": "ITP-MOD-03",
+      "difficulty": "C1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 60
+    },
+    {
+      "id": "ITP-L1-03-Q061",
+      "section": "STRUCTURE",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Ultrasonic transducers differ from optical cameras ___ they operate effectively inside opaque turbid water.",
+      "options": [
+        "in that",
+        "because of",
+        "despite",
+        "whereby that"
+      ],
+      "answer": "in that",
+      "acceptedAnswers": [
+        "in that"
+      ],
+      "explanation": "Konjungsi 'in that' bermakna 'dalam hal bahwa' dan mengawali klausa lengkap.",
+      "rationaleSource": "ITP-MOD-09",
+      "difficulty": "C1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 61
+    },
+    {
+      "id": "ITP-L1-03-Q062",
+      "section": "STRUCTURE",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Neither the chief metallurgist nor her laboratory assistants ___ noticed any hair-line fracture in the alloy bar.",
+      "options": [
+        "has",
+        "was",
+        "is",
+        "have"
+      ],
+      "answer": "have",
+      "acceptedAnswers": [
+        "have"
+      ],
+      "explanation": "Dalam 'neither ... nor ...', verba menyesuaikan subjek terdekat yang jamak ('assistants') -> 'have'.",
+      "rationaleSource": "ITP-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 62
+    },
+    {
+      "id": "ITP-L1-03-Q063",
+      "section": "STRUCTURE",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Wind-tunnel trials confirmed that tapered wings reduce vortex drag ___ maintaining lift at slow speeds.",
+      "options": [
+        "despite of",
+        "where as",
+        "while",
+        "during"
+      ],
+      "answer": "while",
+      "acceptedAnswers": [
+        "while"
+      ],
+      "explanation": "'While' diikuti participial phrase '-ing' secara tepat; 'during' menuntut nomina.",
+      "rationaleSource": "ITP-MOD-09",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 63
+    },
+    {
+      "id": "ITP-L1-03-Q064",
+      "section": "STRUCTURE",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Early seismographs, ___ relied on weighted pendulums suspended from masonry piers, recorded horizontal tremors.",
+      "options": [
+        "who",
+        "which",
+        "that",
+        "what"
+      ],
+      "answer": "which",
+      "acceptedAnswers": [
+        "which"
+      ],
+      "explanation": "Non-defining clause di antara koma harus menggunakan 'which'.",
+      "rationaleSource": "ITP-MOD-03",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 64
+    },
+    {
+      "id": "ITP-L1-03-Q065",
+      "section": "STRUCTURE",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "At the base of the glacier ___ lateral moraines composed of unsorted boulders and silt.",
+      "options": [
+        "lie",
+        "lies",
+        "lying",
+        "is lain"
+      ],
+      "answer": "lie",
+      "acceptedAnswers": [
+        "lie"
+      ],
+      "explanation": "Subjek pasca-inversi 'lateral moraines' adalah jamak -> kata kerja jamak 'lie'.",
+      "rationaleSource": "ITP-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 65
+    },
+    {
+      "id": "ITP-L1-03-Q066",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "Acoustic panels [A] mounted along curved ceilings [B] absorb harsh high frequencies [C] while preserve warm [D] low cello tones.",
+      "options": [
+        "[A] mounted along curved ceilings",
+        "[B] absorb harsh high frequencies",
+        "[C] while preserve warm",
+        "[D] low cello tones"
+      ],
+      "answer": "[C] while preserve warm",
+      "acceptedAnswers": [
+        "[C] while preserve warm"
+      ],
+      "explanation": "Reduksi klausa sesudah 'while' memerlukan present participle 'preserving'.",
+      "rationaleSource": "ITP-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 66
+    },
+    {
+      "id": "ITP-L1-03-Q067",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "Glacial erratic boulders, [A] unlike smooth river cobbles, [B] often carry deep parallel scratches [C] made as ice sheets [D] grinded across bedrock.",
+      "options": [
+        "[A] unlike smooth river cobbles,",
+        "[B] often carry deep parallel scratches",
+        "[C] made as ice sheets",
+        "[D] grinded across bedrock"
+      ],
+      "answer": "[D] grinded across bedrock",
+      "acceptedAnswers": [
+        "[D] grinded across bedrock"
+      ],
+      "explanation": "Bentuk lampau tidak beraturan dari 'grind' adalah 'ground', bukan 'grinded'.",
+      "rationaleSource": "ITP-MOD-04",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 67
+    },
+    {
+      "id": "ITP-L1-03-Q068",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "Every microphone inside [A] an anechoic test chamber [B] are isolated from floor vibrations [C] by suspended steel springs [D] and foam wedges.",
+      "options": [
+        "[A] an anechoic test chamber",
+        "[B] are isolated from floor vibrations",
+        "[C] by suspended steel springs",
+        "[D] and foam wedges"
+      ],
+      "answer": "[B] are isolated from floor vibrations",
+      "acceptedAnswers": [
+        "[B] are isolated from floor vibrations"
+      ],
+      "explanation": "Subjek tunggal 'Every microphone' wajib diikuti 'is isolated'.",
+      "rationaleSource": "ITP-MOD-03",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 68
+    },
+    {
+      "id": "ITP-L1-03-Q069",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "Structural engineers test [A] prototype suspension cables [B] until their tensile strength [C] exceeds three times the [D] expecting highway load.",
+      "options": [
+        "[A] prototype suspension cables",
+        "[B] until their tensile strength",
+        "[C] exceeds three times the",
+        "[D] expecting highway load"
+      ],
+      "answer": "[D] expecting highway load",
+      "acceptedAnswers": [
+        "[D] expecting highway load"
+      ],
+      "explanation": "Beban yang diantisipasi bersifat pasif -> 'expected highway load', bukan 'expecting'.",
+      "rationaleSource": "ITP-MOD-04",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 69
+    },
+    {
+      "id": "ITP-L1-03-Q070",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "Sonar pulses travel [A] much faster through [B] dense ocean brine [C] than it do through [D] dry desert air.",
+      "options": [
+        "[A] much faster through",
+        "[B] dense ocean brine",
+        "[C] than it do through",
+        "[D] dry desert air"
+      ],
+      "answer": "[C] than it do through",
+      "acceptedAnswers": [
+        "[C] than it do through"
+      ],
+      "explanation": "Pronomina pengacu 'Sonar pulses' jamak, harus 'they do', bukan 'it do'.",
+      "rationaleSource": "ITP-MOD-04",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 70
+    },
+    {
+      "id": "ITP-L1-03-Q071",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "Concert halls lined [A] solely with untreated concrete [B] produce muddy echoes [C] that render spoken syllables [D] nearly unintelligibly.",
+      "options": [
+        "[A] solely with untreated concrete",
+        "[B] produce muddy echoes",
+        "[C] that render spoken syllables",
+        "[D] nearly unintelligibly"
+      ],
+      "answer": "[D] nearly unintelligibly",
+      "acceptedAnswers": [
+        "[D] nearly unintelligibly"
+      ],
+      "explanation": "Verba 'render + object + adjective' mengambil adjektiva 'unintelligible', bukan adverb.",
+      "rationaleSource": "ITP-MOD-04",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 71
+    },
+    {
+      "id": "ITP-L1-03-Q072",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "The geotechnical team [A] avoided drill directly into [B] pressurized artesian clay layers [C] beneath the valley [D] railway embankment.",
+      "options": [
+        "[A] avoided drill directly into",
+        "[B] pressurized artesian clay layers",
+        "[C] beneath the valley",
+        "[D] railway embankment"
+      ],
+      "answer": "[A] avoided drill directly into",
+      "acceptedAnswers": [
+        "[A] avoided drill directly into"
+      ],
+      "explanation": "Kata kerja 'avoid' mewajibkan gerund 'drilling'.",
+      "rationaleSource": "ITP-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 72
+    },
+    {
+      "id": "ITP-L1-03-Q073",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "Moraines deposited [A] by retreating alpine glaciers [B] consist on unsorted rubble [C] ranging from fine silt [D] to house-sized granite blocks.",
+      "options": [
+        "[A] by retreating alpine glaciers",
+        "[B] consist on unsorted rubble",
+        "[C] ranging from fine silt",
+        "[D] to house-sized granite blocks"
+      ],
+      "answer": "[B] consist on unsorted rubble",
+      "acceptedAnswers": [
+        "[B] consist on unsorted rubble"
+      ],
+      "explanation": "'Consist' berpasangan dengan 'of', bukan 'on'.",
+      "rationaleSource": "ITP-MOD-09",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 73
+    },
+    {
+      "id": "ITP-L1-03-Q074",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "Seldom engineers [A] find an auditorium [B] whose wooden balconies [C] match the warm clarity [D] of nineteenth-century timber halls.",
+      "options": [
+        "[A] find an auditorium",
+        "[B] whose wooden balconies",
+        "[C] match the warm clarity",
+        "[D] of nineteenth-century timber halls"
+      ],
+      "answer": "[A] find an auditorium",
+      "acceptedAnswers": [
+        "[A] find an auditorium"
+      ],
+      "explanation": "Adverb negatif 'Seldom' di posisi awal memicu inversi auxiliary ('Seldom do engineers find...').",
+      "rationaleSource": "ITP-MOD-03",
+      "difficulty": "C1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 74
+    },
+    {
+      "id": "ITP-L1-03-Q075",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "Titanium compressor blades [A] resist metal fatigue [B] far better than [C] cast aluminum alloy [D] are able.",
+      "options": [
+        "[A] resist metal fatigue",
+        "[B] far better than",
+        "[C] cast aluminum alloy",
+        "[D] are able"
+      ],
+      "answer": "[D] are able",
+      "acceptedAnswers": [
+        "[D] are able"
+      ],
+      "explanation": "Subjek pembanding 'cast aluminum alloy' tunggal dan butuh auxiliary 'does' atau 'is able to'.",
+      "rationaleSource": "ITP-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 75
+    },
+    {
+      "id": "ITP-L1-03-Q076",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "During seismic surveys, geophones [A] planted in frozen tundra [B] capture reflected waves [C] originated deep [D] inside granite basements.",
+      "options": [
+        "[A] planted in frozen tundra",
+        "[B] capture reflected waves",
+        "[C] originated deep",
+        "[D] inside granite basements"
+      ],
+      "answer": "[C] originated deep",
+      "acceptedAnswers": [
+        "[C] originated deep"
+      ],
+      "explanation": "Kata kerja intranstif 'originate' memakai present participle aktif 'originating', bukan 'originated'.",
+      "rationaleSource": "ITP-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 76
+    },
+    {
+      "id": "ITP-L1-03-Q077",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "Wind-tunnel engineers measured [A] both wingtip turbulence [B] or fuselage boundary-layer drag [C] across varying Mach speeds [D] yesterday afternoon.",
+      "options": [
+        "[A] both wingtip turbulence",
+        "[B] or fuselage boundary-layer drag",
+        "[C] across varying Mach speeds",
+        "[D] yesterday afternoon"
+      ],
+      "answer": "[B] or fuselage boundary-layer drag",
+      "acceptedAnswers": [
+        "[B] or fuselage boundary-layer drag"
+      ],
+      "explanation": "Pasangan korelatif 'both ...' wajib berpasangan dengan 'and', bukan 'or'.",
+      "rationaleSource": "ITP-MOD-09",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 77
+    },
+    {
+      "id": "ITP-L1-03-Q078",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "Not only did deep-bore sensors [A] detect micro-tremors [B] beneath the volcano, [C] they also pinpointed [D] rising magma chambers accurate.",
+      "options": [
+        "[A] detect micro-tremors",
+        "[B] beneath the volcano,",
+        "[C] they also pinpointed",
+        "[D] rising magma chambers accurate"
+      ],
+      "answer": "[D] rising magma chambers accurate",
+      "acceptedAnswers": [
+        "[D] rising magma chambers accurate"
+      ],
+      "explanation": "Kata kerja 'pinpointed' memerlukan adverb 'accurately', bukan adjektiva 'accurate'.",
+      "rationaleSource": "ITP-MOD-04",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 78
+    },
+    {
+      "id": "ITP-L1-03-Q079",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "Ice cores drilled [A] high on Greenland ridges [B] preserves tiny bubbles [C] of prehistoric atmospheric carbon dioxide [D] for chemical analysis.",
+      "options": [
+        "[A] high on Greenland ridges",
+        "[B] preserves tiny bubbles",
+        "[C] of prehistoric atmospheric carbon dioxide",
+        "[D] for chemical analysis"
+      ],
+      "answer": "[B] preserves tiny bubbles",
+      "acceptedAnswers": [
+        "[B] preserves tiny bubbles"
+      ],
+      "explanation": "Inti subjek jamak 'Ice cores' memakai verba jamak tanpa -s ('preserve').",
+      "rationaleSource": "ITP-MOD-03",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 79
+    },
+    {
+      "id": "ITP-L1-03-Q080",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "Acoustic diffusers scatter sound evenly [A] across rear balcony seats, [B] preventing dead zones [C] without dampen orchestral [D] brass brilliance.",
+      "options": [
+        "[A] across rear balcony seats,",
+        "[B] preventing dead zones",
+        "[C] without dampen orchestral",
+        "[D] brass brilliance"
+      ],
+      "answer": "[C] without dampen orchestral",
+      "acceptedAnswers": [
+        "[C] without dampen orchestral"
+      ],
+      "explanation": "Sesudah preposisi 'without', verba harus berbentuk gerund 'dampening'.",
+      "rationaleSource": "ITP-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 80
+    },
+    {
+      "id": "ITP-L1-03-Q081",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "Hydroelectric turbine housings [A] must engineered to withstand [B] abrasive glacial silt [C] suspended in spring meltwater [D] torrents.",
+      "options": [
+        "[A] must engineered to withstand",
+        "[B] abrasive glacial silt",
+        "[C] suspended in spring meltwater",
+        "[D] torrents"
+      ],
+      "answer": "[A] must engineered to withstand",
+      "acceptedAnswers": [
+        "[A] must engineered to withstand"
+      ],
+      "explanation": "Modal pasif memerlukan 'be': 'must be engineered'.",
+      "rationaleSource": "ITP-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 81
+    },
+    {
+      "id": "ITP-L1-03-Q082",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "Although porous acoustic foam [A] weakens high-pitched hiss, [B] it scarcely affects [C] heavy sub-bass vibrations [D] transmitted along steel floor.",
+      "options": [
+        "[A] weakens high-pitched hiss,",
+        "[B] it scarcely affects",
+        "[C] heavy sub-bass vibrations",
+        "[D] transmitted along steel floor"
+      ],
+      "answer": "[D] transmitted along steel floor",
+      "acceptedAnswers": [
+        "[D] transmitted along steel floor"
+      ],
+      "explanation": "Nomina terhitung tunggal 'steel floor' membutuhkan artikel atau bentuk jamak ('steel floors').",
+      "rationaleSource": "ITP-MOD-04",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 82
+    },
+    {
+      "id": "ITP-L1-03-Q083",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "A significant number [A] of subglacial lakes [B] beneath Antarctica remain [C] dark and liquid despite [D] temperatures below zero degree.",
+      "options": [
+        "[A] of subglacial lakes",
+        "[B] beneath Antarctica remain",
+        "[C] dark and liquid despite",
+        "[D] temperatures below zero degree"
+      ],
+      "answer": "[D] temperatures below zero degree",
+      "acceptedAnswers": [
+        "[D] temperatures below zero degree"
+      ],
+      "explanation": "Zero berada dalam hitungan jamak konvensional bahasa Inggris -> 'zero degrees'.",
+      "rationaleSource": "ITP-MOD-04",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 83
+    },
+    {
+      "id": "ITP-L1-03-Q084",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "The acoustician recommended [A] hanging velvet curtains [B] behind stage shells [C] for absorb lingering echoes [D] during solo recitals.",
+      "options": [
+        "[A] hanging velvet curtains",
+        "[B] behind stage shells",
+        "[C] for absorb lingering echoes",
+        "[D] during solo recitals"
+      ],
+      "answer": "[C] for absorb lingering echoes",
+      "acceptedAnswers": [
+        "[C] for absorb lingering echoes"
+      ],
+      "explanation": "Tujuan aksi memakai 'to absorb' atau 'for absorbing', bukan 'for + bare verb'.",
+      "rationaleSource": "ITP-MOD-08",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 84
+    },
+    {
+      "id": "ITP-L1-03-Q085",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "Glacial meltstreams [A] carve braided gravel channels [B] whose shifting courses [C] challenge engineers [D] who builds mountain highways.",
+      "options": [
+        "[A] carve braided gravel channels",
+        "[B] whose shifting courses",
+        "[C] challenge engineers",
+        "[D] who builds mountain highways"
+      ],
+      "answer": "[D] who builds mountain highways",
+      "acceptedAnswers": [
+        "[D] who builds mountain highways"
+      ],
+      "explanation": "Pronomina 'who' merujuk pada 'engineers' (jamak), sehingga harus 'build', tanpa -s.",
+      "rationaleSource": "ITP-MOD-03",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 85
+    },
+    {
+      "id": "ITP-L1-03-Q086",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "High-frequency bat echolocation [A] calls attenuate faster [B] in humid tropical air [C] than they doing [D] over cool dry deserts.",
+      "options": [
+        "[A] calls attenuate faster",
+        "[B] in humid tropical air",
+        "[C] than they doing",
+        "[D] over cool dry deserts"
+      ],
+      "answer": "[C] than they doing",
+      "acceptedAnswers": [
+        "[C] than they doing"
+      ],
+      "explanation": "Auxiliary pengacu klausa sebelumnya harus verb finite 'do', bukan participle 'doing'.",
+      "rationaleSource": "ITP-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 86
+    },
+    {
+      "id": "ITP-L1-03-Q087",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "Copper cooling coils [A] embedded inside observatory [B] detectors require regular [C] flushing so that frost [D] cannot interferes with optics.",
+      "options": [
+        "[A] embedded inside observatory",
+        "[B] detectors require regular",
+        "[C] flushing so that frost",
+        "[D] cannot interferes with optics"
+      ],
+      "answer": "[D] cannot interferes with optics",
+      "acceptedAnswers": [
+        "[D] cannot interferes with optics"
+      ],
+      "explanation": "Setelah modal 'cannot', kata kerja harus bentuk dasar 'interfere' tanpa -s.",
+      "rationaleSource": "ITP-MOD-03",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 87
+    },
+    {
+      "id": "ITP-L1-03-Q088",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "By calibrating laser interferometers, [A] physicists isolated [B] mirror vibrations tiny [C] than the width [D] of an atomic nucleus.",
+      "options": [
+        "[A] physicists isolated",
+        "[B] mirror vibrations tiny",
+        "[C] than the width",
+        "[D] of an atomic nucleus"
+      ],
+      "answer": "[C] than the width",
+      "acceptedAnswers": [
+        "[C] than the width"
+      ],
+      "explanation": "Bentuk komparatif sebelum 'than' membutuhkan 'tinier' / 'smaller', bukan bentuk positif 'tiny'.",
+      "rationaleSource": "ITP-MOD-04",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 88
+    },
+    {
+      "id": "ITP-L1-03-Q089",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "Three-dimensional seismic imaging [A] allows geologists mapping [B] buried salt domes [C] without sinking expensive [D] exploratory boreholes.",
+      "options": [
+        "[A] allows geologists mapping",
+        "[B] buried salt domes",
+        "[C] without sinking expensive",
+        "[D] exploratory boreholes"
+      ],
+      "answer": "[A] allows geologists mapping",
+      "acceptedAnswers": [
+        "[A] allows geologists mapping"
+      ],
+      "explanation": "Pola 'allow + object + to + V1' memerlukan 'to map', bukan 'mapping'.",
+      "rationaleSource": "ITP-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 89
+    },
+    {
+      "id": "ITP-L1-03-Q090",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "Every violin handcrafted [A] in historic northern workshops [B] differ slightly in spruce grain density [C] and varnish [D] elasticity.",
+      "options": [
+        "[A] in historic northern workshops",
+        "[B] differ slightly in spruce grain density",
+        "[C] and varnish",
+        "[D] elasticity"
+      ],
+      "answer": "[B] differ slightly in spruce grain density",
+      "acceptedAnswers": [
+        "[B] differ slightly in spruce grain density"
+      ],
+      "explanation": "Subjek tunggal 'Every violin' wajib diikuti verba tunggal 'differs'.",
+      "rationaleSource": "ITP-MOD-03",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 90
+    },
+    {
+      "id": "ITP-L1-03-Q091",
       "section": "READING",
       "taskType": "CHOICE_SINGLE",
-      "prompt": "What advantage of varves over radiometric dating is noted in Passage 2?",
+      "prompt": "Passage 1 ('Acoustic Shadows and Concert Hall Diffusion') — Q1/10: What factor most powerfully drives acoustic uniformity across a concert hall?",
       "options": [
-        "Annual and seasonal resolution",
-        "Lower laboratory microscope cost",
-        "Applicability to ocean lava flows",
-        "Elimination of lake core drilling"
+        "Covering every balcony railing with thick velvet blackout blankets.",
+        "Installing narrow copper pipes underneath brass stage risers.",
+        "Surface geometry and scattering irregularities rather than wood floor species alone.",
+        "Exclusively painting front walls with glossy synthetic lacquer."
       ],
-      "answer": "Annual and seasonal resolution",
+      "answer": "Surface geometry and scattering irregularities rather than wood floor species alone.",
       "acceptedAnswers": [
-        "Annual and seasonal resolution"
+        "Surface geometry and scattering irregularities rather than wood floor species alone."
       ],
-      "explanation": "Kalimat terakhir menyebut 'seasonal precision rarely possible with radiometric dating alone'.",
+      "explanation": "Geometri permukaan pemantul menentukan kejelasan suara di seluruh kursi.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP03-P1",
+      "audioAssetId": null,
+      "sortIndex": 91
+    },
+    {
+      "id": "ITP-L1-03-Q092",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 1 ('Acoustic Shadows and Concert Hall Diffusion') — Q2/10: Why are large concave walls hazardous inside un-treated musical halls?",
+      "options": [
+        "Sound speeds double linearly near arched ceilings.",
+        "Curved surfaces concentrate reflected sound into jarring loud spots while starving corners.",
+        "Concave plaster cracks swiftly under loud trombone notes.",
+        "Curved walls absorb low bass cello tones permanently."
+      ],
+      "answer": "Curved surfaces concentrate reflected sound into jarring loud spots while starving corners.",
+      "acceptedAnswers": [
+        "Curved surfaces concentrate reflected sound into jarring loud spots while starving corners."
+      ],
+      "explanation": "Dinding cekung memusatkan pantulan sehingga memunculkan hotspot keras dan area bayangan senyap.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP03-P1",
+      "audioAssetId": null,
+      "sortIndex": 92
+    },
+    {
+      "id": "ITP-L1-03-Q093",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 1 ('Acoustic Shadows and Concert Hall Diffusion') — Q3/10: What beneficial physical role did elaborate nineteenth-century plaster carvings perform by accident?",
+      "options": [
+        "Scattering sound energy smoothly instead of creating sharp echo slap.",
+        "Preventing outside subway trains from shaking stone piers.",
+        "Drying winter audience dampness swiftly off wood benches.",
+        "Blocking bright sunlight behind orchestra conductors."
+      ],
+      "answer": "Scattering sound energy smoothly instead of creating sharp echo slap.",
+      "acceptedAnswers": [
+        "Scattering sound energy smoothly instead of creating sharp echo slap."
+      ],
+      "explanation": "Ornamen kolom berlekuk menyebar gelombang suara secara acak (difusi).",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP03-P1",
+      "audioAssetId": null,
+      "sortIndex": 93
+    },
+    {
+      "id": "ITP-L1-03-Q094",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 1 ('Acoustic Shadows and Concert Hall Diffusion') — Q4/10: How do Quadratic Residue Diffusers outperform heavy plush wall foam?",
+      "options": [
+        "Wooden wells silence orchestra drums completely in rear aisles.",
+        "Diffusers amplify soft flute pitches above brass sections electronically.",
+        "Foam mats last longer against dusty ceiling fans.",
+        "Diffusers spread treble evenly without deadening natural musical liveliness."
+      ],
+      "answer": "Diffusers spread treble evenly without deadening natural musical liveliness.",
+      "acceptedAnswers": [
+        "Diffusers spread treble evenly without deadening natural musical liveliness."
+      ],
+      "explanation": "QRD menyebarkan suara merata tanpa mematikan energi alami seperti busa penyerap.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP03-P1",
+      "audioAssetId": null,
+      "sortIndex": 94
+    },
+    {
+      "id": "ITP-L1-03-Q095",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 1 ('Acoustic Shadows and Concert Hall Diffusion') — Q5/10: The word 'recessed' in paragraph 1 is closest in meaning to:",
+      "options": [
+        "suspended",
+        "painted",
+        "indented",
+        "polished"
+      ],
+      "answer": "indented",
+      "acceptedAnswers": [
+        "indented"
+      ],
+      "explanation": "'Recessed coffered ceilings' bermakna bercekung/masuk ke dalam membentuk pola.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP03-P1",
+      "audioAssetId": null,
+      "sortIndex": 95
+    },
+    {
+      "id": "ITP-L1-03-Q096",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 1 ('Acoustic Shadows and Concert Hall Diffusion') — Q6/10: What does 'such irregular textures' refer to?",
+      "options": [
+        "Spruce violin bridges and horsehair bows.",
+        "Plaster moldings, fluted pillars, and deep patterned ceilings.",
+        "Smooth flat concrete rear walls.",
+        "Soft foam acoustic floor runners."
+      ],
+      "answer": "Plaster moldings, fluted pillars, and deep patterned ceilings.",
+      "acceptedAnswers": [
+        "Plaster moldings, fluted pillars, and deep patterned ceilings."
+      ],
+      "explanation": "Mengacu elemen bertekstur ukiran plester dan kolom bergalur di kalimat sebelumnya.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP03-P1",
+      "audioAssetId": null,
+      "sortIndex": 96
+    },
+    {
+      "id": "ITP-L1-03-Q097",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 1 ('Acoustic Shadows and Concert Hall Diffusion') — Q7/10: Why do modern QRD panels rely on mathematically varying well depths?",
+      "options": [
+        "Depth differences phase-shift reflections cleanly across wide listening angles.",
+        "Shallow wells trap heavy dust motes neatly during summer concerts.",
+        "Deep crevices conceal brass microphone cables invisibly.",
+        "Uneven rows reduce lumber weight along curved steel beams."
+      ],
+      "answer": "Depth differences phase-shift reflections cleanly across wide listening angles.",
+      "acceptedAnswers": [
+        "Depth differences phase-shift reflections cleanly across wide listening angles."
+      ],
+      "explanation": "Variasi kedalaman sel mengatur pantulan merata di berbagai frekuensi.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "C1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP03-P1",
+      "audioAssetId": null,
+      "sortIndex": 97
+    },
+    {
+      "id": "ITP-L1-03-Q098",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 1 ('Acoustic Shadows and Concert Hall Diffusion') — Q8/10: The word 'harsh' in 'creating harsh hotspots' is closest in meaning to:",
+      "options": [
+        "gentle",
+        "silent",
+        "brief",
+        "jarring"
+      ],
+      "answer": "jarring",
+      "acceptedAnswers": [
+        "jarring"
+      ],
+      "explanation": "'Harsh hotspots' bermakna pantulan keras menyilaukan/mengganggu telinga.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP03-P1",
+      "audioAssetId": null,
+      "sortIndex": 98
+    },
+    {
+      "id": "ITP-L1-03-Q099",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 1 ('Acoustic Shadows and Concert Hall Diffusion') — Q9/10: Which acoustic element is NOT praised by the passage for orchestral clarity?",
+      "options": [
+        "Calculated wooden well arrays diffusing treble.",
+        "Three-dimensional carved reliefs scattering specular echoes.",
+        "Blanketing entire room boundaries exclusively with thick absorbing foam.",
+        "Parallel narrow sidewalls delivering early lateral fullness."
+      ],
+      "answer": "Blanketing entire room boundaries exclusively with thick absorbing foam.",
+      "acceptedAnswers": [
+        "Blanketing entire room boundaries exclusively with thick absorbing foam."
+      ],
+      "explanation": "Busa penyerap penuh dikritik karena menyerap energi alami orkestra.",
+      "rationaleSource": "ITP-MOD-10",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP03-P1",
+      "audioAssetId": null,
+      "sortIndex": 99
+    },
+    {
+      "id": "ITP-L1-03-Q100",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 1 ('Acoustic Shadows and Concert Hall Diffusion') — Q10/10: Who is the primary intended audience for the engineering principles explained here?",
+      "options": [
+        "City inspectors testing concert fire sprinklers.",
+        "Readers seeking clear nontechnical insight into architectural acoustics.",
+        "Professional lumber carpenters cutting railway ties.",
+        "Vocal opera coaches memorizing nineteenth-century lyrics."
+      ],
+      "answer": "Readers seeking clear nontechnical insight into architectural acoustics.",
+      "acceptedAnswers": [
+        "Readers seeking clear nontechnical insight into architectural acoustics."
+      ],
+      "explanation": "Gaya penjelasan populer ilmiah ditujukan bagi pembaca umum mengenai akustik ruang.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP03-P1",
+      "audioAssetId": null,
+      "sortIndex": 100
+    },
+    {
+      "id": "ITP-L1-03-Q101",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 2 ('Glacier Surges and Subglacial Basal Water') — Q1/10: What distinguishes 'surge-type' glaciers from ordinary steady mountain glaciers?",
+      "options": [
+        "Long quiet stagnation cycles interrupted suddenly by explosive multi-week forward rushes.",
+        "Permanent year-round drifting speed exceeding fifty meters daily.",
+        "Complete immunity to summer meltwater along coastal valleys.",
+        "Formation solely along warm volcanic crater ridges."
+      ],
+      "answer": "Long quiet stagnation cycles interrupted suddenly by explosive multi-week forward rushes.",
+      "acceptedAnswers": [
+        "Long quiet stagnation cycles interrupted suddenly by explosive multi-week forward rushes."
+      ],
+      "explanation": "Gletser surge mengalami periode stagnan puluhan tahun lalu melonjak sangat cepat tiba-tiba.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP03-P2",
+      "audioAssetId": null,
+      "sortIndex": 101
+    },
+    {
+      "id": "ITP-L1-03-Q102",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 2 ('Glacier Surges and Subglacial Basal Water') — Q2/10: According to NASA/USGS findings outlined here, what triggers the sudden jump in sliding speed?",
+      "options": [
+        "Heavy volcanic earthquakes push upper snowfields downhill permanently.",
+        "Global atmospheric winds shove glacial ridges northward cleanly.",
+        "Warm ocean tides dissolve granite piers underneath mountain glaciers.",
+        "Pressurized subglacial meltwater lifts heavy ice off rough bedrock, slashing friction."
+      ],
+      "answer": "Pressurized subglacial meltwater lifts heavy ice off rough bedrock, slashing friction.",
+      "acceptedAnswers": [
+        "Pressurized subglacial meltwater lifts heavy ice off rough bedrock, slashing friction."
+      ],
+      "explanation": "Tekanan air leleh di dasar mengangkat massa es dari batuan sehingga gesekan turun drastis.",
       "rationaleSource": "ITP-MOD-05",
       "difficulty": "B2",
       "points": 1,
@@ -367,8 +2945,958 @@
       "reviewStatus": "VERIFIED_ORIGINAL",
       "passageId": "ITP03-P2",
       "audioAssetId": null,
-      "sortIndex": 12
+      "sortIndex": 102
+    },
+    {
+      "id": "ITP-L1-03-Q103",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 2 ('Glacier Surges and Subglacial Basal Water') — Q3/10: The word 'buoys' in paragraph 2 is closest in meaning to:",
+      "options": [
+        "carves inward",
+        "melts cleanly",
+        "supports upward",
+        "freezes solid"
+      ],
+      "answer": "supports upward",
+      "acceptedAnswers": [
+        "supports upward"
+      ],
+      "explanation": "'Buoys up' bermakna mengapungkan/menahan naik.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP03-P2",
+      "audioAssetId": null,
+      "sortIndex": 103
+    },
+    {
+      "id": "ITP-L1-03-Q104",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 2 ('Glacier Surges and Subglacial Basal Water') — Q4/10: What happens visually to a glacier's surface during an active surge phase?",
+      "options": [
+        "Upper snowy basins immediately hollow dry down to pink marble.",
+        "Rapid sliding shatters smooth ice sheets into jagged mazes of towering crevasses.",
+        "Dust storms cover blue glacial cracks smoothly like flat concrete.",
+        "Evergreen spruce seedlings sprout uniformly atop quiet firn."
+      ],
+      "answer": "Rapid sliding shatters smooth ice sheets into jagged mazes of towering crevasses.",
+      "acceptedAnswers": [
+        "Rapid sliding shatters smooth ice sheets into jagged mazes of towering crevasses."
+      ],
+      "explanation": "Laju luncur ekstrem merobek es menjadi puncak menara dan celah crevasse acak.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP03-P2",
+      "audioAssetId": null,
+      "sortIndex": 104
+    },
+    {
+      "id": "ITP-L1-03-Q105",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 2 ('Glacier Surges and Subglacial Basal Water') — Q5/10: Why does an active glacier surge eventually halt abruptly?",
+      "options": [
+        "Blocked subglacial channels burst open at the terminus, draining lubricating basal water pressure.",
+        "Summer snowfall freezes surface ice solidly onto mountain cliffs.",
+        "All remaining upper basin ice evaporates into high cirrus clouds.",
+        "Boulders stack fifty meters tall in front of ocean harbors."
+      ],
+      "answer": "Blocked subglacial channels burst open at the terminus, draining lubricating basal water pressure.",
+      "acceptedAnswers": [
+        "Blocked subglacial channels burst open at the terminus, draining lubricating basal water pressure."
+      ],
+      "explanation": "Terowongan dasar jebol melepas banjir air bertekanan sehingga gesekan batuan kembali mengunci gletser.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP03-P2",
+      "audioAssetId": null,
+      "sortIndex": 105
+    },
+    {
+      "id": "ITP-L1-03-Q106",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 2 ('Glacier Surges and Subglacial Basal Water') — Q6/10: The word 'sluggish' in the final clause is closest in meaning to:",
+      "options": [
+        "perilously fast",
+        "boiling",
+        "transparent",
+        "inert and slow"
+      ],
+      "answer": "inert and slow",
+      "acceptedAnswers": [
+        "inert and slow"
+      ],
+      "explanation": "'Sluggish dormancy' bermakna fase diam lamban.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP03-P2",
+      "audioAssetId": null,
+      "sortIndex": 106
+    },
+    {
+      "id": "ITP-L1-03-Q107",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 2 ('Glacier Surges and Subglacial Basal Water') — Q7/10: Where do surge-type glaciers frequently concentrate globally according to paragraph 1?",
+      "options": [
+        "Across sunken mid-Atlantic ocean trenches.",
+        "Only around tropical South Pacific coral reefs.",
+        "Regions including Alaska, Svalbard, and the Karakoram mountains.",
+        "Exclusively along dry sandy Saharan plateaus."
+      ],
+      "answer": "Regions including Alaska, Svalbard, and the Karakoram mountains.",
+      "acceptedAnswers": [
+        "Regions including Alaska, Svalbard, and the Karakoram mountains."
+      ],
+      "explanation": "Wilayah Alaska, Svalbard, dan Karakoram disebut secara eksplisit.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP03-P2",
+      "audioAssetId": null,
+      "sortIndex": 107
+    },
+    {
+      "id": "ITP-L1-03-Q108",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 2 ('Glacier Surges and Subglacial Basal Water') — Q8/10: What does 'while tearing the glacier tongue' indicate about glacier deformation vs basal sliding?",
+      "options": [
+        "Snow crystals turn into soft gravel during winter dormancy.",
+        "Surface brittle ice fractures violently when the base slides rapidly over uneven ground.",
+        "Basal sliding stops internal ice crystals from ever bending.",
+        "Glacier tongues melt smoothly from top down before surging."
+      ],
+      "answer": "Surface brittle ice fractures violently when the base slides rapidly over uneven ground.",
+      "acceptedAnswers": [
+        "Surface brittle ice fractures violently when the base slides rapidly over uneven ground."
+      ],
+      "explanation": "Lapisan es atas yang getas pecah akibat dorongan geseran cepat di dasar.",
+      "rationaleSource": "ITP-MOD-10",
+      "difficulty": "C1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP03-P2",
+      "audioAssetId": null,
+      "sortIndex": 108
+    },
+    {
+      "id": "ITP-L1-03-Q109",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 2 ('Glacier Surges and Subglacial Basal Water') — Q9/10: Which event occurs FIRST in a typical glacier surge cycle?",
+      "options": [
+        "Thick snow builds slowly up in the high upper basin while lower ice thins quietly.",
+        "Muddy burst floods flush out subglacial gravel caves.",
+        "Glacier velocity leaps fiftyfold across coastal moraines.",
+        "Granite spires pierce above dry harbor lagoons."
+      ],
+      "answer": "Thick snow builds slowly up in the high upper basin while lower ice thins quietly.",
+      "acceptedAnswers": [
+        "Thick snow builds slowly up in the high upper basin while lower ice thins quietly."
+      ],
+      "explanation": "Urutan awal: penebalan lambat di cekungan atas selama puluhan tahun diam.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP03-P2",
+      "audioAssetId": null,
+      "sortIndex": 109
+    },
+    {
+      "id": "ITP-L1-03-Q110",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 2 ('Glacier Surges and Subglacial Basal Water') — Q10/10: Which statement is NOT accurate based on the passage?",
+      "options": [
+        "Blocked subglacial tunnels allow pressure to climb before surging.",
+        "Glacier surges repeat identically every single Tuesday morning.",
+        "Fractured crevasses mark rapid surge movement across glacier tongues.",
+        "Pressurized water beneath ice accelerates basal slip without melting entire mountains."
+      ],
+      "answer": "Pressurized water beneath ice accelerates basal slip without melting entire mountains.",
+      "acceptedAnswers": [
+        "Pressurized water beneath ice accelerates basal slip without melting entire mountains."
+      ],
+      "explanation": "Siklus berlangsung puluhan tahun, bukan rutin setiap minggu.",
+      "rationaleSource": "ITP-MOD-10",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP03-P2",
+      "audioAssetId": null,
+      "sortIndex": 110
+    },
+    {
+      "id": "ITP-L1-03-Q111",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 3 ('Anechoic Chambers and Quiet Engineering Metrics') — Q1/10: Why are anechoic test rooms mounted atop massive steel springs inside separate shells?",
+      "options": [
+        "So engineers can rock heavy speaker stands back and forth during sweeps.",
+        "To cool hot copper cables cleanly underneath suspended gravel beds.",
+        "To block structural vibrations from subways, HVAC ducts, and footfalls entering.",
+        "To bounce loud music safely out into adjoining parking garages."
+      ],
+      "answer": "To block structural vibrations from subways, HVAC ducts, and footfalls entering.",
+      "acceptedAnswers": [
+        "To block structural vibrations from subways, HVAC ducts, and footfalls entering."
+      ],
+      "explanation": "Pegas baja mengisolasi kotak ruangan agar getaran bangunan/kereta bawah tanah tidak merembet.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP03-P3",
+      "audioAssetId": null,
+      "sortIndex": 111
+    },
+    {
+      "id": "ITP-L1-03-Q112",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 3 ('Anechoic Chambers and Quiet Engineering Metrics') — Q2/10: How do meter-long fiberglass wedges physically silence sound waves inside the chamber?",
+      "options": [
+        "Dense fiberglass reflects low bass drums strictly downward beneath steel floors.",
+        "Tapered fiber channels bounce vibrations internally until energy dissipates as tiny warmth.",
+        "Smooth steel skins lock echoes inside sealed iron boxes.",
+        "Electronic speakers emit matching anti-sound waves every second."
+      ],
+      "answer": "Tapered fiber channels bounce vibrations internally until energy dissipates as tiny warmth.",
+      "acceptedAnswers": [
+        "Tapered fiber channels bounce vibrations internally until energy dissipates as tiny warmth."
+      ],
+      "explanation": "Serat berpori meredam energi bunyi menjadi energi panas mikro lewat gesekan berulang.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP03-P3",
+      "audioAssetId": null,
+      "sortIndex": 112
+    },
+    {
+      "id": "ITP-L1-03-Q113",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 3 ('Anechoic Chambers and Quiet Engineering Metrics') — Q3/10: The word 'eerie' in sentence 1 is closest in meaning to:",
+      "options": [
+        "uncanny",
+        "deafening",
+        "festive",
+        "ordinary"
+      ],
+      "answer": "uncanny",
+      "acceptedAnswers": [
+        "uncanny"
+      ],
+      "explanation": "'Eerie silence' bermakna keheningan ganjil / terasa aneh.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP03-P3",
+      "audioAssetId": null,
+      "sortIndex": 113
+    },
+    {
+      "id": "ITP-L1-03-Q114",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 3 ('Anechoic Chambers and Quiet Engineering Metrics') — Q4/10: Why can audio labs test delicate microphones far more consistently inside anechoic chambers than open fields?",
+      "options": [
+        "Air oxygen doubles inside fiberglass booths to carry sound faster.",
+        "Microphones draw free wall electricity directly through mesh floors.",
+        "Coiled springs amplify soft whisper voices fiftyfold cleanly.",
+        "Free-field acoustics vanish without unpredictable wind, traffic, or bird intrusion."
+      ],
+      "answer": "Free-field acoustics vanish without unpredictable wind, traffic, or bird intrusion.",
+      "acceptedAnswers": [
+        "Free-field acoustics vanish without unpredictable wind, traffic, or bird intrusion."
+      ],
+      "explanation": "Ruang bebas gema dan bebas gangguan angin/bising menghasilkan pengukuran presisi.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP03-P3",
+      "audioAssetId": null,
+      "sortIndex": 114
+    },
+    {
+      "id": "ITP-L1-03-Q115",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 3 ('Anechoic Chambers and Quiet Engineering Metrics') — Q5/10: What does 'negligible fractions of a degree' imply about acoustic heat conversion?",
+      "options": [
+        "Air conditioners must run continuously to extinguish hot fiberglass.",
+        "Microphones melt rapidly beside loud loudspeaker cones.",
+        "Converted warmth is far too tiny to raise room air temperature noticeably.",
+        "Wedges glow incandescent red whenever rock drums strike loudly."
+      ],
+      "answer": "Converted warmth is far too tiny to raise room air temperature noticeably.",
+      "acceptedAnswers": [
+        "Converted warmth is far too tiny to raise room air temperature noticeably."
+      ],
+      "explanation": "'Negligible' berarti sangat kecil hingga tak berarti.",
+      "rationaleSource": "ITP-MOD-10",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP03-P3",
+      "audioAssetId": null,
+      "sortIndex": 115
+    },
+    {
+      "id": "ITP-L1-03-Q116",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 3 ('Anechoic Chambers and Quiet Engineering Metrics') — Q6/10: Why do visitors quickly hear internal bodily sounds inside extreme quiet?",
+      "options": [
+        "Low speaker magnets tug iron blood cells gently inward.",
+        "Absent normal environmental reflections, faint blood pulse and ear noises stand audible.",
+        "Steel wire floors amplify sneaker friction across fiberglass spikes.",
+        "Chamber air doubles eardrum pressure immediately upon door sealing."
+      ],
+      "answer": "Absent normal environmental reflections, faint blood pulse and ear noises stand audible.",
+      "acceptedAnswers": [
+        "Absent normal environmental reflections, faint blood pulse and ear noises stand audible."
+      ],
+      "explanation": "Tanpa bising luar maupun pantulan ruang, telinga menangkap aliran darah dan detak internal.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP03-P3",
+      "audioAssetId": null,
+      "sortIndex": 116
+    },
+    {
+      "id": "ITP-L1-03-Q117",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 3 ('Anechoic Chambers and Quiet Engineering Metrics') — Q7/10: The word 'disorienting' in the last sentence is closest in meaning to:",
+      "options": [
+        "unsettling",
+        "refreshing",
+        "predictable",
+        "musical"
+      ],
+      "answer": "unsettling",
+      "acceptedAnswers": [
+        "unsettling"
+      ],
+      "explanation": "'Disorienting' berarti membingungkan arah/keseimbangan indra.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP03-P3",
+      "audioAssetId": null,
+      "sortIndex": 117
+    },
+    {
+      "id": "ITP-L1-03-Q118",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 3 ('Anechoic Chambers and Quiet Engineering Metrics') — Q8/10: What does 'convert ... into' explain about conservation of acoustic energy?",
+      "options": [
+        "Electric transducer cables turn light waves cleanly back into sound.",
+        "Sound bounces infinitely forever between alternating wood wedges.",
+        "Wire floor grilles absorb high treble exclusively.",
+        "Ordered pressure ripples become tiny disordered thermal motion inside pores."
+      ],
+      "answer": "Ordered pressure ripples become tiny disordered thermal motion inside pores.",
+      "acceptedAnswers": [
+        "Ordered pressure ripples become tiny disordered thermal motion inside pores."
+      ],
+      "explanation": "Energi gelombang bunyi berubah menjadi energi panas acak di dalam serat.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "C1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP03-P3",
+      "audioAssetId": null,
+      "sortIndex": 118
+    },
+    {
+      "id": "ITP-L1-03-Q119",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 3 ('Anechoic Chambers and Quiet Engineering Metrics') — Q9/10: Which feature is NOT part of an anechoic chamber's quiet toolkit?",
+      "options": [
+        "Deep tapered fiberglass wedges lining all six room faces.",
+        "Taut steel floor grids permitting sound absorption below walk lines.",
+        "Smooth glazed ceramic acoustic reflection tiles along ceiling panels.",
+        "Spring-isolated floating structural shell."
+      ],
+      "answer": "Smooth glazed ceramic acoustic reflection tiles along ceiling panels.",
+      "acceptedAnswers": [
+        "Smooth glazed ceramic acoustic reflection tiles along ceiling panels."
+      ],
+      "explanation": "Ubin keramik licin justru memantulkan suara dan bertolak belakang dengan prinsip anechoic.",
+      "rationaleSource": "ITP-MOD-10",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP03-P3",
+      "audioAssetId": null,
+      "sortIndex": 119
+    },
+    {
+      "id": "ITP-L1-03-Q120",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 3 ('Anechoic Chambers and Quiet Engineering Metrics') — Q10/10: What best states the passage's main idea?",
+      "options": [
+        "Comparing glass fiber wool insulation prices against wooden rafters.",
+        "How anechoic chambers create reflection-free acoustic spaces and why precision labs rely on them.",
+        "Why urban concert halls fail to silence loud passing streetcars.",
+        "Medical treatments for pulsing blood flow noises inside human ears."
+      ],
+      "answer": "How anechoic chambers create reflection-free acoustic spaces and why precision labs rely on them.",
+      "acceptedAnswers": [
+        "How anechoic chambers create reflection-free acoustic spaces and why precision labs rely on them."
+      ],
+      "explanation": "Topik utama memaparkan cara kerja ruang bebas gema serta kegunaannya bagi uji rekayasa suara.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP03-P3",
+      "audioAssetId": null,
+      "sortIndex": 120
+    },
+    {
+      "id": "ITP-L1-03-Q121",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 4 ('Ice-Core Archives of Ancient Earth Atmospheres') — Q1/10: At roughly what depth below polar snow surfaces do air bubbles seal shut permanently?",
+      "options": [
+        "Sixty to one hundred meters down where snow compresses from firn into solid ice.",
+        "Immediately within two centimeters of sunlit Antarctic snowfall.",
+        "Four thousand meters down inside molten granite bedrock.",
+        "Directly beneath sea-level iceberg floating edges."
+      ],
+      "answer": "Sixty to one hundred meters down where snow compresses from firn into solid ice.",
+      "acceptedAnswers": [
+        "Sixty to one hundred meters down where snow compresses from firn into solid ice."
+      ],
+      "explanation": "Teks menyebut kedalaman sekitar 60–100 meter sebagai zona penutupan pori es.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP03-P4",
+      "audioAssetId": null,
+      "sortIndex": 121
+    },
+    {
+      "id": "ITP-L1-03-Q122",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 4 ('Ice-Core Archives of Ancient Earth Atmospheres') — Q2/10: What unique climate evidence do sealed glacial air bubbles preserve better than ocean sediments?",
+      "options": [
+        "Fossilized tropical palm seeds blooming across Greenland summits.",
+        "Liquid saltwater waves frozen smoothly every April afternoon.",
+        "Magnetic granite compass rocks drifting slowly uphill.",
+        "Intact direct pockets of ancient atmospheric gases alongside distinct volcanic ash layers."
+      ],
+      "answer": "Intact direct pockets of ancient atmospheric gases alongside distinct volcanic ash layers.",
+      "acceptedAnswers": [
+        "Intact direct pockets of ancient atmospheric gases alongside distinct volcanic ash layers."
+      ],
+      "explanation": "Gelembung udara tersegel menyimpan sampel atmosfer purba langsung + lapisan abu vulkanik tajam.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP03-P4",
+      "audioAssetId": null,
+      "sortIndex": 122
+    },
+    {
+      "id": "ITP-L1-03-Q123",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 4 ('Ice-Core Archives of Ancient Earth Atmospheres') — Q3/10: In glaciology, what does 'firn' refer to?",
+      "options": [
+        "Dry desert dust storms sweeping toward South Pole telescopes.",
+        "Thin summer puddle sheets frozen cleanly over pond grass.",
+        "Intermediate dense granular snow compressing slowly between fresh powder and solid ice.",
+        "Deep black basalt lava cracks cutting across coastal fjords."
+      ],
+      "answer": "Intermediate dense granular snow compressing slowly between fresh powder and solid ice.",
+      "acceptedAnswers": [
+        "Intermediate dense granular snow compressing slowly between fresh powder and solid ice."
+      ],
+      "explanation": "Firn adalah salju butiran padat transisi sebelum menjadi es padat impermeabel.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP03-P4",
+      "audioAssetId": null,
+      "sortIndex": 123
+    },
+    {
+      "id": "ITP-L1-03-Q124",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 4 ('Ice-Core Archives of Ancient Earth Atmospheres') — Q4/10: Why are trapped gas bubbles younger than the surrounding ice crystals holding them?",
+      "options": [
+        "Meltwater dissolves old CO2 pockets every spring afternoon.",
+        "Outdoor air continues circulating downward through porous firn until pores close deep down.",
+        "Microbes breathe fresh oxygen continuously inside solid four-kilometer ice.",
+        "Drilling steel bits pump modern tent air down glass sample tubes."
+      ],
+      "answer": "Outdoor air continues circulating downward through porous firn until pores close deep down.",
+      "acceptedAnswers": [
+        "Outdoor air continues circulating downward through porous firn until pores close deep down."
+      ],
+      "explanation": "Selama firn berpori sebelum tertutup rapat, udara modern terus berdifusi ke lapisan salju lebih tua.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "C1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP03-P4",
+      "audioAssetId": null,
+      "sortIndex": 124
+    },
+    {
+      "id": "ITP-L1-03-Q125",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 4 ('Ice-Core Archives of Ancient Earth Atmospheres') — Q5/10: The word 'pinches off' in paragraph 1 is closest in meaning to:",
+      "options": [
+        "seals shut",
+        "expands widely",
+        "melts rapidly",
+        "illuminates"
+      ],
+      "answer": "seals shut",
+      "acceptedAnswers": [
+        "seals shut"
+      ],
+      "explanation": "'Pinches off air channels' berarti menyumbat/menutup rapat saluran udara.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP03-P4",
+      "audioAssetId": null,
+      "sortIndex": 125
+    },
+    {
+      "id": "ITP-L1-03-Q126",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 4 ('Ice-Core Archives of Ancient Earth Atmospheres') — Q6/10: What analytical tool must paleoclimatologists apply before matching gas age to ice temperature?",
+      "options": [
+        "Boiling sealed core chunks swiftly over portable camp stoves.",
+        "Guessing ancient rainfall directly from ocean whale populations.",
+        "Averaging five centuries randomly across tropical pine tree rings.",
+        "Snow-accumulation rate models correcting for the gas-ice age gap."
+      ],
+      "answer": "Snow-accumulation rate models correcting for the gas-ice age gap.",
+      "acceptedAnswers": [
+        "Snow-accumulation rate models correcting for the gas-ice age gap."
+      ],
+      "explanation": "Diperlukan pemodelan laju akumulasi salju untuk mengoreksi selisih usia es vs gas.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP03-P4",
+      "audioAssetId": null,
+      "sortIndex": 126
+    },
+    {
+      "id": "ITP-L1-03-Q127",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 4 ('Ice-Core Archives of Ancient Earth Atmospheres') — Q7/10: What does 'them' in 'younger than the frozen water crystals encasing them' refer to?",
+      "options": [
+        "volcanic ash layers",
+        "snowflakes",
+        "trapped air bubbles",
+        "marine sediment cores"
+      ],
+      "answer": "trapped air bubbles",
+      "acceptedAnswers": [
+        "trapped air bubbles"
+      ],
+      "explanation": "'Them' mengacu gelembung udara terperangkap.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP03-P4",
+      "audioAssetId": null,
+      "sortIndex": 127
+    },
+    {
+      "id": "ITP-L1-03-Q128",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 4 ('Ice-Core Archives of Ancient Earth Atmospheres') — Q8/10: How deep back into Earth's climate history do continuous polar ice records currently reach?",
+      "options": [
+        "Ten seasonal hurricane cycles.",
+        "Approximately eight hundred thousand years.",
+        "Barely four hundred medieval winters.",
+        "Over forty million dinosaur epochs."
+      ],
+      "answer": "Approximately eight hundred thousand years.",
+      "acceptedAnswers": [
+        "Approximately eight hundred thousand years."
+      ],
+      "explanation": "Disebut membentang hingga sekitar 800.000 tahun lalu.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP03-P4",
+      "audioAssetId": null,
+      "sortIndex": 128
+    },
+    {
+      "id": "ITP-L1-03-Q129",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 4 ('Ice-Core Archives of Ancient Earth Atmospheres') — Q9/10: The word 'subtlety' in paragraph 2 is closest in meaning to:",
+      "options": [
+        "nuance",
+        "explosion",
+        "error",
+        "myth"
+      ],
+      "answer": "nuance",
+      "acceptedAnswers": [
+        "nuance"
+      ],
+      "explanation": "'Analytical subtlety' berarti detail halus penting.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP03-P4",
+      "audioAssetId": null,
+      "sortIndex": 129
+    },
+    {
+      "id": "ITP-L1-03-Q130",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 4 ('Ice-Core Archives of Ancient Earth Atmospheres') — Q10/10: Which feature is NOT attributed to inland Antarctic domes in the passage?",
+      "options": [
+        "Extremely minimal surface melting preserving stratified snow.",
+        "Sharp dust markers left by prehistoric eruptions.",
+        "Compression turning snow into solid impermeable crystalline ice.",
+        "Annual summer rainwater floods washing snow layers into rivers."
+      ],
+      "answer": "Annual summer rainwater floods washing snow layers into rivers.",
+      "acceptedAnswers": [
+        "Annual summer rainwater floods washing snow layers into rivers."
+      ],
+      "explanation": "Teks secara tegas menyebut 'winter snow scarcely melts' sehingga bukan banjir hujan musim panas.",
+      "rationaleSource": "ITP-MOD-10",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP03-P4",
+      "audioAssetId": null,
+      "sortIndex": 130
+    },
+    {
+      "id": "ITP-L1-03-Q131",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 5 ('Infrasound Navigation in Migratory Birds and Elephants') — Q1/10: What physical property defines infrasound waves?",
+      "options": [
+        "Light beams traveling swiftly through solid mountain granite.",
+        "Ocean salinity gradients moving slower than desert sand dunes.",
+        "Sound vibrations below twenty hertz that drop below typical human hearing thresholds.",
+        "High squeaks exceeding twenty thousand hertz inside dark cave tunnels."
+      ],
+      "answer": "Sound vibrations below twenty hertz that drop below typical human hearing thresholds.",
+      "acceptedAnswers": [
+        "Sound vibrations below twenty hertz that drop below typical human hearing thresholds."
+      ],
+      "explanation": "Infrasonik adalah gelombang suara di bawah 20 Hz, di bawah ambang dengar manusia.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP03-P5",
+      "audioAssetId": null,
+      "sortIndex": 131
+    },
+    {
+      "id": "ITP-L1-03-Q132",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 5 ('Infrasound Navigation in Migratory Birds and Elephants') — Q2/10: Why do infrasound wavelengths propagate so much farther across landscapes than high-pitched bird songs?",
+      "options": [
+        "Green forest leaves reflect short treble echoes backward safely.",
+        "Long wavelengths diffract cleanly around trees and hills with minimal atmospheric damping.",
+        "Cold desert rocks accelerate low-frequency signals ten times faster than treble.",
+        "Wind chimes amplify fourteen-hertz rumbles silently along rivers."
+      ],
+      "answer": "Long wavelengths diffract cleanly around trees and hills with minimal atmospheric damping.",
+      "acceptedAnswers": [
+        "Long wavelengths diffract cleanly around trees and hills with minimal atmospheric damping."
+      ],
+      "explanation": "Panjang gelombang besar nyaris tak terhambur pepohonan maupun punggung bukit.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP03-P5",
+      "audioAssetId": null,
+      "sortIndex": 132
+    },
+    {
+      "id": "ITP-L1-03-Q133",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 5 ('Infrasound Navigation in Migratory Birds and Elephants') — Q3/10: How do wild savanna elephants benefit practically from fourteen-hertz vocal rumbles?",
+      "options": [
+        "Separated social herds coordinate movements cleanly over several wooded kilometers.",
+        "Low rumbles frighten noisy highway trucks clear off paved savanna lanes.",
+        "Waves break dry river ice open ahead of thirsty calves.",
+        "Ultra-low pitches stun tasty canopy fruit straight to dusty ground."
+      ],
+      "answer": "Separated social herds coordinate movements cleanly over several wooded kilometers.",
+      "acceptedAnswers": [
+        "Separated social herds coordinate movements cleanly over several wooded kilometers."
+      ],
+      "explanation": "Kawanan gajah yang terpisah dapat berkoordinasi jarak jauh menembus sabana.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP03-P5",
+      "audioAssetId": null,
+      "sortIndex": 133
+    },
+    {
+      "id": "ITP-L1-03-Q134",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 5 ('Infrasound Navigation in Migratory Birds and Elephants') — Q4/10: What intriguing orientation cue may homing pigeons extract from low-frequency ocean swells?",
+      "options": [
+        "Seasonal barometric rain dates printed across lighthouse foghorns.",
+        "Exact magnetic pole depth inside molten oceanic crust.",
+        "Echo measurements tracking high supersonic jetliner paths.",
+        "An invisible landscape acoustic map indicating directional coastlines and mountain turbulence."
+      ],
+      "answer": "An invisible landscape acoustic map indicating directional coastlines and mountain turbulence.",
+      "acceptedAnswers": [
+        "An invisible landscape acoustic map indicating directional coastlines and mountain turbulence."
+      ],
+      "explanation": "Burung merpati memanfaatkan sumber infrasonik konstan dari gelombang laut & gunung sebagai peta navigasi.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP03-P5",
+      "audioAssetId": null,
+      "sortIndex": 134
+    },
+    {
+      "id": "ITP-L1-03-Q135",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 5 ('Infrasound Navigation in Migratory Birds and Elephants') — Q5/10: The word 'scattering' in paragraph 1 is closest in meaning to:",
+      "options": [
+        "amplification",
+        "measurement",
+        "dispersal",
+        "freezing"
+      ],
+      "answer": "dispersal",
+      "acceptedAnswers": [
+        "dispersal"
+      ],
+      "explanation": "'Zero scattering' bermakna nyaris tanpa penghamburan.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP03-P5",
+      "audioAssetId": null,
+      "sortIndex": 135
+    },
+    {
+      "id": "ITP-L1-03-Q136",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 5 ('Infrasound Navigation in Migratory Birds and Elephants') — Q6/10: The word 'vast' in 'a vast silent world' implies:",
+      "options": [
+        "Atlantic waves crash silently without measurable pressure shifts.",
+        "Extensive natural acoustic activity goes unnoticed by human ears.",
+        "Savanna deserts completely lack vibrating air currents.",
+        "Elephants scream far louder than city fire engines above water."
+      ],
+      "answer": "Extensive natural acoustic activity goes unnoticed by human ears.",
+      "acceptedAnswers": [
+        "Extensive natural acoustic activity goes unnoticed by human ears."
+      ],
+      "explanation": "'Vast' menekankan betapa luasnya lanskap bunyi di bawah ambang dengar manusia.",
+      "rationaleSource": "ITP-MOD-10",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP03-P5",
+      "audioAssetId": null,
+      "sortIndex": 136
+    },
+    {
+      "id": "ITP-L1-03-Q137",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 5 ('Infrasound Navigation in Migratory Birds and Elephants') — Q7/10: Which natural phenomenon serves in the text as a steady atmospheric infrasound beacon?",
+      "options": [
+        "Ocean waves crashing continuously along distant coasts and winds clearing mountain ranges.",
+        "Tiny glass tree frogs calling sequentially atop banana leaves.",
+        "Dry winter snowflakes settling gently atop Antarctic ice domes.",
+        "Silver harbor bells ringing noon signals downtown."
+      ],
+      "answer": "Ocean waves crashing continuously along distant coasts and winds clearing mountain ranges.",
+      "acceptedAnswers": [
+        "Ocean waves crashing continuously along distant coasts and winds clearing mountain ranges."
+      ],
+      "explanation": "Teks menyebut gelombang laut Atlantik stasioner dan arus udara pegunungan.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP03-P5",
+      "audioAssetId": null,
+      "sortIndex": 137
+    },
+    {
+      "id": "ITP-L1-03-Q138",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 5 ('Infrasound Navigation in Migratory Birds and Elephants') — Q8/10: The word 'stationary' in paragraph 2 is closest in meaning to:",
+      "options": [
+        "printed on thick writing paper",
+        "rapidly dissolving",
+        "inaudible to pigeons",
+        "fixed in geographic location"
+      ],
+      "answer": "fixed in geographic location",
+      "acceptedAnswers": [
+        "fixed in geographic location"
+      ],
+      "explanation": "'Stationary ocean swells/beacons' berarti posisinya tetap di satu lokasi geografis.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP03-P5",
+      "audioAssetId": null,
+      "sortIndex": 138
+    },
+    {
+      "id": "ITP-L1-03-Q139",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 5 ('Infrasound Navigation in Migratory Birds and Elephants') — Q9/10: Which animal group is NOT discussed as generating or sensing infrasound in the passage?",
+      "options": [
+        "Homing pigeons sensing micro-barometric atmospheric ripples.",
+        "Human listeners incapable of hearing below twenty hertz directly.",
+        "Migratory desert locusts swarming above wheat farms.",
+        "African elephants coordinating herds across woodlands."
+      ],
+      "answer": "Migratory desert locusts swarming above wheat farms.",
+      "acceptedAnswers": [
+        "Migratory desert locusts swarming above wheat farms."
+      ],
+      "explanation": "Belalang gurun tidak pernah dibahas di bacaan ini.",
+      "rationaleSource": "ITP-MOD-10",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP03-P5",
+      "audioAssetId": null,
+      "sortIndex": 139
+    },
+    {
+      "id": "ITP-L1-03-Q140",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 5 ('Infrasound Navigation in Migratory Birds and Elephants') — Q10/10: Which summary best captures the passage's unifying point?",
+      "options": [
+        "Measuring exact salt density beneath stormy winter lakes.",
+        "Low-frequency infrasound spans enormous distances unobtrusively, aiding wildlife communication and navigation.",
+        "Testing loud speaker boxes inside fiberglass rooms protects delicate bird hearing.",
+        "Converting noisy desert winds into cheap coastal electric power."
+      ],
+      "answer": "Low-frequency infrasound spans enormous distances unobtrusively, aiding wildlife communication and navigation.",
+      "acceptedAnswers": [
+        "Low-frequency infrasound spans enormous distances unobtrusively, aiding wildlife communication and navigation."
+      ],
+      "explanation": "Kesimpulan merangkum kemampuan rambat jauh gelombang infrasonik untuk komunikasi serta navigasi satwa.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP03-P5",
+      "audioAssetId": null,
+      "sortIndex": 140
     }
   ],
-  "checksum": "7366e125ebae4fdebc0fbf6ef1750d241023a3dd0e70113b5ef0fa317e1ad0bf"
+  "checksum": "faabdea68459c796183368326a83bcdce2344bb09cf1e911122c54ebc24555dd"
 }

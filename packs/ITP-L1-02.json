@@ -1,315 +1,2668 @@
 {
   "schemaVersion": 1,
   "exam": "ITP_L1",
-  "edition": "2026.1",
+  "edition": "2026.2",
   "packId": "ITP-L1-02",
   "title": "ITP Paket 2 — History, Architecture & Urban Ecology",
-  "theme": "Idiomatic campus exchanges, participle clauses, and industrial urban waterways.",
-  "status": "SAMPLE",
+  "theme": "Full 140-item TOEFL ITP simulation across urban infrastructure, medieval crafts, restored waterways, and clause mastery.",
+  "status": "READY",
   "blueprintCount": 140,
-  "availableCount": 12,
-  "durationMinutes": 20,
+  "availableCount": 140,
+  "durationMinutes": 115,
   "blueprintDurationMinutes": 115,
   "license": "Original",
   "provenance": "EnglishPrepAI-Original-2026",
   "passages": [
     {
       "id": "ITP02-P1",
-      "title": "Daylighting Buried Urban Streams",
-      "body": "During rapid nineteenth-century industrialization, dozens of cities enclosed small creeks inside brick culverts to clear land for factories and roads. While convenient initially, buried pipes accelerated stormwater runoff, triggering severe downstream flash floods whenever intense rain overwhelmed drain capacity. Urban planners now practice 'daylighting'—uncovering buried channels and restoring vegetated floodplains. Once reopened, meandering banks slow peak discharge, filter road pollutants through root systems, and cool adjacent neighborhoods by up to two degrees Celsius.",
+      "title": "Reclaiming Industrial Urban Waterways",
+      "body": "During nineteenth-century textile booms, engineers lined winding urban rivers with rigid granite walls, buried feeder brooks beneath vaulted brick culverts, and channeled mill effluent downstream. Those concrete chutes cleared stagnant puddles fast yet severed floodplain marshes—leaving crowded factory blocks vulnerable whenever intense upstream cloudbursts slammed straight through narrow stone corridors. Over recent decades, landscape architects championed soft-edge remediation rather than taller concrete floodwalls. By terraced setbacks replacing vertical seawalls with willow-anchored gabion ledges, rivers absorb seasonal flood swells naturally while trapping heavy road runoff particulates across root mats. Clean-water invertebrates such as stoneflies and mayfly nymphs—key biological indicators intolerant of ammonia pollution—gradually recolonized gravel riffles within five years of sewer separation. Moreover, shaded continuous towpaths running alongside stabilized channels link formerly divided working-class districts cleanly into safe commuter bike corridors.",
       "readingOrder": 1
     },
     {
       "id": "ITP02-P2",
-      "title": "Roman Hydraulic Concrete",
-      "body": "Modern Portland cement piers immersed in seawater frequently crack within decades as saltwater corrodes embedded steel reinforcement. By contrast, harbor breakwaters constructed along the Mediterranean two millennia ago remain intact despite relentless wave impact. Materials analyses indicate Roman builders mixed slaked lime with volcanic pozzolana ash, creating mineral crystals that actually interlock tighter when exposed to seawater percolation. Instead of weakening over time, microscopic fractures self-heal as aluminum-silicate compounds precipitate inside pores.",
+      "title": "Guastavino Vaults and Structural Tile Arches",
+      "body": "Walk beneath Grand Central Terminal's bustling concourse or dozens of early-twentieth-century American university libraries and look upward at sweeping, warm terracotta ceilings spanning vast spaces without heavy steel beams underneath. Those graceful thin domes showcase Rafael Guastavino's 'coherent tile arch system,' brought from Catalonia to New York in 1881. Unlike heavy medieval vaults built of thick tapered stone blocks laid slowly atop forests of expensive wooden scaffolding, Guastavino cemented wafer-thin interlocking terracotta tiles flat-wise in staggered herringbone layers using fast-setting hydraulic Portland plaster. Because the initial gypsum layer gripped within minutes, bricklayers built self-supporting thin arches freely across open air—eliminating massive timber centering scaffolds while slicing total roof weight dramatically. Furthermore, fired porous clay resisted deadly timber-framing urban fires, absorbed booming concourse clamor cleanly when formulated as porous acoustic Guastavino tile, and left gleaming architectural geometry right in view.",
       "readingOrder": 2
+    },
+    {
+      "id": "ITP02-P3",
+      "title": "Medieval Guild Apprenticeships and Civic Weights",
+      "body": "Walk inside a thriving fourteenth-century European cloth town and market integrity depended strictly on sworn craft guilds regulating both yarn twist and brass yardsticks. Far from acting purely as secretive price monopolies, merchant and weavers' guilds stabilized complex regional trade when printed manuals did not yet exist. A youngster entered a workshop as an unpaid apprentice for five to seven years, living under a master artisan's roof while absorbing intricate loom setups, mordant dye chemistry, and honest accounting. Having proved competence before elders by producing an exacting 'masterpiece' length of wool, a journeyman worked flexibly for wages until amassing capital and spotless civic standing to open a guild bench. Inspectors walked weekly markets testing scales against standardized municipal iron weights bolted publicly beside town-hall gates—destroying underweight loaves or poorly fulled fabrics to protect the town's distant export reputation across Flemish and Italian fairs.",
+      "readingOrder": 3
+    },
+    {
+      "id": "ITP02-P4",
+      "title": "Early Streetcars and Suburban Radial Expansion",
+      "body": "Before mechanized mass transit reshaped urban skylines in the late 1880s, walking cities remained remarkably compact: factory clerks, bakers, and merchants alike crammed densely within three kilometers of harbor piers and civic squares so morning commutes lasted under forty minutes on foot. Initial horse-drawn omnibuses bounced clumsily over cobblestones and carried only twelve wealthy passengers, while early steam locomotives spewed choking soot unsuitable for narrow residential streets. Frank Sprague's 1888 electric trolley demonstration in Richmond, Virginia—suspending overhead copper supply wires safely above spring-loaded roof poles while driving compact traction motors beneath wooden streetcars—transformed city scale almost overnight. Clean electric streetcars climbed steep grades effortlessly at twenty kilometers per hour, slicing fare pennies low enough for everyday shop assistants. Real-estate developers quickly strung gleaming iron tracks outward across vacant pastures, creating linear 'streetcar suburbs' where brick corner groceries clustered naturally around frequent transit stops.",
+      "readingOrder": 4
+    },
+    {
+      "id": "ITP02-P5",
+      "title": "Constructed Wetland Reed Beds in Municipal Wastewater",
+      "body": "Conventional concrete sewage treatment plants depend heavily on roaring aeration blowers and continuous chemical dosing to scrub dissolved nitrogen and farm runoff before discharge into sensitive lakes. Several small coastal towns lacking giant tax bases now pair modest settling tanks with engineered 'reed-bed wetlands'—shallow waterproof gravel basins planted densely with common reeds (Phragmites) and cattails. Far from acting as simple mechanical strainers, emergent wetland plants quietly pump oxygen downward through hollow stems straight into flooded gravel root zones. That micro-oxygen mosaic around root hairs fuels thriving communities of aerobic bacteria converting toxic ammonia into benign nitrate, while nearby oxygen-free gravel pockets let anaerobic microbes vent harmless nitrogen gas back skyward. Slow gravity flow through meter-deep pebbles additionally precipitates heavy metals and traps stray microplastics cleanly, yielding wildlife-friendly marsh parks at a fraction of mechanical pump electricity costs.",
+      "readingOrder": 5
     }
   ],
   "assets": [
     {
-      "id": "ITP02-A01",
-      "relativePath": "audio/ITP02-A01.wav",
+      "id": "ITP02-L01",
+      "relativePath": "audio/ITP02-L01.wav",
       "kind": "AUDIO",
-      "caption": "W: Should I add three more quotations to my history essay? M: Before adding sources, I'd sharpen your topic sentences so each paragraph's point stands out. N: What does the man suggest?",
+      "caption": "M: Was the guest architect impressed by our timber pavilion scale model? W: Let's just say she asked whether we tested any glue besides hope. N: What does the woman imply?",
       "license": "Original",
-      "sha256": "699c9257e669de325c466c6d435100c5568e1a731daaf2311760109c353f1991",
-      "byteSize": 426604,
-      "durationMs": 13330
+      "sha256": "313a070f1af90719f30bcda44f34670e86471b21a2991654ea9f36325e59fb81",
+      "byteSize": 94780,
+      "durationMs": 11655
     },
     {
-      "id": "ITP02-A02",
-      "relativePath": "audio/ITP02-A02.wav",
+      "id": "ITP02-L02",
+      "relativePath": "audio/ITP02-L02.wav",
       "kind": "AUDIO",
-      "caption": "M: Did you grab the new biology lab manual yet? W: No luck—the bookstore sold out this morning, though a shipment arrives Thursday. N: What is true about the lab manual?",
+      "caption": "W: Can our history club tour the brick canal pump house inside the harbor zone? M: Weekdays are restricted to maintenance crews, but docents unlock it every Sunday afternoon. N: What does the man mean?",
       "license": "Original",
-      "sha256": "40009eb5e089634f7f3113fafd59f84da0c5838e144cc6a13cb92b5bbf37f700",
-      "byteSize": 385804,
-      "durationMs": 12055
+      "sha256": "ecc9596be38380299736ecf2a73b47f5d5d6a1a19f41a6f932fa6ed354b898a8",
+      "byteSize": 112444,
+      "durationMs": 13845
     },
     {
-      "id": "ITP02-A03",
-      "relativePath": "audio/ITP02-A03.wav",
+      "id": "ITP02-L03",
+      "relativePath": "audio/ITP02-L03.wav",
       "kind": "AUDIO",
-      "caption": "M: I can't find the 1924 city newspaper reel on the third floor. W: That reel is archived at our downtown branch. I can place a transfer hold so it arrives here by noon tomorrow. N: What does the librarian offer to do?",
+      "caption": "M: Do you happen to carry extra point-five-millimeter lead refills? W: I ran completely dry yesterday—try the co-op counter down the hall. N: What does the woman mean?",
       "license": "Original",
-      "sha256": "e5c74693634bd7dbf45e6ebe17b7dbe8aaa2dd1468238c4640b19bef7952e224",
-      "byteSize": 517324,
-      "durationMs": 16165
+      "sha256": "ffa8706a28507d900a097e45c8d3dc8e07ece2e314853c038805534b42a7d5d1",
+      "byteSize": 99388,
+      "durationMs": 12225
     },
     {
-      "id": "ITP02-A04",
-      "relativePath": "audio/ITP02-A04.wav",
+      "id": "ITP02-L04",
+      "relativePath": "audio/ITP02-L04.wav",
       "kind": "AUDIO",
-      "caption": "W: Because prepared animal skin parchment was expensive and scarce, medieval scribes sometimes scraped off older writing to copy new manuscripts—creating layered documents called palimpsests. N: Why were parchment sheets reused?",
+      "caption": "W: Think our wetland mapping proposal stands a chance at the spring fellowship? M: With two city watershed engineers backing your data, I'd be stunned if it fell short. N: What does the man imply?",
       "license": "Original",
-      "sha256": "af246e38d7a0a16e7bae8a13bf2ee10cc70e3b574229091c407a3cf1eaacbb79",
-      "byteSize": 464044,
-      "durationMs": 14500
+      "sha256": "55eb74f30ca149fc57e15f330f4179a9ecdbb378b2fd4e13d40de5d2064f72f9",
+      "byteSize": 107580,
+      "durationMs": 13240
+    },
+    {
+      "id": "ITP02-L05",
+      "relativePath": "audio/ITP02-L05.wav",
+      "kind": "AUDIO",
+      "caption": "M: Will I have to pay another fare when transferring onto the crosstown trolley? W: Not as long as you tap the same smart card within ninety minutes. N: What does the woman mean?",
+      "license": "Original",
+      "sha256": "76fa42a47c9d74167103c75365de8b1810a6d9defc562210916ed895a0290fc0",
+      "byteSize": 96828,
+      "durationMs": 11910
+    },
+    {
+      "id": "ITP02-L06",
+      "relativePath": "audio/ITP02-L06.wav",
+      "kind": "AUDIO",
+      "caption": "W: Wait—I left my white cotton handling gloves inside my backpack upstairs. M: Actually, curators now ask readers to use clean bare hands because cotton snags brittle edges. N: What does the man mean?",
+      "license": "Original",
+      "sha256": "6a0b5f394077e5f26b142388ff0bfc4c24675490418b01d2b097f9d18153ee76",
+      "byteSize": 119356,
+      "durationMs": 14700
+    },
+    {
+      "id": "ITP02-L07",
+      "relativePath": "audio/ITP02-L07.wav",
+      "kind": "AUDIO",
+      "caption": "M: My twelve-thirty geotechnical lab is already running fifteen minutes over. W: No problem—let's push our lunch discussion to one-fifteen at the courtyard deli. N: What does the woman suggest?",
+      "license": "Original",
+      "sha256": "351731fb68cd7c35473edb3560b1bf6b1c05e0d27d88765ecfc10eb79e900154",
+      "byteSize": 109116,
+      "durationMs": 13430
+    },
+    {
+      "id": "ITP02-L08",
+      "relativePath": "audio/ITP02-L08.wav",
+      "kind": "AUDIO",
+      "caption": "W: Why does our courtyard rainwater barrel smell stagnant every July? M: Have you cleaned the leaf screen before warm summer weather sets in? N: What does the man imply?",
+      "license": "Original",
+      "sha256": "66712fb34556d58a3cf218e54bc4d5749426942b0d14193a3356c6eb065359ec",
+      "byteSize": 91964,
+      "durationMs": 11325
+    },
+    {
+      "id": "ITP02-L09",
+      "relativePath": "audio/ITP02-L09.wav",
+      "kind": "AUDIO",
+      "caption": "M: The cast-iron bridge plaque says rebuilt in 1892—didn't engineers open it in 1878? W: An ice jam snapped the original timber deck in 1891, forcing an iron replacement. N: What does the woman explain?",
+      "license": "Original",
+      "sha256": "606962d81bc3ad078b38349fcfa5e9ff849c9e7239797f683488f6e0e1793051",
+      "byteSize": 143420,
+      "durationMs": 17675
+    },
+    {
+      "id": "ITP02-L10",
+      "relativePath": "audio/ITP02-L10.wav",
+      "kind": "AUDIO",
+      "caption": "W: Oh no, my new laptop only has USB-C ports and the podium uses old VGA cables! M: Check the left drawer under the lectern—there's a silver dongle chained to it. N: What does the man mean?",
+      "license": "Original",
+      "sha256": "2076f17738599b3feca668bd790359df0c467be3e58ad52288ae3592bea0e17b",
+      "byteSize": 113724,
+      "durationMs": 13995
+    },
+    {
+      "id": "ITP02-L11",
+      "relativePath": "audio/ITP02-L11.wav",
+      "kind": "AUDIO",
+      "caption": "M: Think anyone minds if I take quick reference photos of these medieval map engravings? W: Feel free to shoot without flash; only bright strobes are forbidden. N: What does the woman mean?",
+      "license": "Original",
+      "sha256": "7160f5b4aec3411ee0d7adbbea6268f5e4412fa87e47f9bf962023f86b19bfca",
+      "byteSize": 105020,
+      "durationMs": 12935
+    },
+    {
+      "id": "ITP02-L12",
+      "relativePath": "audio/ITP02-L12.wav",
+      "kind": "AUDIO",
+      "caption": "W: Hand-tracing fifty neighborhood parcel boundaries by Friday looks hopeless. M: Why trace manually when the GIS workstation downstairs digitizes scanned sheets automatically? N: What does the man suggest?",
+      "license": "Original",
+      "sha256": "3d68d8303dff97d1438799d1ea6f0b97b759e29ac7c7acaa153ef34afbb4dbec",
+      "byteSize": 114236,
+      "durationMs": 14055
+    },
+    {
+      "id": "ITP02-L13",
+      "relativePath": "audio/ITP02-L13.wav",
+      "kind": "AUDIO",
+      "caption": "M: Good thing the facilities crew finally patched the slate roof above the studio. W: If only they'd sealed the skylight flashing too—water still drips beside the easels. N: What does the woman mean?",
+      "license": "Original",
+      "sha256": "b969ac6775f60c0f4093ca3e3a51db2a90a8da77496db26b5f3401d3b3d78eb3",
+      "byteSize": 106812,
+      "durationMs": 13140
+    },
+    {
+      "id": "ITP02-L14",
+      "relativePath": "audio/ITP02-L14.wav",
+      "kind": "AUDIO",
+      "caption": "W: I loaded my glazed stoneware bowls on the top kiln rack for tonight's firing. M: Actually, maintenance rescheduled the stoneware firing for Thursday morning to inspect gas valves. N: What does the man mean?",
+      "license": "Original",
+      "sha256": "c53016a1aeeadf82921583342e27e7dc8398fbd77a426ffde8bed96282625c2c",
+      "byteSize": 115516,
+      "durationMs": 14210
+    },
+    {
+      "id": "ITP02-L15",
+      "relativePath": "audio/ITP02-L15.wav",
+      "kind": "AUDIO",
+      "caption": "M: Wait—does history seminar require Chicago footnotes or APA author-date citations? W: Either style works fine, as long as you don't switch halfway through the bibliography. N: What does the woman mean?",
+      "license": "Original",
+      "sha256": "42132f59143f97ca952f1e5b28d94f484ed6fb9fca25cdfa78a58ae0be6e85ae",
+      "byteSize": 118332,
+      "durationMs": 14570
+    },
+    {
+      "id": "ITP02-L16",
+      "relativePath": "audio/ITP02-L16.wav",
+      "kind": "AUDIO",
+      "caption": "W: The main reading room kicks everyone out promptly at eleven. M: True, though the engineering commons keeps espresso machines and study desks open until two. N: What does the man suggest?",
+      "license": "Original",
+      "sha256": "2e7b3a8418675fbd89e4c4a6417194d3f8575148411ead16ae9b8d2aeafdc25e",
+      "byteSize": 105276,
+      "durationMs": 12955
+    },
+    {
+      "id": "ITP02-L17",
+      "relativePath": "audio/ITP02-L17.wav",
+      "kind": "AUDIO",
+      "caption": "M: Why are so many students lugging heavy portfolios up four flights of stairs? W: A tripped sensor stalled the freight elevator between the second and third landings. N: What does the woman mean?",
+      "license": "Original",
+      "sha256": "56edae2c34d2ca14f3ca18160d3b03facf8d7b654358e150cd8750cdc20a0884",
+      "byteSize": 104252,
+      "durationMs": 12820
+    },
+    {
+      "id": "ITP02-L18",
+      "relativePath": "audio/ITP02-L18.wav",
+      "kind": "AUDIO",
+      "caption": "W: Did you enjoy Sunday's boat tour along the restored canal locks? M: I couldn't have asked for clearer skies or a more knowledgeable captain. N: What does the man mean?",
+      "license": "Original",
+      "sha256": "4bea928b62b45e89148f12d5dbb75c3dd727073f7d6e2c72c38faf56a217e985",
+      "byteSize": 92732,
+      "durationMs": 11410
+    },
+    {
+      "id": "ITP02-L19",
+      "relativePath": "audio/ITP02-L19.wav",
+      "kind": "AUDIO",
+      "caption": "M: I left my annotated urban planning reader on a cafeteria booth an hour ago! W: Let me call the dining lost-and-found desk right now while you retrace your path upstairs. N: What does the woman offer to do?",
+      "license": "Original",
+      "sha256": "36e2b32631d20dbc320dde0cff1e1d9846d3a8784111e4c89c77cf66930e253b",
+      "byteSize": 113468,
+      "durationMs": 13960
+    },
+    {
+      "id": "ITP02-L20",
+      "relativePath": "audio/ITP02-L20.wav",
+      "kind": "AUDIO",
+      "caption": "M: Does filling out the municipal commuter questionnaire enter everyone into the pass raffle? W: Only respondents who log at least five consecutive weekday trips qualify. N: What does the woman mean?",
+      "license": "Original",
+      "sha256": "13c4637fbac068dd40ac0954ad6a071f288f6a0b580c4c23aff4242d12f08416",
+      "byteSize": 107068,
+      "durationMs": 13165
+    },
+    {
+      "id": "ITP02-L21",
+      "relativePath": "audio/ITP02-L21.wav",
+      "kind": "AUDIO",
+      "caption": "W: Disaster! Iced tea dripped onto the legend corner of my site plan! M: Relax—crop the lower border lightly, or reprint sheet two on the wide plotter. N: What does the man suggest?",
+      "license": "Original",
+      "sha256": "4bf84fce5b08d5bac88b1bea1b459042afa4463a4a086df97d1d0728487ad33c",
+      "byteSize": 114748,
+      "durationMs": 14140
+    },
+    {
+      "id": "ITP02-L22",
+      "relativePath": "audio/ITP02-L22.wav",
+      "kind": "AUDIO",
+      "caption": "W: Did you make the cut for the university chamber choir yesterday? M: Barely—the conductor joked that my sight-reading stayed just ahead of the piano! N: What does the man mean?",
+      "license": "Original",
+      "sha256": "7a788a673065b674512f2f861b801f13676ee154ac802e3d8bd8e86b499a8944",
+      "byteSize": 97596,
+      "durationMs": 11995
+    },
+    {
+      "id": "ITP02-L23",
+      "relativePath": "audio/ITP02-L23.wav",
+      "kind": "AUDIO",
+      "caption": "M: Why are contractors injecting lime mortar instead of modern cement into that 1880 warehouse? W: Hard Portland cement traps dampness inside old soft bricks and makes them flake apart in winter. N: What does the woman explain?",
+      "license": "Original",
+      "sha256": "2e9e29f9119aa072e495d47661f7933445e0f59ed32a714100d80fb18ebb48ad",
+      "byteSize": 133180,
+      "durationMs": 16400
+    },
+    {
+      "id": "ITP02-L24",
+      "relativePath": "audio/ITP02-L24.wav",
+      "kind": "AUDIO",
+      "caption": "M: Eighty-five dollars for a thin anthology of colonial urban charters feels steep. W: Wait until afternoon seminar—most documents in that reader are linked free on the syllabus site. N: What does the woman mean?",
+      "license": "Original",
+      "sha256": "19313f1fa48322819066b86428b7566fa79575f61fc86fab2d90fbeab581d158",
+      "byteSize": 116540,
+      "durationMs": 14335
+    },
+    {
+      "id": "ITP02-L25",
+      "relativePath": "audio/ITP02-L25.wav",
+      "kind": "AUDIO",
+      "caption": "M: Wait—do I lose my twenty-dollar key deposit if I return the bike locker key before finals? W: Not at all, as long as the padlock isn't scratched or missing its number tag. N: What does the woman mean?",
+      "license": "Original",
+      "sha256": "648a2ff4dc4efbca29b5187e29c24a20dfc611a2118e38528605c27f57fab903",
+      "byteSize": 117564,
+      "durationMs": 14460
+    },
+    {
+      "id": "ITP02-L26",
+      "relativePath": "audio/ITP02-L26.wav",
+      "kind": "AUDIO",
+      "caption": "W: Reader two keeps chewing up the 1912 streetcar timetable reel! M: Flag the technician—don't tug the film strip or it'll tear right down the sprocket line. N: What does the man warn?",
+      "license": "Original",
+      "sha256": "237135b2faef302477ecf80a253e1c7c0072fdabc1ff72da835c503d159b9953",
+      "byteSize": 110908,
+      "durationMs": 13655
+    },
+    {
+      "id": "ITP02-L27",
+      "relativePath": "audio/ITP02-L27.wav",
+      "kind": "AUDIO",
+      "caption": "M: Why carry infrared thermometers down Main Street instead of using weather stations? W: Official airport sensors sit over open grass and completely miss fifty-degree asphalt hotspots. N: What does the woman explain?",
+      "license": "Original",
+      "sha256": "2bf89eefb35a9dd373ac111732e7e7cebb9088f3c0bd0096993b605840760ef4",
+      "byteSize": 119868,
+      "durationMs": 14745
+    },
+    {
+      "id": "ITP02-L28",
+      "relativePath": "audio/ITP02-L28.wav",
+      "kind": "AUDIO",
+      "caption": "M: Did someone turn in a brushed-steel travel mug at the studio front desk? W: Let me check our lost cabinet—we found two steel flasks there before noon. N: What does the woman say she will do?",
+      "license": "Original",
+      "sha256": "ac3d18f0d043cfc5027c1125b605fd92e5a6158ad34814217cb88dbccf1c269e",
+      "byteSize": 109116,
+      "durationMs": 13445
+    },
+    {
+      "id": "ITP02-L29",
+      "relativePath": "audio/ITP02-L29.wav",
+      "kind": "AUDIO",
+      "caption": "W: Sam told everyone the urban history midterm paper got pushed back to Monday! M: I wouldn't bet on hallway rumors unless Dr. Cho sends an official announcement. N: What does the man imply?",
+      "license": "Original",
+      "sha256": "acaad8fc566243fbf99afff035439a61d2b0393e562bc404b15a39b9b7a0cf45",
+      "byteSize": 103228,
+      "durationMs": 12695
+    },
+    {
+      "id": "ITP02-L30",
+      "relativePath": "audio/ITP02-L30.wav",
+      "kind": "AUDIO",
+      "caption": "M: Watercolor ink keeps bleeding right through my cheap field pad. W: Step up to cold-press three-hundred-gram sheets—they'll stay crisp even in drizzle. N: What does the woman recommend?",
+      "license": "Original",
+      "sha256": "59dba23b8d9c29355728cd011b182960e25098120ac71657074bccc9752c09ee",
+      "byteSize": 102460,
+      "durationMs": 12625
+    },
+    {
+      "id": "ITP02-PB1",
+      "relativePath": "audio/ITP02-PB1.wav",
+      "kind": "AUDIO",
+      "caption": "W: Welcome to Special Collections. Are you looking for the 1904 civic waterfront blueprints? M: Yes! Our urban history seminar is comparing cast-iron market sheds with later concrete piers, and the catalog lists Folios 7 through 9 here. W: Folio 8 had brittle linen hinge backing, so our paper conservator laid it flat on table two for you; Folios 7 and 9 are rolled beside it. M: Perfect—also, may I photograph uncolored elevation plates using my tablet, or should I fill out reproduction slips first? W: Personal study shots without flash are welcome right at the foam cradle table; only commercial publication prints require permission slips.",
+      "license": "Original",
+      "sha256": "9df390c82cf9cd22128cc096cb38232317bb971b23366f1a3df2cbda3d905bb1",
+      "byteSize": 373052,
+      "durationMs": 45985
+    },
+    {
+      "id": "ITP02-PB2",
+      "relativePath": "audio/ITP02-PB2.wav",
+      "kind": "AUDIO",
+      "caption": "M: Dr. Alvarez, our sidewalk sensors recorded forty percent less curb runoff beside the new rain gardens after yesterday's downpour. W: That's encouraging, though check whether street maple leaves clogged inlet grates upstream of block four before trusting the raw drop. M: Aha—we checked drain throats right at five-fifteen; grates stayed clear, and sandy mulch underneath actually drank water faster than clay lawns. W: Excellent field rigor. Plot infiltration speed against soil compaction on Friday so the municipal water board sees both mechanisms clearly.",
+      "license": "Original",
+      "sha256": "bb20b11aca09cd1503aa38fbd8a9d8c596a24261569a9af99709d12a281de9f3",
+      "byteSize": 303676,
+      "durationMs": 37405
+    },
+    {
+      "id": "ITP02-PC1",
+      "relativePath": "audio/ITP02-PC1.wav",
+      "kind": "AUDIO",
+      "caption": "W: Walk through mid-nineteenth-century European market halls and look upward: spidery iron columns carry soaring glass skylights that flooded bustling alleys long before cheap electric bulbs. W: Previously, thick brick walls supporting wide roofs forced architects to punch only modest arched windows, leaving warehouse interiors dim and damp. W: Cast iron resists immense vertical compression, allowing narrow hollow columns—sometimes even channeling rooftop rainwater down their cores—to hold airy filigree iron arches. W: Yet cast iron snaps suddenly under horizontal tension or sudden fire shock, which eventually drove structural engineers toward ductile rolled wrought iron and modern steel frames.",
+      "license": "Original",
+      "sha256": "e5cd2122f0e9daad2701d856f26101c99e96e8edade16e8b7fcf99516ab8f151",
+      "byteSize": 364092,
+      "durationMs": 44865
+    },
+    {
+      "id": "ITP02-PC2",
+      "relativePath": "audio/ITP02-PC2.wav",
+      "kind": "AUDIO",
+      "caption": "M: Throughout early industrial cities, expanding brick sewers swallowed sparkling valley creeks underground inside cramped stone tunnels—a practice engineers called culverting. M: Once waste flowed out of sight, cities gained buildable parking lots atop forgotten brooks, yet buried straight concrete pipes actually speed storm surges downhill toward floodplains. M: Over the past twenty years, several watershed cities have begun 'daylighting' buried creeks—tearing off cracked asphalt roofs to carve winding gravel channels bordered by flood-tolerant willows. M: Reopened streams slow runoff peaks naturally, cool sticky summer street temperatures, and rebuild aquatic insect food webs linking urban parks cleanly downstream.",
+      "license": "Original",
+      "sha256": "361f07a6c6bbbd39e8ed9ae859115334d80d47f7d503f02b20de76c440da11c4",
+      "byteSize": 375612,
+      "durationMs": 46295
+    },
+    {
+      "id": "ITP02-PC3",
+      "relativePath": "audio/ITP02-PC3.wav",
+      "kind": "AUDIO",
+      "caption": "W: How can historians date an unmarked medieval barn or cathedral bell frame precisely to the very season its oaks were felled, without finding a single carved date? W: Look inside wide timber rafters using dendrochronology—tree-ring science. Wet warm springs yield wide early-wood rings, whereas drought summers squeeze narrow dense bands. W: Because trees across one regional river valley share matching climate rhythms, overlapping ring barcodes stretch back thousands of years continuously when joined from living elders down to bog logs. W: Notice the vital clue: only timber rafters retaining their outer sapwood edge and under-bark layer reveal exact felling years; trimmed inner heartwood beams give solely earliest possible dates.",
+      "license": "Original",
+      "sha256": "acde069fdec0e92c3002d120e5847910a9453843f8f0c24bc446c6e37c6ef2a6",
+      "byteSize": 371772,
+      "durationMs": 45800
     }
   ],
   "items": [
     {
-      "id": "ITP-L1-02-Q01",
+      "id": "ITP-L1-02-Q001",
       "section": "LISTENING",
       "taskType": "CHOICE_SINGLE",
-      "prompt": "Listen to the conversation. What does the man mean?",
+      "prompt": "Listen to Part A dialogue 1 (architectural studio critique). What does the woman mean?",
       "options": [
-        "He thinks the essay outline needs clearer topic sentences.",
-        "He has already finished grading all student outlines.",
-        "He disagrees with every point in the woman's essay.",
-        "He plans to skip the writing center workshop."
+        "The critique was postponed until Friday afternoon.",
+        "The guest architect criticized the model's structural stability.",
+        "The pavilion model received the studio's highest craftsmanship prize.",
+        "Special timber glues are sold out across campus."
       ],
-      "answer": "He thinks the essay outline needs clearer topic sentences.",
+      "answer": "The guest architect criticized the model's structural stability.",
       "acceptedAnswers": [
-        "He thinks the essay outline needs clearer topic sentences."
+        "The guest architect criticized the model's structural stability."
       ],
-      "explanation": "Pria menyarankan penajaman topic sentences sebelum menambahkan lebih banyak kutipan.",
+      "explanation": "Komentar sarkastik menunjukkan model dianggap kurang kokoh oleh pengkritik.",
       "rationaleSource": "ITP-MOD-01",
       "difficulty": "B2",
       "points": 1,
       "license": "Original",
       "reviewStatus": "VERIFIED_ORIGINAL",
       "passageId": null,
-      "audioAssetId": "ITP02-A01",
+      "audioAssetId": "ITP02-L01",
       "sortIndex": 1
     },
     {
-      "id": "ITP-L1-02-Q02",
+      "id": "ITP-L1-02-Q002",
       "section": "LISTENING",
       "taskType": "CHOICE_SINGLE",
-      "prompt": "Listen to the dialogue. What can be inferred about the campus bookstore?",
+      "prompt": "Listen to Part A dialogue 2 (canal lock museum tour). What does the man explain?",
       "options": [
-        "It ran out of the biology lab manual temporarily.",
-        "It closed permanently last Friday.",
-        "It only accepts cash payments for manuals.",
-        "It moved into the chemistry annex."
+        "The historic pump house opens for public tours only on Sundays.",
+        "Museum guides stopped leading harbor walks.",
+        "Maintenance crews close the pump house on weekends.",
+        "Visitors require safety helmets even on Sunday tours."
       ],
-      "answer": "It ran out of the biology lab manual temporarily.",
+      "answer": "The historic pump house opens for public tours only on Sundays.",
       "acceptedAnswers": [
-        "It ran out of the biology lab manual temporarily."
+        "The historic pump house opens for public tours only on Sundays."
       ],
-      "explanation": "Wanita menyebut stok manual habis sementara ('sold out until Thursday').",
+      "explanation": "Dokumen membuka tur publik setiap Minggu sore karena hari kerja khusus kru pemeliharaan.",
       "rationaleSource": "ITP-MOD-01",
       "difficulty": "B1",
       "points": 1,
       "license": "Original",
       "reviewStatus": "VERIFIED_ORIGINAL",
       "passageId": null,
-      "audioAssetId": "ITP02-A02",
+      "audioAssetId": "ITP02-L02",
       "sortIndex": 2
     },
     {
-      "id": "ITP-L1-02-Q03",
+      "id": "ITP-L1-02-Q003",
       "section": "LISTENING",
       "taskType": "CHOICE_SINGLE",
-      "prompt": "Listen to the student-librarian conversation. What does the librarian offer to do?",
+      "prompt": "Listen to Part A dialogue 3 (drafting pencil refill). What does the woman mean?",
       "options": [
-        "Place a hold on a microfilm reel from another branch.",
-        "Scan the entire newspaper archive immediately.",
-        "Extend the library closing hour until midnight.",
-        "Waive all late fees from previous semesters."
+        "She prefers thick charcoal pencils for architectural sketching.",
+        "The co-op supply counter closed yesterday.",
+        "Point-five lead snaps easily on rough drafting paper.",
+        "She has no extra pencil lead left and directs him down the hall."
       ],
-      "answer": "Place a hold on a microfilm reel from another branch.",
+      "answer": "She has no extra pencil lead left and directs him down the hall.",
       "acceptedAnswers": [
-        "Place a hold on a microfilm reel from another branch."
+        "She has no extra pencil lead left and directs him down the hall."
       ],
-      "explanation": "Pustakawan menawarkan pemesanan silang antar-cabang ('request the reel from our downtown branch').",
-      "rationaleSource": "ITP-MOD-02",
-      "difficulty": "B2",
+      "explanation": "'I ran completely dry' berarti persediaannya habis total.",
+      "rationaleSource": "ITP-MOD-01",
+      "difficulty": "B1",
       "points": 1,
       "license": "Original",
       "reviewStatus": "VERIFIED_ORIGINAL",
       "passageId": null,
-      "audioAssetId": "ITP02-A03",
+      "audioAssetId": "ITP02-L03",
       "sortIndex": 3
     },
     {
-      "id": "ITP-L1-02-Q04",
+      "id": "ITP-L1-02-Q004",
       "section": "LISTENING",
       "taskType": "CHOICE_SINGLE",
-      "prompt": "Listen to the archaeology talk. Why did scribes reuse ancient parchment leaves?",
+      "prompt": "Listen to Part A dialogue 4 (urban ecology grant). What does the man imply about the research grant?",
       "options": [
-        "Prepared animal skin was costly and scarce.",
-        "Ink faded completely within three days.",
-        "Laws prohibited keeping older religious texts.",
-        "Wood pulp paper had already replaced parchment."
+        "Fellowship reviewers rarely fund spring field studies.",
+        "He doubts data from two engineers will match.",
+        "He believes the proposal is strongly likely to win funding.",
+        "City engineers withdrew support from the wetland proposal."
       ],
-      "answer": "Prepared animal skin was costly and scarce.",
+      "answer": "He believes the proposal is strongly likely to win funding.",
       "acceptedAnswers": [
-        "Prepared animal skin was costly and scarce."
+        "He believes the proposal is strongly likely to win funding."
       ],
-      "explanation": "Pembicara menjelaskan kelangkaan dan tingginya biaya pembuatan perkamen mendorong praktik palimpsest.",
+      "explanation": "'I'd be stunned if it fell short' menyatakan keyakinan tinggi proposal akan lolos.",
+      "rationaleSource": "ITP-MOD-01",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP02-L04",
+      "sortIndex": 4
+    },
+    {
+      "id": "ITP-L1-02-Q005",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 5 (bus transfer ticket). What does the woman tell the man?",
+      "options": [
+        "He must ask the driver for a stamped paper receipt.",
+        "His transfer ride is covered at no extra charge within ninety minutes.",
+        "Trolley conductors no longer accept contactless smart cards.",
+        "Crosstown transfers cost double during evening peak hours."
+      ],
+      "answer": "His transfer ride is covered at no extra charge within ninety minutes.",
+      "acceptedAnswers": [
+        "His transfer ride is covered at no extra charge within ninety minutes."
+      ],
+      "explanation": "'Not as long as...' berarti transfer gratis selama masih dalam 90 menit memakai kartu yang sama.",
+      "rationaleSource": "ITP-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP02-L05",
+      "sortIndex": 5
+    },
+    {
+      "id": "ITP-L1-02-Q006",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 6 (archive gloves rule). What does the man mean?",
+      "options": [
+        "She no longer needs cotton gloves to handle the old documents.",
+        "Upper-floor lockers are reserved for visiting curators.",
+        "All brittle ledgers remain locked in acid-free boxes.",
+        "Readers must wash gloves before entering the reading room."
+      ],
+      "answer": "She no longer needs cotton gloves to handle the old documents.",
+      "acceptedAnswers": [
+        "She no longer needs cotton gloves to handle the old documents."
+      ],
+      "explanation": "Aturan baru justru menyarankan tangan bersih tanpa sarung katun agar tepi kertas rapuh tidak tersangkut.",
+      "rationaleSource": "ITP-MOD-01",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP02-L06",
+      "sortIndex": 6
+    },
+    {
+      "id": "ITP-L1-02-Q007",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 7 (late lunch meeting). What does the woman suggest?",
+      "options": [
+        "Eating sandwiches directly inside the geotechnical lab.",
+        "Canceling the lunch meeting until next week.",
+        "Submitting lab notes to the deli cashier.",
+        "Meeting forty-five minutes later for lunch than planned."
+      ],
+      "answer": "Meeting forty-five minutes later for lunch than planned.",
+      "acceptedAnswers": [
+        "Meeting forty-five minutes later for lunch than planned."
+      ],
+      "explanation": "Ia mengusulkan mengundur makan siang ke pukul 13.15.",
+      "rationaleSource": "ITP-MOD-07",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP02-L07",
+      "sortIndex": 7
+    },
+    {
+      "id": "ITP-L1-02-Q008",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 8 (rainwater cistern odor). What does the man imply?",
+      "options": [
+        "Urban rainwater always smells metallic in summer.",
+        "Mosquito netting slows down roof drainage.",
+        "Accumulated leaves inside the screen may be causing the stale odor.",
+        "Rain barrels should remain uncovered throughout July."
+      ],
+      "answer": "Accumulated leaves inside the screen may be causing the stale odor.",
+      "acceptedAnswers": [
+        "Accumulated leaves inside the screen may be causing the stale odor."
+      ],
+      "explanation": "Pertanyaan retoris mengarahkan bahwa saringan daun perlu dibersihkan.",
+      "rationaleSource": "ITP-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP02-L08",
+      "sortIndex": 8
+    },
+    {
+      "id": "ITP-L1-02-Q009",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 9 (historic bridge plaque). What does the woman mean?",
+      "options": [
+        "Local officials relocated the bridge downstream in 1891.",
+        "Ice damage destroyed the first wooden bridge, leading to an 1892 iron rebuild.",
+        "Foundries cast the plaque with an incorrect construction year.",
+        "Heavy steam locomotives bent the bridge cables in 1878."
+      ],
+      "answer": "Ice damage destroyed the first wooden bridge, leading to an 1892 iron rebuild.",
+      "acceptedAnswers": [
+        "Ice damage destroyed the first wooden bridge, leading to an 1892 iron rebuild."
+      ],
+      "explanation": "Ia menjelaskan kronologi kerusakan es pada jembatan kayu 1891 yang memicu penggantian besi 1892.",
       "rationaleSource": "ITP-MOD-02",
       "difficulty": "B2",
       "points": 1,
       "license": "Original",
       "reviewStatus": "VERIFIED_ORIGINAL",
       "passageId": null,
-      "audioAssetId": "ITP02-A04",
-      "sortIndex": 4
-    },
-    {
-      "id": "ITP-L1-02-Q05",
-      "section": "STRUCTURE",
-      "taskType": "CHOICE_SINGLE",
-      "prompt": "___ along shallow tidal flats, mangrove roots trap floating silt and protect shorelines from storm surges.",
-      "options": [
-        "Growing",
-        "Grown they",
-        "To grow it",
-        "Having grew"
-      ],
-      "answer": "Growing",
-      "acceptedAnswers": [
-        "Growing"
-      ],
-      "explanation": "Reduced active participle clause ('Growing along shallow tidal flats...') menjelaskan subjek 'mangrove roots'.",
-      "rationaleSource": "ITP-MOD-03",
-      "difficulty": "B2",
-      "points": 1,
-      "license": "Original",
-      "reviewStatus": "VERIFIED_ORIGINAL",
-      "passageId": null,
-      "audioAssetId": null,
-      "sortIndex": 5
-    },
-    {
-      "id": "ITP-L1-02-Q06",
-      "section": "STRUCTURE",
-      "taskType": "CHOICE_SINGLE",
-      "prompt": "Architects designed the reading hall with north-facing skylights ___ direct glare across study tables.",
-      "options": [
-        "to minimize",
-        "minimize",
-        "minimizing it",
-        "for minimize"
-      ],
-      "answer": "to minimize",
-      "acceptedAnswers": [
-        "to minimize"
-      ],
-      "explanation": "Infinitive of purpose 'to minimize' menyatakan tujuan perancangan jendela atap.",
-      "rationaleSource": "ITP-MOD-03",
-      "difficulty": "B1",
-      "points": 1,
-      "license": "Original",
-      "reviewStatus": "VERIFIED_ORIGINAL",
-      "passageId": null,
-      "audioAssetId": null,
-      "sortIndex": 6
-    },
-    {
-      "id": "ITP-L1-02-Q07",
-      "section": "STRUCTURE",
-      "taskType": "ERROR_IDENTIFICATION",
-      "prompt": "Between 1910 and 1930, [A] the number of municipal libraries [B] across the Midwest [C] have tripled despite [D] tight budgets.",
-      "options": [
-        "[A] the number of",
-        "[B] across",
-        "[C] have tripled",
-        "[D] tight budgets"
-      ],
-      "answer": "[C] have tripled",
-      "acceptedAnswers": [
-        "[C] have tripled"
-      ],
-      "explanation": "Rentang waktu lampau spesifik ('Between 1910 and 1930') serta subjek tunggal 'the number' menuntut simple past 'tripled', bukan 'have tripled'.",
-      "rationaleSource": "ITP-MOD-04",
-      "difficulty": "B2",
-      "points": 1,
-      "license": "Original",
-      "reviewStatus": "VERIFIED_ORIGINAL",
-      "passageId": null,
-      "audioAssetId": null,
-      "sortIndex": 7
-    },
-    {
-      "id": "ITP-L1-02-Q08",
-      "section": "STRUCTURE",
-      "taskType": "ERROR_IDENTIFICATION",
-      "prompt": "No [A] other playwright of that era [B] wrote dialogue [C] as realistic and witty [D] like Maria Alvarez did.",
-      "options": [
-        "[A] other",
-        "[B] wrote",
-        "[C] as realistic and witty",
-        "[D] like Maria Alvarez did"
-      ],
-      "answer": "[D] like Maria Alvarez did",
-      "acceptedAnswers": [
-        "[D] like Maria Alvarez did"
-      ],
-      "explanation": "Pasangan perbandingan setara 'as ... as' menuntut 'as Maria Alvarez did', bukan 'like'.",
-      "rationaleSource": "ITP-MOD-04",
-      "difficulty": "B2",
-      "points": 1,
-      "license": "Original",
-      "reviewStatus": "VERIFIED_ORIGINAL",
-      "passageId": null,
-      "audioAssetId": null,
-      "sortIndex": 8
-    },
-    {
-      "id": "ITP-L1-02-Q09",
-      "section": "READING",
-      "taskType": "CHOICE_SINGLE",
-      "prompt": "What is the main topic of Passage 1 ('Daylighting Buried Urban Streams')?",
-      "options": [
-        "Reopening enclosed city streams to reduce floods and improve local ecology",
-        "Building deeper brick sewers beneath historic factory districts",
-        "Replacing coastal ports with artificial drainage canals",
-        "Stopping all rainfall runoff in residential streets"
-      ],
-      "answer": "Reopening enclosed city streams to reduce floods and improve local ecology",
-      "acceptedAnswers": [
-        "Reopening enclosed city streams to reduce floods and improve local ecology"
-      ],
-      "explanation": "Seluruh bacaan membandingkan masalah pipa bawah tanah dengan manfaat pembukaan kembali aliran air ('daylighting').",
-      "rationaleSource": "ITP-MOD-05",
-      "difficulty": "B2",
-      "points": 1,
-      "license": "Original",
-      "reviewStatus": "VERIFIED_ORIGINAL",
-      "passageId": "ITP02-P1",
-      "audioAssetId": null,
+      "audioAssetId": "ITP02-L09",
       "sortIndex": 9
     },
     {
-      "id": "ITP-L1-02-Q10",
+      "id": "ITP-L1-02-Q010",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 10 (projector cable adapter). What does the man mean?",
+      "options": [
+        "A compatible adapter cable is stored right inside the podium drawer.",
+        "Presenters must supply personal VGA projectors.",
+        "All lecture hall podiums were upgraded to wireless docks.",
+        "She should transfer her slides onto transparencies."
+      ],
+      "answer": "A compatible adapter cable is stored right inside the podium drawer.",
+      "acceptedAnswers": [
+        "A compatible adapter cable is stored right inside the podium drawer."
+      ],
+      "explanation": "Tersedia dongle adaptor di laci kiri mimbar kuliah.",
+      "rationaleSource": "ITP-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP02-L10",
+      "sortIndex": 10
+    },
+    {
+      "id": "ITP-L1-02-Q011",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 11 (museum photography policy). What does the woman mean?",
+      "options": [
+        "All cameras must stay locked inside coat-check cubbies.",
+        "Museum attendants sell high-resolution map scans at dusk.",
+        "Medieval engravings fade rapidly under overhead ceiling lights.",
+        "Taking non-flash photographs of the maps is permitted."
+      ],
+      "answer": "Taking non-flash photographs of the maps is permitted.",
+      "acceptedAnswers": [
+        "Taking non-flash photographs of the maps is permitted."
+      ],
+      "explanation": "Fotografi diperbolehkan asalkan lampu kilat dimatikan.",
+      "rationaleSource": "ITP-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP02-L11",
+      "sortIndex": 11
+    },
+    {
+      "id": "ITP-L1-02-Q012",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 12 (urban map scanning). What does the man mean?",
+      "options": [
+        "Postponing the GIS coursework assignment indefinitely.",
+        "Photographing street corners from atop city hall.",
+        "Using geographic software downstairs to vectorize the maps faster.",
+        "Hiring fifty architecture freshmen to ink parcel borders."
+      ],
+      "answer": "Using geographic software downstairs to vectorize the maps faster.",
+      "acceptedAnswers": [
+        "Using geographic software downstairs to vectorize the maps faster."
+      ],
+      "explanation": "Ia menyarankan fitur digitalisasi otomatis di laboratorium GIS bawah.",
+      "rationaleSource": "ITP-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP02-L12",
+      "sortIndex": 12
+    },
+    {
+      "id": "ITP-L1-02-Q013",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 13 (roof leak check). What does the woman imply?",
+      "options": [
+        "Facilities crews replaced every broken skylight pane.",
+        "The roof leak has not been fully fixed around the skylight.",
+        "Sky-lit studios dry quickly after short afternoon storms.",
+        "Easels should be stored directly below the skylight."
+      ],
+      "answer": "The roof leak has not been fully fixed around the skylight.",
+      "acceptedAnswers": [
+        "The roof leak has not been fully fixed around the skylight."
+      ],
+      "explanation": "'If only they'd...' menunjukkan masalah bocor di dekat skylight masih terjadi.",
+      "rationaleSource": "ITP-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP02-L13",
+      "sortIndex": 13
+    },
+    {
+      "id": "ITP-L1-02-Q014",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 14 (pottery kiln schedule). What does the man tell the woman?",
+      "options": [
+        "Her pottery will be fired on Thursday instead of tonight.",
+        "Stoneware glazes crack at morning kiln temperatures.",
+        "Top kiln racks are reserved strictly for bronze casting.",
+        "Maintenance unplugged electric kilns permanently."
+      ],
+      "answer": "Her pottery will be fired on Thursday instead of tonight.",
+      "acceptedAnswers": [
+        "Her pottery will be fired on Thursday instead of tonight."
+      ],
+      "explanation": "Jadwal pembakaran digeser ke Kamis pagi untuk pemeriksaan katup gas.",
+      "rationaleSource": "ITP-MOD-01",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP02-L14",
+      "sortIndex": 14
+    },
+    {
+      "id": "ITP-L1-02-Q015",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 15 (essay citation style). What does the woman mean?",
+      "options": [
+        "Only Chicago footnotes earn full credit in senior history.",
+        "Author-date citations belong exclusively in appendices.",
+        "Students may omit bibliographies on short essays.",
+        "Both formats are acceptable provided he applies one consistently."
+      ],
+      "answer": "Both formats are acceptable provided he applies one consistently.",
+      "acceptedAnswers": [
+        "Both formats are acceptable provided he applies one consistently."
+      ],
+      "explanation": "Ia menekankan konsistensi gaya sitasi sepanjang naskah.",
+      "rationaleSource": "ITP-MOD-01",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP02-L15",
+      "sortIndex": 15
+    },
+    {
+      "id": "ITP-L1-02-Q016",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 16 (night owl study spot). What does the man mean?",
+      "options": [
+        "Sleeping in the atrium beside the coffee counter.",
+        "Finishing assignments strictly before noon.",
+        "Moving to the engineering commons to keep studying past eleven.",
+        "Asking reading room librarians to stay past two AM."
+      ],
+      "answer": "Moving to the engineering commons to keep studying past eleven.",
+      "acceptedAnswers": [
+        "Moving to the engineering commons to keep studying past eleven."
+      ],
+      "explanation": "Engineering commons buka hingga pukul dua dini hari sehingga menjadi opsi lanjut belajar.",
+      "rationaleSource": "ITP-MOD-07",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP02-L16",
+      "sortIndex": 16
+    },
+    {
+      "id": "ITP-L1-02-Q017",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 17 (elevator outage). What happened according to the woman?",
+      "options": [
+        "Construction workers dismantled the third-floor landing.",
+        "The main elevator temporarily stopped working due to a sensor fault.",
+        "Staircase climbing became part of an architecture wellness week.",
+        "Fourth-floor studios banned wheeled portfolio carts."
+      ],
+      "answer": "The main elevator temporarily stopped working due to a sensor fault.",
+      "acceptedAnswers": [
+        "The main elevator temporarily stopped working due to a sensor fault."
+      ],
+      "explanation": "Sensor bermasalah membuat lift berhenti di antara lantai dua dan tiga.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP02-L17",
+      "sortIndex": 17
+    },
+    {
+      "id": "ITP-L1-02-Q018",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 18 (river barge museum). What does the man imply?",
+      "options": [
+        "He was thoroughly pleased with both the weather and the guide.",
+        "Heavy clouds forced the canal boat captain to cut the tour short.",
+        "He wishes he had asked the captain more lock questions.",
+        "No tickets remained for Sunday's canal cruise."
+      ],
+      "answer": "He was thoroughly pleased with both the weather and the guide.",
+      "acceptedAnswers": [
+        "He was thoroughly pleased with both the weather and the guide."
+      ],
+      "explanation": "Double negative ('couldn't have asked for clearer...') berarti sangat memuaskan.",
+      "rationaleSource": "ITP-MOD-01",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP02-L18",
+      "sortIndex": 18
+    },
+    {
+      "id": "ITP-L1-02-Q019",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 19 (lost textbook lookup). What does the woman offer to do?",
+      "options": [
+        "Buy a fresh annotated copy for him at the bookstore.",
+        "Join him for dinner in a corner cafeteria booth.",
+        "Re-read his planning notes before Friday's quiz.",
+        "Phone the lost-and-found desk to ask whether someone turned in his book."
+      ],
+      "answer": "Phone the lost-and-found desk to ask whether someone turned in his book.",
+      "acceptedAnswers": [
+        "Phone the lost-and-found desk to ask whether someone turned in his book."
+      ],
+      "explanation": "Wanita menawarkan menghubungi meja barang hilang selagi pria memeriksa lantai atas.",
+      "rationaleSource": "ITP-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP02-L19",
+      "sortIndex": 19
+    },
+    {
+      "id": "ITP-L1-02-Q020",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 20 (transit survey payout). What does the woman mean?",
+      "options": [
+        "Weekend bicycle trips count double toward the survey.",
+        "The municipal transit bureau ended its pass giveaway.",
+        "Participants must record five straight weekday commutes to enter the raffle.",
+        "All commuters automatically receive monthly transit passes."
+      ],
+      "answer": "Participants must record five straight weekday commutes to enter the raffle.",
+      "acceptedAnswers": [
+        "Participants must record five straight weekday commutes to enter the raffle."
+      ],
+      "explanation": "'Only respondents who...' menandai syarat ketat pencatatan lima perjalanan hari kerja.",
+      "rationaleSource": "ITP-MOD-01",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP02-L20",
+      "sortIndex": 20
+    },
+    {
+      "id": "ITP-L1-02-Q021",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 21 (stain on blue blueprint). What does the man imply?",
+      "options": [
+        "Spilled stains make historical site maps look authentic.",
+        "The spill is minor enough to trim or reprint quickly on the wide plotter.",
+        "Iced tea ruins plotter ink cartridges permanently.",
+        "She should restart all six drawings from scratch."
+      ],
+      "answer": "The spill is minor enough to trim or reprint quickly on the wide plotter.",
+      "acceptedAnswers": [
+        "The spill is minor enough to trim or reprint quickly on the wide plotter."
+      ],
+      "explanation": "Pria meredakan kepanikan dengan dua perbaikan cepat dan praktis.",
+      "rationaleSource": "ITP-MOD-07",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP02-L21",
+      "sortIndex": 21
+    },
+    {
+      "id": "ITP-L1-02-Q022",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 22 (evening choir audition). What does the man mean?",
+      "options": [
+        "He succeeded in joining the choir despite a close audition.",
+        "He missed yesterday's audition because the piano broke.",
+        "The conductor asked him to switch to playing piano.",
+        "Chamber choir rehearsals start early next semester."
+      ],
+      "answer": "He succeeded in joining the choir despite a close audition.",
+      "acceptedAnswers": [
+        "He succeeded in joining the choir despite a close audition."
+      ],
+      "explanation": "'Barely' berarti lulus meski nyaris gagal.",
+      "rationaleSource": "ITP-MOD-01",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP02-L22",
+      "sortIndex": 22
+    },
+    {
+      "id": "ITP-L1-02-Q023",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 23 (brick facade moisture). What does the woman mean?",
+      "options": [
+        "Portland cement is far costlier than custom lime pigments.",
+        "Historic warehouses must be demolished once brick cracks appear.",
+        "Winter freeze-thaw cycles strengthen cement masonry.",
+        "Lime mortar lets historic brick walls breathe and avoid freeze-thaw flaking."
+      ],
+      "answer": "Lime mortar lets historic brick walls breathe and avoid freeze-thaw flaking.",
+      "acceptedAnswers": [
+        "Lime mortar lets historic brick walls breathe and avoid freeze-thaw flaking."
+      ],
+      "explanation": "Semen keras menahan kelembapan sehingga bata tua pecah saat membeku.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP02-L23",
+      "sortIndex": 23
+    },
+    {
+      "id": "ITP-L1-02-Q024",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 24 (bookstore price check). What does the woman advise?",
+      "options": [
+        "Ask the campus bookstore for a student discount coupon.",
+        "Photocopy every municipal charter illegally at midnight.",
+        "Wait before buying the book because free readings may already be posted online.",
+        "Buy two copies before the afternoon seminar begins."
+      ],
+      "answer": "Wait before buying the book because free readings may already be posted online.",
+      "acceptedAnswers": [
+        "Wait before buying the book because free readings may already be posted online."
+      ],
+      "explanation": "Materi kemungkinan tersedia gratis di laman silabus kuliah.",
+      "rationaleSource": "ITP-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP02-L24",
+      "sortIndex": 24
+    },
+    {
+      "id": "ITP-L1-02-Q025",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 25 (bike locker deposit). What does the woman tell the man?",
+      "options": [
+        "Missing number tags earn partial refunds.",
+        "He gets his full deposit back provided the lock returns intact.",
+        "Finals week locker rentals automatically deduct twenty dollars.",
+        "Students keep bike locker keys permanently after graduation."
+      ],
+      "answer": "He gets his full deposit back provided the lock returns intact.",
+      "acceptedAnswers": [
+        "He gets his full deposit back provided the lock returns intact."
+      ],
+      "explanation": "Deposit dikembalikan penuh jika gembok dan tag nomor utuh.",
+      "rationaleSource": "ITP-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP02-L25",
+      "sortIndex": 25
+    },
+    {
+      "id": "ITP-L1-02-Q026",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 26 (library microfiche jams). What does the man mean?",
+      "options": [
+        "Avoid pulling the jammed film strip and call the lab technician.",
+        "Switch to reader one and pull the reel faster.",
+        "Fold torn microfilm edges inside paper envelopes.",
+        "Discard 1912 streetcar schedules after scanning."
+      ],
+      "answer": "Avoid pulling the jammed film strip and call the lab technician.",
+      "acceptedAnswers": [
+        "Avoid pulling the jammed film strip and call the lab technician."
+      ],
+      "explanation": "Menarik paksa pita mikrofilm yang macet dapat merobeknya.",
+      "rationaleSource": "ITP-MOD-01",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP02-L26",
+      "sortIndex": 26
+    },
+    {
+      "id": "ITP-L1-02-Q027",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 27 (summer heat island walk). What does the woman mean?",
+      "options": [
+        "Main Street asphalt cools faster than rural airport runways.",
+        "Infrared thermometers break whenever air temperatures hit fifty.",
+        "Weather bureaus ban street-level student surveys.",
+        "Airport weather stations fail to capture localized pavement heat downtown."
+      ],
+      "answer": "Airport weather stations fail to capture localized pavement heat downtown.",
+      "acceptedAnswers": [
+        "Airport weather stations fail to capture localized pavement heat downtown."
+      ],
+      "explanation": "Stasiun bandara berada di area berumput sehingga tidak mencerminkan panas permukaan aspal kota.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP02-L27",
+      "sortIndex": 27
+    },
+    {
+      "id": "ITP-L1-02-Q028",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 28 (coffee mug left behind). What does the woman mean?",
+      "options": [
+        "Buy a replacement flask at the campus cafe.",
+        "Lock the studio cabinet until tomorrow afternoon.",
+        "Look inside the front desk's lost cabinet for his missing mug.",
+        "Wash two brushed-steel mugs inside the studio sink."
+      ],
+      "answer": "Look inside the front desk's lost cabinet for his missing mug.",
+      "acceptedAnswers": [
+        "Look inside the front desk's lost cabinet for his missing mug."
+      ],
+      "explanation": "Ia akan memeriksa lemari barang hilang untuk melihat dua termos baja yang ditemukan.",
+      "rationaleSource": "ITP-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP02-L28",
+      "sortIndex": 28
+    },
+    {
+      "id": "ITP-L1-02-Q029",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 29 (deadline extension rumor). What does the man imply?",
+      "options": [
+        "Monday papers carry lighter grading weights.",
+        "She should assume the original due date still stands until the professor confirms.",
+        "Dr. Cho always announces extensions through hallway flyers.",
+        "Sam usually grades urban history essays ahead of schedule."
+      ],
+      "answer": "She should assume the original due date still stands until the professor confirms.",
+      "acceptedAnswers": [
+        "She should assume the original due date still stands until the professor confirms."
+      ],
+      "explanation": "'I wouldn't bet on hallway rumors' berarti jangan mempercayai desas-desus tanpa pengumuman resmi.",
+      "rationaleSource": "ITP-MOD-01",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP02-L29",
+      "sortIndex": 29
+    },
+    {
+      "id": "ITP-L1-02-Q030",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 30 (sketchbook paper weight). What does the woman recommend?",
+      "options": [
+        "Switching to thicker three-hundred-gram cold-press paper.",
+        "Diluting waterproof ink with extra pond water.",
+        "Painting only on dry hot-press printer paper.",
+        "Waiting until sunny summer months to sketch outdoors."
+      ],
+      "answer": "Switching to thicker three-hundred-gram cold-press paper.",
+      "acceptedAnswers": [
+        "Switching to thicker three-hundred-gram cold-press paper."
+      ],
+      "explanation": "Kertas bergramatur lebih tebal (300g cold-press) mencegah tinta tembus dan bergelombang.",
+      "rationaleSource": "ITP-MOD-07",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP02-L30",
+      "sortIndex": 30
+    },
+    {
+      "id": "ITP-L1-02-Q031",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part B Conversation 1 (Architectural Preservation Archive) — Item 1/4. What is the student researching in Special Collections?",
+      "options": [
+        "Nineteenth-century steamship cargo insurance fees.",
+        "Linen paper weaving techniques used in modern offices.",
+        "Commercial print royalties for architecture journals.",
+        "Historical transitions between cast-iron harbor sheds and concrete piers."
+      ],
+      "answer": "Historical transitions between cast-iron harbor sheds and concrete piers.",
+      "acceptedAnswers": [
+        "Historical transitions between cast-iron harbor sheds and concrete piers."
+      ],
+      "explanation": "Ia membandingkan struktur bangsal besi tuang dan dermaga beton dalam koleksi 1904.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP02-PB1",
+      "sortIndex": 31
+    },
+    {
+      "id": "ITP-L1-02-Q032",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part B Conversation 1 (Architectural Preservation Archive) — Item 2/4. Why was Folio 8 placed flat on table two?",
+      "options": [
+        "Three pages were loaned to an engineering classroom.",
+        "Colored inks stayed wet after yesterday's cleaning.",
+        "Fragile linen backing required gentle support by the conservator.",
+        "Its steel binding clasps jammed rolling storage tubes."
+      ],
+      "answer": "Fragile linen backing required gentle support by the conservator.",
+      "acceptedAnswers": [
+        "Fragile linen backing required gentle support by the conservator."
+      ],
+      "explanation": "Jilid kain linen yang rapuh membutuhkan penataan datar khusus oleh konservator.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP02-PB1",
+      "sortIndex": 32
+    },
+    {
+      "id": "ITP-L1-02-Q033",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part B Conversation 1 (Architectural Preservation Archive) — Item 3/4. What rule governs personal study photographs in the archive?",
+      "options": [
+        "Blueprints may only be hand-traced onto wax paper.",
+        "Tablet photography without flash at the cradle table needs no permission slip.",
+        "Every personal photo requires advance written payment.",
+        "Readers must turn over tablets before entering table two."
+      ],
+      "answer": "Tablet photography without flash at the cradle table needs no permission slip.",
+      "acceptedAnswers": [
+        "Tablet photography without flash at the cradle table needs no permission slip."
+      ],
+      "explanation": "Foto belajar tanpa flash di meja penyangga diperbolehkan langsung.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP02-PB1",
+      "sortIndex": 33
+    },
+    {
+      "id": "ITP-L1-02-Q034",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part B Conversation 1 (Architectural Preservation Archive) — Item 4/4. When must a researcher submit reproduction permission forms?",
+      "options": [
+        "When intending to publish archive plates commercially.",
+        "Prior to unrolling Folios 7 and 9 inside Special Collections.",
+        "Whenever taking notes with soft wooden pencils.",
+        "Before leaving the reading room for lunch."
+      ],
+      "answer": "When intending to publish archive plates commercially.",
+      "acceptedAnswers": [
+        "When intending to publish archive plates commercially."
+      ],
+      "explanation": "Izin tertulis hanya diperlukan jika materi diterbitkan secara komersial.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP02-PB1",
+      "sortIndex": 34
+    },
+    {
+      "id": "ITP-L1-02-Q035",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part B Conversation 2 (Urban Bioswale Stormwater Survey) — Item 1/4. What preliminary result does the student report to Dr. Alvarez?",
+      "options": [
+        "Maple leaf piles flooded residential basements along block four.",
+        "Clay lawns absorbed rainwater forty percent faster than sandy mulch.",
+        "Yesterday's storm sensors shut off prematurely at five-fifteen.",
+        "Sidewalk sensors measured a steep drop in storm runoff beside the new rain gardens."
+      ],
+      "answer": "Sidewalk sensors measured a steep drop in storm runoff beside the new rain gardens.",
+      "acceptedAnswers": [
+        "Sidewalk sensors measured a steep drop in storm runoff beside the new rain gardens."
+      ],
+      "explanation": "Sensor mencatat penurunan limpasan trotoar sekitar 40% di dekat taman resapan.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP02-PB2",
+      "sortIndex": 35
+    },
+    {
+      "id": "ITP-L1-02-Q036",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part B Conversation 2 (Urban Bioswale Stormwater Survey) — Item 2/4. Why does Dr. Alvarez initially urge checking the inlet grates?",
+      "options": [
+        "Because maple roots commonly crack concrete curbs downtown.",
+        "To drain standing water out of block four gardens.",
+        "To verify clogged leaves did not artificially lower measured sensor inflow.",
+        "To estimate city street-sweeping overtime wages."
+      ],
+      "answer": "To verify clogged leaves did not artificially lower measured sensor inflow.",
+      "acceptedAnswers": [
+        "To verify clogged leaves did not artificially lower measured sensor inflow."
+      ],
+      "explanation": "Ia memastikan angka rendah bukan akibat saluran tersumbat daun sebelum air masuk sensor.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP02-PB2",
+      "sortIndex": 36
+    },
+    {
+      "id": "ITP-L1-02-Q037",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part B Conversation 2 (Urban Bioswale Stormwater Survey) — Item 3/4. What did the field inspection at five-fifteen confirm?",
+      "options": [
+        "City crews sweeping leaves off clay lawns.",
+        "Clear drain grates and rapid absorption by engineered sandy mulch layers.",
+        "Deep mud crust blocking every drainage curb.",
+        "Broken electronic gauges along street corners."
+      ],
+      "answer": "Clear drain grates and rapid absorption by engineered sandy mulch layers.",
+      "acceptedAnswers": [
+        "Clear drain grates and rapid absorption by engineered sandy mulch layers."
+      ],
+      "explanation": "Saluran bersih dan mulsa berpasir menyerap air jauh lebih cepat daripada tanah liat padat.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP02-PB2",
+      "sortIndex": 37
+    },
+    {
+      "id": "ITP-L1-02-Q038",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part B Conversation 2 (Urban Bioswale Stormwater Survey) — Item 4/4. What graph will the student prepare for Friday?",
+      "options": [
+        "A comparison plotting soil compaction against water infiltration velocity.",
+        "A cost table comparing oak saplings against maple street trees.",
+        "Historical rainfall totals from 1950 through today.",
+        "Architectural sketches of residential roof gutters."
+      ],
+      "answer": "A comparison plotting soil compaction against water infiltration velocity.",
+      "acceptedAnswers": [
+        "A comparison plotting soil compaction against water infiltration velocity."
+      ],
+      "explanation": "Dosen meminta plot kecepatan infiltrasi terhadap pemadatan tanah bagi dewan air kota.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP02-PB2",
+      "sortIndex": 38
+    },
+    {
+      "id": "ITP-L1-02-Q039",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part C Mini-Lecture 1 (Cast-Iron Arcades & Natural Lighting) — Item 1/4. How did cast-iron columns transform mid-nineteenth-century market architecture?",
+      "options": [
+        "Solid stone walls kept summer heat out of narrow street alleys.",
+        "Underground gas generators lit wooden warehouse ceilings brightly.",
+        "Hollow iron arches blocked afternoon glare from glass windows.",
+        "Slender metal columns supported vast glass roofs that brought daylight indoors."
+      ],
+      "answer": "Slender metal columns supported vast glass roofs that brought daylight indoors.",
+      "acceptedAnswers": [
+        "Slender metal columns supported vast glass roofs that brought daylight indoors."
+      ],
+      "explanation": "Kolom besi tipis mampu menopang atap kaca lebar yang menerangi bagian dalam gedung.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP02-PC1",
+      "sortIndex": 39
+    },
+    {
+      "id": "ITP-L1-02-Q040",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part C Mini-Lecture 1 (Cast-Iron Arcades & Natural Lighting) — Item 2/4. Why did older masonry buildings suffer from dim interiors?",
+      "options": [
+        "Merchants preferred candlelight for protecting grain sacks.",
+        "City ordinances outlawed arched windows above market stalls.",
+        "Load-bearing brick walls weakened if pierced by oversized window openings.",
+        "European glass furnaces could only cast dark opaque green panes."
+      ],
+      "answer": "Load-bearing brick walls weakened if pierced by oversized window openings.",
+      "acceptedAnswers": [
+        "Load-bearing brick walls weakened if pierced by oversized window openings."
+      ],
+      "explanation": "Dinding bata penahan beban tidak kuat jika diberi bukaan jendela terlalu besar.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP02-PC1",
+      "sortIndex": 40
+    },
+    {
+      "id": "ITP-L1-02-Q041",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part C Mini-Lecture 1 (Cast-Iron Arcades & Natural Lighting) — Item 3/4. What secondary function did some hollow cast-iron columns cleverly perform?",
+      "options": [
+        "Storing emergency cast-iron rivets vertically.",
+        "Serving as hidden downspouts carrying roof rainwater off skylights.",
+        "Circulating hot furnace exhaust to warm stalls in winter.",
+        "Housing telegraph wires linking regional train depots."
+      ],
+      "answer": "Serving as hidden downspouts carrying roof rainwater off skylights.",
+      "acceptedAnswers": [
+        "Serving as hidden downspouts carrying roof rainwater off skylights."
+      ],
+      "explanation": "Sebagian kolom berongga sekaligus berfungsi sebagai saluran buangan air hujan atap.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP02-PC1",
+      "sortIndex": 41
+    },
+    {
+      "id": "ITP-L1-02-Q042",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part C Mini-Lecture 1 (Cast-Iron Arcades & Natural Lighting) — Item 4/4. What structural weakness eventually pushed builders away from cast iron toward steel?",
+      "options": [
+        "Brittleness under tension forces and cracking from thermal fire shock.",
+        "Prohibitive shipping weight aboard canal barges.",
+        "Rapid rusting even when painted with linseed sealants.",
+        "Soft bending under light winter snowfalls."
+      ],
+      "answer": "Brittleness under tension forces and cracking from thermal fire shock.",
+      "acceptedAnswers": [
+        "Brittleness under tension forces and cracking from thermal fire shock."
+      ],
+      "explanation": "Besi tuang rapuh terhadap gaya tarik dan mudah retak saat terpapar panas mendadak.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP02-PC1",
+      "sortIndex": 42
+    },
+    {
+      "id": "ITP-L1-02-Q043",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part C Mini-Lecture 2 (Re-Daylighting Buried Urban Streams) — Item 1/4. What historical engineering practice does the term 'culverting' describe?",
+      "options": [
+        "Installing ornamental gravel fountains along paved squares.",
+        "Building wooden toll bridges atop suburban creeks.",
+        "Diverting clean drinking springs into factory boilers.",
+        "Routing natural urban streams inside buried stone or concrete underground tunnels."
+      ],
+      "answer": "Routing natural urban streams inside buried stone or concrete underground tunnels.",
+      "acceptedAnswers": [
+        "Routing natural urban streams inside buried stone or concrete underground tunnels."
+      ],
+      "explanation": "Culverting mengubur sungai kecil perkotaan di dalam terowongan tertutup bawah tanah.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP02-PC2",
+      "sortIndex": 43
+    },
+    {
+      "id": "ITP-L1-02-Q044",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part C Mini-Lecture 2 (Re-Daylighting Buried Urban Streams) — Item 2/4. Why do straight buried concrete pipes sometimes worsen downstream flooding?",
+      "options": [
+        "Paved asphalt surfaces absorb twice as much runoff as park grass.",
+        "Sewers block sunlight needed to evaporate excess rainwater.",
+        "Smooth tunnels rush storm surges rapidly without wetland friction or storage.",
+        "Brick vaults collapse whenever summer droughts shrink base flow."
+      ],
+      "answer": "Smooth tunnels rush storm surges rapidly without wetland friction or storage.",
+      "acceptedAnswers": [
+        "Smooth tunnels rush storm surges rapidly without wetland friction or storage."
+      ],
+      "explanation": "Pipa beton lurus mempercepat laju air banjir tanpa redaman vegetasi atau belokan alami.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP02-PC2",
+      "sortIndex": 44
+    },
+    {
+      "id": "ITP-L1-02-Q045",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part C Mini-Lecture 2 (Re-Daylighting Buried Urban Streams) — Item 3/4. What physical work happens during urban stream 'daylighting'?",
+      "options": [
+        "Replacing cracked asphalt streets with white reflective tiles.",
+        "Uncovering underground culverts to restore open, meandering vegetated channels.",
+        "Illuminating subterranean boat tunnels using fiber-optic lamps.",
+        "Dredging silt bars deeply along industrial container ports."
+      ],
+      "answer": "Uncovering underground culverts to restore open, meandering vegetated channels.",
+      "acceptedAnswers": [
+        "Uncovering underground culverts to restore open, meandering vegetated channels."
+      ],
+      "explanation": "Daylighting membuka kembali sungai terkubur menjadi saluran terbuka alami bervegetasi.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP02-PC2",
+      "sortIndex": 45
+    },
+    {
+      "id": "ITP-L1-02-Q046",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part C Mini-Lecture 2 (Re-Daylighting Buried Urban Streams) — Item 4/4. Which ecological benefit follows successful creek daylighting?",
+      "options": [
+        "Lower flood peaks alongside cooler air and restored aquatic insect habitats.",
+        "Guaranteed dry sidewalks across valley lowlands year-round.",
+        "Instant elimination of heavy industrial shipping traffic.",
+        "Faster drainage straight into tidal marshes without vegetation."
+      ],
+      "answer": "Lower flood peaks alongside cooler air and restored aquatic insect habitats.",
+      "acceptedAnswers": [
+        "Lower flood peaks alongside cooler air and restored aquatic insect habitats."
+      ],
+      "explanation": "Mengurangi puncak banjir, mendinginkan kota, serta memulihkan rantai ekosistem serangga air.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP02-PC2",
+      "sortIndex": 46
+    },
+    {
+      "id": "ITP-L1-02-Q047",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part C Mini-Lecture 3 (Dendrochronology and Timber Cathedrals) — Item 1/4. What does dendrochronology allow architectural historians to pinpoint?",
+      "options": [
+        "The exact quarry that supplied roof slate above timber barns.",
+        "How much weight medieval stone arches safely carried.",
+        "Original stain recipes used on cathedral oak doors.",
+        "The calendar year and often season ancient structural oak beams were cut."
+      ],
+      "answer": "The calendar year and often season ancient structural oak beams were cut.",
+      "acceptedAnswers": [
+        "The calendar year and often season ancient structural oak beams were cut."
+      ],
+      "explanation": "Dendrokronologi menentukan tahun bahkan musim penebangan kayu bersejarah melalui cincin pertumbuhan.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP02-PC3",
+      "sortIndex": 47
+    },
+    {
+      "id": "ITP-L1-02-Q048",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part C Mini-Lecture 3 (Dendrochronology and Timber Cathedrals) — Item 2/4. What determines the varying width between annual oak growth rings?",
+      "options": [
+        "Differences in saw blade sharpness during shaping.",
+        "Soil salt depth near cathedral stone foundations.",
+        "Seasonal rainfall and warmth fluctuations experienced by regional forests.",
+        "Periodic fires lit deliberately inside timber workshops."
+      ],
+      "answer": "Seasonal rainfall and warmth fluctuations experienced by regional forests.",
+      "acceptedAnswers": [
+        "Seasonal rainfall and warmth fluctuations experienced by regional forests."
+      ],
+      "explanation": "Curah hujan dan kondisi suhu musiman menentukan lebar pita cincin kayu tahunan.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP02-PC3",
+      "sortIndex": 48
+    },
+    {
+      "id": "ITP-L1-02-Q049",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part C Mini-Lecture 3 (Dendrochronology and Timber Cathedrals) — Item 3/4. How do researchers extend regional ring calendars centuries past the oldest living trees?",
+      "options": [
+        "By comparing Latin chronicle receipts with charcoal ash weight.",
+        "By cross-dating overlapping ring patterns from preserved historic beams and bog wood.",
+        "By measuring radioactive decay inside charred roof nails.",
+        "By assuming every mature oak tree adds one millimeter annually."
+      ],
+      "answer": "By cross-dating overlapping ring patterns from preserved historic beams and bog wood.",
+      "acceptedAnswers": [
+        "By cross-dating overlapping ring patterns from preserved historic beams and bog wood."
+      ],
+      "explanation": "Pola cincin disambungkan silang (cross-dating) antara pohon hidup, balok tua, dan kayu rawa.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP02-PC3",
+      "sortIndex": 49
+    },
+    {
+      "id": "ITP-L1-02-Q050",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part C Mini-Lecture 3 (Dendrochronology and Timber Cathedrals) — Item 4/4. Why is outer sapwood directly beneath bark essential for exact felling precision?",
+      "options": [
+        "Heartwood planks stripped of outer layers lack the tree's final growing seasons.",
+        "Sapwood rings resist drying cracks better than inner cores.",
+        "Outer bark absorbs iron ink dating stamps naturally.",
+        "Heartwood grows horizontally faster than spring sapwood."
+      ],
+      "answer": "Heartwood planks stripped of outer layers lack the tree's final growing seasons.",
+      "acceptedAnswers": [
+        "Heartwood planks stripped of outer layers lack the tree's final growing seasons."
+      ],
+      "explanation": "Bila gubal terluar (sapwood/wane) sudah diketam hilang, tahun tebang akhir tidak lagi terlihat.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "C1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP02-PC3",
+      "sortIndex": 50
+    },
+    {
+      "id": "ITP-L1-02-Q051",
+      "section": "STRUCTURE",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "So accurately ___ the lunar eclipse that astronomers detected atmospheric refraction rings.",
+      "options": [
+        "was tracked the telescope",
+        "did the telescope track",
+        "tracked the telescope",
+        "the telescope tracked"
+      ],
+      "answer": "did the telescope track",
+      "acceptedAnswers": [
+        "did the telescope track"
+      ],
+      "explanation": "'So + adverb' di awal kalimat menuntut inversi 'did + subject + bare verb'.",
+      "rationaleSource": "ITP-MOD-03",
+      "difficulty": "C1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 51
+    },
+    {
+      "id": "ITP-L1-02-Q052",
+      "section": "STRUCTURE",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Between the two medieval clock towers ___ a narrow stone arcade lined with watchmaker shops.",
+      "options": [
+        "stands",
+        "stand",
+        "standing",
+        "are standing"
+      ],
+      "answer": "stands",
+      "acceptedAnswers": [
+        "stands"
+      ],
+      "explanation": "Subjek inversi setelah frasa tempat berada di belakang ('a narrow stone arcade', tunggal) -> 'stands'.",
+      "rationaleSource": "ITP-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 52
+    },
+    {
+      "id": "ITP-L1-02-Q053",
+      "section": "STRUCTURE",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Canals constructed across nineteenth-century manufacturing towns had to ___ before motorized locks arrived.",
+      "options": [
+        "dredging",
+        "dredged",
+        "to dredge",
+        "be dredged"
+      ],
+      "answer": "be dredged",
+      "acceptedAnswers": [
+        "be dredged"
+      ],
+      "explanation": "Pasif infinitif setelah 'had to' memerlukan 'be + V3' ('be dredged').",
+      "rationaleSource": "ITP-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 53
+    },
+    {
+      "id": "ITP-L1-02-Q054",
+      "section": "STRUCTURE",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Marine surveyors refused ___ acoustic depth gauges without first verifying salinity calibration.",
+      "options": [
+        "deploy",
+        "deployed",
+        "to deploy",
+        "deploying"
+      ],
+      "answer": "to deploy",
+      "acceptedAnswers": [
+        "to deploy"
+      ],
+      "explanation": "Kata kerja 'refuse' diikuti to-infinitive ('to deploy').",
+      "rationaleSource": "ITP-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 54
+    },
+    {
+      "id": "ITP-L1-02-Q055",
+      "section": "STRUCTURE",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "___ from clay seals unearthed near Ur reveal standard grain rations issued to seasonal laborers.",
+      "options": [
+        "It recovered",
+        "Fragments recovered",
+        "Recovered from",
+        "Which fragments"
+      ],
+      "answer": "Fragments recovered",
+      "acceptedAnswers": [
+        "Fragments recovered"
+      ],
+      "explanation": "'Fragments recovered' berfungsi sebagai subjek jamak untuk verba 'reveal'.",
+      "rationaleSource": "ITP-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 55
+    },
+    {
+      "id": "ITP-L1-02-Q056",
+      "section": "STRUCTURE",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Urban planners consider reed beds ___ for filtering roadway storm runoff prior to river discharge.",
+      "options": [
+        "effective",
+        "effectively",
+        "effectiveness",
+        "effecting"
+      ],
+      "answer": "effective",
+      "acceptedAnswers": [
+        "effective"
+      ],
+      "explanation": "Kata kerja 'consider + object + adjective' mengambil bentuk adjektiva 'effective'.",
+      "rationaleSource": "ITP-MOD-04",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 56
+    },
+    {
+      "id": "ITP-L1-02-Q057",
+      "section": "STRUCTURE",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Whether the limestone aqueduct carried water year-round ___ still debated among Roman historians.",
+      "options": [
+        "are",
+        "were",
+        "have been",
+        "is"
+      ],
+      "answer": "is",
+      "acceptedAnswers": [
+        "is"
+      ],
+      "explanation": "Noun clause 'Whether ...' sebagai subjek kalimat selalu membutuhkan kata kerja tunggal ('is').",
+      "rationaleSource": "ITP-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 57
+    },
+    {
+      "id": "ITP-L1-02-Q058",
+      "section": "STRUCTURE",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Scarcely had workers reinforced the river embankment ___ heavy autumn rains tested its spillway.",
+      "options": [
+        "so",
+        "until",
+        "when",
+        "than"
+      ],
+      "answer": "when",
+      "acceptedAnswers": [
+        "when"
+      ],
+      "explanation": "Pasangan korelatif baku 'Scarcely ... when ...' memakai 'when'.",
+      "rationaleSource": "ITP-MOD-09",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 58
+    },
+    {
+      "id": "ITP-L1-02-Q059",
+      "section": "STRUCTURE",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "The medieval guild required that each apprentice ___ three years mastering stone vault geometry.",
+      "options": [
+        "would spend",
+        "spend",
+        "spends",
+        "spent"
+      ],
+      "answer": "spend",
+      "acceptedAnswers": [
+        "spend"
+      ],
+      "explanation": "Subjunctive setelah 'required that' memakai kata kerja bentuk dasar ('spend').",
+      "rationaleSource": "ITP-MOD-03",
+      "difficulty": "C1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 59
+    },
+    {
+      "id": "ITP-L1-02-Q060",
+      "section": "STRUCTURE",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Compared with cast-iron trusses, timber-laminated arches are lighter, more elastic, and ___ to corrosion.",
+      "options": [
+        "far less vulnerable",
+        "less far vulnerably",
+        "least vulnerable than",
+        "not as vulnerable than"
+      ],
+      "answer": "far less vulnerable",
+      "acceptedAnswers": [
+        "far less vulnerable"
+      ],
+      "explanation": "Paralelisme frasa adjektiva ('lighter, more elastic, and far less vulnerable') konsisten secara gramatikal.",
+      "rationaleSource": "ITP-MOD-04",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 60
+    },
+    {
+      "id": "ITP-L1-02-Q061",
+      "section": "STRUCTURE",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "___ industrial dye factories discharged untreated effluent, downstream trout populations collapsed rapidly.",
+      "options": [
+        "Because of",
+        "During",
+        "Until then",
+        "Once"
+      ],
+      "answer": "Once",
+      "acceptedAnswers": [
+        "Once"
+      ],
+      "explanation": "Penghubung waktu 'Once' mengawali klausa lengkap ('factories discharged...').",
+      "rationaleSource": "ITP-MOD-03",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 61
+    },
+    {
+      "id": "ITP-L1-02-Q062",
+      "section": "STRUCTURE",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Not only ___ streetcar congestion downtown, but it also extended residential suburbs by ten kilometers.",
+      "options": [
+        "the subway relieved",
+        "was relieved the subway",
+        "did the subway relieve",
+        "relieved the subway"
+      ],
+      "answer": "did the subway relieve",
+      "acceptedAnswers": [
+        "did the subway relieve"
+      ],
+      "explanation": "'Not only' di posisi awal memicu inversi auxiliary 'did' sebelum subjek 'the subway'.",
+      "rationaleSource": "ITP-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 62
+    },
+    {
+      "id": "ITP-L1-02-Q063",
+      "section": "STRUCTURE",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "All calibrated barometers aboard the survey vessel ___ checked prior to entering stormy straits.",
+      "options": [
+        "is",
+        "were",
+        "was",
+        "has been"
+      ],
+      "answer": "were",
+      "acceptedAnswers": [
+        "were"
+      ],
+      "explanation": "Inti subjek 'barometers' jamak sehingga kata kerja pasif harus 'were'.",
+      "rationaleSource": "ITP-MOD-03",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 63
+    },
+    {
+      "id": "ITP-L1-02-Q064",
+      "section": "STRUCTURE",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Bioremediation fungi break down petroleum hydrocarbons ___ bacteria alone would leave untouched.",
+      "options": [
+        "that",
+        "what",
+        "who",
+        "of which it"
+      ],
+      "answer": "that",
+      "acceptedAnswers": [
+        "that"
+      ],
+      "explanation": "Pronomina relatif 'that' menggantikan objek 'hydrocarbons' pada klausa sifat.",
+      "rationaleSource": "ITP-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 64
+    },
+    {
+      "id": "ITP-L1-02-Q065",
+      "section": "STRUCTURE",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Were city councils ___ rooftop solar mandates next spring, peak grid loads could fall measurably.",
+      "options": [
+        "enacted",
+        "enacting",
+        "would enact",
+        "to enact"
+      ],
+      "answer": "to enact",
+      "acceptedAnswers": [
+        "to enact"
+      ],
+      "explanation": "Inversi conditional tipe 2 memakai pola 'Were + S + to + V1'.",
+      "rationaleSource": "ITP-MOD-08",
+      "difficulty": "C1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 65
+    },
+    {
+      "id": "ITP-L1-02-Q066",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "Medieval cathedral masons [A] carved limestone blocks [B] precise on wooden templates [C] before hoisting them [D] into lofty rib vaults.",
+      "options": [
+        "[A] carved limestone blocks",
+        "[B] precise on wooden templates",
+        "[C] before hoisting them",
+        "[D] into lofty rib vaults"
+      ],
+      "answer": "[B] precise on wooden templates",
+      "acceptedAnswers": [
+        "[B] precise on wooden templates"
+      ],
+      "explanation": "Modifikator verba 'carved' harus memakai adverb 'precisely', bukan adjektiva 'precise'.",
+      "rationaleSource": "ITP-MOD-04",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 66
+    },
+    {
+      "id": "ITP-L1-02-Q067",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "An urban canal system, [A] supplemented by brick [B] detention basins, [C] help curb flash flooding [D] during summer cloudbursts.",
+      "options": [
+        "[A] supplemented by brick",
+        "[B] detention basins,",
+        "[C] help curb flash flooding",
+        "[D] during summer cloudbursts"
+      ],
+      "answer": "[C] help curb flash flooding",
+      "acceptedAnswers": [
+        "[C] help curb flash flooding"
+      ],
+      "explanation": "Inti subjek tunggal 'An urban canal system' wajib memakai kata kerja tunggal 'helps'.",
+      "rationaleSource": "ITP-MOD-03",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 67
+    },
+    {
+      "id": "ITP-L1-02-Q068",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "Engineers [A] chose welded steel trusses [B] instead masonry arches [C] because the muddy riverbank [D] could not support immense weight.",
+      "options": [
+        "[A] chose welded steel trusses",
+        "[B] instead masonry arches",
+        "[C] because the muddy riverbank",
+        "[D] could not support immense weight"
+      ],
+      "answer": "[B] instead masonry arches",
+      "acceptedAnswers": [
+        "[B] instead masonry arches"
+      ],
+      "explanation": "Preposisi pengganti yang baku adalah 'instead of', bukan 'instead' saja.",
+      "rationaleSource": "ITP-MOD-09",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 68
+    },
+    {
+      "id": "ITP-L1-02-Q069",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "Historical records show [A] that London's early iron bridges [B] carried far heavier [C] horse-drawn wagons [D] as planners first expected.",
+      "options": [
+        "[A] that London's early iron bridges",
+        "[B] carried far heavier",
+        "[C] horse-drawn wagons",
+        "[D] as planners first expected"
+      ],
+      "answer": "[D] as planners first expected",
+      "acceptedAnswers": [
+        "[D] as planners first expected"
+      ],
+      "explanation": "Konstruksi komparatif 'heavier ...' harus berpasangan dengan 'than', bukan 'as'.",
+      "rationaleSource": "ITP-MOD-04",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 69
+    },
+    {
+      "id": "ITP-L1-02-Q070",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "After [A] examining forty watercolors, the conservator [B] concluded that fading [C] was caused mostly [D] by prolonged ultraviolet expose.",
+      "options": [
+        "[A] examining forty watercolors, the conservator",
+        "[B] concluded that fading",
+        "[C] was caused mostly",
+        "[D] by prolonged ultraviolet expose"
+      ],
+      "answer": "[D] by prolonged ultraviolet expose",
+      "acceptedAnswers": [
+        "[D] by prolonged ultraviolet expose"
+      ],
+      "explanation": "Sesudah adjektiva 'ultraviolet', dibutuhkan bentuk nomina 'exposure', bukan verba 'expose'.",
+      "rationaleSource": "ITP-MOD-04",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 70
+    },
+    {
+      "id": "ITP-L1-02-Q071",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "Many commuters [A] resisted pay [B] higher streetcar fares [C] until new elevated lines halved [D] morning travel times.",
+      "options": [
+        "[A] resisted pay",
+        "[B] higher streetcar fares",
+        "[C] until new elevated lines halved",
+        "[D] morning travel times"
+      ],
+      "answer": "[A] resisted pay",
+      "acceptedAnswers": [
+        "[A] resisted pay"
+      ],
+      "explanation": "Kata kerja 'resist' wajib diikuti gerund 'paying', bukan bare verb 'pay'.",
+      "rationaleSource": "ITP-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 71
+    },
+    {
+      "id": "ITP-L1-02-Q072",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "Neither brick kilns [A] nor iron foundries [B] along the canal [C] was exempt from nineteenth-century [D] smoke abatement bylaws.",
+      "options": [
+        "[A] nor iron foundries",
+        "[B] along the canal",
+        "[C] was exempt from nineteenth-century",
+        "[D] smoke abatement bylaws"
+      ],
+      "answer": "[C] was exempt from nineteenth-century",
+      "acceptedAnswers": [
+        "[C] was exempt from nineteenth-century"
+      ],
+      "explanation": "Unsur subjek setelah 'nor' jamak ('iron foundries'), sehingga kata kerja harus jamak 'were'.",
+      "rationaleSource": "ITP-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 72
+    },
+    {
+      "id": "ITP-L1-02-Q073",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "Municipal health archives [A] contain detailed mortality tables [B] dating back [C] to the early [D] eighteen century.",
+      "options": [
+        "[A] contain detailed mortality tables",
+        "[B] dating back",
+        "[C] to the early",
+        "[D] eighteen century"
+      ],
+      "answer": "[D] eighteen century",
+      "acceptedAnswers": [
+        "[D] eighteen century"
+      ],
+      "explanation": "Penomoran abad memerlukan bilangan ordinal 'eighteenth century'.",
+      "rationaleSource": "ITP-MOD-04",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 73
+    },
+    {
+      "id": "ITP-L1-02-Q074",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "The urban forester noted [A] that plane trees [B] tolerate compacted roadside soil [C] better than [D] native oak seedlings does.",
+      "options": [
+        "[A] that plane trees",
+        "[B] tolerate compacted roadside soil",
+        "[C] better than",
+        "[D] native oak seedlings does"
+      ],
+      "answer": "[D] native oak seedlings does",
+      "acceptedAnswers": [
+        "[D] native oak seedlings does"
+      ],
+      "explanation": "Subjek pembanding 'seedlings' jamak sehingga auxiliary harus 'do', bukan 'does'.",
+      "rationaleSource": "ITP-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 74
+    },
+    {
+      "id": "ITP-L1-02-Q075",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "By burying leaky brick culverts [A] beneath modern parks, [B] cities lost public sightlines [C] who once reminded residents [D] of natural watersheds.",
+      "options": [
+        "[A] beneath modern parks,",
+        "[B] cities lost public sightlines",
+        "[C] who once reminded residents",
+        "[D] of natural watersheds"
+      ],
+      "answer": "[C] who once reminded residents",
+      "acceptedAnswers": [
+        "[C] who once reminded residents"
+      ],
+      "explanation": "'Sightlines' adalah benda mati -> gunakan 'which/that', bukan 'who'.",
+      "rationaleSource": "ITP-MOD-03",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 75
+    },
+    {
+      "id": "ITP-L1-02-Q076",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "Few architectural historians [A] realize how [B] rapid reinforced concrete [C] displaced brick masonry [D] in warehouse construction.",
+      "options": [
+        "[A] realize how",
+        "[B] rapid reinforced concrete",
+        "[C] displaced brick masonry",
+        "[D] in warehouse construction"
+      ],
+      "answer": "[B] rapid reinforced concrete",
+      "acceptedAnswers": [
+        "[B] rapid reinforced concrete"
+      ],
+      "explanation": "Adverb 'rapidly' dibutuhkan untuk memodifikasi kata kerja 'displaced' sesudah 'how'.",
+      "rationaleSource": "ITP-MOD-04",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 76
+    },
+    {
+      "id": "ITP-L1-02-Q077",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "Despite [A] its modest span, the cast-iron footbridge [B] still links [C] two industrial neighborhoods [D] with remarkable durable.",
+      "options": [
+        "[A] its modest span, the cast-iron footbridge",
+        "[B] still links",
+        "[C] two industrial neighborhoods",
+        "[D] with remarkable durable"
+      ],
+      "answer": "[D] with remarkable durable",
+      "acceptedAnswers": [
+        "[D] with remarkable durable"
+      ],
+      "explanation": "Sesudah preposisi 'with' dan adjektiva 'remarkable', dibutuhkan nomina 'durability'.",
+      "rationaleSource": "ITP-MOD-04",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 77
+    },
+    {
+      "id": "ITP-L1-02-Q078",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "Subway contractors [A] encountered fewer geological surprises [B] when tunneling through granite [C] than while dig [D] beneath glacial till.",
+      "options": [
+        "[A] encountered fewer geological surprises",
+        "[B] when tunneling through granite",
+        "[C] than while dig",
+        "[D] beneath glacial till"
+      ],
+      "answer": "[C] than while dig",
+      "acceptedAnswers": [
+        "[C] than while dig"
+      ],
+      "explanation": "Reduksi klausa sesudah 'while' memerlukan present participle 'digging'.",
+      "rationaleSource": "ITP-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 78
+    },
+    {
+      "id": "ITP-L1-02-Q079",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "A committee [A] of civil engineers and historians [B] have proposed restoring [C] three wooden swing bridges [D] along the old canal.",
+      "options": [
+        "[A] of civil engineers and historians",
+        "[B] have proposed restoring",
+        "[C] three wooden swing bridges",
+        "[D] along the old canal"
+      ],
+      "answer": "[B] have proposed restoring",
+      "acceptedAnswers": [
+        "[B] have proposed restoring"
+      ],
+      "explanation": "Inti subjek tunggal kolektif 'A committee' memerlukan auxiliary tunggal 'has proposed'.",
+      "rationaleSource": "ITP-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 79
+    },
+    {
+      "id": "ITP-L1-02-Q080",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "Public transit ridership [A] dropped sharp after [B] wartime rationing ended [C] and suburban highways [D] expanded outward.",
+      "options": [
+        "[A] dropped sharp after",
+        "[B] wartime rationing ended",
+        "[C] and suburban highways",
+        "[D] expanded outward"
+      ],
+      "answer": "[A] dropped sharp after",
+      "acceptedAnswers": [
+        "[A] dropped sharp after"
+      ],
+      "explanation": "Adverb 'sharply' wajib memodifikasi verba 'dropped'.",
+      "rationaleSource": "ITP-MOD-04",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 80
+    },
+    {
+      "id": "ITP-L1-02-Q081",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "Each architectural drawing [A] stored inside flat oak drawers [B] bear an ink stamp [C] identifying the municipal drafting [D] bureau.",
+      "options": [
+        "[A] stored inside flat oak drawers",
+        "[B] bear an ink stamp",
+        "[C] identifying the municipal drafting",
+        "[D] bureau"
+      ],
+      "answer": "[B] bear an ink stamp",
+      "acceptedAnswers": [
+        "[B] bear an ink stamp"
+      ],
+      "explanation": "Subjek tunggal 'Each architectural drawing' membutuhkan 'bears'.",
+      "rationaleSource": "ITP-MOD-03",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 81
+    },
+    {
+      "id": "ITP-L1-02-Q082",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "The curator reminded visitors [A] not touching marble relief [B] carvings because skin oils [C] darken porous stone [D] over decades.",
+      "options": [
+        "[A] not touching marble relief",
+        "[B] carvings because skin oils",
+        "[C] darken porous stone",
+        "[D] over decades"
+      ],
+      "answer": "[A] not touching marble relief",
+      "acceptedAnswers": [
+        "[A] not touching marble relief"
+      ],
+      "explanation": "Pola 'remind + object + not to + V1' menuntut 'not to touch'.",
+      "rationaleSource": "ITP-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 82
+    },
+    {
+      "id": "ITP-L1-02-Q083",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "Reed filtration marshes [A] operate effective without [B] synthetic polymers [C] as long as inflows remain [D] free of heavy metals.",
+      "options": [
+        "[A] operate effective without",
+        "[B] synthetic polymers",
+        "[C] as long as inflows remain",
+        "[D] free of heavy metals"
+      ],
+      "answer": "[A] operate effective without",
+      "acceptedAnswers": [
+        "[A] operate effective without"
+      ],
+      "explanation": "Kata kerja 'operate' harus dimodifikasi adverb 'effectively', bukan adjektiva 'effective'.",
+      "rationaleSource": "ITP-MOD-04",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 83
+    },
+    {
+      "id": "ITP-L1-02-Q084",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "Once streetcar tracks [A] were paved over, [B] traffic speeds rose briefly [C] until rush-hour volume [D] overwhelming residential boulevards.",
+      "options": [
+        "[A] were paved over,",
+        "[B] traffic speeds rose briefly",
+        "[C] until rush-hour volume",
+        "[D] overwhelming residential boulevards"
+      ],
+      "answer": "[D] overwhelming residential boulevards",
+      "acceptedAnswers": [
+        "[D] overwhelming residential boulevards"
+      ],
+      "explanation": "Klausa sesudah 'until' butuh kata kerja finite lampau 'overwhelmed', bukan participle 'overwhelming'.",
+      "rationaleSource": "ITP-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 84
+    },
+    {
+      "id": "ITP-L1-02-Q085",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "Port authorities [A] built granite seawalls [B] both to shield warehouses [C] from storm surges and [D] stabilizing harbor depths.",
+      "options": [
+        "[A] built granite seawalls",
+        "[B] both to shield warehouses",
+        "[C] from storm surges and",
+        "[D] stabilizing harbor depths"
+      ],
+      "answer": "[D] stabilizing harbor depths",
+      "acceptedAnswers": [
+        "[D] stabilizing harbor depths"
+      ],
+      "explanation": "Paralelisme tujuan sesudah 'to' memerlukan bentuk dasar '(to) stabilize', sejajar dengan 'shield'.",
+      "rationaleSource": "ITP-MOD-04",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 85
+    },
+    {
+      "id": "ITP-L1-02-Q086",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "Archaeological trenches [A] beneath the freight yard [B] yielded thousands of clay tobacco pipes, [C] less of which carried [D] legible maker stamps.",
+      "options": [
+        "[A] beneath the freight yard",
+        "[B] yielded thousands of clay tobacco pipes,",
+        "[C] less of which carried",
+        "[D] legible maker stamps"
+      ],
+      "answer": "[C] less of which carried",
+      "acceptedAnswers": [
+        "[C] less of which carried"
+      ],
+      "explanation": "'Clay tobacco pipes' benda jamak terhitung sehingga harus memakai 'few/fewer', bukan 'less'.",
+      "rationaleSource": "ITP-MOD-09",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 86
+    },
+    {
+      "id": "ITP-L1-02-Q087",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "The governor insisted [A] that the historic market hall [B] remains open [C] to small farmers [D] throughout renovation phases.",
+      "options": [
+        "[A] that the historic market hall",
+        "[B] remains open",
+        "[C] to small farmers",
+        "[D] throughout renovation phases"
+      ],
+      "answer": "[B] remains open",
+      "acceptedAnswers": [
+        "[B] remains open"
+      ],
+      "explanation": "Subjunctive setelah 'insisted that' memakai bare infinitive 'remain' tanpa '-s'.",
+      "rationaleSource": "ITP-MOD-03",
+      "difficulty": "C1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 87
+    },
+    {
+      "id": "ITP-L1-02-Q088",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "Hydraulic lock gates [A] are capable for opening [B] a forty-ton canal chamber [C] in less than [D] four minutes.",
+      "options": [
+        "[A] are capable for opening",
+        "[B] a forty-ton canal chamber",
+        "[C] in less than",
+        "[D] four minutes"
+      ],
+      "answer": "[A] are capable for opening",
+      "acceptedAnswers": [
+        "[A] are capable for opening"
+      ],
+      "explanation": "Adjektiva 'capable' berpasangan dengan preposisi 'of', bukan 'for' ('capable of opening').",
+      "rationaleSource": "ITP-MOD-09",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 88
+    },
+    {
+      "id": "ITP-L1-02-Q089",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "Because brick cisterns [A] had neglected for forty years, [B] winter tree roots cracked [C] their mortar seams [D] across three courtyards.",
+      "options": [
+        "[A] had neglected for forty years,",
+        "[B] winter tree roots cracked",
+        "[C] their mortar seams",
+        "[D] across three courtyards"
+      ],
+      "answer": "[A] had neglected for forty years,",
+      "acceptedAnswers": [
+        "[A] had neglected for forty years,"
+      ],
+      "explanation": "Cisterns merupakan objek penderita -> harus pasif 'had been neglected'.",
+      "rationaleSource": "ITP-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 89
+    },
+    {
+      "id": "ITP-L1-02-Q090",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "No sooner had electric trams [A] replaced horse buses [B] when outer villages [C] began expanding along [D] suburban rail spurs.",
+      "options": [
+        "[A] replaced horse buses",
+        "[B] when outer villages",
+        "[C] began expanding along",
+        "[D] suburban rail spurs"
+      ],
+      "answer": "[B] when outer villages",
+      "acceptedAnswers": [
+        "[B] when outer villages"
+      ],
+      "explanation": "'No sooner' wajib berpasangan dengan 'than', bukan 'when'.",
+      "rationaleSource": "ITP-MOD-09",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 90
+    },
+    {
+      "id": "ITP-L1-02-Q091",
       "section": "READING",
       "taskType": "CHOICE_SINGLE",
-      "prompt": "In Passage 1, what drawback of nineteenth-century culverts is mentioned?",
+      "prompt": "Passage 1 ('Reclaiming Industrial Urban Waterways') — Q1/10: What unintended vulnerability resulted from nineteenth-century concrete river channelization?",
       "options": [
-        "They speeded up water flow, worsening downstream flooding.",
-        "They dissolved rapidly in clean rainwater.",
-        "They cooled surrounding streets excessively.",
-        "They prevented factories from obtaining electricity."
+        "Granite walls collapsed immediately under wooden coal barges.",
+        "Seawalls trapped upstream ice sheets until mid-August.",
+        "Buried brick culverts filtered out toxic factory colors cleanly.",
+        "Cutting rivers off from natural floodplains intensified downstream flash-flood peaks."
       ],
-      "answer": "They speeded up water flow, worsening downstream flooding.",
+      "answer": "Cutting rivers off from natural floodplains intensified downstream flash-flood peaks.",
       "acceptedAnswers": [
-        "They speeded up water flow, worsening downstream flooding."
+        "Cutting rivers off from natural floodplains intensified downstream flash-flood peaks."
       ],
-      "explanation": "Kalimat kedua menyebut 'buried pipes accelerated stormwater runoff, triggering severe downstream flash floods'.",
+      "explanation": "Hilangnya rawa banjir alami membuat lonjakan hujan menghajar koridor beton sempit.",
       "rationaleSource": "ITP-MOD-05",
       "difficulty": "B2",
       "points": 1,
@@ -317,49 +2670,249 @@
       "reviewStatus": "VERIFIED_ORIGINAL",
       "passageId": "ITP02-P1",
       "audioAssetId": null,
-      "sortIndex": 10
+      "sortIndex": 91
     },
     {
-      "id": "ITP-L1-02-Q11",
+      "id": "ITP-L1-02-Q092",
       "section": "READING",
       "taskType": "CHOICE_SINGLE",
-      "prompt": "According to Passage 2 ('Roman Hydraulic Concrete'), how does seawater affect Roman piers?",
+      "prompt": "Passage 1 ('Reclaiming Industrial Urban Waterways') — Q2/10: How does 'soft-edge remediation' modify vertical riverbanks?",
       "options": [
-        "It reacts with volcanic ash minerals to seal tiny cracks.",
-        "It rusts internal steel rods within twenty years.",
-        "It dissolves slaked lime immediately upon contact.",
-        "It turns breakwaters into porous limestone caves."
+        "It covers entire shallow urban creeks beneath clean shopping plazas.",
+        "It sprays synthetic blue concrete paint over damp gravel bars.",
+        "It carves terraced vegetated shelves backed by root-anchored rock ledges.",
+        "It pours double-height titanium flood barriers along downtown docks."
       ],
-      "answer": "It reacts with volcanic ash minerals to seal tiny cracks.",
+      "answer": "It carves terraced vegetated shelves backed by root-anchored rock ledges.",
       "acceptedAnswers": [
-        "It reacts with volcanic ash minerals to seal tiny cracks."
+        "It carves terraced vegetated shelves backed by root-anchored rock ledges."
       ],
-      "explanation": "Teks menerangkan reaksi air laut dan abu pozzolana membentuk kristal pengunci yang menyembuhkan retakan mikro.",
+      "explanation": "Teraskaki lembut menanam bakau/dedalu dan gabion berakar untuk menyerap luapan banjir.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP02-P1",
+      "audioAssetId": null,
+      "sortIndex": 92
+    },
+    {
+      "id": "ITP-L1-02-Q093",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 1 ('Reclaiming Industrial Urban Waterways') — Q3/10: The word 'severed' in sentence 2 is closest in meaning to:",
+      "options": [
+        "photographed",
+        "cut off",
+        "expanded",
+        "protected"
+      ],
+      "answer": "cut off",
+      "acceptedAnswers": [
+        "cut off"
+      ],
+      "explanation": "'Severed floodplain marshes' bermakna memutus hubungan sungai dengan rawa banjirnya.",
       "rationaleSource": "ITP-MOD-05",
       "difficulty": "B2",
       "points": 1,
       "license": "Original",
       "reviewStatus": "VERIFIED_ORIGINAL",
-      "passageId": "ITP02-P2",
+      "passageId": "ITP02-P1",
       "audioAssetId": null,
-      "sortIndex": 11
+      "sortIndex": 93
     },
     {
-      "id": "ITP-L1-02-Q12",
+      "id": "ITP-L1-02-Q094",
       "section": "READING",
       "taskType": "CHOICE_SINGLE",
-      "prompt": "In Passage 2, the word 'intact' is closest in meaning to:",
+      "prompt": "Passage 1 ('Reclaiming Industrial Urban Waterways') — Q4/10: Why does the author mention stoneflies and mayfly nymphs?",
       "options": [
-        "undamaged",
-        "submerged",
-        "hollow",
-        "abandoned"
+        "Their return serves as living biological evidence of cleaner oxygenated water.",
+        "They feast cleanly on rotting plastic tires floating in culverts.",
+        "Adult stoneflies eat overhanging willow buds along riverbanks.",
+        "Municipal anglers harvest mayflies for winter bridge bait."
       ],
-      "answer": "undamaged",
+      "answer": "Their return serves as living biological evidence of cleaner oxygenated water.",
       "acceptedAnswers": [
-        "undamaged"
+        "Their return serves as living biological evidence of cleaner oxygenated water."
       ],
-      "explanation": "'Intact' berarti utuh dan tidak rusak meskipun diterjang ombak selama dua milenium.",
+      "explanation": "Kehadiran serangga indikator membuktikan pemulihan kualitas air dan oksigen.",
+      "rationaleSource": "ITP-MOD-10",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP02-P1",
+      "audioAssetId": null,
+      "sortIndex": 94
+    },
+    {
+      "id": "ITP-L1-02-Q095",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 1 ('Reclaiming Industrial Urban Waterways') — Q5/10: What infrastructure improvement had to pair with bank shaping for sensitive insects to return?",
+      "options": [
+        "Eliminating bicycle bridges above downtown stone mills.",
+        "Adding lime gravel monthly to triple water acidity.",
+        "Covering gravel riffles with smooth rubber pond mats.",
+        "Separating household and industrial sewer pipes from river channels."
+      ],
+      "answer": "Separating household and industrial sewer pipes from river channels.",
+      "acceptedAnswers": [
+        "Separating household and industrial sewer pipes from river channels."
+      ],
+      "explanation": "Serangga pulih setelah pemisahan saluran limbah kota dari aliran sungai.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP02-P1",
+      "audioAssetId": null,
+      "sortIndex": 95
+    },
+    {
+      "id": "ITP-L1-02-Q096",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 1 ('Reclaiming Industrial Urban Waterways') — Q6/10: The word 'championed' in paragraph 2 is closest in meaning to:",
+      "options": [
+        "abandoned",
+        "concealed",
+        "advocated",
+        "defeated"
+      ],
+      "answer": "advocated",
+      "acceptedAnswers": [
+        "advocated"
+      ],
+      "explanation": "'Championed' bermakna mendukung aktif/memperjuangkan pendekatan tersebut.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP02-P1",
+      "audioAssetId": null,
+      "sortIndex": 96
+    },
+    {
+      "id": "ITP-L1-02-Q097",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 1 ('Reclaiming Industrial Urban Waterways') — Q7/10: The word 'those' in 'Those concrete chutes' refers to:",
+      "options": [
+        "mayfly nymphs",
+        "stone walls and brick tunnels engineered earlier",
+        "textile factory owners",
+        "floodplain marshes"
+      ],
+      "answer": "stone walls and brick tunnels engineered earlier",
+      "acceptedAnswers": [
+        "stone walls and brick tunnels engineered earlier"
+      ],
+      "explanation": "'Those' merujuk dinding granit dan gorong-gorong beton dari kalimat pertama.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP02-P1",
+      "audioAssetId": null,
+      "sortIndex": 97
+    },
+    {
+      "id": "ITP-L1-02-Q098",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 1 ('Reclaiming Industrial Urban Waterways') — Q8/10: Beyond flood buffering and water clarity, what social benefit followed daylighted riverbanks?",
+      "options": [
+        "Shaded waterfront bike and walking towpaths reconnected isolated city wards.",
+        "Brick textile mills doubled wool output using tidal wheels.",
+        "Private yachts paid high tolls to anchor downtown.",
+        "Apartment basements flooded safely without insurance."
+      ],
+      "answer": "Shaded waterfront bike and walking towpaths reconnected isolated city wards.",
+      "acceptedAnswers": [
+        "Shaded waterfront bike and walking towpaths reconnected isolated city wards."
+      ],
+      "explanation": "Jalur tepi sungai rindang menghubungkan kawasan kota sebagai jalur sepeda komuter.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP02-P1",
+      "audioAssetId": null,
+      "sortIndex": 98
+    },
+    {
+      "id": "ITP-L1-02-Q099",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 1 ('Reclaiming Industrial Urban Waterways') — Q9/10: Which detail is NOT described in the passage?",
+      "options": [
+        "Willow-anchored shelves absorbing rising seasonal water swells.",
+        "Pollutant-sensitive stream insects returning within five years.",
+        "Urban sewer separation helping remove ammonia contamination.",
+        "Operating hydro-electric turbines behind granite mill sluices."
+      ],
+      "answer": "Operating hydro-electric turbines behind granite mill sluices.",
+      "acceptedAnswers": [
+        "Operating hydro-electric turbines behind granite mill sluices."
+      ],
+      "explanation": "Turbin pembangkit listrik tidak pernah disebut dalam teks.",
+      "rationaleSource": "ITP-MOD-10",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP02-P1",
+      "audioAssetId": null,
+      "sortIndex": 99
+    },
+    {
+      "id": "ITP-L1-02-Q100",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 1 ('Reclaiming Industrial Urban Waterways') — Q10/10: Where does the passage shift from historical engineering flaws to modern ecological recovery?",
+      "options": [
+        "Before explaining nineteenth-century textile booms.",
+        "Nowhere—the entire text condemns riverside trees.",
+        "At the start of the discussion describing soft-edge remediation.",
+        "Strictly within the final sentence on neighborhood bike paths."
+      ],
+      "answer": "At the start of the discussion describing soft-edge remediation.",
+      "acceptedAnswers": [
+        "At the start of the discussion describing soft-edge remediation."
+      ],
+      "explanation": "Titik balik argumen terjadi pada bagian yang memperkenalkan remediasi tepian lunak.",
+      "rationaleSource": "ITP-MOD-10",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP02-P1",
+      "audioAssetId": null,
+      "sortIndex": 100
+    },
+    {
+      "id": "ITP-L1-02-Q101",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 2 ('Guastavino Vaults and Structural Tile Arches') — Q1/10: What remarkable structural quality defines Guastavino tile domes?",
+      "options": [
+        "Interlocking spruce beams glued overnight with natural bee wax.",
+        "Extremely thin layered clay vaults spanning wide rooms without massive wood bracing.",
+        "Hollow cast-iron columns filled daily with liquid cold water.",
+        "Floating concrete slabs suspended cleanly from copper roof wires."
+      ],
+      "answer": "Extremely thin layered clay vaults spanning wide rooms without massive wood bracing.",
+      "acceptedAnswers": [
+        "Extremely thin layered clay vaults spanning wide rooms without massive wood bracing."
+      ],
+      "explanation": "Kubah ubin tipis berlapis mampu membentang lebar tanpa perancah kayu raksasa.",
       "rationaleSource": "ITP-MOD-05",
       "difficulty": "B1",
       "points": 1,
@@ -367,8 +2920,983 @@
       "reviewStatus": "VERIFIED_ORIGINAL",
       "passageId": "ITP02-P2",
       "audioAssetId": null,
-      "sortIndex": 12
+      "sortIndex": 101
+    },
+    {
+      "id": "ITP-L1-02-Q102",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 2 ('Guastavino Vaults and Structural Tile Arches') — Q2/10: How did fast-setting gypsum mortar alter the construction workflow?",
+      "options": [
+        "Each thin tile adhered within minutes so masons needed minimal temporary scaffolding.",
+        "Builders waited six snowy winters before stripping timber forms away.",
+        "Tiles could be poured like hot glass directly into iron floor trenches.",
+        "Masons painted terracotta arches silver once steel beams rusted."
+      ],
+      "answer": "Each thin tile adhered within minutes so masons needed minimal temporary scaffolding.",
+      "acceptedAnswers": [
+        "Each thin tile adhered within minutes so masons needed minimal temporary scaffolding."
+      ],
+      "explanation": "Adukan cepat mengeras memungkinkan penyusunan kubah melayang minim penyangga kayu.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP02-P2",
+      "audioAssetId": null,
+      "sortIndex": 102
+    },
+    {
+      "id": "ITP-L1-02-Q103",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 2 ('Guastavino Vaults and Structural Tile Arches') — Q3/10: The word 'sweeping' in sentence 1 is closest in meaning to:",
+      "options": [
+        "dusty",
+        "brittle",
+        "subterranean",
+        "expansive"
+      ],
+      "answer": "expansive",
+      "acceptedAnswers": [
+        "expansive"
+      ],
+      "explanation": "'Sweeping ceilings' merujuk langit-langit melengkung lebar/megah.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP02-P2",
+      "audioAssetId": null,
+      "sortIndex": 103
+    },
+    {
+      "id": "ITP-L1-02-Q104",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 2 ('Guastavino Vaults and Structural Tile Arches') — Q4/10: Compared with traditional carved stone vaults, Guastavino vaults were:",
+      "options": [
+        "Unable to bear weight inside bustling commuter train halls.",
+        "Constructed exclusively from unbaked desert sun-dried bricks.",
+        "Significantly lighter in dead load and far less timber-intensive during erection.",
+        "Thicker per square meter and slower to bond under damp rain."
+      ],
+      "answer": "Significantly lighter in dead load and far less timber-intensive during erection.",
+      "acceptedAnswers": [
+        "Significantly lighter in dead load and far less timber-intensive during erection."
+      ],
+      "explanation": "Lebih ringan dan hemat kayu penyangga dibanding batu pahat abad pertengahan.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP02-P2",
+      "audioAssetId": null,
+      "sortIndex": 104
+    },
+    {
+      "id": "ITP-L1-02-Q105",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 2 ('Guastavino Vaults and Structural Tile Arches') — Q5/10: Why were terracotta vaults prized in dense early-twentieth-century cities after major conflagrations?",
+      "options": [
+        "Wood-burning fireplaces smoked less beneath thin domes.",
+        "Fired ceramic clay and masonry mortar stayed virtually fireproof.",
+        "Hollow vault seams stored emergency rainwater hoses overhead.",
+        "Terracotta tiles melted smoothly to seal leaking roof holes."
+      ],
+      "answer": "Fired ceramic clay and masonry mortar stayed virtually fireproof.",
+      "acceptedAnswers": [
+        "Fired ceramic clay and masonry mortar stayed virtually fireproof."
+      ],
+      "explanation": "Ubin keramik bakar tahan api terhadap bencana kebakaran kota besar.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP02-P2",
+      "audioAssetId": null,
+      "sortIndex": 105
+    },
+    {
+      "id": "ITP-L1-02-Q106",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 2 ('Guastavino Vaults and Structural Tile Arches') — Q6/10: What does 'those graceful thin domes' refer to in sentence 2?",
+      "options": [
+        "Terracotta ceilings above Grand Central and historic libraries.",
+        "Thick tapered cathedral stone piers.",
+        "Forests of wooden construction poles.",
+        "Steel railroad bridges beneath New York streets."
+      ],
+      "answer": "Terracotta ceilings above Grand Central and historic libraries.",
+      "acceptedAnswers": [
+        "Terracotta ceilings above Grand Central and historic libraries."
+      ],
+      "explanation": "'Those' merujuk langit-langit terakota lebar di kalimat pertama.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP02-P2",
+      "audioAssetId": null,
+      "sortIndex": 106
+    },
+    {
+      "id": "ITP-L1-02-Q107",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 2 ('Guastavino Vaults and Structural Tile Arches') — Q7/10: What secondary acoustic engineering milestone did Guastavino's firm achieve?",
+      "options": [
+        "Smooth glazed tiles reflected loud train whistles back into ticket booths.",
+        "Bronze bell chimes echoed uniformly for twelve continuous seconds.",
+        "Brick layers sealed basement tracks in quiet asphalt rubber.",
+        "Porous formulated clay tiles soaked up harsh echoes inside vast vaulted halls."
+      ],
+      "answer": "Porous formulated clay tiles soaked up harsh echoes inside vast vaulted halls.",
+      "acceptedAnswers": [
+        "Porous formulated clay tiles soaked up harsh echoes inside vast vaulted halls."
+      ],
+      "explanation": "Ubin berpori rancangan khusus mampu meredam gema di ruang publik besar.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP02-P2",
+      "audioAssetId": null,
+      "sortIndex": 107
+    },
+    {
+      "id": "ITP-L1-02-Q108",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 2 ('Guastavino Vaults and Structural Tile Arches') — Q8/10: The word 'clamor' in the final sentence is closest in meaning to:",
+      "options": [
+        "moisture",
+        "wealth",
+        "uproar",
+        "coolness"
+      ],
+      "answer": "uproar",
+      "acceptedAnswers": [
+        "uproar"
+      ],
+      "explanation": "'Clamor' berarti suara gaduh/kebisingan ramai.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "C1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP02-P2",
+      "audioAssetId": null,
+      "sortIndex": 108
+    },
+    {
+      "id": "ITP-L1-02-Q109",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 2 ('Guastavino Vaults and Structural Tile Arches') — Q9/10: Which city and origin figure directly in the birth of Guastavino's career shift?",
+      "options": [
+        "Importing concrete railway arches from Tokyo shipyards.",
+        "Bringing Catalan traditional vaulting craft to New York in 1881.",
+        "Inventing heavy steel I-beams across medieval Parisian bridges.",
+        "Mining red sandstone domes inside western desert canyons."
+      ],
+      "answer": "Bringing Catalan traditional vaulting craft to New York in 1881.",
+      "acceptedAnswers": [
+        "Bringing Catalan traditional vaulting craft to New York in 1881."
+      ],
+      "explanation": "Ia membawa teknik tradisional Catalonia ke New York tahun 1881.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP02-P2",
+      "audioAssetId": null,
+      "sortIndex": 109
+    },
+    {
+      "id": "ITP-L1-02-Q110",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 2 ('Guastavino Vaults and Structural Tile Arches') — Q10/10: Which advantage is NOT attributed to Guastavino's system in the passage?",
+      "options": [
+        "Generating hydro-electric power from dome roof drains.",
+        "Fire resistance compared to wooden framing.",
+        "Reduced structural roof weight.",
+        "Acoustic sound absorption using porous tiles."
+      ],
+      "answer": "Generating hydro-electric power from dome roof drains.",
+      "acceptedAnswers": [
+        "Generating hydro-electric power from dome roof drains."
+      ],
+      "explanation": "Tenaga hidroelektrik tidak pernah disebut.",
+      "rationaleSource": "ITP-MOD-10",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP02-P2",
+      "audioAssetId": null,
+      "sortIndex": 110
+    },
+    {
+      "id": "ITP-L1-02-Q111",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 3 ('Medieval Guild Apprenticeships and Civic Weights') — Q1/10: What broader economic role did craft guilds play beyond setting local wages?",
+      "options": [
+        "They printed mass textbooks teaching textile geometry nationwide.",
+        "They outlawed woolen dyeing across all Flemish trade fairs.",
+        "They gave away free brass yardsticks to roaming rural farmers.",
+        "They ensured uniform quality and honest weights so distant buyers trusted town exports."
+      ],
+      "answer": "They ensured uniform quality and honest weights so distant buyers trusted town exports.",
+      "acceptedAnswers": [
+        "They ensured uniform quality and honest weights so distant buyers trusted town exports."
+      ],
+      "explanation": "Gilda menjamin mutu produk dan akurasi timbangan agar reputasi ekspor kota terjaga.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP02-P3",
+      "audioAssetId": null,
+      "sortIndex": 111
+    },
+    {
+      "id": "ITP-L1-02-Q112",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 3 ('Medieval Guild Apprenticeships and Civic Weights') — Q2/10: How long did a youth typically spend training as an apprentice under a master artisan?",
+      "options": [
+        "Twenty years working solely for silver journeyman wages.",
+        "Until distant Italian fairs abolished iron market scales.",
+        "Roughly five to seven years learning craft techniques directly in the workshop.",
+        "Six winter weeks copying guild seal stamps."
+      ],
+      "answer": "Roughly five to seven years learning craft techniques directly in the workshop.",
+      "acceptedAnswers": [
+        "Roughly five to seven years learning craft techniques directly in the workshop."
+      ],
+      "explanation": "Teks menyebut masa magang 5–7 tahun di bawah pengawasan master.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP02-P3",
+      "audioAssetId": null,
+      "sortIndex": 112
+    },
+    {
+      "id": "ITP-L1-02-Q113",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 3 ('Medieval Guild Apprenticeships and Civic Weights') — Q3/10: Originally, what was a medieval 'masterpiece'?",
+      "options": [
+        "A flawed scrap bolt of wool discarded during weekly inspections.",
+        "A demonstration piece proving an artisan's technical skill to guild elders.",
+        "An ornamental gold crown worn once per harvest festival.",
+        "A royal tax charter exemption hung over market doors."
+      ],
+      "answer": "A demonstration piece proving an artisan's technical skill to guild elders.",
+      "acceptedAnswers": [
+        "A demonstration piece proving an artisan's technical skill to guild elders."
+      ],
+      "explanation": "Masterpiece awal adalah karya uji kelayakan untuk naik tingkat menjadi pengrajin mandiri.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP02-P3",
+      "audioAssetId": null,
+      "sortIndex": 113
+    },
+    {
+      "id": "ITP-L1-02-Q114",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 3 ('Medieval Guild Apprenticeships and Civic Weights') — Q4/10: What does the passage reveal about journeymen within the guild ladder?",
+      "options": [
+        "They were certified wage-earning workers saving to establish independent shops.",
+        "They never learned complex loom setup or dye formulas.",
+        "They served as unpaid guards inspecting town gates.",
+        "They abandoned city craft towns permanently after five years."
+      ],
+      "answer": "They were certified wage-earning workers saving to establish independent shops.",
+      "acceptedAnswers": [
+        "They were certified wage-earning workers saving to establish independent shops."
+      ],
+      "explanation": "Journeyman sudah kompeten dan bekerja berupah sembari mengumpulkan modal.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP02-P3",
+      "audioAssetId": null,
+      "sortIndex": 114
+    },
+    {
+      "id": "ITP-L1-02-Q115",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 3 ('Medieval Guild Apprenticeships and Civic Weights') — Q5/10: Why were standardized municipal iron weights bolted visibly outside town gates?",
+      "options": [
+        "To anchor canvas market awnings against sudden coastal gales.",
+        "Because town hall vaults lacked locks for iron bars.",
+        "So blacksmiths could re-forge heavy scales daily.",
+        "So buyers and inspectors could publicly verify fairness against fixed benchmarks."
+      ],
+      "answer": "So buyers and inspectors could publicly verify fairness against fixed benchmarks.",
+      "acceptedAnswers": [
+        "So buyers and inspectors could publicly verify fairness against fixed benchmarks."
+      ],
+      "explanation": "Timbangan standar dipasang terbuka untuk uji banding publik melawan kecurangan.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP02-P3",
+      "audioAssetId": null,
+      "sortIndex": 115
+    },
+    {
+      "id": "ITP-L1-02-Q116",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 3 ('Medieval Guild Apprenticeships and Civic Weights') — Q6/10: The word 'exacting' in 'an exacting masterpiece' is closest in meaning to:",
+      "options": [
+        "forgiving",
+        "inexpensive",
+        "demanding",
+        "rapid"
+      ],
+      "answer": "demanding",
+      "acceptedAnswers": [
+        "demanding"
+      ],
+      "explanation": "'Exacting' berarti menuntut ketelitian dan standar tinggi.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "C1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP02-P3",
+      "audioAssetId": null,
+      "sortIndex": 116
+    },
+    {
+      "id": "ITP-L1-02-Q117",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 3 ('Medieval Guild Apprenticeships and Civic Weights') — Q7/10: The phrase 'far from acting purely as' suggests that:",
+      "options": [
+        "Weavers sold most poorly dyed cloth quietly at dawn.",
+        "Viewing guilds solely as greedy cartels overlooks their constructive quality-control roles.",
+        "Guild elders strictly prohibited apprentices from entering local markets.",
+        "Italian wool prices stayed lower than town hall bread fees."
+      ],
+      "answer": "Viewing guilds solely as greedy cartels overlooks their constructive quality-control roles.",
+      "acceptedAnswers": [
+        "Viewing guilds solely as greedy cartels overlooks their constructive quality-control roles."
+      ],
+      "explanation": "Ungkapan menekankan peran penjamin mutu sering terabaikan bila gilda hanya dicap monopoli.",
+      "rationaleSource": "ITP-MOD-10",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP02-P3",
+      "audioAssetId": null,
+      "sortIndex": 117
+    },
+    {
+      "id": "ITP-L1-02-Q118",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 3 ('Medieval Guild Apprenticeships and Civic Weights') — Q8/10: What happened when inspectors uncovered underweight goods or shoddy fabric at market?",
+      "options": [
+        "Offending goods were confiscated or destroyed to preserve town market trust.",
+        "Inspectors hid flaws beneath Flemish guild stamps.",
+        "Sellers merely doubled asking prices the next morning.",
+        "Apprentices paid double wages to market sheriffs."
+      ],
+      "answer": "Offending goods were confiscated or destroyed to preserve town market trust.",
+      "acceptedAnswers": [
+        "Offending goods were confiscated or destroyed to preserve town market trust."
+      ],
+      "explanation": "Produk curang dimusnahkan demi menjaga kredibilitas perdagangan kota.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP02-P3",
+      "audioAssetId": null,
+      "sortIndex": 118
+    },
+    {
+      "id": "ITP-L1-02-Q119",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 3 ('Medieval Guild Apprenticeships and Civic Weights') — Q9/10: Which skill is specifically mentioned as part of an apprentice weaver's training?",
+      "options": [
+        "Carving bronze city bells cleanly out of clay molds.",
+        "Operating steam-powered iron spindles.",
+        "Writing royal Latin treaties for export convoys.",
+        "Managing complex looms alongside natural mordant dye chemistry."
+      ],
+      "answer": "Managing complex looms alongside natural mordant dye chemistry.",
+      "acceptedAnswers": [
+        "Managing complex looms alongside natural mordant dye chemistry."
+      ],
+      "explanation": "Teks menyebut pemasangan alat tenun, kimia pewarna mordan, serta pembukuan.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP02-P3",
+      "audioAssetId": null,
+      "sortIndex": 119
+    },
+    {
+      "id": "ITP-L1-02-Q120",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 3 ('Medieval Guild Apprenticeships and Civic Weights') — Q10/10: The word 'amassing' in paragraph 2 is closest in meaning to:",
+      "options": [
+        "borrowing",
+        "disguising",
+        "accumulating",
+        "spending"
+      ],
+      "answer": "accumulating",
+      "acceptedAnswers": [
+        "accumulating"
+      ],
+      "explanation": "'Amassing capital' bermakna mengumpulkan/mengakumulasi modal.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP02-P3",
+      "audioAssetId": null,
+      "sortIndex": 120
+    },
+    {
+      "id": "ITP-L1-02-Q121",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 4 ('Early Streetcars and Suburban Radial Expansion') — Q1/10: Why did pre-1880s industrial towns remain confined within tight three-kilometer rings?",
+      "options": [
+        "Electric power poles snapped easily past three kilometers.",
+        "Most residents relied on walking daily distances between housing and workplaces.",
+        "Early municipal charters outlawed residential brick houses beyond river docks.",
+        "Horse stables occupied every fertile suburban meadow outside towns."
+      ],
+      "answer": "Most residents relied on walking daily distances between housing and workplaces.",
+      "acceptedAnswers": [
+        "Most residents relied on walking daily distances between housing and workplaces."
+      ],
+      "explanation": "Ketergantungan berjalan kaki membatasi radius permukiman terhadap tempat kerja.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP02-P4",
+      "audioAssetId": null,
+      "sortIndex": 121
+    },
+    {
+      "id": "ITP-L1-02-Q122",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 4 ('Early Streetcars and Suburban Radial Expansion') — Q2/10: What practical flaw prevented early coal steam locomotives from operating as neighborhood streetcars?",
+      "options": [
+        "Heavy soot smoke and loud steam exhaust proved intolerable along tight home fronts.",
+        "Wooden tracks could not carry copper overhead trolley poles.",
+        "Steam engines halted permanently on slopes exceeding two degrees.",
+        "Passengers lacked spare pennies for fuel tickets."
+      ],
+      "answer": "Heavy soot smoke and loud steam exhaust proved intolerable along tight home fronts.",
+      "acceptedAnswers": [
+        "Heavy soot smoke and loud steam exhaust proved intolerable along tight home fronts."
+      ],
+      "explanation": "Lokomotif uap mengeluarkan asap jelaga tebal yang tidak cocok bagi jalan permukiman sempit.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP02-P4",
+      "audioAssetId": null,
+      "sortIndex": 122
+    },
+    {
+      "id": "ITP-L1-02-Q123",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 4 ('Early Streetcars and Suburban Radial Expansion') — Q3/10: How did Frank Sprague's 1888 electric system safely deliver traction power to streetcars?",
+      "options": [
+        "Subterranean batteries exploded cleanly beneath cobblestone gutters.",
+        "Small coal furnaces warmed bronze traction rails nightly.",
+        "Carriages rolled downhill continuously on oiled wooden tracks.",
+        "Overhead copper lines fed chassis motors via spring-pressed roof poles."
+      ],
+      "answer": "Overhead copper lines fed chassis motors via spring-pressed roof poles.",
+      "acceptedAnswers": [
+        "Overhead copper lines fed chassis motors via spring-pressed roof poles."
+      ],
+      "explanation": "Kabel tembaga atas terhubung via tiang berpegas menuju motor di bawah bodi trem.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP02-P4",
+      "audioAssetId": null,
+      "sortIndex": 123
+    },
+    {
+      "id": "ITP-L1-02-Q124",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 4 ('Early Streetcars and Suburban Radial Expansion') — Q4/10: The word 'compact' in sentence 1 is closest in meaning to:",
+      "options": [
+        "polluted",
+        "unstable",
+        "tightly clustered",
+        "expensive"
+      ],
+      "answer": "tightly clustered",
+      "acceptedAnswers": [
+        "tightly clustered"
+      ],
+      "explanation": "'Compact' berarti padat/terpusat dalam ruang sempit.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP02-P4",
+      "audioAssetId": null,
+      "sortIndex": 124
+    },
+    {
+      "id": "ITP-L1-02-Q125",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 4 ('Early Streetcars and Suburban Radial Expansion') — Q5/10: What urban demographic shift occurred once affordable electric streetcars ran reliably?",
+      "options": [
+        "Horse omnibuses quadrupled ticket prices inside city centers.",
+        "Everyday workers moved along radial rail corridors out into new streetcar suburbs.",
+        "Wealthy factory owners crowded closer into harbor basements.",
+        "Corner groceries closed permanently along passenger stops."
+      ],
+      "answer": "Everyday workers moved along radial rail corridors out into new streetcar suburbs.",
+      "acceptedAnswers": [
+        "Everyday workers moved along radial rail corridors out into new streetcar suburbs."
+      ],
+      "explanation": "Ongkos murah dan kecepatan trem mendorong tumbuhnya pinggiran kota di sepanjang koridor rel.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP02-P4",
+      "audioAssetId": null,
+      "sortIndex": 125
+    },
+    {
+      "id": "ITP-L1-02-Q126",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 4 ('Early Streetcars and Suburban Radial Expansion') — Q6/10: What does the adjective 'linear' imply about early streetcar suburbs?",
+      "options": [
+        "Housing and local retail clustered in corridors stretching outward along rail lines.",
+        "Suburbs formed rigid circular towers without neighborhood grocers.",
+        "Developers flattened every curved hillside orchard into straight alleys.",
+        "Neighborhoods disconnected completely from downtown transit hubs."
+      ],
+      "answer": "Housing and local retail clustered in corridors stretching outward along rail lines.",
+      "acceptedAnswers": [
+        "Housing and local retail clustered in corridors stretching outward along rail lines."
+      ],
+      "explanation": "'Linear streetcar suburbs' menggambarkan pola hunian memanjang mengikuti rel.",
+      "rationaleSource": "ITP-MOD-10",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP02-P4",
+      "audioAssetId": null,
+      "sortIndex": 126
+    },
+    {
+      "id": "ITP-L1-02-Q127",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 4 ('Early Streetcars and Suburban Radial Expansion') — Q7/10: The word 'spewed' in paragraph 1 is closest in meaning to:",
+      "options": [
+        "filtered",
+        "condensed",
+        "silenced",
+        "discharged"
+      ],
+      "answer": "discharged",
+      "acceptedAnswers": [
+        "discharged"
+      ],
+      "explanation": "'Spewed choking soot' bermakna menyemburkan/mengeluarkan jelaga pekat.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP02-P4",
+      "audioAssetId": null,
+      "sortIndex": 127
+    },
+    {
+      "id": "ITP-L1-02-Q128",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 4 ('Early Streetcars and Suburban Radial Expansion') — Q8/10: How did commercial shops adapt physically within new electric-transit neighborhoods?",
+      "options": [
+        "Pedestrian sidewalks disappeared completely around suburban tracks.",
+        "Horse stables converted neatly into glass trolley factories.",
+        "Independent groceries and bakeries gathered conveniently around regular passenger boarding stops.",
+        "Warehouses locked loading doors away from residential tram lines."
+      ],
+      "answer": "Independent groceries and bakeries gathered conveniently around regular passenger boarding stops.",
+      "acceptedAnswers": [
+        "Independent groceries and bakeries gathered conveniently around regular passenger boarding stops."
+      ],
+      "explanation": "Toko serba ada bermunculan alami tepat di sekitar pemberhentian trem.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP02-P4",
+      "audioAssetId": null,
+      "sortIndex": 128
+    },
+    {
+      "id": "ITP-L1-02-Q129",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 4 ('Early Streetcars and Suburban Radial Expansion') — Q9/10: Which detail about early horse-drawn omnibuses is accurate according to the passage?",
+      "options": [
+        "They carried over ninety seated factory clerks cleanly.",
+        "They offered jarring cobblestone rides at fares too steep for ordinary laborers.",
+        "They raced steadily at twenty kilometers per hour up steep hills.",
+        "They connected rural towns thirty kilometers past harbor squares."
+      ],
+      "answer": "They offered jarring cobblestone rides at fares too steep for ordinary laborers.",
+      "acceptedAnswers": [
+        "They offered jarring cobblestone rides at fares too steep for ordinary laborers."
+      ],
+      "explanation": "Omnibus kuda terguncang di batu bundar dan hanya terjangkau 12 penumpang kaya.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP02-P4",
+      "audioAssetId": null,
+      "sortIndex": 129
+    },
+    {
+      "id": "ITP-L1-02-Q130",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 4 ('Early Streetcars and Suburban Radial Expansion') — Q10/10: What pattern organizes the four historical stages in this passage?",
+      "options": [
+        "Technological bottleneck -> failed interim engines -> electric breakthrough -> urban geography shift.",
+        "Economic decline -> harbor collapse -> horse shortage -> modern subway.",
+        "Suburban farming -> forest fires -> asphalt roads -> streetcar removal.",
+        "Biographical childhood -> college chemistry -> patent dispute -> city mayor."
+      ],
+      "answer": "Technological bottleneck -> failed interim engines -> electric breakthrough -> urban geography shift.",
+      "acceptedAnswers": [
+        "Technological bottleneck -> failed interim engines -> electric breakthrough -> urban geography shift."
+      ],
+      "explanation": "Struktur bergerak dari masalah kota padat, ke keterbatasan solusi awal, penemuan Sprague 1888, lalu dampaknya pada tata kota.",
+      "rationaleSource": "ITP-MOD-10",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP02-P4",
+      "audioAssetId": null,
+      "sortIndex": 130
+    },
+    {
+      "id": "ITP-L1-02-Q131",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 5 ('Constructed Wetland Reed Beds in Municipal Wastewater') — Q1/10: Why have smaller towns looked toward constructed reed-bed wetlands?",
+      "options": [
+        "They produce clean drinking water inside shallow basement concrete cisterns.",
+        "Concrete treatment plants operate strictly during freezing January months.",
+        "Common reeds consume raw plastic bags cleanly overnight.",
+        "They purify wastewater effectively with far lower electricity and chemical operating costs."
+      ],
+      "answer": "They purify wastewater effectively with far lower electricity and chemical operating costs.",
+      "acceptedAnswers": [
+        "They purify wastewater effectively with far lower electricity and chemical operating costs."
+      ],
+      "explanation": "Lahan basah buatan menekan kebutuhan listrik aerator mekanis dan bahan kimia mahal.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP02-P5",
+      "audioAssetId": null,
+      "sortIndex": 131
+    },
+    {
+      "id": "ITP-L1-02-Q132",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 5 ('Constructed Wetland Reed Beds in Municipal Wastewater') — Q2/10: How do living Phragmites reeds directly assist water-cleaning microbes?",
+      "options": [
+        "Floating green leaves shade anaerobic microbes completely out of wetlands.",
+        "Tough reed rhizomes digest iron pipes cleanly inside settling basins.",
+        "Hollow stems conduct oxygen down into saturated root gravels for helpful aerobic bacteria.",
+        "Dry seeds kill ammonia molecules when blown across sunny lagoons."
+      ],
+      "answer": "Hollow stems conduct oxygen down into saturated root gravels for helpful aerobic bacteria.",
+      "acceptedAnswers": [
+        "Hollow stems conduct oxygen down into saturated root gravels for helpful aerobic bacteria."
+      ],
+      "explanation": "Batang berongga mengalirkan oksigen ke zona perakaran untuk bakteri aerob.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP02-P5",
+      "audioAssetId": null,
+      "sortIndex": 132
+    },
+    {
+      "id": "ITP-L1-02-Q133",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 5 ('Constructed Wetland Reed Beds in Municipal Wastewater') — Q3/10: The word 'mosaic' in paragraph 2 refers to:",
+      "options": [
+        "seasonal mud cracks forming along summer river bends",
+        "a mixed patchwork of oxygen-rich root halos and oxygen-poor gravel pockets",
+        "decorative colored floor stone laid around municipal town fountains",
+        "a computer filter tracking coastal fishing net damage"
+      ],
+      "answer": "a mixed patchwork of oxygen-rich root halos and oxygen-poor gravel pockets",
+      "acceptedAnswers": [
+        "a mixed patchwork of oxygen-rich root halos and oxygen-poor gravel pockets"
+      ],
+      "explanation": "Mozaik mikro mengacu mosaik zona beroksigen dan zona anaerobik bersebelahan.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "C1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP02-P5",
+      "audioAssetId": null,
+      "sortIndex": 133
+    },
+    {
+      "id": "ITP-L1-02-Q134",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 5 ('Constructed Wetland Reed Beds in Municipal Wastewater') — Q4/10: What cooperative transformation occurs between aerobic and anaerobic zones inside reed gravel?",
+      "options": [
+        "Ammonia turns sequentially into nitrate and eventually safe airborne nitrogen gas.",
+        "Heavy metals transform swiftly into bright oxygen bubbles.",
+        "Clean gravel dissolves slowly into liquid phosphate fertilizer.",
+        "Aerobic bacteria freeze cold storm water cleanly solid."
+      ],
+      "answer": "Ammonia turns sequentially into nitrate and eventually safe airborne nitrogen gas.",
+      "acceptedAnswers": [
+        "Ammonia turns sequentially into nitrate and eventually safe airborne nitrogen gas."
+      ],
+      "explanation": "Amonia diubah bertahap menjadi nitrat oleh aerob lalu menjadi gas nitrogen oleh anaerob.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP02-P5",
+      "audioAssetId": null,
+      "sortIndex": 134
+    },
+    {
+      "id": "ITP-L1-02-Q135",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 5 ('Constructed Wetland Reed Beds in Municipal Wastewater') — Q5/10: The word 'roaring' in sentence 1 emphasizes what feature of mechanical plants?",
+      "options": [
+        "Quiet peaceful wildlife bird calls across gravel basins.",
+        "Floodwaters tearing open concrete town walls.",
+        "Sudden windstorms whipping coastal pine ridges.",
+        "Continuous noisy energy-intensive air blowing equipment."
+      ],
+      "answer": "Continuous noisy energy-intensive air blowing equipment.",
+      "acceptedAnswers": [
+        "Continuous noisy energy-intensive air blowing equipment."
+      ],
+      "explanation": "'Roaring aeration blowers' menegaskan bising dan boros energinya blower mekanis.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP02-P5",
+      "audioAssetId": null,
+      "sortIndex": 135
+    },
+    {
+      "id": "ITP-L1-02-Q136",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 5 ('Constructed Wetland Reed Beds in Municipal Wastewater') — Q6/10: Besides ammonia breakdown, what else do meter-deep gravel channels capture cleanly?",
+      "options": [
+        "Salty ocean shrimp escaping regional fishery piers.",
+        "Fresh oak lumber washed down mountain streams.",
+        "Settled particulates, metallic compounds, and stray microplastics.",
+        "Deep artesian thermal steam for winter house heating."
+      ],
+      "answer": "Settled particulates, metallic compounds, and stray microplastics.",
+      "acceptedAnswers": [
+        "Settled particulates, metallic compounds, and stray microplastics."
+      ],
+      "explanation": "Aliran lambat mengendapkan logam berat serta menyaring mikroplastik.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP02-P5",
+      "audioAssetId": null,
+      "sortIndex": 136
+    },
+    {
+      "id": "ITP-L1-02-Q137",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 5 ('Constructed Wetland Reed Beds in Municipal Wastewater') — Q7/10: The word 'benign' in paragraph 2 is closest in meaning to:",
+      "options": [
+        "bitter",
+        "harmless",
+        "radioactive",
+        "acidic"
+      ],
+      "answer": "harmless",
+      "acceptedAnswers": [
+        "harmless"
+      ],
+      "explanation": "'Benign nitrate' bermakna jauh lebih aman/jinak dibanding amonia beracun.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP02-P5",
+      "audioAssetId": null,
+      "sortIndex": 137
+    },
+    {
+      "id": "ITP-L1-02-Q138",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 5 ('Constructed Wetland Reed Beds in Municipal Wastewater') — Q8/10: What prevents treated wastewater from leaking straight downward into drinking aquifers beneath reed beds?",
+      "options": [
+        "A waterproof basin liner positioned underneath planted gravel channels.",
+        "Dense wooden planks hammered vertically around lakeside pines.",
+        "Rapid high-pressure fans drying river stones overnight.",
+        "Thick calcium oyster shells poured over gravel paths."
+      ],
+      "answer": "A waterproof basin liner positioned underneath planted gravel channels.",
+      "acceptedAnswers": [
+        "A waterproof basin liner positioned underneath planted gravel channels."
+      ],
+      "explanation": "Teks menyebut 'shallow waterproof gravel basins' (bak berpelapis kedap air).",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP02-P5",
+      "audioAssetId": null,
+      "sortIndex": 138
+    },
+    {
+      "id": "ITP-L1-02-Q139",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 5 ('Constructed Wetland Reed Beds in Municipal Wastewater') — Q9/10: Which function is NOT claimed for engineered reed beds in the passage?",
+      "options": [
+        "Creating pleasant habitat parks doubling as neighborhood greenspace.",
+        "Supporting both aerobic and anaerobic nitrogen cycles.",
+        "Lowering reliance on chemical additives and aeration power.",
+        "Replacing municipal high-pressure potable water mains completely."
+      ],
+      "answer": "Replacing municipal high-pressure potable water mains completely.",
+      "acceptedAnswers": [
+        "Replacing municipal high-pressure potable water mains completely."
+      ],
+      "explanation": "Jaringan air minum bertekanan tidak tergantikan oleh kolam limbah reed bed.",
+      "rationaleSource": "ITP-MOD-10",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP02-P5",
+      "audioAssetId": null,
+      "sortIndex": 139
+    },
+    {
+      "id": "ITP-L1-02-Q140",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 5 ('Constructed Wetland Reed Beds in Municipal Wastewater') — Q10/10: What does 'that' in 'That micro-oxygen mosaic' point back to?",
+      "options": [
+        "Cold wind currents blowing across shallow winter piers.",
+        "Mechanical settling tanks sitting uphill.",
+        "Oxygen released continuously along buried root surfaces inside gravel beds.",
+        "Costly chemical dosing inside concrete sewage vats."
+      ],
+      "answer": "Oxygen released continuously along buried root surfaces inside gravel beds.",
+      "acceptedAnswers": [
+        "Oxygen released continuously along buried root surfaces inside gravel beds."
+      ],
+      "explanation": "Frasa menunjuk difusi oksigen melalui batang berongga ke zona akar.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP02-P5",
+      "audioAssetId": null,
+      "sortIndex": 140
     }
   ],
-  "checksum": "a97877ab6f76f0f77e4af395ec687d91e90c328e7dbcfc21ff217db7e669b4b5"
+  "checksum": "c29a6e011bd9f2db0d0b856e303ae40f3845b61ad642caf5f0bc2298305fdbac"
 }

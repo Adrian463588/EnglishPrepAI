@@ -1,0 +1,8 @@
+# Acceptance Criteria: `008-material-bank-full-packs`
+
+- **AC-08-01**: `material_bank/` exists with real downloaded open-license (CC-BY / CC-BY-SA / OER / CC0) PDFs under `material_bank/open_oer_pdfs/`, extracted readable study summaries under `material_bank/extracted/`, audited `material_bank/MANIFEST.json` (URLs, SHA-256, byte size, page count, license), and `.gitignore` protecting any local-only copyrighted official specification PDFs under `material_bank/official_reference_pdfs/`.
+- **AC-08-02**: `app/src/main/assets/material_bank/material_bank.json` loads cleanly offline in `LearnScreen`, renders accessible expandable/readable chapters + license provenance, and its abstracts are indexed into `curriculum_fts` for offline AI Tutor citation.
+- **AC-08-03**: `curriculum.json` contains `30` modules (`10` ITP_L1, `10` IBT_2026, `10` IELTS_ACADEMIC) with `>= 90` verified interactive drills.
+- **AC-08-04**: All `15` packages (`ITP-L1-01..05`, `IBT26-01..05`, `IELTS-A-01..05`) match full blueprint counts (`140`, `120`, `85` items respectively = `1,725` total items), report `status = "READY"` (`Ready • 140 soal` / `120` / `85`), pass `PackIntegrityValidator.validateBundle` with `0` errors, and contain zero duplicate question IDs or duplicate prompts.
+- **AC-08-05**: Every generated Listening `.wav` starts with `"RIFF"` and plays smoothly offline via `Media3AudioEngine` on physical Android hardware (`SM-G988B`); shared-audio Listening groups maintain playback position cleanly across consecutive questions.
+- **AC-08-06**: `testDebugUnitTest` passes 100% (0 failures, 0 skipped), `lintDebug` reports 0 errors, `assembleRelease` R8 succeeds, updated docs/screenshots/checklists are committed & pushed to GitHub.

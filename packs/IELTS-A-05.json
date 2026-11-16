@@ -1,155 +1,1088 @@
 {
   "schemaVersion": 1,
   "exam": "IELTS_ACADEMIC",
-  "edition": "2026.1",
+  "edition": "2026.2",
   "packId": "IELTS-A-05",
-  "title": "IELTS Paket 5 — Ocean Acoustics & Future of Work",
-  "theme": "Quiet ship propellers, underwater bioacoustics, matching claims, and Problem-Solution essays.",
-  "status": "SAMPLE",
+  "title": "IELTS Paket 5 — Paleoclimate Ice, Corridors & Soundscapes",
+  "theme": "Full 85-item IELTS Academic simulation spanning Kayak Rentals, Arboretum Fungi, Hydroponics Thesis, Migratory Whales, Alpine Ice Bubbles, Wildflower Verges & Acoustic Architecture.",
+  "status": "READY",
   "blueprintCount": 85,
-  "availableCount": 12,
-  "durationMinutes": 35,
+  "availableCount": 85,
+  "durationMinutes": 165,
   "blueprintDurationMinutes": 165,
   "license": "Original",
   "provenance": "EnglishPrepAI-Original-2026",
   "passages": [
     {
       "id": "IELTS05-P1",
-      "title": "Quieting Cargo Ships to Protect Whale Acoustic Habitat",
-      "body": "Paragraph A: Sound travels nearly five times faster in seawater than in air, turning commercial shipping lanes into continuous low-frequency corridors. Most vessel noise originates not from engine rooms, but from propeller cavitation—microscopic vacuum bubbles forming and imploding violently along spinning blade tips.\n\nParagraph B: During a voluntary slowdown trial off Vancouver Island, container ships cutting speed by just eleven percent reduced underwater acoustic intensity by roughly half, allowing humpback and killer whales to detect echolocation clicks across wider feeding ranges. Meanwhile, naval architects now sculpt swept, five-blade propellers that delay cavitation onset while lowering fuel burn by four percent.",
+      "title": "Reading Planetary Volcanic Seasons Through Alpine Ice Bubbles",
+      "body": "Paragraph A: High atop wind-scoured Andean and Antarctic ice domes, yearly summer snow falls fail to melt downward cleanly—compressing gradually under decades of fresh winter drifts into banded translucent glacier strata preserving trapped microscopic ancient atmosphere.\n\nParagraph B: Drilling continuous hollow steel cores three kilometers downward yields chronological climate encyclopedias stretching backward nearly eight hundred thousand years—far older than tree rings, coral bands, or baked river lake clay scrolls.\n\nParagraph C: Critically, glaciologists draw sharp chemical boundaries between trace atmospheric gases floating inside tiny open pores versus solid volcanic sulfuric acid ash bands frozen squarely inside crystalline snow grains: atmospheric methane diffuses slowly upward for centuries until solid 'firn' depths seal shut near eighty meters down, meaning enclosed air bubbles run subtly younger than their encircling snow walls.\n\nParagraph D: Conversely, volcanic sulfate acid layers locked instantaneously across icy crystals pinpoint exact eruption years matching written Roman, Han, or medieval monk chronicles down to six months whenever trace Icelandic glass shards match dated quarry rocks.\n\nParagraph E: Correlating shared global sulfate spikes lets lab teams synchronize northern Greenland cores cleanly against South Pole archives despite vastly uneven annual snowfall totals.",
       "readingOrder": 1
+    },
+    {
+      "id": "IELTS05-P2",
+      "title": "Can Narrow Motorway Wildflower Verges Bridge Pollinator Deserts?",
+      "body": "Paragraph A: Modern grain monocultures and sprawling asphalt highway grids chop once-continuous wildflower meadows into tiny isolated ecological islands—leaving solitary bees and fluttering butterflies marooned whenever nectar strips vanish beyond two-hundred-meter flight ranges.\n\nParagraph B: Initially, highway engineers doubted noisy roadside ditches choked with diesel fumes and rubber tire dust could ever anchor healthy insect nurseries; steep concrete shoulders looked more like ecological death traps than botanical refuges.\n\nParagraph C: Large multi-highway field trials across Gloucestershire and Friesland uncovered nuanced ground truths: tall windbreak hedges placed strictly between speeding traffic lanes and sheltered grass meadows deflected swirling exhaust turbulence upward while trimming roadside mower budgets smoothly—because crews dropped cutting schedules from twelve summer passes to merely two autumn hay rakes.\n\nParagraph D: Removing nutrient-rich cut clippings off gravelly motorway banks proved decisive: impoverished lean subsoil thwarted aggressive tall stinging nettles from shading out delicate clover, knapweed, and horseshoe vetch needed sequentially from April through September.\n\nParagraph E: Marked-wing surveys confirmed meadow brown butterflies and red-tailed bumblebees traveled along continuous clover strips twice as reliably when sheltered roadside meadows connected separated woodland fragments cleanly.",
+      "readingOrder": 2
+    },
+    {
+      "id": "IELTS05-P3",
+      "title": "Designing Calmer Cities Through Urban Acoustic Architecture",
+      "body": "Paragraph A: Municipal noise ordinances almost always attack loud city streets mathematically—banning construction jackhammers past ten PM or counting raw decibel peaks along highway viaducts without questioning what remaining ambient soundscape fills human ears.\n\nParagraph B: Soundscape pioneer Prof. Jian Kang showed decibel volume alone predicts annoyance remarkably poorly! Laboratory volunteers rated crashing mountain streams measuring sixty-eight decibels noticeably calmer than steady sixty-decibel diesel idling engines humming softly down windowless brick alleys.\n\nParagraph C: Crucially, visual-acoustic geometry multiplies distress inside cramped canyon streets: flat glazed concrete facades reflect sharp high-frequency siren reflections endlessly backward like hall mirrors, stripping pedestrian brains of directional threat clarity.\n\nParagraph D: Forward-looking soundscape architects sculpt multi-sensory urban refuges instead—lining shaded courtyard walls with angled cedar timber slats that scatter harsh reflections gently while introducing bubbly low-frequency fountain water cascades whose natural broadband rush masks distant bus rumble subconsciously.\n\nParagraph E: Acoustic masking works only gently alongside physical wheel-rail noise barriers; water fountains never silence low-flying jet planes overhead, yet thoughtfully proportioned porous facades restore genuine conversational ease across dense historic centers.",
+      "readingOrder": 3
     }
   ],
   "assets": [
     {
-      "id": "IELTS05-A01",
-      "relativePath": "audio/IELTS05-A01.wav",
+      "id": "IELTS05-LP1",
+      "relativePath": "audio/IELTS05-LP1.wav",
       "kind": "AUDIO",
-      "caption": "M: Do I need a paper medical copy at the dock tomorrow? W: Medical forms are online already—just bring your current swim certificate before boarding the research boat.",
+      "caption": "W: Morning! Green Bay Estuaries Volunteer line—Tessa speaking. M: Hi Tessa! Signing up with my roommate for Sunday morning's plastic bottle kayak sweep up Heron Creek. W: Wonderful! Checking availability: we've got tandem fiberglass kayaks left cleanly at eight-thirty... oops, my screen refreshed—group A filled fast, so group B launches promptly at nine-fifteen! M: Nine-fifteen works nicely! Should we spell my roommate's last name accurately for insurance waivers? It's Lindholm—L-I-N-D-H-O-L-M. W: Got Lindholm logged cleanly! Pack synthetic quick-dry shirts rather than heavy cotton sweaters since river splash dries slowly in cool autumn shade, and lock spare keys cleanly at Boathouse Cubby Seven. M: Awesome—is parking beside Boathouse West Gravel free Sundays, or metered at four dollars? W: Completely free all Sunday mornings until one PM, plus complimentary ginger lemon tea awaits paddlers back at Heron Dock after weighing collected bags.",
       "license": "Original",
-      "sha256": "823255e4ab6d418fcb6a22bf91c836d472b5c8cff5033aad5dbc8a3ebea06f7c",
-      "byteSize": 329164,
-      "durationMs": 10285
+      "sha256": "30b89d4a7484a19cf20857d8f81eb6dcdd06d3ca8b644800202b81f75ac40432",
+      "byteSize": 565564,
+      "durationMs": 69695
     },
     {
-      "id": "IELTS05-A02",
-      "relativePath": "audio/IELTS05-A02.wav",
+      "id": "IELTS05-LP2",
+      "relativePath": "audio/IELTS05-LP2.wav",
       "kind": "AUDIO",
-      "caption": "W: Did shipping companies resist the eleven-percent speed reduction near the bay? M: Actually, fuel logs won them over—not only did underwater cavitation noise plummet, but bunker fuel consumption also dropped measurably.",
+      "caption": "M: Welcome architecture tour guests to our Historic Clockhouse Commons! Built smoothly as a brick grain exchange in 1894, today three distinct vaulted bays host civic exhibitions freely daily. M: Straight ahead beneath West Skylight sits our Steel Rivet Bay displaying nineteenth-century riveted boiler girders rescued when Main Street viaduct reopened cleanly for cyclists in 2021. M: Turn left down East Terracotta Gallery to explore illuminated blueprints showing how breathable lime mortar cured cracking warehouse facades across salty port harbors. M: Finally, climb silently up spiral oak treads to Loft Observation Deck Three: notice tiny brass floor plaques marking city elevation benchmarks cleanly—just please avoid resting heavy tripods against timber railings while admiring wide downtown tram roofs.",
       "license": "Original",
-      "sha256": "01366dff49c29c737c045394fc0634d7b52b3de27f3fbd409ad6ae6467d84910",
-      "byteSize": 454124,
-      "durationMs": 14190
+      "sha256": "ea43d0009ba8a8d737aed2e3f0e0171d1d06eb66d92cf5fdbbafa390447f01e1",
+      "byteSize": 423996,
+      "durationMs": 52245
     },
     {
-      "id": "IELTS05-A03",
-      "relativePath": "audio/IELTS05-A03.wav",
+      "id": "IELTS05-LP3",
+      "relativePath": "audio/IELTS05-LP3.wav",
       "kind": "AUDIO",
-      "caption": "W: Modern passive acoustic monitoring deploys battery-powered hydrophones onto the continental shelf for six months at a time, capturing seasonal whale songs quietly without disturbing marine mammals.",
+      "caption": "W: Amina, check our draft experimental protocol before Tuesday's Seed Vault lab review! I grouped wild tallgrass seeds neatly across two drying ovens at fifty degrees Celsius to drop moisture down safely below six percent cleanly. M: Whoa—halt right there! Exposing delicate native prairie grass embryos above thirty-five degrees triggers protein damage before seeds even see the freezer—use low-temperature silica desiccant drums at fifteen degrees Celsius instead! W: Oof, glad I asked! Wait—what about freezing sealed foil bags immediately down at minus eighty versus minus twenty? M: Stick with standard minus twenty freezer banks for grass seed germination! Ultra-cold minus-eighty stresses oily membrane seeds like wild sunflower unnecessarily while wasting triple electric wattage. Let's inspect Dr. Chen's germination dish logs first though—only four out of ten species sprouted after dry chilling! W: Aha—those six stubborn wildflowers require simulated seasonal cold-moist winter 'stratification' on damp moss pads for six weeks before bright warming lights wake sleepy seed coats cleanly!",
       "license": "Original",
-      "sha256": "cc205fb31f6facdf01080a2bf05aba3214030acb3efd4c4f006faa1607c28b26",
-      "byteSize": 374284,
-      "durationMs": 11695
+      "sha256": "24e548c4ca44c84222f204547e4b15b1c3c855f3dc3d410a06f2b1d0ba90ef33",
+      "byteSize": 593212,
+      "durationMs": 73110
+    },
+    {
+      "id": "IELTS05-LP4",
+      "relativePath": "audio/IELTS05-LP4.wav",
+      "kind": "AUDIO",
+      "caption": "W: Walk across scorching arid savanna grasslands outside Windhoek, Namibia where afternoon soil scorches past forty-two degrees Celsius, and towering two-meter earthen chimney mounds rise abruptly out of red clay—built not by human architects, but blind millimeter-tiny fungus-farming termites. W: Contrary to early textbook myths imagining steady upward stove chimneys sucking hot termite air skyward constantly like roaring iron fireplaces, precise smoke-tracer sensors inside Macrotermes michaelseni spires revealed rhythmic daily bidirectional tidal breathing instead! W: Watch what happens inside thick sun-warmed corrugated earthen outer fins versus shaded cool core fungal gardens: sunlight warms outer vertical porous flute tunnels throughout afternoons, driving rising warm air outward up perimeter shafts that pull slightly cooler central garden gas downward—before flipping completely reversed through chilly desert night air! W: That continuous oscillating breath clears suffocating carbon dioxide generated by subterranean fungus gardens smoothly while pinning inner nursery temperatures safely around a razor-steady thirty degrees Celsius—guiding biomimetic low-energy office ventilation towers downtown in Zimbabwe and temperate European cities alike.",
+      "license": "Original",
+      "sha256": "88480cb8016e820a464211d5b7043cf95ba04acd9e1082534b1c96218afcb14d",
+      "byteSize": 619324,
+      "durationMs": 76345
+    },
+    {
+      "id": "IELTS05-SP1",
+      "relativePath": "audio/IELTS05-SP1.wav",
+      "kind": "AUDIO",
+      "caption": "W: Good to see you today. Let's reflect on languages and memory. Which English phrase or idiom puzzled you at first before making total sense, do you remember spoken words better by hearing stories or writing notes, and what quiet sound relaxes your mind after long reading?",
+      "license": "Original",
+      "sha256": "6fd3fdc459fdc9cc16d826e6f21b86894f69f8a3699bda4fa962249421b3010a",
+      "byteSize": 142396,
+      "durationMs": 17540
+    },
+    {
+      "id": "IELTS05-SP2",
+      "relativePath": "audio/IELTS05-SP2.wav",
+      "kind": "AUDIO",
+      "caption": "W: Here is your Part 2 topic card. You now have one minute to prepare notes before speaking cleanly for up to two minutes.",
+      "license": "Original",
+      "sha256": "e01ffacc8768be717630131e40c66950d9a34af29a9175671dbef8f81c03162d",
+      "byteSize": 65596,
+      "durationMs": 8055
+    },
+    {
+      "id": "IELTS05-SP3",
+      "relativePath": "audio/IELTS05-SP3.wav",
+      "kind": "AUDIO",
+      "caption": "W: Instant algorithmic helpers finish summaries and translations within seconds today. How might relying on effortless digital shortcuts alter long-term memory formation among adolescents, and what deliberate offline intellectual challenges still justify slow unassisted human struggle?",
+      "license": "Original",
+      "sha256": "e3fc4b042a361788c73220667d89e14382f95bad54831557c92025d17b0b0335",
+      "byteSize": 141116,
+      "durationMs": 17390
     }
   ],
   "items": [
     {
-      "id": "IELTS-A-05-Q01",
+      "id": "IELTS-A-05-Q001",
       "section": "LISTENING",
       "taskType": "FILL_BLANK",
-      "prompt": "Listening Part 1 (NO MORE THAN TWO WORDS AND/OR A NUMBER): 'Marine Field Station Registration — Bring a current ___ certificate before boarding research boats.'",
+      "prompt": "Listening Part 1 (Community Tidal Clean-Up & Kayak Briefing Call — Q1): TIME ONLY: 'Updated kayak launch group B departure time Sunday morning: ___ AM'",
       "options": [],
-      "answer": "swim",
+      "answer": "9:15",
       "acceptedAnswers": [
-        "swim",
-        "swimming"
+        "9:15",
+        "9.15",
+        "nine-fifteen"
       ],
-      "explanation": "Staf menyebutkan peserta perlu sertifikat berenang ('swim certificate') terbaru; formulir medis opsional sudah diisi daring.",
+      "explanation": "Gelombang pertama 8:30 penuh lalu layar diperbarui ke 9:15.",
       "rationaleSource": "IELTS-MOD-01",
       "difficulty": "B1",
       "points": 1,
       "license": "Original",
       "reviewStatus": "VERIFIED_ORIGINAL",
       "passageId": null,
-      "audioAssetId": "IELTS05-A01",
-      "maxWords": 2,
+      "audioAssetId": "IELTS05-LP1",
+      "maxWords": 1,
       "sortIndex": 1
     },
     {
-      "id": "IELTS-A-05-Q02",
+      "id": "IELTS-A-05-Q002",
       "section": "LISTENING",
-      "taskType": "CHOICE_MULTI",
-      "prompt": "Listening Part 3 (Choose TWO items): Which TWO benefits did port trials report when cargo ships slowed down near the harbor?",
-      "options": [
-        "Reduced underwater cavitation noise",
-        "Lower bunker fuel consumption",
-        "Zero container unloading delays",
-        "Elimination of harbor tugboats"
-      ],
-      "answer": "Reduced underwater cavitation noise|Lower bunker fuel consumption",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 1 (Community Tidal Clean-Up & Kayak Briefing Call — Q2): SPELLING (ONE WORD ONLY): 'Roommate insurance surname recorded carefully by Tessa: ___'",
+      "options": [],
+      "answer": "Lindholm",
       "acceptedAnswers": [
-        "Reduced underwater cavitation noise|Lower bunker fuel consumption"
+        "lindholm"
       ],
-      "explanation": "Peneliti menyoroti dua manfaat langsung: penurunan bising kavitasi bawah air dan penghematan bahan bakar kapal.",
+      "explanation": "Dieja jelas L-I-N-D-H-O-L-M.",
       "rationaleSource": "IELTS-MOD-01",
-      "difficulty": "B2",
+      "difficulty": "B1",
       "points": 1,
       "license": "Original",
       "reviewStatus": "VERIFIED_ORIGINAL",
       "passageId": null,
-      "audioAssetId": "IELTS05-A02",
+      "audioAssetId": "IELTS05-LP1",
+      "maxWords": 1,
       "sortIndex": 2
     },
     {
-      "id": "IELTS-A-05-Q03",
+      "id": "IELTS-A-05-Q003",
       "section": "LISTENING",
       "taskType": "FILL_BLANK",
-      "prompt": "Listening Part 4 (ONE WORD ONLY): 'Autonomous hydrophones anchored on the seabed record whale calls without disturbing marine ___.'",
+      "prompt": "Listening Part 1 (Community Tidal Clean-Up & Kayak Briefing Call — Q3): ONE WORD ONLY: 'Boat hull craft material stocked for tandem paddles: ___'",
       "options": [],
-      "answer": "mammals",
+      "answer": "fiberglass",
       "acceptedAnswers": [
-        "mammals"
+        "fiberglass"
       ],
-      "explanation": "Kuliah menggunakan frasa 'without disturbing marine mammals'.",
+      "explanation": "Kayak ganda terbuat dari bahan fiberglass.",
       "rationaleSource": "IELTS-MOD-01",
-      "difficulty": "B2",
+      "difficulty": "B1",
       "points": 1,
       "license": "Original",
       "reviewStatus": "VERIFIED_ORIGINAL",
       "passageId": null,
-      "audioAssetId": "IELTS05-A03",
+      "audioAssetId": "IELTS05-LP1",
       "maxWords": 1,
       "sortIndex": 3
     },
     {
-      "id": "IELTS-A-05-Q04",
-      "section": "READING",
+      "id": "IELTS-A-05-Q004",
+      "section": "LISTENING",
       "taskType": "CHOICE_SINGLE",
-      "prompt": "Passage 1 ('Quieting Cargo Ships'): 'Diesel engine vibrations account for the majority of commercial vessel noise underwater.' -> TRUE, FALSE, or NOT GIVEN?",
+      "prompt": "Listening Part 1 (Community Tidal Clean-Up & Kayak Briefing Call — Q4): Why does Tessa warn volunteers against wearing heavy cotton sweaters kayaking?",
       "options": [
-        "TRUE",
-        "FALSE",
-        "NOT GIVEN"
+        "Synthetic shirts repel muddy estuarine mosquitoes naturally.",
+        "Life jackets slip unevenly across smooth wool fabrics.",
+        "Park rangers prohibit dyed cotton jerseys.",
+        "Wet cotton retains moisture coldly indoors and under shady creek trees."
       ],
-      "answer": "FALSE",
+      "answer": "Wet cotton retains moisture coldly indoors and under shady creek trees.",
       "acceptedAnswers": [
-        "FALSE"
+        "Wet cotton retains moisture coldly indoors and under shady creek trees."
       ],
-      "explanation": "Paragraf A menegaskan sumber utama bising kapal berasal dari kavitasi baling-baling ('not from engine rooms, but from propeller cavitation').",
-      "rationaleSource": "IELTS-MOD-02",
+      "explanation": "Katun menyerap air dan dingin lambat kering di keteduhan sungai musim gugur.",
+      "rationaleSource": "IELTS-MOD-07",
       "difficulty": "B2",
       "points": 1,
       "license": "Original",
       "reviewStatus": "VERIFIED_ORIGINAL",
-      "passageId": "IELTS05-P1",
-      "audioAssetId": null,
+      "passageId": null,
+      "audioAssetId": "IELTS05-LP1",
       "sortIndex": 4
     },
     {
-      "id": "IELTS-A-05-Q05",
+      "id": "IELTS-A-05-Q005",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 1 (Community Tidal Clean-Up & Kayak Briefing Call — Q5): NO MORE THAN TWO WORDS: 'Recommended faster-drying shirt fabric: ___ quick-dry'",
+      "options": [],
+      "answer": "synthetic",
+      "acceptedAnswers": [
+        "synthetic"
+      ],
+      "explanation": "Pakaian sintetis cepat kering lebih disarankan.",
+      "rationaleSource": "IELTS-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS05-LP1",
+      "maxWords": 1,
+      "sortIndex": 5
+    },
+    {
+      "id": "IELTS-A-05-Q006",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 1 (Community Tidal Clean-Up & Kayak Briefing Call — Q6): NUMBER ONLY: 'Boathouse cubby lock spot securing volunteers' car keys: Cubby ___'",
+      "options": [],
+      "answer": "7",
+      "acceptedAnswers": [
+        "7",
+        "seven"
+      ],
+      "explanation": "Kunci cadangan dititipkan di Boathouse Cubby 7.",
+      "rationaleSource": "IELTS-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS05-LP1",
+      "maxWords": 1,
+      "sortIndex": 6
+    },
+    {
+      "id": "IELTS-A-05-Q007",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 1 (Community Tidal Clean-Up & Kayak Briefing Call — Q7): NO MORE THAN TWO WORDS: 'River destination scheduled for floating debris cleanup: ___ Creek'",
+      "options": [],
+      "answer": "Heron",
+      "acceptedAnswers": [
+        "heron",
+        "heron creek"
+      ],
+      "explanation": "Rute pembersihan menuju Heron Creek.",
+      "rationaleSource": "IELTS-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS05-LP1",
+      "maxWords": 2,
+      "sortIndex": 7
+    },
+    {
+      "id": "IELTS-A-05-Q008",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 1 (Community Tidal Clean-Up & Kayak Briefing Call — Q8): What parking policy applies along West Gravel Lot before one PM Sundays?",
+      "options": [
+        "Flat four-dollar meters operate hourly from eight AM.",
+        "Permit decals from Lot C are mandatory Sundays.",
+        "Kayakers unload quickly and park one mile east.",
+        "Parking carries zero Sunday morning fee until 1:00 PM."
+      ],
+      "answer": "Parking carries zero Sunday morning fee until 1:00 PM.",
+      "acceptedAnswers": [
+        "Parking carries zero Sunday morning fee until 1:00 PM."
+      ],
+      "explanation": "Parkir di West Gravel gratis sepanjang Minggu pagi hingga pukul 13.00.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS05-LP1",
+      "sortIndex": 8
+    },
+    {
+      "id": "IELTS-A-05-Q009",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 1 (Community Tidal Clean-Up & Kayak Briefing Call — Q9): NO MORE THAN TWO WORDS: 'Hot complimentary refreshment greeting paddlers upon dock return: ___ tea'",
+      "options": [],
+      "answer": "ginger lemon",
+      "acceptedAnswers": [
+        "ginger",
+        "ginger lemon",
+        "lemon"
+      ],
+      "explanation": "Teh hangat jahe-lemon ('ginger lemon tea') menunggu pendayung pulang.",
+      "rationaleSource": "IELTS-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS05-LP1",
+      "maxWords": 2,
+      "sortIndex": 9
+    },
+    {
+      "id": "IELTS-A-05-Q010",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 1 (Community Tidal Clean-Up & Kayak Briefing Call — Q10): What final measurement occurs right back at Heron Dock prior to refreshments?",
+      "options": [
+        "Photocopying signed waiver driver licenses.",
+        "Weighing filled bags of collected creek trash.",
+        "Calibrating portable VHF marine radios.",
+        "Washing tandem seat pads neatly in seawater."
+      ],
+      "answer": "Weighing filled bags of collected creek trash.",
+      "acceptedAnswers": [
+        "Weighing filled bags of collected creek trash."
+      ],
+      "explanation": "Penimbangan kantong sampah plastik sebelum menikmati teh hangat.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS05-LP1",
+      "sortIndex": 10
+    },
+    {
+      "id": "IELTS-A-05-Q011",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 2 (Municipal Civic Museum Architectural Wing Guide — Q11): NUMBER ONLY: 'Year original brick grain exchange structure opened cleanly downtown: ___'",
+      "options": [],
+      "answer": "1894",
+      "acceptedAnswers": [
+        "1894"
+      ],
+      "explanation": "Gedung bursa gandum bata dibangun tahun 1894.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS05-LP2",
+      "maxWords": 1,
+      "sortIndex": 11
+    },
+    {
+      "id": "IELTS-A-05-Q012",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 2 (Municipal Civic Museum Architectural Wing Guide — Q12): ONE WORD ONLY: 'Current open entrance admission charge across Clockhouse Commons daily: ___'",
+      "options": [],
+      "answer": "free",
+      "acceptedAnswers": [
+        "free",
+        "freely"
+      ],
+      "explanation": "Pameran tiga ruang kubah dapat dikunjungi gratis setiap hari.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS05-LP2",
+      "maxWords": 1,
+      "sortIndex": 12
+    },
+    {
+      "id": "IELTS-A-05-Q013",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 2 (Municipal Civic Museum Architectural Wing Guide — Q13): What modern commuter upgrade supplied the vintage boiler girders preserved inside West Skylight Bay?",
+      "options": [
+        "Replacement of spiral museum staircases with titanium columns.",
+        "Installation of wooden metro tracks underground.",
+        "Conversion of the old Main Street viaduct cleanly into a cyclist corridor in 2021.",
+        "Demolition of coastal brick harbor docks in 1894."
+      ],
+      "answer": "Conversion of the old Main Street viaduct cleanly into a cyclist corridor in 2021.",
+      "acceptedAnswers": [
+        "Conversion of the old Main Street viaduct cleanly into a cyclist corridor in 2021."
+      ],
+      "explanation": "Balok paku keling berasal dari konversi viaduk Main Street untuk pesepeda pada 2021.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS05-LP2",
+      "sortIndex": 13
+    },
+    {
+      "id": "IELTS-A-05-Q014",
+      "section": "LISTENING",
+      "taskType": "MATCHING",
+      "prompt": "Listening Part 2 (Municipal Civic Museum Architectural Wing Guide — Q14): Match each Clockhouse Wing cleanly to its core exhibition or rule:",
+      "options": [],
+      "answer": "West Skylight Bay::Displays 2021 viaduct steel girders|East Terracotta Gallery::Shows maritime lime mortar blueprints|Loft Deck Three::Prohibits heavy tripods leaning on rails",
+      "acceptedAnswers": [
+        "West Skylight Bay::Displays 2021 viaduct steel girders|East Terracotta Gallery::Shows maritime lime mortar blueprints|Loft Deck Three::Prohibits heavy tripods leaning on rails"
+      ],
+      "explanation": "Kecocokan sayap bangunan serta pameran dan aturannya.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS05-LP2",
+      "pairs": [
+        {
+          "left": "West Skylight Bay",
+          "rightOptions": [
+            "Displays 2021 viaduct steel girders",
+            "Shows maritime lime mortar blueprints",
+            "Prohibits heavy tripods leaning on rails"
+          ]
+        },
+        {
+          "left": "East Terracotta Gallery",
+          "rightOptions": [
+            "Displays 2021 viaduct steel girders",
+            "Shows maritime lime mortar blueprints",
+            "Prohibits heavy tripods leaning on rails"
+          ]
+        },
+        {
+          "left": "Loft Deck Three",
+          "rightOptions": [
+            "Displays 2021 viaduct steel girders",
+            "Shows maritime lime mortar blueprints",
+            "Prohibits heavy tripods leaning on rails"
+          ]
+        }
+      ],
+      "sortIndex": 14
+    },
+    {
+      "id": "IELTS-A-05-Q015",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 2 (Municipal Civic Museum Architectural Wing Guide — Q15): ONE WORD ONLY: 'Hardwood stairs ascending up toward Loft Observation Deck Three: spiral ___ treads.'",
+      "options": [],
+      "answer": "oak",
+      "acceptedAnswers": [
+        "oak"
+      ],
+      "explanation": "Tangga spiral naik menuju dek pengamatan berbahan kayu ek ('oak').",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS05-LP2",
+      "maxWords": 1,
+      "sortIndex": 15
+    },
+    {
+      "id": "IELTS-A-05-Q016",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 2 (Municipal Civic Museum Architectural Wing Guide — Q16): ONE WORD ONLY: 'Metal material composing city height benchmark tags on Deck Three floor: ___'",
+      "options": [],
+      "answer": "brass",
+      "acceptedAnswers": [
+        "brass"
+      ],
+      "explanation": "Plakat penanda ketinggian kota terbuat dari kuningan ('brass').",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS05-LP2",
+      "maxWords": 1,
+      "sortIndex": 16
+    },
+    {
+      "id": "IELTS-A-05-Q017",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 2 (Municipal Civic Museum Architectural Wing Guide — Q17): Why does the guide mention illuminated architectural drawings down East Terracotta Gallery?",
+      "options": [
+        "Visitors purchase framed blueprint lithographs cleanly there.",
+        "Architects drafted steel spiral roof trusses there.",
+        "They document how breathable lime mortar preserves harbor facades against salt moisture.",
+        "They map underground subway espresso stands downtown."
+      ],
+      "answer": "They document how breathable lime mortar preserves harbor facades against salt moisture.",
+      "acceptedAnswers": [
+        "They document how breathable lime mortar preserves harbor facades against salt moisture."
+      ],
+      "explanation": "Cetak biru memaparkan peran mortar kapur menahan retakan garam di pelabuhan.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS05-LP2",
+      "sortIndex": 17
+    },
+    {
+      "id": "IELTS-A-05-Q018",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 2 (Municipal Civic Museum Architectural Wing Guide — Q18): What camera gear restriction applies up on the open wooden Deck Three overlook?",
+      "options": [
+        "Photographs cost five dollars per tripod slot.",
+        "Keep heavy camera tripods off wooden perimeter balcony rails.",
+        "Cameras cannot record outdoor moving transit trams.",
+        "Flash strobes stay mandatory atop dark oak flights."
+      ],
+      "answer": "Keep heavy camera tripods off wooden perimeter balcony rails.",
+      "acceptedAnswers": [
+        "Keep heavy camera tripods off wooden perimeter balcony rails."
+      ],
+      "explanation": "Dilarang menyandarkan tripod berat ke pagar kayu balkon.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS05-LP2",
+      "sortIndex": 18
+    },
+    {
+      "id": "IELTS-A-05-Q019",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 2 (Municipal Civic Museum Architectural Wing Guide — Q19): NUMBER ONLY: 'Total count of open vaulted public museum bays hosted daily: ___'",
+      "options": [],
+      "answer": "3",
+      "acceptedAnswers": [
+        "3",
+        "three"
+      ],
+      "explanation": "Terdapat tiga ruang kubah publik gratis.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS05-LP2",
+      "maxWords": 1,
+      "sortIndex": 19
+    },
+    {
+      "id": "IELTS-A-05-Q020",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 2 (Municipal Civic Museum Architectural Wing Guide — Q20): What visible urban sight fills wide views straight off Deck Three?",
+      "options": [
+        "Snowy alpine coastal glaciers three miles away.",
+        "Floating ocean kayak rental piers.",
+        "Red Lot C stadium game parking lots.",
+        "Downtown municipal commuter streetcar/tram rooftops."
+      ],
+      "answer": "Downtown municipal commuter streetcar/tram rooftops.",
+      "acceptedAnswers": [
+        "Downtown municipal commuter streetcar/tram rooftops."
+      ],
+      "explanation": "Pemandangan atap trem/komuter kota di bawah dek.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS05-LP2",
+      "sortIndex": 20
+    },
+    {
+      "id": "IELTS-A-05-Q021",
+      "section": "LISTENING",
+      "taskType": "CHOICE_MULTI",
+      "prompt": "Listening Part 3 (Prairie Seed Banking & Germination Storage Seminar — Q21): Choose TWO critical protocol corrections Amina catches before Tuesday's seed lab review:",
+      "options": [
+        "Replace 50°C hot ovens with cool 15°C silica drying cabinets",
+        "Bake oily sunflower envelopes at minus eighty Celsius",
+        "Maintain long-term seed vaults cleanly at minus twenty instead of minus eighty",
+        "Skip testing wet cold winter moss germination altogether"
+      ],
+      "answer": "Replace 50°C hot ovens with cool 15°C silica drying cabinets|Maintain long-term seed vaults cleanly at minus twenty instead of minus eighty",
+      "acceptedAnswers": [
+        "Replace 50°C hot ovens with cool 15°C silica drying cabinets|Maintain long-term seed vaults cleanly at minus twenty instead of minus eighty"
+      ],
+      "explanation": "Oven 50°C merusak embrio sehingga diganti desikan silika 15°C; penyimpanan cukup -20°C alih-alih -80°C.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS05-LP3",
+      "sortIndex": 21
+    },
+    {
+      "id": "IELTS-A-05-Q022",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 3 (Prairie Seed Banking & Germination Storage Seminar — Q22): NUMBER ONLY (°C): 'Safe cool desiccant room temperature replacing hot fifty-degree ovens: ___ degrees Celsius'",
+      "options": [],
+      "answer": "15",
+      "acceptedAnswers": [
+        "15",
+        "fifteen"
+      ],
+      "explanation": "Pengeringan silika aman dijalankan pada suhu sejuk 15 °C.",
+      "rationaleSource": "IELTS-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS05-LP3",
+      "maxWords": 1,
+      "sortIndex": 22
+    },
+    {
+      "id": "IELTS-A-05-Q023",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 3 (Prairie Seed Banking & Germination Storage Seminar — Q23): NUMBER ONLY (%): 'Safe target moisture ceiling prior to hermetically sealing foil seed bags: below ___%'",
+      "options": [],
+      "answer": "6",
+      "acceptedAnswers": [
+        "6",
+        "six"
+      ],
+      "explanation": "Kadar air biji diturunkan di bawah 6% sebelum penyegelan foil.",
+      "rationaleSource": "IELTS-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS05-LP3",
+      "maxWords": 1,
+      "sortIndex": 23
+    },
+    {
+      "id": "IELTS-A-05-Q024",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 3 (Prairie Seed Banking & Germination Storage Seminar — Q24): Why does Amina oppose storing standard oily wildflower grains down at minus eighty degrees?",
+      "options": [
+        "Plastic freezer zippers shatter instantly at zero Celsius.",
+        "Silica beads glow bright crimson below minus thirty.",
+        "Herbarium beetles survive comfortably inside colder chests.",
+        "Extreme sub-zero freezes stress seed oil membranes while burning needless heavy electricity."
+      ],
+      "answer": "Extreme sub-zero freezes stress seed oil membranes while burning needless heavy electricity.",
+      "acceptedAnswers": [
+        "Extreme sub-zero freezes stress seed oil membranes while burning needless heavy electricity."
+      ],
+      "explanation": "Suhu -80 °C berisiko merusak membran minyak biji sekaligus boros listrik.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS05-LP3",
+      "sortIndex": 24
+    },
+    {
+      "id": "IELTS-A-05-Q025",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 3 (Prairie Seed Banking & Germination Storage Seminar — Q25): ONE WORD ONLY: 'Moisture-absorbing drying medium used safely inside cool 15°C storage vaults: ___'",
+      "options": [],
+      "answer": "silica",
+      "acceptedAnswers": [
+        "silica"
+      ],
+      "explanation": "Pengeringan sejuk memakai butiran silika ('silica desiccant').",
+      "rationaleSource": "IELTS-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS05-LP3",
+      "maxWords": 1,
+      "sortIndex": 25
+    },
+    {
+      "id": "IELTS-A-05-Q026",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 3 (Prairie Seed Banking & Germination Storage Seminar — Q26): Why did six out of ten grassland wildflower varieties fail sprouting initially on dry incubator plates?",
+      "options": [
+        "Incubator lights stayed far too intense at dawn.",
+        "Hard dormant wild seed coats need prolonged damp winter cold stratification before germinating.",
+        "Dead fifty-degree test ovens ruined all wildflower samples.",
+        "Foil packets leaked nitrogen onto warm lab moss."
+      ],
+      "answer": "Hard dormant wild seed coats need prolonged damp winter cold stratification before germinating.",
+      "acceptedAnswers": [
+        "Hard dormant wild seed coats need prolonged damp winter cold stratification before germinating."
+      ],
+      "explanation": "Benih bunga padang rumput liar butuh stratifikasi lembap dingin 6 minggu guna memecah dormansi.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS05-LP3",
+      "sortIndex": 26
+    },
+    {
+      "id": "IELTS-A-05-Q027",
+      "section": "LISTENING",
+      "taskType": "MATCHING",
+      "prompt": "Listening Part 3 (Prairie Seed Banking & Germination Storage Seminar — Q27): Match each conservation treatment with its exact biological purpose:",
+      "options": [],
+      "answer": "15°C silica drying::Drops humidity below 6% gently|-20°C vault freezing::Preserves seed banks economically|Six-week wet cold stratification::Simulates damp winter snow dormancy cues",
+      "acceptedAnswers": [
+        "15°C silica drying::Drops humidity below 6% gently|-20°C vault freezing::Preserves seed banks economically|Six-week wet cold stratification::Simulates damp winter snow dormancy cues"
+      ],
+      "explanation": "Pemetaan ketiga langkah teknis bank benih padang rumput.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS05-LP3",
+      "pairs": [
+        {
+          "left": "15°C silica drying",
+          "rightOptions": [
+            "Drops humidity below 6% gently",
+            "Preserves seed banks economically",
+            "Simulates damp winter snow dormancy cues"
+          ]
+        },
+        {
+          "left": "-20°C vault freezing",
+          "rightOptions": [
+            "Drops humidity below 6% gently",
+            "Preserves seed banks economically",
+            "Simulates damp winter snow dormancy cues"
+          ]
+        },
+        {
+          "left": "Six-week wet cold stratification",
+          "rightOptions": [
+            "Drops humidity below 6% gently",
+            "Preserves seed banks economically",
+            "Simulates damp winter snow dormancy cues"
+          ]
+        }
+      ],
+      "sortIndex": 27
+    },
+    {
+      "id": "IELTS-A-05-Q028",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 3 (Prairie Seed Banking & Germination Storage Seminar — Q28): NUMBER ONLY (weeks): 'Duration of simulated wet winter chilling required to wake dormant wildflower seeds: ___ weeks'",
+      "options": [],
+      "answer": "6",
+      "acceptedAnswers": [
+        "6",
+        "six"
+      ],
+      "explanation": "Stratifikasi lembap dingin dijalankan selama enam minggu.",
+      "rationaleSource": "IELTS-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS05-LP3",
+      "maxWords": 1,
+      "sortIndex": 28
+    },
+    {
+      "id": "IELTS-A-05-Q029",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 3 (Prairie Seed Banking & Germination Storage Seminar — Q29): Which test researcher initially noticed only four of ten test species had germinated cleanly?",
+      "options": [
+        "Captain Harrison.",
+        "Archivist Patel.",
+        "Dr. Chen.",
+        "Maya Brooks."
+      ],
+      "answer": "Dr. Chen.",
+      "acceptedAnswers": [
+        "Dr. Chen."
+      ],
+      "explanation": "Disebut 'Wait—let's inspect Dr. Chen's germination dish logs first though'.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS05-LP3",
+      "sortIndex": 29
+    },
+    {
+      "id": "IELTS-A-05-Q030",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 3 (Prairie Seed Banking & Germination Storage Seminar — Q30): Which dry herb substrate cushions damp wildflower seeds during cool winter dormancy awakening?",
+      "options": [
+        "Plastic laminated binder folders.",
+        "Moist clean moss pads.",
+        "Hot kiln pine charcoal.",
+        "Dry coarse quartz river gravel."
+      ],
+      "answer": "Moist clean moss pads.",
+      "acceptedAnswers": [
+        "Moist clean moss pads."
+      ],
+      "explanation": "Bantalan lumut lembap ('damp moss pads').",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS05-LP3",
+      "sortIndex": 30
+    },
+    {
+      "id": "IELTS-A-05-Q031",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 4 (University Lecture — Aerodynamic Cooling in Passive African Termite Mounds — Q31): What common textbook misconception did field tracer measurements inside Macrotermes mounds overturn?",
+      "options": [
+        "Mounds breathe cleanly via alternating tidal cycles daily rather than a constant one-way updraft chimney.",
+        "Termites burn dried oak firewood inside deep clay chimneys.",
+        "Giant mounds remain frozen solid across hot tropical summers.",
+        "Surface rainwater pumps hot mud upward hourly."
+      ],
+      "answer": "Mounds breathe cleanly via alternating tidal cycles daily rather than a constant one-way updraft chimney.",
+      "acceptedAnswers": [
+        "Mounds breathe cleanly via alternating tidal cycles daily rather than a constant one-way updraft chimney."
+      ],
+      "explanation": "Sensor asap membuktikan pertukaran udara bolak-balik ritmis siang-malam, bukan cerobong satu arah konstan.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS05-LP4",
+      "sortIndex": 31
+    },
+    {
+      "id": "IELTS-A-05-Q032",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 4 (University Lecture — Aerodynamic Cooling in Passive African Termite Mounds — Q32): ONE WORD ONLY: 'Field experimental measurement tracer proving oscillating internal airflow directions: ___ sensors'",
+      "options": [],
+      "answer": "smoke",
+      "acceptedAnswers": [
+        "smoke",
+        "smoke-tracer"
+      ],
+      "explanation": "Pengukuran aliran udara menggunakan sensor pelacak asap ('smoke-tracer sensors').",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS05-LP4",
+      "maxWords": 1,
+      "sortIndex": 32
+    },
+    {
+      "id": "IELTS-A-05-Q033",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 4 (University Lecture — Aerodynamic Cooling in Passive African Termite Mounds — Q33): NUMBER ONLY (°C): 'Tight steady internal temperature preserved inside central fungal nurseries: ___ degrees Celsius'",
+      "options": [],
+      "answer": "30",
+      "acceptedAnswers": [
+        "30",
+        "thirty"
+      ],
+      "explanation": "Suhu ruang taman jamur inti terjaga stabil ~30 °C meski luar di atas 42 °C.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS05-LP4",
+      "maxWords": 1,
+      "sortIndex": 33
+    },
+    {
+      "id": "IELTS-A-05-Q034",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 4 (University Lecture — Aerodynamic Cooling in Passive African Termite Mounds — Q34): Why do blind Macrotermes termites urgently require steady underground mound gas flushing?",
+      "options": [
+        "Subsoil roots drain ocean mist cleanly down mounds.",
+        "Symbiotic cultivated subterranean fungus crops exhale vast volumes of stale carbon dioxide.",
+        "Sharp sunlight blisters wet red clay pillars swiftly without wind.",
+        "Hungry highway beetles fill mud shafts full of sand."
+      ],
+      "answer": "Symbiotic cultivated subterranean fungus crops exhale vast volumes of stale carbon dioxide.",
+      "acceptedAnswers": [
+        "Symbiotic cultivated subterranean fungus crops exhale vast volumes of stale carbon dioxide."
+      ],
+      "explanation": "Jamur budidaya bawah tanah mengeluarkan gas karbon dioksida berlebih yang harus dibuang.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS05-LP4",
+      "sortIndex": 34
+    },
+    {
+      "id": "IELTS-A-05-Q035",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 4 (University Lecture — Aerodynamic Cooling in Passive African Termite Mounds — Q35): ONE WORD ONLY: 'Architectural outer geometric ridge shape capturing daytime solar wind heat unevenly: corrugated ___'",
+      "options": [],
+      "answer": "fins",
+      "acceptedAnswers": [
+        "fins",
+        "flutes"
+      ],
+      "explanation": "Sirip/alur vertikal luar ('outer fins') menyerap panas surya siang guna menggerakkan sirkulasi.",
+      "rationaleSource": "IELTS-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS05-LP4",
+      "maxWords": 2,
+      "sortIndex": 35
+    },
+    {
+      "id": "IELTS-A-05-Q036",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 4 (University Lecture — Aerodynamic Cooling in Passive African Termite Mounds — Q36): What switches air-flow direction completely inside tall porous outer flutes after desert sunsets?",
+      "options": [
+        "Termites seal ground chimney vents flatly with wet mud pellets.",
+        "Afternoon monsoon lightning reverses wind compass needles.",
+        "Earthworms chew extra wide exit doors nightly.",
+        "Cool desert night air cools exterior ridge fins rapidly while core nest gas stays warm."
+      ],
+      "answer": "Cool desert night air cools exterior ridge fins rapidly while core nest gas stays warm.",
+      "acceptedAnswers": [
+        "Cool desert night air cools exterior ridge fins rapidly while core nest gas stays warm."
+      ],
+      "explanation": "Udara malam mendinginkan sisi dinding luar lebih cepat daripada inti sarang sehingga arah konveksi berbalik.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS05-LP4",
+      "sortIndex": 36
+    },
+    {
+      "id": "IELTS-A-05-Q037",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 4 (University Lecture — Aerodynamic Cooling in Passive African Termite Mounds — Q37): ONE WORD ONLY: 'Modern architectural engineering discipline copying passive biological ventilation tricks: ___ design'",
+      "options": [],
+      "answer": "biomimetic",
+      "acceptedAnswers": [
+        "biomimetic"
+      ],
+      "explanation": "Penerapan solusi alam pada arsitektur disebut biomimetik ('biomimetic').",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS05-LP4",
+      "maxWords": 1,
+      "sortIndex": 37
+    },
+    {
+      "id": "IELTS-A-05-Q038",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 4 (University Lecture — Aerodynamic Cooling in Passive African Termite Mounds — Q38): Where specifically did real urban office builders apply passive ventilation lessons inspired by Namibian mounds?",
+      "options": [
+        "Cast-iron harbor bridges spanning rural Canada.",
+        "Low-energy downtown office towers in Zimbabwe and temperate Europe.",
+        "Wooden beach boardwalk cafes across Antarctica.",
+        "Automated subsea oil submarine hatches."
+      ],
+      "answer": "Low-energy downtown office towers in Zimbabwe and temperate Europe.",
+      "acceptedAnswers": [
+        "Low-energy downtown office towers in Zimbabwe and temperate Europe."
+      ],
+      "explanation": "Menjadi inspirasi gedung hemat energi di Zimbabwe dan kota beriklim sedang Eropa.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS05-LP4",
+      "sortIndex": 38
+    },
+    {
+      "id": "IELTS-A-05-Q039",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 4 (University Lecture — Aerodynamic Cooling in Passive African Termite Mounds — Q39): NUMBER ONLY (m): 'Typical towering earthen spire elevation noted across arid plains: roughly ___ meters high'",
+      "options": [],
+      "answer": "2",
+      "acceptedAnswers": [
+        "2",
+        "two"
+      ],
+      "explanation": "Gundukan tanah mencapai tinggi sekitar dua meter.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS05-LP4",
+      "maxWords": 1,
+      "sortIndex": 39
+    },
+    {
+      "id": "IELTS-A-05-Q040",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 4 (University Lecture — Aerodynamic Cooling in Passive African Termite Mounds — Q40): Which sensory constraint highlights the staggering precision of termite construction?",
+      "options": [
+        "Queen ants compute architectural blueprints mathematically inside oak chambers.",
+        "Flying moths guide subterranean tunnel masonry during midday storms.",
+        "Mound mud glows brightly fluorescent throughout darkness.",
+        "Workers are completely sightless (blind) builders shaping meter-scale thermal engines cleanly."
+      ],
+      "answer": "Workers are completely sightless (blind) builders shaping meter-scale thermal engines cleanly.",
+      "acceptedAnswers": [
+        "Workers are completely sightless (blind) builders shaping meter-scale thermal engines cleanly."
+      ],
+      "explanation": "Rayap pekerja yang buta total mampu membangun struktur pengatur iklim presisi.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS05-LP4",
+      "sortIndex": 40
+    },
+    {
+      "id": "IELTS-A-05-Q041",
       "section": "READING",
       "taskType": "CHOICE_SINGLE",
-      "prompt": "Passage 1: 'Slowing ship speed near Vancouver Island measurably expanded the effective range of whale vocal communication.' -> TRUE, FALSE, or NOT GIVEN?",
+      "prompt": "Reading Passage 1 ('Reading Planetary Volcanic Seasons Through Alpine Ice Bubbles' — Q41): Do the following statements agree with the information in the text? (TRUE / FALSE / NOT GIVEN): 'Deep polar glacier snow blankets resist summer melting completely, trapping ancient atmospheric pockets cleanly over millennia.'",
       "options": [
         "TRUE",
         "FALSE",
@@ -159,7 +1092,55 @@
       "acceptedAnswers": [
         "TRUE"
       ],
-      "explanation": "Paragraf B mengonfirmasi penurunan intensitas akustik hingga setengahnya memungkinkan paus mendeteksi klik ekolokasi pada rentang makan lebih luas.",
+      "explanation": "Paragraf A menerangkan salju kutub tidak mencair tuntas sehingga menekan gelembung udara kuno.",
+      "rationaleSource": "IELTS-MOD-02",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS05-P1",
+      "audioAssetId": null,
+      "sortIndex": 41
+    },
+    {
+      "id": "IELTS-A-05-Q042",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 1 ('Reading Planetary Volcanic Seasons Through Alpine Ice Bubbles' — Q42): Do the following statements agree with the information in the text? (TRUE / FALSE / NOT GIVEN): 'Dated wooden tree rings preserve uninterrupted global climate calendars reaching back eight hundred thousand years.'",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": "FALSE",
+      "acceptedAnswers": [
+        "FALSE"
+      ],
+      "explanation": "Paragraf B menegaskan catatan es mencapai ~800.000 tahun, jauh lebih tua dibanding cincin pohon atau terumbu karang.",
+      "rationaleSource": "IELTS-MOD-02",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS05-P1",
+      "audioAssetId": null,
+      "sortIndex": 42
+    },
+    {
+      "id": "IELTS-A-05-Q043",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 1 ('Reading Planetary Volcanic Seasons Through Alpine Ice Bubbles' — Q43): Do the following statements agree with the information in the text? (TRUE / FALSE / NOT GIVEN): 'Gases drifting inside shallow snow firn remain identical in age to frozen crystal snow surrounding them.'",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": "FALSE",
+      "acceptedAnswers": [
+        "FALSE"
+      ],
+      "explanation": "Paragraf C menjelaskan udara berdifusi berabad-abad sebelum pori menutup pada 80 m sehingga gelembung udara sedikit lebih muda.",
       "rationaleSource": "IELTS-MOD-02",
       "difficulty": "B2",
       "points": 1,
@@ -167,22 +1148,115 @@
       "reviewStatus": "VERIFIED_ORIGINAL",
       "passageId": "IELTS05-P1",
       "audioAssetId": null,
-      "sortIndex": 5
+      "sortIndex": 43
     },
     {
-      "id": "IELTS-A-05-Q06",
+      "id": "IELTS-A-05-Q044",
       "section": "READING",
-      "taskType": "MATCHING",
-      "prompt": "Match each mechanism in Passage 1 to its documented effect:",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 1 ('Reading Planetary Volcanic Seasons Through Alpine Ice Bubbles' — Q44): Do the following statements agree with the information in the text? (TRUE / FALSE / NOT GIVEN): 'Han dynasty imperial astronomers recorded volcanic dust veils using bronze mirror basins in Chang'an.'",
       "options": [
-        "11% speed reduction :: Halved underwater acoustic intensity during trials",
-        "Swept five-blade propeller :: Delayed bubble collapse while cutting fuel use 4%"
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
       ],
-      "answer": "11% speed reduction::Halved underwater acoustic intensity during trials|Swept five-blade propeller::Delayed bubble collapse while cutting fuel use 4%",
+      "answer": "NOT GIVEN",
       "acceptedAnswers": [
-        "11% speed reduction::Halved underwater acoustic intensity during trials|Swept five-blade propeller::Delayed bubble collapse while cutting fuel use 4%"
+        "NOT GIVEN"
       ],
-      "explanation": "Paragraf B membedakan dampak operasional penurunan kecepatan 11% dari dampak desain baling-baling 5 bilah.",
+      "explanation": "Paragraf D menyebut kronik Romawi, Han, dan biarawan abad pertengahan, namun tidak menyebut metode baskom perunggu astronom Han.",
+      "rationaleSource": "IELTS-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS05-P1",
+      "audioAssetId": null,
+      "sortIndex": 44
+    },
+    {
+      "id": "IELTS-A-05-Q045",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 1 ('Reading Planetary Volcanic Seasons Through Alpine Ice Bubbles' — Q45): Do the following statements agree with the information in the text? (TRUE / FALSE / NOT GIVEN): 'Synchronized sulfate horizons let scientists align Greenland and Antarctic timelines accurately despite mismatched snowfall speeds.'",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": "TRUE",
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "explanation": "Paragraf E menerangkan puncak sulfat global menyelaraskan inti es utara dan selatan.",
+      "rationaleSource": "IELTS-MOD-02",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS05-P1",
+      "audioAssetId": null,
+      "sortIndex": 45
+    },
+    {
+      "id": "IELTS-A-05-Q046",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 1 ('Reading Planetary Volcanic Seasons Through Alpine Ice Bubbles' — Q46): Do the following statements agree with the information in the text? (TRUE / FALSE / NOT GIVEN): 'Tiny trace glass fragments inside acid ice layers match dated volcanic mineral quarries cleanly.'",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": "TRUE",
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "explanation": "Paragraf D menyebut serpihan kaca vulkanik Islandia dicocokkan langsung ke batuan sumber bertanggal.",
+      "rationaleSource": "IELTS-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS05-P1",
+      "audioAssetId": null,
+      "sortIndex": 46
+    },
+    {
+      "id": "IELTS-A-05-Q047",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 1 ('Reading Planetary Volcanic Seasons Through Alpine Ice Bubbles' — Q47): Do the following statements agree with the information in the text? (TRUE / FALSE / NOT GIVEN): 'Steel hollow ice drills routinely exceed ten kilometers in length beneath central Alpine summits.'",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": "FALSE",
+      "acceptedAnswers": [
+        "FALSE"
+      ],
+      "explanation": "Paragraf B menyebut pengeboran mencapai tiga kilometer ('three kilometers downward').",
+      "rationaleSource": "IELTS-MOD-02",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS05-P1",
+      "audioAssetId": null,
+      "sortIndex": 47
+    },
+    {
+      "id": "IELTS-A-05-Q048",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Reading Passage 1 ('Reading Planetary Volcanic Seasons Through Alpine Ice Bubbles' — Q48): ONE WORD ONLY: 'Compacted porous upper snow zone where air still filters slowly prior to pore-closure: ___'",
+      "options": [],
+      "answer": "firn",
+      "acceptedAnswers": [
+        "firn"
+      ],
+      "explanation": "Paragraf C menamakan lapisan berpori tersebut 'firn'.",
       "rationaleSource": "IELTS-MOD-03",
       "difficulty": "B2",
       "points": 1,
@@ -190,54 +1264,824 @@
       "reviewStatus": "VERIFIED_ORIGINAL",
       "passageId": "IELTS05-P1",
       "audioAssetId": null,
-      "pairs": [
-        {
-          "left": "11% speed reduction",
-          "rightOptions": [
-            "Halved underwater acoustic intensity during trials",
-            "Delayed bubble collapse while cutting fuel use 4%"
-          ]
-        },
-        {
-          "left": "Swept five-blade propeller",
-          "rightOptions": [
-            "Halved underwater acoustic intensity during trials",
-            "Delayed bubble collapse while cutting fuel use 4%"
-          ]
-        }
-      ],
-      "sortIndex": 6
+      "maxWords": 1,
+      "sortIndex": 48
     },
     {
-      "id": "IELTS-A-05-Q07",
+      "id": "IELTS-A-05-Q049",
       "section": "READING",
       "taskType": "FILL_BLANK",
-      "prompt": "Summary Completion (ONE WORD ONLY from Passage 1): 'Propeller noise arises primarily when tiny vacuum ___ form and implode near spinning blade tips.'",
+      "prompt": "Reading Passage 1 ('Reading Planetary Volcanic Seasons Through Alpine Ice Bubbles' — Q49): NUMBER ONLY (m): 'Approximate glacier depth where loose pores finally lock atmospheric bubbles tightly shut: ___ meters'",
       "options": [],
-      "answer": "bubbles",
+      "answer": "80",
       "acceptedAnswers": [
-        "bubbles"
+        "80",
+        "eighty"
       ],
-      "explanation": "Paragraf A secara persis menyebut 'microscopic vacuum bubbles forming and imploding'.",
+      "explanation": "Gelembung tersegel rapat di kedalaman sekitar delapan puluh meter.",
       "rationaleSource": "IELTS-MOD-03",
-      "difficulty": "B1",
+      "difficulty": "B2",
       "points": 1,
       "license": "Original",
       "reviewStatus": "VERIFIED_ORIGINAL",
       "passageId": "IELTS05-P1",
       "audioAssetId": null,
       "maxWords": 1,
-      "sortIndex": 7
+      "sortIndex": 49
     },
     {
-      "id": "IELTS-A-05-Q08",
+      "id": "IELTS-A-05-Q050",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Reading Passage 1 ('Reading Planetary Volcanic Seasons Through Alpine Ice Bubbles' — Q50): NUMBER ONLY (km): 'Vertical bore-core depth reaching nearly 800,000-year ancient strata: ___ kilometers'",
+      "options": [],
+      "answer": "3",
+      "acceptedAnswers": [
+        "3",
+        "three"
+      ],
+      "explanation": "Paragraf B menyebut kedalaman bor tiga kilometer.",
+      "rationaleSource": "IELTS-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS05-P1",
+      "audioAssetId": null,
+      "maxWords": 1,
+      "sortIndex": 50
+    },
+    {
+      "id": "IELTS-A-05-Q051",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Reading Passage 1 ('Reading Planetary Volcanic Seasons Through Alpine Ice Bubbles' — Q51): ONE WORD ONLY: 'Global chemical eruption aerosol deposited instantaneously onto polar crystals: ___ acid'",
+      "options": [],
+      "answer": "sulfuric",
+      "acceptedAnswers": [
+        "sulfuric"
+      ],
+      "explanation": "Paragraf C menyebut lapisan asam sulfat ('sulfuric acid').",
+      "rationaleSource": "IELTS-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS05-P1",
+      "audioAssetId": null,
+      "maxWords": 1,
+      "sortIndex": 51
+    },
+    {
+      "id": "IELTS-A-05-Q052",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 1 ('Reading Planetary Volcanic Seasons Through Alpine Ice Bubbles' — Q52): Why do tiny enclosed oxygen bubbles read measurably younger than crisp glacial ice grains gripping them?",
+      "options": [
+        "Summer sunshine evaporates lower bubble shells repeatedly every equinox.",
+        "Steel drill pipes pump modern surface exhaust downward accidentally during extraction.",
+        "Volcanic sparks burn old winter pores leaving newer oxygen traces behind.",
+        "Air diffuses vertically through upper porous snow for centuries until overburden weight closes air channels."
+      ],
+      "answer": "Air diffuses vertically through upper porous snow for centuries until overburden weight closes air channels.",
+      "acceptedAnswers": [
+        "Air diffuses vertically through upper porous snow for centuries until overburden weight closes air channels."
+      ],
+      "explanation": "Difusi gas dalam zona firn berpori berlangsung ratusan tahun sebelum pori tertutup rapat pada kedalaman 80 meter.",
+      "rationaleSource": "IELTS-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS05-P1",
+      "audioAssetId": null,
+      "sortIndex": 52
+    },
+    {
+      "id": "IELTS-A-05-Q053",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 1 ('Reading Planetary Volcanic Seasons Through Alpine Ice Bubbles' — Q53): How do microscopic tephra glass grains verify ancient calendar accuracy across cold poles?",
+      "options": [
+        "Glass splinters accelerate glacier sliding speed cleanly toward lowland valleys.",
+        "Ash particles dissolve trapped methane gases symmetrically along frozen walls.",
+        "Distinct volcanic ash mineral chemistry ties ice horizons directly to historically chronicled mega-eruptions.",
+        "Clear shards reflect laser thermometers toward polar solar storms daily."
+      ],
+      "answer": "Distinct volcanic ash mineral chemistry ties ice horizons directly to historically chronicled mega-eruptions.",
+      "acceptedAnswers": [
+        "Distinct volcanic ash mineral chemistry ties ice horizons directly to historically chronicled mega-eruptions."
+      ],
+      "explanation": "Komposisi kaca tephra unik memvalidasi kecocokan lapisan es dengan catatan sejarah letusan.",
+      "rationaleSource": "IELTS-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS05-P1",
+      "audioAssetId": null,
+      "sortIndex": 53
+    },
+    {
+      "id": "IELTS-A-05-Q054",
+      "section": "READING",
+      "taskType": "MATCHING",
+      "prompt": "Reading Passage 2 ('Can Narrow Motorway Wildflower Verges Bridge Pollinator Deserts?' — Q54): Choose the best heading for Paragraphs A–D:",
+      "options": [],
+      "answer": "Paragraph A::Habitat fragmentation blocking insect dispersal|Paragraph B::Initial roadside contamination skepticism|Paragraph C::Windbreak hedges & fewer summer mows|Paragraph D::Soil impoverishment favoring wild clovers",
+      "acceptedAnswers": [
+        "Paragraph A::Habitat fragmentation blocking insect dispersal|Paragraph B::Initial roadside contamination skepticism|Paragraph C::Windbreak hedges & fewer summer mows|Paragraph D::Soil impoverishment favoring wild clovers"
+      ],
+      "explanation": "Ringkasan berurutan dari fragmentasi lahan ke teknik pemangkasan & penipisan hara tanah.",
+      "rationaleSource": "IELTS-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS05-P2",
+      "audioAssetId": null,
+      "pairs": [
+        {
+          "left": "Paragraph A",
+          "rightOptions": [
+            "Habitat fragmentation blocking insect dispersal",
+            "Initial roadside contamination skepticism",
+            "Windbreak hedges & fewer summer mows",
+            "Soil impoverishment favoring wild clovers"
+          ]
+        },
+        {
+          "left": "Paragraph B",
+          "rightOptions": [
+            "Habitat fragmentation blocking insect dispersal",
+            "Initial roadside contamination skepticism",
+            "Windbreak hedges & fewer summer mows",
+            "Soil impoverishment favoring wild clovers"
+          ]
+        },
+        {
+          "left": "Paragraph C",
+          "rightOptions": [
+            "Habitat fragmentation blocking insect dispersal",
+            "Initial roadside contamination skepticism",
+            "Windbreak hedges & fewer summer mows",
+            "Soil impoverishment favoring wild clovers"
+          ]
+        },
+        {
+          "left": "Paragraph D",
+          "rightOptions": [
+            "Habitat fragmentation blocking insect dispersal",
+            "Initial roadside contamination skepticism",
+            "Windbreak hedges & fewer summer mows",
+            "Soil impoverishment favoring wild clovers"
+          ]
+        }
+      ],
+      "sortIndex": 54
+    },
+    {
+      "id": "IELTS-A-05-Q055",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 2 ('Can Narrow Motorway Wildflower Verges Bridge Pollinator Deserts?' — Q55): Do the following statements agree with the information in the text? (TRUE / FALSE / NOT GIVEN): 'Many solitary native bee species struggle bridging nectar gaps stretching further than two hundred meters.'",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": "TRUE",
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "explanation": "Paragraf A menyebut lebah soliter terisolasi bila padang bunga terpaut jauh di atas 200 meter.",
+      "rationaleSource": "IELTS-MOD-02",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS05-P2",
+      "audioAssetId": null,
+      "sortIndex": 55
+    },
+    {
+      "id": "IELTS-A-05-Q056",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 2 ('Can Narrow Motorway Wildflower Verges Bridge Pollinator Deserts?' — Q56): Do the following statements agree with the information in the text? (TRUE / FALSE / NOT GIVEN): 'Highway crews increased summer lawnmower frequency along Friesland verges from two trims to twelve.'",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": "FALSE",
+      "acceptedAnswers": [
+        "FALSE"
+      ],
+      "explanation": "Paragraf C menyatakan jadwal potong justu DITURUNKAN dari 12 kali menjadi 2 kali raked-hay musim gugur.",
+      "rationaleSource": "IELTS-MOD-02",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS05-P2",
+      "audioAssetId": null,
+      "sortIndex": 56
+    },
+    {
+      "id": "IELTS-A-05-Q057",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 2 ('Can Narrow Motorway Wildflower Verges Bridge Pollinator Deserts?' — Q57): Do the following statements agree with the information in the text? (TRUE / FALSE / NOT GIVEN): 'Leaving freshly sliced grass mulch to rot directly over clover ditches helps fragile wildflowers win easily.'",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": "FALSE",
+      "acceptedAnswers": [
+        "FALSE"
+      ],
+      "explanation": "Paragraf D menegaskan membuang potongan rumput menipiskan kesuburan berlebih sehingga jelatang agresif tak mendominasi clover.",
+      "rationaleSource": "IELTS-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS05-P2",
+      "audioAssetId": null,
+      "sortIndex": 57
+    },
+    {
+      "id": "IELTS-A-05-Q058",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 2 ('Can Narrow Motorway Wildflower Verges Bridge Pollinator Deserts?' — Q58): Do the following statements agree with the information in the text? (TRUE / FALSE / NOT GIVEN): 'Dutch county highway departments pay commercial honeybee farmers annual rental fees along ring roads.'",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": "NOT GIVEN",
+      "acceptedAnswers": [
+        "NOT GIVEN"
+      ],
+      "explanation": "Paragraf C–E hanya membahas lebah soliter/bumblebee liar dan kupu-kupu, tanpa menyebut sewa peternak lebah madu.",
+      "rationaleSource": "IELTS-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS05-P2",
+      "audioAssetId": null,
+      "sortIndex": 58
+    },
+    {
+      "id": "IELTS-A-05-Q059",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Reading Passage 2 ('Can Narrow Motorway Wildflower Verges Bridge Pollinator Deserts?' — Q59): ONE WORD ONLY: 'Aggressive nutrient-loving tall weeds choked out once clipped lawn cuttings leave bare subsoil lean: stinging ___'",
+      "options": [],
+      "answer": "nettles",
+      "acceptedAnswers": [
+        "nettles",
+        "nettle"
+      ],
+      "explanation": "Paragraf D menyebut 'stinging nettles'.",
+      "rationaleSource": "IELTS-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS05-P2",
+      "audioAssetId": null,
+      "maxWords": 1,
+      "sortIndex": 59
+    },
+    {
+      "id": "IELTS-A-05-Q060",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Reading Passage 2 ('Can Narrow Motorway Wildflower Verges Bridge Pollinator Deserts?' — Q60): NUMBER ONLY (passes): 'Original frequent summer mowing frequency reduced cleanly down to two autumn passes: ___ passes'",
+      "options": [],
+      "answer": "12",
+      "acceptedAnswers": [
+        "12",
+        "twelve"
+      ],
+      "explanation": "Jadwal pangkas awal adalah 12 kali per musim panas.",
+      "rationaleSource": "IELTS-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS05-P2",
+      "audioAssetId": null,
+      "maxWords": 1,
+      "sortIndex": 60
+    },
+    {
+      "id": "IELTS-A-05-Q061",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Reading Passage 2 ('Can Narrow Motorway Wildflower Verges Bridge Pollinator Deserts?' — Q61): ONE WORD ONLY: 'Tall vegetated roadside buffer planting routing speeding lorry turbulence upward cleanly: windbreak ___'",
+      "options": [],
+      "answer": "hedges",
+      "acceptedAnswers": [
+        "hedges",
+        "hedge"
+      ],
+      "explanation": "Paragraf C menyebut pagar tanaman tinggi 'windbreak hedges'.",
+      "rationaleSource": "IELTS-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS05-P2",
+      "audioAssetId": null,
+      "maxWords": 1,
+      "sortIndex": 61
+    },
+    {
+      "id": "IELTS-A-05-Q062",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Reading Passage 2 ('Can Narrow Motorway Wildflower Verges Bridge Pollinator Deserts?' — Q62): ONE WORD ONLY: 'Nutrient-poor coarse mineral ground substrate prized by native meadow blooms: lean ___'",
+      "options": [],
+      "answer": "subsoil",
+      "acceptedAnswers": [
+        "subsoil"
+      ],
+      "explanation": "Paragraf D menyebut tanah dasar miskin hara 'impoverished lean subsoil'.",
+      "rationaleSource": "IELTS-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS05-P2",
+      "audioAssetId": null,
+      "maxWords": 1,
+      "sortIndex": 62
+    },
+    {
+      "id": "IELTS-A-05-Q063",
+      "section": "READING",
+      "taskType": "CHOICE_MULTI",
+      "prompt": "Reading Passage 2 ('Can Narrow Motorway Wildflower Verges Bridge Pollinator Deserts?' — Q63): Choose TWO operational gains delivered when crews trimmed verges strictly twice yearly and hauled hay off-site:",
+      "options": [
+        "Roadside maintenance tractor fuel and labor costs fell substantially",
+        "Low-nutrient gravelly banks let varied seasonal blooms thrive cleanly from spring into autumn",
+        "Tall dense stinging nettles smothered every slow-growing clover seedling rapidly",
+        "Trucks spilled gravel dust cleanly over neighboring orchard barns"
+      ],
+      "answer": "Roadside maintenance tractor fuel and labor costs fell substantially|Low-nutrient gravelly banks let varied seasonal blooms thrive cleanly from spring into autumn",
+      "acceptedAnswers": [
+        "Roadside maintenance tractor fuel and labor costs fell substantially|Low-nutrient gravelly banks let varied seasonal blooms thrive cleanly from spring into autumn"
+      ],
+      "explanation": "Mengurangi pemangkasan menjadi dua kali hemat anggaran sekaligus menyapu hara agar bunga liar mekar bergantian Apr–Sep.",
+      "rationaleSource": "IELTS-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS05-P2",
+      "audioAssetId": null,
+      "sortIndex": 63
+    },
+    {
+      "id": "IELTS-A-05-Q064",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 2 ('Can Narrow Motorway Wildflower Verges Bridge Pollinator Deserts?' — Q64): Why did highway engineers originally dismiss roadside shoulders as useless for butterfly recovery?",
+      "options": [
+        "Assumptions that clover roots split reinforced tarmac curves downward nightly.",
+        "Complaints that fluttering wings blurred roadside digital radar cameras constantly.",
+        "Strict bans prohibiting herbaceous greenery beside asphalt bridges nationwide.",
+        "Fears that heavy lorry air blasts and tire soot would wipe out drifting delicate insects."
+      ],
+      "answer": "Fears that heavy lorry air blasts and tire soot would wipe out drifting delicate insects.",
+      "acceptedAnswers": [
+        "Fears that heavy lorry air blasts and tire soot would wipe out drifting delicate insects."
+      ],
+      "explanation": "Insinyur awalnya menduga debu ban dan asap diesel akan menjadi perangkap kematian serangga.",
+      "rationaleSource": "IELTS-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS05-P2",
+      "audioAssetId": null,
+      "sortIndex": 64
+    },
+    {
+      "id": "IELTS-A-05-Q065",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 2 ('Can Narrow Motorway Wildflower Verges Bridge Pollinator Deserts?' — Q65): What role did continuous tall hedges between asphalt lanes and grassy slopes serve during trials?",
+      "options": [
+        "Supplied sweet hollow cane nectar solely during freezing mid-winter nights.",
+        "Forced wandering meadow butterflies upward into passing windshield wipers.",
+        "Shielded foraging insects from turbulent vehicle wash by steering polluted eddies safely overhead.",
+        "Blocked warm afternoon sunbeams completely off cold autumn wildflowers."
+      ],
+      "answer": "Shielded foraging insects from turbulent vehicle wash by steering polluted eddies safely overhead.",
+      "acceptedAnswers": [
+        "Shielded foraging insects from turbulent vehicle wash by steering polluted eddies safely overhead."
+      ],
+      "explanation": "Pagar semak tinggi mengalihkan pusaran asap lalu lintas ke atas menjauhi padang bunga.",
+      "rationaleSource": "IELTS-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS05-P2",
+      "audioAssetId": null,
+      "sortIndex": 65
+    },
+    {
+      "id": "IELTS-A-05-Q066",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 2 ('Can Narrow Motorway Wildflower Verges Bridge Pollinator Deserts?' — Q66): What experimental method proved insects genuinely traveled between isolated woods via roadside ribbons?",
+      "options": [
+        "Counting parked commuter sedans along paved motorway laybys weekly.",
+        "Tracking tagged wings of meadow brown butterflies and red-tailed bumblebees across linked segments.",
+        "Scanning soil microbes via thermal orbiting drones along mountain tunnels.",
+        "Weighing autumn grass hay bales delivered into cattle stables regionally."
+      ],
+      "answer": "Tracking tagged wings of meadow brown butterflies and red-tailed bumblebees across linked segments.",
+      "acceptedAnswers": [
+        "Tracking tagged wings of meadow brown butterflies and red-tailed bumblebees across linked segments."
+      ],
+      "explanation": "Penandaan sayap (marked-wing surveys) melacak pergerakan kupu-kupu dan lebah melintasi koridor bunga.",
+      "rationaleSource": "IELTS-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS05-P2",
+      "audioAssetId": null,
+      "sortIndex": 66
+    },
+    {
+      "id": "IELTS-A-05-Q067",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 3 ('Designing Calmer Cities Through Urban Acoustic Architecture' — Q67): Do the following statements reflect the claims of the writer? (YES / NO / NOT GIVEN): 'Cutting raw city noise down below arbitrary decibel caps automatically yields peaceful calming neighborhood squares.'",
+      "options": [
+        "YES",
+        "NO",
+        "NOT GIVEN"
+      ],
+      "answer": "NO",
+      "acceptedAnswers": [
+        "NO"
+      ],
+      "explanation": "Paragraf B membuktikan volume desibel semata gagal memprediksi rasa tenang; karakter bunyi amat menentukan.",
+      "rationaleSource": "IELTS-MOD-08",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS05-P3",
+      "audioAssetId": null,
+      "sortIndex": 67
+    },
+    {
+      "id": "IELTS-A-05-Q068",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 3 ('Designing Calmer Cities Through Urban Acoustic Architecture' — Q68): Do the following statements reflect the claims of the writer? (YES / NO / NOT GIVEN): 'Volunteers perceived sixty-eight-decibel natural rushing water as more soothing than quieter sixty-decibel idling engines.'",
+      "options": [
+        "YES",
+        "NO",
+        "NOT GIVEN"
+      ],
+      "answer": "YES",
+      "acceptedAnswers": [
+        "YES"
+      ],
+      "explanation": "Paragraf B mencatat air terjun 68 dB dinilai jauh lebih menenangkan daripada mesin diesel 60 dB.",
+      "rationaleSource": "IELTS-MOD-08",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS05-P3",
+      "audioAssetId": null,
+      "sortIndex": 68
+    },
+    {
+      "id": "IELTS-A-05-Q069",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 3 ('Designing Calmer Cities Through Urban Acoustic Architecture' — Q69): Do the following statements reflect the claims of the writer? (YES / NO / NOT GIVEN): 'Smooth flat glass skyscraper corridors help pedestrians pinpoint ambulance sirens accurately at first glance.'",
+      "options": [
+        "YES",
+        "NO",
+        "NOT GIVEN"
+      ],
+      "answer": "NO",
+      "acceptedAnswers": [
+        "NO"
+      ],
+      "explanation": "Paragraf C menjelaskan kaca datar memantulkan suara ke segala arah hingga menipu persepsi arah bahaya.",
+      "rationaleSource": "IELTS-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS05-P3",
+      "audioAssetId": null,
+      "sortIndex": 69
+    },
+    {
+      "id": "IELTS-A-05-Q070",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 3 ('Designing Calmer Cities Through Urban Acoustic Architecture' — Q70): Do the following statements reflect the claims of the writer? (YES / NO / NOT GIVEN): 'Angled red cedar slats cost municipal districts half as much per square meter as steel mesh panels.'",
+      "options": [
+        "YES",
+        "NO",
+        "NOT GIVEN"
+      ],
+      "answer": "NOT GIVEN",
+      "acceptedAnswers": [
+        "NOT GIVEN"
+      ],
+      "explanation": "Paragraf D menyebut papan kayu cedar miring menyerap pantulan keras, tanpa membandingkan biaya dengan panel baja.",
+      "rationaleSource": "IELTS-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS05-P3",
+      "audioAssetId": null,
+      "sortIndex": 70
+    },
+    {
+      "id": "IELTS-A-05-Q071",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 3 ('Designing Calmer Cities Through Urban Acoustic Architecture' — Q71): Do the following statements reflect the claims of the writer? (YES / NO / NOT GIVEN): 'Cascading fountain rush cleanly drowns out roaring jet aircraft flying right over downtown squares.'",
+      "options": [
+        "YES",
+        "NO",
+        "NOT GIVEN"
+      ],
+      "answer": "NO",
+      "acceptedAnswers": [
+        "NO"
+      ],
+      "explanation": "Paragraf E dengan tegas menyatakan air mancur tidak pernah mampu meredam suara pesawat jet terbang rendah.",
+      "rationaleSource": "IELTS-MOD-08",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS05-P3",
+      "audioAssetId": null,
+      "sortIndex": 71
+    },
+    {
+      "id": "IELTS-A-05-Q072",
+      "section": "READING",
+      "taskType": "MATCHING",
+      "prompt": "Reading Passage 3 ('Designing Calmer Cities Through Urban Acoustic Architecture' — Q72): Match each architectural material cleanly to its urban acoustic function:",
+      "options": [],
+      "answer": "Flat glass concrete walls::Bounce high-frequency traffic echoes confusingly across canyons|Angled wooden timber slats::Scatter harsh reflections smoothly off porous warm grooves|Bubbling stone fountains::Layer broadband natural frequency wash masking distant hums",
+      "acceptedAnswers": [
+        "Flat glass concrete walls::Bounce high-frequency traffic echoes confusingly across canyons|Angled wooden timber slats::Scatter harsh reflections smoothly off porous warm grooves|Bubbling stone fountains::Layer broadband natural frequency wash masking distant hums"
+      ],
+      "explanation": "Kesesuaian mekanisme akustik kaca datar (C), kisi kayu miring (D), dan air mancur (D).",
+      "rationaleSource": "IELTS-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS05-P3",
+      "audioAssetId": null,
+      "pairs": [
+        {
+          "left": "Flat glass concrete walls",
+          "rightOptions": [
+            "Bounce high-frequency traffic echoes confusingly across canyons",
+            "Scatter harsh reflections smoothly off porous warm grooves",
+            "Layer broadband natural frequency wash masking distant hums"
+          ]
+        },
+        {
+          "left": "Angled wooden timber slats",
+          "rightOptions": [
+            "Bounce high-frequency traffic echoes confusingly across canyons",
+            "Scatter harsh reflections smoothly off porous warm grooves",
+            "Layer broadband natural frequency wash masking distant hums"
+          ]
+        },
+        {
+          "left": "Bubbling stone fountains",
+          "rightOptions": [
+            "Bounce high-frequency traffic echoes confusingly across canyons",
+            "Scatter harsh reflections smoothly off porous warm grooves",
+            "Layer broadband natural frequency wash masking distant hums"
+          ]
+        }
+      ],
+      "sortIndex": 72
+    },
+    {
+      "id": "IELTS-A-05-Q073",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Reading Passage 3 ('Designing Calmer Cities Through Urban Acoustic Architecture' — Q73): NUMBER ONLY (dB): 'Measured laboratory loudness of rushing mountain water judged soothing by listeners: ___ decibels'",
+      "options": [],
+      "answer": "68",
+      "acceptedAnswers": [
+        "68"
+      ],
+      "explanation": "Paragraf B mencatat volume arus air 68 dB terasa lebih tenang.",
+      "rationaleSource": "IELTS-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS05-P3",
+      "audioAssetId": null,
+      "maxWords": 1,
+      "sortIndex": 73
+    },
+    {
+      "id": "IELTS-A-05-Q074",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Reading Passage 3 ('Designing Calmer Cities Through Urban Acoustic Architecture' — Q74): ONE WORD ONLY: 'Architectural urban corridor shape trapping endless chaotic reflections between tall towers: ___ streets'",
+      "options": [],
+      "answer": "canyon",
+      "acceptedAnswers": [
+        "canyon"
+      ],
+      "explanation": "Paragraf C memakai istilah 'cramped canyon streets'.",
+      "rationaleSource": "IELTS-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS05-P3",
+      "audioAssetId": null,
+      "maxWords": 1,
+      "sortIndex": 74
+    },
+    {
+      "id": "IELTS-A-05-Q075",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Reading Passage 3 ('Designing Calmer Cities Through Urban Acoustic Architecture' — Q75): ONE WORD ONLY: 'Wood species arranged along angled slats to diffuse sharp urban glare echoes gently: ___ timber'",
+      "options": [],
+      "answer": "cedar",
+      "acceptedAnswers": [
+        "cedar"
+      ],
+      "explanation": "Paragraf D menyebut 'angled cedar timber slats'.",
+      "rationaleSource": "IELTS-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS05-P3",
+      "audioAssetId": null,
+      "maxWords": 1,
+      "sortIndex": 75
+    },
+    {
+      "id": "IELTS-A-05-Q076",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Reading Passage 3 ('Designing Calmer Cities Through Urban Acoustic Architecture' — Q76): ONE WORD ONLY: 'Acoustic strategy where wide gentle frequencies overlay annoying background traffic rumbles smoothly: ___ masking'",
+      "options": [],
+      "answer": "acoustic",
+      "acceptedAnswers": [
+        "acoustic"
+      ],
+      "explanation": "Paragraf D–E menamainya 'Acoustic masking'.",
+      "rationaleSource": "IELTS-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS05-P3",
+      "audioAssetId": null,
+      "maxWords": 1,
+      "sortIndex": 76
+    },
+    {
+      "id": "IELTS-A-05-Q077",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 3 ('Designing Calmer Cities Through Urban Acoustic Architecture' — Q77): Why do decibel meters alone miss real psychological stress inside modern downtown alleys?",
+      "options": [
+        "Steady diesel hums actually carry pleasant birdsong harmonics subconsciously.",
+        "Ordinance writers measure strictly inside empty midnight subway shafts yearly.",
+        "Meter physics ignore spectral quality, human preference, and disorienting multiple facade echoes.",
+        "Portable microphones fail utterly whenever rainy humid air crosses glass windows."
+      ],
+      "answer": "Meter physics ignore spectral quality, human preference, and disorienting multiple facade echoes.",
+      "acceptedAnswers": [
+        "Meter physics ignore spectral quality, human preference, and disorienting multiple facade echoes."
+      ],
+      "explanation": "Alat ukur dB mengabaikan kualitas spektral bunyi, makna psikologis, serta pantulan disorientatif.",
+      "rationaleSource": "IELTS-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS05-P3",
+      "audioAssetId": null,
+      "sortIndex": 77
+    },
+    {
+      "id": "IELTS-A-05-Q078",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 3 ('Designing Calmer Cities Through Urban Acoustic Architecture' — Q78): How do natural bubbling plaza water channels improve street-level conversation without building glass domes?",
+      "options": [
+        "Pumps turn off noisy nearby bus diesel engines electronically via copper cables.",
+        "Broadband water splash overlays continuous distant engine hum, easing auditory strain softly.",
+        "Cold water channels drop ambient breeze pressure toward silent zero decibels.",
+        "Fountains bounce loud diesel tire screech horizontally onto neighboring skyscrapers."
+      ],
+      "answer": "Broadband water splash overlays continuous distant engine hum, easing auditory strain softly.",
+      "acceptedAnswers": [
+        "Broadband water splash overlays continuous distant engine hum, easing auditory strain softly."
+      ],
+      "explanation": "Desiran spektrum luas air mancur menyamarkan dengung lalu lintas jauh secara alami.",
+      "rationaleSource": "IELTS-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS05-P3",
+      "audioAssetId": null,
+      "sortIndex": 78
+    },
+    {
+      "id": "IELTS-A-05-Q079",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 3 ('Designing Calmer Cities Through Urban Acoustic Architecture' — Q79): What realistic engineering boundary does Paragraph E place upon water-masking installations?",
+      "options": [
+        "They complement rather than substitute for primary wheel-rail track insulation and flight corridors.",
+        "Water pipes rust totally whenever sixty-decibel scooters approach nearby curbs.",
+        "Porous wooden slats amplify shrill ambulance sirens cleanly upward toward clouds.",
+        "Municipal budgets forbid natural greenery near marble water fountains statewide."
+      ],
+      "answer": "They complement rather than substitute for primary wheel-rail track insulation and flight corridors.",
+      "acceptedAnswers": [
+        "They complement rather than substitute for primary wheel-rail track insulation and flight corridors."
+      ],
+      "explanation": "Masking air hanya pendamping, bukan pengganti pengendalian sumber bising rel atau jalur terbang.",
+      "rationaleSource": "IELTS-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS05-P3",
+      "audioAssetId": null,
+      "sortIndex": 79
+    },
+    {
+      "id": "IELTS-A-05-Q080",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 3 ('Designing Calmer Cities Through Urban Acoustic Architecture' — Q80): What best reflects Prof. Jian Kang's central message for twenty-first-century city design?",
+      "options": [
+        "Silence every park fountain cleanly so concrete canyons measure under thirty decibels uniformly.",
+        "Replace porous wooden balconies exclusively with polished shiny granite facades.",
+        "Abolish nighttime legal ordinances altogether across residential districts.",
+        "Treat wanted pleasant sound texture and porous wall shape equally alongside raw volume reduction."
+      ],
+      "answer": "Treat wanted pleasant sound texture and porous wall shape equally alongside raw volume reduction.",
+      "acceptedAnswers": [
+        "Treat wanted pleasant sound texture and porous wall shape equally alongside raw volume reduction."
+      ],
+      "explanation": "Perencanaan kota mesti membentuk lanskap bunyi positif dan geometri berpori, bukan sekadar memangkas dB mentah.",
+      "rationaleSource": "IELTS-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS05-P3",
+      "audioAssetId": null,
+      "sortIndex": 80
+    },
+    {
+      "id": "IELTS-A-05-Q081",
       "section": "WRITING",
       "taskType": "WRITING_RESPONSE",
-      "prompt": "IELTS Academic Writing Task 1 (>=150 words, 20 min): The figures below present median underwater noise intensity (dB) and fuel use per nautical mile (liters) across three container-ship speeds:\n- 20 knots (Standard): 184 dB | 310 L/nm\n- 16 knots (Moderate): 178 dB | 255 L/nm\n- 12 knots (Eco-Zone): 171 dB | 220 L/nm\nSummarize the key relationships and compare the three speed profiles.",
+      "prompt": "Writing Task 1 (Bar Chart + Pie Pair — At least 150 words, 20 min): The bar chart compares weekly adult time spent reading printed books, long-form digital articles, and short social clips across four age brackets (18–24, 25–39, 40–59, 60+), showing short-clip dominance in 18–24 (14.5 hrs/wk vs 1.8 hrs print) shifting markedly toward printed/long-form reading among 60+ (8.2 hrs print, 2.1 hrs short clips). The companion pie summarizes preferred audio formats during commutes (Podcasts 48%, Audiobooks 31%, Radio News 21%). Summarize core patterns and age contrasts.",
       "options": [],
       "answer": "",
       "acceptedAnswers": [],
-      "explanation": "Sorot korelasi langsung penurunan kecepatan dengan turunnya kebisingan dB sekaligus konsumsi bahan bakar per mil laut.",
+      "explanation": "Band 7+ Task 1 wajib menyertakan Overview tren utama tanpa opini pribadi, membandingkan angka/tahapan ekstrem secara akurat.",
       "rationaleSource": "IELTS-MOD-04",
       "difficulty": "B2",
       "points": 1,
@@ -246,119 +2090,119 @@
       "passageId": null,
       "audioAssetId": null,
       "minWords": 150,
-      "recommendedWords": 175,
+      "recommendedWords": 180,
       "rubricCriteria": [
-        "Clear Overview",
-        "Accurate comparative metrics",
-        "Cohesion",
-        "Grammar"
+        "Clear Overview statement",
+        "Accurate data/stage selection",
+        "Trend comparisons & passive/sequence connectors",
+        "Lexical precision"
       ],
-      "sortIndex": 8
+      "sortIndex": 81
     },
     {
-      "id": "IELTS-A-05-Q09",
+      "id": "IELTS-A-05-Q082",
       "section": "WRITING",
       "taskType": "WRITING_RESPONSE",
-      "prompt": "IELTS Academic Writing Task 2 (>=250 words, 40 min): As automation and remote collaboration reshape entry-level office roles, many recent graduates struggle to gain mentored workplace experience. Why is this happening, and what measures can universities and employers take to solve it?",
+      "prompt": "Writing Task 2 (Academic Essay — At least 250 words, 40 min): Artificial intelligence speech translators increasingly let travelers hold fluid basic conversations abroad without studying foreign grammar rules beforehand. Will effortless real-time translation enrich cross-cultural empathy overall, or discourage the patient cognitive effort required to grasp foreign idioms and social nuance deeply? Present a reasoned argument.",
       "options": [],
       "answer": "",
       "acceptedAnswers": [],
-      "explanation": "Struktur Problem/Causes -> Solutions oleh universitas dan perusahaan dengan contoh magang terstruktur.",
+      "explanation": "Band 7+ Task 2 menuntut tesis tegas konsisten di pembuka hingga penutup, pengembangan paragraf tubuh bertumpu mekanisme & contoh, serta kendali klausa kompleks.",
       "rationaleSource": "IELTS-MOD-05",
-      "difficulty": "B2",
-      "points": 1,
-      "license": "Original",
-      "reviewStatus": "VERIFIED_ORIGINAL",
-      "passageId": null,
-      "audioAssetId": null,
-      "minWords": 250,
-      "recommendedWords": 275,
-      "rubricCriteria": [
-        "Causes AND actionable solutions",
-        "Paragraph unity",
-        "Academic lexis",
-        "Grammar accuracy"
-      ],
-      "sortIndex": 9
-    },
-    {
-      "id": "IELTS-A-05-Q10",
-      "section": "SPEAKING",
-      "taskType": "SPEAKING_RESPONSE",
-      "prompt": "IELTS Speaking Part 1 (~30–45s): 'Let's talk about work and study habits. Do you prefer collaborating on team projects or completing tasks independently? Why?'",
-      "options": [],
-      "answer": "",
-      "acceptedAnswers": [],
-      "explanation": "Nyatakan preferensi jujur beserta 1 alasan + situasi kerja/kuliah singkat.",
-      "rationaleSource": "IELTS-MOD-06",
-      "difficulty": "B1",
-      "points": 1,
-      "license": "Original",
-      "reviewStatus": "VERIFIED_ORIGINAL",
-      "passageId": null,
-      "audioAssetId": null,
-      "prepSeconds": 0,
-      "speakSeconds": 45,
-      "rubricCriteria": [
-        "Fluency",
-        "Natural register",
-        "Vocabulary",
-        "Clarity"
-      ],
-      "sortIndex": 10
-    },
-    {
-      "id": "IELTS-A-05-Q11",
-      "section": "SPEAKING",
-      "taskType": "SPEAKING_RESPONSE",
-      "prompt": "IELTS Speaking Part 2 Cue Card (1 min prep · 2 min speak): Describe a job or career field you think will change significantly over the next ten years.\nYou should say:\n- what the job is\n- what skills it currently requires\n- how technology or society may reshape it\n- and explain whether you think those changes will be mostly positive or negative.",
-      "options": [],
-      "answer": "",
-      "acceptedAnswers": [],
-      "explanation": "Pastikan keempat poin Cue Card terjawab berurutan dengan contoh keterampilan manusia yang tetap relevan.",
-      "rationaleSource": "IELTS-MOD-06",
-      "difficulty": "B2",
-      "points": 1,
-      "license": "Original",
-      "reviewStatus": "VERIFIED_ORIGINAL",
-      "passageId": null,
-      "audioAssetId": null,
-      "prepSeconds": 60,
-      "speakSeconds": 120,
-      "rubricCriteria": [
-        "Task coverage",
-        "Cohesive flow",
-        "Lexical precision",
-        "Pronunciation"
-      ],
-      "sortIndex": 11
-    },
-    {
-      "id": "IELTS-A-05-Q12",
-      "section": "SPEAKING",
-      "taskType": "SPEAKING_RESPONSE",
-      "prompt": "IELTS Speaking Part 3 (~60s): 'How can young professionals keep their skills adaptable when technical tools evolve every few years?'",
-      "options": [],
-      "answer": "",
-      "acceptedAnswers": [],
-      "explanation": "Tekankan pembelajaran berkelanjutan, penguasaan prinsip dasar lintas alat, dan umpan balik mentor.",
-      "rationaleSource": "IELTS-MOD-06",
       "difficulty": "C1",
       "points": 1,
       "license": "Original",
       "reviewStatus": "VERIFIED_ORIGINAL",
       "passageId": null,
       "audioAssetId": null,
-      "prepSeconds": 0,
+      "minWords": 250,
+      "recommendedWords": 290,
+      "rubricCriteria": [
+        "Full prompt coverage & clear position",
+        "Coherent paragraphing",
+        "Precise collocations",
+        "Complex grammar range & accuracy"
+      ],
+      "sortIndex": 82
+    },
+    {
+      "id": "IELTS-A-05-Q083",
+      "section": "SPEAKING",
+      "taskType": "SPEAKING_RESPONSE",
+      "prompt": "Examiner Part 1 (Languages & Memory — 4–5 min): Good to see you today. Let's reflect on languages and memory. Which English phrase or idiom puzzled you at first before making total sense, do you remember spoken words better by hearing stories or writing notes, and what quiet sound relaxes your mind after long reading?",
+      "options": [],
+      "answer": "",
+      "acceptedAnswers": [],
+      "explanation": "Part 1 idealnya berdurasi ~25–35 detik per pertanyaan gabungan dengan ekstensi 2–3 kalimat alami dan intonasi santai tanpa menghafal templat.",
+      "rationaleSource": "IELTS-MOD-06",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS05-SP1",
+      "prepSeconds": 5,
+      "speakSeconds": 45,
+      "rubricCriteria": [
+        "Natural conversational extension",
+        "Everyday topic collocations",
+        "Clear stress & rhythm",
+        "Self-correction control"
+      ],
+      "sortIndex": 83
+    },
+    {
+      "id": "IELTS-A-05-Q084",
+      "section": "SPEAKING",
+      "taskType": "SPEAKING_RESPONSE",
+      "prompt": "Speaking Part 2 (Cue Card — 1 min prep, 2 min talk): Describe a long-term goal or academic milestone that took months of steady invisible effort before paying off noticeably. You should say: what milestone you aimed for, how you tracked tiny daily increments, when motivation dipped mid-way, and explain what kept your habit steady until completion.",
+      "options": [],
+      "answer": "",
+      "acceptedAnswers": [],
+      "explanation": "Gunakan 60 detik persiapan untuk mencatat 4–5 kata kunci linimasa (Konteks -> Tantangan -> Aksi -> Dampak), lalu bicaralah lancar hingga 2 menit penuh.",
+      "rationaleSource": "IELTS-MOD-06",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS05-SP2",
+      "prepSeconds": 60,
+      "speakSeconds": 120,
+      "rubricCriteria": [
+        "Full 2-minute sustained narrative",
+        "Discourse markers across stages",
+        "Vivid specific vocabulary",
+        "Tenses accuracy across past & present reflection"
+      ],
+      "sortIndex": 84
+    },
+    {
+      "id": "IELTS-A-05-Q085",
+      "section": "SPEAKING",
+      "taskType": "SPEAKING_RESPONSE",
+      "prompt": "Examiner Part 3 (Deep Focus in an Automated Era — 4–5 min): Instant algorithmic helpers finish summaries and translations within seconds today. How might relying on effortless digital shortcuts alter long-term memory formation among adolescents, and what deliberate offline intellectual challenges still justify slow unassisted human struggle?",
+      "options": [],
+      "answer": "",
+      "acceptedAnswers": [],
+      "explanation": "Part 3 menuntut abstraksi gagasan tingkat masyarakat: pakai hedging ('on balance', 'tends to'), kontras dua sisi, dan alasan sebab-akibat analitis.",
+      "rationaleSource": "IELTS-MOD-10",
+      "difficulty": "C1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS05-SP3",
+      "prepSeconds": 10,
       "speakSeconds": 60,
       "rubricCriteria": [
-        "Abstract analytical depth",
-        "Discourse markers",
-        "Vocabulary",
-        "Fluency"
+        "Abstract analytical reasoning",
+        "Hedging & nuanced stance",
+        "Complex clause variety",
+        "Natural pronunciation under cognitive load"
       ],
-      "sortIndex": 12
+      "sortIndex": 85
     }
   ],
-  "checksum": "b749419bdcde5dc0265b441a76cfc868445f625aee70e046f8c78480a1af19f8"
+  "checksum": "8e9ce78866e4b6b71707b87ebce6395271fa4e6ea15972adbaa629b84f8acfcc"
 }

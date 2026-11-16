@@ -1,132 +1,1099 @@
 {
   "schemaVersion": 1,
   "exam": "IELTS_ACADEMIC",
-  "edition": "2026.1",
+  "edition": "2026.2",
   "packId": "IELTS-A-03",
-  "title": "IELTS Paket 3 — Materials Engineering, Agriculture & Education",
-  "theme": "Cross-laminated timber, process diagrams, sequence ordering, and matching researchers.",
-  "status": "SAMPLE",
+  "title": "IELTS Paket 3 — Transit Heritage, Timber & Acoustic Ecology",
+  "theme": "Full 85-item IELTS Academic simulation spanning Dorm Laundry, Canal Lock Trails, Engineering Capstone, Subterranean Bees, Arctic Cables, CLT Skyscrapers & Acoustic Reefs.",
+  "status": "READY",
   "blueprintCount": 85,
-  "availableCount": 12,
-  "durationMinutes": 35,
+  "availableCount": 85,
+  "durationMinutes": 165,
   "blueprintDurationMinutes": 165,
   "license": "Original",
   "provenance": "EnglishPrepAI-Original-2026",
   "passages": [
     {
       "id": "IELTS03-P1",
-      "title": "Cross-Laminated Timber in Mid-Rise Architecture",
-      "body": "Steel and concrete frames have dominated multi-story buildings since 1900, yet cement production alone accounts for roughly eight percent of global carbon emissions. Cross-laminated timber (CLT) offers an engineered alternative: kiln-dried spruce or pine boards are stacked in alternating ninety-degree grain layers and bonded under hydraulic press into rigid structural panels. Dr. Helen Lindqvist notes that perpendicular layering prevents warping along seasonal humidity swings, while Dr. Mateo Silva found prefabricated CLT walls cut on-site crane assembly time by forty percent compared with poured concrete. Critics initially questioned fire safety, yet thick charred outer wood layers actually insulate inner structural cores slowly enough to meet two-hour commercial fire ratings.",
+      "title": "Timber Rafts and Shifting River Log Drives in Nineteenth-Century Forestry",
+      "body": "Paragraph A: Long before diesel logging freighters or muddy mountain switchback truck roads existed, felling tall temperate white pines across upper watersheds posed a giant haulage riddle: heavy waterlogged hardwoods sank swiftly whereas buoyant winter pine trunks floated effortlessly.\n\nParagraph B: Northern lumber camps felled thousands of winter pines atop thick frozen river valleys until April snowmelt swollen streams unlocked natural liquid highways—launching dramatic roaring spring 'log drives' steering massive rafts straight down twisting gorges toward valley sawmills.\n\nParagraph C: Navigating churning rapids demanded lethal physical agility from nimble 'river pigs' balancing atop rolling wet trunks using iron-spiked cork boots and long hooked pike poles—breaking terrifying upstream 'logjams' packed twenty meters high against narrow rocky bends with dangerous dynamite charges.\n\nParagraph D: Beyond human perils, scouring timber torrents battered gravel trout redds clean away alongside ripping protective riparian willow roots—scars still visibly straightening eroded valley channels a full century later.\n\nParagraph E: Today's watershed restoration teams deliberately helicopter large unanchored nurse tree trunks carefully BACK into cold mountain bends—not as fuel timber, but to rebuild complex underwater log pools sheltering fragile juvenile salmon.",
       "readingOrder": 1
+    },
+    {
+      "id": "IELTS03-P2",
+      "title": "Can Passive Clay Coolers Outlast Electric Cold Chains for Rural Clinics?",
+      "body": "Paragraph A: Storing heat-sensitive childhood vaccines and rural farm greens reliably inside off-grid dry equatorial towns faces a stark bottleneck: dusty diesel generators cough steadily to breakdowns whenever expensive fuel deliveries stall past washed-out dirt tracks.\n\nParagraph B: Engineers revived an ancient Saharan clay principle inside rugged modern terracotta 'zeer' evaporative pot-in-pot coolers—nesting an inner porous red-clay vessel smoothly inside a wider glazed outer pot bridged evenly with damp washed river sand.\n\nParagraph C: As parched desert gusts sweep over moist perimeter sand seams, liquid evaporation draws intense latent heat rapidly straight out through microscopic terracotta pores—dropping internal chamber baskets fifteen full degrees below forty-degree afternoon veranda shade with zero batteries or compressors.\n\nParagraph D: Field audits conducted by agricultural relief NGOs in arid northern Nigeria tracked crisp Roma tomatoes lasting three unbroken weeks inside zero-watt sand pots versus barely three mushy days piled in woven bamboo market baskets.\n\nParagraph E: Note cleanly one decisive physical climate ceiling: evaporative coolers shine solely across arid breezy valleys under forty percent relative humidity; during steamy coastal monsoon weeks near ninety percent air saturation, slow damp evaporation stalls completely flat.",
+      "readingOrder": 2
+    },
+    {
+      "id": "IELTS03-P3",
+      "title": "Do Automated Handwriting vs Early Reading Phonics Debates Miss Dyslexic Variety?",
+      "body": "Paragraph A: Bitter decades of polarized primary literacy policy swings pitched rigid phonics syllable-drills starkly against immersive unstructured picture-story reading—often leaving perplexed classroom teachers choosing sides like wartime trenches.\n\nParagraph B: Large systematic neuroscience meta-analyses across diverse languages cleanly settled one opening question: explicit instruction linking spoken letter-sound phonemes reliably accelerates decoding fluency across both typical learners and struggling readers far more predictably than guessing words strictly from nearby picture clues.\n\nParagraph C: Yet educational neuroscientist Dr. Priya Subramanian emphasizes fluency does not end cleanly inside isolated consonant flashcards! Once beginners decode print automatically, deep reading comprehension hinges sharply upon rich spoken oral vocabulary, complex background world knowledge, and varied story exposure.\n\nParagraph D: Furthermore, brain imaging studies examining developmental dyslexia demonstrate phonological processing variations vary noticeably in degree—meaning stubborn fast-paced timed choral drills alone frustrate sensitive learners unless paired gently with multisensory tactile letter-tracing and patient individualized pacing.\n\nParagraph E: Balanced structured literacy merges joyful high-interest read-aloud curiosity smoothly atop crystal-clear systematic sound-letter foundations rather than sacrificing either pillar.",
+      "readingOrder": 3
     }
   ],
   "assets": [
     {
-      "id": "IELTS03-A01",
-      "relativePath": "audio/IELTS03-A01.wav",
+      "id": "IELTS03-LP1",
+      "relativePath": "audio/IELTS03-LP1.wav",
       "kind": "AUDIO",
-      "caption": "M: Are we still gathering at Gate 2 before the farm shuttle arrives? W: Wait—fertilizer trucks are blocking Gate 2 tomorrow, so meet outside Gate 4 instead at 8:15.",
+      "caption": "M: Afternoon, Fine Arts Metals Desk! Calling about the Saturday community sculpture pouring demonstration? W: Yes! Look at our waiver board: is your contact email registered neatly under 't-k-a-p-u-r' at mail-dot-edu, or Kapur with double-P? M: Single P—T-K-A-P-U-R! Wait—how long do beginner sand-mold reliefs take from pouring molten bronze through grinding seams? W: Safety briefings start promptly at nine-fifteen, molten pours run noon till one-thirty, and cool breakouts finish at three-forty-five—wait, sorry, afternoon cleanup pushes wrap-up smoothly until four-fifteen. M: Awesome! Should I wear regular canvas sneakers alongside old denim jeans? W: Old heavy non-frayed jeans work great, yet canvas melts fast if molten droplets bounce! Wear sturdy leather lace-up boots strictly, plus borrow our green chrome-leather aprons free at lockers. M: Smart warning! What's the supply deposit covering raw silicone bronze ingots? W: Forty-eight dollars covers bronze billets plus silica sand—payable only at Bursar Desk Three inside South Commons, not inside the foundry room.",
       "license": "Original",
-      "sha256": "4c71596a844c9916c4a8316c9ebdc9d1d5d42e08d81e80019fa30955643a4319",
-      "byteSize": 366764,
-      "durationMs": 11460
+      "sha256": "b19dce25549405fcf50d8f654b43b28c7ed100a04b6987ed8251796c642631a7",
+      "byteSize": 640060,
+      "durationMs": 78875
     },
     {
-      "id": "IELTS03-A02",
-      "relativePath": "audio/IELTS03-A02.wav",
+      "id": "IELTS03-LP2",
+      "relativePath": "audio/IELTS03-LP2.wav",
       "kind": "AUDIO",
-      "caption": "W: Our presentation runs too long if we read those five spreadsheets aloud. M: Agreed—let's swap the dense tables for a clean field diagram and trim the history overview down to ninety seconds.",
+      "caption": "W: Welcome to the Structural Timber Demonstration Gallery! Every soaring wall beam here showcases regional Cross-Laminated Timber—engineered spruce boards stacked cleanly at perpendicular ninety-degree grain angles and pressed flat with benign formaldehyde-free polyurethane glue. W: Inspect sample cube Exhibit A right beside Reception: crossing perpendicular wood layers stops seasonal swelling shrinkages cleanly while boosting dimensional strength close to poured concrete at just one-fifth total crane weight! W: Inside Exhibit B along North Hall, touch our charred black spruce beam corner from a standard two-hour furnace burn test: thick slow-charring outer timber insulates untouched cool structural inner core wood safely without snapping suddenly like exposed steel girders. W: Before exiting via the rooftop timber skywalk, stow loose umbrellas neatly beside umbrella rack C—dry rain drips mark porous acoustic spruce slabs visibly.",
       "license": "Original",
-      "sha256": "5d4a0e61f346f48fba678efe08d75511cfb094ea7ca201eef3aa48124dd86783",
-      "byteSize": 387244,
-      "durationMs": 12100
+      "sha256": "20f28816092fefda39a5818de079cc226b6667324503d50a17a4ae80d9b81b55",
+      "byteSize": 468028,
+      "durationMs": 57685
     },
     {
-      "id": "IELTS03-A03",
-      "relativePath": "audio/IELTS03-A03.wav",
+      "id": "IELTS03-LP3",
+      "relativePath": "audio/IELTS03-LP3.wav",
       "kind": "AUDIO",
-      "caption": "W: Instead of relying solely on synthetic fertilizer, rotating clover or vetch between grain harvests harnesses Rhizobium bacteria in root nodules to convert atmospheric nitrogen directly into soil nitrates.",
+      "caption": "W: Mark, before Dr. Reyes grades our agricultural field review tomorrow, double-check Section Four comparing winter crimson clover against bare autumn plowed wheat plots. M: Wait—look carefully at Plot Nine moisture! Didn't our first draft state cover crops sucked dry topsoil water away right before April corn planting? W: Hold on—re-check Professor Alvarez's corrected appendix chart! Heavy spring rain bounced fast off bare crusted plots, whereas matted clover roots held spongy rainwater reserves twenty-two percent higher down at fifteen centimeters! M: Good catch—I almost misread reversed bar legends on Plot Nine! Plus notice earthworm burrow counts tripled under no-till rye stubble compared with twice-harrowed control strips. W: Right! Let's replace that old rough draft paragraph swiftly and cite both moisture depth AND worm infiltration velocity tables explicitly.",
       "license": "Original",
-      "sha256": "9ad170dca1d47059dd22e86b3f01347b40088bfdc1f5a9354110e390def92f30",
-      "byteSize": 415564,
-      "durationMs": 12985
+      "sha256": "cbbf925c1d2d67ef4b8081486b50495dcdee21c8af9abaa71a2a9cfd70d132b8",
+      "byteSize": 479036,
+      "durationMs": 59050
+    },
+    {
+      "id": "IELTS03-LP4",
+      "relativePath": "audio/IELTS03-LP4.wav",
+      "kind": "AUDIO",
+      "caption": "M: Many textbooks start printing history starkly inside 1450s Mainz, Germany—skipping centuries of ingenious East Asian woodblock, ceramic, and bronze cast printing breakthroughs that solved ink, paper, and alignment hurdles long beforehand. M: Hand-carving whole text pages backwards across pearwood panels proved brisk for crisp multi-thousand Buddhist scripture editions—yet changing one mispelled date meant slicing entire boards anew. M: Bi Sheng's eleventh-century Song baked-clay movable sorts cracked modularity first before thirteenth-century Korean royal artisans perfected durable sand-cast bronze type held steady over beeswax-pine-resin beds. M: Crucially, Gutenberg's genuine European breakthrough combined an adjustable precision hand-mold casting crisp uniform lead-tin-antimony alloy letters smoothly alongside oil-varnish viscous linseed ink—essential because watery Asian carbon inks beaded unevenly off slick metal rather than clinging crisp to damp rag paper.",
+      "license": "Original",
+      "sha256": "1bcbf65381ed5084c103516947ccacea927b33ddb5f669e58d37c6c59316c7dc",
+      "byteSize": 499004,
+      "durationMs": 61495
+    },
+    {
+      "id": "IELTS03-SP1",
+      "relativePath": "audio/IELTS03-SP1.wav",
+      "kind": "AUDIO",
+      "caption": "W: Let's chat about cooking and food. What simple home dish do you enjoy preparing most often, did you learn recipes by watching relatives or reading instructions, and why do shared evening meals matter inside busy households?",
+      "license": "Original",
+      "sha256": "625c2173bc24eefc9b2c44d07e53e5f6448269072fc40377137b7ff1c5caee1c",
+      "byteSize": 114492,
+      "durationMs": 14095
+    },
+    {
+      "id": "IELTS03-SP2",
+      "relativePath": "audio/IELTS03-SP2.wav",
+      "kind": "AUDIO",
+      "caption": "W: Here is your Part 2 topic card. You now have one minute to prepare notes before speaking cleanly for up to two minutes.",
+      "license": "Original",
+      "sha256": "e01ffacc8768be717630131e40c66950d9a34af29a9175671dbef8f81c03162d",
+      "byteSize": 65596,
+      "durationMs": 8055
+    },
+    {
+      "id": "IELTS03-SP3",
+      "relativePath": "audio/IELTS03-SP3.wav",
+      "kind": "AUDIO",
+      "caption": "W: Interactive exhibitions clarify complex concepts quickly, yet public distrust of empirical findings still flares on social platforms. What stops adults from revising wrong assumptions when confronted with clear data, and how should schools teach experimental skepticism gently?",
+      "license": "Original",
+      "sha256": "2f17243d614fd785daedf79bb17879d612047d11a6920662b00b1910e26a9c43",
+      "byteSize": 146236,
+      "durationMs": 18015
     }
   ],
   "items": [
     {
-      "id": "IELTS-A-03-Q01",
+      "id": "IELTS-A-03-Q001",
       "section": "LISTENING",
       "taskType": "FILL_BLANK",
-      "prompt": "Listening Part 1 (ONE WORD AND/OR A NUMBER): 'Agronomy Field Visit — Bring waterproof boots and meet outside Gate ___ at 8:15 AM.'",
+      "prompt": "Listening Part 1 (Art Foundry Bronze Casting Studio Sign-Up — Q1): SPELLING (ONE WORD ONLY): 'Participant surname spelling check: ___'",
       "options": [],
-      "answer": "4",
+      "answer": "Kapur",
       "acceptedAnswers": [
-        "4",
-        "four"
+        "kapur"
       ],
-      "explanation": "Koordinator awalnya menyebut Gate 2, lalu meralat karena truk kirim pupuk di Gate 2 -> 'meet at Gate 4 instead.'",
+      "explanation": "Ia mengonfirmasi satu huruf P: K-A-P-U-R.",
       "rationaleSource": "IELTS-MOD-01",
       "difficulty": "B1",
       "points": 1,
       "license": "Original",
       "reviewStatus": "VERIFIED_ORIGINAL",
       "passageId": null,
-      "audioAssetId": "IELTS03-A01",
+      "audioAssetId": "IELTS03-LP1",
       "maxWords": 1,
       "sortIndex": 1
     },
     {
-      "id": "IELTS-A-03-Q02",
+      "id": "IELTS-A-03-Q002",
       "section": "LISTENING",
-      "taskType": "CHOICE_MULTI",
-      "prompt": "Listening Part 3 (Choose TWO options): Which TWO changes will the seminar students make to their drip-irrigation presentation?",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 1 (Art Foundry Bronze Casting Studio Sign-Up — Q2): When does the mandatory molten safety orientation begin Saturday?",
       "options": [
-        "Replace dense data tables with a clear field diagram",
-        "Add a twenty-minute live soil moisture demo",
-        "Shorten the historical introduction to 90 seconds",
-        "Remove cost comparisons between pump models"
+        "Right at noon during pours.",
+        "At 3:45 PM before cleanup.",
+        "Immediately past 4:15 PM.",
+        "Promptly at 9:15 AM."
       ],
-      "answer": "Replace dense data tables with a clear field diagram|Shorten the historical introduction to 90 seconds",
+      "answer": "Promptly at 9:15 AM.",
       "acceptedAnswers": [
-        "Replace dense data tables with a clear field diagram|Shorten the historical introduction to 90 seconds"
+        "Promptly at 9:15 AM."
       ],
-      "explanation": "Keduanya sepakat menyederhanakan tabel menjadi diagram dan memangkas pengantar sejarah menjadi 90 detik.",
-      "rationaleSource": "IELTS-MOD-01",
+      "explanation": "Pengarahan keselamatan dimulai tepat pukul 09.15.",
+      "rationaleSource": "IELTS-MOD-07",
       "difficulty": "B2",
       "points": 1,
       "license": "Original",
       "reviewStatus": "VERIFIED_ORIGINAL",
       "passageId": null,
-      "audioAssetId": "IELTS03-A02",
+      "audioAssetId": "IELTS03-LP1",
       "sortIndex": 2
     },
     {
-      "id": "IELTS-A-03-Q03",
+      "id": "IELTS-A-03-Q003",
       "section": "LISTENING",
       "taskType": "FILL_BLANK",
-      "prompt": "Listening Part 4 (ONE WORD ONLY): 'Legume cover crops host root bacteria that convert atmospheric nitrogen into usable ___.'",
+      "prompt": "Listening Part 1 (Art Foundry Bronze Casting Studio Sign-Up — Q3): TIME ONLY: 'Corrected final afternoon workshop wrap-up finish time: ___ PM'",
       "options": [],
-      "answer": "nitrates",
+      "answer": "4:15",
       "acceptedAnswers": [
-        "nitrates",
-        "nitrate"
+        "4:15",
+        "4.15",
+        "four-fifteen"
       ],
-      "explanation": "Kuliah menyebut bakteri pengikat nitrogen mengubah gas nitrogen atmosfer menjadi 'nitrates' yang siap diserap tanaman.",
+      "explanation": "Semula disebut 3:45 lalu diralat menjadi 4:15 karena bersih-bersih sore.",
       "rationaleSource": "IELTS-MOD-01",
-      "difficulty": "B2",
+      "difficulty": "B1",
       "points": 1,
       "license": "Original",
       "reviewStatus": "VERIFIED_ORIGINAL",
       "passageId": null,
-      "audioAssetId": "IELTS03-A03",
+      "audioAssetId": "IELTS03-LP1",
       "maxWords": 1,
       "sortIndex": 3
     },
     {
-      "id": "IELTS-A-03-Q04",
+      "id": "IELTS-A-03-Q004",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 1 (Art Foundry Bronze Casting Studio Sign-Up — Q4): Why are ordinary canvas sneakers prohibited inside the pouring room?",
+      "options": [
+        "Steel lockers lack shelves sized for loose sneakers.",
+        "Synthetic or canvas fabric fails to shield feet safely against hot molten metal splashes.",
+        "Canvas laces catch electric sander cords cleanly.",
+        "Silica dust stains bright blue canvas permanently."
+      ],
+      "answer": "Synthetic or canvas fabric fails to shield feet safely against hot molten metal splashes.",
+      "acceptedAnswers": [
+        "Synthetic or canvas fabric fails to shield feet safely against hot molten metal splashes."
+      ],
+      "explanation": "Sepatu kulit tertutup wajib karena kanvas cepat meleleh jika terkena percikan logam cair.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS03-LP1",
+      "sortIndex": 4
+    },
+    {
+      "id": "IELTS-A-03-Q005",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 1 (Art Foundry Bronze Casting Studio Sign-Up — Q5): ONE WORD ONLY: 'Heavy natural leg attire cleared safely for pouring: old ___ jeans.'",
+      "options": [],
+      "answer": "denim",
+      "acceptedAnswers": [
+        "denim"
+      ],
+      "explanation": "Celana jins denim tua yang tidak robek diperbolehkan.",
+      "rationaleSource": "IELTS-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS03-LP1",
+      "maxWords": 1,
+      "sortIndex": 5
+    },
+    {
+      "id": "IELTS-A-03-Q006",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 1 (Art Foundry Bronze Casting Studio Sign-Up — Q6): NO MORE THAN TWO WORDS: 'Protective workshop apron color lent free by foundry: ___ leather'",
+      "options": [],
+      "answer": "green chrome",
+      "acceptedAnswers": [
+        "green",
+        "green chrome",
+        "chrome"
+      ],
+      "explanation": "Celemek pelindung berwarna hijau kulit krom disediakan gratis.",
+      "rationaleSource": "IELTS-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS03-LP1",
+      "maxWords": 2,
+      "sortIndex": 6
+    },
+    {
+      "id": "IELTS-A-03-Q007",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 1 (Art Foundry Bronze Casting Studio Sign-Up — Q7): NUMBER ONLY ($): 'All-inclusive bronze ingot & silica supply fee: $___'",
+      "options": [],
+      "answer": "48",
+      "acceptedAnswers": [
+        "48",
+        "forty-eight"
+      ],
+      "explanation": "Biaya material tercatat $48.",
+      "rationaleSource": "IELTS-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS03-LP1",
+      "maxWords": 1,
+      "sortIndex": 7
+    },
+    {
+      "id": "IELTS-A-03-Q008",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 1 (Art Foundry Bronze Casting Studio Sign-Up — Q8): ONE WORD ONLY: 'Sand molding medium paired cleanly with raw bronze billets: ___ sand.'",
+      "options": [],
+      "answer": "silica",
+      "acceptedAnswers": [
+        "silica"
+      ],
+      "explanation": "Material cetakan menggunakan pasir silika ('silica sand').",
+      "rationaleSource": "IELTS-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS03-LP1",
+      "maxWords": 1,
+      "sortIndex": 8
+    },
+    {
+      "id": "IELTS-A-03-Q009",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 1 (Art Foundry Bronze Casting Studio Sign-Up — Q9): Where must participants settle the forty-eight-dollar foundry deposit?",
+      "options": [
+        "At Bursar Desk Three inside South Commons.",
+        "Directly inside the hot furnace foundry bay.",
+        "Online via mobile QR scanner Sunday.",
+        "Inside Art Library Room 204."
+      ],
+      "answer": "At Bursar Desk Three inside South Commons.",
+      "acceptedAnswers": [
+        "At Bursar Desk Three inside South Commons."
+      ],
+      "explanation": "Pembayaran hanya diterima di Bursar Desk Three di South Commons.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS03-LP1",
+      "sortIndex": 9
+    },
+    {
+      "id": "IELTS-A-03-Q010",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 1 (Art Foundry Bronze Casting Studio Sign-Up — Q10): NO MORE THAN TWO WORDS: 'Protective footgear required instead of canvas: ___ boots'",
+      "options": [],
+      "answer": "leather lace-up",
+      "acceptedAnswers": [
+        "leather",
+        "leather boots",
+        "leather lace-up"
+      ],
+      "explanation": "Harus mengenakan sepatu bot kulit bertali yang kokoh.",
+      "rationaleSource": "IELTS-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS03-LP1",
+      "maxWords": 2,
+      "sortIndex": 10
+    },
+    {
+      "id": "IELTS-A-03-Q011",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 2 (Regional Cross-Laminated Timber Archive Orientation — Q11): NUMBER ONLY (degrees): 'Angle separating stacked spruce plank layers inside CLT boards: ___ degrees'",
+      "options": [],
+      "answer": "90",
+      "acceptedAnswers": [
+        "90",
+        "ninety"
+      ],
+      "explanation": "Lapisan kayu disusun saling tegak lurus 90 derajat.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS03-LP2",
+      "maxWords": 1,
+      "sortIndex": 11
+    },
+    {
+      "id": "IELTS-A-03-Q012",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 2 (Regional Cross-Laminated Timber Archive Orientation — Q12): ONE WORD ONLY: 'Type of wood species laminated inside these demonstration girders: ___'",
+      "options": [],
+      "answer": "spruce",
+      "acceptedAnswers": [
+        "spruce"
+      ],
+      "explanation": "Kayu yang dipakai dalam contoh adalah pohon cemara spruce.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS03-LP2",
+      "maxWords": 1,
+      "sortIndex": 12
+    },
+    {
+      "id": "IELTS-A-03-Q013",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 2 (Regional Cross-Laminated Timber Archive Orientation — Q13): Approximately how heavy is Cross-Laminated Timber compared with equivalent-strength reinforced concrete?",
+      "options": [
+        "Roughly one-fifth (20%) of concrete crane weight.",
+        "Nearly three times heavier per beam meter.",
+        "Identical tonnage per structural floor slab.",
+        "Half heavy strictly above forty degrees."
+      ],
+      "answer": "Roughly one-fifth (20%) of concrete crane weight.",
+      "acceptedAnswers": [
+        "Roughly one-fifth (20%) of concrete crane weight."
+      ],
+      "explanation": "Bobot sekitar seperlima (1/5) dari struktur beton setara.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS03-LP2",
+      "sortIndex": 13
+    },
+    {
+      "id": "IELTS-A-03-Q014",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 2 (Regional Cross-Laminated Timber Archive Orientation — Q14): ONE WORD ONLY: 'Harmful solvent chemical deliberately absent from modern structural adhesive: ___'",
+      "options": [],
+      "answer": "formaldehyde",
+      "acceptedAnswers": [
+        "formaldehyde"
+      ],
+      "explanation": "Perekat poliuretan modern bebas dari emisi formaldehida.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS03-LP2",
+      "maxWords": 1,
+      "sortIndex": 14
+    },
+    {
+      "id": "IELTS-A-03-Q015",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 2 (Regional Cross-Laminated Timber Archive Orientation — Q15): What surprising fire-safety behavior demonstrates cleanly in Exhibit B's burned beam?",
+      "options": [
+        "Exposed structural girders buckle instantaneously before ninety seconds.",
+        "White mineral paint explodes neatly under two-hour furnace tests.",
+        "A steady insulating charcoal crust shields cool internal structural wood reliably across prolonged heat.",
+        "Burnt spruce drips molten sticky flame straight onto steel beams below."
+      ],
+      "answer": "A steady insulating charcoal crust shields cool internal structural wood reliably across prolonged heat.",
+      "acceptedAnswers": [
+        "A steady insulating charcoal crust shields cool internal structural wood reliably across prolonged heat."
+      ],
+      "explanation": "Lapisan arang luar bertindak sebagai isolator menjaga inti kayu tetap kokoh.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS03-LP2",
+      "sortIndex": 15
+    },
+    {
+      "id": "IELTS-A-03-Q016",
+      "section": "LISTENING",
+      "taskType": "MATCHING",
+      "prompt": "Listening Part 2 (Regional Cross-Laminated Timber Archive Orientation — Q16): Match each Gallery landmark with what visitors see or do there:",
+      "options": [],
+      "answer": "Reception Exhibit A::Compare weight vs concrete cube|North Hall Exhibit B::Inspect 2-hour charred fire beam|Exit Rack C::Store wet umbrellas away safely",
+      "acceptedAnswers": [
+        "Reception Exhibit A::Compare weight vs concrete cube|North Hall Exhibit B::Inspect 2-hour charred fire beam|Exit Rack C::Store wet umbrellas away safely"
+      ],
+      "explanation": "Pemetaan tiap pos pameran dan lokasi aturan payung.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS03-LP2",
+      "pairs": [
+        {
+          "left": "Reception Exhibit A",
+          "rightOptions": [
+            "Compare weight vs concrete cube",
+            "Inspect 2-hour charred fire beam",
+            "Store wet umbrellas away safely"
+          ]
+        },
+        {
+          "left": "North Hall Exhibit B",
+          "rightOptions": [
+            "Compare weight vs concrete cube",
+            "Inspect 2-hour charred fire beam",
+            "Store wet umbrellas away safely"
+          ]
+        },
+        {
+          "left": "Exit Rack C",
+          "rightOptions": [
+            "Compare weight vs concrete cube",
+            "Inspect 2-hour charred fire beam",
+            "Store wet umbrellas away safely"
+          ]
+        }
+      ],
+      "sortIndex": 16
+    },
+    {
+      "id": "IELTS-A-03-Q017",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 2 (Regional Cross-Laminated Timber Archive Orientation — Q17): NUMBER ONLY (hours): 'Standard furnace fire resistance burn length shown in Exhibit B: ___ hours'",
+      "options": [],
+      "answer": "2",
+      "acceptedAnswers": [
+        "2",
+        "two"
+      ],
+      "explanation": "Durasi uji bakar standar mencapai dua jam.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS03-LP2",
+      "maxWords": 1,
+      "sortIndex": 17
+    },
+    {
+      "id": "IELTS-A-03-Q018",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 2 (Regional Cross-Laminated Timber Archive Orientation — Q18): Why must wet umbrellas stay tucked outside before crossing acoustic spruce skywalks?",
+      "options": [
+        "Damp spokes snag crane anchor pins overhead.",
+        "Indoor air heaters evaporate wet umbrellas into loud fog.",
+        "Security metal scanners block aluminum handles.",
+        "Stray water drops leave dark visible stains across porous untreated ceiling panels."
+      ],
+      "answer": "Stray water drops leave dark visible stains across porous untreated ceiling panels.",
+      "acceptedAnswers": [
+        "Stray water drops leave dark visible stains across porous untreated ceiling panels."
+      ],
+      "explanation": "Tetesan air hujan meninggalkan noda pada lempeng kayu akustik berpori.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS03-LP2",
+      "sortIndex": 18
+    },
+    {
+      "id": "IELTS-A-03-Q019",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 2 (Regional Cross-Laminated Timber Archive Orientation — Q19): What geometric property eliminates crooked seasonal wood warping inside engineered slabs?",
+      "options": [
+        "Wrapping green timber tightly in shiny tin foil.",
+        "Freezing wet boards overnight below minus twenty.",
+        "Stacking alternating boards perpendicularly counteracts lengthwise shrinkage across grains.",
+        "Soaking raw logs five weeks in oily lake silt."
+      ],
+      "answer": "Stacking alternating boards perpendicularly counteracts lengthwise shrinkage across grains.",
+      "acceptedAnswers": [
+        "Stacking alternating boards perpendicularly counteracts lengthwise shrinkage across grains."
+      ],
+      "explanation": "Susunan serat silang 90° saling mengunci kembang-susut kayu.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS03-LP2",
+      "sortIndex": 19
+    },
+    {
+      "id": "IELTS-A-03-Q020",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 2 (Regional Cross-Laminated Timber Archive Orientation — Q20): What core engineering benefit drives skyscraper designers testing tall timber grids cleanly?",
+      "options": [
+        "Wooden floors never require electrical conduits.",
+        "Lighter dead structural weight reduces foundation concrete demand dramatically.",
+        "Trees grow overnight beside suburban steel yards cleanly.",
+        "Charcoal beams absorb downtown noisy sirens automatically."
+      ],
+      "answer": "Lighter dead structural weight reduces foundation concrete demand dramatically.",
+      "acceptedAnswers": [
+        "Lighter dead structural weight reduces foundation concrete demand dramatically."
+      ],
+      "explanation": "Pengurangan bobot bangunan signifikan memperingan kebutuhan pondasi besar.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS03-LP2",
+      "sortIndex": 20
+    },
+    {
+      "id": "IELTS-A-03-Q021",
+      "section": "LISTENING",
+      "taskType": "CHOICE_MULTI",
+      "prompt": "Listening Part 3 (Cover Crops & No-Till Soil Seminar Evaluation — Q21): Choose TWO documented gains measured under matted cover-crop strips vs bare plowed soil:",
+      "options": [
+        "Subsurface soil moisture ran 22% higher at fifteen centimeters",
+        "Bare plowed soil soaked rain three times faster",
+        "Earthworm burrow density tripled inside undisturbed stubble",
+        "Winter frost killed all planted corn shoots early"
+      ],
+      "answer": "Subsurface soil moisture ran 22% higher at fifteen centimeters|Earthworm burrow density tripled inside undisturbed stubble",
+      "acceptedAnswers": [
+        "Subsurface soil moisture ran 22% higher at fifteen centimeters|Earthworm burrow density tripled inside undisturbed stubble"
+      ],
+      "explanation": "Kelembapan kedalaman 15 cm meningkat 22% dan jumlah liang cacing tanah meningkat tiga kali lipat.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS03-LP3",
+      "sortIndex": 21
+    },
+    {
+      "id": "IELTS-A-03-Q022",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 3 (Cover Crops & No-Till Soil Seminar Evaluation — Q22): What embarrassing chart-reading slip did the woman catch inside Mark's initial draft?",
+      "options": [
+        "Plot Nine temperatures read strictly in Kelvin backwards.",
+        "Crimson clover plots grew toxic highway weeds instead.",
+        "Section Four omitted autumn wheat seed prices cleanly.",
+        "Mark accidentally inverted legend colors, claiming clover dried soil instead of storing moisture."
+      ],
+      "answer": "Mark accidentally inverted legend colors, claiming clover dried soil instead of storing moisture.",
+      "acceptedAnswers": [
+        "Mark accidentally inverted legend colors, claiming clover dried soil instead of storing moisture."
+      ],
+      "explanation": "Mark salah baca legenda grafik sehingga membalik kesimpulan kelembapan tanah.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS03-LP3",
+      "sortIndex": 22
+    },
+    {
+      "id": "IELTS-A-03-Q023",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 3 (Cover Crops & No-Till Soil Seminar Evaluation — Q23): NUMBER ONLY (%): 'Moisture boost recorded at 15 cm beneath crimson clover mulch: ___%'",
+      "options": [],
+      "answer": "22",
+      "acceptedAnswers": [
+        "22",
+        "twenty-two"
+      ],
+      "explanation": "Simpanan kelembapan di kedalaman 15 cm lebih tinggi 22%.",
+      "rationaleSource": "IELTS-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS03-LP3",
+      "maxWords": 1,
+      "sortIndex": 23
+    },
+    {
+      "id": "IELTS-A-03-Q024",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 3 (Cover Crops & No-Till Soil Seminar Evaluation — Q24): ONE WORD ONLY: 'Soil organism whose burrow numbers tripled under unplowed stubble: ___'",
+      "options": [],
+      "answer": "earthworm",
+      "acceptedAnswers": [
+        "earthworm",
+        "earthworms"
+      ],
+      "explanation": "Populasi liang cacing tanah ('earthworm') meningkat tiga kali lipat.",
+      "rationaleSource": "IELTS-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS03-LP3",
+      "maxWords": 1,
+      "sortIndex": 24
+    },
+    {
+      "id": "IELTS-A-03-Q025",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 3 (Cover Crops & No-Till Soil Seminar Evaluation — Q25): What caused rainwater to run wasted off unplanted autumn bare soil?",
+      "options": [
+        "Rain crusted smooth plowed bare earth so showers sheeted off instead of soaking deep.",
+        "Deep thick earthworm pits flooded corn tractors immediately.",
+        "Cold steel harrows cooled raindrops solid above dirt.",
+        "Clover roots drank water away from neighboring barns."
+      ],
+      "answer": "Rain crusted smooth plowed bare earth so showers sheeted off instead of soaking deep.",
+      "acceptedAnswers": [
+        "Rain crusted smooth plowed bare earth so showers sheeted off instead of soaking deep."
+      ],
+      "explanation": "Tanah gundul berkerak keras membuat air hujan meluncur sebagai limpasan permukaan.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS03-LP3",
+      "sortIndex": 25
+    },
+    {
+      "id": "IELTS-A-03-Q026",
+      "section": "LISTENING",
+      "taskType": "MATCHING",
+      "prompt": "Listening Part 3 (Cover Crops & No-Till Soil Seminar Evaluation — Q26): Match each test soil condition with its observed physical behavior:",
+      "options": [],
+      "answer": "Bare plowed crust::Sheds spring rain fast offline|Matted clover roots::Stores moisture 22% higher|No-till rye stubble::Triples earthworm vertical tunnels",
+      "acceptedAnswers": [
+        "Bare plowed crust::Sheds spring rain fast offline|Matted clover roots::Stores moisture 22% higher|No-till rye stubble::Triples earthworm vertical tunnels"
+      ],
+      "explanation": "Rangkuman perbandingan perilaku tiga perlakuan tanah lapangan.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS03-LP3",
+      "pairs": [
+        {
+          "left": "Bare plowed crust",
+          "rightOptions": [
+            "Sheds spring rain fast offline",
+            "Stores moisture 22% higher",
+            "Triples earthworm vertical tunnels"
+          ]
+        },
+        {
+          "left": "Matted clover roots",
+          "rightOptions": [
+            "Sheds spring rain fast offline",
+            "Stores moisture 22% higher",
+            "Triples earthworm vertical tunnels"
+          ]
+        },
+        {
+          "left": "No-till rye stubble",
+          "rightOptions": [
+            "Sheds spring rain fast offline",
+            "Stores moisture 22% higher",
+            "Triples earthworm vertical tunnels"
+          ]
+        }
+      ],
+      "sortIndex": 26
+    },
+    {
+      "id": "IELTS-A-03-Q027",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 3 (Cover Crops & No-Till Soil Seminar Evaluation — Q27): When will Dr. Reyes evaluate their finalized seminar field report?",
+      "options": [
+        "Strictly every Tuesday noon.",
+        "Yesterday before lunch.",
+        "Tomorrow.",
+        "Late next semester."
+      ],
+      "answer": "Tomorrow.",
+      "acceptedAnswers": [
+        "Tomorrow."
+      ],
+      "explanation": "Penilaian laporan oleh Dr. Reyes dijadwalkan besok.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS03-LP3",
+      "sortIndex": 27
+    },
+    {
+      "id": "IELTS-A-03-Q028",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 3 (Cover Crops & No-Till Soil Seminar Evaluation — Q28): ONE WORD ONLY: 'Legume cover species tested alongside winter rye in Plot Nine: crimson ___'",
+      "options": [],
+      "answer": "clover",
+      "acceptedAnswers": [
+        "clover"
+      ],
+      "explanation": "Jenis tanaman penutup tanah yang diuji adalah crimson clover.",
+      "rationaleSource": "IELTS-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS03-LP3",
+      "maxWords": 1,
+      "sortIndex": 28
+    },
+    {
+      "id": "IELTS-A-03-Q029",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 3 (Cover Crops & No-Till Soil Seminar Evaluation — Q29): What paired metrics do the two students agree to highlight cleanly in revised Section Four?",
+      "options": [
+        "Fifteen-centimeter moisture depth alongside worm-burrow water infiltration velocity.",
+        "Spring diesel tractor oil receipts alongside seed retail marks.",
+        "Historical clay pottery dates alongside autumn market inflation.",
+        "Nitrogen aerosol clouds alongside dry salt desert dunes."
+      ],
+      "answer": "Fifteen-centimeter moisture depth alongside worm-burrow water infiltration velocity.",
+      "acceptedAnswers": [
+        "Fifteen-centimeter moisture depth alongside worm-burrow water infiltration velocity."
+      ],
+      "explanation": "Mereka sepakat menonjolkan data kelembapan 15 cm dan kecepatan infiltrasi liang cacing.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS03-LP3",
+      "sortIndex": 29
+    },
+    {
+      "id": "IELTS-A-03-Q030",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 3 (Cover Crops & No-Till Soil Seminar Evaluation — Q30): How does the woman respond upon spotting Mark's chart-reading error?",
+      "options": [
+        "Scolding Mark publicly inside seminar classrooms.",
+        "Submitting both contradictory drafts unchanged simultaneously.",
+        "Dropping Plot Nine entirely from agronomy reviews.",
+        "Constructively fixing the draft paragraph together before grading tomorrow."
+      ],
+      "answer": "Constructively fixing the draft paragraph together before grading tomorrow.",
+      "acceptedAnswers": [
+        "Constructively fixing the draft paragraph together before grading tomorrow."
+      ],
+      "explanation": "Respons kolaboratif langsung mengganti paragraf salah dengan kutipan data presisi.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS03-LP3",
+      "sortIndex": 30
+    },
+    {
+      "id": "IELTS-A-03-Q031",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 4 (University Lecture — How Printing Woodblocks Transitioned Into Movable Metal Type — Q31): What core historical limitation restricts classic carved whole-page woodblock printing?",
+      "options": [
+        "Paper pulp tore instantaneously inside Chinese wooden presses.",
+        "Carvers could never print more than twelve copies per carved board.",
+        "Correcting tiny single character typos required recarving entire wooden page panels.",
+        "Pearwood grain absorbed watery ink too cleanly for legible scripture print."
+      ],
+      "answer": "Correcting tiny single character typos required recarving entire wooden page panels.",
+      "acceptedAnswers": [
+        "Correcting tiny single character typos required recarving entire wooden page panels."
+      ],
+      "explanation": "Kesalahan satu aksara pada blok utuh memaksa pengukiran ulang papan baru.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS03-LP4",
+      "sortIndex": 31
+    },
+    {
+      "id": "IELTS-A-03-Q032",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 4 (University Lecture — How Printing Woodblocks Transitioned Into Movable Metal Type — Q32): ONE WORD ONLY: 'Hard fine-grained timber favored historically for crisp page woodblocks: ___ wood.'",
+      "options": [],
+      "answer": "pearwood",
+      "acceptedAnswers": [
+        "pearwood",
+        "pear"
+      ],
+      "explanation": "Papan ukir berbutir halus sering menggunakan kayu pir ('pearwood').",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS03-LP4",
+      "maxWords": 1,
+      "sortIndex": 32
+    },
+    {
+      "id": "IELTS-A-03-Q033",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 4 (University Lecture — How Printing Woodblocks Transitioned Into Movable Metal Type — Q33): Which two pioneering materials preceded European lead letters in East Asian movable-type workshops?",
+      "options": [
+        "Eleventh-century Chinese baked clay followed by thirteenth-century Korean cast bronze.",
+        "Carved soft ocean chalk followed cleanly by bamboo bark strips.",
+        "Hand-cut granite cubes followed smoothly by melted amber wax.",
+        "Wrought iron wire hooks welded atop copper sheets."
+      ],
+      "answer": "Eleventh-century Chinese baked clay followed by thirteenth-century Korean cast bronze.",
+      "acceptedAnswers": [
+        "Eleventh-century Chinese baked clay followed by thirteenth-century Korean cast bronze."
+      ],
+      "explanation": "Tanah liat bakar era Song (Bi Sheng abad ke-11) dan perunggu cor Korea abad ke-13.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS03-LP4",
+      "sortIndex": 33
+    },
+    {
+      "id": "IELTS-A-03-Q034",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 4 (University Lecture — How Printing Woodblocks Transitioned Into Movable Metal Type — Q34): NO MORE THAN TWO WORDS: 'Adhesive mix steadying uneven baked metal sorts inside Korean frames: beeswax and ___ resin'",
+      "options": [],
+      "answer": "pine",
+      "acceptedAnswers": [
+        "pine",
+        "pine resin"
+      ],
+      "explanation": "Alas campuran lilin lebah dan getah pinus menahan huruf logam agar rata.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS03-LP4",
+      "maxWords": 2,
+      "sortIndex": 34
+    },
+    {
+      "id": "IELTS-A-03-Q035",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 4 (University Lecture — How Printing Woodblocks Transitioned Into Movable Metal Type — Q35): ONE WORD ONLY: 'Base botanical pressing oil carrying Gutenberg's tacky viscous metal ink cleanly: ___ oil.'",
+      "options": [],
+      "answer": "linseed",
+      "acceptedAnswers": [
+        "linseed"
+      ],
+      "explanation": "Tinta kental berbahan minyak biji rami ('linseed oil varnish') menempel merata di logam.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS03-LP4",
+      "maxWords": 1,
+      "sortIndex": 35
+    },
+    {
+      "id": "IELTS-A-03-Q036",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 4 (University Lecture — How Printing Woodblocks Transitioned Into Movable Metal Type — Q36): Why did traditional soot-and-water calligraphy ink fail cleanly on smooth cast-metal typefaces?",
+      "options": [
+        "Damp rag paper rejected all black pigments automatically.",
+        "Watery ink pulled into patchy wet beads atop metal rather than spreading crisp film coats.",
+        "Carbon water boiled violently against cold alloy bronze.",
+        "Water inks rusted lead antimony punches dry in seconds."
+      ],
+      "answer": "Watery ink pulled into patchy wet beads atop metal rather than spreading crisp film coats.",
+      "acceptedAnswers": [
+        "Watery ink pulled into patchy wet beads atop metal rather than spreading crisp film coats."
+      ],
+      "explanation": "Tinta berbasis air menggumpal putus-putus di permukaan logam licin alih-alih melapisi tipis merata.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS03-LP4",
+      "sortIndex": 36
+    },
+    {
+      "id": "IELTS-A-03-Q037",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 4 (University Lecture — How Printing Woodblocks Transitioned Into Movable Metal Type — Q37): ONE WORD ONLY: 'Key mechanical invention enabling Gutenberg to cast thousands of identical uniform shafts rapidly: adjustable ___.'",
+      "options": [],
+      "answer": "hand-mold",
+      "acceptedAnswers": [
+        "hand-mold",
+        "mold"
+      ],
+      "explanation": "Cetakan tangan fleksibel ('adjustable hand-mold') memastikan ukuran batang huruf seragam.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS03-LP4",
+      "maxWords": 2,
+      "sortIndex": 37
+    },
+    {
+      "id": "IELTS-A-03-Q038",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 4 (University Lecture — How Printing Woodblocks Transitioned Into Movable Metal Type — Q38): What three metals joined in Gutenberg's crisp precision casting alloy?",
+      "options": [
+        "Gold, pure silver, and iron.",
+        "Zinc, bright copper, and nickel.",
+        "Liquid mercury, bronze, and lime.",
+        "Lead, tin, and antimony."
+      ],
+      "answer": "Lead, tin, and antimony.",
+      "acceptedAnswers": [
+        "Lead, tin, and antimony."
+      ],
+      "explanation": "Paduan timah hitam (lead), timah putih (tin), dan antimon (antimony).",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS03-LP4",
+      "sortIndex": 38
+    },
+    {
+      "id": "IELTS-A-03-Q039",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 4 (University Lecture — How Printing Woodblocks Transitioned Into Movable Metal Type — Q39): Why did Korea and China historically retain carved woodblock halls even after inventing movable metal sorts?",
+      "options": [
+        "Lead-tin alloys were outlawed across eastern harbor cities.",
+        "Woodblocks produced shiny photographic three-color murals.",
+        "Thousands of distinct characters made massive metal sorting trays unwieldy compared with fast compact alphabets.",
+        "Korean artisans forgot completely how to heat clay foundry ovens."
+      ],
+      "answer": "Thousands of distinct characters made massive metal sorting trays unwieldy compared with fast compact alphabets.",
+      "acceptedAnswers": [
+        "Thousands of distinct characters made massive metal sorting trays unwieldy compared with fast compact alphabets."
+      ],
+      "explanation": "Ribuan karakter non-alfabetis membuat penataan baki huruf terpisah lebih lambat dibanding papan ukir untuk naskah panjang.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS03-LP4",
+      "sortIndex": 39
+    },
+    {
+      "id": "IELTS-A-03-Q040",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 4 (University Lecture — How Printing Woodblocks Transitioned Into Movable Metal Type — Q40): How does the lecturer frame technological history throughout the talk?",
+      "options": [
+        "Claiming ancient scrolls never spread cleanly beyond Mainz.",
+        "As cumulative global problem-solving across cultures rather than a lone sudden European miracle.",
+        "Purely as proof that metal alloys always eclipse wooden crafts cleanly.",
+        "Dismissing clay movable fonts as complete medieval failures."
+      ],
+      "answer": "As cumulative global problem-solving across cultures rather than a lone sudden European miracle.",
+      "acceptedAnswers": [
+        "As cumulative global problem-solving across cultures rather than a lone sudden European miracle."
+      ],
+      "explanation": "Menggarisbawahi evolusi kumulatif lintas peradaban Tiongkok, Korea, dan Eropa.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS03-LP4",
+      "sortIndex": 40
+    },
+    {
+      "id": "IELTS-A-03-Q041",
       "section": "READING",
       "taskType": "CHOICE_SINGLE",
-      "prompt": "Passage 1 ('Cross-Laminated Timber'): 'Cement manufacturing contributes nearly one-tenth of worldwide carbon emissions.' -> TRUE, FALSE, or NOT GIVEN?",
+      "prompt": "Reading Passage 1 ('Timber Rafts and Shifting River Log Drives in Nineteenth-Century Forestry' — Q41): Do the following statements agree with the information in the text? (TRUE / FALSE / NOT GIVEN): 'Buoyant winter pine logs floated well on spring meltwaters unlike dense green hardwood trunks.'",
       "options": [
         "TRUE",
         "FALSE",
@@ -136,21 +1103,21 @@
       "acceptedAnswers": [
         "TRUE"
       ],
-      "explanation": "'Roughly eight percent' sesuai/mendukung klaim 'nearly one-tenth' (sekitar 8–10%).",
+      "explanation": "Paragraf A menjelaskan kayu keras berat tenggelam sedangkan batang pinus ringan mengapung alami.",
       "rationaleSource": "IELTS-MOD-02",
-      "difficulty": "B2",
+      "difficulty": "B1",
       "points": 1,
       "license": "Original",
       "reviewStatus": "VERIFIED_ORIGINAL",
       "passageId": "IELTS03-P1",
       "audioAssetId": null,
-      "sortIndex": 4
+      "sortIndex": 41
     },
     {
-      "id": "IELTS-A-03-Q05",
+      "id": "IELTS-A-03-Q042",
       "section": "READING",
       "taskType": "CHOICE_SINGLE",
-      "prompt": "Passage 1: 'Thin outer layers of CLT ignite uncontrollably, causing inner wood beams to fail within minutes.' -> TRUE, FALSE, or NOT GIVEN?",
+      "prompt": "Reading Passage 1 ('Timber Rafts and Shifting River Log Drives in Nineteenth-Century Forestry' — Q42): Do the following statements agree with the information in the text? (TRUE / FALSE / NOT GIVEN): 'Lumber workers felled and dragged heavy timber chiefly during dry scorched August river lows.'",
       "options": [
         "TRUE",
         "FALSE",
@@ -160,7 +1127,79 @@
       "acceptedAnswers": [
         "FALSE"
       ],
-      "explanation": "Kalimat terakhir menegaskan lapisan arang luar justru mengisolasi inti struktural hingga memenuhi standar tahan api 2 jam.",
+      "explanation": "Paragraf B mencatat penebangan dikerjakan saat musim dingin di lembah beku lalu dihanyutkan tepat saat banjir salju mencair di bulan April.",
+      "rationaleSource": "IELTS-MOD-02",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS03-P1",
+      "audioAssetId": null,
+      "sortIndex": 42
+    },
+    {
+      "id": "IELTS-A-03-Q043",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 1 ('Timber Rafts and Shifting River Log Drives in Nineteenth-Century Forestry' — Q43): Do the following statements agree with the information in the text? (TRUE / FALSE / NOT GIVEN): 'Workers wore iron-spiked cork footwear to maintain grip atop wet spinning river trunks.'",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": "TRUE",
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "explanation": "Paragraf C menyebut sepatu berpaku besi ('iron-spiked cork boots').",
+      "rationaleSource": "IELTS-MOD-02",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS03-P1",
+      "audioAssetId": null,
+      "sortIndex": 43
+    },
+    {
+      "id": "IELTS-A-03-Q044",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 1 ('Timber Rafts and Shifting River Log Drives in Nineteenth-Century Forestry' — Q44): Do the following statements agree with the information in the text? (TRUE / FALSE / NOT GIVEN): 'Modern salmon-stream restoration helicopters reintroduce deliberate underwater wooden trunks to foster deep quiet fish pools.'",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": "TRUE",
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "explanation": "Paragraf E menguraikan penempatan ulang batang pohon besar guna membangun kolam perlindungan anak salmon.",
+      "rationaleSource": "IELTS-MOD-02",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS03-P1",
+      "audioAssetId": null,
+      "sortIndex": 44
+    },
+    {
+      "id": "IELTS-A-03-Q045",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 1 ('Timber Rafts and Shifting River Log Drives in Nineteenth-Century Forestry' — Q45): Do the following statements agree with the information in the text? (TRUE / FALSE / NOT GIVEN): 'Dynamic spring logjams generated slightly more sawmill timber income than straight railway shipping.'",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": "NOT GIVEN",
+      "acceptedAnswers": [
+        "NOT GIVEN"
+      ],
+      "explanation": "Teks tidak membandingkan pendapatan ekonomi log drive vs jalur kereta api.",
       "rationaleSource": "IELTS-MOD-02",
       "difficulty": "B2",
       "points": 1,
@@ -168,22 +1207,151 @@
       "reviewStatus": "VERIFIED_ORIGINAL",
       "passageId": "IELTS03-P1",
       "audioAssetId": null,
-      "sortIndex": 5
+      "sortIndex": 45
     },
     {
-      "id": "IELTS-A-03-Q06",
+      "id": "IELTS-A-03-Q046",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 1 ('Timber Rafts and Shifting River Log Drives in Nineteenth-Century Forestry' — Q46): Do the following statements agree with the information in the text? (TRUE / FALSE / NOT GIVEN): 'Historical spring timber drives left lasting straightening damage along once-meandering rocky channels.'",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": "TRUE",
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "explanation": "Paragraf D menegaskan bekas gerusan masih meluruskan alur lembah bahkan seabad kemudian.",
+      "rationaleSource": "IELTS-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS03-P1",
+      "audioAssetId": null,
+      "sortIndex": 46
+    },
+    {
+      "id": "IELTS-A-03-Q047",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 1 ('Timber Rafts and Shifting River Log Drives in Nineteenth-Century Forestry' — Q47): Do the following statements agree with the information in the text? (TRUE / FALSE / NOT GIVEN): 'Early logging companies routinely paid cash bonuses whenever trout spawning gravels doubled.'",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": "NOT GIVEN",
+      "acceptedAnswers": [
+        "NOT GIVEN"
+      ],
+      "explanation": "Bonus perusahaan kayu untuk ikan trout tidak disebut di bacaan.",
+      "rationaleSource": "IELTS-MOD-02",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS03-P1",
+      "audioAssetId": null,
+      "sortIndex": 47
+    },
+    {
+      "id": "IELTS-A-03-Q048",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Reading Passage 1 ('Timber Rafts and Shifting River Log Drives in Nineteenth-Century Forestry' — Q48): ONE WORD ONLY: 'Seasonal mountain event powering wild April log drives: spring ___'",
+      "options": [],
+      "answer": "snowmelt",
+      "acceptedAnswers": [
+        "snowmelt"
+      ],
+      "explanation": "Paragraf B menyebut 'April snowmelt swollen streams'.",
+      "rationaleSource": "IELTS-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS03-P1",
+      "audioAssetId": null,
+      "maxWords": 1,
+      "sortIndex": 48
+    },
+    {
+      "id": "IELTS-A-03-Q049",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Reading Passage 1 ('Timber Rafts and Shifting River Log Drives in Nineteenth-Century Forestry' — Q49): ONE WORD ONLY: 'Explosive material occasionally triggered to clear jammed twenty-meter river bottlenecks: ___'",
+      "options": [],
+      "answer": "dynamite",
+      "acceptedAnswers": [
+        "dynamite"
+      ],
+      "explanation": "Paragraf C menyebut penggunaan bahan peledak dinamit ('dynamite charges').",
+      "rationaleSource": "IELTS-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS03-P1",
+      "audioAssetId": null,
+      "maxWords": 1,
+      "sortIndex": 49
+    },
+    {
+      "id": "IELTS-A-03-Q050",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Reading Passage 1 ('Timber Rafts and Shifting River Log Drives in Nineteenth-Century Forestry' — Q50): NO MORE THAN TWO WORDS: 'Long hooked wooden tools river workers swung to direct rolling pine trunks: ___ poles'",
+      "options": [],
+      "answer": "pike",
+      "acceptedAnswers": [
+        "pike"
+      ],
+      "explanation": "Disebut 'hooked pike poles'.",
+      "rationaleSource": "IELTS-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS03-P1",
+      "audioAssetId": null,
+      "maxWords": 1,
+      "sortIndex": 50
+    },
+    {
+      "id": "IELTS-A-03-Q051",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Reading Passage 1 ('Timber Rafts and Shifting River Log Drives in Nineteenth-Century Forestry' — Q51): ONE WORD ONLY: 'Sensitive underwater gravelly fish nests wiped away by scouring torrents: trout ___'",
+      "options": [],
+      "answer": "redds",
+      "acceptedAnswers": [
+        "redds"
+      ],
+      "explanation": "Paragraf D memakai istilah ekologi 'trout redds'.",
+      "rationaleSource": "IELTS-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS03-P1",
+      "audioAssetId": null,
+      "maxWords": 1,
+      "sortIndex": 51
+    },
+    {
+      "id": "IELTS-A-03-Q052",
       "section": "READING",
       "taskType": "MATCHING",
-      "prompt": "Match each researcher in Passage 1 to their specific finding:",
-      "options": [
-        "Dr. Helen Lindqvist :: Alternating grain direction limits seasonal warping",
-        "Dr. Mateo Silva :: Factory-built CLT panels speed up site assembly"
-      ],
-      "answer": "Dr. Helen Lindqvist::Alternating grain direction limits seasonal warping|Dr. Mateo Silva::Factory-built CLT panels speed up site assembly",
+      "prompt": "Reading Passage 1 ('Timber Rafts and Shifting River Log Drives in Nineteenth-Century Forestry' — Q52): Match each chronological era cleanly to its river engineering treatment:",
+      "options": [],
+      "answer": "Nineteenth-century winter drives::Dragged straight heavy trunks ripping bends clean|Modern salmon habitat recovery::Hauled large nurse logs gently back by air",
       "acceptedAnswers": [
-        "Dr. Helen Lindqvist::Alternating grain direction limits seasonal warping|Dr. Mateo Silva::Factory-built CLT panels speed up site assembly"
+        "Nineteenth-century winter drives::Dragged straight heavy trunks ripping bends clean|Modern salmon habitat recovery::Hauled large nurse logs gently back by air"
       ],
-      "explanation": "Lindqvist meneliti ketahanan lengkung akibat arah serat tegak lurus; Silva mengukur penghematan 40% waktu derek di lokasi.",
+      "explanation": "Kontras historis perusakan alur vs pemulihan modern memakai helikopter.",
       "rationaleSource": "IELTS-MOD-03",
       "difficulty": "B2",
       "points": 1,
@@ -193,56 +1361,747 @@
       "audioAssetId": null,
       "pairs": [
         {
-          "left": "Dr. Helen Lindqvist",
+          "left": "Nineteenth-century winter drives",
           "rightOptions": [
-            "Alternating grain direction limits seasonal warping",
-            "Factory-built CLT panels speed up site assembly"
+            "Dragged straight heavy trunks ripping bends clean",
+            "Hauled large nurse logs gently back by air"
           ]
         },
         {
-          "left": "Dr. Mateo Silva",
+          "left": "Modern salmon habitat recovery",
           "rightOptions": [
-            "Alternating grain direction limits seasonal warping",
-            "Factory-built CLT panels speed up site assembly"
+            "Dragged straight heavy trunks ripping bends clean",
+            "Hauled large nurse logs gently back by air"
           ]
         }
       ],
-      "sortIndex": 6
+      "sortIndex": 52
     },
     {
-      "id": "IELTS-A-03-Q07",
+      "id": "IELTS-A-03-Q053",
       "section": "READING",
-      "taskType": "REORDER",
-      "prompt": "Order the four CLT manufacturing stages described in Passage 1 (1 = first, 4 = final):",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 1 ('Timber Rafts and Shifting River Log Drives in Nineteenth-Century Forestry' — Q53): Why do modern biologists intentionally place large fallen wood back inside mountain rivers cleaned by ancestors?",
       "options": [
-        "Kiln-dry spruce or pine boards",
-        "Stack layers at ninety-degree angles",
-        "Bond panels under hydraulic press",
-        "Lift prefabricated panels on site by crane"
+        "Anchored trunks carve cool sheltered deep eddies hiding young salmon safely.",
+        "Floating log rafts generate renewable hydroelectric current downstream.",
+        "Wooden dams drain polluted highway runoff safely away.",
+        "Trout devour rotten soft cedar bark across winter months."
       ],
-      "answer": "Kiln-dry spruce or pine boards|Stack layers at ninety-degree angles|Bond panels under hydraulic press|Lift prefabricated panels on site by crane",
+      "answer": "Anchored trunks carve cool sheltered deep eddies hiding young salmon safely.",
       "acceptedAnswers": [
-        "Kiln-dry spruce or pine boards|Stack layers at ninety-degree angles|Bond panels under hydraulic press|Lift prefabricated panels on site by crane"
+        "Anchored trunks carve cool sheltered deep eddies hiding young salmon safely."
       ],
-      "explanation": "Tahapan berurutan dari pengeringan kayu -> penyusunan serat silang -> pengepresan hidrolik -> pemasangan derek di lapangan.",
-      "rationaleSource": "IELTS-MOD-03",
-      "difficulty": "B1",
+      "explanation": "Batang pohon besar menciptakan struktur kolam tenang pelindung ikan muda.",
+      "rationaleSource": "IELTS-MOD-08",
+      "difficulty": "B2",
       "points": 1,
       "license": "Original",
       "reviewStatus": "VERIFIED_ORIGINAL",
       "passageId": "IELTS03-P1",
       "audioAssetId": null,
-      "sortIndex": 7
+      "sortIndex": 53
     },
     {
-      "id": "IELTS-A-03-Q08",
+      "id": "IELTS-A-03-Q054",
+      "section": "READING",
+      "taskType": "MATCHING",
+      "prompt": "Reading Passage 2 ('Can Passive Clay Coolers Outlast Electric Cold Chains for Rural Clinics?' — Q54): Match Paragraphs B, C, D, and E to their core subject headings:",
+      "options": [],
+      "answer": "Paragraph B::Double-walled clay and damp sand construction|Paragraph C::Evaporative latent heat extraction mechanics|Paragraph D::Measured tomato shelf-life trial gains|Paragraph E::High-humidity monsoon operating limits",
+      "acceptedAnswers": [
+        "Paragraph B::Double-walled clay and damp sand construction|Paragraph C::Evaporative latent heat extraction mechanics|Paragraph D::Measured tomato shelf-life trial gains|Paragraph E::High-humidity monsoon operating limits"
+      ],
+      "explanation": "Kesesuaian inti setiap paragraf mengenai pendingin tanah liat evaporatif.",
+      "rationaleSource": "IELTS-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS03-P2",
+      "audioAssetId": null,
+      "pairs": [
+        {
+          "left": "Paragraph B",
+          "rightOptions": [
+            "Double-walled clay and damp sand construction",
+            "Evaporative latent heat extraction mechanics",
+            "Measured tomato shelf-life trial gains",
+            "High-humidity monsoon operating limits"
+          ]
+        },
+        {
+          "left": "Paragraph C",
+          "rightOptions": [
+            "Double-walled clay and damp sand construction",
+            "Evaporative latent heat extraction mechanics",
+            "Measured tomato shelf-life trial gains",
+            "High-humidity monsoon operating limits"
+          ]
+        },
+        {
+          "left": "Paragraph D",
+          "rightOptions": [
+            "Double-walled clay and damp sand construction",
+            "Evaporative latent heat extraction mechanics",
+            "Measured tomato shelf-life trial gains",
+            "High-humidity monsoon operating limits"
+          ]
+        },
+        {
+          "left": "Paragraph E",
+          "rightOptions": [
+            "Double-walled clay and damp sand construction",
+            "Evaporative latent heat extraction mechanics",
+            "Measured tomato shelf-life trial gains",
+            "High-humidity monsoon operating limits"
+          ]
+        }
+      ],
+      "sortIndex": 54
+    },
+    {
+      "id": "IELTS-A-03-Q055",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 2 ('Can Passive Clay Coolers Outlast Electric Cold Chains for Rural Clinics?' — Q55): Do the following statements agree with the information in the text? (TRUE / FALSE / NOT GIVEN): 'Dry outer terracotta shells prevent evaporation inside nested double-wall zeer units.'",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": "FALSE",
+      "acceptedAnswers": [
+        "FALSE"
+      ],
+      "explanation": "Justru penguapan menembus pori tanah liat melalui pasir basah yang menarik panas laten keluar.",
+      "rationaleSource": "IELTS-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS03-P2",
+      "audioAssetId": null,
+      "sortIndex": 55
+    },
+    {
+      "id": "IELTS-A-03-Q056",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 2 ('Can Passive Clay Coolers Outlast Electric Cold Chains for Rural Clinics?' — Q56): Do the following statements agree with the information in the text? (TRUE / FALSE / NOT GIVEN): 'Trials in northern Nigeria preserved fresh tomatoes roughly seven times longer than bare woven baskets.'",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": "TRUE",
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "explanation": "Tiga minggu (21 hari) dibanding tiga hari (~7 kali lipat lebih awet).",
+      "rationaleSource": "IELTS-MOD-02",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS03-P2",
+      "audioAssetId": null,
+      "sortIndex": 56
+    },
+    {
+      "id": "IELTS-A-03-Q057",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 2 ('Can Passive Clay Coolers Outlast Electric Cold Chains for Rural Clinics?' — Q57): Do the following statements agree with the information in the text? (TRUE / FALSE / NOT GIVEN): 'Evaporative clay coolers drop temperatures sharply well across rainy tropical rainforests near ninety percent humidity.'",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": "FALSE",
+      "acceptedAnswers": [
+        "FALSE"
+      ],
+      "explanation": "Paragraf E memperingatkan pada kelembapan tinggi ~90% penguapan melambat dan gagal mendinginkan.",
+      "rationaleSource": "IELTS-MOD-02",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS03-P2",
+      "audioAssetId": null,
+      "sortIndex": 57
+    },
+    {
+      "id": "IELTS-A-03-Q058",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 2 ('Can Passive Clay Coolers Outlast Electric Cold Chains for Rural Clinics?' — Q58): Do the following statements agree with the information in the text? (TRUE / FALSE / NOT GIVEN): 'Northern Nigerian clinic nurses preferred wooden tomato baskets strictly over electricity.'",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": "NOT GIVEN",
+      "acceptedAnswers": [
+        "NOT GIVEN"
+      ],
+      "explanation": "Preferensi perawat klinik terhadap keranjang kayu dibanding listrik tidak dibahas.",
+      "rationaleSource": "IELTS-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS03-P2",
+      "audioAssetId": null,
+      "sortIndex": 58
+    },
+    {
+      "id": "IELTS-A-03-Q059",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Reading Passage 2 ('Can Passive Clay Coolers Outlast Electric Cold Chains for Rural Clinics?' — Q59): ONE WORD ONLY: 'Porous moist mineral medium packed firmly separating twin nested pots: washed river ___'",
+      "options": [],
+      "answer": "sand",
+      "acceptedAnswers": [
+        "sand"
+      ],
+      "explanation": "Paragraf B menyebut 'damp washed river sand'.",
+      "rationaleSource": "IELTS-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS03-P2",
+      "audioAssetId": null,
+      "maxWords": 1,
+      "sortIndex": 59
+    },
+    {
+      "id": "IELTS-A-03-Q060",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Reading Passage 2 ('Can Passive Clay Coolers Outlast Electric Cold Chains for Rural Clinics?' — Q60): NUMBER ONLY (°C): 'Internal cooling drop achievable below 40°C dry shade: up to ___ degrees'",
+      "options": [],
+      "answer": "15",
+      "acceptedAnswers": [
+        "15",
+        "fifteen"
+      ],
+      "explanation": "Suhu turun hingga 15 derajat di bawah udara teduh luar.",
+      "rationaleSource": "IELTS-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS03-P2",
+      "audioAssetId": null,
+      "maxWords": 1,
+      "sortIndex": 60
+    },
+    {
+      "id": "IELTS-A-03-Q061",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Reading Passage 2 ('Can Passive Clay Coolers Outlast Electric Cold Chains for Rural Clinics?' — Q61): NUMBER ONLY (weeks): 'Preserved market freshness recorded for tomatoes inside zeer chambers: ___ weeks'",
+      "options": [],
+      "answer": "3",
+      "acceptedAnswers": [
+        "3",
+        "three"
+      ],
+      "explanation": "Paragraf D mencatat tomat bertahan tiga minggu.",
+      "rationaleSource": "IELTS-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS03-P2",
+      "audioAssetId": null,
+      "maxWords": 1,
+      "sortIndex": 61
+    },
+    {
+      "id": "IELTS-A-03-Q062",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Reading Passage 2 ('Can Passive Clay Coolers Outlast Electric Cold Chains for Rural Clinics?' — Q62): NUMBER ONLY (%): 'Ideal upper ambient dry-air humidity limit where zeer coolers perform strongly: below ___%'",
+      "options": [],
+      "answer": "40",
+      "acceptedAnswers": [
+        "40",
+        "forty"
+      ],
+      "explanation": "Bekerja optimal di daerah kering berkelembapan di bawah 40%.",
+      "rationaleSource": "IELTS-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS03-P2",
+      "audioAssetId": null,
+      "maxWords": 1,
+      "sortIndex": 62
+    },
+    {
+      "id": "IELTS-A-03-Q063",
+      "section": "READING",
+      "taskType": "CHOICE_MULTI",
+      "prompt": "Reading Passage 2 ('Can Passive Clay Coolers Outlast Electric Cold Chains for Rural Clinics?' — Q63): Choose TWO environmental prerequisites necessary for passive pot-in-pot units to chill cleanly:",
+      "options": [
+        "Low dry ambient air relative humidity",
+        "Sealed electric lithium cooling fans underneath baskets",
+        "Gentle continuous dry outdoor wind movement",
+        "Flooded wet coastal monsoon rainfall daily"
+      ],
+      "answer": "Low dry ambient air relative humidity|Gentle continuous dry outdoor wind movement",
+      "acceptedAnswers": [
+        "Low dry ambient air relative humidity|Gentle continuous dry outdoor wind movement"
+      ],
+      "explanation": "Pendinginan evaporatif butuh udara kering berkelembapan rendah serta hembusan angin stabil.",
+      "rationaleSource": "IELTS-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS03-P2",
+      "audioAssetId": null,
+      "sortIndex": 63
+    },
+    {
+      "id": "IELTS-A-03-Q064",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 2 ('Can Passive Clay Coolers Outlast Electric Cold Chains for Rural Clinics?' — Q64): Why does continuous water topping along the mid-sand ring stay essential daily?",
+      "options": [
+        "Diesel engines overheat inside moist sand walls.",
+        "Cooling stops entirely once moisture inside sand seams dries dry.",
+        "Dry sand shrinks smoothly cracking porcelain handles nightly.",
+        "Bacteria drink water bubbles out of tomato skins."
+      ],
+      "answer": "Cooling stops entirely once moisture inside sand seams dries dry.",
+      "acceptedAnswers": [
+        "Cooling stops entirely once moisture inside sand seams dries dry."
+      ],
+      "explanation": "Pasir harus tetap basah agar proses penguapan penarik panas tidak terhenti.",
+      "rationaleSource": "IELTS-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS03-P2",
+      "audioAssetId": null,
+      "sortIndex": 64
+    },
+    {
+      "id": "IELTS-A-03-Q065",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 2 ('Can Passive Clay Coolers Outlast Electric Cold Chains for Rural Clinics?' — Q65): Do the following statements agree with the information in the text? (TRUE / FALSE / NOT GIVEN): 'Glazed non-porous outer vessels hold moist washed river sand around smaller porous clay containers.'",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": "TRUE",
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "explanation": "Paragraf B menerangkan wadah dalam dari tanah liat berpori diletakkan di dalam pot luar berlapis glasir berisi pasir basah.",
+      "rationaleSource": "IELTS-MOD-02",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS03-P2",
+      "audioAssetId": null,
+      "sortIndex": 65
+    },
+    {
+      "id": "IELTS-A-03-Q066",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 2 ('Can Passive Clay Coolers Outlast Electric Cold Chains for Rural Clinics?' — Q66): What explains why rural clinic vaccine storage struggles with diesel chillers in Paragraph A?",
+      "options": [
+        "Clay vessels cost twenty times more than metal turbines.",
+        "Vaccines lose potency rapidly when chilled gently indoors.",
+        "Bamboo baskets overheat glass solar reflectors daily.",
+        "Uncertain fuel transport over ruined dirt tracks plus mechanical breakdown risk."
+      ],
+      "answer": "Uncertain fuel transport over ruined dirt tracks plus mechanical breakdown risk.",
+      "acceptedAnswers": [
+        "Uncertain fuel transport over ruined dirt tracks plus mechanical breakdown risk."
+      ],
+      "explanation": "Paragraf A menyoroti gangguan pasokan solar di jalan tanah berlumpur dan kerusakan generator diesel.",
+      "rationaleSource": "IELTS-MOD-08",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS03-P2",
+      "audioAssetId": null,
+      "sortIndex": 66
+    },
+    {
+      "id": "IELTS-A-03-Q067",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 3 ('Do Automated Handwriting vs Early Reading Phonics Debates Miss Dyslexic Variety?' — Q67): Do the following statements reflect the claims of the writer? (YES / NO / NOT GIVEN): 'Guessing unfamiliar text words strictly from nearby illustration context matches systematic phoneme decoding reliability.'",
+      "options": [
+        "YES",
+        "NO",
+        "NOT GIVEN"
+      ],
+      "answer": "NO",
+      "acceptedAnswers": [
+        "NO"
+      ],
+      "explanation": "Paragraf B menegaskan instruksi eksplisit fonem huruf-bunyi jauh lebih andal dibanding menebak dari gambar.",
+      "rationaleSource": "IELTS-MOD-08",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS03-P3",
+      "audioAssetId": null,
+      "sortIndex": 67
+    },
+    {
+      "id": "IELTS-A-03-Q068",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 3 ('Do Automated Handwriting vs Early Reading Phonics Debates Miss Dyslexic Variety?' — Q68): Do the following statements reflect the claims of the writer? (YES / NO / NOT GIVEN): 'Mastering accurate phonics word decoding automatically guarantees deep literary comprehension regardless of spoken vocabulary.'",
+      "options": [
+        "YES",
+        "NO",
+        "NOT GIVEN"
+      ],
+      "answer": "NO",
+      "acceptedAnswers": [
+        "NO"
+      ],
+      "explanation": "Paragraf C menyoroti Dr. Subramanian bahwa pemahaman mendalam tetap menuntut kosakata lisan kaya dan pengetahuan latar.",
+      "rationaleSource": "IELTS-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS03-P3",
+      "audioAssetId": null,
+      "sortIndex": 68
+    },
+    {
+      "id": "IELTS-A-03-Q069",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 3 ('Do Automated Handwriting vs Early Reading Phonics Debates Miss Dyslexic Variety?' — Q69): Do the following statements reflect the claims of the writer? (YES / NO / NOT GIVEN): 'Uniform ultra-fast timed sound drills suit every student carrying developmental dyslexia comfortably.'",
+      "options": [
+        "YES",
+        "NO",
+        "NOT GIVEN"
+      ],
+      "answer": "NO",
+      "acceptedAnswers": [
+        "NO"
+      ],
+      "explanation": "Paragraf D mencatat latihan cepat seragam memicu frustrasi dan butuh tempo individual serta metode multisensori.",
+      "rationaleSource": "IELTS-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS03-P3",
+      "audioAssetId": null,
+      "sortIndex": 69
+    },
+    {
+      "id": "IELTS-A-03-Q070",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 3 ('Do Automated Handwriting vs Early Reading Phonics Debates Miss Dyslexic Variety?' — Q70): Do the following statements reflect the claims of the writer? (YES / NO / NOT GIVEN): 'Phonemic neural imaging scans cost significantly more across Asian universities than American primary districts.'",
+      "options": [
+        "YES",
+        "NO",
+        "NOT GIVEN"
+      ],
+      "answer": "NOT GIVEN",
+      "acceptedAnswers": [
+        "NOT GIVEN"
+      ],
+      "explanation": "Biaya pemindaian otak antarbenua tidak pernah dibahas.",
+      "rationaleSource": "IELTS-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS03-P3",
+      "audioAssetId": null,
+      "sortIndex": 70
+    },
+    {
+      "id": "IELTS-A-03-Q071",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 3 ('Do Automated Handwriting vs Early Reading Phonics Debates Miss Dyslexic Variety?' — Q71): Do the following statements reflect the claims of the writer? (YES / NO / NOT GIVEN): 'Modern 'structured literacy' unites systematic sound instruction thoughtfully beside rich storytelling meaning.'",
+      "options": [
+        "YES",
+        "NO",
+        "NOT GIVEN"
+      ],
+      "answer": "YES",
+      "acceptedAnswers": [
+        "YES"
+      ],
+      "explanation": "Paragraf E mendukung penggabungan fondasi fonem sistematis dengan keingintahuan cerita bermakna.",
+      "rationaleSource": "IELTS-MOD-08",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS03-P3",
+      "audioAssetId": null,
+      "sortIndex": 71
+    },
+    {
+      "id": "IELTS-A-03-Q072",
+      "section": "READING",
+      "taskType": "MATCHING",
+      "prompt": "Reading Passage 3 ('Do Automated Handwriting vs Early Reading Phonics Debates Miss Dyslexic Variety?' — Q72): Match each literacy perspective cleanly to its classroom focus:",
+      "options": [],
+      "answer": "Explicit phoneme decoding::Unlocks reliable word recognition early|Oral vocabulary & knowledge::Supplies semantics beyond simple sounding-out|Multisensory individual pacing::Accommodates individual neural rhythm softly",
+      "acceptedAnswers": [
+        "Explicit phoneme decoding::Unlocks reliable word recognition early|Oral vocabulary & knowledge::Supplies semantics beyond simple sounding-out|Multisensory individual pacing::Accommodates individual neural rhythm softly"
+      ],
+      "explanation": "Integrasi tiga komponen literasi terstruktur sesuai paragraf B–D.",
+      "rationaleSource": "IELTS-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS03-P3",
+      "audioAssetId": null,
+      "pairs": [
+        {
+          "left": "Explicit phoneme decoding",
+          "rightOptions": [
+            "Unlocks reliable word recognition early",
+            "Supplies semantics beyond simple sounding-out",
+            "Accommodates individual neural rhythm softly"
+          ]
+        },
+        {
+          "left": "Oral vocabulary & knowledge",
+          "rightOptions": [
+            "Unlocks reliable word recognition early",
+            "Supplies semantics beyond simple sounding-out",
+            "Accommodates individual neural rhythm softly"
+          ]
+        },
+        {
+          "left": "Multisensory individual pacing",
+          "rightOptions": [
+            "Unlocks reliable word recognition early",
+            "Supplies semantics beyond simple sounding-out",
+            "Accommodates individual neural rhythm softly"
+          ]
+        }
+      ],
+      "sortIndex": 72
+    },
+    {
+      "id": "IELTS-A-03-Q073",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Reading Passage 3 ('Do Automated Handwriting vs Early Reading Phonics Debates Miss Dyslexic Variety?' — Q73): ONE WORD ONLY: 'Meta-analyses confirm linking spoken units cleanly speeds decoding: letter-sound ___'",
+      "options": [],
+      "answer": "phonemes",
+      "acceptedAnswers": [
+        "phoneme",
+        "phonemes"
+      ],
+      "explanation": "Paragraf B menyebut 'spoken letter-sound phonemes'.",
+      "rationaleSource": "IELTS-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS03-P3",
+      "audioAssetId": null,
+      "maxWords": 1,
+      "sortIndex": 73
+    },
+    {
+      "id": "IELTS-A-03-Q074",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Reading Passage 3 ('Do Automated Handwriting vs Early Reading Phonics Debates Miss Dyslexic Variety?' — Q74): ONE WORD ONLY: 'Additional sensory learning path paired with timing flexibility for dyslexic learners: ___ tracing'",
+      "options": [],
+      "answer": "tactile",
+      "acceptedAnswers": [
+        "tactile"
+      ],
+      "explanation": "Paragraf D memakai istilah 'multisensory tactile letter-tracing'.",
+      "rationaleSource": "IELTS-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS03-P3",
+      "audioAssetId": null,
+      "maxWords": 1,
+      "sortIndex": 74
+    },
+    {
+      "id": "IELTS-A-03-Q075",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Reading Passage 3 ('Do Automated Handwriting vs Early Reading Phonics Debates Miss Dyslexic Variety?' — Q75): ONE WORD ONLY: 'Integrative classroom term merging clear phonics beside lively rich books: ___ literacy'",
+      "options": [],
+      "answer": "structured",
+      "acceptedAnswers": [
+        "structured"
+      ],
+      "explanation": "Paragraf E menyebut pendekatan 'Balanced structured literacy'.",
+      "rationaleSource": "IELTS-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS03-P3",
+      "audioAssetId": null,
+      "maxWords": 1,
+      "sortIndex": 75
+    },
+    {
+      "id": "IELTS-A-03-Q076",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Reading Passage 3 ('Do Automated Handwriting vs Early Reading Phonics Debates Miss Dyslexic Variety?' — Q76): ONE WORD ONLY: 'Core cognitive reading skill unlocked once mechanical word-decoding reaches automatic speed: deep ___'",
+      "options": [],
+      "answer": "comprehension",
+      "acceptedAnswers": [
+        "comprehension"
+      ],
+      "explanation": "Paragraf C menekankan pemahaman bacaan mendalam ('deep reading comprehension').",
+      "rationaleSource": "IELTS-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS03-P3",
+      "audioAssetId": null,
+      "maxWords": 1,
+      "sortIndex": 76
+    },
+    {
+      "id": "IELTS-A-03-Q077",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 3 ('Do Automated Handwriting vs Early Reading Phonics Debates Miss Dyslexic Variety?' — Q77): Why does the writer criticize historic literacy curriculum cycles in Paragraph A?",
+      "options": [
+        "Binary pendulum debates forced artificial either-or trade-offs instead of synthesizing valid findings.",
+        "Teachers uniformly refused reading illustrated novels aloud inside primary desks.",
+        "Neuroscience brain imagers falsified childhood vocabulary flashcard outcomes.",
+        "Phonics drills banned paper spiral pencils completely."
+      ],
+      "answer": "Binary pendulum debates forced artificial either-or trade-offs instead of synthesizing valid findings.",
+      "acceptedAnswers": [
+        "Binary pendulum debates forced artificial either-or trade-offs instead of synthesizing valid findings."
+      ],
+      "explanation": "Perdebatan hitam-putih memaksa guru memilih satu kutub secara kaku alih-alih mengintegrasikannya.",
+      "rationaleSource": "IELTS-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS03-P3",
+      "audioAssetId": null,
+      "sortIndex": 77
+    },
+    {
+      "id": "IELTS-A-03-Q078",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 3 ('Do Automated Handwriting vs Early Reading Phonics Debates Miss Dyslexic Variety?' — Q78): According to Dr. Priya Subramanian, what risks bottlenecking fourth-grade reading growth even in skilled phonetic decoders?",
+      "options": [
+        "Excessive bright cursive wall calligraphy posters.",
+        "Skipping fifty-word timed reading speed bells.",
+        "Reading fascinating picture storybooks cleanly at dusk.",
+        "Shallow everyday oral vocabulary and narrow background knowledge across diverse topics."
+      ],
+      "answer": "Shallow everyday oral vocabulary and narrow background knowledge across diverse topics.",
+      "acceptedAnswers": [
+        "Shallow everyday oral vocabulary and narrow background knowledge across diverse topics."
+      ],
+      "explanation": "Kurangnya kosakata lisan serta pengetahuan dunia membatasi pemahaman tingkat lanjut.",
+      "rationaleSource": "IELTS-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS03-P3",
+      "audioAssetId": null,
+      "sortIndex": 78
+    },
+    {
+      "id": "IELTS-A-03-Q079",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 3 ('Do Automated Handwriting vs Early Reading Phonics Debates Miss Dyslexic Variety?' — Q79): What evidence supports rejecting purely fast-paced one-size-fits-all phonics timelines?",
+      "options": [
+        "Children prefer watching uncaptioned wildlife videos exclusively.",
+        "Flashcard ink turns dull grey after twenty daily touches.",
+        "Neuroimaging reveals varied phonological processing profiles requiring adaptive tactile support.",
+        "Choral classrooms fail strictly during noisy winter snowstorms."
+      ],
+      "answer": "Neuroimaging reveals varied phonological processing profiles requiring adaptive tactile support.",
+      "acceptedAnswers": [
+        "Neuroimaging reveals varied phonological processing profiles requiring adaptive tactile support."
+      ],
+      "explanation": "Pencitraan otak menunjukkan keragaman variasi fonologis antarindividu.",
+      "rationaleSource": "IELTS-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS03-P3",
+      "audioAssetId": null,
+      "sortIndex": 79
+    },
+    {
+      "id": "IELTS-A-03-Q080",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 3 ('Do Automated Handwriting vs Early Reading Phonics Debates Miss Dyslexic Variety?' — Q80): What best reflects the author's concluding educational prescription?",
+      "options": [
+        "Discard rich storybooks whenever phonetic spelling checklists appear.",
+        "Anchor sound-letter mechanics cleanly first while nurturing expressive oral stories and flexible pacing.",
+        "Eliminate phonemic instruction entirely until high school seminar classes.",
+        "Mandate computerized reading timers across kindergarten classrooms."
+      ],
+      "answer": "Anchor sound-letter mechanics cleanly first while nurturing expressive oral stories and flexible pacing.",
+      "acceptedAnswers": [
+        "Anchor sound-letter mechanics cleanly first while nurturing expressive oral stories and flexible pacing."
+      ],
+      "explanation": "Kesimpulan menyatukan fondasi fonem jelas + literasi kaya makna + fleksibilitas individual.",
+      "rationaleSource": "IELTS-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS03-P3",
+      "audioAssetId": null,
+      "sortIndex": 80
+    },
+    {
+      "id": "IELTS-A-03-Q081",
       "section": "WRITING",
       "taskType": "WRITING_RESPONSE",
-      "prompt": "IELTS Academic Writing Task 1 Process Description (>=150 words, 20 min): Describe the closed-loop glass bottle recycling process shown in these stages:\n1. Household sorting -> collection trucks -> washing & color separation\n2. Crushing into cullet -> magnetic & optical impurity removal\n3. Melting in furnace (1,500°C) with silica sand -> molding new bottles\n4. Cooling inspection -> refilling at bottling plant.\nWrite a structured process report with an Overview and cohesive passive steps.",
+      "prompt": "Writing Task 1 (Line Graph — At least 150 words, 20 min): The chart tracks seasonal hospital admissions for heat stress versus winter respiratory infections across two coastal regions between 2005 and 2025. Region North recorded mild heat admissions rising from 180 to 460 per 100k during July–August while winter cases fell steadily (1,240->810). Region South experienced sharp late-summer spikes doubling from 620 to 1,390 per 100k alongside flat modest winter peaks (~490). Compare key trends and contrasts clearly.",
       "options": [],
       "answer": "",
       "acceptedAnswers": [],
-      "explanation": "Gunakan kata sambung urutan (Initially, Subsequently, Once melted) dan bentuk pasif tepat untuk tiap tahap.",
+      "explanation": "Band 7+ Task 1 wajib menyertakan Overview tren utama tanpa opini pribadi, membandingkan angka/tahapan ekstrem secara akurat.",
       "rationaleSource": "IELTS-MOD-04",
       "difficulty": "B2",
       "points": 1,
@@ -251,119 +2110,119 @@
       "passageId": null,
       "audioAssetId": null,
       "minWords": 150,
-      "recommendedWords": 170,
+      "recommendedWords": 180,
       "rubricCriteria": [
-        "Clear Overview of circular flow",
-        "All stages covered accurately",
-        "Passive voice & sequencers",
-        "Lexical accuracy"
+        "Clear Overview statement",
+        "Accurate data/stage selection",
+        "Trend comparisons & passive/sequence connectors",
+        "Lexical precision"
       ],
-      "sortIndex": 8
+      "sortIndex": 81
     },
     {
-      "id": "IELTS-A-03-Q09",
+      "id": "IELTS-A-03-Q082",
       "section": "WRITING",
       "taskType": "WRITING_RESPONSE",
-      "prompt": "IELTS Academic Writing Task 2 (>=250 words, 40 min): Practical vocational subjects such as carpentry, coding, and sustainable agriculture are increasingly sidelined in secondary schools in favor of exam-focused theory. What are the causes of this trend, and what effects might it have on graduates?",
+      "prompt": "Writing Task 2 (Academic Essay — At least 250 words, 40 min): Public universities in several nations publish all taxpayer-funded empirical datasets immediately online, whereas private firms guard laboratory measurements behind intellectual-property walls. Does mandatory immediate open data sharing advance collective science faster, or undermine commercial incentives needed to develop practical inventions? Give reasons and concrete examples.",
       "options": [],
       "answer": "",
       "acceptedAnswers": [],
-      "explanation": "Ini adalah soal Two-Part (Causes & Effects): pastikan kedua bagian terjawab seimbang dengan paragraf terpisah.",
+      "explanation": "Band 7+ Task 2 menuntut tesis tegas konsisten di pembuka hingga penutup, pengembangan paragraf tubuh bertumpu mekanisme & contoh, serta kendali klausa kompleks.",
       "rationaleSource": "IELTS-MOD-05",
-      "difficulty": "B2",
-      "points": 1,
-      "license": "Original",
-      "reviewStatus": "VERIFIED_ORIGINAL",
-      "passageId": null,
-      "audioAssetId": null,
-      "minWords": 250,
-      "recommendedWords": 275,
-      "rubricCriteria": [
-        "Answers Causes AND Effects",
-        "Well-supported examples",
-        "Coherence & paragraphing",
-        "Grammatical range"
-      ],
-      "sortIndex": 9
-    },
-    {
-      "id": "IELTS-A-03-Q10",
-      "section": "SPEAKING",
-      "taskType": "SPEAKING_RESPONSE",
-      "prompt": "IELTS Speaking Part 1 (~30–45s): 'Did you learn any practical hands-on skills—like cooking, gardening, or repairing items—when you were younger? Which skill do you find most useful now?'",
-      "options": [],
-      "answer": "",
-      "acceptedAnswers": [],
-      "explanation": "Jawab ringkas dengan pengalaman spesifik dan manfaat nyatanya saat ini.",
-      "rationaleSource": "IELTS-MOD-06",
-      "difficulty": "B1",
-      "points": 1,
-      "license": "Original",
-      "reviewStatus": "VERIFIED_ORIGINAL",
-      "passageId": null,
-      "audioAssetId": null,
-      "prepSeconds": 0,
-      "speakSeconds": 45,
-      "rubricCriteria": [
-        "Fluency",
-        "Natural past/present tenses",
-        "Vocabulary",
-        "Pronunciation"
-      ],
-      "sortIndex": 10
-    },
-    {
-      "id": "IELTS-A-03-Q11",
-      "section": "SPEAKING",
-      "taskType": "SPEAKING_RESPONSE",
-      "prompt": "IELTS Speaking Part 2 Cue Card (1 min prep · 2 min speak): Describe an everyday object made from wood, clay, or recycled material that you admire.\nYou should say:\n- what the object is\n- where you saw or received it\n- how it was made\n- and explain why you appreciate its craftsmanship or design.",
-      "options": [],
-      "answer": "",
-      "acceptedAnswers": [],
-      "explanation": "Fokus pada tekstur, cara pembuatan, dan nilai fungsional/emosional benda tersebut.",
-      "rationaleSource": "IELTS-MOD-06",
-      "difficulty": "B2",
-      "points": 1,
-      "license": "Original",
-      "reviewStatus": "VERIFIED_ORIGINAL",
-      "passageId": null,
-      "audioAssetId": null,
-      "prepSeconds": 60,
-      "speakSeconds": 120,
-      "rubricCriteria": [
-        "Coherent narrative",
-        "Descriptive vocabulary",
-        "Fluency",
-        "Grammar control"
-      ],
-      "sortIndex": 11
-    },
-    {
-      "id": "IELTS-A-03-Q12",
-      "section": "SPEAKING",
-      "taskType": "SPEAKING_RESPONSE",
-      "prompt": "IELTS Speaking Part 3 (~60s): 'Why do some consumers still prefer disposable convenience items even when durable repairable goods save money over time?'",
-      "options": [],
-      "answer": "",
-      "acceptedAnswers": [],
-      "explanation": "Analisis faktor biaya awal, keterbatasan suku cadang, dan norma pemasaran cepat.",
-      "rationaleSource": "IELTS-MOD-06",
       "difficulty": "C1",
       "points": 1,
       "license": "Original",
       "reviewStatus": "VERIFIED_ORIGINAL",
       "passageId": null,
       "audioAssetId": null,
-      "prepSeconds": 0,
+      "minWords": 250,
+      "recommendedWords": 290,
+      "rubricCriteria": [
+        "Full prompt coverage & clear position",
+        "Coherent paragraphing",
+        "Precise collocations",
+        "Complex grammar range & accuracy"
+      ],
+      "sortIndex": 82
+    },
+    {
+      "id": "IELTS-A-03-Q083",
+      "section": "SPEAKING",
+      "taskType": "SPEAKING_RESPONSE",
+      "prompt": "Examiner Part 1 (Cooking & Shared Meals — 4–5 min): Let's chat about cooking and food. What simple home dish do you enjoy preparing most often, did you learn recipes by watching relatives or reading instructions, and why do shared evening meals matter inside busy households?",
+      "options": [],
+      "answer": "",
+      "acceptedAnswers": [],
+      "explanation": "Part 1 idealnya berdurasi ~25–35 detik per pertanyaan gabungan dengan ekstensi 2–3 kalimat alami dan intonasi santai tanpa menghafal templat.",
+      "rationaleSource": "IELTS-MOD-06",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS03-SP1",
+      "prepSeconds": 5,
+      "speakSeconds": 45,
+      "rubricCriteria": [
+        "Natural conversational extension",
+        "Everyday topic collocations",
+        "Clear stress & rhythm",
+        "Self-correction control"
+      ],
+      "sortIndex": 83
+    },
+    {
+      "id": "IELTS-A-03-Q084",
+      "section": "SPEAKING",
+      "taskType": "SPEAKING_RESPONSE",
+      "prompt": "Speaking Part 2 (Cue Card — 1 min prep, 2 min talk): Describe a science experiment, museum exhibit, or outdoor demonstration that explained a surprising natural mechanism clearly. You should say: where you encountered it, what visible change occurred, what prior misconception it corrected, and explain why hands-on illustration stays memorable.",
+      "options": [],
+      "answer": "",
+      "acceptedAnswers": [],
+      "explanation": "Gunakan 60 detik persiapan untuk mencatat 4–5 kata kunci linimasa (Konteks -> Tantangan -> Aksi -> Dampak), lalu bicaralah lancar hingga 2 menit penuh.",
+      "rationaleSource": "IELTS-MOD-06",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS03-SP2",
+      "prepSeconds": 60,
+      "speakSeconds": 120,
+      "rubricCriteria": [
+        "Full 2-minute sustained narrative",
+        "Discourse markers across stages",
+        "Vivid specific vocabulary",
+        "Tenses accuracy across past & present reflection"
+      ],
+      "sortIndex": 84
+    },
+    {
+      "id": "IELTS-A-03-Q085",
+      "section": "SPEAKING",
+      "taskType": "SPEAKING_RESPONSE",
+      "prompt": "Examiner Part 3 (Public Science Literacy — 4–5 min): Interactive exhibitions clarify complex concepts quickly, yet public distrust of empirical findings still flares on social platforms. What stops adults from revising wrong assumptions when confronted with clear data, and how should schools teach experimental skepticism gently?",
+      "options": [],
+      "answer": "",
+      "acceptedAnswers": [],
+      "explanation": "Part 3 menuntut abstraksi gagasan tingkat masyarakat: pakai hedging ('on balance', 'tends to'), kontras dua sisi, dan alasan sebab-akibat analitis.",
+      "rationaleSource": "IELTS-MOD-10",
+      "difficulty": "C1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS03-SP3",
+      "prepSeconds": 10,
       "speakSeconds": 60,
       "rubricCriteria": [
-        "Abstract reasoning",
-        "Cause-effect links",
-        "Lexical precision",
-        "Fluency"
+        "Abstract analytical reasoning",
+        "Hedging & nuanced stance",
+        "Complex clause variety",
+        "Natural pronunciation under cognitive load"
       ],
-      "sortIndex": 12
+      "sortIndex": 85
     }
   ],
-  "checksum": "d31c3a8d6a19a3477c72434360261bbaba8c729812a3eab05fbeaa8d2eb3407d"
+  "checksum": "2f960282fc129c65dcf3d2c8e77574eab7ac9c60ce36932b23817666299f034f"
 }

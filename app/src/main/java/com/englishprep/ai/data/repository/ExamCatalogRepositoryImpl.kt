@@ -1,14 +1,17 @@
 package com.englishprep.ai.data.repository
 
+import android.content.Context
 import com.englishprep.ai.data.room.CatalogDao
 import com.englishprep.ai.data.room.CourseModuleEntity
 import com.englishprep.ai.data.room.CurriculumDrillDto
+import com.englishprep.ai.data.room.MaterialBankRootDto
 import com.englishprep.ai.data.room.QuestionEntity
 import com.englishprep.ai.data.room.QuestionResponseSchemaDto
 import com.englishprep.ai.domain.models.ContentPackSummary
 import com.englishprep.ai.domain.models.CourseModuleItem
 import com.englishprep.ai.domain.models.ExamId
 import com.englishprep.ai.domain.models.ExamSection
+import com.englishprep.ai.domain.models.MaterialBankEntry
 import com.englishprep.ai.domain.models.MediaAssetItem
 import com.englishprep.ai.domain.models.PackStatus
 import com.englishprep.ai.domain.models.PassageItem
@@ -17,8 +20,11 @@ import com.englishprep.ai.domain.models.RagSnippet
 import com.englishprep.ai.domain.models.TaskType
 import com.englishprep.ai.domain.repositories.ExamCatalogRepository
 import com.englishprep.ai.domain.repositories.PackPlayBundle
+import dagger.hilt.android.qualifiers.ApplicationContext
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
+import kotlinx.coroutines.withContext
 import kotlinx.serialization.json.Json
 import javax.inject.Inject
 import javax.inject.Singleton
@@ -27,7 +33,11 @@ import javax.inject.Singleton
 class ExamCatalogRepositoryImpl @Inject constructor(
     private val catalogDao: CatalogDao,
     private val json: Json,
+    @ApplicationContext private val appContext: Context,
 ) : ExamCatalogRepository {
+
+    @Volatile
+    private var cachedMaterialBank: List<MaterialBankEntry>? = null
 
     override fun observeModules(examId: ExamId): Flow<List<CourseModuleItem>> =
         catalogDao.observeModulesByExam(examId.name).map { list -> list.map(::toDomainModule) }
@@ -135,9 +145,9 @@ class ExamCatalogRepositoryImpl @Inject constructor(
             .take(6)
         if (tokens.isEmpty()) return emptyList()
         val ftsQuery = tokens.joinToString(" OR ") { "$it*" }
-        val hits = runCatching { catalogDao.searchCurriculumFts(ftsQuery, limit * 2) }.getOrDefault(emptyList())
+        val hits = runCatching { catalogDao.searchCurriculumFts(ftsQuery, limit * 3) }.getOrDefault(emptyList())
         return hits
-            .filter { examId == null || it.examId == examId.name }
+            .filter { examId == null || it.examId == examId.name || it.examId == "ALL" }
             .take(limit)
             .map { hit ->
                 RagSnippet(
@@ -146,6 +156,40 @@ class ExamCatalogRepositoryImpl @Inject constructor(
                     excerpt = hit.body.take(420),
                 )
             }
+    }
+
+    override suspend fun getMaterialBankEntries(examId: ExamId?): List<MaterialBankEntry> {
+        val entries = cachedMaterialBank ?: withContext(Dispatchers.IO) {
+            runCatching {
+                val raw = appContext.assets.open("material_bank/material_bank.json").bufferedReader().use { it.readText() }
+                json.decodeFromString<MaterialBankRootDto>(raw).entries.map { e ->
+                    MaterialBankEntry(
+                        id = e.id,
+                        sourceId = e.sourceId,
+                        examScope = e.examScope,
+                        skill = e.skill,
+                        sourceTitle = e.sourceTitle,
+                        chapterTitle = e.chapterTitle,
+                        pageRange = e.pageRange,
+                        pdfFileName = e.pdfFileName,
+                        authorOrOrg = e.authorOrOrg,
+                        license = e.license,
+                        sourceUrl = e.sourceUrl,
+                        redistributable = e.redistributable,
+                        excerpt = e.excerpt,
+                    )
+                }
+            }.getOrDefault(emptyList())
+        }.also { loaded ->
+            if (loaded.isNotEmpty()) {
+                cachedMaterialBank = loaded
+            }
+        }
+        return if (examId == null) {
+            entries
+        } else {
+            entries.filter { it.examScope == "ALL" || it.examScope == examId.name }
+        }
     }
 
     private fun toDomainModule(m: CourseModuleEntity): CourseModuleItem {

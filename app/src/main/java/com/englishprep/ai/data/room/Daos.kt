@@ -25,6 +25,12 @@ interface CatalogDao {
     @Query("SELECT * FROM course_modules WHERE id = :moduleId")
     suspend fun getModule(moduleId: String): CourseModuleEntity?
 
+    @Query("SELECT COUNT(*) FROM course_modules")
+    suspend fun countModules(): Int
+
+    @Query("SELECT COUNT(*) FROM content_packs WHERE status = 'READY' AND availableCount >= blueprintCount")
+    suspend fun countReadyFullPacks(): Int
+
     @Upsert
     suspend fun upsertModules(modules: List<CourseModuleEntity>)
 
@@ -79,6 +85,15 @@ interface CatalogDao {
     @Query("SELECT * FROM question_options WHERE questionId = :questionId ORDER BY sortIndex ASC")
     suspend fun getOptionsForQuestion(questionId: String): List<QuestionOptionEntity>
 
+    @Query("DELETE FROM questions WHERE packId = :packId")
+    suspend fun deleteQuestionsForPack(packId: String)
+
+    @Query("DELETE FROM passages WHERE packId = :packId")
+    suspend fun deletePassagesForPack(packId: String)
+
+    @Query("DELETE FROM media_assets WHERE packId = :packId")
+    suspend fun deleteMediaAssetsForPack(packId: String)
+
     @Transaction
     suspend fun installPackAtomic(
         pack: ContentPackEntity,
@@ -88,6 +103,9 @@ interface CatalogDao {
         options: List<QuestionOptionEntity>,
     ) {
         upsertPack(pack)
+        deleteQuestionsForPack(pack.id)
+        deletePassagesForPack(pack.id)
+        deleteMediaAssetsForPack(pack.id)
         upsertPassages(passages)
         upsertMediaAssets(assets)
         upsertQuestions(questions)

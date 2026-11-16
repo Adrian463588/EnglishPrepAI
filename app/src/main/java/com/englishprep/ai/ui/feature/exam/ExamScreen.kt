@@ -15,6 +15,7 @@ import androidx.compose.animation.slideInHorizontally
 import androidx.compose.animation.slideOutHorizontally
 import androidx.compose.animation.togetherWith
 import androidx.compose.foundation.BorderStroke
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -28,10 +29,12 @@ import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.imePadding
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
@@ -62,6 +65,7 @@ import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.material3.TopAppBar
+import androidx.compose.material3.rememberModalBottomSheetState
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -72,6 +76,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.semantics.Role
+import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.semantics.heading
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.unit.dp
@@ -81,6 +86,7 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.englishprep.ai.domain.engines.SttModelState
 import com.englishprep.ai.domain.grading.QuizGradingEngine
 import com.englishprep.ai.domain.models.ExamMode
+import com.englishprep.ai.domain.models.ExamSection
 import com.englishprep.ai.domain.models.GradingOutcome
 import com.englishprep.ai.domain.models.PassageItem
 import com.englishprep.ai.domain.models.QuestionItem
@@ -435,32 +441,18 @@ fun ExamScreen(
     }
 
     if (state.showNavigator) {
-        ModalBottomSheet(onDismissRequest = { onSetNavigator(false) }) {
-            Column(modifier = Modifier.padding(AppSpacing.md)) {
-                SectionHeading(text = "Navigasi Soal")
-                Spacer(modifier = Modifier.height(AppSpacing.md))
-                FlowRow(
-                    horizontalArrangement = Arrangement.spacedBy(AppSpacing.sm),
-                    verticalArrangement = Arrangement.spacedBy(AppSpacing.sm),
-                ) {
-                    state.questions.forEachIndexed { idx, item ->
-                        val answered = !state.answers[item.id].isNullOrBlank()
-                        val flagged = item.id in state.flaggedIds
-                        val isCurrent = idx == state.currentIndex
-                        val label = buildString {
-                            append(idx + 1)
-                            if (flagged) append("*")
-                        }
-                        FilterChip(
-                            selected = isCurrent || answered,
-                            onClick = { onGoTo(idx) },
-                            label = { Text(label) },
-                            modifier = Modifier.defaultMinSize(minWidth = AppSpacing.minTouchTarget, minHeight = AppSpacing.minTouchTarget),
-                        )
-                    }
-                }
-                Spacer(modifier = Modifier.height(AppSpacing.lg))
-            }
+        val navSheetState = rememberModalBottomSheetState(skipPartiallyExpanded = true)
+        ModalBottomSheet(
+            sheetState = navSheetState,
+            onDismissRequest = { onSetNavigator(false) },
+        ) {
+            QuestionNavigatorSheetContent(
+                questions = state.questions,
+                answers = state.answers,
+                flaggedIds = state.flaggedIds,
+                currentIndex = state.currentIndex,
+                onSelectQuestion = onGoTo,
+            )
         }
     }
 
@@ -881,6 +873,129 @@ private fun QuestionBodyPane(
                         title = "Catatan Subyektif",
                         body = outcome.feedbackMessage,
                     )
+                }
+            }
+        }
+    }
+}
+
+@OptIn(ExperimentalLayoutApi::class)
+@Composable
+internal fun QuestionNavigatorSheetContent(
+    questions: List<QuestionItem>,
+    answers: Map<String, String>,
+    flaggedIds: Set<String>,
+    currentIndex: Int,
+    onSelectQuestion: (Int) -> Unit,
+    modifier: Modifier = Modifier,
+) {
+    val sections = remember(questions) { questions.map { it.section }.distinct() }
+    var selectedSection by remember { mutableStateOf<ExamSection?>(null) }
+    val indexedItems = remember(questions, selectedSection) {
+        questions.mapIndexed { idx, item -> idx to item }
+            .filter { (_, item) -> selectedSection == null || item.section == selectedSection }
+    }
+    val chunkedRows = remember(indexedItems) { indexedItems.chunked(5) }
+    val answeredTotal = remember(questions, answers) {
+        questions.count { !answers[it.id].isNullOrBlank() }
+    }
+
+    Column(
+        modifier = modifier
+            .fillMaxWidth()
+            .padding(horizontal = AppSpacing.md),
+    ) {
+        SectionHeading(text = "Navigasi Soal ($answeredTotal/${questions.size} terjawab)")
+        Spacer(modifier = Modifier.height(AppSpacing.sm))
+        if (sections.size > 1) {
+            FlowRow(
+                horizontalArrangement = Arrangement.spacedBy(AppSpacing.sm),
+                verticalArrangement = Arrangement.spacedBy(AppSpacing.xs),
+            ) {
+                FilterChip(
+                    selected = selectedSection == null,
+                    onClick = { selectedSection = null },
+                    label = { Text("Semua (${questions.size})") },
+                    modifier = Modifier.defaultMinSize(minHeight = AppSpacing.minTouchTarget),
+                )
+                sections.forEach { sec ->
+                    val secCount = questions.count { it.section == sec }
+                    FilterChip(
+                        selected = selectedSection == sec,
+                        onClick = { selectedSection = sec },
+                        label = { Text("${sec.label} ($secCount)") },
+                        modifier = Modifier.defaultMinSize(minHeight = AppSpacing.minTouchTarget),
+                    )
+                }
+            }
+            Spacer(modifier = Modifier.height(AppSpacing.sm))
+        }
+        LazyColumn(
+            modifier = Modifier
+                .fillMaxWidth()
+                .heightIn(max = 420.dp),
+            verticalArrangement = Arrangement.spacedBy(AppSpacing.sm),
+            contentPadding = PaddingValues(bottom = AppSpacing.lg),
+        ) {
+            items(chunkedRows, key = { row -> row.first().first }) { rowItems ->
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.spacedBy(AppSpacing.sm),
+                ) {
+                    rowItems.forEach { (idx, item) ->
+                        val answered = !answers[item.id].isNullOrBlank()
+                        val flagged = item.id in flaggedIds
+                        val isCurrent = idx == currentIndex
+                        val label = buildString {
+                            append(idx + 1)
+                            if (flagged) append("*")
+                        }
+                        Surface(
+                            shape = MaterialTheme.shapes.small,
+                            color = when {
+                                isCurrent -> MaterialTheme.colorScheme.primaryContainer
+                                answered -> MaterialTheme.colorScheme.secondaryContainer
+                                else -> MaterialTheme.colorScheme.surfaceContainerLow
+                            },
+                            border = BorderStroke(
+                                width = if (isCurrent) 2.dp else 1.dp,
+                                color = if (isCurrent) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.outline,
+                            ),
+                            modifier = Modifier
+                                .weight(1f)
+                                .defaultMinSize(
+                                    minWidth = AppSpacing.minTouchTarget,
+                                    minHeight = AppSpacing.minTouchTarget,
+                                )
+                                .clickable { onSelectQuestion(idx) }
+                                .semantics {
+                                    contentDescription = buildString {
+                                        append("Soal ${idx + 1}")
+                                        if (answered) append(", terjawab")
+                                        if (flagged) append(", ditandai")
+                                    }
+                                },
+                        ) {
+                            Box(
+                                modifier = Modifier.padding(horizontal = AppSpacing.xs, vertical = AppSpacing.xs),
+                                contentAlignment = Alignment.Center,
+                            ) {
+                                Text(
+                                    text = label,
+                                    style = MaterialTheme.typography.labelLarge,
+                                    color = when {
+                                        isCurrent -> MaterialTheme.colorScheme.onPrimaryContainer
+                                        answered -> MaterialTheme.colorScheme.onSecondaryContainer
+                                        else -> MaterialTheme.colorScheme.onSurface
+                                    },
+                                    maxLines = 1,
+                                )
+                            }
+                        }
+                    }
+                    repeat(5 - rowItems.size) {
+                        Spacer(modifier = Modifier.weight(1f))
+                    }
                 }
             }
         }

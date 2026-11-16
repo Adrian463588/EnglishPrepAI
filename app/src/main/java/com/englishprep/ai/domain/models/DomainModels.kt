@@ -199,3 +199,19 @@ data class RagSnippet(
     val title: String,
     val excerpt: String,
 )
+
+data class MaterialBankEntry(
+    val id: String,
+    val sourceId: String,
+    val examScope: String,
+    val skill: String,
+    val sourceTitle: String,
+    val chapterTitle: String,
+    val pageRange: String,
+    val pdfFileName: String,
+    val authorOrOrg: String,
+    val license: String,
+    val sourceUrl: String,
+    val redistributable: Boolean,
+    val excerpt: String,
+)

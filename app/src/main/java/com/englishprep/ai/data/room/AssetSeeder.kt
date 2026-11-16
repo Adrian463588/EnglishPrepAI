@@ -19,7 +19,10 @@ class AssetSeeder @Inject constructor(
     private val mutex = Mutex()
 
     suspend fun seedIfNeeded() = mutex.withLock {
-        if (catalogDao.countExamProfiles() >= ExamId.entries.size) {
+        val alreadySeededFull = catalogDao.countExamProfiles() >= ExamId.entries.size &&
+            catalogDao.countModules() >= 30 &&
+            catalogDao.countReadyFullPacks() >= 15
+        if (alreadySeededFull) {
             return@withLock
         }
 
@@ -28,7 +31,7 @@ class AssetSeeder @Inject constructor(
             ExamProfileEntity(
                 id = exam.name,
                 name = exam.title,
-                edition = "2026.1",
+                edition = "2026.2",
                 scoringPolicyVersion = "v1.0-non-official",
                 formatReferenceUrl = exam.officialReferenceUrl,
             )
@@ -70,6 +73,23 @@ class AssetSeeder @Inject constructor(
                 )
             },
         )
+
+        runCatching {
+            val mbText = context.assets.open("material_bank/material_bank.json").bufferedReader().use { it.readText() }
+            val materialBank = json.decodeFromString<MaterialBankRootDto>(mbText)
+            if (materialBank.entries.isNotEmpty()) {
+                catalogDao.insertCurriculumFts(
+                    materialBank.entries.map { e ->
+                        CurriculumFtsEntity(
+                            moduleId = e.id,
+                            examId = e.examScope,
+                            title = "${e.chapterTitle} — ${e.sourceTitle}",
+                            body = "${e.excerpt} | Sumber: ${e.authorOrOrg} (${e.license}, hal. ${e.pageRange})",
+                        )
+                    },
+                )
+            }
+        }
 
         val indexText = context.assets.open("packs/index.json").bufferedReader().use { it.readText() }
         val packIndex = json.decodeFromString<PackIndexRootDto>(indexText)

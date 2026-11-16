@@ -104,6 +104,7 @@ class ExamViewModel @Inject constructor(
     private var baseElapsedMs: Long = 0L
     private var processResumeAnchorMs: Long = SystemClock.elapsedRealtime()
     private var totalDurationLimitMs: Long? = null
+    private var preparedAudioAssetId: String? = null
 
     val uiState: StateFlow<ExamUiState> = combine(
         _state,
@@ -399,11 +400,18 @@ class ExamViewModel @Inject constructor(
         val st = _state.value
         val clamped = index.coerceIn(0, (st.questions.size - 1).coerceAtLeast(0))
         if (clamped == st.currentIndex) return
+        val targetAssetId = st.questions.getOrNull(clamped)?.audioAssetId
+        val audioChanged = targetAssetId != preparedAudioAssetId
         prepJob?.cancel()
-        audioPlayer.stop()
+        if (audioChanged) {
+            audioPlayer.stop()
+            preparedAudioAssetId = null
+        }
         _state.update { it.copy(currentIndex = clamped, showNavigator = false, prepCountdownSec = null) }
         saveCheckpoint(clamped)
-        prepareAudioForCurrentQuestion()
+        if (audioChanged) {
+            prepareAudioForCurrentQuestion()
+        }
     }
 
     fun nextQuestion() = goToQuestion(_state.value.currentIndex + 1)
@@ -420,6 +428,7 @@ class ExamViewModel @Inject constructor(
         timerJob?.cancel()
         prepJob?.cancel()
         audioPlayer.stop()
+        preparedAudioAssetId = null
         val st = _state.value
         val now = System.currentTimeMillis()
         val finalElapsed = baseElapsedMs + (SystemClock.elapsedRealtime() - processResumeAnchorMs)
@@ -513,7 +522,14 @@ class ExamViewModel @Inject constructor(
     private fun prepareAudioForCurrentQuestion() {
         val st = _state.value
         val q = st.currentQuestion ?: return
-        val asset = q.audioAssetId?.let { st.assets[it] } ?: return
+        val asset = q.audioAssetId?.let { st.assets[it] } ?: run {
+            preparedAudioAssetId = null
+            return
+        }
+        if (asset.id == preparedAudioAssetId) {
+            return
+        }
+        preparedAudioAssetId = asset.id
         val maxReplays = if (st.mode == ExamMode.STRICT) 1 else null
         val source = if (asset.relativePathOrUri.startsWith("asset://")) {
             AudioSource.BundledAsset(asset.relativePathOrUri)
@@ -522,7 +538,7 @@ class ExamViewModel @Inject constructor(
         }
         audioPlayer.prepare(
             source = source,
-            title = "Audio Soal ${st.currentIndex + 1}",
+            title = "Rekaman ${q.section.label} (${asset.id})",
             maxReplays = maxReplays,
         )
     }
@@ -545,6 +561,7 @@ class ExamViewModel @Inject constructor(
         timerJob?.cancel()
         prepJob?.cancel()
         audioPlayer.stop()
+        preparedAudioAssetId = null
         ttsSpeaker.stop()
         super.onCleared()
     }

@@ -2,11 +2,11 @@
 Version: 2026-11-16 | License: Original Project Curriculum (`Original`)
 
 > **Study Schedule (Semua Tes)**:
-> 1. **Diagnostic** (1 paket Sample awal untuk memetakan akurasi per seksi)
-> 2. **Targeted Units** (pelajari teori -> contoh kerja -> drill 3–5 soal pada modul terlemah)
+> 1. **Diagnostic** (Paket 01 full blueprint per tes untuk memetakan akurasi per seksi secara objektif)
+> 2. **Targeted Units** (pelajari 10 modul per tes = 30 modul + bacaan Bank Materi OER `material_bank/` -> drill 3 soal per modul)
 > 3. **Sectional Drills** (latihan fokus Listening / Structure / Reading / Writing / Speaking)
-> 4. **Timed Mock Simulation** (mode Strict dengan timer & aturan replay resmi)
-> 5. **Mistake Review & Spaced Retry** (ulang soal salah + diskusikan dengan Tutor AI lokal berbasis materi)
+> 4. **Timed Mock Simulation** (mode Strict penuh: 140 soal ITP / 120 soal iBT 2026 / 85 tugas IELTS dengan timer & aturan replay resmi)
+> 5. **Mistake Review & Spaced Retry** (ulang soal salah + diskusikan dengan Tutor AI lokal berbasis FTS4 + Material Bank OER)
 
 ---
 
@@ -146,3 +146,33 @@ Version: 2026-11-16 | License: Original Project Curriculum (`Original`)
 - **Section**: `SPEAKING` | **Difficulty**: B1–C1 | **Est. Duration**: 20 min | **Source Trace**: `IELTS-SP-ALL`
 - **Objective**: Menjawab topik personal dengan lancar (*Part 1*), memaparkan monolog 1–2 menit berdasarkan *Cue Card* (*Part 2*, 1 menit persiapan), dan berdiskusi analitis (*Part 3*).
 - **Theory**: Gunakan catatan 4 poin kata kunci pada 1 menit persiapan Part 2 (*Who/What, Context, Turning Point/Detail, Why Memorable*). Di Part 3, gunakan pola *Perspective -> Nuance/Exception -> Implication* dan hindari jawaban 1 kalimat pendek. Penilaian offline mencakup *Fluency & Coherence, Lexical Resource, Grammatical Range, Pronunciation* (label estimasi non-resmi).
+
+---
+
+## 4. Modul Lanjutan & Bank Materi OER Terintegrasi (30 Modul Total & 15 Paket Penuh)
+
+Setiap jenis ujian dilengkapi **10 modul terstruktur** (total 30 modul, 90 drill awal) serta didukung **Bank Materi OER & Panduan PDF** (`material_bank/README.md`, 17 dokumen PDF -> 31 kutipan FTS4 offline di tab **Materi** & Tutor AI).
+
+### Modul Lanjutan TOEFL ITP Level 1 (`ITP-MOD-07` .. `ITP-MOD-10`)
+- **`ITP-MOD-07` (LISTENING)**: Listening Part A: Conditionals, Wishes, Advice & Passive Reversals
+- **`ITP-MOD-08` (STRUCTURE)**: Structure: Gerunds, Infinitives, Modals & Participial Reductions
+- **`ITP-MOD-09` (STRUCTURE)**: Written Expression: Prepositional Idioms, Determiners & Parallel Clauses
+- **`ITP-MOD-10` (READING)**: Reading Academic Synthesis: Science Processes & Author Organization
+
+### Modul Lanjutan TOEFL iBT 2026 (`IBT-MOD-07` .. `IBT-MOD-10`)
+- **`IBT-MOD-07` (READING)**: iBT 2026 Reading Mastery: Morphological Clues in Complete the Words
+- **`IBT-MOD-08` (LISTENING)**: iBT 2026 Listening Mastery: Pragmatic Function & Speaker Attitude
+- **`IBT-MOD-09` (WRITING)**: iBT 2026 Writing Mastery: Syntax Assembly, Email Register & Discussion Synthesis
+- **`IBT-MOD-10` (SPEAKING)**: iBT 2026 Speaking Mastery: Phonological Chunking & Rapid Interview Framing
+
+### Modul Lanjutan IELTS Academic (`IELTS-MOD-07` .. `IELTS-MOD-10`)
+- **`IELTS-MOD-07` (LISTENING)**: IELTS Listening Mastery: Signposting, Numbers, Dates & Multiple-Speaker Part 3
+- **`IELTS-MOD-08` (READING)**: IELTS Reading: Matching Features, Researcher Claims & Paraphrase Mining
+- **`IELTS-MOD-09` (WRITING)**: IELTS Writing Band 7–8 Precision: Data Verbs, Complex Clauses & Hedging
+- **`IELTS-MOD-10` (SPEAKING)**: IELTS Speaking Pronunciation & Part 3 Analytical Extension
+
+### Ringkasan Paket Tryout Penuh (`packs/index.json` Edition `2026.2`)
+- **TOEFL ITP Level 1 (`ITP-L1-01` .. `ITP-L1-05`)**: 5 paket `READY` x 140 soal (50 Listening + 40 Structure/WE + 50 Reading) = **700 soal**, 115 menit/paket.
+- **TOEFL iBT 2026 (`IBT26-01` .. `IBT26-05`)**: 5 paket `READY` x 120 item (50 Reading + 47 Listening + 12 Writing + 11 Speaking) = **600 item**, 90 menit/paket.
+- **IELTS Academic (`IELTS-A-01` .. `IELTS-A-05`)**: 5 paket `READY` x 85 item (40 Listening + 40 Reading + 2 Writing + 3 Speaking) = **425 item**, 165 menit/paket.
+- **Total soal paket penuh**: **1.725 item** (+ **90 drill modul**), seluruh audio disintesis offline format RIFF IMA-ADPCM 16 kHz mono (`390` berkas `.wav`, `57.00 MB`).

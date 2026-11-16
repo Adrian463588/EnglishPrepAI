@@ -147,3 +147,29 @@ data class QuestionResponseSchemaDto(
     val pairs: List<MatchingPairSpec> = emptyList(),
     val rubricCriteria: List<String> = emptyList(),
 )
+
+@Serializable
+data class MaterialBankRootDto(
+    val schemaVersion: Int = 1,
+    val generatedAt: String = "",
+    val totalPdfs: Int = 0,
+    val totalEntries: Int = 0,
+    val entries: List<MaterialBankEntryDto> = emptyList(),
+)
+
+@Serializable
+data class MaterialBankEntryDto(
+    val id: String,
+    val sourceId: String,
+    val examScope: String,
+    val skill: String,
+    val sourceTitle: String,
+    val chapterTitle: String,
+    val pageRange: String = "",
+    val pdfFileName: String = "",
+    val authorOrOrg: String = "",
+    val license: String = "",
+    val sourceUrl: String = "",
+    val redistributable: Boolean = false,
+    val excerpt: String,
+)

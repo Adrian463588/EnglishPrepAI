@@ -48,6 +48,7 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.englishprep.ai.domain.models.ExamId
 import com.englishprep.ai.domain.models.ExamSection
+import com.englishprep.ai.domain.models.MaterialBankEntry
 import com.englishprep.ai.domain.models.TaskType
 import com.englishprep.ai.ui.components.AppButton
 import com.englishprep.ai.ui.components.AudioPlayerBar
@@ -61,6 +62,7 @@ import com.englishprep.ai.ui.theme.AppSpacing
 @Composable
 fun LearnRoute(
     onOpenModule: (String) -> Unit,
+    onAskTutor: (String) -> Unit = {},
     viewModel: LearnViewModel = hiltViewModel(),
 ) {
     val state by viewModel.uiState.collectAsStateWithLifecycle()
@@ -68,7 +70,9 @@ fun LearnRoute(
         state = state,
         onSelectSection = viewModel::selectSection,
         onToggleBookmarked = viewModel::toggleBookmarkFilter,
+        onToggleMaterialExpanded = viewModel::toggleMaterialExpanded,
         onOpenModule = onOpenModule,
+        onAskTutor = onAskTutor,
     )
 }
 
@@ -79,6 +83,8 @@ fun LearnScreen(
     onSelectSection: (ExamSection?) -> Unit,
     onOpenModule: (String) -> Unit,
     onToggleBookmarked: () -> Unit = {},
+    onToggleMaterialExpanded: (String) -> Unit = {},
+    onAskTutor: (String) -> Unit = {},
     modifier: Modifier = Modifier,
 ) {
     if (state.isLoading) {
@@ -178,6 +184,98 @@ fun LearnScreen(
                 masteryPercent = state.masteryByModuleId[mod.id],
                 onClick = { onOpenModule(mod.id) },
             )
+        }
+
+        if (!state.bookmarkedOnly && state.materialBankEntries.isNotEmpty()) {
+            item(key = "material_bank_header") {
+                Column(modifier = Modifier.padding(horizontal = AppSpacing.md, vertical = AppSpacing.md)) {
+                    SectionHeading(text = "Bank Materi OER & Panduan PDF (${state.materialBankEntries.size})")
+                    Spacer(modifier = Modifier.height(AppSpacing.xs))
+                    Text(
+                        text = "Kutipan terverifikasi dari repositori OER terbuka (CC BY/Public Domain) dan spesifikasi resmi publik untuk bahan baca offline & AI Tutor.",
+                        style = MaterialTheme.typography.bodyMedium,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    )
+                }
+            }
+            items(state.materialBankEntries, key = { "mb_${it.id}" }) { entry ->
+                MaterialBankRow(
+                    entry = entry,
+                    expanded = state.expandedMaterialId == entry.id,
+                    onToggleExpand = { onToggleMaterialExpanded(entry.id) },
+                    onAskTutor = { onAskTutor(entry.id) },
+                    modifier = Modifier.padding(horizontal = AppSpacing.md, vertical = AppSpacing.xs),
+                )
+            }
+        }
+    }
+}
+
+@Composable
+private fun MaterialBankRow(
+    entry: MaterialBankEntry,
+    expanded: Boolean,
+    onToggleExpand: () -> Unit,
+    onAskTutor: () -> Unit,
+    modifier: Modifier = Modifier,
+) {
+    Surface(
+        shape = MaterialTheme.shapes.medium,
+        color = MaterialTheme.colorScheme.surfaceContainerLow,
+        border = BorderStroke(1.dp, MaterialTheme.colorScheme.outline),
+        modifier = modifier.fillMaxWidth(),
+    ) {
+        Column(modifier = Modifier.padding(AppSpacing.md)) {
+            Row(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .defaultMinSize(minHeight = AppSpacing.minTouchTarget)
+                    .clickable(onClick = onToggleExpand),
+                horizontalArrangement = Arrangement.SpaceBetween,
+                verticalAlignment = Alignment.CenterVertically,
+            ) {
+                Column(modifier = Modifier.weight(1f)) {
+                    Text(
+                        text = "${entry.skill} • ${entry.license} • Hal. ${entry.pageRange}",
+                        style = MaterialTheme.typography.labelMedium,
+                        color = if (entry.redistributable) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.secondary,
+                    )
+                    Spacer(modifier = Modifier.height(AppSpacing.xs))
+                    Text(
+                        text = entry.chapterTitle,
+                        style = MaterialTheme.typography.titleMedium,
+                        color = MaterialTheme.colorScheme.onSurface,
+                    )
+                    Text(
+                        text = "${entry.sourceTitle} (${entry.authorOrOrg})",
+                        style = MaterialTheme.typography.bodySmall,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    )
+                }
+                Spacer(modifier = Modifier.width(AppSpacing.sm))
+                Text(
+                    text = if (expanded) "Tutup" else "Baca",
+                    style = MaterialTheme.typography.labelLarge,
+                    color = MaterialTheme.colorScheme.primary,
+                )
+            }
+            if (expanded) {
+                Spacer(modifier = Modifier.height(AppSpacing.sm))
+                Text(
+                    text = entry.excerpt,
+                    style = MaterialTheme.typography.bodyMedium,
+                    color = MaterialTheme.colorScheme.onSurface,
+                )
+                Spacer(modifier = Modifier.height(AppSpacing.sm))
+                TextButton(
+                    onClick = onAskTutor,
+                    modifier = Modifier.defaultMinSize(minHeight = AppSpacing.minTouchTarget),
+                ) {
+                    Icon(Icons.AutoMirrored.Filled.Chat, contentDescription = null)
+                    Spacer(modifier = Modifier.width(AppSpacing.xs))
+                    Text("Tanya AI tentang materi ini")
+                }
+            }
         }
     }
 }

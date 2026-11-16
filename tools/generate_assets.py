@@ -1,4 +1,4 @@
-"""Generates verified curriculum JSON, 15 tryout packs, and real offline 16kHz WAV audio assets."""
+"""Generates verified curriculum JSON (30 modules), 15 full tryout packs (1,725 items), and offline IMA-ADPCM WAV audio."""
 
 import hashlib
 import json
@@ -10,12 +10,15 @@ import wave
 from pathlib import Path
 
 from curriculum_data import CURRICULUM_MODULES
-from packs_itp import ITP_PACKS
+from ima_adpcm_wav import encode_pcm16_to_ima_adpcm_wav
+from pack_schema_helpers import validate_pack_collection
 from packs_ibt import IBT_PACKS
 from packs_ielts import IELTS_PACKS
+from packs_itp import ITP_PACKS
 
 ROOT = Path(__file__).resolve().parent.parent
 PACKS_ROOT = ROOT / "packs"
+TTS_CACHE = ROOT / "tools" / ".tts_cache"
 ASSETS_DIR = ROOT / "app" / "src" / "main" / "assets"
 ASSETS_PACKS = ASSETS_DIR / "packs"
 ASSETS_CURR = ASSETS_DIR / "curriculum"
@@ -42,89 +45,116 @@ def sha256_bytes(data: bytes) -> str:
 
 def validate_all():
     all_packs = ITP_PACKS + IBT_PACKS + IELTS_PACKS
-    assert len(CURRICULUM_MODULES) == 18, f"Expected 18 curriculum modules, got {len(CURRICULUM_MODULES)}"
+    assert len(CURRICULUM_MODULES) == 30, f"Expected 30 curriculum modules, got {len(CURRICULUM_MODULES)}"
     assert len(all_packs) == 15, f"Expected 15 packs, got {len(all_packs)}"
     mod_ids = {m["id"] for m in CURRICULUM_MODULES}
     seen_qids = set()
     for m in CURRICULUM_MODULES:
         assert len(m["drills"]) >= 3, f"Module {m['id']} needs >=3 drills"
         for d in m["drills"]:
-            assert d["id"] not in seen_qids
+            assert d["id"] not in seen_qids, f"Duplicate drill ID {d['id']}"
             seen_qids.add(d["id"])
             assert d["answer"], f"Missing answer on {d['id']}"
 
-    exam_counts = {}
+    validate_pack_collection(all_packs, mod_ids)
     for p in all_packs:
-        exam_counts[p["examId"]] = exam_counts.get(p["examId"], 0) + 1
-        assert len(p["questions"]) == 12, f"Pack {p['packId']} should have 12 sample questions"
-        p["status"] = "SAMPLE" if len(p["questions"]) < p["blueprintCount"] else "READY"
+        p["status"] = "READY" if len(p["questions"]) >= p["blueprintCount"] else "SAMPLE"
         for q in p["questions"]:
             assert q["id"] not in seen_qids, f"Duplicate ID {q['id']}"
             seen_qids.add(q["id"])
-            assert q["rationaleSource"] in mod_ids, f"Bad rationaleSource {q['rationaleSource']}"
-            if q["taskType"] not in ("WRITING_RESPONSE", "SPEAKING_RESPONSE"):
-                assert q["answer"], f"Objective question {q['id']} missing answer"
-
-    assert exam_counts == {"ITP_L1": 5, "IBT_2026": 5, "IELTS_ACADEMIC": 5}, f"Bad exam counts: {exam_counts}"
     return all_packs
+
+
+def _clean_tts_text(text: str) -> str:
+    cleaned = (
+        text.replace("—", ", ")
+        .replace("–", ", ")
+        .replace("\n", " ")
+        .replace("\r", " ")
+        .replace("’", "'")
+        .replace("“", '"')
+        .replace("”", '"')
+    )
+    return " ".join(cleaned.split())
+
+
+def _job_cache_key(turns: list[tuple[str, str]]) -> str:
+    payload = json.dumps({"v": 2, "turns": turns, "codec": "ima_adpcm_16k"}, ensure_ascii=False)
+    return sha256_bytes(payload.encode("utf-8"))
 
 
 def synthesize_all_wavs(jobs):
     """jobs: list of (target_wav_path, [(speaker, text), ...])"""
     ASSETS_AUDIO.mkdir(parents=True, exist_ok=True)
-    with tempfile.TemporaryDirectory() as td:
-        td_path = Path(td)
-        ps_lines = [
-            "Add-Type -AssemblyName System.Speech",
-            "$synth = New-Object System.Speech.Synthesis.SpeechSynthesizer",
-            "$fmt = New-Object System.Speech.AudioFormat.SpeechAudioFormatInfo(16000, [System.Speech.AudioFormat.AudioBitsPerSample]::Sixteen, [System.Speech.AudioFormat.AudioChannel]::Mono)",
-        ]
-        manifest = []
-        idx = 0
-        for out_path, turns in jobs:
-            turn_files = []
-            for spk, text in turns:
-                part_wav = td_path / f"turn_{idx}.wav"
-                idx += 1
-                voice = VOICE_MAP.get(spk, "Microsoft David Desktop")
-                safe_text = text.replace("'", "''")
-                safe_path = str(part_wav).replace("'", "''")
-                ps_lines.append(f"$synth.SelectVoice('{voice}')")
-                ps_lines.append(f"$synth.SetOutputToWaveFile('{safe_path}', $fmt)")
-                ps_lines.append(f"$synth.Speak('{safe_text}')")
-                turn_files.append(part_wav)
-            manifest.append((out_path, turn_files))
-        ps_lines.append("$synth.Dispose()")
+    TTS_CACHE.mkdir(parents=True, exist_ok=True)
+    durations = {}
+    uncached = []
 
-        script_path = td_path / "tts_batch.ps1"
-        script_path.write_text("\n".join(ps_lines), encoding="utf-8")
-        subprocess.run(
-            ["powershell", "-NoProfile", "-ExecutionPolicy", "Bypass", "-File", str(script_path)],
-            check=True,
-        )
+    for out_path, turns in jobs:
+        key = _job_cache_key(turns)
+        cached_wav = TTS_CACHE / f"{key}.wav"
+        cached_meta = TTS_CACHE / f"{key}.json"
+        if cached_wav.exists() and cached_meta.exists():
+            shutil.copyfile(cached_wav, out_path)
+            meta = json.loads(cached_meta.read_text(encoding="utf-8"))
+            durations[out_path.name] = int(meta["durationMs"])
+        else:
+            uncached.append((out_path, turns, key))
 
-        # 300ms silence at 16kHz 16-bit mono = 16000 * 0.3 * 2 = 9600 bytes
-        silence = b"\x00" * 9600
-        durations = {}
-        for out_path, turn_files in manifest:
-            frames = []
-            params = None
-            for i, tf in enumerate(turn_files):
-                with wave.open(str(tf), "rb") as w:
-                    if params is None:
-                        params = w.getparams()
-                    frames.append(w.readframes(w.getnframes()))
-                    if i < len(turn_files) - 1:
-                        frames.append(silence)
-            raw = b"".join(frames)
-            with wave.open(str(out_path), "wb") as out_w:
-                out_w.setnchannels(1)
-                out_w.setsampwidth(2)
-                out_w.setframerate(16000)
-                out_w.writeframes(raw)
-            duration_ms = int((len(raw) / (16000 * 2)) * 1000)
-            durations[out_path.name] = duration_ms
-        return durations
+    print(f"Audio jobs: {len(jobs)} total | {len(jobs) - len(uncached)} cached | {len(uncached)} to synthesize")
+    silence = b"\x00" * 9600  # 300ms silence at 16kHz 16-bit mono
+    batch_size = 80
+
+    for b_start in range(0, len(uncached), batch_size):
+        batch = uncached[b_start : b_start + batch_size]
+        print(f"Synthesizing batch {b_start // batch_size + 1}/{(len(uncached) + batch_size - 1) // batch_size} ({len(batch)} clips)...", flush=True)
+        with tempfile.TemporaryDirectory() as td:
+            td_path = Path(td)
+            ps_lines = [
+                "Add-Type -AssemblyName System.Speech",
+                "$synth = New-Object System.Speech.Synthesis.SpeechSynthesizer",
+                "$fmt = New-Object System.Speech.AudioFormat.SpeechAudioFormatInfo(16000, [System.Speech.AudioFormat.AudioBitsPerSample]::Sixteen, [System.Speech.AudioFormat.AudioChannel]::Mono)",
+            ]
+            manifest = []
+            idx = 0
+            for out_path, turns, key in batch:
+                turn_files = []
+                for spk, raw_text in turns:
+                    part_wav = td_path / f"turn_{idx}.wav"
+                    idx += 1
+                    voice = VOICE_MAP.get(spk, "Microsoft David Desktop")
+                    safe_text = _clean_tts_text(raw_text).replace("'", "''")
+                    safe_path = str(part_wav).replace("'", "''")
+                    ps_lines.append(f"$synth.SelectVoice('{voice}')")
+                    ps_lines.append(f"$synth.SetOutputToWaveFile('{safe_path}', $fmt)")
+                    ps_lines.append(f"$synth.Speak('{safe_text}')")
+                    turn_files.append(part_wav)
+                manifest.append((out_path, turn_files, key))
+            ps_lines.append("$synth.Dispose()")
+
+            script_path = td_path / "tts_batch.ps1"
+            script_path.write_text("\n".join(ps_lines), encoding="utf-8")
+            subprocess.run(
+                ["powershell", "-NoProfile", "-ExecutionPolicy", "Bypass", "-File", str(script_path)],
+                check=True,
+            )
+
+            for out_path, turn_files, key in manifest:
+                frames = []
+                for i, tf in enumerate(turn_files):
+                    with wave.open(str(tf), "rb") as w:
+                        frames.append(w.readframes(w.getnframes()))
+                        if i < len(turn_files) - 1:
+                            frames.append(silence)
+                raw = b"".join(frames)
+                adpcm_bytes = encode_pcm16_to_ima_adpcm_wav(raw, sample_rate=16000)
+                out_path.write_bytes(adpcm_bytes)
+                (TTS_CACHE / f"{key}.wav").write_bytes(adpcm_bytes)
+                duration_ms = int((len(raw) / (16000 * 2)) * 1000)
+                (TTS_CACHE / f"{key}.json").write_text(json.dumps({"durationMs": duration_ms}), encoding="utf-8")
+                durations[out_path.name] = duration_ms
+
+    return durations
 
 
 def main():
@@ -162,6 +192,11 @@ def main():
                     "license": "Original",
                 })
         p["assets"] = pack_assets
+
+    expected_wavs = {out_path.name for out_path, _ in jobs}
+    for old_wav in ASSETS_AUDIO.glob("*.wav"):
+        if old_wav.name not in expected_wavs:
+            old_wav.unlink()
 
     durations = synthesize_all_wavs(jobs)
 
@@ -244,7 +279,8 @@ def main():
     )
 
     total_audio_mb = sum(f.stat().st_size for f in ASSETS_AUDIO.glob("*.wav")) / (1024 * 1024)
-    print(f"Generated {len(CURRICULUM_MODULES)} curriculum modules, {len(all_packs)} packs, {len(jobs)} WAV files ({total_audio_mb:.2f} MB)")
+    total_q = sum(len(p["questions"]) for p in all_packs)
+    print(f"Generated {len(CURRICULUM_MODULES)} curriculum modules, {len(all_packs)} packs ({total_q} items), {len(jobs)} WAV files ({total_audio_mb:.2f} MB)")
 
 
 if __name__ == "__main__":

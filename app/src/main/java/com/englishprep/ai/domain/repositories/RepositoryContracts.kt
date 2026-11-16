@@ -12,6 +12,7 @@ import com.englishprep.ai.domain.models.ContentPackSummary
 import com.englishprep.ai.domain.models.CourseModuleItem
 import com.englishprep.ai.domain.models.ExamId
 import com.englishprep.ai.domain.models.ExamMode
+import com.englishprep.ai.domain.models.MaterialBankEntry
 import com.englishprep.ai.domain.models.MediaAssetItem
 import com.englishprep.ai.domain.models.PassageItem
 import com.englishprep.ai.domain.models.QuestionItem
@@ -32,6 +33,7 @@ interface ExamCatalogRepository {
     suspend fun loadPackBundle(packId: String): PackPlayBundle?
     suspend fun loadQuestionsByIds(questionIds: List<String>): PackPlayBundle?
     suspend fun searchLocalCurriculum(examId: ExamId?, query: String, limit: Int = 5): List<RagSnippet>
+    suspend fun getMaterialBankEntries(examId: ExamId? = null): List<MaterialBankEntry> = emptyList()
 }
 
 interface SessionProgressRepository {

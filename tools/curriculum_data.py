@@ -1027,3 +1027,7 @@ CURRICULUM_MODULES = [
         ]
     }
 ]
+
+from curriculum_extra_oer import EXTRA_CURRICULUM_MODULES
+CURRICULUM_MODULES.extend(EXTRA_CURRICULUM_MODULES)
+

@@ -1,190 +1,1843 @@
 {
   "schemaVersion": 1,
   "exam": "ITP_L1",
-  "edition": "2026.1",
+  "edition": "2026.2",
   "packId": "ITP-L1-04",
-  "title": "ITP Paket 4 — Economics, Marine Biology & Culture",
-  "theme": "Double negatives, appositives, marine kelp ecosystems, and historic paper currency.",
-  "status": "SAMPLE",
+  "title": "ITP Paket 4 — Marine Conservation & Monetary History",
+  "theme": "Full 140-item TOEFL ITP simulation spanning kelp trophic cascades, oyster breakwaters, touchstone currency history, and grammar.",
+  "status": "READY",
   "blueprintCount": 140,
-  "availableCount": 12,
-  "durationMinutes": 20,
+  "availableCount": 140,
+  "durationMinutes": 115,
   "blueprintDurationMinutes": 115,
   "license": "Original",
   "provenance": "EnglishPrepAI-Original-2026",
   "passages": [
     {
       "id": "ITP04-P1",
-      "title": "Sea Otters and Kelp Forest Stability",
-      "body": "Along rocky North Pacific coastlines, towering kelp forests shelter juvenile fish and dampen destructive ocean swells. Yet kelp canopies can vanish within months when purple sea urchins multiply unchecked and graze kelp holdfasts down to bare stone—forming 'urchin barrens'. Sea otters act as a keystone predator in this chain: lacking thick blubber, otters sustain an elevated metabolic rate by consuming roughly a quarter of their body weight daily, largely in urchins and shellfish. Wherever otter populations rebound, urchin grazing declines and dense kelp forests rapidly regenerate.",
+      "title": "Kelp Canopy Trophic Cascades in Pacific Waters",
+      "body": "Rising up to thirty meters along temperate Pacific shores, giant bull and bladder kelp forests create vertical three-dimensional reefs sheltering juvenile rockfish, abalone, and striped perch. Unlike terrestrial trees rooted inside deep soil horizons, kelp plants cling strictly to bare granite boulders using gnarled root-like structures called holdfasts while absorbing dissolved nutrients through floating blades buoyed by gas bladders. Because sea otters prey ravenously on kelp-eating purple sea urchins, removing otters collapses delicate top-down food webs swiftly. Left unchecked, surging urchin herds swarm across bottom holdfasts, converting shadowy forested underwater coves into desolate stony barrens within months. Notably, sea otters lack insulated whale blubber and stay warm solely by maintaining metabolic furnaces burning one-quarter of body weight in daily shellfish and keeping nearly one million fine hairs per square inch fluffed cleanly with dry trapped air.",
       "readingOrder": 1
     },
     {
       "id": "ITP04-P2",
-      "title": "Cotton-Linen Durability in Banknotes",
-      "body": "Ordinary office paper tears after a few dozen folds because wood pulp contains short cellulose fibers and lignin that turns brittle with oxidation. Conversely, central banks print traditional banknotes on blends of long-staple cotton and linen rag fibers. Because cotton-linen sheets weave long, flexible fibers under high pressure without acid sizing, banknotes withstand thousands of creases, accidental laundry cycles, and humid climates far longer than wood-derived paper.",
+      "title": "Medieval Flying-Cash Receipts and Representative Paper Money",
+      "body": "Early overland trade between China's Yellow River grain hubs and bustling southern tea markets exposed an obvious physical bottleneck: heavy bronze and iron strings of coinage weighing hundreds of kilograms strained mules and invited bandit ambushes across remote mountain passes. By the Tang and Song dynasties, thriving tea merchants circumvented cumbersome metal carts by handing cash deposits to trusted provincial treasury offices or merchant guild vaults in exchange for stamped paper receipts called feiqian ('flying cash') and jiaozi. Bearers traveling three hundred miles away could redeem genuine promissory sheets immediately at partner payout bureaus for crisp local bronze currency without hauling dead bullion across treacherous trails. Crucially, early paper money served strictly as representative paper backed one-to-one by metal held securely in vault storage; whenever later regional governors succumbed to printing unbacked emergency sheets far beyond metallic reserves, sharp consumer price inflation shattered public confidence in paper slips overnight.",
       "readingOrder": 2
+    },
+    {
+      "id": "ITP04-P3",
+      "title": "Living Eastern Oyster Reefs and Coastal Resilience",
+      "body": "Along brackish Atlantic estuaries, millions of Eastern oysters (Crassostrea virginica) fuse calcium shells atop old reef rubble into jagged three-dimensional limestone towers teeming with mud crabs, gobies, and juvenile striped bass. Because an individual adult oyster pumps up to two hundred liters of muddy estuarine water past delicate gill cilia daily—capturing suspended algae and organic particulates—sprawling natural reefs dramatically clear murky coastal lagoons so sunlight penetrates deeply toward underwater eelgrass beds. Equally critical for shoreline planners, dense craggy oyster ridges trip incoming hurricane swells far offshore, dissipating destructive wave force safely before storm surf chews straight into soft peat marshes. Over two centuries of relentless commercial dredging sadly scraped many towering reefs flat into silt plains, prompting coastal teams today to sink truckloads of recycled restaurant shells along shallow embayments so drifting larvae colonize fresh living breakwaters that actually grow taller alongside gradual sea-level rise.",
+      "readingOrder": 3
+    },
+    {
+      "id": "ITP04-P4",
+      "title": "The Touchstone, Coinage Debasement, and Gresham's Law",
+      "body": "Before modern X-ray spectrometers existed in minting vaults, ancient goldsmiths facing deceptive gilded bars leaned on a surprisingly plain black stone: fine-grained siliceous Lydian lydite, known famously as the touchstone. Rubbing a dubious coin briskly across rough matte touchstone leaves a faint metallic streak whose exact hue can be compared cleanly beside calibrated reference needles alloyed from pure gold, copper, and silver fractions. Testing metallic fineness proved critical whenever cash-strapped medieval kings engaged in 'coinage debasement'—secretly melting intact older silver shillings while minting lighter copper-diluted coins carrying identical stamped face value. Notice the behavioral paradox later summed up as Gresham's Law ('bad money drives out good'): rather than rejecting lightweight debased pieces, shrewd traders hoarded full-weight shiny old coins inside locked chests for metal melt value while spending flimsy diluted tokens rapidly into everyday circulation.",
+      "readingOrder": 4
+    },
+    {
+      "id": "ITP04-P5",
+      "title": "Salt-Marsh Carbon Banking ('Blue Carbon')",
+      "body": "Walk out across ankle-deep Atlantic tidal salt marshes at sunrise and waist-high cordgrass (Spartina) stretches silently between mudflats and pine uplands—looking far humbler than towering redwood groves, yet burying carbon twice as fast per square meter underground. Marine biogeochemists call this coastal sequestration 'blue carbon.' Whereas upland forest leaves rot swiftly in airy oxygen-rich humus, returning carbon dioxide smoothly back into summer skies within decades, tidal cordgrass roots grow continuously downward into cold oxygen-starved estuarine peat flooded twice daily by incoming tides. Because anaerobic soil microbes decompose drowned plant fibers agonizingly slowly—and salty sulfates suppress methane production relative to freshwater bogs—dead root mats lock captured atmospheric carbon stably inside deep marsh mud for millennia. Consequently, draining tidal wetlands for coastal parking lots releases buried centuries of greenhouse gas swiftly outward even while stripping seaside towns of natural storm sponges.",
+      "readingOrder": 5
     }
   ],
   "assets": [
     {
-      "id": "ITP04-A01",
-      "relativePath": "audio/ITP04-A01.wav",
+      "id": "ITP04-L01",
+      "relativePath": "audio/ITP04-L01.wav",
       "kind": "AUDIO",
-      "caption": "M: I thought the economic policy lecture would be standing room only. W: Me too—I couldn't believe how many empty rows were left in the back! N: What does the woman mean?",
+      "caption": "M: Why count purple sea urchins inside square metal frames instead of swimming the whole cove? W: Random quadrat sampling estimates total reef density accurately in a fraction of the dive time. N: What does the woman explain?",
       "license": "Original",
-      "sha256": "8c45ab26e5e48933fea851f1d0ab4625deef1599092d711a4aca5f5e0bf6e833",
-      "byteSize": 355724,
-      "durationMs": 11115
+      "sha256": "68a442704f921e1db9fcb17d67ce222a3f49387d2f3599b0c671bb0890f9cc05",
+      "byteSize": 121148,
+      "durationMs": 14900
     },
     {
-      "id": "ITP04-A02",
-      "relativePath": "audio/ITP04-A02.wav",
+      "id": "ITP04-L02",
+      "relativePath": "audio/ITP04-L02.wav",
       "kind": "AUDIO",
-      "caption": "M: My microscope image stays blurry even after adjusting the fine focus knob. W: Why don't you have the lab coordinator clean the objective lens before you restart? M: Good idea, I'll take it to her desk now. N: What will the man do?",
+      "caption": "W: I'll swap all my research stipend cash right at the airport arrivals kiosk. M: Keep airport exchanges tiny for train fare—city banks offer nearly seven percent better rates. N: What does the man advise?",
       "license": "Original",
-      "sha256": "6aa46459cc123379666c7331e1add66c0cefd90093f84f2014eb196011f24894",
-      "byteSize": 528524,
-      "durationMs": 16515
+      "sha256": "0bd7b5e3bc2122b64c2413c29cb8a79c6719b047b65f49135f4194a210afbcaa",
+      "byteSize": 119868,
+      "durationMs": 14765
     },
     {
-      "id": "ITP04-A03",
-      "relativePath": "audio/ITP04-A03.wav",
+      "id": "ITP04-L03",
+      "relativePath": "audio/ITP04-L03.wav",
       "kind": "AUDIO",
-      "caption": "W: Did you read Professor Gomez's announcement about the economics draft? M: Yes, she pushed the peer-review deadline from Wednesday back to Friday at four. N: What changed about the draft deadline?",
+      "caption": "M: How come early merchants trimmed tiny silver shavings off coin rims? W: Called clipping—cheaters shaved silver edges off irregular hammered coins before milled ridged rims stopped it. N: What does the woman explain?",
       "license": "Original",
-      "sha256": "1139f54e203c25b57eedaa380a959234986811d650dba4d8d6698e28f4c1588c",
-      "byteSize": 432044,
-      "durationMs": 13500
+      "sha256": "299607e88cc12a82a6bb1888da5df42630851db74a8798981334f31b895c1fe3",
+      "byteSize": 117308,
+      "durationMs": 14430
     },
     {
-      "id": "ITP04-A04",
-      "relativePath": "audio/ITP04-A04.wav",
+      "id": "ITP04-L04",
+      "relativePath": "audio/ITP04-L04.wav",
       "kind": "AUDIO",
-      "caption": "W: Unlike seals, sea otters lack thick blubber to trap body heat in frigid Pacific water, so they rely on dense fur and eat nearly twenty-five percent of their body weight every day. N: Why do sea otters consume so much food daily?",
+      "caption": "W: If sea otters lack thick whale blubber, how do they survive icy North Pacific kelp beds? M: They pack nearly a million hairs per square inch—trapping warm dry air right against the skin. N: What does the man explain?",
       "license": "Original",
-      "sha256": "f3202578cb93824d683e2adde9486b63f76f34e75845fe3065f614cc2cfe8725",
-      "byteSize": 480524,
-      "durationMs": 15015
+      "sha256": "c2d10fc86e4f81d54a3d09332af9e7946049d4a5cea25bce0dc896fac70804d7",
+      "byteSize": 123452,
+      "durationMs": 15185
+    },
+    {
+      "id": "ITP04-L05",
+      "relativePath": "audio/ITP04-L05.wav",
+      "kind": "AUDIO",
+      "caption": "W: Looks like regional bread prices jumped twenty percent while wages stayed flat. M: Don't overlook freight fuel costs—coastal ferry strikes doubled grain haulage last quarter. N: What does the man imply?",
+      "license": "Original",
+      "sha256": "5e399dec3f41662f9ba53ff28bd43c63ec8b86c9f75d7f6fa88912f4485d9da9",
+      "byteSize": 114748,
+      "durationMs": 14140
+    },
+    {
+      "id": "ITP04-L06",
+      "relativePath": "audio/ITP04-L06.wav",
+      "kind": "AUDIO",
+      "caption": "M: Why haul bags of empty restaurant oyster shells back to the muddy bay pier? W: Baby oyster spat settle almost exclusively onto weathered calcium shell surfaces rather than bare silt. N: What does the woman explain?",
+      "license": "Original",
+      "sha256": "b9947a966877c0e28e93cc459d4c80ed5de7350a07ab4d855066e47e0d171a13",
+      "byteSize": 118076,
+      "durationMs": 14530
+    },
+    {
+      "id": "ITP04-L07",
+      "relativePath": "audio/ITP04-L07.wav",
+      "kind": "AUDIO",
+      "caption": "M: Wait—if interest yields jump suddenly this autumn, won't ten-year bond prices rise too? W: Actually they move inversely—existing fixed-rate bonds drop in market price when new yields climb. N: What does the woman clarify?",
+      "license": "Original",
+      "sha256": "4d9c28e3a44b278ef3cdaf4c8bd2c48760524d1889186af0a6dfda27fe2daefc",
+      "byteSize": 129852,
+      "durationMs": 15990
+    },
+    {
+      "id": "ITP04-L08",
+      "relativePath": "audio/ITP04-L08.wav",
+      "kind": "AUDIO",
+      "caption": "W: Let's wait until after breakfast at ten before checking the low-tide sea stars. M: Ten's already rising tide—minus-tide exposes those purple beds at seven-fifteen sharp! N: What does the man urge?",
+      "license": "Original",
+      "sha256": "51f728868c0317b6ac57dd62bacd4c1b9cc7a308d3085174bb4ab2241aadb759",
+      "byteSize": 115260,
+      "durationMs": 14190
+    },
+    {
+      "id": "ITP04-L09",
+      "relativePath": "audio/ITP04-L09.wav",
+      "kind": "AUDIO",
+      "caption": "W: Does rubbing green marker ink across paper currency verify whether it's genuine? M: Actually, counterfeiters bleach low bills on real cotton paper—always check raised intaglio print and security threads. N: What does the man mean?",
+      "license": "Original",
+      "sha256": "c464109039c6214b574c5cb9f01ab90a4730af41b91395e292e039827209fd4c",
+      "byteSize": 130108,
+      "durationMs": 16010
+    },
+    {
+      "id": "ITP04-L10",
+      "relativePath": "audio/ITP04-L10.wav",
+      "kind": "AUDIO",
+      "caption": "M: Why weld circular metal rings onto commercial lobster and crab cages? W: Escape vents let undersized juveniles slip right back out safely before traps ever reach deck. N: What does the woman explain?",
+      "license": "Original",
+      "sha256": "7f780d9bb8852c700b4775ca77088ae18a918a9e50f993722e4aec8f82c86701",
+      "byteSize": 113724,
+      "durationMs": 14000
+    },
+    {
+      "id": "ITP04-L11",
+      "relativePath": "audio/ITP04-L11.wav",
+      "kind": "AUDIO",
+      "caption": "W: Think the co-op will give me half price for this crisp macroeconomics workbook? M: Only if no professor switched to next autumn's new edition yet. N: What does the man imply?",
+      "license": "Original",
+      "sha256": "46fd1ae9f9fb11e795692f661f114553edef10c980e6404be72c95c61f8746d1",
+      "byteSize": 96828,
+      "durationMs": 11910
+    },
+    {
+      "id": "ITP04-L12",
+      "relativePath": "audio/ITP04-L12.wav",
+      "kind": "AUDIO",
+      "caption": "M: How come this tidal marsh looks green and healthy yet barely swarms with mosquitoes? W: Open tidal channels let killifish swim through high grass puddles and devour larvae daily. N: What does the woman explain?",
+      "license": "Original",
+      "sha256": "197ad5fc99870b1c3bf810404d243edc92a8c0b0222b59bb8169d06ec3b36b85",
+      "byteSize": 113212,
+      "durationMs": 13920
+    },
+    {
+      "id": "ITP04-L13",
+      "relativePath": "audio/ITP04-L13.wav",
+      "kind": "AUDIO",
+      "caption": "M: Did ancient Mesopotamian villagers literally haul goats to pay daily bakery debts? W: Hardly! Clay temple tallies tracked seasonal barley credits long before silver coins existed. N: What does the woman clarify?",
+      "license": "Original",
+      "sha256": "824adbd55e6ba5e5842a51171cbf76d3ceb6932de339a8cbe1a3c9602fc02544",
+      "byteSize": 124220,
+      "durationMs": 15290
+    },
+    {
+      "id": "ITP04-L14",
+      "relativePath": "audio/ITP04-L14.wav",
+      "kind": "AUDIO",
+      "caption": "W: Why did our coastal water samples suddenly turn rusty brown overnight? M: Warm afternoon sun after fertilizer runoff triggered a dense dinoflagellate bloom. N: What does the man explain?",
+      "license": "Original",
+      "sha256": "abf8f7d48b8c88a2386505f8b5fd37aaa449ca8b60cd0a784ec45956b44613a1",
+      "byteSize": 107580,
+      "durationMs": 13235
+    },
+    {
+      "id": "ITP04-L15",
+      "relativePath": "audio/ITP04-L15.wav",
+      "kind": "AUDIO",
+      "caption": "M: Can our marine research grant cover hotel rooms and rental vans for five undergraduates? W: Check appendix C—equipment and boat fuel qualify, whereas meal and lodging stipends do not. N: What does the woman mean?",
+      "license": "Original",
+      "sha256": "f0bbc7743aa839cf5bee33ae772034e0e20524ee5b79bfbea86954843446535f",
+      "byteSize": 123708,
+      "durationMs": 15225
+    },
+    {
+      "id": "ITP04-L16",
+      "relativePath": "audio/ITP04-L16.wav",
+      "kind": "AUDIO",
+      "caption": "W: Wait—what does brown sea kelp have to do with ice cream and dental impression molds? M: Refined kelp alginates bind water cleanly without crystalline grittiness. N: What does the man explain?",
+      "license": "Original",
+      "sha256": "e1301af01064bd4c9f461a87f9cffa04886c177b5daa74be8a5091e16e1afb16",
+      "byteSize": 109116,
+      "durationMs": 13435
+    },
+    {
+      "id": "ITP04-L17",
+      "relativePath": "audio/ITP04-L17.wav",
+      "kind": "AUDIO",
+      "caption": "M: Why is this silver Roman coin peeling greenish copper flakes along its high cheek edge? W: That's an ancient plated counterfeit—bronze core thinly washed with real silver. N: What does the woman explain?",
+      "license": "Original",
+      "sha256": "ddadc0c9756eb9ed03e597d23dc51274558fa8db8b229196720eb52ff3a1911e",
+      "byteSize": 110140,
+      "durationMs": 13560
+    },
+    {
+      "id": "ITP04-L18",
+      "relativePath": "audio/ITP04-L18.wav",
+      "kind": "AUDIO",
+      "caption": "W: Why did the marine lab separate that newly soft lobster into its own mesh tank? M: Right after shedding its tight shell, a lobster turns defenseless until mineral uptake hardens new armor. N: What does the man explain?",
+      "license": "Original",
+      "sha256": "7fe00ff3860a7a2f0e475804b2982bf815c37f25bcaac2fdb643bb1eb64b4af7",
+      "byteSize": 119612,
+      "durationMs": 14710
+    },
+    {
+      "id": "ITP04-L19",
+      "relativePath": "audio/ITP04-L19.wav",
+      "kind": "AUDIO",
+      "caption": "M: I thought student credit unions never charged monthly maintenance fees! W: Zero fees if you stay enrolled in paperless statements—paper mailers cost two dollars. N: What does the woman explain?",
+      "license": "Original",
+      "sha256": "f24e9f96838871267b1a2e4556d72ec07f8d761fee31fa238fe6053952b832a3",
+      "byteSize": 111420,
+      "durationMs": 13725
+    },
+    {
+      "id": "ITP04-L20",
+      "relativePath": "audio/ITP04-L20.wav",
+      "kind": "AUDIO",
+      "caption": "W: Doesn't dense seafloor grass snag fishermen's boat anchors? M: Actually, healthy eelgrass webs stabilize storm sand and shelter juvenile cod from predators. N: What does the man emphasize?",
+      "license": "Original",
+      "sha256": "231b5fe3e38c6afddb41a96f3bf3d4f562a07dd7f45a87965dcfdd865776b9fd",
+      "byteSize": 113212,
+      "durationMs": 13920
+    },
+    {
+      "id": "ITP04-L21",
+      "relativePath": "audio/ITP04-L21.wav",
+      "kind": "AUDIO",
+      "caption": "M: Why couldn't treasuries print emergency notes freely under strict metallic gold standards? W: Every note required matching bullion stored inside vaults, leaving scant flexibility during sudden bank panics. N: What does the woman explain?",
+      "license": "Original",
+      "sha256": "ea620c344fa20b65f4b0798a0e312cc492e85444f4bbd882d4da1103c2653ffc",
+      "byteSize": 131644,
+      "durationMs": 16195
+    },
+    {
+      "id": "ITP04-L22",
+      "relativePath": "audio/ITP04-L22.wav",
+      "kind": "AUDIO",
+      "caption": "W: Those sharp white barnacles encrusted every wooden pier post overnight! M: Leave our study transect grid untouched—scraped piers bias ten-year colonization counts. N: What does the man warn?",
+      "license": "Original",
+      "sha256": "d9b66705ff5fe3bee8be303a73d0d3db08a8b97f406f707540a3dea325076fe5",
+      "byteSize": 112700,
+      "durationMs": 13885
+    },
+    {
+      "id": "ITP04-L23",
+      "relativePath": "audio/ITP04-L23.wav",
+      "kind": "AUDIO",
+      "caption": "W: Shipping just five glass specimen bottles online costs as much as the bottles themselves! M: Join the ecology department's Friday bulk order—we clear the free freight threshold easily. N: What does the man suggest?",
+      "license": "Original",
+      "sha256": "abdc6c61f41e8e62407f8050a40ed55bdbe31bc0b267c7b96cbe8ed9725bc69c",
+      "byteSize": 120892,
+      "durationMs": 14885
+    },
+    {
+      "id": "ITP04-L24",
+      "relativePath": "audio/ITP04-L24.wav",
+      "kind": "AUDIO",
+      "caption": "M: Shouldn't freshwater runoff and salty bay water blend evenly from top to bottom here? W: Dense ocean saltwater actually slides underneath outgoing river water as a sharp bottom wedge. N: What does the woman clarify?",
+      "license": "Original",
+      "sha256": "f91aac03ba23868cd3baecccb7521914581f4c70c6654c3f7dd194b89ac2c109",
+      "byteSize": 119868,
+      "durationMs": 14740
+    },
+    {
+      "id": "ITP04-L25",
+      "relativePath": "audio/ITP04-L25.wav",
+      "kind": "AUDIO",
+      "caption": "W: How come my July marine station stipend hasn't cleared direct deposit yet? M: Payroll holds first checks until your signed tax withholding form reaches room 204. N: What does the man mean?",
+      "license": "Original",
+      "sha256": "ed28265c8dedc61a19766c4249f30146a9b6aee323f537703e4771b209a7ce63",
+      "byteSize": 115260,
+      "durationMs": 14180
+    },
+    {
+      "id": "ITP04-L26",
+      "relativePath": "audio/ITP04-L26.wav",
+      "kind": "AUDIO",
+      "caption": "W: Think young bull kelp spores can ever bounce back along that grazed rocky reef? M: Once autumn currents bring starved otters back down the coast, kelp thickets rebound remarkably fast. N: What does the man imply?",
+      "license": "Original",
+      "sha256": "0145466cfb8fcd878de2c42c325bd7a451bcdc715d81cccd0a4f2b825648d3fe",
+      "byteSize": 118844,
+      "durationMs": 14620
+    },
+    {
+      "id": "ITP04-L27",
+      "relativePath": "audio/ITP04-L27.wav",
+      "kind": "AUDIO",
+      "caption": "M: This snack machine keeps spitting out my crumpled dollar bills! W: Smooth the corner crease, or tap contactless pay on the side blue sensor. N: What does the woman advise?",
+      "license": "Original",
+      "sha256": "d280f3ee704d860c9ee6e78bdfb59273be17d4aa117096e6814fa6d72511d239",
+      "byteSize": 100924,
+      "durationMs": 12430
+    },
+    {
+      "id": "ITP04-L28",
+      "relativePath": "audio/ITP04-L28.wav",
+      "kind": "AUDIO",
+      "caption": "W: This trade graph looks backward—imports exceed exports yet the surplus bar stands positive! M: Look closely at the subtitle: this panel plots services and shipping fees, not physical goods. N: What does the man explain?",
+      "license": "Original",
+      "sha256": "e580cb760aeb710b649ecded9a06be1b57329c3ae3d2e12c8b57c706820e3868",
+      "byteSize": 133180,
+      "durationMs": 16385
+    },
+    {
+      "id": "ITP04-L29",
+      "relativePath": "audio/ITP04-L29.wav",
+      "kind": "AUDIO",
+      "caption": "M: Let's hang our salty wetsuits straight in the closet before grabbing dinner. W: Rinse the zippers cleanly with fresh cold water first, or salt crystals will seize every tooth by Friday. N: What does the woman warn?",
+      "license": "Original",
+      "sha256": "a5979fe01aa6756f5c573a86463151095a751b892215e203ba6fbf0befb7bb33",
+      "byteSize": 115772,
+      "durationMs": 14260
+    },
+    {
+      "id": "ITP04-L30",
+      "relativePath": "audio/ITP04-L30.wav",
+      "kind": "AUDIO",
+      "caption": "W: Look at that jagged raised ridge running across this old coin—must be a modern scratch! M: Actually, collectors prize that bump—it came from a split steel minting die back in 1884. N: What does the man explain?",
+      "license": "Original",
+      "sha256": "b065f8149689fb744f6f283625c7e2c2b87c05367237edd6e47172f89531ebb8",
+      "byteSize": 130620,
+      "durationMs": 16094
+    },
+    {
+      "id": "ITP04-PB1",
+      "relativePath": "audio/ITP04-PB1.wav",
+      "kind": "AUDIO",
+      "caption": "W: Excuse me, Dr. Morales—why did my pressed giant kelp fronds lose their golden-brown luster and turn dull olive after soaking in freshwater rinse trays? M: Common mistake in beginner marine botany! Kelp cell walls swell burst open in pure freshwater, leaching brown fucoxanthin pigments straight out into the sink. W: Aha—so I should have washed sand off specimens inside seawater baths before sliding herbarium paper underneath? M: Exactly. Rinse quickly in filtered seawater, press gently between fresh absorbent blotters twice on day one, and green chlorophyll stops bleeding through.",
+      "license": "Original",
+      "sha256": "ca34cf7bbf01b0d1fe6b581fb5474458bea4a6984ee188fc7c5f2a0b68c7027e",
+      "byteSize": 330556,
+      "durationMs": 40720
+    },
+    {
+      "id": "ITP04-PB2",
+      "relativePath": "audio/ITP04-PB2.wav",
+      "kind": "AUDIO",
+      "caption": "M: Look inside case four of the treasury exhibition—how did carved wooden sticks ever work like real banking receipts? W: Those are medieval split hazel tally sticks! Clerks cut notches showing exact pounds and shillings along a twig, then split it lengthwise straight across every notch. M: Oh, brilliant security! So the treasury kept the stub—called the foil—while the merchant pocketed the matching half—called the stock? W: Precisely! In fact, English phrases like 'joint-stock company' or 'stockholder' trace straight back to those wooden treasury halves matching grain for grain.",
+      "license": "Original",
+      "sha256": "a3385bea259a794df208ab8d95813281d04df0f243ece03c8bce0d6ca0db0e3e",
+      "byteSize": 323900,
+      "durationMs": 39915
+    },
+    {
+      "id": "ITP04-PC1",
+      "relativePath": "audio/ITP04-PC1.wav",
+      "kind": "AUDIO",
+      "caption": "W: Along rocky Pacific coastlines, giant kelp grows up to fifty centimeters a day, towering thirty meters high like an underwater redwood cathedral sheltering rockfish and crab larvae. W: Yet vast lush kelp forests vanished swiftly into bare submarine rock deserts—called 'urchin barrens'—whenever intensive fur trapping wiped out Pacific sea otters. W: Notice the chain reaction ecologists term a trophic cascade: sea otters prey ravenously on spiny purple sea urchins. Without otters checking numbers, urchin swarms multiply unchecked and chew straight through kelp holdfasts. W: Once otter populations rebound in protected coves, urchin populations retreat into crevices to graze drifting scraps—allowing towering kelp canopies and dependent fisheries to flourish anew.",
+      "license": "Original",
+      "sha256": "043d9817d9ccf191394adf028897a466b1d1da5dfeb38170ab164f932c0d93c5",
+      "byteSize": 412988,
+      "durationMs": 50890
+    },
+    {
+      "id": "ITP04-PC2",
+      "relativePath": "audio/ITP04-PC2.wav",
+      "kind": "AUDIO",
+      "caption": "M: Why did economies shift away from heavy chests of stamped silver and gold bullion toward fragile printed cotton-linen banknotes? M: Long-distance silk and spice shipping exposed two bottlenecks: physically hauling tons of precious coinage invited highway robbery and consumed scarce precious metal faster than mines expanded. M: In seventh-to-eleventh-century Song China, overland silk merchants began depositing heavy strings of iron coins with trusted warehouse agents in exchange for stamped paper flying-cash vouchers ('jiaozi'), redeemable across distant cities. M: Early paper money worked strictly as representative IOUs backed one-for-one by stored vault bullion—long before modern central banks unlinked paper currency into managed fiat notes.",
+      "license": "Original",
+      "sha256": "eab016476be11c262ffa83cf66c19f5cce18288d78356999bca8c3fb33f6c4b5",
+      "byteSize": 379708,
+      "durationMs": 46805
+    },
+    {
+      "id": "ITP04-PC3",
+      "relativePath": "audio/ITP04-PC3.wav",
+      "kind": "AUDIO",
+      "caption": "W: Most shoppers recognize Eastern oysters strictly as restaurant shellfish, yet marine restoration biologists value living reefs primarily as self-repairing shoreline armor. W: Over three-dimensional ridges, cemented oyster clusters fracture incoming storm waves before energy slams straight into soft salt marshes, while filtering algae and silt out of hazy bay water. W: A single healthy adult oyster pumps and clarifies dozens of liters daily, restoring clarity so underwater sunlight reaches struggling seagrass meadows. W: Crucially, unlike static poured concrete seawalls that sink or erode slowly, living oyster beds actually accrete calcium carbonate upward—matching modest sea-level rise when shells remain unharvested.",
+      "license": "Original",
+      "sha256": "5f1a50db32dc741f6a8da32d50b499be0eea57534dbeead97cef3cb851f3ecf0",
+      "byteSize": 379196,
+      "durationMs": 46725
     }
   ],
   "items": [
     {
-      "id": "ITP-L1-04-Q01",
+      "id": "ITP-L1-04-Q001",
       "section": "LISTENING",
       "taskType": "CHOICE_SINGLE",
-      "prompt": "Listen to the dialogue. What does the woman mean?",
+      "prompt": "Listen to Part A dialogue 1 (kelp forest survey). What does the woman explain?",
       "options": [
-        "She was surprised the economic policy talk had empty seats.",
-        "She expected the auditorium to hold twice as many students.",
-        "She disliked the speaker's examples on trade tariffs.",
-        "She arrived twenty minutes after the talk ended."
+        "Metal square frames shield divers from sharp sea urchin spines.",
+        "Urchins gather strictly inside abandoned iron cages.",
+        "Diving cove sweeps take only two minutes.",
+        "Random quadrat sampling gives reliable estimates within limited scuba time."
       ],
-      "answer": "She was surprised the economic policy talk had empty seats.",
+      "answer": "Random quadrat sampling gives reliable estimates within limited scuba time.",
       "acceptedAnswers": [
-        "She was surprised the economic policy talk had empty seats."
+        "Random quadrat sampling gives reliable estimates within limited scuba time."
       ],
-      "explanation": "Pria berkata ia mengira ruangan akan penuh; wanita menjawab 'I couldn't believe how many empty rows there were either!' (sama-sama terkejut).",
-      "rationaleSource": "ITP-MOD-01",
+      "explanation": "Quadrat sampling acak memperkirakan kepadatan populasi secara ilmiah tanpa menyisir seluruh teluk.",
+      "rationaleSource": "ITP-MOD-02",
       "difficulty": "B2",
       "points": 1,
       "license": "Original",
       "reviewStatus": "VERIFIED_ORIGINAL",
       "passageId": null,
-      "audioAssetId": "ITP04-A01",
+      "audioAssetId": "ITP04-L01",
       "sortIndex": 1
     },
     {
-      "id": "ITP-L1-04-Q02",
+      "id": "ITP-L1-04-Q002",
       "section": "LISTENING",
       "taskType": "CHOICE_SINGLE",
-      "prompt": "Listen to the conversation. What does the man decide to do?",
+      "prompt": "Listen to Part A dialogue 2 (currency exchange booth). What does the man advise?",
       "options": [
-        "Ask the lab coordinator to check the microscope lens.",
-        "Skip tomorrow's biology lab entirely.",
-        "Buy a replacement glass slide set tonight.",
-        "Write his report using someone else's data."
+        "Buy train tickets exclusively with gold sovereigns.",
+        "Hold onto airport receipts for seven percent rebates.",
+        "Exchange only minimal cash at the airport and convert the rest in town.",
+        "Airport kiosks waive conversion spreads for stipend cards."
       ],
-      "answer": "Ask the lab coordinator to check the microscope lens.",
+      "answer": "Exchange only minimal cash at the airport and convert the rest in town.",
       "acceptedAnswers": [
-        "Ask the lab coordinator to check the microscope lens."
+        "Exchange only minimal cash at the airport and convert the rest in town."
       ],
-      "explanation": "Wanita menyarankan menghubungi koordinator lab sebelum menunda eksperimen.",
+      "explanation": "Tukar sekadarnya di bandara dan tukar sisa besar di bank kota karena kurs jauh lebih baik.",
+      "rationaleSource": "ITP-MOD-07",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP04-L02",
+      "sortIndex": 2
+    },
+    {
+      "id": "ITP-L1-04-Q003",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 3 (coin weight wear). What does the woman explain?",
+      "options": [
+        "Early port tariffs required shaving one milligram off coins.",
+        "Ridged coin edges were introduced to stop thieves from shaving precious metal off rims.",
+        "Hammered silver grew thicker whenever merchants clipped rims.",
+        "Ancient bakers shaped silver bullion into ridged loaves."
+      ],
+      "answer": "Ridged coin edges were introduced to stop thieves from shaving precious metal off rims.",
+      "acceptedAnswers": [
+        "Ridged coin edges were introduced to stop thieves from shaving precious metal off rims."
+      ],
+      "explanation": "Pinggiran bergerigi dibuat agar tindakan pemotongan logam koin langsung terlihat.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP04-L03",
+      "sortIndex": 3
+    },
+    {
+      "id": "ITP-L1-04-Q004",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 4 (sea otter fur check). What does the man explain?",
+      "options": [
+        "Ultra-dense underfur insulates sea otters using trapped air pockets.",
+        "Otters grow temporary winter blubber layers every October.",
+        "Warm kelp fronds heat chilly ocean currents upward.",
+        "Saltwater buoys otters well above cold swells."
+      ],
+      "answer": "Ultra-dense underfur insulates sea otters using trapped air pockets.",
+      "acceptedAnswers": [
+        "Ultra-dense underfur insulates sea otters using trapped air pockets."
+      ],
+      "explanation": "Kepadatan rambut ekstrem memerangkap lapisan udara hangat sebagai isolator.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP04-L04",
+      "sortIndex": 4
+    },
+    {
+      "id": "ITP-L1-04-Q005",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 5 (market inflation talk). What does the man imply?",
+      "options": [
+        "Regional bakers secretly agreed to raise wages twenty percent.",
+        "Coastal ferry workers prefer hauling copper bullion.",
+        "Winter frost destroyed every grain elevator downtown.",
+        "Shipping disruptions helped push staple food prices upward."
+      ],
+      "answer": "Shipping disruptions helped push staple food prices upward.",
+      "acceptedAnswers": [
+        "Shipping disruptions helped push staple food prices upward."
+      ],
+      "explanation": "Mogok feri menggandakan ongkos angkut gandum sehingga harga pangan ikut melonjak.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP04-L05",
+      "sortIndex": 5
+    },
+    {
+      "id": "ITP-L1-04-Q006",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 6 (oyster shell recycling). What does the woman mean?",
+      "options": [
+        "Restaurant kitchens pay marine scientists for fresh bay mud.",
+        "Oyster shells repel hungry sea urchins effectively.",
+        "Recycled oyster shells provide hard substrate needed for young reef larvae to attach.",
+        "Muddy bays dissolve calcium shells to neutralize oil slicks."
+      ],
+      "answer": "Recycled oyster shells provide hard substrate needed for young reef larvae to attach.",
+      "acceptedAnswers": [
+        "Recycled oyster shells provide hard substrate needed for young reef larvae to attach."
+      ],
+      "explanation": "Larva tiram butuh permukaan kalsium cangkang untuk menempel, bukan lumpur lunak.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP04-L06",
+      "sortIndex": 6
+    },
+    {
+      "id": "ITP-L1-04-Q007",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 7 (treasury bond term). What does the woman clarify?",
+      "options": [
+        "Interest yields remain permanently frozen after issuance.",
+        "Rising interest yields push secondary market prices of older fixed bonds down.",
+        "Short-term and long-term bond prices always triple in autumn.",
+        "Treasury clerks adjust old coupon rates upward monthly."
+      ],
+      "answer": "Rising interest yields push secondary market prices of older fixed bonds down.",
+      "acceptedAnswers": [
+        "Rising interest yields push secondary market prices of older fixed bonds down."
+      ],
+      "explanation": "Harga pasar obligasi berbunga tetap bergerak berlawanan arah dengan imbal hasil suku bunga baru.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "C1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP04-L07",
+      "sortIndex": 7
+    },
+    {
+      "id": "ITP-L1-04-Q008",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 8 (tidal pool tide window). What does the man urge?",
+      "options": [
+        "Head to the rocky tide pools early around seven-fifteen before water rises.",
+        "Skip breakfast permanently whenever studying marine biology.",
+        "Wait until midnight low tide with halogen lamps.",
+        "Purple sea stars migrate into deep kelp beds by seven AM."
+      ],
+      "answer": "Head to the rocky tide pools early around seven-fifteen before water rises.",
+      "acceptedAnswers": [
+        "Head to the rocky tide pools early around seven-fifteen before water rises."
+      ],
+      "explanation": "Surut terendah terjadi tepat 07.15; pukul 10 air sudah kembali pasang.",
+      "rationaleSource": "ITP-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP04-L08",
+      "sortIndex": 8
+    },
+    {
+      "id": "ITP-L1-04-Q009",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 9 (banknote watermark test). What does the man tell the woman?",
+      "options": [
+        "Starch ink pens guarantee total detection against bleached notes.",
+        "Legitimate bills dissolve cleanly under green laboratory alcohol.",
+        "Watermarks fade rapidly inside damp trouser pockets.",
+        "Inspect security threads and raised ink texture rather than relying solely on paper pens."
+      ],
+      "answer": "Inspect security threads and raised ink texture rather than relying solely on paper pens.",
+      "acceptedAnswers": [
+        "Inspect security threads and raised ink texture rather than relying solely on paper pens."
+      ],
+      "explanation": "Kertas asli yang dicuci uang palsu tetap lolos uji spidol, sehingga cek benang pengaman dan cetak timbul.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP04-L09",
+      "sortIndex": 9
+    },
+    {
+      "id": "ITP-L1-04-Q010",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 10 (crab trap escape ring). What does the woman mean?",
+      "options": [
+        "Adult crabs fit easily through small circular mesh ports.",
+        "Fishery wardens bolt identification coins onto traps.",
+        "Circular escape vents protect young crabs from accidental capture.",
+        "Metal rings help divers lift heavy bottom traps cleanly."
+      ],
+      "answer": "Circular escape vents protect young crabs from accidental capture.",
+      "acceptedAnswers": [
+        "Circular escape vents protect young crabs from accidental capture."
+      ],
+      "explanation": "Cincin pelolosan memungkinkan kepiting muda yang belum layak tangkap keluar kembali.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP04-L10",
+      "sortIndex": 10
+    },
+    {
+      "id": "ITP-L1-04-Q011",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 11 (campus textbook buyback). What does the man mean?",
+      "options": [
+        "Professors buy extra student copies every spring.",
+        "Buyback price depends on whether courses still adopt that edition.",
+        "Used macroeconomics books always fetch fifty percent back.",
+        "Co-op clerks refuse crisp books without torn covers."
+      ],
+      "answer": "Buyback price depends on whether courses still adopt that edition.",
+      "acceptedAnswers": [
+        "Buyback price depends on whether courses still adopt that edition."
+      ],
+      "explanation": "Harga beli kembali tergantung apakah dosen masih memakai edisi buku yang sama.",
+      "rationaleSource": "ITP-MOD-01",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP04-L11",
+      "sortIndex": 11
+    },
+    {
+      "id": "ITP-L1-04-Q012",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 12 (salt marsh mosquito control). What does the woman mean?",
+      "options": [
+        "Small tidal fish naturally eat mosquito larvae when channels remain open.",
+        "Spraying heavy oil slicks turns marshes bright green.",
+        "Saltwater tides freeze mosquito eggs inside peat moss.",
+        "Healthy coastal wetlands ban all native fish species."
+      ],
+      "answer": "Small tidal fish naturally eat mosquito larvae when channels remain open.",
+      "acceptedAnswers": [
+        "Small tidal fish naturally eat mosquito larvae when channels remain open."
+      ],
+      "explanation": "Alur pasang terbuka membawa ikan killifish pemangsa jentik nyamuk.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP04-L12",
+      "sortIndex": 12
+    },
+    {
+      "id": "ITP-L1-04-Q013",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 13 (barter vs ledger credit). What does the woman clarify?",
+      "options": [
+        "Bakers locked live livestock behind bronze vaults.",
+        "Silver coinage appeared centuries before clay tallies.",
+        "Farmers burned debt tablets weekly at harvest festivals.",
+        "Ancient towns kept written credit records rather than trading animals for every loaf."
+      ],
+      "answer": "Ancient towns kept written credit records rather than trading animals for every loaf.",
+      "acceptedAnswers": [
+        "Ancient towns kept written credit records rather than trading animals for every loaf."
+      ],
+      "explanation": "Buku catatan kredit lempung muncul jauh sebelum koin perak sebagai alat hitung utang harian.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP04-L13",
+      "sortIndex": 13
+    },
+    {
+      "id": "ITP-L1-04-Q014",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 14 (marine plankton bloom). What does the man mean?",
+      "options": [
+        "Heavy ferry propellers churned up sunken iron hulls.",
+        "Cold polar currents sterilized coastal shellfish beds.",
+        "Nutrient runoff and warmth caused a rapid microscopic algae surge.",
+        "River mud turned bay water rusty overnight during drought."
+      ],
+      "answer": "Nutrient runoff and warmth caused a rapid microscopic algae surge.",
+      "acceptedAnswers": [
+        "Nutrient runoff and warmth caused a rapid microscopic algae surge."
+      ],
+      "explanation": "Limbah nutrien plus panas memicu ledakan populasi plankton mikroskopis.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP04-L14",
+      "sortIndex": 14
+    },
+    {
+      "id": "ITP-L1-04-Q015",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 15 (scholarship budget cap). What does the woman remind the man?",
+      "options": [
+        "Boat fuel receipts require signatures from hotel managers.",
+        "Equipment and fuel are eligible, but travel lodging and food are excluded.",
+        "Only five graduate assistants qualify for marine hotel stays.",
+        "Appendix C doubles hotel allowances during summer digs."
+      ],
+      "answer": "Equipment and fuel are eligible, but travel lodging and food are excluded.",
+      "acceptedAnswers": [
+        "Equipment and fuel are eligible, but travel lodging and food are excluded."
+      ],
+      "explanation": "Ia merujuk aturan hibah: alat dan BBM kapal ditanggung, namun akomodasi hotel tidak.",
+      "rationaleSource": "ITP-MOD-01",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP04-L15",
+      "sortIndex": 15
+    },
+    {
+      "id": "ITP-L1-04-Q016",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 16 (kelp culinary alginates). What does the man mean?",
+      "options": [
+        "Compounds extracted from kelp serve as smooth thickeners across food and medical products.",
+        "Fresh sea kelp freezes colder than conventional ice cream bases.",
+        "Dentists feed frozen kelp candy to anxious patients.",
+        "Brown algae dissolve tooth enamel safely."
+      ],
+      "answer": "Compounds extracted from kelp serve as smooth thickeners across food and medical products.",
+      "acceptedAnswers": [
+        "Compounds extracted from kelp serve as smooth thickeners across food and medical products."
+      ],
+      "explanation": "Alginat dari rumput laut cokelat dipakai sebagai pengental stabil pada makanan dan cetakan gigi.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP04-L16",
+      "sortIndex": 16
+    },
+    {
+      "id": "ITP-L1-04-Q017",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 17 (silver coin gilding scam). What does the woman note?",
+      "options": [
+        "Silver naturally rusts bright green in dry clay jars.",
+        "Museum cleaners scrubbed silver dust onto copper tokens.",
+        "Roman mints blended green tin exclusively for emperor portraits.",
+        "The coin is an ancient forgery with a cheap bronze core."
+      ],
+      "answer": "The coin is an ancient forgery with a cheap bronze core.",
+      "acceptedAnswers": [
+        "The coin is an ancient forgery with a cheap bronze core."
+      ],
+      "explanation": "Koin kuno berinti perunggu berlapis perak tipis adalah uang palsu antik.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP04-L17",
+      "sortIndex": 17
+    },
+    {
+      "id": "ITP-L1-04-Q018",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 18 (lobster molt cycle). What does the man explain?",
+      "options": [
+        "Cold seawater softens mature shells permanently.",
+        "Soft shells float uncontrollably above aquarium filters.",
+        "Soft freshly molted lobsters need isolation until their new shells harden.",
+        "Aggressive lobsters chew through galvanized steel mesh."
+      ],
+      "answer": "Soft freshly molted lobsters need isolation until their new shells harden.",
+      "acceptedAnswers": [
+        "Soft freshly molted lobsters need isolation until their new shells harden."
+      ],
+      "explanation": "Lobster baru ganti kulit bertubuh lunak rentan dimangsa sehingga dipisah hingga mengeras.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP04-L18",
+      "sortIndex": 18
+    },
+    {
+      "id": "ITP-L1-04-Q019",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 19 (credit union savings fee). What does the woman mean?",
+      "options": [
+        "Paperless statements charge two dollars every semester.",
+        "Choosing digital statements keeps the student account free of monthly charges.",
+        "All student checking accounts now cost two dollars monthly.",
+        "Credit unions refuse university ID cards without paper bills."
+      ],
+      "answer": "Choosing digital statements keeps the student account free of monthly charges.",
+      "acceptedAnswers": [
+        "Choosing digital statements keeps the student account free of monthly charges."
+      ],
+      "explanation": "Akun tetap gratis selama mengaktifkan laporan rekening elektronik (paperless).",
       "rationaleSource": "ITP-MOD-01",
       "difficulty": "B1",
       "points": 1,
       "license": "Original",
       "reviewStatus": "VERIFIED_ORIGINAL",
       "passageId": null,
-      "audioAssetId": "ITP04-A02",
-      "sortIndex": 2
+      "audioAssetId": "ITP04-L19",
+      "sortIndex": 19
     },
     {
-      "id": "ITP-L1-04-Q03",
+      "id": "ITP-L1-04-Q020",
       "section": "LISTENING",
       "taskType": "CHOICE_SINGLE",
-      "prompt": "Listen to the student conversation. What is the deadline change mentioned?",
+      "prompt": "Listen to Part A dialogue 20 (seagrass sediment anchor). What does the man emphasize?",
       "options": [
-        "The draft review shifted from Wednesday to Friday afternoon.",
-        "The final portfolio is canceled this semester.",
-        "Group presentations moved up to Monday morning.",
-        "Online submissions closed two days early."
+        "Submerged eelgrass beds protect coastlines and nurse young fish.",
+        "Anchor chains strengthen shallow sandy bottoms cleanly.",
+        "Juvenile cod eat mature eelgrass roots during storms.",
+        "Clean sand beaches grow faster without submerged plants."
       ],
-      "answer": "The draft review shifted from Wednesday to Friday afternoon.",
+      "answer": "Submerged eelgrass beds protect coastlines and nurse young fish.",
       "acceptedAnswers": [
-        "The draft review shifted from Wednesday to Friday afternoon."
+        "Submerged eelgrass beds protect coastlines and nurse young fish."
       ],
-      "explanation": "Pembicara mengonfirmasi email dosen yang menggeser tenggat draf ke Jumat sore.",
+      "explanation": "Padang lamun menstabilkan sedimen dan melindungi anak ikan.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP04-L20",
+      "sortIndex": 20
+    },
+    {
+      "id": "ITP-L1-04-Q021",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 21 (central bank gold peg). What does the woman mean?",
+      "options": [
+        "Gold bars evaporated rapidly inside damp treasury vaults.",
+        "Strict bullion rules caused prices to double daily.",
+        "Paper currency always weighed more than gold bullion.",
+        "Metallic backing restricted emergency liquidity expansion during crises."
+      ],
+      "answer": "Metallic backing restricted emergency liquidity expansion during crises.",
+      "acceptedAnswers": [
+        "Metallic backing restricted emergency liquidity expansion during crises."
+      ],
+      "explanation": "Standar logam mulia membatasi perluasan pasokan uang darurat saat terjadi kepanikan bank.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "C1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP04-L21",
+      "sortIndex": 21
+    },
+    {
+      "id": "ITP-L1-04-Q022",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 22 (dock piling barnacles). What does the man tell the woman?",
+      "options": [
+        "She should scrape white barnacles off every biology buoy.",
+        "Barnacles chew completely through concrete docks yearly.",
+        "Do not scrape the study pilings because clearing barnacles spoils long-term data.",
+        "Painted wooden piers grow thicker barnacles overnight."
+      ],
+      "answer": "Do not scrape the study pilings because clearing barnacles spoils long-term data.",
+      "acceptedAnswers": [
+        "Do not scrape the study pilings because clearing barnacles spoils long-term data."
+      ],
+      "explanation": "Membersihkan teritip di area pengamatan akan merusak catatan kolonisasi sepuluh tahun.",
+      "rationaleSource": "ITP-MOD-01",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP04-L22",
+      "sortIndex": 22
+    },
+    {
+      "id": "ITP-L1-04-Q023",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 23 (wholesale co-op bulk order). What does the man suggest?",
+      "options": [
+        "Wait until semester breaks when couriers waive handling charges.",
+        "Combine her order with the department's Friday shipment to save shipping fees.",
+        "Switch to fragile plastic bags instead of glass vials.",
+        "Drive forty miles directly to the glass factory tonight."
+      ],
+      "answer": "Combine her order with the department's Friday shipment to save shipping fees.",
+      "acceptedAnswers": [
+        "Combine her order with the department's Friday shipment to save shipping fees."
+      ],
+      "explanation": "Menggabungkan pesanan dalam pembelian grosir departemen menghapus ongkos kirim.",
+      "rationaleSource": "ITP-MOD-07",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP04-L23",
+      "sortIndex": 23
+    },
+    {
+      "id": "ITP-L1-04-Q024",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 24 (estuary salinity wedge). What does the woman clarify?",
+      "options": [
+        "Heavier saltwater stays layered beneath fresher river flow near the estuary mouth.",
+        "Freshwater plunges down to ocean floors far faster than brine.",
+        "Estuary channels remain strictly salty from surface to gravel bottom.",
+        "River dams stir tides evenly within minutes."
+      ],
+      "answer": "Heavier saltwater stays layered beneath fresher river flow near the estuary mouth.",
+      "acceptedAnswers": [
+        "Heavier saltwater stays layered beneath fresher river flow near the estuary mouth."
+      ],
+      "explanation": "Air laut yang lebih rapat menyusup di bagian bawah membentuk baji salinitas di bawah aliran sungai.",
       "rationaleSource": "ITP-MOD-02",
       "difficulty": "B2",
       "points": 1,
       "license": "Original",
       "reviewStatus": "VERIFIED_ORIGINAL",
       "passageId": null,
-      "audioAssetId": "ITP04-A03",
-      "sortIndex": 3
+      "audioAssetId": "ITP04-L24",
+      "sortIndex": 24
     },
     {
-      "id": "ITP-L1-04-Q04",
+      "id": "ITP-L1-04-Q025",
       "section": "LISTENING",
       "taskType": "CHOICE_SINGLE",
-      "prompt": "Listen to the marine biology segment. Why must sea otters eat so frequently?",
+      "prompt": "Listen to Part A dialogue 25 (intern stipend paperwork). What does the man tell the woman?",
       "options": [
-        "They lack an insulating blubber layer and burn calories rapidly.",
-        "Sea urchins contain almost no water.",
-        "Cold ocean currents carry them away from kelp beds.",
-        "Otters hibernate throughout December."
+        "Marine interns receive checks strictly at August graduation.",
+        "Payroll systems lost banking numbers in July.",
+        "Room 204 closes direct deposit accounts automatically.",
+        "Her payment is delayed until she turns in missing tax forms to Room 204."
       ],
-      "answer": "They lack an insulating blubber layer and burn calories rapidly.",
+      "answer": "Her payment is delayed until she turns in missing tax forms to Room 204.",
       "acceptedAnswers": [
-        "They lack an insulating blubber layer and burn calories rapidly."
+        "Her payment is delayed until she turns in missing tax forms to Room 204."
       ],
-      "explanation": "Pembicara menyatakan berang-berang laut tidak memiliki lapisan lemak tebal (*blubber*) sehingga membutuhkan metabolisme tinggi.",
+      "explanation": "Pembayaran ditahan hingga formulir pajak bertanda tangan diserahkan ke ruang 204.",
+      "rationaleSource": "ITP-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP04-L25",
+      "sortIndex": 25
+    },
+    {
+      "id": "ITP-L1-04-Q026",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 26 (urchin barren recovery). What does the man imply?",
+      "options": [
+        "Cold autumn currents wash kelp spores miles out to sea.",
+        "Rocky reefs stay permanently barren once urchins arrive.",
+        "Returning predators curb overgrazing and let kelp reefs recover.",
+        "Sea otters chew tough kelp holdfasts cleanly off boulders."
+      ],
+      "answer": "Returning predators curb overgrazing and let kelp reefs recover.",
+      "acceptedAnswers": [
+        "Returning predators curb overgrazing and let kelp reefs recover."
+      ],
+      "explanation": "Kembalinya berang-berang pemangsa bulu babi memungkinkan hutan kelp pulih cepat.",
       "rationaleSource": "ITP-MOD-02",
       "difficulty": "B2",
       "points": 1,
       "license": "Original",
       "reviewStatus": "VERIFIED_ORIGINAL",
       "passageId": null,
-      "audioAssetId": "ITP04-A04",
-      "sortIndex": 4
+      "audioAssetId": "ITP04-L26",
+      "sortIndex": 26
     },
     {
-      "id": "ITP-L1-04-Q05",
+      "id": "ITP-L1-04-Q027",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 27 (vending change machine). What does the woman advise?",
+      "options": [
+        "Borrowing crisp bills from the bursar's vault.",
+        "Flattening the folded bill or using the tap-to-pay reader instead.",
+        "Kicking the coin return chute firmly twice.",
+        "Buying cold bottled juice down the street instead."
+      ],
+      "answer": "Flattening the folded bill or using the tap-to-pay reader instead.",
+      "acceptedAnswers": [
+        "Flattening the folded bill or using the tap-to-pay reader instead."
+      ],
+      "explanation": "Ratakan sudut uang kertas atau gunakan pembayaran nirsentuh di sensor biru.",
+      "rationaleSource": "ITP-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP04-L27",
+      "sortIndex": 27
+    },
+    {
+      "id": "ITP-L1-04-Q028",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 28 (trade balance chart). What does the man mean?",
+      "options": [
+        "Services and freight revenue account for the positive trade surplus shown.",
+        "Printers flipped positive and negative bars on the chart.",
+        "Merchandise exports tripled overnight without port logs.",
+        "Economic subtitles rarely reflect shipping income."
+      ],
+      "answer": "Services and freight revenue account for the positive trade surplus shown.",
+      "acceptedAnswers": [
+        "Services and freight revenue account for the positive trade surplus shown."
+      ],
+      "explanation": "Grafik tersebut menghitung neraca jasa dan angkutan, bukan hanya barang fisik.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP04-L28",
+      "sortIndex": 28
+    },
+    {
+      "id": "ITP-L1-04-Q029",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 29 (wetsuit rinse hose). What does the woman warn the man about?",
+      "options": [
+        "Cold hose water shrinks neoprene seams overnight.",
+        "Wet neoprene dries best over hot kitchen radiators.",
+        "Marine closets prohibit hanging damp diving boots.",
+        "Salt buildup jams wetsuit zippers unless washed cleanly after diving."
+      ],
+      "answer": "Salt buildup jams wetsuit zippers unless washed cleanly after diving.",
+      "acceptedAnswers": [
+        "Salt buildup jams wetsuit zippers unless washed cleanly after diving."
+      ],
+      "explanation": "Kristal garam mengunci gigi ritsleting bila wetsuit tidak dibilas air tawar.",
+      "rationaleSource": "ITP-MOD-07",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP04-L29",
+      "sortIndex": 29
+    },
+    {
+      "id": "ITP-L1-04-Q030",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 30 (mint coin die crack). What does the man clarify?",
+      "options": [
+        "Damaged mint coins hold zero numismatic value today.",
+        "Modern presses intentionally print fake cracks on replicas.",
+        "The raised metal line is an authentic historical mint flaw prized by collectors.",
+        "Steel pocket knives scratched raised lines across coins after 1884."
+      ],
+      "answer": "The raised metal line is an authentic historical mint flaw prized by collectors.",
+      "acceptedAnswers": [
+        "The raised metal line is an authentic historical mint flaw prized by collectors."
+      ],
+      "explanation": "Tonjolan garis logam bukan goresan baru melainkan cacat cetakan asli (die crack) tahun 1884 yang diburu kolektor.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP04-L30",
+      "sortIndex": 30
+    },
+    {
+      "id": "ITP-L1-04-Q031",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part B Conversation 1 (Sea Kelp Herbarium & Pigments) — Item 1/4. What happened to the student's pressed kelp specimens?",
+      "options": [
+        "Strong marine lamps scorched dry golden seaweeds.",
+        "They turned dull olive after soaking in freshwater.",
+        "Salt crystals tore crisp kelp blades straight across blotter boards.",
+        "Mold spots spotted brown herbarium paper within an hour."
+      ],
+      "answer": "They turned dull olive after soaking in freshwater.",
+      "acceptedAnswers": [
+        "They turned dull olive after soaking in freshwater."
+      ],
+      "explanation": "Warnanya memudar menjadi zaitun kusam setelah dibilas air tawar.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP04-PB1",
+      "sortIndex": 31
+    },
+    {
+      "id": "ITP-L1-04-Q032",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part B Conversation 1 (Sea Kelp Herbarium & Pigments) — Item 2/4. What biological reason explains the sudden color shift?",
+      "options": [
+        "Freshwater ruptured cells by osmosis and washed away brown fucoxanthin pigments.",
+        "Sunlight bleached olive chlorophyll straight out of salty kelp pores.",
+        "Press weights crushed hard calcium spines flat.",
+        "Paper towels stained brown fronds green."
+      ],
+      "answer": "Freshwater ruptured cells by osmosis and washed away brown fucoxanthin pigments.",
+      "acceptedAnswers": [
+        "Freshwater ruptured cells by osmosis and washed away brown fucoxanthin pigments."
+      ],
+      "explanation": "Tekanan osmotik air tawar memecah sel dan melarutkan pigmen cokelat fucoxanthin.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP04-PB1",
+      "sortIndex": 32
+    },
+    {
+      "id": "ITP-L1-04-Q033",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part B Conversation 1 (Sea Kelp Herbarium & Pigments) — Item 3/4. How should sand be cleaned off marine algae before pressing?",
+      "options": [
+        "Scrub wet fronds fiercely under hot tap spigots.",
+        "Boil kelp shoots for five minutes inside salty glass jars.",
+        "Freeze salty algae solid and peel sand crystals dry.",
+        "Rinse briskly in filtered seawater rather than freshwater."
+      ],
+      "answer": "Rinse briskly in filtered seawater rather than freshwater.",
+      "acceptedAnswers": [
+        "Rinse briskly in filtered seawater rather than freshwater."
+      ],
+      "explanation": "Gunakan bilasan air laut tersaring sebelum menata di kertas herbarium.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP04-PB1",
+      "sortIndex": 33
+    },
+    {
+      "id": "ITP-L1-04-Q034",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part B Conversation 1 (Sea Kelp Herbarium & Pigments) — Item 4/4. What extra mounting step keeps pressed fronds clean on day one?",
+      "options": [
+        "Rolling seaweed specimens tight inside plastic tubes.",
+        "Leaving blotters exposed outdoors under foggy dew.",
+        "Swapping damp blotting paper twice early to draw moisture swiftly.",
+        "Pouring fresh vinegar drops across blotter corners."
+      ],
+      "answer": "Swapping damp blotting paper twice early to draw moisture swiftly.",
+      "acceptedAnswers": [
+        "Swapping damp blotting paper twice early to draw moisture swiftly."
+      ],
+      "explanation": "Mengganti kertas isap (blotter) dua kali pada hari pertama menjaga spesimen rapi.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP04-PB1",
+      "sortIndex": 34
+    },
+    {
+      "id": "ITP-L1-04-Q035",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part B Conversation 2 (Economic Archive: Colonial Tally Sticks) — Item 1/4. What museum artifact are the two speakers inspecting in case four?",
+      "options": [
+        "Silver wire knitting scales once carried by tax couriers.",
+        "Medieval notched wooden tally sticks used as official debt receipts.",
+        "Bronze ship ballast coins pulled from Roman docks.",
+        "Carved oak printing stamps from seventeenth-century London banks."
+      ],
+      "answer": "Medieval notched wooden tally sticks used as official debt receipts.",
+      "acceptedAnswers": [
+        "Medieval notched wooden tally sticks used as official debt receipts."
+      ],
+      "explanation": "Mereka mengamati tongkat kayu bertakik (tally sticks) peninggalan perbendaharaan.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP04-PB2",
+      "sortIndex": 35
+    },
+    {
+      "id": "ITP-L1-04-Q036",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part B Conversation 2 (Economic Archive: Colonial Tally Sticks) — Item 2/4. How did treasury clerks protect notched sticks against tampering or forgery?",
+      "options": [
+        "By splitting each notched twig cleanly down the middle into twin halves.",
+        "By burning royal red wax coats over silver coins.",
+        "By memorizing Latin totals aloud inside church halls.",
+        "By wrapping wooden rods inside welded copper boxes."
+      ],
+      "answer": "By splitting each notched twig cleanly down the middle into twin halves.",
+      "acceptedAnswers": [
+        "By splitting each notched twig cleanly down the middle into twin halves."
+      ],
+      "explanation": "Belahan kayu (stock dan foil) membuat setiap takik cocok unik serat per serat.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP04-PB2",
+      "sortIndex": 36
+    },
+    {
+      "id": "ITP-L1-04-Q037",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part B Conversation 2 (Economic Archive: Colonial Tally Sticks) — Item 3/4. Which part of the split receipt did the lender or merchant keep?",
+      "options": [
+        "The wooden chest holding charcoal ashes.",
+        "Only an unsigned parchment copy.",
+        "The thicker treasury foil.",
+        "The matching 'stock' half."
+      ],
+      "answer": "The matching 'stock' half.",
+      "acceptedAnswers": [
+        "The matching 'stock' half."
+      ],
+      "explanation": "Pedagang membawa belahan 'stock' sementara kantor pajak menyimpan 'foil'.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP04-PB2",
+      "sortIndex": 37
+    },
+    {
+      "id": "ITP-L1-04-Q038",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part B Conversation 2 (Economic Archive: Colonial Tally Sticks) — Item 4/4. What modern financial vocabulary originated from split wooden tally records?",
+      "options": [
+        "Labels such as 'metric coinage'.",
+        "Modern words like 'ledger spreadsheet'.",
+        "Terms such as 'stock' and 'stockholder'.",
+        "Expressions like 'greenback currency'."
+      ],
+      "answer": "Terms such as 'stock' and 'stockholder'.",
+      "acceptedAnswers": [
+        "Terms such as 'stock' and 'stockholder'."
+      ],
+      "explanation": "Istilah modern 'stockholder' dan 'stock' berasal dari belahan kayu catatan tersebut.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP04-PB2",
+      "sortIndex": 38
+    },
+    {
+      "id": "ITP-L1-04-Q039",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part C Mini-Lecture 1 (Sea Otters, Sea Urchins & Kelp Trophic Cascades) — Item 1/4. What happens ecologically when sea otters disappear from a Pacific rocky reef?",
+      "options": [
+        "Cool coastal waters freeze intertidal rock beds.",
+        "Purple sea urchin populations explode and clear-cut living kelp forests into barren rock.",
+        "Giant kelp stalks double rapidly and choke out surface sun.",
+        "Crab larvae devour rocky reef corals down to white sand."
+      ],
+      "answer": "Purple sea urchin populations explode and clear-cut living kelp forests into barren rock.",
+      "acceptedAnswers": [
+        "Purple sea urchin populations explode and clear-cut living kelp forests into barren rock."
+      ],
+      "explanation": "Hilangnya berang-berang membuat bulu babi tak terkendali memangkas habis hutan kelp.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP04-PC1",
+      "sortIndex": 39
+    },
+    {
+      "id": "ITP-L1-04-Q040",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part C Mini-Lecture 1 (Sea Otters, Sea Urchins & Kelp Trophic Cascades) — Item 2/4. In ecology, what does the phrase 'trophic cascade' signify?",
+      "options": [
+        "Indirect top-down ripple effects where predators transform vegetation several levels below.",
+        "Vertical ocean waterfalls cascading past muddy estuary deltas.",
+        "Sudden spring tides sweeping sand dunes far inland.",
+        "Microscopic algae multiplying above warm ocean lagoons."
+      ],
+      "answer": "Indirect top-down ripple effects where predators transform vegetation several levels below.",
+      "acceptedAnswers": [
+        "Indirect top-down ripple effects where predators transform vegetation several levels below."
+      ],
+      "explanation": "Trophic cascade adalah dampak berantai predator puncak terhadap ekosistem tingkat bawah.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP04-PC1",
+      "sortIndex": 40
+    },
+    {
+      "id": "ITP-L1-04-Q041",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part C Mini-Lecture 1 (Sea Otters, Sea Urchins & Kelp Trophic Cascades) — Item 3/4. How do kelp reefs benefit when otter numbers recover gently?",
+      "options": [
+        "Sea otters plant spare kelp spores neatly across shallow bays.",
+        "Crabs migrate elsewhere leaving kelp canopies vacant.",
+        "Winter storms stop pulling mature kelp blades ashore.",
+        "Urchins shelter inside rock crevices feeding on drift kelp rather than shearing live plants."
+      ],
+      "answer": "Urchins shelter inside rock crevices feeding on drift kelp rather than shearing live plants.",
+      "acceptedAnswers": [
+        "Urchins shelter inside rock crevices feeding on drift kelp rather than shearing live plants."
+      ],
+      "explanation": "Bulu babi kembali bersembunyi di celah batu memakan serpihan hanyutan.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP04-PC1",
+      "sortIndex": 41
+    },
+    {
+      "id": "ITP-L1-04-Q042",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part C Mini-Lecture 1 (Sea Otters, Sea Urchins & Kelp Trophic Cascades) — Item 4/4. Why are healthy kelp canopies prized by commercial coastal fisheries?",
+      "options": [
+        "Kelp fronds freeze salt crystals cleanly along sandy harbors.",
+        "Dense leaves filter toxic mercury out of deep ocean trenches.",
+        "Three-dimensional fronds shelter vulnerable juvenile fish from open-water predators.",
+        "Rotting kelp oil fuels small coastal trawler motors."
+      ],
+      "answer": "Three-dimensional fronds shelter vulnerable juvenile fish from open-water predators.",
+      "acceptedAnswers": [
+        "Three-dimensional fronds shelter vulnerable juvenile fish from open-water predators."
+      ],
+      "explanation": "Kanopi kelp menjadi tempat berlindung anak ikan komersial.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP04-PC1",
+      "sortIndex": 42
+    },
+    {
+      "id": "ITP-L1-04-Q043",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part C Mini-Lecture 2 (From Precious Bullion to Representative Paper Currency) — Item 1/4. What dual problems plagued reliance purely on heavy precious-metal coins?",
+      "options": [
+        "Copper alloys exploded inside foundry crucibles.",
+        "Theft risk during transport alongside metal supply failing to keep pace with expanding trade.",
+        "Gold bullion dissolved steadily inside damp ocean crates.",
+        "Wooden market scales rusted quickly in desert trade caravans."
+      ],
+      "answer": "Theft risk during transport alongside metal supply failing to keep pace with expanding trade.",
+      "acceptedAnswers": [
+        "Theft risk during transport alongside metal supply failing to keep pace with expanding trade."
+      ],
+      "explanation": "Koin logam berat rentan dirampok saat dikirim jarak jauh dan pasokannya terbatas.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP04-PC2",
+      "sortIndex": 43
+    },
+    {
+      "id": "ITP-L1-04-Q044",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part C Mini-Lecture 2 (From Precious Bullion to Representative Paper Currency) — Item 2/4. Where and when did early merchant paper vouchers evolve into state-backed paper notes?",
+      "options": [
+        "Medieval Song-era China, emerging out of merchant deposit receipts ('jiaozi').",
+        "Ancient Greek ports immediately before bronze shields.",
+        "Eighteenth-century Atlantic whaling schooners.",
+        "Victorian London brick subways."
+      ],
+      "answer": "Medieval Song-era China, emerging out of merchant deposit receipts ('jiaozi').",
+      "acceptedAnswers": [
+        "Medieval Song-era China, emerging out of merchant deposit receipts ('jiaozi')."
+      ],
+      "explanation": "Uang kertas awal berevolusi pada era Dinasti Song Tiongkok dari resi simpanan dagang.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP04-PC2",
+      "sortIndex": 44
+    },
+    {
+      "id": "ITP-L1-04-Q045",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part C Mini-Lecture 2 (From Precious Bullion to Representative Paper Currency) — Item 3/4. How were the earliest paper banknotes fundamentally secured?",
+      "options": [
+        "Purely by seasonal timber harvest quotas.",
+        "Through decorative green borders painted by harbor guards.",
+        "Only by verbal promises among spice sailors.",
+        "By matching metal reserves held securely inside merchant or treasury vaults."
+      ],
+      "answer": "By matching metal reserves held securely inside merchant or treasury vaults.",
+      "acceptedAnswers": [
+        "By matching metal reserves held securely inside merchant or treasury vaults."
+      ],
+      "explanation": "Uang kertas awal didukung cadangan logam fisik yang tersimpan di brankas tepercaya.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP04-PC2",
+      "sortIndex": 45
+    },
+    {
+      "id": "ITP-L1-04-Q046",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part C Mini-Lecture 2 (From Precious Bullion to Representative Paper Currency) — Item 4/4. What distinguishes modern fiat currency from early representative notes?",
+      "options": [
+        "Modern paper bills vanish automatically after twelve months.",
+        "Only private grain merchants print valid currency today.",
+        "Modern central banks no longer peg banknote value strictly to redeemable gold bullion.",
+        "Fiat paper weighs significantly heavier per unit than copper bars."
+      ],
+      "answer": "Modern central banks no longer peg banknote value strictly to redeemable gold bullion.",
+      "acceptedAnswers": [
+        "Modern central banks no longer peg banknote value strictly to redeemable gold bullion."
+      ],
+      "explanation": "Uang fiat modern tidak lagi dipatok pada penukaran fisik emas/perak.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "C1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP04-PC2",
+      "sortIndex": 46
+    },
+    {
+      "id": "ITP-L1-04-Q047",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part C Mini-Lecture 3 (Oyster Reefs as Living Coastal Infrastructure) — Item 1/4. Why do coastal engineers call healthy oyster beds 'living shoreline infrastructure'?",
+      "options": [
+        "Sharp shells shred unwanted plastic bags into sand.",
+        "Rigid clustered reefs break storm wave force while growing upward over time.",
+        "Oysters purify saltwater cleanly into potable city drinking pipes.",
+        "Cement seawalls shelter edible oysters cleanly above sea level."
+      ],
+      "answer": "Rigid clustered reefs break storm wave force while growing upward over time.",
+      "acceptedAnswers": [
+        "Rigid clustered reefs break storm wave force while growing upward over time."
+      ],
+      "explanation": "Terumbu tiram memecah gelombang badai sekaligus tumbuh meninggi bersama naiknya muka laut.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP04-PC3",
+      "sortIndex": 47
+    },
+    {
+      "id": "ITP-L1-04-Q048",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part C Mini-Lecture 3 (Oyster Reefs as Living Coastal Infrastructure) — Item 2/4. How does oyster water filtration indirectly revive underwater seagrass beds?",
+      "options": [
+        "Clearing floating algae and silt lets sunlight reach submerged seagrass blades.",
+        "Oysters inject rich nitrogen fertilizers directly beneath marsh peat.",
+        "Calm surface oil slicks reflect chilly winter winds downward.",
+        "Empty shell mounds freeze turbid bay mud solid."
+      ],
+      "answer": "Clearing floating algae and silt lets sunlight reach submerged seagrass blades.",
+      "acceptedAnswers": [
+        "Clearing floating algae and silt lets sunlight reach submerged seagrass blades."
+      ],
+      "explanation": "Penjernihan air membuka jalan bagi sinar matahari menembus padang lamun.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP04-PC3",
+      "sortIndex": 48
+    },
+    {
+      "id": "ITP-L1-04-Q049",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part C Mini-Lecture 3 (Oyster Reefs as Living Coastal Infrastructure) — Item 3/4. How does a living reef outperform an ordinary poured-concrete seawall long term?",
+      "options": [
+        "Concrete walls harbor toxic coastal crabs indefinitely.",
+        "Oyster shells dissolve neatly whenever storms recede.",
+        "Poured concrete floats uncontrollably over muddy deltas.",
+        "A living reef self-repairs storm chips and accretes upward with rising tides."
+      ],
+      "answer": "A living reef self-repairs storm chips and accretes upward with rising tides.",
+      "acceptedAnswers": [
+        "A living reef self-repairs storm chips and accretes upward with rising tides."
+      ],
+      "explanation": "Beton statis menggerus sedangkan terumbu tiram menambal diri sendiri dan tumbuh vertikal.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP04-PC3",
+      "sortIndex": 49
+    },
+    {
+      "id": "ITP-L1-04-Q050",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part C Mini-Lecture 3 (Oyster Reefs as Living Coastal Infrastructure) — Item 4/4. What human management step is required so reefs keep accreting vertically?",
+      "options": [
+        "Dredging silt mounds over top of mature reefs.",
+        "Diverting salty river tides completely around bays.",
+        "Leaving established protective reef structures unharvested.",
+        "Painting dead oyster shells white annually."
+      ],
+      "answer": "Leaving established protective reef structures unharvested.",
+      "acceptedAnswers": [
+        "Leaving established protective reef structures unharvested."
+      ],
+      "explanation": "Cangkang terumbu pelindung perlu dibiarkan utuh tidak dipanen.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP04-PC3",
+      "sortIndex": 50
+    },
+    {
+      "id": "ITP-L1-04-Q051",
       "section": "STRUCTURE",
       "taskType": "CHOICE_SINGLE",
-      "prompt": "Dr. Lin, ___ research on coastal estuaries spans three decades, received the national ecology prize.",
+      "prompt": "Seldom ___ kelp forests regenerate as swiftly as those protected inside strict coastal no-take reserves.",
+      "options": [
+        "does",
+        "are",
+        "is",
+        "do"
+      ],
+      "answer": "do",
+      "acceptedAnswers": [
+        "do"
+      ],
+      "explanation": "'Seldom' memicu inversi auxiliary 'do' untuk kata kerja aktif jamak 'regenerate'.",
+      "rationaleSource": "ITP-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 51
+    },
+    {
+      "id": "ITP-L1-04-Q052",
+      "section": "STRUCTURE",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Early Lydian coins combined measured weights of electrum with royal stamps ___ guaranteed purity.",
       "options": [
         "whose",
-        "who",
-        "which",
-        "whom"
+        "where",
+        "that",
+        "what"
       ],
-      "answer": "whose",
+      "answer": "that",
       "acceptedAnswers": [
-        "whose"
+        "that"
       ],
-      "explanation": "Klausa kepemilikan non-restriktif ('Dr. Lin's research') memakai 'whose'.",
+      "explanation": "Pronomina relatif 'that' menggantikan benda 'royal stamps' sebagai subjek klausa.",
+      "rationaleSource": "ITP-MOD-03",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 52
+    },
+    {
+      "id": "ITP-L1-04-Q053",
+      "section": "STRUCTURE",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "The economist suggested ___ household rebate data across three fiscal quarters before revising policy.",
+      "options": [
+        "review",
+        "reviewing",
+        "to review",
+        "reviewed"
+      ],
+      "answer": "reviewing",
+      "acceptedAnswers": [
+        "reviewing"
+      ],
+      "explanation": "Kata kerja 'suggest' langsung diikuti gerund (-ing), bukan to-infinitive.",
+      "rationaleSource": "ITP-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 53
+    },
+    {
+      "id": "ITP-L1-04-Q054",
+      "section": "STRUCTURE",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "A sea otter's dense underfur, unlike ___ of pinnipeds, traps a warm insulating layer of air rather than blubber.",
+      "options": [
+        "that",
+        "those",
+        "it",
+        "what"
+      ],
+      "answer": "that",
+      "acceptedAnswers": [
+        "that"
+      ],
+      "explanation": "Pronomina demonstratif tunggal 'that' menggantikan kata benda tak terhitung 'underfur'.",
+      "rationaleSource": "ITP-MOD-04",
+      "difficulty": "C1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 54
+    },
+    {
+      "id": "ITP-L1-04-Q055",
+      "section": "STRUCTURE",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Had central banks maintained metallic reserves strictly during wartime, banknote inflation ___ remained minimal.",
+      "options": [
+        "will have",
+        "could be",
+        "had been",
+        "might have"
+      ],
+      "answer": "might have",
+      "acceptedAnswers": [
+        "might have"
+      ],
+      "explanation": "Conditional inversi lampau 'Had S + V3' berpasangan dengan modal sempurna 'might have + V3'.",
+      "rationaleSource": "ITP-MOD-08",
+      "difficulty": "C1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 55
+    },
+    {
+      "id": "ITP-L1-04-Q056",
+      "section": "STRUCTURE",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Coral reef restoration crews anchor nursery frames carefully ___ ocean swells overturn young colonies.",
+      "options": [
+        "in case of",
+        "for fear",
+        "lest",
+        "unless not"
+      ],
+      "answer": "lest",
+      "acceptedAnswers": [
+        "lest"
+      ],
+      "explanation": "'Lest' bermakna 'agar tidak' dan langsung diikuti klausa kata kerja dasar.",
+      "rationaleSource": "ITP-MOD-09",
+      "difficulty": "C1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 56
+    },
+    {
+      "id": "ITP-L1-04-Q057",
+      "section": "STRUCTURE",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Every chartered guild silversmith had his assay mark ___ on ledger plates kept at the municipal hall.",
+      "options": [
+        "stamp",
+        "stamped",
+        "stamping",
+        "to stamp"
+      ],
+      "answer": "stamped",
+      "acceptedAnswers": [
+        "stamped"
+      ],
+      "explanation": "Causative pasif 'have + object + V3' memakai past participle 'stamped'.",
+      "rationaleSource": "ITP-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 57
+    },
+    {
+      "id": "ITP-L1-04-Q058",
+      "section": "STRUCTURE",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Seafloor mapping shows that cold-water reefs occur ___ continental slopes drop below two hundred meters.",
+      "options": [
+        "wherever",
+        "which ever",
+        "no matter",
+        "in case of"
+      ],
+      "answer": "wherever",
+      "acceptedAnswers": [
+        "wherever"
+      ],
+      "explanation": "Adverb clause tempat 'wherever' menandai lokasi kemunculan terumbu karang.",
       "rationaleSource": "ITP-MOD-03",
       "difficulty": "B2",
       "points": 1,
@@ -192,24 +1845,124 @@
       "reviewStatus": "VERIFIED_ORIGINAL",
       "passageId": null,
       "audioAssetId": null,
-      "sortIndex": 5
+      "sortIndex": 58
     },
     {
-      "id": "ITP-L1-04-Q06",
+      "id": "ITP-L1-04-Q059",
       "section": "STRUCTURE",
       "taskType": "CHOICE_SINGLE",
-      "prompt": "Only after inspecting all thirty bridge joints ___ the county reopen the river crossing.",
+      "prompt": "In addition to filtering plankton, oyster beds ___ wave energy along marshy shorelines.",
       "options": [
-        "did",
-        "had",
+        "dampens",
+        "dampening",
+        "to dampen",
+        "dampen"
+      ],
+      "answer": "dampen",
+      "acceptedAnswers": [
+        "dampen"
+      ],
+      "explanation": "Inti subjek 'oyster beds' jamak membutuhkan verba dasar 'dampen'.",
+      "rationaleSource": "ITP-MOD-03",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 59
+    },
+    {
+      "id": "ITP-L1-04-Q060",
+      "section": "STRUCTURE",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Paper banknotes gradually replaced heavy copper bullion primarily ___ ease long-distance merchant settlement.",
+      "options": [
+        "so as",
+        "in order",
+        "to",
+        "for"
+      ],
+      "answer": "to",
+      "acceptedAnswers": [
+        "to"
+      ],
+      "explanation": "Infinitif tujuan ('to + V1') paling tepat sebelum kata kerja 'ease'.",
+      "rationaleSource": "ITP-MOD-08",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 60
+    },
+    {
+      "id": "ITP-L1-04-Q061",
+      "section": "STRUCTURE",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "No fewer than twelve maritime statutes ___ enacted after merchants standardized port customs tariffs.",
+      "options": [
+        "is",
+        "were",
         "was",
+        "has been"
+      ],
+      "answer": "were",
+      "acceptedAnswers": [
         "were"
       ],
-      "answer": "did",
-      "acceptedAnswers": [
-        "did"
+      "explanation": "'No fewer than twelve statutes' berinti jamak sehingga memakai 'were'.",
+      "rationaleSource": "ITP-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 61
+    },
+    {
+      "id": "ITP-L1-04-Q062",
+      "section": "STRUCTURE",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Public subsidies for coastal desalination plants remain controversial, ___ high electricity consumption and brine discharge.",
+      "options": [
+        "given",
+        "giving",
+        "because",
+        "although"
       ],
-      "explanation": "'Only after + prepositional phrase' di awal kalimat mewajibkan inversi auxiliary 'did' sebelum subjek 'the county' dan verb 'reopen'.",
+      "answer": "given",
+      "acceptedAnswers": [
+        "given"
+      ],
+      "explanation": "'Given + noun phrase' berfungsi sebagai preposisi bermakna 'mengingat adanya...'.",
+      "rationaleSource": "ITP-MOD-09",
+      "difficulty": "C1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 62
+    },
+    {
+      "id": "ITP-L1-04-Q063",
+      "section": "STRUCTURE",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "So sparse ___ historical tax records from the province that demographic estimates carry wide margins.",
+      "options": [
+        "is",
+        "has been",
+        "was being",
+        "are"
+      ],
+      "answer": "are",
+      "acceptedAnswers": [
+        "are"
+      ],
+      "explanation": "'So + adjective' di awal kalimat memicu inversi dengan verba jamak 'are' untuk 'records'.",
       "rationaleSource": "ITP-MOD-03",
       "difficulty": "C1",
       "points": 1,
@@ -217,24 +1970,49 @@
       "reviewStatus": "VERIFIED_ORIGINAL",
       "passageId": null,
       "audioAssetId": null,
-      "sortIndex": 6
+      "sortIndex": 63
     },
     {
-      "id": "ITP-L1-04-Q07",
+      "id": "ITP-L1-04-Q064",
       "section": "STRUCTURE",
-      "taskType": "ERROR_IDENTIFICATION",
-      "prompt": "Because kelp [A] absorbs dissolved carbon rapidly, [B] marine botanists view [C] it as an [D] extreme valuable coastal habitat.",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Marine biologists emphasize ___ sea urchin grazing prevents turf algae from smothering rocky reefs.",
       "options": [
-        "[A] absorbs",
-        "[B] marine botanists",
-        "[C] it as an",
-        "[D] extreme valuable"
+        "which",
+        "how much is",
+        "that",
+        "what"
       ],
-      "answer": "[D] extreme valuable",
+      "answer": "that",
       "acceptedAnswers": [
-        "[D] extreme valuable"
+        "that"
       ],
-      "explanation": "Untuk memodifikasi adjektiva 'valuable', diperlukan adverb 'extremely', bukan adjektiva 'extreme'.",
+      "explanation": "Klausa nomina objek dari 'emphasize' diawali konjungsi 'that'.",
+      "rationaleSource": "ITP-MOD-03",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 64
+    },
+    {
+      "id": "ITP-L1-04-Q065",
+      "section": "STRUCTURE",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "___ between kelp canopy density and juvenile rockfish survival has guided marine park zoning since 2012.",
+      "options": [
+        "To correlate strongly",
+        "A strong correlation",
+        "Strongly correlated",
+        "Because correlating"
+      ],
+      "answer": "A strong correlation",
+      "acceptedAnswers": [
+        "A strong correlation"
+      ],
+      "explanation": "Posisi subjek sebelum preposisi 'between' membutuhkan frasa nomina 'A strong correlation'.",
       "rationaleSource": "ITP-MOD-04",
       "difficulty": "B2",
       "points": 1,
@@ -242,49 +2020,674 @@
       "reviewStatus": "VERIFIED_ORIGINAL",
       "passageId": null,
       "audioAssetId": null,
-      "sortIndex": 7
+      "sortIndex": 65
     },
     {
-      "id": "ITP-L1-04-Q08",
+      "id": "ITP-L1-04-Q066",
       "section": "STRUCTURE",
       "taskType": "ERROR_IDENTIFICATION",
-      "prompt": "The newly [A] minted coins weigh [B] slightly heavier [C] than those produced [D] in the previous decade.",
+      "prompt": "Kelp holdfasts anchor towering stalks [A] firmly to rocky reefs, [B] whereas sea otters [C] wrap themselves in blades [D] to prevent to drift away.",
       "options": [
-        "[A] minted coins",
-        "[B] slightly heavier",
-        "[C] than those",
-        "[D] in the previous decade"
+        "[A] firmly to rocky reefs,",
+        "[B] whereas sea otters",
+        "[C] wrap themselves in blades",
+        "[D] to prevent to drift away"
       ],
-      "answer": "[B] slightly heavier",
+      "answer": "[D] to prevent to drift away",
       "acceptedAnswers": [
-        "[B] slightly heavier"
+        "[D] to prevent to drift away"
       ],
-      "explanation": "Kata kerja 'weigh' diikuti keterangan ukuran atau adverb/nominal; perbandingan yang tepat: 'are slightly heavier than' atau 'weigh slightly more than'.",
+      "explanation": "'Prevent + drift' tidak memakai to-infinitive; gunakan 'drifting away' atau 'from drifting away'.",
+      "rationaleSource": "ITP-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 66
+    },
+    {
+      "id": "ITP-L1-04-Q067",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "When metallic coins [A] became too heavy [B] for caravan traders, [C] medieval merchants adopted promissory notes [D] back by warehouse silver.",
+      "options": [
+        "[A] became too heavy",
+        "[B] for caravan traders,",
+        "[C] medieval merchants adopted promissory notes",
+        "[D] back by warehouse silver"
+      ],
+      "answer": "[D] back by warehouse silver",
+      "acceptedAnswers": [
+        "[D] back by warehouse silver"
+      ],
+      "explanation": "Bentuk partisipial pasif yang tepat adalah 'backed by', bukan 'back by'.",
+      "rationaleSource": "ITP-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 67
+    },
+    {
+      "id": "ITP-L1-04-Q068",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "Oyster reefs filter [A] vast quantities of suspended silt, [B] allowing submerged eelgrass [C] meadows receiving ample [D] coastal sunlight.",
+      "options": [
+        "[A] vast quantities of suspended silt,",
+        "[B] allowing submerged eelgrass",
+        "[C] meadows receiving ample",
+        "[D] coastal sunlight"
+      ],
+      "answer": "[C] meadows receiving ample",
+      "acceptedAnswers": [
+        "[C] meadows receiving ample"
+      ],
+      "explanation": "'Allow + object' menuntut infinitive 'to receive', bukan participle 'receiving'.",
+      "rationaleSource": "ITP-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 68
+    },
+    {
+      "id": "ITP-L1-04-Q069",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "Although paper currency [A] lacked intrinsic metal value, [B] merchant guilds accepted it [C] whenever royal treasuries guaranteed [D] reliable convert.",
+      "options": [
+        "[A] lacked intrinsic metal value,",
+        "[B] merchant guilds accepted it",
+        "[C] whenever royal treasuries guaranteed",
+        "[D] reliable convert"
+      ],
+      "answer": "[D] reliable convert",
+      "acceptedAnswers": [
+        "[D] reliable convert"
+      ],
+      "explanation": "Setelah adjektiva 'reliable', diperlukan nomina 'conversion' atau 'convertibility', bukan verb 'convert'.",
       "rationaleSource": "ITP-MOD-04",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 69
+    },
+    {
+      "id": "ITP-L1-04-Q070",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "A declining population [A] of coastal sea otters [B] frequently allow purple sea urchins [C] to overgraze young [D] kelp shoots.",
+      "options": [
+        "[A] of coastal sea otters",
+        "[B] frequently allow purple sea urchins",
+        "[C] to overgraze young",
+        "[D] kelp shoots"
+      ],
+      "answer": "[B] frequently allow purple sea urchins",
+      "acceptedAnswers": [
+        "[B] frequently allow purple sea urchins"
+      ],
+      "explanation": "Subjek inti 'A declining population' tunggal sehingga verba harus 'allows'.",
+      "rationaleSource": "ITP-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 70
+    },
+    {
+      "id": "ITP-L1-04-Q071",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "Central banks inspect [A] worn cotton-linen banknotes [B] careful before shredding batches [C] unfit for automatic [D] sorting machines.",
+      "options": [
+        "[A] worn cotton-linen banknotes",
+        "[B] careful before shredding batches",
+        "[C] unfit for automatic",
+        "[D] sorting machines"
+      ],
+      "answer": "[B] careful before shredding batches",
+      "acceptedAnswers": [
+        "[B] careful before shredding batches"
+      ],
+      "explanation": "Verba 'inspect' dimodifikasi oleh adverb 'carefully', bukan adjektiva 'careful'.",
+      "rationaleSource": "ITP-MOD-04",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 71
+    },
+    {
+      "id": "ITP-L1-04-Q072",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "Sea urchins [A] thrive in barren zones [B] where predatory otters [C] have been eliminate [D] by historical fur harvests.",
+      "options": [
+        "[A] thrive in barren zones",
+        "[B] where predatory otters",
+        "[C] have been eliminate",
+        "[D] by historical fur harvests"
+      ],
+      "answer": "[C] have been eliminate",
+      "acceptedAnswers": [
+        "[C] have been eliminate"
+      ],
+      "explanation": "Passive present perfect membutuhkan past participle 'eliminated'.",
+      "rationaleSource": "ITP-MOD-08",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 72
+    },
+    {
+      "id": "ITP-L1-04-Q073",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "Between silver florins and paper bills [A] lie an evolutionary shift [B] in how port merchants [C] settled regional [D] spice debts.",
+      "options": [
+        "[A] lie an evolutionary shift",
+        "[B] in how port merchants",
+        "[C] settled regional",
+        "[D] spice debts"
+      ],
+      "answer": "[A] lie an evolutionary shift",
+      "acceptedAnswers": [
+        "[A] lie an evolutionary shift"
+      ],
+      "explanation": "Subjek inversi tunggal 'an evolutionary shift' menuntut kata kerja tunggal 'lies'.",
+      "rationaleSource": "ITP-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 73
+    },
+    {
+      "id": "ITP-L1-04-Q074",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "Marine conservationists [A] have spent decades [B] to restore kelp canopies [C] along degraded rocky coasts [D] across northern California.",
+      "options": [
+        "[A] have spent decades",
+        "[B] to restore kelp canopies",
+        "[C] along degraded rocky coasts",
+        "[D] across northern California"
+      ],
+      "answer": "[B] to restore kelp canopies",
+      "acceptedAnswers": [
+        "[B] to restore kelp canopies"
+      ],
+      "explanation": "Konstruksi 'spend + duration + V-ing' memerlukan 'restoring'.",
+      "rationaleSource": "ITP-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 74
+    },
+    {
+      "id": "ITP-L1-04-Q075",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "Trade routes linking [A] Pacific silver mines with port banks [B] grew so extensive [C] that local copper coins [D] could not longer meet demand.",
+      "options": [
+        "[A] Pacific silver mines with port banks",
+        "[B] grew so extensive",
+        "[C] that local copper coins",
+        "[D] could not longer meet demand"
+      ],
+      "answer": "[D] could not longer meet demand",
+      "acceptedAnswers": [
+        "[D] could not longer meet demand"
+      ],
+      "explanation": "Ungkapan waktu negatif yang benar adalah 'no longer', bukan 'not longer'.",
+      "rationaleSource": "ITP-MOD-04",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 75
+    },
+    {
+      "id": "ITP-L1-04-Q076",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "Coral larvae drifting on [A] warm equatorial currents [B] rely in chemical reef cues [C] to settle onto clean [D] calcified substrates.",
+      "options": [
+        "[A] warm equatorial currents",
+        "[B] rely in chemical reef cues",
+        "[C] to settle onto clean",
+        "[D] calcified substrates"
+      ],
+      "answer": "[B] rely in chemical reef cues",
+      "acceptedAnswers": [
+        "[B] rely in chemical reef cues"
+      ],
+      "explanation": "Kata kerja 'rely' selalu berpasangan dengan preposisi 'on', bukan 'in'.",
+      "rationaleSource": "ITP-MOD-09",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 76
+    },
+    {
+      "id": "ITP-L1-04-Q077",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "Unlike fragile clay tallies, [A] stamped lead-tin tokens [B] endured damp harbor storage [C] without corroding as rapid [D] as iron.",
+      "options": [
+        "[A] stamped lead-tin tokens",
+        "[B] endured damp harbor storage",
+        "[C] without corroding as rapid",
+        "[D] as iron"
+      ],
+      "answer": "[C] without corroding as rapid",
+      "acceptedAnswers": [
+        "[C] without corroding as rapid"
+      ],
+      "explanation": "Pola kesetaraan 'as + adverb + as' memerlukan 'as rapidly as'.",
+      "rationaleSource": "ITP-MOD-04",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 77
+    },
+    {
+      "id": "ITP-L1-04-Q078",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "Economists note [A] that excess paper money [B] printed without backing [C] rarely retain [D] steady purchasing power abroad.",
+      "options": [
+        "[A] that excess paper money",
+        "[B] printed without backing",
+        "[C] rarely retain",
+        "[D] steady purchasing power abroad"
+      ],
+      "answer": "[C] rarely retain",
+      "acceptedAnswers": [
+        "[C] rarely retain"
+      ],
+      "explanation": "Subjek tak terhitung 'excess paper money' menuntut verba tunggal 'retains'.",
+      "rationaleSource": "ITP-MOD-03",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 78
+    },
+    {
+      "id": "ITP-L1-04-Q079",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "Early diving bells [A] supplied compressed surface air [B] so pearl harvesters [C] could working beneath twenty feet [D] of salty seawater.",
+      "options": [
+        "[A] supplied compressed surface air",
+        "[B] so pearl harvesters",
+        "[C] could working beneath twenty feet",
+        "[D] of salty seawater"
+      ],
+      "answer": "[C] could working beneath twenty feet",
+      "acceptedAnswers": [
+        "[C] could working beneath twenty feet"
+      ],
+      "explanation": "Setelah modal 'could', gunakan bare infinitive 'work', bukan 'working'.",
+      "rationaleSource": "ITP-MOD-08",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 79
+    },
+    {
+      "id": "ITP-L1-04-Q080",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "Both kelp fronds [A] and sea-grass meadows [B] absorbs dissolved coastal carbon [C] while shielding shallow [D] shorelines from storms.",
+      "options": [
+        "[A] and sea-grass meadows",
+        "[B] absorbs dissolved coastal carbon",
+        "[C] while shielding shallow",
+        "[D] shorelines from storms"
+      ],
+      "answer": "[B] absorbs dissolved coastal carbon",
+      "acceptedAnswers": [
+        "[B] absorbs dissolved coastal carbon"
+      ],
+      "explanation": "Subjek majemuk 'Both A and B' memerlukan verba jamak 'absorb', tanpa -s.",
+      "rationaleSource": "ITP-MOD-03",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 80
+    },
+    {
+      "id": "ITP-L1-04-Q081",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "Ancient goldsmiths tested [A] coin purity on smooth touchstones [B] because pure gold leaves [C] a streak noticeably bright [D] than brass.",
+      "options": [
+        "[A] coin purity on smooth touchstones",
+        "[B] because pure gold leaves",
+        "[C] a streak noticeably bright",
+        "[D] than brass"
+      ],
+      "answer": "[C] a streak noticeably bright",
+      "acceptedAnswers": [
+        "[C] a streak noticeably bright"
+      ],
+      "explanation": "Pembanding sebelum 'than' harus berbentuk komparatif 'brighter'.",
+      "rationaleSource": "ITP-MOD-04",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 81
+    },
+    {
+      "id": "ITP-L1-04-Q082",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "When storm tides strip [A] protective outer dunes, salt spray [B] can seep into aquifers, [C] rendering coastal wells [D] temporarily undrinkably.",
+      "options": [
+        "[A] protective outer dunes, salt spray",
+        "[B] can seep into aquifers,",
+        "[C] rendering coastal wells",
+        "[D] temporarily undrinkably"
+      ],
+      "answer": "[D] temporarily undrinkably",
+      "acceptedAnswers": [
+        "[D] temporarily undrinkably"
+      ],
+      "explanation": "'Render + object + adjective' memerlukan 'undrinkable', bukan adverb 'undrinkably'.",
+      "rationaleSource": "ITP-MOD-04",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 82
+    },
+    {
+      "id": "ITP-L1-04-Q083",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "Merchants preferred bills [A] of exchange over gold chests [B] partly because bandits [C] found paper drafts [D] harder for cash.",
+      "options": [
+        "[A] of exchange over gold chests",
+        "[B] partly because bandits",
+        "[C] found paper drafts",
+        "[D] harder for cash"
+      ],
+      "answer": "[D] harder for cash",
+      "acceptedAnswers": [
+        "[D] harder for cash"
+      ],
+      "explanation": "Adjektiva 'harder' diikuti to-infinitive ('harder to cash'), bukan 'for cash'.",
+      "rationaleSource": "ITP-MOD-08",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 83
+    },
+    {
+      "id": "ITP-L1-04-Q084",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "Kelp spores disperse quickly [A] during spring upwelling, [B] settling on sunlit boulders [C] who were recently cleared [D] by winter waves.",
+      "options": [
+        "[A] during spring upwelling,",
+        "[B] settling on sunlit boulders",
+        "[C] who were recently cleared",
+        "[D] by winter waves"
+      ],
+      "answer": "[C] who were recently cleared",
+      "acceptedAnswers": [
+        "[C] who were recently cleared"
+      ],
+      "explanation": "'Boulders' adalah benda mati -> gunakan 'that/which', bukan 'who'.",
+      "rationaleSource": "ITP-MOD-03",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 84
+    },
+    {
+      "id": "ITP-L1-04-Q085",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "Despite its compact size, [A] the coastal estuary [B] nurtures a surprising [C] diverse number of juvenile [D] crab species.",
+      "options": [
+        "[A] the coastal estuary",
+        "[B] nurtures a surprising",
+        "[C] diverse number of juvenile",
+        "[D] crab species"
+      ],
+      "answer": "[B] nurtures a surprising",
+      "acceptedAnswers": [
+        "[B] nurtures a surprising"
+      ],
+      "explanation": "Adjektiva 'diverse' dimodifikasi oleh adverb 'surprisingly', bukan adjektiva 'surprising'.",
+      "rationaleSource": "ITP-MOD-04",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 85
+    },
+    {
+      "id": "ITP-L1-04-Q086",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "Early marine economists [A] realized that port tariffs [B] functioned best when rates [C] remained uniformly across [D] competing harbor towns.",
+      "options": [
+        "[A] realized that port tariffs",
+        "[B] functioned best when rates",
+        "[C] remained uniformly across",
+        "[D] competing harbor towns"
+      ],
+      "answer": "[C] remained uniformly across",
+      "acceptedAnswers": [
+        "[C] remained uniformly across"
+      ],
+      "explanation": "Linking verb 'remained' wajib diikuti adjektiva 'uniform', bukan adverb 'uniformly'.",
+      "rationaleSource": "ITP-MOD-04",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 86
+    },
+    {
+      "id": "ITP-L1-04-Q087",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "Because giant kelp [A] lacks true woody roots, [B] winter storms frequently tear whole plants [C] loose and pile [D] it along sandy coves.",
+      "options": [
+        "[A] lacks true woody roots,",
+        "[B] winter storms frequently tear whole plants",
+        "[C] loose and pile",
+        "[D] it along sandy coves"
+      ],
+      "answer": "[D] it along sandy coves",
+      "acceptedAnswers": [
+        "[D] it along sandy coves"
+      ],
+      "explanation": "Pronomina mengacu ke 'whole plants' jamak -> seharusnya 'pile them'.",
+      "rationaleSource": "ITP-MOD-04",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 87
+    },
+    {
+      "id": "ITP-L1-04-Q088",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "Harbor accountants kept [A] duplicate parchment ledgers [B] locked inside cedar chests [C] lest accidental fires [D] destroying annual tax rolls.",
+      "options": [
+        "[A] duplicate parchment ledgers",
+        "[B] locked inside cedar chests",
+        "[C] lest accidental fires",
+        "[D] destroying annual tax rolls"
+      ],
+      "answer": "[D] destroying annual tax rolls",
+      "acceptedAnswers": [
+        "[D] destroying annual tax rolls"
+      ],
+      "explanation": "Sesudah 'lest', kata kerja harus dalam bentuk dasar subjunctive 'destroy', bukan participle 'destroying'.",
+      "rationaleSource": "ITP-MOD-03",
       "difficulty": "C1",
       "points": 1,
       "license": "Original",
       "reviewStatus": "VERIFIED_ORIGINAL",
       "passageId": null,
       "audioAssetId": null,
-      "sortIndex": 8
+      "sortIndex": 88
     },
     {
-      "id": "ITP-L1-04-Q09",
+      "id": "ITP-L1-04-Q089",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "By coating copper coins [A] in thin silver wash, [B] cash-strapped rulers temporarily fooled traders [C] until scales exposed [D] the deceptively weight.",
+      "options": [
+        "[A] in thin silver wash,",
+        "[B] cash-strapped rulers temporarily fooled traders",
+        "[C] until scales exposed",
+        "[D] the deceptively weight"
+      ],
+      "answer": "[D] the deceptively weight",
+      "acceptedAnswers": [
+        "[D] the deceptively weight"
+      ],
+      "explanation": "Kata benda 'weight' harus dimodifikasi adjektiva 'deceptive', bukan adverb 'deceptively'.",
+      "rationaleSource": "ITP-MOD-04",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 89
+    },
+    {
+      "id": "ITP-L1-04-Q090",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "Saltwater fish regulate [A] internal osmotic pressure [B] differently from [C] freshwater minnows, which rarely [D] survives sudden ocean salinity.",
+      "options": [
+        "[A] internal osmotic pressure",
+        "[B] differently from",
+        "[C] freshwater minnows, which rarely",
+        "[D] survives sudden ocean salinity"
+      ],
+      "answer": "[D] survives sudden ocean salinity",
+      "acceptedAnswers": [
+        "[D] survives sudden ocean salinity"
+      ],
+      "explanation": "Pronomina 'which' merujuk ke nomina jamak 'freshwater minnows', sehingga kata kerja harus 'survive' tanpa -s.",
+      "rationaleSource": "ITP-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 90
+    },
+    {
+      "id": "ITP-L1-04-Q091",
       "section": "READING",
       "taskType": "CHOICE_SINGLE",
-      "prompt": "In Passage 1 ('Sea Otters and Kelp Forest Stability'), what happens when sea otters disappear from a coastal zone?",
+      "prompt": "Passage 1 ('Kelp Canopy Trophic Cascades in Pacific Waters') — Q1/10: How do giant kelp stalks stay suspended upright inside sunlit upper ocean layers?",
       "options": [
-        "Sea urchins multiply and strip kelp forests down to bare rock.",
-        "Juvenile fish rapidly replace kelp holdfasts.",
-        "Ocean swells flatten rocky shorelines completely.",
-        "Kelp canopies grow twice as thick without grazing."
+        "Submarine thermal vents pump warm helium bubbles underneath holdfasts.",
+        "Gas-filled bladders buoy buoyant leaf-like blades toward shallow surface sunshine.",
+        "Woody deep taproots tunnel meters into cold granite harbor stone.",
+        "Migratory rockfish lift broken kelp tips daily toward surface swells."
       ],
-      "answer": "Sea urchins multiply and strip kelp forests down to bare rock.",
+      "answer": "Gas-filled bladders buoy buoyant leaf-like blades toward shallow surface sunshine.",
       "acceptedAnswers": [
-        "Sea urchins multiply and strip kelp forests down to bare rock."
+        "Gas-filled bladders buoy buoyant leaf-like blades toward shallow surface sunshine."
       ],
-      "explanation": "Teks menjelaskan ledakan populasi bulu babi memakan pangkal kelp hingga menyisakan 'urchin barrens'.",
+      "explanation": "Kantung gas mengangkat helaian kelp mendekati cahaya matahari di permukaan.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP04-P1",
+      "audioAssetId": null,
+      "sortIndex": 91
+    },
+    {
+      "id": "ITP-L1-04-Q092",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 1 ('Kelp Canopy Trophic Cascades in Pacific Waters') — Q2/10: In marine biology, how does a kelp 'holdfast' differ from an oak tree root?",
+      "options": [
+        "Holdfasts anchor mechanically to rock without pulling groundwater nutrients underground.",
+        "Holdfasts manufacture sugar underground inside dark sediment beds.",
+        "Holdfasts swim freely whenever winter storms uproot reef boulders.",
+        "Holdfasts repel purple sea urchins by injecting hot oil sap."
+      ],
+      "answer": "Holdfasts anchor mechanically to rock without pulling groundwater nutrients underground.",
+      "acceptedAnswers": [
+        "Holdfasts anchor mechanically to rock without pulling groundwater nutrients underground."
+      ],
+      "explanation": "Holdfast menambat ke batu tanpa menyerap nutrien tanah; nutrien diserap lewat helaian daun.",
       "rationaleSource": "ITP-MOD-05",
       "difficulty": "B2",
       "points": 1,
@@ -292,24 +2695,49 @@
       "reviewStatus": "VERIFIED_ORIGINAL",
       "passageId": "ITP04-P1",
       "audioAssetId": null,
-      "sortIndex": 9
+      "sortIndex": 92
     },
     {
-      "id": "ITP-L1-04-Q10",
+      "id": "ITP-L1-04-Q093",
       "section": "READING",
       "taskType": "CHOICE_SINGLE",
-      "prompt": "In Passage 1, the word 'dampen' is closest in meaning to:",
+      "prompt": "Passage 1 ('Kelp Canopy Trophic Cascades in Pacific Waters') — Q3/10: What triggers rapid destruction of a lush kelp cove into an 'urchin barren'?",
       "options": [
-        "weaken",
-        "soak",
-        "amplify",
-        "freeze"
+        "Abundant coastal whales graze young blades before nitrogen rises.",
+        "Heavy summer rains dilute ocean salt along shallow kelp blades.",
+        "Warm kelp bladders burst under bright autumn midday stars.",
+        "Removal of sea otters releases exploding purple urchin populations onto live kelp stems."
       ],
-      "answer": "weaken",
+      "answer": "Removal of sea otters releases exploding purple urchin populations onto live kelp stems.",
       "acceptedAnswers": [
-        "weaken"
+        "Removal of sea otters releases exploding purple urchin populations onto live kelp stems."
       ],
-      "explanation": "Dalam konteks 'dampen destructive ocean swells', 'dampen' bermakna meredam/melemahkan kekuatan ombak.",
+      "explanation": "Ketidakhadiran berang-berang pemangsa memicu ledakan bulu babi yang memutus pangkal kelp.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP04-P1",
+      "audioAssetId": null,
+      "sortIndex": 93
+    },
+    {
+      "id": "ITP-L1-04-Q094",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 1 ('Kelp Canopy Trophic Cascades in Pacific Waters') — Q4/10: Why must Pacific sea otters consume roughly a quarter of their weight every day?",
+      "options": [
+        "Swimming between ocean trenches exhausts thick heavy bones hourly.",
+        "Cold currents dissolve oily otter whisker cells daily.",
+        "Rapid metabolism offsets heat loss because they rely on fur air pockets instead of fat blubber.",
+        "Kelp fronds carry almost zero mineral calories for diving mammals."
+      ],
+      "answer": "Rapid metabolism offsets heat loss because they rely on fur air pockets instead of fat blubber.",
+      "acceptedAnswers": [
+        "Rapid metabolism offsets heat loss because they rely on fur air pockets instead of fat blubber."
+      ],
+      "explanation": "Tanpa lemak blubber, metabolisme tinggi menghasilkan panas tubuh bersama lapisan udara pada rambut rapat.",
       "rationaleSource": "ITP-MOD-05",
       "difficulty": "B2",
       "points": 1,
@@ -317,24 +2745,174 @@
       "reviewStatus": "VERIFIED_ORIGINAL",
       "passageId": "ITP04-P1",
       "audioAssetId": null,
-      "sortIndex": 10
+      "sortIndex": 94
     },
     {
-      "id": "ITP-L1-04-Q11",
+      "id": "ITP-L1-04-Q095",
       "section": "READING",
       "taskType": "CHOICE_SINGLE",
-      "prompt": "According to Passage 2 ('Cotton-Linen Durability in Banknotes'), why does ordinary office paper turn brittle over time?",
+      "prompt": "Passage 1 ('Kelp Canopy Trophic Cascades in Pacific Waters') — Q5/10: The word 'desolate' in sentence 3 is closest in meaning to:",
       "options": [
-        "It is made from wood pulp containing short fibers and lignin.",
-        "It is washed inside high-temperature machines.",
-        "It lacks metallic security threads.",
-        "It uses too much long-staple cotton."
+        "profitable",
+        "barren",
+        "teeming",
+        "colorful"
       ],
-      "answer": "It is made from wood pulp containing short fibers and lignin.",
+      "answer": "barren",
       "acceptedAnswers": [
-        "It is made from wood pulp containing short fibers and lignin."
+        "barren"
       ],
-      "explanation": "Kalimat pertama menyebut 'wood pulp contains short cellulose fibers and lignin that turns brittle with oxidation'.",
+      "explanation": "'Desolate stony barrens' bermakna gersang/tandus.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP04-P1",
+      "audioAssetId": null,
+      "sortIndex": 95
+    },
+    {
+      "id": "ITP-L1-04-Q096",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 1 ('Kelp Canopy Trophic Cascades in Pacific Waters') — Q6/10: What does 'they' or 'maintaining' highlight about sea otter pelage?",
+      "options": [
+        "Densely packed dry fur layers trap warm air cleanly against chilly Pacific currents.",
+        "Dense hair shafts harden into spiny armor blocking sea urchin bites.",
+        "Shed winter furs anchor floating rockfish nests gently inside kelp.",
+        "Greasy whale blubber clings permanently atop thin otter paws."
+      ],
+      "answer": "Densely packed dry fur layers trap warm air cleanly against chilly Pacific currents.",
+      "acceptedAnswers": [
+        "Densely packed dry fur layers trap warm air cleanly against chilly Pacific currents."
+      ],
+      "explanation": "Rambut sangat rapat menahan udara hangat terhadap air laut dingin.",
+      "rationaleSource": "ITP-MOD-10",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP04-P1",
+      "audioAssetId": null,
+      "sortIndex": 96
+    },
+    {
+      "id": "ITP-L1-04-Q097",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 1 ('Kelp Canopy Trophic Cascades in Pacific Waters') — Q7/10: The word 'snag'—Wait, no 'snag' here; check 'sheltering' -> 'sheltering juvenile rockfish' means:",
+      "options": [
+        "freezing tiny fish eggs solid during December gales",
+        "trapping drifting seaweed plastic beneath stones",
+        "supplying freshwater pools for newborn seals",
+        "protecting young fish from open-ocean predators"
+      ],
+      "answer": "protecting young fish from open-ocean predators",
+      "acceptedAnswers": [
+        "protecting young fish from open-ocean predators"
+      ],
+      "explanation": "'Sheltering juvenile rockfish' berarti melindungi anak ikan.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP04-P1",
+      "audioAssetId": null,
+      "sortIndex": 97
+    },
+    {
+      "id": "ITP-L1-04-Q098",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 1 ('Kelp Canopy Trophic Cascades in Pacific Waters') — Q8/10: Where do kelp plants absorb dissolved nitrogen and phosphorus minerals?",
+      "options": [
+        "Directly from airborne coastal sea fog drips.",
+        "Exclusively through stinging urchin spines.",
+        "Across floating blade surfaces bathed in circulating coastal currents.",
+        "Solely through burrowing rockworm tunnels under granite slabs."
+      ],
+      "answer": "Across floating blade surfaces bathed in circulating coastal currents.",
+      "acceptedAnswers": [
+        "Across floating blade surfaces bathed in circulating coastal currents."
+      ],
+      "explanation": "'absorbing dissolved nutrients through floating blades'.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP04-P1",
+      "audioAssetId": null,
+      "sortIndex": 98
+    },
+    {
+      "id": "ITP-L1-04-Q099",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 1 ('Kelp Canopy Trophic Cascades in Pacific Waters') — Q9/10: Which feature is NOT true of giant kelp according to the text?",
+      "options": [
+        "Predatory otters help stabilize thriving kelp habitats.",
+        "Kelp stalks grow slowly, requiring ten decades to rise one meter.",
+        "Vertical kelp beds host diverse fish and invertebrate life.",
+        "Kelp nutrition comes straight from surrounding water rather than stone."
+      ],
+      "answer": "Kelp stalks grow slowly, requiring ten decades to rise one meter.",
+      "acceptedAnswers": [
+        "Kelp stalks grow slowly, requiring ten decades to rise one meter."
+      ],
+      "explanation": "Teks tidak menyatakan pertumbuhan lambat seabad; kelp tumbuh subur membentuk hutan 30 meter.",
+      "rationaleSource": "ITP-MOD-10",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP04-P1",
+      "audioAssetId": null,
+      "sortIndex": 99
+    },
+    {
+      "id": "ITP-L1-04-Q100",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 1 ('Kelp Canopy Trophic Cascades in Pacific Waters') — Q10/10: What general ecological lesson does the passage demonstrate?",
+      "options": [
+        "Top-level marine predators play vital indirect roles sustaining primary underwater habitats.",
+        "Sea otters and sea urchins collaborate equally to harvest crab eggs.",
+        "Clear rocky coves support denser fish populations than shadowy kelp reefs.",
+        "Removing slow grazers shrinks Pacific shellfish harvests cleanly."
+      ],
+      "answer": "Top-level marine predators play vital indirect roles sustaining primary underwater habitats.",
+      "acceptedAnswers": [
+        "Top-level marine predators play vital indirect roles sustaining primary underwater habitats."
+      ],
+      "explanation": "Predator tingkat puncak secara tidak langsung menjaga keutuhan ekosistem produsen.",
+      "rationaleSource": "ITP-MOD-10",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP04-P1",
+      "audioAssetId": null,
+      "sortIndex": 100
+    },
+    {
+      "id": "ITP-L1-04-Q101",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 2 ('Medieval Flying-Cash Receipts and Representative Paper Money') — Q1/10: What practical logistics barrier led merchants to pioneer early paper receipts in China?",
+      "options": [
+        "Southern tea merchants refused accepting shiny bronze strings due to rust.",
+        "Gold nuggets evaporated rapidly inside humid summer bamboo wagons.",
+        "Mountain rivers washed out silk caravan tollbooths annually.",
+        "Carrying heaps of heavy metal coin strings invited theft and taxed long-distance beasts."
+      ],
+      "answer": "Carrying heaps of heavy metal coin strings invited theft and taxed long-distance beasts.",
+      "acceptedAnswers": [
+        "Carrying heaps of heavy metal coin strings invited theft and taxed long-distance beasts."
+      ],
+      "explanation": "Koin logam yang sangat berat menyulitkan angkut jarak jauh dan rawan perampokan.",
       "rationaleSource": "ITP-MOD-05",
       "difficulty": "B1",
       "points": 1,
@@ -342,24 +2920,49 @@
       "reviewStatus": "VERIFIED_ORIGINAL",
       "passageId": "ITP04-P2",
       "audioAssetId": null,
-      "sortIndex": 11
+      "sortIndex": 101
     },
     {
-      "id": "ITP-L1-04-Q12",
+      "id": "ITP-L1-04-Q102",
       "section": "READING",
       "taskType": "CHOICE_SINGLE",
-      "prompt": "What does Passage 2 imply about banknote paper compared with office paper?",
+      "prompt": "Passage 2 ('Medieval Flying-Cash Receipts and Representative Paper Money') — Q2/10: What were 'feiqian' and 'jiaozi' in practical everyday commerce?",
       "options": [
-        "Acid-free long fibers make banknotes far more resistant to repeated folding.",
-        "Banknotes tear faster when exposed to humid air.",
-        "Office paper costs central banks more to weave.",
-        "Lignin increases the lifespan of currency bills."
+        "Encrypted stone seals forbidding bronze exports over mountains.",
+        "Silver weights cast evenly to balance spice trays.",
+        "Redeemable stamped paper deposit certificates representing stored metal coins.",
+        "Fast wooden sailboats hauling heavy tea bricks northward."
       ],
-      "answer": "Acid-free long fibers make banknotes far more resistant to repeated folding.",
+      "answer": "Redeemable stamped paper deposit certificates representing stored metal coins.",
       "acceptedAnswers": [
-        "Acid-free long fibers make banknotes far more resistant to repeated folding."
+        "Redeemable stamped paper deposit certificates representing stored metal coins."
       ],
-      "explanation": "Teks mengkontraskan daya tahan lipatan ribuan kali dari campuran kapas-linen bebas asam.",
+      "explanation": "Keduanya adalah surat tanda simpan/promes yang dapat ditukar uang koin di kota lain.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP04-P2",
+      "audioAssetId": null,
+      "sortIndex": 102
+    },
+    {
+      "id": "ITP-L1-04-Q103",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 2 ('Medieval Flying-Cash Receipts and Representative Paper Money') — Q3/10: The word 'circumvented' in paragraph 1 is closest in meaning to:",
+      "options": [
+        "taxed",
+        "bypassed",
+        "multiplied",
+        "engraved"
+      ],
+      "answer": "bypassed",
+      "acceptedAnswers": [
+        "bypassed"
+      ],
+      "explanation": "'Circumvented cumbersome metal carts' berarti menghindari/mengakali hambatan pengiriman logam.",
       "rationaleSource": "ITP-MOD-05",
       "difficulty": "B2",
       "points": 1,
@@ -367,8 +2970,933 @@
       "reviewStatus": "VERIFIED_ORIGINAL",
       "passageId": "ITP04-P2",
       "audioAssetId": null,
-      "sortIndex": 12
+      "sortIndex": 103
+    },
+    {
+      "id": "ITP-L1-04-Q104",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 2 ('Medieval Flying-Cash Receipts and Representative Paper Money') — Q4/10: Why did early Song paper currency enjoy widespread acceptance among distant merchants?",
+      "options": [
+        "Each promissory slip corresponded directly to verifiable coin deposits locked in vaults.",
+        "Every traveler earned ten percent gold interest weekly just holding paper slips.",
+        "Royal patrols executed anyone using iron coins after 900 CE.",
+        "Bamboo rag paper tasted medicinal when boiled by tea caravan cooks."
+      ],
+      "answer": "Each promissory slip corresponded directly to verifiable coin deposits locked in vaults.",
+      "acceptedAnswers": [
+        "Each promissory slip corresponded directly to verifiable coin deposits locked in vaults."
+      ],
+      "explanation": "Kepercayaan bertumpu pada jaminan penukaran penuh 1:1 terhadap koin tersimpan.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP04-P2",
+      "audioAssetId": null,
+      "sortIndex": 104
+    },
+    {
+      "id": "ITP-L1-04-Q105",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 2 ('Medieval Flying-Cash Receipts and Representative Paper Money') — Q5/10: What triggered sudden collapse of confidence in unbacked regional notes?",
+      "options": [
+        "Mice destroyed wooden guild treasuries across harbor piers.",
+        "Heavy monsoon storms washed iron printing stamps downstream.",
+        "Buyers demanded silver spoons exclusively for afternoon tea.",
+        "Printing excess sheets past real vault metal eroded buying value via steep inflation."
+      ],
+      "answer": "Printing excess sheets past real vault metal eroded buying value via steep inflation.",
+      "acceptedAnswers": [
+        "Printing excess sheets past real vault metal eroded buying value via steep inflation."
+      ],
+      "explanation": "Pencetakan berlebih tanpa cadangan logam memicu inflasi tajam dan hilangnya kepercayaan.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP04-P2",
+      "audioAssetId": null,
+      "sortIndex": 105
+    },
+    {
+      "id": "ITP-L1-04-Q106",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 2 ('Medieval Flying-Cash Receipts and Representative Paper Money') — Q6/10: The word 'cumbersome' in sentence 1 is closest in meaning to:",
+      "options": [
+        "profitable",
+        "transparent",
+        "unwieldy",
+        "delicate"
+      ],
+      "answer": "unwieldy",
+      "acceptedAnswers": [
+        "unwieldy"
+      ],
+      "explanation": "'Cumbersome metal carts' berarti berat dan merepotkan diangkut.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP04-P2",
+      "audioAssetId": null,
+      "sortIndex": 106
+    },
+    {
+      "id": "ITP-L1-04-Q107",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 2 ('Medieval Flying-Cash Receipts and Representative Paper Money') — Q7/10: What does the phrase 'representative paper' mean in paragraph 2?",
+      "options": [
+        "Paper tea wrappers stamped by southern dock customs clerks.",
+        "Certificates standing in for tangible vault metal exchangeable on demand.",
+        "Handwritten travel journals describing silk mountain scenery.",
+        "Blank accounting pads carried exclusively by caravan bookkeepers."
+      ],
+      "answer": "Certificates standing in for tangible vault metal exchangeable on demand.",
+      "acceptedAnswers": [
+        "Certificates standing in for tangible vault metal exchangeable on demand."
+      ],
+      "explanation": "Uang representatif mewakili logam nyata yang dapat ditebus di brankas penyimpan.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP04-P2",
+      "audioAssetId": null,
+      "sortIndex": 107
+    },
+    {
+      "id": "ITP-L1-04-Q108",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 2 ('Medieval Flying-Cash Receipts and Representative Paper Money') — Q8/10: Which region produced tea transported across those inland merchant routes?",
+      "options": [
+        "Southern Chinese markets linking with northern Yellow River centers.",
+        "Desert oasis towns beyond Atlantic ocean harbors.",
+        "Snowy Scandinavian copper mines.",
+        "Medieval Venetian wool lagoons."
+      ],
+      "answer": "Southern Chinese markets linking with northern Yellow River centers.",
+      "acceptedAnswers": [
+        "Southern Chinese markets linking with northern Yellow River centers."
+      ],
+      "explanation": "Jalur menghubungkan pasar teh selatan dengan pusat gandum Sungai Kuning.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP04-P2",
+      "audioAssetId": null,
+      "sortIndex": 108
+    },
+    {
+      "id": "ITP-L1-04-Q109",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 2 ('Medieval Flying-Cash Receipts and Representative Paper Money') — Q9/10: Which lesson of monetary economics is illustrated by this passage?",
+      "options": [
+        "Bronze strings outperform paper systems during rapid continental commerce.",
+        "Hidden mountain bandits accelerated gold vault coin stamping.",
+        "Governors eliminated inflation forever by banning tea harvests.",
+        "Paper currency value hinges cleanly on disciplined supply and institutional trust."
+      ],
+      "answer": "Paper currency value hinges cleanly on disciplined supply and institutional trust.",
+      "acceptedAnswers": [
+        "Paper currency value hinges cleanly on disciplined supply and institutional trust."
+      ],
+      "explanation": "Nilai uang kertas bergantung pada disiplin jumlah beredar serta kepercayaan penebusan.",
+      "rationaleSource": "ITP-MOD-10",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP04-P2",
+      "audioAssetId": null,
+      "sortIndex": 109
+    },
+    {
+      "id": "ITP-L1-04-Q110",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 2 ('Medieval Flying-Cash Receipts and Representative Paper Money') — Q10/10: Which detail is NOT mentioned regarding Tang/Song promissory exchanges?",
+      "options": [
+        "Preventing physical metal ambush along hazardous passes.",
+        "Seeing over-printed unbacked batches trigger price spikes.",
+        "Installing cast-iron steam coin presses along rural mountain roads.",
+        "Using stamped receipts across partner offices hundreds of miles apart."
+      ],
+      "answer": "Installing cast-iron steam coin presses along rural mountain roads.",
+      "acceptedAnswers": [
+        "Installing cast-iron steam coin presses along rural mountain roads."
+      ],
+      "explanation": "Mesin cetak bertenaga uap jelas anakronistik dan tidak pernah disebut.",
+      "rationaleSource": "ITP-MOD-10",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP04-P2",
+      "audioAssetId": null,
+      "sortIndex": 110
+    },
+    {
+      "id": "ITP-L1-04-Q111",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 3 ('Living Eastern Oyster Reefs and Coastal Resilience') — Q1/10: What dual ecological and engineering benefits do healthy Eastern oyster reefs supply?",
+      "options": [
+        "Deepening mud harbor shipping canals artificially overnight.",
+        "Clarifying turbid lagoon water while breaking destructive storm wave energy.",
+        "Freezing salty marsh channels solid while harvesting shrimp larvae.",
+        "Producing fresh culinary salt bricks while heating winter estuaries."
+      ],
+      "answer": "Clarifying turbid lagoon water while breaking destructive storm wave energy.",
+      "acceptedAnswers": [
+        "Clarifying turbid lagoon water while breaking destructive storm wave energy."
+      ],
+      "explanation": "Terumbu tiram menyaring kekeruhan air sekaligus meredam energi gelombang badai.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP04-P3",
+      "audioAssetId": null,
+      "sortIndex": 111
+    },
+    {
+      "id": "ITP-L1-04-Q112",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 3 ('Living Eastern Oyster Reefs and Coastal Resilience') — Q2/10: How does clearer lagoon water resulting from oyster filtration aid seagrass growth?",
+      "options": [
+        "Removing suspended silt allows life-sustaining sunlight to strike underwater grass blades.",
+        "Oysters excrete warm salt crystals melting winter surface frost.",
+        "Eelgrass roots consume whole living oyster shells for potassium.",
+        "Clear calm bays stop sea turtles from digging muddy trenches."
+      ],
+      "answer": "Removing suspended silt allows life-sustaining sunlight to strike underwater grass blades.",
+      "acceptedAnswers": [
+        "Removing suspended silt allows life-sustaining sunlight to strike underwater grass blades."
+      ],
+      "explanation": "Penjernihan sedimen melayang membuka penetrasi cahaya matahari bagi padang lamun.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP04-P3",
+      "audioAssetId": null,
+      "sortIndex": 112
+    },
+    {
+      "id": "ITP-L1-04-Q113",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 3 ('Living Eastern Oyster Reefs and Coastal Resilience') — Q3/10: The word 'craggy' in paragraph 2 is closest in meaning to:",
+      "options": [
+        "smooth and glassy",
+        "soft and floating",
+        "deeply buried",
+        "jagged and rough"
+      ],
+      "answer": "jagged and rough",
+      "acceptedAnswers": [
+        "jagged and rough"
+      ],
+      "explanation": "'Dense craggy oyster ridges' bermakna bergerigi kasar sehingga efektif memecah ombak.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP04-P3",
+      "audioAssetId": null,
+      "sortIndex": 113
+    },
+    {
+      "id": "ITP-L1-04-Q114",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 3 ('Living Eastern Oyster Reefs and Coastal Resilience') — Q4/10: What human activity severely flattened and shrank historic estuary oyster reefs?",
+      "options": [
+        "Recreational kayaks drifting across sunny autumn tides.",
+        "Returning cleaned restaurant shells along muddy beaches.",
+        "Centuries of heavy mechanical dredging harvesting wild shells.",
+        "Excessive planting of delicate underwater eelgrass meadows."
+      ],
+      "answer": "Centuries of heavy mechanical dredging harvesting wild shells.",
+      "acceptedAnswers": [
+        "Centuries of heavy mechanical dredging harvesting wild shells."
+      ],
+      "explanation": "Pengerukan komersial berabad-abad meratakan menara terumbu tiram menjadi dataran lumpur.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP04-P3",
+      "audioAssetId": null,
+      "sortIndex": 114
+    },
+    {
+      "id": "ITP-L1-04-Q115",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 3 ('Living Eastern Oyster Reefs and Coastal Resilience') — Q5/10: Why do restoration managers sink weathered restaurant oyster shells into shallow coves?",
+      "options": [
+        "Piled shells block fishing trawlers permanently out of river harbors.",
+        "Free-swimming oyster larvae attach best onto clean calcium shells rather than sinking in soft silt.",
+        "Crushed shells raise bay salinity above normal Atlantic ocean levels cleanly.",
+        "Decomposing meat scraps attract giant reef sharks toward piers."
+      ],
+      "answer": "Free-swimming oyster larvae attach best onto clean calcium shells rather than sinking in soft silt.",
+      "acceptedAnswers": [
+        "Free-swimming oyster larvae attach best onto clean calcium shells rather than sinking in soft silt."
+      ],
+      "explanation": "Larva membutuhkan substrat keras kalsium cangkang untuk menempel, bukan lumpur lunak.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP04-P3",
+      "audioAssetId": null,
+      "sortIndex": 115
+    },
+    {
+      "id": "ITP-L1-04-Q116",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 3 ('Living Eastern Oyster Reefs and Coastal Resilience') — Q6/10: The word 'teeming' in sentence 1 is closest in meaning to:",
+      "options": [
+        "abundant with",
+        "lacking",
+        "poisoned by",
+        "hidden beneath"
+      ],
+      "answer": "abundant with",
+      "acceptedAnswers": [
+        "abundant with"
+      ],
+      "explanation": "'Teeming with...' berarti penuh sesak oleh kehidupan.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP04-P3",
+      "audioAssetId": null,
+      "sortIndex": 116
+    },
+    {
+      "id": "ITP-L1-04-Q117",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 3 ('Living Eastern Oyster Reefs and Coastal Resilience') — Q7/10: Why might living oyster reefs resist long-term ocean rise better than stationary concrete walls?",
+      "options": [
+        "Poured concrete naturally floats upward whenever salt currents swell.",
+        "Reefs slide intact fifty meters landward before each autumn tide.",
+        "Ice storms shatter older concrete barriers deliberately each spring.",
+        "Successive living shellfish generations cement upward growth, keeping pace slowly with water level."
+      ],
+      "answer": "Successive living shellfish generations cement upward growth, keeping pace slowly with water level.",
+      "acceptedAnswers": [
+        "Successive living shellfish generations cement upward growth, keeping pace slowly with water level."
+      ],
+      "explanation": "Generasi tiram baru terus tumbuh ke atas menyemen kalsium baru mengikuti naiknya muka laut.",
+      "rationaleSource": "ITP-MOD-10",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP04-P3",
+      "audioAssetId": null,
+      "sortIndex": 117
+    },
+    {
+      "id": "ITP-L1-04-Q118",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 3 ('Living Eastern Oyster Reefs and Coastal Resilience') — Q8/10: What does 'that' in 'fresh living breakwaters that actually grow taller' refer to?",
+      "options": [
+        "marsh peat mud layers",
+        "hurricane surf tides",
+        "colonized recycled oyster reefs",
+        "crushed concrete highway slabs"
+      ],
+      "answer": "colonized recycled oyster reefs",
+      "acceptedAnswers": [
+        "colonized recycled oyster reefs"
+      ],
+      "explanation": "Pronomina relatif menunjuk pemecah gelombang alami (living breakwaters) dari terumbu tiram.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP04-P3",
+      "audioAssetId": null,
+      "sortIndex": 118
+    },
+    {
+      "id": "ITP-L1-04-Q119",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 3 ('Living Eastern Oyster Reefs and Coastal Resilience') — Q9/10: Approximately how much bay water can a single adult Eastern oyster filter per day?",
+      "options": [
+        "Barely half a liter each month.",
+        "Up to two hundred liters.",
+        "Around five milliliters hourly.",
+        "Nearly ten thousand cubic tons."
+      ],
+      "answer": "Up to two hundred liters.",
+      "acceptedAnswers": [
+        "Up to two hundred liters."
+      ],
+      "explanation": "Teks menyebut hingga 200 liter air estuari per hari.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP04-P3",
+      "audioAssetId": null,
+      "sortIndex": 119
+    },
+    {
+      "id": "ITP-L1-04-Q120",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 3 ('Living Eastern Oyster Reefs and Coastal Resilience') — Q10/10: Which inhabitant is NOT named as thriving around oyster reefs in the passage?",
+      "options": [
+        "Arctic Emperor penguins.",
+        "Juvenile striped bass.",
+        "Small mud crabs.",
+        "Shoreline gobies."
+      ],
+      "answer": "Arctic Emperor penguins.",
+      "acceptedAnswers": [
+        "Arctic Emperor penguins."
+      ],
+      "explanation": "Penguin kaisar Arktik tidak ada di ekosistem estuari Atlantik beriklim sedang ini.",
+      "rationaleSource": "ITP-MOD-10",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP04-P3",
+      "audioAssetId": null,
+      "sortIndex": 120
+    },
+    {
+      "id": "ITP-L1-04-Q121",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 4 ('The Touchstone, Coinage Debasement, and Gresham's Law') — Q1/10: How did an ancient touchstone expose alloy adulteration inside coins?",
+      "options": [
+        "By shattering hollow copper blanks softly under heavy iron hammers.",
+        "By measuring magnetic attraction pulling toward molten Lydian glass.",
+        "By checking how brightly bronze coins float atop olive oil trays.",
+        "By comparing a coin's rubbed metal streak tint cleanly against known purity reference needles."
+      ],
+      "answer": "By comparing a coin's rubbed metal streak tint cleanly against known purity reference needles.",
+      "acceptedAnswers": [
+        "By comparing a coin's rubbed metal streak tint cleanly against known purity reference needles."
+      ],
+      "explanation": "Goresan logam koin di atas batu penguji (touchstone) dicocokkan warnanya dengan jarum acuan berkadar pasti.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP04-P4",
+      "audioAssetId": null,
+      "sortIndex": 121
+    },
+    {
+      "id": "ITP-L1-04-Q122",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 4 ('The Touchstone, Coinage Debasement, and Gresham's Law') — Q2/10: What governmental shortcut is termed 'coinage debasement' in monetary history?",
+      "options": [
+        "Printing paper guild receipts backed entirely by fresh wheat bushels.",
+        "Replacing heavy leather coin purses with linen drawstring sacks.",
+        "Reminting precious-metal coinage with lighter weight or cheaper base alloy while claiming unchanged face value.",
+        "Polishing dirty ancient silver pieces cleanly inside city fountain sand."
+      ],
+      "answer": "Reminting precious-metal coinage with lighter weight or cheaper base alloy while claiming unchanged face value.",
+      "acceptedAnswers": [
+        "Reminting precious-metal coinage with lighter weight or cheaper base alloy while claiming unchanged face value."
+      ],
+      "explanation": "Debasement mencampur logam murah atau mengurangi bobot perak sambil mempertahankan nilai nominal cap.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP04-P4",
+      "audioAssetId": null,
+      "sortIndex": 122
+    },
+    {
+      "id": "ITP-L1-04-Q123",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 4 ('The Touchstone, Coinage Debasement, and Gresham's Law') — Q3/10: Why do people surprisingly spend 'bad' debased coins while keeping 'good' pure coins hidden?",
+      "options": [
+        "Stamping machines scratched royal faces off pure gold florins accidentally.",
+        "Pure full-weight bullion holds higher melt or international worth than its legal shop face value.",
+        "Light copper blanks smell pleasant inside wool market stalls.",
+        "Town bakers banned heavy intact silver shillings inside evening ovens."
+      ],
+      "answer": "Pure full-weight bullion holds higher melt or international worth than its legal shop face value.",
+      "acceptedAnswers": [
+        "Pure full-weight bullion holds higher melt or international worth than its legal shop face value."
+      ],
+      "explanation": "Logam mulia murni punya nilai intrinsik leburan lebih tinggi sehingga ditimbun (Hukum Gresham).",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP04-P4",
+      "audioAssetId": null,
+      "sortIndex": 123
+    },
+    {
+      "id": "ITP-L1-04-Q124",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 4 ('The Touchstone, Coinage Debasement, and Gresham's Law') — Q4/10: The word 'dubious' in paragraph 1 is closest in meaning to:",
+      "options": [
+        "questionable",
+        "generous",
+        "polished",
+        "ancient"
+      ],
+      "answer": "questionable",
+      "acceptedAnswers": [
+        "questionable"
+      ],
+      "explanation": "'A dubious coin' berarti koin yang diragukan kemurniannya.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP04-P4",
+      "audioAssetId": null,
+      "sortIndex": 124
+    },
+    {
+      "id": "ITP-L1-04-Q125",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 4 ('The Touchstone, Coinage Debasement, and Gresham's Law') — Q5/10: What geological rock served historically as an effective Lydian touchstone?",
+      "options": [
+        "Porous soft white sea coral limestone.",
+        "Translucent yellow Baltic amber resin.",
+        "Coarse pinkish glacial field granite.",
+        "Fine-grained matte black siliceous lydite stone."
+      ],
+      "answer": "Fine-grained matte black siliceous lydite stone.",
+      "acceptedAnswers": [
+        "Fine-grained matte black siliceous lydite stone."
+      ],
+      "explanation": "Batu lydite silika hitam berbutir halus dipakai sebagai batu uji.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP04-P4",
+      "audioAssetId": null,
+      "sortIndex": 125
+    },
+    {
+      "id": "ITP-L1-04-Q126",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 4 ('The Touchstone, Coinage Debasement, and Gresham's Law') — Q6/10: The word 'hoarded' in sentence 4 is closest in meaning to:",
+      "options": [
+        "melted publicly",
+        "taxed",
+        "stockpiled",
+        "spent"
+      ],
+      "answer": "stockpiled",
+      "acceptedAnswers": [
+        "stockpiled"
+      ],
+      "explanation": "'Hoarded full-weight coins' bermakna menimbun/menyimpan rapat.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP04-P4",
+      "audioAssetId": null,
+      "sortIndex": 126
+    },
+    {
+      "id": "ITP-L1-04-Q127",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 4 ('The Touchstone, Coinage Debasement, and Gresham's Law') — Q7/10: Under Gresham's Law, which coins circulate most actively inside domestic shops during debasement?",
+      "options": [
+        "Handmade clay tally tablets from songbook merchants.",
+        "Diluted base-metal coins whose metal worth sits below stamped legal value.",
+        "Intact unclipped antique bullion sovereigns.",
+        "Raw un-minted platinum ingots."
+      ],
+      "answer": "Diluted base-metal coins whose metal worth sits below stamped legal value.",
+      "acceptedAnswers": [
+        "Diluted base-metal coins whose metal worth sits below stamped legal value."
+      ],
+      "explanation": "Uang berbahan murahan dibelanjakan cepat sehingga mendominasi peredaran harian.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP04-P4",
+      "audioAssetId": null,
+      "sortIndex": 127
+    },
+    {
+      "id": "ITP-L1-04-Q128",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 4 ('The Touchstone, Coinage Debasement, and Gresham's Law') — Q8/10: What does 'whose exact hue' refer to in paragraph 1?",
+      "options": [
+        "The faint metallic streak rubbed onto the black touchstone.",
+        "A deceptive royal silver treasury mint stamp.",
+        "Ancient X-ray beam lenses.",
+        "Copper furnace soot inside market stalls."
+      ],
+      "answer": "The faint metallic streak rubbed onto the black touchstone.",
+      "acceptedAnswers": [
+        "The faint metallic streak rubbed onto the black touchstone."
+      ],
+      "explanation": "'Whose' mengacu pada warna jejak goresan logam ('metallic streak').",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP04-P4",
+      "audioAssetId": null,
+      "sortIndex": 128
+    },
+    {
+      "id": "ITP-L1-04-Q129",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 4 ('The Touchstone, Coinage Debasement, and Gresham's Law') — Q9/10: Which technique is NOT mentioned as part of historic coinage verification or debasement?",
+      "options": [
+        "Compounding cheaper copper directly inside reminted silver blanks.",
+        "Using alloy reference needles side-by-side against rubbed stone streaks.",
+        "Tucking intact high-silver pieces inside household chests.",
+        "Testing microscopic atomic crystal rings with modern electron microscopes."
+      ],
+      "answer": "Testing microscopic atomic crystal rings with modern electron microscopes.",
+      "acceptedAnswers": [
+        "Testing microscopic atomic crystal rings with modern electron microscopes."
+      ],
+      "explanation": "Mikroskop elektron tidak disebut di bacaan.",
+      "rationaleSource": "ITP-MOD-10",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP04-P4",
+      "audioAssetId": null,
+      "sortIndex": 129
+    },
+    {
+      "id": "ITP-L1-04-Q130",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 4 ('The Touchstone, Coinage Debasement, and Gresham's Law') — Q10/10: What best expresses the central thesis linking the touchstone and Gresham's Law?",
+      "options": [
+        "Merchants preferred heavy copper wheels over lighter silver ingots.",
+        "Coinage history shows black stone miners dominated royal tax policy.",
+        "Physical purity testing explains both how alloy cheating was caught and why debased cash floods markets.",
+        "Modern spectrographs rendered metal markets obsolete in seventeenth-century towns."
+      ],
+      "answer": "Physical purity testing explains both how alloy cheating was caught and why debased cash floods markets.",
+      "acceptedAnswers": [
+        "Physical purity testing explains both how alloy cheating was caught and why debased cash floods markets."
+      ],
+      "explanation": "Teks mengaitkan metode fisik mendeteksi kecurangan koin dengan perilaku ekonomi menimbun koin murni.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP04-P4",
+      "audioAssetId": null,
+      "sortIndex": 130
+    },
+    {
+      "id": "ITP-L1-04-Q131",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 5 ('Salt-Marsh Carbon Banking ('Blue Carbon')') — Q1/10: What astonishing soil property gives tidal salt marshes greater long-term carbon storage density than many forests?",
+      "options": [
+        "Dry mudflats burn leftover leaf litter cleanly each dry October.",
+        "Waterlogged oxygen-poor peat freezes decay rates so trapped root carbon endures millennia.",
+        "Tall cordgrass leaves live intact atop snowy hills for eight centuries.",
+        "Marine redwoods outgrow oak canopies beneath brackish Atlantic channels."
+      ],
+      "answer": "Waterlogged oxygen-poor peat freezes decay rates so trapped root carbon endures millennia.",
+      "acceptedAnswers": [
+        "Waterlogged oxygen-poor peat freezes decay rates so trapped root carbon endures millennia."
+      ],
+      "explanation": "Lumpur pasang anoksik memperlambat dekomposisi akar sehingga karbon terkunci ribuan tahun.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP04-P5",
+      "audioAssetId": null,
+      "sortIndex": 131
+    },
+    {
+      "id": "ITP-L1-04-Q132",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 5 ('Salt-Marsh Carbon Banking ('Blue Carbon')') — Q2/10: Why do salt marshes emit far less potent methane gas than comparable freshwater bogs?",
+      "options": [
+        "Abundant seawater sulfates inhibit methane-generating anaerobic microbes.",
+        "Cordgrass hollow stalks filter methane straight into limestone gravel.",
+        "Tidal mud temperatures freeze solid all twelve months annually.",
+        "Freshwater minnows consume buoyant marsh gas bubbles daily."
+      ],
+      "answer": "Abundant seawater sulfates inhibit methane-generating anaerobic microbes.",
+      "acceptedAnswers": [
+        "Abundant seawater sulfates inhibit methane-generating anaerobic microbes."
+      ],
+      "explanation": "Kandungan sulfat air laut menekan mikroba penghasil metana dibanding rawa air tawar.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP04-P5",
+      "audioAssetId": null,
+      "sortIndex": 132
+    },
+    {
+      "id": "ITP-L1-04-Q133",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 5 ('Salt-Marsh Carbon Banking ('Blue Carbon')') — Q3/10: How does upland forest leaf decomposition contrast with coastal salt-marsh root burial?",
+      "options": [
+        "Upland pine needles sink ten meters below solid bedrock instantly.",
+        "Timber trunks emit zero carbon dioxide even when burned completely.",
+        "Tropical forest roots stay immersed continuously inside salty sea spray.",
+        "Exposed oxygenated forest floor humus cycles carbon rapidly back into open air."
+      ],
+      "answer": "Exposed oxygenated forest floor humus cycles carbon rapidly back into open air.",
+      "acceptedAnswers": [
+        "Exposed oxygenated forest floor humus cycles carbon rapidly back into open air."
+      ],
+      "explanation": "Serasah hutan darat kaya oksigen terurai cepat melepas CO2 dalam beberapa dekade.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP04-P5",
+      "audioAssetId": null,
+      "sortIndex": 133
+    },
+    {
+      "id": "ITP-L1-04-Q134",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 5 ('Salt-Marsh Carbon Banking ('Blue Carbon')') — Q4/10: The word 'humbler' in paragraph 1 suggests salt marshes appear:",
+      "options": [
+        "deadly to coastal shorebirds and fish fry",
+        "completely bare of any green chlorophyll tissue",
+        "visually unassuming compared with massive tall forest trees",
+        "scientifically useless compared with inland wheat fields"
+      ],
+      "answer": "visually unassuming compared with massive tall forest trees",
+      "acceptedAnswers": [
+        "visually unassuming compared with massive tall forest trees"
+      ],
+      "explanation": "'Humbler' mengacu tampilan rumput rawa yang tampak sederhana dibanding hutan tinggi raksasa.",
+      "rationaleSource": "ITP-MOD-10",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP04-P5",
+      "audioAssetId": null,
+      "sortIndex": 134
+    },
+    {
+      "id": "ITP-L1-04-Q135",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 5 ('Salt-Marsh Carbon Banking ('Blue Carbon')') — Q5/10: What dual ecological harm occurs when developers drain and pave over tidal salt marshes?",
+      "options": [
+        "Peat turns permanently into sparkling granite bedrock.",
+        "Locked prehistoric soil carbon oxidizes back into the atmosphere while flood protection vanishes.",
+        "Oyster reefs triple overnight and drown upstream farm bridges cleanly.",
+        "Bay water cools rapidly forcing juvenile crabs toward polar trenches."
+      ],
+      "answer": "Locked prehistoric soil carbon oxidizes back into the atmosphere while flood protection vanishes.",
+      "acceptedAnswers": [
+        "Locked prehistoric soil carbon oxidizes back into the atmosphere while flood protection vanishes."
+      ],
+      "explanation": "Pengeringan melepaskan karbon tersimpan ribuan tahun sekaligus menghilangkan peredam banjir alami.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP04-P5",
+      "audioAssetId": null,
+      "sortIndex": 135
+    },
+    {
+      "id": "ITP-L1-04-Q136",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 5 ('Salt-Marsh Carbon Banking ('Blue Carbon')') — Q6/10: The word 'agonizingly' in 'decompose ... agonizingly slowly' serves to:",
+      "options": [
+        "emphasize just how sluggishly submerged anaerobic root decay proceeds",
+        "imply that cordgrass blades feel painful muscle aches in brine",
+        "criticize researchers who measure sediment cores slowly",
+        "prove bacteria die instantly inside brackish mudflats"
+      ],
+      "answer": "emphasize just how sluggishly submerged anaerobic root decay proceeds",
+      "acceptedAnswers": [
+        "emphasize just how sluggishly submerged anaerobic root decay proceeds"
+      ],
+      "explanation": "'Agonizingly slowly' menekankan sangat lambannya proses pembusukan di lumpur kedap oksigen.",
+      "rationaleSource": "ITP-MOD-10",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP04-P5",
+      "audioAssetId": null,
+      "sortIndex": 136
+    },
+    {
+      "id": "ITP-L1-04-Q137",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 5 ('Salt-Marsh Carbon Banking ('Blue Carbon')') — Q7/10: What does the term 'blue carbon' specifically signify in coastal ecology?",
+      "options": [
+        "Liquid diesel dye leaking into ocean fishing docks.",
+        "Deep-blue ice crystals compressed inside polar fjords.",
+        "Carbon monoxide emitted exclusively by blue oceanic container ships.",
+        "Atmospheric carbon captured and buried long-term inside marine and tidal plant sediments."
+      ],
+      "answer": "Atmospheric carbon captured and buried long-term inside marine and tidal plant sediments.",
+      "acceptedAnswers": [
+        "Atmospheric carbon captured and buried long-term inside marine and tidal plant sediments."
+      ],
+      "explanation": "Blue carbon adalah karbon yang diserap dan disimpan ekosistem pesisir/laut.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP04-P5",
+      "audioAssetId": null,
+      "sortIndex": 137
+    },
+    {
+      "id": "ITP-L1-04-Q138",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 5 ('Salt-Marsh Carbon Banking ('Blue Carbon')') — Q8/10: How frequently do ocean tides typically inundate coastal cordgrass peat?",
+      "options": [
+        "Strictly on windy Sunday afternoons in winter.",
+        "Only following upstream river dam spills.",
+        "Twice daily on natural lunar tidal cycles.",
+        "Once every century during extreme volcanic storms."
+      ],
+      "answer": "Twice daily on natural lunar tidal cycles.",
+      "acceptedAnswers": [
+        "Twice daily on natural lunar tidal cycles."
+      ],
+      "explanation": "Teks menyebut 'flooded twice daily by incoming tides'.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP04-P5",
+      "audioAssetId": null,
+      "sortIndex": 138
+    },
+    {
+      "id": "ITP-L1-04-Q139",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 5 ('Salt-Marsh Carbon Banking ('Blue Carbon')') — Q9/10: Which phrase could best replace 'natural storm sponges' in the closing line?",
+      "options": [
+        "dry inland gravel filters",
+        "absorbent coastal flood buffers",
+        "artificial plastic dock fenders",
+        "industrial diesel water pumps"
+      ],
+      "answer": "absorbent coastal flood buffers",
+      "acceptedAnswers": [
+        "absorbent coastal flood buffers"
+      ],
+      "explanation": "Metafora spons badai menggambarkan fungsi penyerap limpasan banjir pesisir.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP04-P5",
+      "audioAssetId": null,
+      "sortIndex": 139
+    },
+    {
+      "id": "ITP-L1-04-Q140",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 5 ('Salt-Marsh Carbon Banking ('Blue Carbon')') — Q10/10: Which detail is NOT stated in the passage?",
+      "options": [
+        "Cordgrass roots produce marketable timber furniture boards.",
+        "Tidal wetlands store soil carbon per meter swiftly compared with upland trees.",
+        "Sulfates curb methane emission paths within salty marsh muds.",
+        "Salt marsh loss reverses slow geological carbon burial."
+      ],
+      "answer": "Cordgrass roots produce marketable timber furniture boards.",
+      "acceptedAnswers": [
+        "Cordgrass roots produce marketable timber furniture boards."
+      ],
+      "explanation": "Akar rumput rawa tidak dijadikan papan mebel kayu.",
+      "rationaleSource": "ITP-MOD-10",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP04-P5",
+      "audioAssetId": null,
+      "sortIndex": 140
     }
   ],
-  "checksum": "82535fa11434796d0d67707a6b6db8da43e431e6ad3d17ce5a102f070e8707f7"
+  "checksum": "61ddaf719fbf346f7b093d67786638711f324833c4b8e8e70d880301063388d6"
 }

@@ -1,371 +1,3367 @@
 {
   "schemaVersion": 1,
   "exam": "IBT_2026",
-  "edition": "2026.1",
+  "edition": "2026.2",
   "packId": "IBT26-01",
   "title": "iBT 2026 Paket 1 — Campus Operations & Environmental Science",
-  "theme": "Complete the Words, campus notices, biochar soil trials, email & interview tasks.",
-  "status": "SAMPLE",
+  "theme": "Full 120-item Jan 2026 iBT simulation covering soil telemetry, biochar trials, thermal lakes, Build a Sentence, Email & Interview.",
+  "status": "READY",
   "blueprintCount": 120,
-  "availableCount": 12,
-  "durationMinutes": 25,
+  "availableCount": 120,
+  "durationMinutes": 90,
   "blueprintDurationMinutes": 90,
   "license": "Original",
   "provenance": "EnglishPrepAI-Original-2026",
   "passages": [
     {
-      "id": "IBT01-P1",
-      "title": "Daily Life Notice: Campus Makerspace Safety Upgrade",
-      "body": "To: Engineering & Design Students\nSubject: Laser Cutter Access Starting Monday, March 9\n\nDuring spring break, technicians installed upgraded exhaust filters in Makerspace Room 104. Effective Monday, students may reserve 45-minute cutting slots online only after passing the updated ten-minute ventilation quiz. Previous semester badges will remain valid for 3D printers, but laser cutter access pauses automatically until the new quiz appears on your student ID profile. Drop-in orientation runs Tuesday and Thursday at 1:00 PM.",
+      "id": "IBT01-CW1",
+      "title": "Complete the Words — Digital Soil Moisture Telemetry",
+      "body": "Precision irrigation engineers bury wireless tensiometers inside vegetable beds so farmers can moni___ [1] root moisture continuously. Instead of drenching entire clay fields uniformly every Tuesday, automated drip val___ [2] open only when local soil tension passes dry thresholds. Field measurements show this tar___ [3] scheduling slashes municipal groundwater draw by nearly a third while pre___ [4] deep nitrate leaching past sandy root zones. Compact solar cells mounted atop field posts re___ [5] battery packs smoothly even under misty spring clouds, and calibrated radios trans___ [6] hourly plots straight to greenhouse tablets. Critically, agricultural extension clinics warn novices against placing metal probes inside freshly disturbed trenches where loose air poc___ [7] distort resistance numbers; waiting forty-eight hours lets moist earth set___ [8] snug around ceramic sensor tips so winter readings remain con___ [9] across rocky slope mar___ [10].",
       "readingOrder": 1
     },
     {
-      "id": "IBT01-P2",
-      "title": "Biochar Amendments in Sandy Agricultural Soils",
-      "body": "Farmers cultivating sandy coastal plains face rapid nutrient leaching whenever heavy rain flushes nitrogen past shallow crop roots. Agronomists have increasingly tested biochar—charcoal produced by heating crop husks in low-oxygen kilns—as a porous soil amendment. Under scanning electron microscopes, biochar granules exhibit honeycomb micro-channels that hold both moisture and positively charged ammonium ions. In three-year field trials, plots blended with five percent biochar retained twenty-eight percent more plant-available water during dry spells without altering soil acidity dramatically.",
+      "id": "IBT01-CW2",
+      "title": "Complete the Words — Rare Book Archival Boxmaking",
+      "body": "Before brittle nineteenth-century atlases enter circulating university vaults, conservation binders encase each fragile vol___ [1] inside custom corrugated archival enclosures. Unbuffered acid-free rag board shields faded iron-gall bindings against abrupt indoor hu___ [2] swings whenever winter radiators blast dry corridor warmth. Apprentices score fold lines gently with smooth bone fol___ [3] rather than metal blades because steel burrs can tear soft archival board fib___ [4] cleanly apart. Rather than brushing wet adhesive anywhere near historic marbled endpapers, clever origami tuck flaps lock box walls tog___ [5] cleanly through friction slots alone. Each finished slipcase then rec___ [6] an external cotton ribbon tie plus a crisp acid-neutral spine label listing call numbers and last inspect___ [7] dates. Should any patron ever spot flaking gold leaf or detached hinges while consulting an old atlas, desk clerks gently relo___ [8] the enclosure onto red-tagged conservation carts so trained technicians can sta___ [9] loose sewing cords immediately before micro-tears widen dur___ [10] spring seminar crowds.",
       "readingOrder": 2
+    },
+    {
+      "id": "IBT01-DL1",
+      "title": "Campus Notice: Makerspace Laser Cutter Access",
+      "body": "To: Engineering & Design Students | Subject: Makerspace Room 104 Laser Access\nTechnicians installed upgraded exhaust filters in Room 104 over spring break. Starting Monday, March 9, students may reserve 45-minute laser cutting slots online only after completing the updated 10-minute ventilation safety quiz. Last semester's badges remain active for 3D printers, while laser access pauses automatically until the quiz clears on your portal. Drop-in Q&A runs Tuesday and Thursday at 1:00 PM.",
+      "readingOrder": 3
+    },
+    {
+      "id": "IBT01-DL2",
+      "title": "Campus Email: Shuttle Loop Detour Advisory",
+      "body": "From: Campus Transit Operations | Re: Route B Blue Line Detour (Nov 18–20)\nDue to underground chilled-water pipe welding beside East Stadium, Route B shuttles will skip the East Stadium Gate stop from 7:00 AM Monday through 6:00 PM Wednesday. Riders heading to Kinesiology Hall should alight one stop earlier at Botanical Arch or transfer free onto electric micro-shuttle Gold-2 (running every 8 minutes from West Commons). Route A Orange Line runs on normal timetable.",
+      "readingOrder": 4
+    },
+    {
+      "id": "IBT01-DL3",
+      "title": "Receipt & Policy Summary: Campus Co-op Textbook Return",
+      "body": "University Book Co-op Receipt #88412 | Sold: Sep 2 | Item: Applied Hydrology 3rd Ed (Shrink-Wrapped New)\nReturn Policy: Unopened texts in original intact shrink wrap receive full refunds through Sep 16 with original paper or app receipt. Opened loose-leaf packets and scratched access-code cards are strictly non-returnable unless defective from the publisher. Buyback trade-in window opens Dec 8–18 at 40% list credit.",
+      "readingOrder": 5
+    },
+    {
+      "id": "IBT01-DL4",
+      "title": "Dormitory Utility Alert: Cold Water Brief Shutoff",
+      "body": "Residence Facilities Bulletin | North & Oak Halls\nCrews will test main backflow valves in North and Oak Halls this Thursday, Oct 14, between 1:30 PM and 3:30 PM. Cold water taps and third-floor laundry washers will pause during that two-hour maintenance window; toilets will remain flushable using reserve cisterns only once. South Wing and dining commons remain unaffected. Flush faucets thirty seconds once pressure returns if air sputters.",
+      "readingOrder": 6
+    },
+    {
+      "id": "IBT01-DL5",
+      "title": "Syllabus Extract: Chemistry Seminar Late Work Rubric",
+      "body": "CHEM 210 Analytical Methods — Syllabus Policy Addendum\nWeekly problem sets are uploaded Mondays and due Fridays at 5:00 PM via Canvas. Each student holds two penalty-free 24-hour 'Flex Tokens' usable automatically without emailing Dr. Vega; after both Flex Tokens spend, late homework deducts 10% per calendar day (zero credit after 72 hours). Lab safety incident reflections cannot use Flex Tokens and require in-person checkoff.",
+      "readingOrder": 7
+    },
+    {
+      "id": "IBT01-AC1",
+      "title": "Biochar Amendments in Sandy Agricultural Soils",
+      "body": "Farmers cultivating sandy coastal plains face rapid nutrient leaching whenever spring showers wash soluble nitrogen below shallow crop roots. Agronomists increasingly test biochar—porous charcoal baked slowly from rice hulls or orchard prunings inside low-oxygen kilns—as a long-lived soil amendment. Under scanning electron microscopes, biochar granules reveal labyrinthine honeycomb micro-channels capable of retaining both capillary rainwater and positively charged ammonium ions. In controlled three-year sandy plot trials, plots blended with five percent fine biochar retained twenty-eight percent more plant-available moisture across dry August weeks without acidifying surrounding topsoil dramatically—though researchers caution unwashed fresh kiln ash can briefly spike pH unless aged in compost.",
+      "readingOrder": 8
+    },
+    {
+      "id": "IBT01-AC2",
+      "title": "Thermal Refuge Zones Inside Mountain River Networks",
+      "body": "Conventional fishery surveys often judge summer trout survival solely from main-channel afternoon thermometer readings, overlooking life-saving pockets hidden millimeters beside shaded gravel bars. Whenever cold mountain snowmelt percolates downward into porous cobble beds—forming shallow subterranean pathways called hyporheic flow—water drifts shaded below sunny currents before welling back upward inside side alcoves ten degrees cooler than bright sunlit riffles. Bio-logged juvenile salmon fitted with tiny temperature tags actively desert warming twenty-three-degree midday channels to crowd smoothly inside calm hyporheic cold springs until twilight air chills upstream runs. Accordingly, river engineers increasingly protect meandering side-alcove gravel bends against flat channelization, recognizing those tiny shaded seepage zones determine population persistence across hotter decades ahead.",
+      "readingOrder": 9
+    },
+    {
+      "id": "IBT01-AC3",
+      "title": "Nocturnal Dung Beetle Celestial Orientation",
+      "body": "Watching African nocturnal ball-rolling scarab beetles march unwaveringly away from frantic dung piles along laser-straight trails under pitch-black moonless savannah skies long puzzled behavioral neurobiologists. Unlike desert ants counting steps beneath polarized daylight sun arcs, night-foraging Scarabaeus satyrus rolls rapidly without retracing familiar bushes—solely needing straight-line escapes so aggressive rivals cannot steal fresh brood food. Testing captive beetles beneath miniature artificial planetarium domes revealed an unexpected navigational compass: beetles climb briefly atop their fresh ball to scan bright Milky Way starlight bands overhead, using wide luminous starlight gradients rather than faint individual pinpoint stars. When artificial projectors dimmed the milky galactic stripe down evenly into uniform darkness or shielded beetles behind tiny cardboard visors, straight tracks collapsed abruptly into erratic tight circles—marking the earliest clear insect proof of galactic band orientation.",
+      "readingOrder": 10
     }
   ],
   "assets": [
     {
-      "id": "IBT01-A01",
-      "relativePath": "audio/IBT01-A01.wav",
+      "id": "IBT01-LR01",
+      "relativePath": "audio/IBT01-LR01.wav",
       "kind": "AUDIO",
       "caption": "W: Excuse me, isn't the campus bookstore still on the ground floor of Miller Hall?",
       "license": "Original",
-      "sha256": "9215e3aad0876123d7b597159d24ec2f06d641de314f11e372b61f7f6fe82eb8",
-      "byteSize": 176684,
+      "sha256": "bd4379eb2cd22c6fa76798b550c6c1b10582d7ab4eb44d1a713e27dbc8775d18",
+      "byteSize": 44860,
       "durationMs": 5520
     },
     {
-      "id": "IBT01-A02",
-      "relativePath": "audio/IBT01-A02.wav",
+      "id": "IBT01-LR02",
+      "relativePath": "audio/IBT01-LR02.wav",
       "kind": "AUDIO",
-      "caption": "M: Attention campus riders: because crews are repairing a water main near East Stadium, Green Route buses will skip the stadium loop until 5 PM today. Please board at Oak Commons instead. N: Which stop is temporarily suspended?",
+      "caption": "M: Do you mind if I borrow your safety goggles until Thursday morning?",
       "license": "Original",
-      "sha256": "08f8beed040d1515f5e84e811b5ce81831a1151c373069a56bbecac6d3c50fcb",
-      "byteSize": 519404,
-      "durationMs": 16230
+      "sha256": "f1b8ff6cec44f802ad182247393a5fbfbb0a42288e4318ccb30d2d249f9aa183",
+      "byteSize": 36156,
+      "durationMs": 4420
     },
     {
-      "id": "IBT01-A03",
-      "relativePath": "audio/IBT01-A03.wav",
+      "id": "IBT01-LR03",
+      "relativePath": "audio/IBT01-LR03.wav",
       "kind": "AUDIO",
-      "caption": "W: When agricultural husks burn in open air, almost everything turns to fine ash. By restricting oxygen inside a pyrolysis kiln, however, heat drives off volatile gases while locking carbon into a rigid porous sponge. N: What distinguishes low-oxygen kiln heating?",
+      "caption": "W: Wait—did Professor Cho already upload the revised lab rubric?",
       "license": "Original",
-      "sha256": "5c267868f5fa7b30677153f1e6f118af14bcc590bde02bc124f3b73d91dbbbc4",
-      "byteSize": 594924,
-      "durationMs": 18590
+      "sha256": "f56158f376848c8c2086eacc44ecb57b6f91e11d433e28e3934639232515f6eb",
+      "byteSize": 39484,
+      "durationMs": 4845
     },
     {
-      "id": "IBT01-A04",
-      "relativePath": "audio/IBT01-A04.wav",
+      "id": "IBT01-LR04",
+      "relativePath": "audio/IBT01-LR04.wav",
       "kind": "AUDIO",
-      "caption": "W: Please submit your revised field report before noon on Friday.",
+      "caption": "M: Is there any chance the green loop bus stops near the athletic fields tonight?",
       "license": "Original",
-      "sha256": "d111e0fa441251de8e0f3e91539702f52106dd3b131a5ac0a2bdbd984a00ec6f",
-      "byteSize": 135084,
-      "durationMs": 4220
+      "sha256": "9b94443d80a6d667efb1f6d4748f34540d82f8af7809127a128c59e6d6c49333",
+      "byteSize": 39228,
+      "durationMs": 4815
+    },
+    {
+      "id": "IBT01-LR05",
+      "relativePath": "audio/IBT01-LR05.wav",
+      "kind": "AUDIO",
+      "caption": "W: Hold on, does this ceiling switch dim the front row lamps during slides?",
+      "license": "Original",
+      "sha256": "b2081992a6dac1a824c7330fe0d024e46a21b1e6d8c4c78f79ec870ca9c77554",
+      "byteSize": 41788,
+      "durationMs": 5125
+    },
+    {
+      "id": "IBT01-LR06",
+      "relativePath": "audio/IBT01-LR06.wav",
+      "kind": "AUDIO",
+      "caption": "M: Are students still lining up outside Dr. Patel's office for essay reviews?",
+      "license": "Original",
+      "sha256": "8a1364213d018ad37c94f6bffa9cf2c10fcef7ae6b0fbb0acf6f860275ac019b",
+      "byteSize": 41788,
+      "durationMs": 5130
+    },
+    {
+      "id": "IBT01-LR07",
+      "relativePath": "audio/IBT01-LR07.wav",
+      "kind": "AUDIO",
+      "caption": "W: Where do reusable green takeout containers go once we finish eating?",
+      "license": "Original",
+      "sha256": "7e4708dcd99370318c0bbdb89f0ce31cb93b1dc49ff0f32b987fc7c1c8398f43",
+      "byteSize": 36924,
+      "durationMs": 4515
+    },
+    {
+      "id": "IBT01-LR08",
+      "relativePath": "audio/IBT01-LR08.wav",
+      "kind": "AUDIO",
+      "caption": "M: I can't verify this 1974 glacier quote because page numbers got cut off the photocopy!",
+      "license": "Original",
+      "sha256": "20a59709f34653dc9b0dbd047d710e481ac3e0825aaee949e6d334563a4d1a33",
+      "byteSize": 55612,
+      "durationMs": 6840
+    },
+    {
+      "id": "IBT01-LR09",
+      "relativePath": "audio/IBT01-LR09.wav",
+      "kind": "AUDIO",
+      "caption": "W: Care to grab a quick espresso downstairs before two o'clock seminar?",
+      "license": "Original",
+      "sha256": "cd192cc1c8ffb480807969c938042d2a8c4940e3737c7964b1fae6173c28fd3a",
+      "byteSize": 37948,
+      "durationMs": 4640
+    },
+    {
+      "id": "IBT01-LR10",
+      "relativePath": "audio/IBT01-LR10.wav",
+      "kind": "AUDIO",
+      "caption": "M: Why isn't this bibliography manager formatting Chicago footnotes automatically?",
+      "license": "Original",
+      "sha256": "5d77c1bbd9111942ec8fdd2769d34402234c0b9d341f1ac5303ecdeb0f0ee933",
+      "byteSize": 42812,
+      "durationMs": 5260
+    },
+    {
+      "id": "IBT01-LR11",
+      "relativePath": "audio/IBT01-LR11.wav",
+      "kind": "AUDIO",
+      "caption": "W: Wait—didn't the midterm email announce Room 204 as our testing hall?",
+      "license": "Original",
+      "sha256": "16f014ab6650b4e6c8e5e1b2c3fe418466fff60223c625a190edcea49cc717eb",
+      "byteSize": 45884,
+      "durationMs": 5625
+    },
+    {
+      "id": "IBT01-LR12",
+      "relativePath": "audio/IBT01-LR12.wav",
+      "kind": "AUDIO",
+      "caption": "M: Think I'll regret cycling across town without packing rain gear today?",
+      "license": "Original",
+      "sha256": "57902359b2c7d831f2d25f9c35f7c6db44a3d0b9a68cc5daded2b6d9b9e9862c",
+      "byteSize": 36668,
+      "durationMs": 4505
+    },
+    {
+      "id": "IBT01-LR13",
+      "relativePath": "audio/IBT01-LR13.wav",
+      "kind": "AUDIO",
+      "caption": "W: Could anyone possibly cover my Saturday nine AM museum gallery desk shift?",
+      "license": "Original",
+      "sha256": "33931e87932439e08d4fb1d728feb1057121a603f517ff94dc8247eeb6e70a1c",
+      "byteSize": 42812,
+      "durationMs": 5265
+    },
+    {
+      "id": "IBT01-LR14",
+      "relativePath": "audio/IBT01-LR14.wav",
+      "kind": "AUDIO",
+      "caption": "M: Should we move our recorded speaking practice somewhere quieter than this atrium bench?",
+      "license": "Original",
+      "sha256": "6d32f876cc20c37ba8eed2c513611ae7156109bb4272b9a37aa34b0ba1fa29d1",
+      "byteSize": 42812,
+      "durationMs": 5250
+    },
+    {
+      "id": "IBT01-LR15",
+      "relativePath": "audio/IBT01-LR15.wav",
+      "kind": "AUDIO",
+      "caption": "W: How come the self-checkout scanner rejected my digital campus barcode just now?",
+      "license": "Original",
+      "sha256": "540674d19a89c5e8d91d3eaf992b958baef90a2b7de37510b93480752802588c",
+      "byteSize": 41788,
+      "durationMs": 5135
+    },
+    {
+      "id": "IBT01-C1",
+      "relativePath": "audio/IBT01-C1.wav",
+      "kind": "AUDIO",
+      "caption": "W: Hi, I need a 1958 hydrological survey map of Coastal Basin Four that shows missing from our basement map drawers. M: Oh, let me check circulation logs. That folio moved upstairs into Rare Cartography last spring when roof leaks forced drawer repairs. W: Does Rare Cartography require formal advisor letters just to photograph elevation numbers for an intro hydrology lab? M: Not at all! Present your student card to Curator Perez before four-thirty; cameras without flash stay welcome inside Room 302.",
+      "license": "Original",
+      "sha256": "2feae846dbfc9df44660b1d1b608b16141067c97d361e54a5f56931450649849",
+      "byteSize": 296764,
+      "durationMs": 36575
+    },
+    {
+      "id": "IBT01-C2",
+      "relativePath": "audio/IBT01-C2.wav",
+      "kind": "AUDIO",
+      "caption": "M: Hey Lina, notice how greenhouse bench six logged thirty-eight percent moisture all week even while potting peat felt bone dry? W: Really? Wait—did you bury the ceramic probe near that corner heat pipe, or did battery pack two lose voltage again? M: Actually neither! Lifting the sensor showed an empty air cavity right under the porous prong tip left by a burrowing earthworm. W: Good eye! Pack moist compost snugly around the tip next time and zero-balance calibration indoors before replanting.",
+      "license": "Original",
+      "sha256": "9824112d198cf17502e45bccaefb4307bba49b8e666adc32b03737ef1646951f",
+      "byteSize": 273212,
+      "durationMs": 33650
+    },
+    {
+      "id": "IBT01-C3",
+      "relativePath": "audio/IBT01-C3.wav",
+      "kind": "AUDIO",
+      "caption": "W: Could you glance at my symposium poster layout before I upload the PDF at four? M: Sure! Huh—your central three-year biochar bar chart packs solid data, yet why are your method bullets squeezed down to tiny nine-point gray font? W: I worried cutting thirty lines of oven temperature logs might annoy strict chemistry judges. M: Judges scan from two meters back! Bump body text to at least twenty points, summarize kiln cycles inside one tight two-line box, and put extra logs in a tiny QR note.",
+      "license": "Original",
+      "sha256": "c4a9d20f03fe003907a1811fa5630f0b11bfd9eff9b9301fff22b24543e2c057",
+      "byteSize": 285756,
+      "durationMs": 35210
+    },
+    {
+      "id": "IBT01-C4",
+      "relativePath": "audio/IBT01-C4.wav",
+      "kind": "AUDIO",
+      "caption": "M: Look at our jazz sextet room schedule—Studio C says locked all Sunday afternoon for electrical inspection! W: Yeah, facilities warned music clubs Monday; have you checked whether Recital Lounge 208 in West Wing is clear? M: Isn't Lounge 208 missing an upright piano and drum rug though? W: A donated upright moved in Tuesday, plus the percussion closets right across that hallway hold spare felts and folding stands you can wheel in cleanly.",
+      "license": "Original",
+      "sha256": "aef4c97b74bf428e34c0620db3f72d86ae7bd3633cc96d8c47a23e1a5c955567",
+      "byteSize": 247868,
+      "durationMs": 30525
+    },
+    {
+      "id": "IBT01-T1",
+      "relativePath": "audio/IBT01-T1.wav",
+      "kind": "AUDIO",
+      "caption": "N: Attention campus riders: underground steam-line welding beside East Stadium temporarily suspends Route B East Stadium stops Monday seven AM through Wednesday six PM. N: Passengers traveling toward Kinesiology or Athletic Annex halls should exit one stop prior at Botanical Arch, or board complimentary zero-fare micro-shuttle Gold-2 departing West Commons every eight minutes. N: Route A Orange Line runs completely unchanged; normal Route B schedules resume Wednesday evening promptly at six.",
+      "license": "Original",
+      "sha256": "55895d35a616a6600f94996d637a5f60322c60d7777e4fe29f15dea82b22ed20",
+      "byteSize": 266044,
+      "durationMs": 32775
+    },
+    {
+      "id": "IBT01-T2",
+      "relativePath": "audio/IBT01-T2.wav",
+      "kind": "AUDIO",
+      "caption": "W: Welcome back to Freshwater Ecology. Before examining salmon oxygen stress, grasp a seasonal density quirk of fresh water: unlike rock or steel, water achieves maximum density at four degrees Celsius—meaning both near-freezing zero-degree water AND summer surface bathwater weigh slightly lighter. W: During hot sunny Julys, light warm surface water ('epilimnion') floats stubbornly atop chilly dense bottom water ('hypolimnion') separated by a sharp temperature wall called the thermocline. W: Notice the consequence: summer winds stir oxygen freely throughout sunny surface waves while trapping bottom cold pools sealed away—until crisp October cooling chills surface sheets near four degrees so autumn winds smoothly overturn the entire lake top-to-bottom.",
+      "license": "Original",
+      "sha256": "6416dcd91a282a6a8bcd184f67cbcbf05c052b51d7ff54d2724c2a7623c91c29",
+      "byteSize": 403260,
+      "durationMs": 49680
+    },
+    {
+      "id": "IBT01-T3",
+      "relativePath": "audio/IBT01-T3.wav",
+      "kind": "AUDIO",
+      "caption": "M: In microelectronics reliability engineering, watch how microscopic humidity films ruin unsealed circuit boards faster than intense dry warehouse heat. M: When stray airborne dust and barely ten percent trace humidity film bridge adjacent soldered copper pads spaced fractions of a millimeter apart under electric bias, copper atoms slowly ionize at the positive trace, swim silently through invisible moisture films, and re-plate crystal needles across toward the negative side. M: Materials scientists call those feathery crystal bridges 'electrochemical migration dendrites'—and the instant one spiky silver or copper needle touches the opposite line, sharp electrical short circuits blow laptop power traces silently. M: Hence aerospace boards receive glassy conformal polymer coats sealing adjacent copper pins completely dry against coastal salt air.",
+      "license": "Original",
+      "sha256": "76191bf97ea90f6489ac596668ad10777d26071932d421a20528ca6b48fb5fd0",
+      "byteSize": 435772,
+      "durationMs": 53700
+    },
+    {
+      "id": "IBT01-T4",
+      "relativePath": "audio/IBT01-T4.wav",
+      "kind": "AUDIO",
+      "caption": "W: Linguistics fieldwork students translating bilingual oral stories into English often face a tempting trap: translating every cultural idiom cleanly word-for-word, or smoothing voices completely into dry textbook prose. W: Read an example from maritime boat-building elders: a coastal phrase translating literally as 'the keel asks calm water twice' isn't poetic fluff—it carries vital structural advice that rough chopping seas test crooked hull joints fatally. W: Notice the balanced dual-layer workflow used by top field documentarians today: publish tight line-by-line morpheme glosses directly beneath original recordings for syntax researchers, paired cleanly beside an idiomatic natural English translation backed by brief footnotes preserving ecological metaphor cleanly.",
+      "license": "Original",
+      "sha256": "83b004f636edc38375b520376960862af428ee58e8f2b1cef1616b0293603705",
+      "byteSize": 390204,
+      "durationMs": 48095
+    },
+    {
+      "id": "IBT01-SR01",
+      "relativePath": "audio/IBT01-SR01.wav",
+      "kind": "AUDIO",
+      "caption": "W: All chemistry safety forms are due on Tuesday before noon.",
+      "license": "Original",
+      "sha256": "2d228a5703846e09d61609dc380a56122d62cac965fa71d71ce89141015ed021",
+      "byteSize": 33596,
+      "durationMs": 4115
+    },
+    {
+      "id": "IBT01-SR02",
+      "relativePath": "audio/IBT01-SR02.wav",
+      "kind": "AUDIO",
+      "caption": "M: Desert succulents store carbon inside cellular vacuoles overnight.",
+      "license": "Original",
+      "sha256": "2664818cd12f4bf4e9d4ad729372e77ee92d5bb51f26311f454333f2ed01abdc",
+      "byteSize": 38204,
+      "durationMs": 4680
+    },
+    {
+      "id": "IBT01-SR03",
+      "relativePath": "audio/IBT01-SR03.wav",
+      "kind": "AUDIO",
+      "caption": "W: Route B express buses bypass the south stadium during pipe welding.",
+      "license": "Original",
+      "sha256": "090aa2d2de011cbf77b36d061eeda70422baf8d4cb6ae8a5a1d4bbf00321ec3a",
+      "byteSize": 37948,
+      "durationMs": 4665
+    },
+    {
+      "id": "IBT01-SR04",
+      "relativePath": "audio/IBT01-SR04.wav",
+      "kind": "AUDIO",
+      "caption": "M: Please leave your library ID at the third-floor scanning counter.",
+      "license": "Original",
+      "sha256": "4b85c14c322177f620475c6a74443d7b64571208e2ac2d0bf1b7f10b6420d17d",
+      "byteSize": 35132,
+      "durationMs": 4320
+    },
+    {
+      "id": "IBT01-SR05",
+      "relativePath": "audio/IBT01-SR05.wav",
+      "kind": "AUDIO",
+      "caption": "W: Biochar granules hold rainwater smoothly inside sandy farm plots.",
+      "license": "Original",
+      "sha256": "1a3b6dd74db42ca050a562580af26b82bc9237f1a5299ea78f52322a8be33993",
+      "byteSize": 40508,
+      "durationMs": 4965
+    },
+    {
+      "id": "IBT01-SR06",
+      "relativePath": "audio/IBT01-SR06.wav",
+      "kind": "AUDIO",
+      "caption": "M: Review Chapter Four graphs ahead of Friday's afternoon advising hour.",
+      "license": "Original",
+      "sha256": "b90cd9294b979978bfb4429f239af41fc47d95ce96052762491f5f6c409b1615",
+      "byteSize": 38204,
+      "durationMs": 4680
+    },
+    {
+      "id": "IBT01-SR07",
+      "relativePath": "audio/IBT01-SR07.wav",
+      "kind": "AUDIO",
+      "caption": "W: The marine chronometer lost only five seconds across eighty ocean days.",
+      "license": "Original",
+      "sha256": "e08a92381ea95924c7d95a3b549370a00823e1d91863dc3ace56beef073b39cb",
+      "byteSize": 38972,
+      "durationMs": 4795
+    },
+    {
+      "id": "IBT01-SI01",
+      "relativePath": "audio/IBT01-SI01.wav",
+      "kind": "AUDIO",
+      "caption": "M: Welcome! To begin, what kind of off-campus field site or study space helps you concentrate best on tough assignments, and why?",
+      "license": "Original",
+      "sha256": "c03f04a3d63d1b1fe82ce6951a91101682e0a3b10fd326f34bf0e0ae3035784f",
+      "byteSize": 78140,
+      "durationMs": 9600
+    },
+    {
+      "id": "IBT01-SI02",
+      "relativePath": "audio/IBT01-SI02.wav",
+      "kind": "AUDIO",
+      "caption": "W: Many science classes require collaborative lab partners while some students prefer solo work. Which style suits you better?",
+      "license": "Original",
+      "sha256": "5f45beca05273d8e0bc2bf8ecd65849ef5303bfe79ca2a99228f5a9ae396c4cd",
+      "byteSize": 69692,
+      "durationMs": 8570
+    },
+    {
+      "id": "IBT01-SI03",
+      "relativePath": "audio/IBT01-SI03.wav",
+      "kind": "AUDIO",
+      "caption": "M: If a field sensor malfunctions the evening before a major deadline, how would you troubleshoot or adjust your team schedule?",
+      "license": "Original",
+      "sha256": "8f2eb3abcf28f1f5fb662b193f521dbc86b935138e0988ed089dfe768eefe44b",
+      "byteSize": 62780,
+      "durationMs": 7730
+    },
+    {
+      "id": "IBT01-SI04",
+      "relativePath": "audio/IBT01-SI04.wav",
+      "kind": "AUDIO",
+      "caption": "W: Looking broader, should university campuses prioritize funding energy-saving smart buildings or green courtyard landscapes?",
+      "license": "Original",
+      "sha256": "a00e441d9e48756e83819dd4202c3a62b77ff83f1a87b922764237bd80dab6c6",
+      "byteSize": 67388,
+      "durationMs": 8295
     }
   ],
   "items": [
     {
-      "id": "IBT26-01-Q01",
+      "id": "IBT26-01-Q001",
       "section": "READING",
       "taskType": "FILL_BLANK",
-      "prompt": "Complete the Word: 'Library staff will arch___ fragile 19th-century maps inside humidity-controlled vaults.' (Write the full verb matching 'arch___')",
+      "prompt": "Complete the Word (Complete the Words — Digital Soil Moisture Telemetry — Blank [1]): Fill the missing full word for 'moni___ (track continuously)'.",
       "options": [],
-      "answer": "archive",
+      "answer": "monitor",
       "acceptedAnswers": [
-        "archive"
+        "monitor"
       ],
-      "explanation": "Kata kerja 'archive' melengkapi potongan 'arch___' agar sesuai konteks penyimpanan peta tua di brankas khusus.",
-      "rationaleSource": "IBT-MOD-01",
+      "explanation": "Verba dasar setelah modal 'can' -> 'monitor'.",
+      "rationaleSource": "IBT-MOD-07",
       "difficulty": "B2",
       "points": 1,
       "license": "Original",
       "reviewStatus": "VERIFIED_ORIGINAL",
-      "passageId": null,
+      "passageId": "IBT01-CW1",
       "audioAssetId": null,
       "sortIndex": 1
     },
     {
-      "id": "IBT26-01-Q02",
+      "id": "IBT26-01-Q002",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Complete the Word (Complete the Words — Digital Soil Moisture Telemetry — Blank [2]): Fill the missing full word for 'val___ (mechanical flow gates)'.",
+      "options": [],
+      "answer": "valves",
+      "acceptedAnswers": [
+        "valves"
+      ],
+      "explanation": "Nomina jamak cocok dengan verba jamak 'open' -> 'valves'.",
+      "rationaleSource": "IBT-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT01-CW1",
+      "audioAssetId": null,
+      "sortIndex": 2
+    },
+    {
+      "id": "IBT26-01-Q003",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Complete the Word (Complete the Words — Digital Soil Moisture Telemetry — Blank [3]): Fill the missing full word for 'tar___ (focused accurately on a spot)'.",
+      "options": [],
+      "answer": "targeted",
+      "acceptedAnswers": [
+        "targeted"
+      ],
+      "explanation": "Adjektiva partisipial pasif menerangkan 'scheduling' -> 'targeted'.",
+      "rationaleSource": "IBT-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT01-CW1",
+      "audioAssetId": null,
+      "sortIndex": 3
+    },
+    {
+      "id": "IBT26-01-Q004",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Complete the Word (Complete the Words — Digital Soil Moisture Telemetry — Blank [4]): Fill the missing full word for 'pre___ (stopping from happening)'.",
+      "options": [],
+      "answer": "preventing",
+      "acceptedAnswers": [
+        "preventing"
+      ],
+      "explanation": "Paralel setelah 'while' memerlukan gerund/participle '-ing' -> 'preventing'.",
+      "rationaleSource": "IBT-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT01-CW1",
+      "audioAssetId": null,
+      "sortIndex": 4
+    },
+    {
+      "id": "IBT26-01-Q005",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Complete the Word (Complete the Words — Digital Soil Moisture Telemetry — Blank [5]): Fill the missing full word for 're___ (restore electrical power)'.",
+      "options": [],
+      "answer": "recharge",
+      "acceptedAnswers": [
+        "recharge"
+      ],
+      "explanation": "Kata kerja dasar dengan subjek jamak 'solar cells' -> 'recharge'.",
+      "rationaleSource": "IBT-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT01-CW1",
+      "audioAssetId": null,
+      "sortIndex": 5
+    },
+    {
+      "id": "IBT26-01-Q006",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Complete the Word (Complete the Words — Digital Soil Moisture Telemetry — Blank [6]): Fill the missing full word for 'trans___ (send signals wirelessly)'.",
+      "options": [],
+      "answer": "transmit",
+      "acceptedAnswers": [
+        "transmit"
+      ],
+      "explanation": "Verba jamak sesuai 'calibrated radios' -> 'transmit'.",
+      "rationaleSource": "IBT-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT01-CW1",
+      "audioAssetId": null,
+      "sortIndex": 6
+    },
+    {
+      "id": "IBT26-01-Q007",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Complete the Word (Complete the Words — Digital Soil Moisture Telemetry — Blank [7]): Fill the missing full word for 'poc___ (empty air spaces)'.",
+      "options": [],
+      "answer": "pockets",
+      "acceptedAnswers": [
+        "pockets"
+      ],
+      "explanation": "Nomina jamak sesuai 'distort' (tanpa -s) -> 'pockets'.",
+      "rationaleSource": "IBT-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT01-CW1",
+      "audioAssetId": null,
+      "sortIndex": 7
+    },
+    {
+      "id": "IBT26-01-Q008",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Complete the Word (Complete the Words — Digital Soil Moisture Telemetry — Blank [8]): Fill the missing full word for 'set___ (sink gently down into place)'.",
+      "options": [],
+      "answer": "settle",
+      "acceptedAnswers": [
+        "settle"
+      ],
+      "explanation": "Infinitif tanpa 'to' sesudah 'lets + object' -> 'settle'.",
+      "rationaleSource": "IBT-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT01-CW1",
+      "audioAssetId": null,
+      "sortIndex": 8
+    },
+    {
+      "id": "IBT26-01-Q009",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Complete the Word (Complete the Words — Digital Soil Moisture Telemetry — Blank [9]): Fill the missing full word for 'con___ (steady and uniform)'.",
+      "options": [],
+      "answer": "consistent",
+      "acceptedAnswers": [
+        "consistent"
+      ],
+      "explanation": "Adjektiva sesudah linking verb 'remain' -> 'consistent'.",
+      "rationaleSource": "IBT-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT01-CW1",
+      "audioAssetId": null,
+      "sortIndex": 9
+    },
+    {
+      "id": "IBT26-01-Q010",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Complete the Word (Complete the Words — Digital Soil Moisture Telemetry — Blank [10]): Fill the missing full word for 'mar___ (outer edges of a slope)'.",
+      "options": [],
+      "answer": "margins",
+      "acceptedAnswers": [
+        "margins"
+      ],
+      "explanation": "Nomina jamak 'margins' melengkapi frasa 'slope margins'.",
+      "rationaleSource": "IBT-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT01-CW1",
+      "audioAssetId": null,
+      "sortIndex": 10
+    },
+    {
+      "id": "IBT26-01-Q011",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Complete the Word (Complete the Words — Rare Book Archival Boxmaking — Blank [1]): Fill the missing full word for 'vol___ (bound book or tome)'.",
+      "options": [],
+      "answer": "volume",
+      "acceptedAnswers": [
+        "volume"
+      ],
+      "explanation": "Setelah determiner tunggal 'each fragile' dibutuhkan nomina tunggal -> 'volume'.",
+      "rationaleSource": "IBT-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT01-CW2",
+      "audioAssetId": null,
+      "sortIndex": 11
+    },
+    {
+      "id": "IBT26-01-Q012",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Complete the Word (Complete the Words — Rare Book Archival Boxmaking — Blank [2]): Fill the missing full word for 'hu___ (air moisture level)'.",
+      "options": [],
+      "answer": "humidity",
+      "acceptedAnswers": [
+        "humidity"
+      ],
+      "explanation": "Nomina tak terhitung sesuai konteks iklim penyimpanan -> 'humidity'.",
+      "rationaleSource": "IBT-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT01-CW2",
+      "audioAssetId": null,
+      "sortIndex": 12
+    },
+    {
+      "id": "IBT26-01-Q013",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Complete the Word (Complete the Words — Rare Book Archival Boxmaking — Blank [3]): Fill the missing full word for 'fol___ (bookbinding smoothing tools)'.",
+      "options": [],
+      "answer": "folders",
+      "acceptedAnswers": [
+        "folders"
+      ],
+      "explanation": "Istilah alat lipat penjilidan jamak -> 'bone folders'.",
+      "rationaleSource": "IBT-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT01-CW2",
+      "audioAssetId": null,
+      "sortIndex": 13
+    },
+    {
+      "id": "IBT26-01-Q014",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Complete the Word (Complete the Words — Rare Book Archival Boxmaking — Blank [4]): Fill the missing full word for 'fib___ (tiny material threads)'.",
+      "options": [],
+      "answer": "fibers",
+      "acceptedAnswers": [
+        "fibers",
+        "fibres"
+      ],
+      "explanation": "Nomina jamak merujuk serat papan arsip -> 'fibers'/'fibres'.",
+      "rationaleSource": "IBT-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT01-CW2",
+      "audioAssetId": null,
+      "sortIndex": 14
+    },
+    {
+      "id": "IBT26-01-Q015",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Complete the Word (Complete the Words — Rare Book Archival Boxmaking — Blank [5]): Fill the missing full word for 'tog___ (joined side by side)'.",
+      "options": [],
+      "answer": "together",
+      "acceptedAnswers": [
+        "together"
+      ],
+      "explanation": "Adverbia pelengkap frasa kerja 'lock ... together' -> 'together'.",
+      "rationaleSource": "IBT-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT01-CW2",
+      "audioAssetId": null,
+      "sortIndex": 15
+    },
+    {
+      "id": "IBT26-01-Q016",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Complete the Word (Complete the Words — Rare Book Archival Boxmaking — Blank [6]): Fill the missing full word for 'rec___ (is given/marked with)'.",
+      "options": [],
+      "answer": "receives",
+      "acceptedAnswers": [
+        "receives"
+      ],
+      "explanation": "Verba tunggal sesuai subjek 'Each finished slipcase' -> 'receives'.",
+      "rationaleSource": "IBT-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT01-CW2",
+      "audioAssetId": null,
+      "sortIndex": 16
+    },
+    {
+      "id": "IBT26-01-Q017",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Complete the Word (Complete the Words — Rare Book Archival Boxmaking — Blank [7]): Fill the missing full word for 'inspect___ (formal checkup event)'.",
+      "options": [],
+      "answer": "inspection",
+      "acceptedAnswers": [
+        "inspection"
+      ],
+      "explanation": "Nomina pembentuk kata majemuk 'inspection dates' -> 'inspection'.",
+      "rationaleSource": "IBT-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT01-CW2",
+      "audioAssetId": null,
+      "sortIndex": 17
+    },
+    {
+      "id": "IBT26-01-Q018",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Complete the Word (Complete the Words — Rare Book Archival Boxmaking — Blank [8]): Fill the missing full word for 'relo___ (move to another cart/spot)'.",
+      "options": [],
+      "answer": "relocate",
+      "acceptedAnswers": [
+        "relocate"
+      ],
+      "explanation": "Verba jamak sesuai 'desk clerks' -> 'relocate'.",
+      "rationaleSource": "IBT-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT01-CW2",
+      "audioAssetId": null,
+      "sortIndex": 18
+    },
+    {
+      "id": "IBT26-01-Q019",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Complete the Word (Complete the Words — Rare Book Archival Boxmaking — Blank [9]): Fill the missing full word for 'sta___ (make steady/secure)'.",
+      "options": [],
+      "answer": "stabilize",
+      "acceptedAnswers": [
+        "stabilize",
+        "stabilise"
+      ],
+      "explanation": "Infinitif dasar sesudah modal 'can' -> 'stabilize'.",
+      "rationaleSource": "IBT-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT01-CW2",
+      "audioAssetId": null,
+      "sortIndex": 19
+    },
+    {
+      "id": "IBT26-01-Q020",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Complete the Word (Complete the Words — Rare Book Archival Boxmaking — Blank [10]): Fill the missing full word for 'dur___ (across a period of time)'.",
+      "options": [],
+      "answer": "during",
+      "acceptedAnswers": [
+        "during"
+      ],
+      "explanation": "Preposisi waktu sebelum frasa nomina 'spring seminar crowds' -> 'during'.",
+      "rationaleSource": "IBT-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT01-CW2",
+      "audioAssetId": null,
+      "sortIndex": 20
+    },
+    {
+      "id": "IBT26-01-Q021",
       "section": "READING",
       "taskType": "CHOICE_SINGLE",
-      "prompt": "Based on the Makerspace Notice, what must a student with last semester's badge do to use the laser cutter?",
+      "prompt": "Read in Daily Life ('Campus Notice: Makerspace Laser Cutter Access' — Q1/3): What must a student with an active fall semester badge complete before booking laser time?",
       "options": [
-        "Pass the updated ten-minute ventilation quiz before booking a slot.",
-        "Re-take the full 3D printer orientation course.",
-        "Request a paper form from the engineering dean.",
-        "Wait until next autumn semester to reserve Room 104."
+        "Renew payment for spring lab materials at the dean's office.",
+        "Bring spare replacement exhaust filters to Room 104.",
+        "Complete the new 10-minute ventilation safety quiz online.",
+        "Attend a mandatory two-hour Tuesday 3D printer briefing."
       ],
-      "answer": "Pass the updated ten-minute ventilation quiz before booking a slot.",
+      "answer": "Complete the new 10-minute ventilation safety quiz online.",
       "acceptedAnswers": [
-        "Pass the updated ten-minute ventilation quiz before booking a slot."
+        "Complete the new 10-minute ventilation safety quiz online."
       ],
-      "explanation": "Pengumuman menjelaskan badge lama tetap berlaku untuk printer 3D, namun akses laser cutter tertahan sampai kuis ventilasi baru selesai.",
+      "explanation": "Akses pemotong laser tertahan hingga kuis ventilasi 10 menit terselesaikan.",
       "rationaleSource": "IBT-MOD-01",
       "difficulty": "B1",
       "points": 1,
       "license": "Original",
       "reviewStatus": "VERIFIED_ORIGINAL",
-      "passageId": "IBT01-P1",
+      "passageId": "IBT01-DL1",
       "audioAssetId": null,
-      "sortIndex": 2
+      "sortIndex": 21
     },
     {
-      "id": "IBT26-01-Q03",
+      "id": "IBT26-01-Q022",
       "section": "READING",
       "taskType": "CHOICE_SINGLE",
-      "prompt": "In Passage 2 ('Biochar Amendments'), why does the author mention honeycomb micro-channels?",
+      "prompt": "Read in Daily Life ('Campus Notice: Makerspace Laser Cutter Access' — Q2/3): Which workshop machine remains unaffected for students who hold last semester's badges?",
       "options": [
-        "To explain the physical structure enabling biochar to retain water and nutrients",
-        "To criticize high costs of scanning electron microscopes",
-        "To show biochar dissolves sandy clay within three seasons",
-        "To argue kilns release excessive oxygen into coastal plains"
+        "Laser cutters.",
+        "3D printers.",
+        "Industrial metal lathes.",
+        "Exhaust duct fans."
       ],
-      "answer": "To explain the physical structure enabling biochar to retain water and nutrients",
+      "answer": "3D printers.",
       "acceptedAnswers": [
-        "To explain the physical structure enabling biochar to retain water and nutrients"
+        "3D printers."
       ],
-      "explanation": "Struktur pori mikro seperti sarang lebah menjelaskan mekanisme fisik daya ikat air dan ion amonium.",
+      "explanation": "Pengumuman menyatakan 'Previous/Last semester's badges remain active for 3D printers'.",
+      "rationaleSource": "IBT-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT01-DL1",
+      "audioAssetId": null,
+      "sortIndex": 22
+    },
+    {
+      "id": "IBT26-01-Q023",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Read in Daily Life ('Campus Notice: Makerspace Laser Cutter Access' — Q3/3): When can students drop in for live questions about the new filter rules?",
+      "options": [
+        "Tuesday and Thursday afternoons at 1:00 PM.",
+        "Monday mornings right after 8:00 AM.",
+        "Friday evenings during spring break.",
+        "Any weekend hour once filters run."
+      ],
+      "answer": "Tuesday and Thursday afternoons at 1:00 PM.",
+      "acceptedAnswers": [
+        "Tuesday and Thursday afternoons at 1:00 PM."
+      ],
+      "explanation": "Sesi drop-in berlangsung Selasa dan Kamis pukul 13.00.",
+      "rationaleSource": "IBT-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT01-DL1",
+      "audioAssetId": null,
+      "sortIndex": 23
+    },
+    {
+      "id": "IBT26-01-Q024",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Read in Daily Life ('Campus Email: Shuttle Loop Detour Advisory' — Q1/3): Why will Route B skip East Stadium Gate through Wednesday evening?",
+      "options": [
+        "Athletic tournaments closed West Commons parking garages.",
+        "Electric micro-shuttle batteries overheated on Monday morning.",
+        "Route A Orange Line took over all campus loops permanently.",
+        "Construction crews are welding chilled-water pipes near East Stadium."
+      ],
+      "answer": "Construction crews are welding chilled-water pipes near East Stadium.",
+      "acceptedAnswers": [
+        "Construction crews are welding chilled-water pipes near East Stadium."
+      ],
+      "explanation": "Pekerjaan pengelasan pipa air dingin menutup perhentian East Stadium sementara.",
+      "rationaleSource": "IBT-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT01-DL2",
+      "audioAssetId": null,
+      "sortIndex": 24
+    },
+    {
+      "id": "IBT26-01-Q025",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Read in Daily Life ('Campus Email: Shuttle Loop Detour Advisory' — Q2/3): Which alternative shuttle transfers riders free from West Commons every eight minutes?",
+      "options": [
+        "Express midnight library van.",
+        "City Municipal Bus 404.",
+        "Electric micro-shuttle Gold-2.",
+        "Route A Orange Line."
+      ],
+      "answer": "Electric micro-shuttle Gold-2.",
+      "acceptedAnswers": [
+        "Electric micro-shuttle Gold-2."
+      ],
+      "explanation": "Email menyebut micro-shuttle Gold-2 berangkat tiap 8 menit dari West Commons.",
+      "rationaleSource": "IBT-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT01-DL2",
+      "audioAssetId": null,
+      "sortIndex": 25
+    },
+    {
+      "id": "IBT26-01-Q026",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Read in Daily Life ('Campus Email: Shuttle Loop Detour Advisory' — Q3/3): At what day and time does normal East Stadium Gate boarding resume?",
+      "options": [
+        "Immediately after 7:00 AM Tuesday.",
+        "After 6:00 PM Wednesday, Nov 20 (or Thursday morning).",
+        "At noon Monday, Nov 18.",
+        "Only during Thanksgiving holiday weeks."
+      ],
+      "answer": "After 6:00 PM Wednesday, Nov 20 (or Thursday morning).",
+      "acceptedAnswers": [
+        "After 6:00 PM Wednesday, Nov 20 (or Thursday morning)."
+      ],
+      "explanation": "Pengalihan berakhir Rabu pukul 18.00.",
+      "rationaleSource": "IBT-MOD-01",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT01-DL2",
+      "audioAssetId": null,
+      "sortIndex": 26
+    },
+    {
+      "id": "IBT26-01-Q027",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Read in Daily Life ('Receipt & Policy Summary: Campus Co-op Textbook Return' — Q1/3): Under what condition does this hydrology textbook qualify for a 100% cash/card refund?",
+      "options": [
+        "The plastic shrink wrap stays unbroken and it returns with receipt by Sept 16.",
+        "Students solve only Chapters 1–3 cleanly without ink stains.",
+        "The professor cancels the course during December finals.",
+        "Access codes are activated online before Sept 16."
+      ],
+      "answer": "The plastic shrink wrap stays unbroken and it returns with receipt by Sept 16.",
+      "acceptedAnswers": [
+        "The plastic shrink wrap stays unbroken and it returns with receipt by Sept 16."
+      ],
+      "explanation": "Pengembalian penuh berlaku hingga 16 Sept jika segel plastik utuh + struk asli.",
+      "rationaleSource": "IBT-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT01-DL3",
+      "audioAssetId": null,
+      "sortIndex": 27
+    },
+    {
+      "id": "IBT26-01-Q028",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Read in Daily Life ('Receipt & Policy Summary: Campus Co-op Textbook Return' — Q2/3): Which purchase format is explicitly excluded from regular student returns once opened?",
+      "options": [
+        "Hardcover reference atlases bought on Dec 8.",
+        "Unopened physics lab safety goggles.",
+        "Discounted used stationery binders.",
+        "Loose-leaf unbound packets and scratched digital access codes."
+      ],
+      "answer": "Loose-leaf unbound packets and scratched digital access codes.",
+      "acceptedAnswers": [
+        "Loose-leaf unbound packets and scratched digital access codes."
+      ],
+      "explanation": "Paket lepas atau kartu kode akses tergores tidak dapat dikembalikan.",
+      "rationaleSource": "IBT-MOD-01",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT01-DL3",
+      "audioAssetId": null,
+      "sortIndex": 28
+    },
+    {
+      "id": "IBT26-01-Q029",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Read in Daily Life ('Receipt & Policy Summary: Campus Co-op Textbook Return' — Q3/3): When does the end-of-semester buyback period run?",
+      "options": [
+        "On alternate Fridays throughout October.",
+        "Forty days after publisher receipt.",
+        "Between December 8 and December 18.",
+        "Strictly prior to September 16."
+      ],
+      "answer": "Between December 8 and December 18.",
+      "acceptedAnswers": [
+        "Between December 8 and December 18."
+      ],
+      "explanation": "Jendela buyback dibuka 8–18 Desember dengan nilai kredit 40%.",
+      "rationaleSource": "IBT-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT01-DL3",
+      "audioAssetId": null,
+      "sortIndex": 29
+    },
+    {
+      "id": "IBT26-01-Q030",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Read in Daily Life ('Dormitory Utility Alert: Cold Water Brief Shutoff' — Q1/3): Which buildings lose cold tap pressure for two hours on Thursday afternoon?",
+      "options": [
+        "Main Library basement restrooms only.",
+        "North Hall and Oak Hall.",
+        "South Wing and Campus Dining Commons.",
+        "All off-campus graduate apartments."
+      ],
+      "answer": "North Hall and Oak Hall.",
+      "acceptedAnswers": [
+        "North Hall and Oak Hall."
+      ],
+      "explanation": "Pengumuman menargetkan North Hall dan Oak Hall pukul 13.30–15.30.",
+      "rationaleSource": "IBT-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT01-DL4",
+      "audioAssetId": null,
+      "sortIndex": 30
+    },
+    {
+      "id": "IBT26-01-Q031",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Read in Daily Life ('Dormitory Utility Alert: Cold Water Brief Shutoff' — Q2/3): What should residents expect immediately after valves reopen at 3:30 PM?",
+      "options": [
+        "Possible trapped air sputtering briefly, cleared by running taps 30 seconds.",
+        "Hot laundry water doubling normal temperature permanently.",
+        "Third-floor washers automatically restarting unfinished cycles.",
+        "Clean water remaining unavailable until Friday afternoon."
+      ],
+      "answer": "Possible trapped air sputtering briefly, cleared by running taps 30 seconds.",
+      "acceptedAnswers": [
+        "Possible trapped air sputtering briefly, cleared by running taps 30 seconds."
+      ],
+      "explanation": "Penduduk diminta membuka keran 30 detik jika air mendesis akibat udara terjebak.",
+      "rationaleSource": "IBT-MOD-01",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT01-DL4",
+      "audioAssetId": null,
+      "sortIndex": 31
+    },
+    {
+      "id": "IBT26-01-Q032",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Read in Daily Life ('Dormitory Utility Alert: Cold Water Brief Shutoff' — Q3/3): How long will maintenance interrupt laundry washer operation?",
+      "options": [
+        "Thirty seconds total.",
+        "Forty-eight continuous hours.",
+        "Thursday morning before noon.",
+        "Two hours (1:30 PM to 3:30 PM)."
+      ],
+      "answer": "Two hours (1:30 PM to 3:30 PM).",
+      "acceptedAnswers": [
+        "Two hours (1:30 PM to 3:30 PM)."
+      ],
+      "explanation": "Gangguan berjalan tepat selama dua jam pemeliharaan.",
+      "rationaleSource": "IBT-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT01-DL4",
+      "audioAssetId": null,
+      "sortIndex": 32
+    },
+    {
+      "id": "IBT26-01-Q033",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Read in Daily Life ('Syllabus Extract: Chemistry Seminar Late Work Rubric' — Q1/3): How do students redeem one of their two 24-hour Flex Tokens on weekly Canvas problem sets?",
+      "options": [
+        "Complete extra safety incident essays inside the chemistry lab.",
+        "Score 100% on Monday's online practice quiz.",
+        "Simply submit within 24 hours past Friday 5:00 PM; the token applies automatically.",
+        "Send Dr. Vega a signed paper medical excuse every Thursday noon."
+      ],
+      "answer": "Simply submit within 24 hours past Friday 5:00 PM; the token applies automatically.",
+      "acceptedAnswers": [
+        "Simply submit within 24 hours past Friday 5:00 PM; the token applies automatically."
+      ],
+      "explanation": "Token berlaku otomatis tanpa harus mengirim email persetujuan terlebih dulu.",
+      "rationaleSource": "IBT-MOD-01",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT01-DL5",
+      "audioAssetId": null,
+      "sortIndex": 33
+    },
+    {
+      "id": "IBT26-01-Q034",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Read in Daily Life ('Syllabus Extract: Chemistry Seminar Late Work Rubric' — Q2/3): Which assignment category is barred from utilizing a Flex Token extension?",
+      "options": [
+        "Monograph book summaries uploaded Mondays.",
+        "Lab safety incident reflections requiring live checkoff.",
+        "Friday evening homework problem sets.",
+        "Optional extra-credit bibliography uploads."
+      ],
+      "answer": "Lab safety incident reflections requiring live checkoff.",
+      "acceptedAnswers": [
+        "Lab safety incident reflections requiring live checkoff."
+      ],
+      "explanation": "Refleksi insiden keamanan lab dikecualikan dan butuh cek tatap muka.",
+      "rationaleSource": "IBT-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT01-DL5",
+      "audioAssetId": null,
+      "sortIndex": 34
+    },
+    {
+      "id": "IBT26-01-Q035",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Read in Daily Life ('Syllabus Extract: Chemistry Seminar Late Work Rubric' — Q3/3): What penalty applies if a student submits an assignment 48 hours late after exhausting both tokens?",
+      "options": [
+        "Twenty percent point deduction (two calendar days x 10%).",
+        "Complete zero credit immediately past one minute late.",
+        "Automatic deduction of an extra future Flex Token.",
+        "Five percent credit bonus for lab attendance."
+      ],
+      "answer": "Twenty percent point deduction (two calendar days x 10%).",
+      "acceptedAnswers": [
+        "Twenty percent point deduction (two calendar days x 10%)."
+      ],
+      "explanation": "Keterlambatan 2 hari setelah token habis memotong 2 x 10% = 20%.",
+      "rationaleSource": "IBT-MOD-01",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT01-DL5",
+      "audioAssetId": null,
+      "sortIndex": 35
+    },
+    {
+      "id": "IBT26-01-Q036",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Academic Passage 1 ('Biochar Amendments in Sandy Agricultural Soils' — Q1/5): Why does the author highlight honeycomb micro-channels observed under electron microscopes?",
+      "options": [
+        "To show orchard kilns generate hazardous industrial oxygen clouds.",
+        "To explain the physical porosity enabling biochar to bind both moisture and nitrogen ions.",
+        "To criticize high laboratory costs of microscope maintenance on farms.",
+        "To argue freshly quarried ocean sand dissolves biochar within one year."
+      ],
+      "answer": "To explain the physical porosity enabling biochar to bind both moisture and nitrogen ions.",
+      "acceptedAnswers": [
+        "To explain the physical porosity enabling biochar to bind both moisture and nitrogen ions."
+      ],
+      "explanation": "Mikro-saluran sarang lebah menjelaskan mekanisme fisik daya simpan air dan ion amonium.",
       "rationaleSource": "IBT-MOD-02",
       "difficulty": "B2",
       "points": 1,
       "license": "Original",
       "reviewStatus": "VERIFIED_ORIGINAL",
-      "passageId": "IBT01-P2",
+      "passageId": "IBT01-AC1",
       "audioAssetId": null,
-      "sortIndex": 3
+      "sortIndex": 36
     },
     {
-      "id": "IBT26-01-Q04",
+      "id": "IBT26-01-Q037",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Academic Passage 1 ('Biochar Amendments in Sandy Agricultural Soils' — Q2/5): Which practical irrigation problem mainly affects growers on sandy coastal plains?",
+      "options": [
+        "Rainwater flushes mobile nitrogen fertilizers quickly past shallow crop root zones.",
+        "Tight clay crusts stop moisture from entering topsoil.",
+        "Coastal frost freezes buried ceramic orchard pipes.",
+        "Orchard tree bark blocks morning spring sunshine."
+      ],
+      "answer": "Rainwater flushes mobile nitrogen fertilizers quickly past shallow crop root zones.",
+      "acceptedAnswers": [
+        "Rainwater flushes mobile nitrogen fertilizers quickly past shallow crop root zones."
+      ],
+      "explanation": "Tanah berpasir mengalami pencucian nutrien cepat saat hujan mengguyur.",
+      "rationaleSource": "IBT-MOD-02",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT01-AC1",
+      "audioAssetId": null,
+      "sortIndex": 37
+    },
+    {
+      "id": "IBT26-01-Q038",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Academic Passage 1 ('Biochar Amendments in Sandy Agricultural Soils' — Q3/5): What quantitative soil improvement appeared in plots receiving five percent biochar?",
+      "options": [
+        "Seasonal wheat prices climbed twenty-eight percent downtown.",
+        "Unwashed ash acidity doubled salt corrosion overnight.",
+        "Root depths tripled within barely three weeks.",
+        "Available soil moisture rose twenty-eight percent during arid August intervals."
+      ],
+      "answer": "Available soil moisture rose twenty-eight percent during arid August intervals.",
+      "acceptedAnswers": [
+        "Available soil moisture rose twenty-eight percent during arid August intervals."
+      ],
+      "explanation": "Uji 3 tahun menunjukkan kadar air tersedia tanaman naik 28% saat musim kering.",
+      "rationaleSource": "IBT-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT01-AC1",
+      "audioAssetId": null,
+      "sortIndex": 38
+    },
+    {
+      "id": "IBT26-01-Q039",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Academic Passage 1 ('Biochar Amendments in Sandy Agricultural Soils' — Q4/5): What practical precaution do field researchers recommend regarding freshly baked biochar?",
+      "options": [
+        "Spread bare charcoal thick atop glossy concrete driveways.",
+        "Mix fifty percent fresh ash strictly onto blueberry seedlings.",
+        "Condition raw biochar with compost first so residual kiln ash does not surge pH briefly.",
+        "Drench dry orchards in cold sea brine prior to harvesting rice hulls."
+      ],
+      "answer": "Condition raw biochar with compost first so residual kiln ash does not surge pH briefly.",
+      "acceptedAnswers": [
+        "Condition raw biochar with compost first so residual kiln ash does not surge pH briefly."
+      ],
+      "explanation": "Abu tungku segar perlu dicuci/dikomposkan dulu agar tidak memicu lonjakan pH mendadak.",
+      "rationaleSource": "IBT-MOD-02",
+      "difficulty": "C1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT01-AC1",
+      "audioAssetId": null,
+      "sortIndex": 39
+    },
+    {
+      "id": "IBT26-01-Q040",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Academic Passage 1 ('Biochar Amendments in Sandy Agricultural Soils' — Q5/5): The word 'leaching' in sentence 1 is closest in meaning to:",
+      "options": [
+        "evaporating from dry clay surfaces",
+        "flushing downward out of soil",
+        "solidifying near root stems",
+        "multiplying nitrogen bubbles"
+      ],
+      "answer": "flushing downward out of soil",
+      "acceptedAnswers": [
+        "flushing downward out of soil"
+      ],
+      "explanation": "'Nutrient leaching' berarti pencucian unsur hara ke lapisan tanah lebih dalam.",
+      "rationaleSource": "IBT-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT01-AC1",
+      "audioAssetId": null,
+      "sortIndex": 40
+    },
+    {
+      "id": "IBT26-01-Q041",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Academic Passage 2 ('Thermal Refuge Zones Inside Mountain River Networks' — Q1/5): How do 'hyporheic' gravel pathways shield cold-water fish during hot August afternoons?",
+      "options": [
+        "Groundwater filtering slowly through riverbed pebbles emerges sharply cooler inside shaded pockets.",
+        "Beaver mud dams pump chilled snow packs downstream hourly.",
+        "Fast central river currents bounce icy spray across warm cobbles.",
+        "Dense riverside asphalt drains freeze subterranean bedrock permanently."
+      ],
+      "answer": "Groundwater filtering slowly through riverbed pebbles emerges sharply cooler inside shaded pockets.",
+      "acceptedAnswers": [
+        "Groundwater filtering slowly through riverbed pebbles emerges sharply cooler inside shaded pockets."
+      ],
+      "explanation": "Aliran hiporeik yang meresap lewat hamparan kerikil muncul kembali lebih dingin di ceruk tepi.",
+      "rationaleSource": "IBT-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT01-AC2",
+      "audioAssetId": null,
+      "sortIndex": 41
+    },
+    {
+      "id": "IBT26-01-Q042",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Academic Passage 2 ('Thermal Refuge Zones Inside Mountain River Networks' — Q2/5): Why can relying strictly on single main-river temperature logs mislead aquatic conservationists?",
+      "options": [
+        "Waterproof tags overestimate main-stream warmth by ten degrees nightly.",
+        "Juvenile trout ignore water temperature completely until October freezes.",
+        "Mountain snowmelt skips sunlit cobbles cleanly altogether.",
+        "Bulk averages miss critical micro-refuges several degrees cooler tucked along shaded side coves."
+      ],
+      "answer": "Bulk averages miss critical micro-refuges several degrees cooler tucked along shaded side coves.",
+      "acceptedAnswers": [
+        "Bulk averages miss critical micro-refuges several degrees cooler tucked along shaded side coves."
+      ],
+      "explanation": "Pengukuran arus utama mengabaikan titik pengungsian termal penting di celah tepi berkerikil.",
+      "rationaleSource": "IBT-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT01-AC2",
+      "audioAssetId": null,
+      "sortIndex": 42
+    },
+    {
+      "id": "IBT26-01-Q043",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Academic Passage 2 ('Thermal Refuge Zones Inside Mountain River Networks' — Q3/5): What behavioral evidence confirmed salmon actually exploit localized gravel cooling alcoves?",
+      "options": [
+        "Acoustic drones heard salmon splashing loudly upstream after midnight.",
+        "Satellite radar traced silver scales gliding under thick asphalt docks.",
+        "Small implanted temperature bio-loggers showed fish clustering into cooler side zones midday.",
+        "Anglers netted frozen fish beside summer alpine cascades."
+      ],
+      "answer": "Small implanted temperature bio-loggers showed fish clustering into cooler side zones midday.",
+      "acceptedAnswers": [
+        "Small implanted temperature bio-loggers showed fish clustering into cooler side zones midday."
+      ],
+      "explanation": "Sensor tag suhu pada anak salmon merekam mereka berpindah ke ceruk dingin saat siang terik.",
+      "rationaleSource": "IBT-MOD-02",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT01-AC2",
+      "audioAssetId": null,
+      "sortIndex": 43
+    },
+    {
+      "id": "IBT26-01-Q044",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Academic Passage 2 ('Thermal Refuge Zones Inside Mountain River Networks' — Q4/5): Why do watershed managers now resist straightening winding alluvial gravel river bends?",
+      "options": [
+        "Straight riverbeds chill spawning fish far below freezing thresholds.",
+        "Straightened channels erase shaded side alcoves housing cool hyporheic springs.",
+        "Bends double boat shipping distance cleanly across mountain peaks.",
+        "Cobble beds block clean hydropower pipe intakes yearly."
+      ],
+      "answer": "Straightened channels erase shaded side alcoves housing cool hyporheic springs.",
+      "acceptedAnswers": [
+        "Straightened channels erase shaded side alcoves housing cool hyporheic springs."
+      ],
+      "explanation": "Pelurusan sungai merusak lekuk kerikil pembuat zona resapan dingin.",
+      "rationaleSource": "IBT-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT01-AC2",
+      "audioAssetId": null,
+      "sortIndex": 44
+    },
+    {
+      "id": "IBT26-01-Q045",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Academic Passage 2 ('Thermal Refuge Zones Inside Mountain River Networks' — Q5/5): What does the author imply about long-term climate warming resilience along mountain streams?",
+      "options": [
+        "Preserving physical riverbed gravel complexity buys fragile fish vital cold survival margins.",
+        "Mechanical chillers must soon cool every Pacific tributary creek.",
+        "Salmon will effortlessly tolerate thirty-degree midday channels.",
+        "All river tributaries dry completely absent icy highway spray."
+      ],
+      "answer": "Preserving physical riverbed gravel complexity buys fragile fish vital cold survival margins.",
+      "acceptedAnswers": [
+        "Preserving physical riverbed gravel complexity buys fragile fish vital cold survival margins."
+      ],
+      "explanation": "Menjaga kompleksitas kerikil alami sungai memberi bantalan ketahanan suhu vital.",
+      "rationaleSource": "IBT-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT01-AC2",
+      "audioAssetId": null,
+      "sortIndex": 45
+    },
+    {
+      "id": "IBT26-01-Q046",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Academic Passage 3 ('Nocturnal Dung Beetle Celestial Orientation' — Q1/5): Why do ball-rolling beetles prioritize marching cleanly in rigid straight lines away from manure heaps?",
+      "options": [
+        "Beetles commute back daily to fixed underground honey nests.",
+        "Curved tracks soften damp clay grass beneath night dew.",
+        "Mates follow circular starlight loops strictly clockwise around shrubs.",
+        "Fast straight escapes minimize theft risk from competing scarab rivals nearby."
+      ],
+      "answer": "Fast straight escapes minimize theft risk from competing scarab rivals nearby.",
+      "acceptedAnswers": [
+        "Fast straight escapes minimize theft risk from competing scarab rivals nearby."
+      ],
+      "explanation": "Jalur lurus adalah rute pelarian tercepat menghindari perampasan makanan oleh kumbang pesaing.",
+      "rationaleSource": "IBT-MOD-02",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT01-AC3",
+      "audioAssetId": null,
+      "sortIndex": 46
+    },
+    {
+      "id": "IBT26-01-Q047",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Academic Passage 3 ('Nocturnal Dung Beetle Celestial Orientation' — Q2/5): What surprising planetarium experiment result uncovered the beetles' nocturnal guidepost?",
+      "options": [
+        "Beetles ignored ceiling star domes while following earthy pine wind scent.",
+        "Cardboard visors guided beetles cleanly along rectangular square mazes.",
+        "Dimmers erasing only the bright Milky Way band forced confident straight paths into looping circles.",
+        "Shining bright flashlights straight south doubled beetle rolling velocity."
+      ],
+      "answer": "Dimmers erasing only the bright Milky Way band forced confident straight paths into looping circles.",
+      "acceptedAnswers": [
+        "Dimmers erasing only the bright Milky Way band forced confident straight paths into looping circles."
+      ],
+      "explanation": "Mematikan pita cahaya Galaksi Bima Sakti atau memasang pelindung mata mengacaukan arah menjadi berputar-putar.",
+      "rationaleSource": "IBT-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT01-AC3",
+      "audioAssetId": null,
+      "sortIndex": 47
+    },
+    {
+      "id": "IBT26-01-Q048",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Academic Passage 3 ('Nocturnal Dung Beetle Celestial Orientation' — Q3/5): Why must nocturnal beetles track the wide luminous Milky Way swath rather than tiny dim single stars?",
+      "options": [
+        "Moonlight reflections double faint single stars awkwardly overhead.",
+        "Tiny compound insect eyes lack resolution to distinguish dim pinpoint single stars sharply.",
+        "Individual savanna stars drift thirty degrees east every five minutes.",
+        "Cloudy daytime storms hide bright winter constellations completely."
+      ],
+      "answer": "Tiny compound insect eyes lack resolution to distinguish dim pinpoint single stars sharply.",
+      "acceptedAnswers": [
+        "Tiny compound insect eyes lack resolution to distinguish dim pinpoint single stars sharply."
+      ],
+      "explanation": "Mata majemuk serangga membaca gradien cahaya pita galaksi lebar karena tak cukup tajam memisahkan bintang tunggal redup.",
+      "rationaleSource": "IBT-MOD-02",
+      "difficulty": "C1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT01-AC3",
+      "audioAssetId": null,
+      "sortIndex": 48
+    },
+    {
+      "id": "IBT26-01-Q049",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Academic Passage 3 ('Nocturnal Dung Beetle Celestial Orientation' — Q4/5): Why does the author contrast scarab navigation briefly with desert foraging ants?",
+      "options": [
+        "To show beetles do not navigate back to memorized landmarks, aiming strictly straight outward.",
+        "To argue ants rely primarily on nocturnal galactic constellations too.",
+        "To criticize laboratory ant mazes built out of wet sand.",
+        "To prove beetles count walking foot-steps evenly across plains."
+      ],
+      "answer": "To show beetles do not navigate back to memorized landmarks, aiming strictly straight outward.",
+      "acceptedAnswers": [
+        "To show beetles do not navigate back to memorized landmarks, aiming strictly straight outward."
+      ],
+      "explanation": "Berbeda dari semut yang memetakan rute pulang, kumbang hanya butuh kabur menjauh secara lurus.",
+      "rationaleSource": "IBT-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT01-AC3",
+      "audioAssetId": null,
+      "sortIndex": 49
+    },
+    {
+      "id": "IBT26-01-Q050",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Academic Passage 3 ('Nocturnal Dung Beetle Celestial Orientation' — Q5/5): Which detail is stated directly about the small pre-roll habit atop freshly packed dung spheres?",
+      "options": [
+        "Beetles whistle ultrasonic notes to check nearby grass thickness.",
+        "Males spin spheres three times clockwise strictly toward magnetic north.",
+        "Beetles scrape shiny dirt grains off eyes prior to flying.",
+        "Beetles pause atop spheres momentarily to scan overhead sky luminance before rolling."
+      ],
+      "answer": "Beetles pause atop spheres momentarily to scan overhead sky luminance before rolling.",
+      "acceptedAnswers": [
+        "Beetles pause atop spheres momentarily to scan overhead sky luminance before rolling."
+      ],
+      "explanation": "Kumbang naik ke atas bola kotoran sesaat untuk memindai cahaya langit sebelum meluncur lurus.",
+      "rationaleSource": "IBT-MOD-02",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT01-AC3",
+      "audioAssetId": null,
+      "sortIndex": 50
+    },
+    {
+      "id": "IBT26-01-Q051",
       "section": "LISTENING",
       "taskType": "CHOICE_SINGLE",
-      "prompt": "Listen and Choose a Response: Select the most natural reply to the speaker.",
+      "prompt": "Listen and Choose a Response — Prompt 1/15 (bookstore relocation): Select the most natural reply.",
       "options": [
-        "Actually, the bookstore moved next to the dining commons last week.",
-        "Yes, I read three chapters of economics yesterday.",
-        "No, I rarely carry heavy winter coats in July.",
-        "Thank you, the printer cartridge arrived on Tuesday."
+        "Actually, it relocated next to the dining commons last Monday.",
+        "Yes, I read three chapters of economics before dinner.",
+        "No, I rarely pack winter scarves inside August lockers.",
+        "Thank you, the printer cartridge arrived yesterday morning."
       ],
-      "answer": "Actually, the bookstore moved next to the dining commons last week.",
+      "answer": "Actually, it relocated next to the dining commons last Monday.",
       "acceptedAnswers": [
-        "Actually, the bookstore moved next to the dining commons last week."
+        "Actually, it relocated next to the dining commons last Monday."
       ],
-      "explanation": "Pembicara menanyakan arah ke toko buku kampus; balasan paling tepat memberi informasi lokasi terbaru toko buku.",
+      "explanation": "Respons memberi informasi lokasi baru toko buku kampus secara langsung.",
       "rationaleSource": "IBT-MOD-03",
       "difficulty": "B1",
       "points": 1,
       "license": "Original",
       "reviewStatus": "VERIFIED_ORIGINAL",
       "passageId": null,
-      "audioAssetId": "IBT01-A01",
-      "sortIndex": 4
+      "audioAssetId": "IBT01-LR01",
+      "sortIndex": 51
     },
     {
-      "id": "IBT26-01-Q05",
+      "id": "IBT26-01-Q052",
       "section": "LISTENING",
       "taskType": "CHOICE_SINGLE",
-      "prompt": "Listen to the campus shuttle announcement. Which stop is temporarily suspended today?",
+      "prompt": "Listen and Choose a Response — Prompt 2/15 (borrowing lab goggles): Select the most natural reply.",
       "options": [
-        "The East Stadium loop stop until 5 PM",
-        "The Main Library gate all weekend",
-        "The Science Quad terminal next Monday",
-        "All evening routes after 9 PM"
+        "Yes, chemistry experiments run until late Friday evening.",
+        "Actually, safety shoes cost twenty dollars downtown.",
+        "Sorry, Thursday's shuttle skips the science building.",
+        "Not at all—just set them back inside bin three when finished."
       ],
-      "answer": "The East Stadium loop stop until 5 PM",
+      "answer": "Not at all—just set them back inside bin three when finished.",
       "acceptedAnswers": [
-        "The East Stadium loop stop until 5 PM"
+        "Not at all—just set them back inside bin three when finished."
       ],
-      "explanation": "Pengumuman menyebut perhentian East Stadium ditutup hingga pukul 17.00 akibat perbaikan pipa air.",
+      "explanation": "'Do you mind if...?' dijawab 'Not at all...' saat mengizinkan.",
       "rationaleSource": "IBT-MOD-03",
       "difficulty": "B1",
       "points": 1,
       "license": "Original",
       "reviewStatus": "VERIFIED_ORIGINAL",
       "passageId": null,
-      "audioAssetId": "IBT01-A02",
-      "sortIndex": 5
+      "audioAssetId": "IBT01-LR02",
+      "sortIndex": 52
     },
     {
-      "id": "IBT26-01-Q06",
+      "id": "IBT26-01-Q053",
       "section": "LISTENING",
       "taskType": "CHOICE_SINGLE",
-      "prompt": "Listen to the short environmental science talk. What key advantage of biochar kilns is emphasized?",
+      "prompt": "Listen and Choose a Response — Prompt 3/15 (printing thesis appendix): Select the most natural reply.",
       "options": [
-        "Heating husks without abundant oxygen preserves porous carbon structures instead of turning biomass purely into ash.",
-        "Open bonfires produce stronger soil granules than sealed kilns.",
-        "Biochar eliminates the need for rainfall across desert regions.",
-        "Crop husks must be soaked in seawater before heating."
+        "The library elevator closes automatically at midnight.",
+        "We printed forty color posters inside Union Hall.",
+        "Yeah, she posted version two under the Announcements tab twenty minutes ago.",
+        "No thanks, I prefer drinking iced tea after studio hours."
       ],
-      "answer": "Heating husks without abundant oxygen preserves porous carbon structures instead of turning biomass purely into ash.",
+      "answer": "Yeah, she posted version two under the Announcements tab twenty minutes ago.",
       "acceptedAnswers": [
-        "Heating husks without abundant oxygen preserves porous carbon structures instead of turning biomass purely into ash."
+        "Yeah, she posted version two under the Announcements tab twenty minutes ago."
       ],
-      "explanation": "Pembicara mengontraskan pirolisis rendah oksigen (mempertahankan pori karbon) dengan pembakaran terbuka yang menyisakan abu.",
+      "explanation": "Menjawab pertanyaan status unggahan rubrik dosen dengan lokasi & waktu jelas.",
+      "rationaleSource": "IBT-MOD-03",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT01-LR03",
+      "sortIndex": 53
+    },
+    {
+      "id": "IBT26-01-Q054",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen and Choose a Response — Prompt 4/15 (late bus transfer): Select the most natural reply.",
+      "options": [
+        "Sorry, student locker rooms don't lend swimming towels.",
+        "Only before seven—after dusk you'll want the night express tram.",
+        "Actually, green chalk boards scratch easily in humid gyms.",
+        "Yes, I finished running five laps around the track yesterday."
+      ],
+      "answer": "Only before seven—after dusk you'll want the night express tram.",
+      "acceptedAnswers": [
+        "Only before seven—after dusk you'll want the night express tram."
+      ],
+      "explanation": "Menjelaskan batas waktu bus hijau dan memberi solusi trem malam.",
+      "rationaleSource": "IBT-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT01-LR04",
+      "sortIndex": 54
+    },
+    {
+      "id": "IBT26-01-Q055",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen and Choose a Response — Prompt 5/15 (projector brightness): Select the most natural reply.",
+      "options": [
+        "Try the silver dial beside the whiteboard; this switch controls hallway bulbs.",
+        "Sure, our geology midterm covered four glacial valleys.",
+        "I think the dining hall closed twenty minutes early.",
+        "That laptop cable works fine on older desktops."
+      ],
+      "answer": "Try the silver dial beside the whiteboard; this switch controls hallway bulbs.",
+      "acceptedAnswers": [
+        "Try the silver dial beside the whiteboard; this switch controls hallway bulbs."
+      ],
+      "explanation": "Mengarahkan ke kenop pengatur lampu papan tulis yang tepat.",
+      "rationaleSource": "IBT-MOD-03",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT01-LR05",
+      "sortIndex": 55
+    },
+    {
+      "id": "IBT26-01-Q056",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen and Choose a Response — Prompt 6/15 (office hour waitlist): Select the most natural reply.",
+      "options": [
+        "She taught introductory physics in Chicago five years ago.",
+        "Yesterday's storm broke two maple benches beside Miller Hall.",
+        "Actually, essays must stay under twelve pages double-spaced.",
+        "No need to stand there—sign up for a remote slot on her portal calendar."
+      ],
+      "answer": "No need to stand there—sign up for a remote slot on her portal calendar.",
+      "acceptedAnswers": [
+        "No need to stand there—sign up for a remote slot on her portal calendar."
+      ],
+      "explanation": "Membantu dengan opsi penjadwalan daring menggantikan antre.",
+      "rationaleSource": "IBT-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT01-LR06",
+      "sortIndex": 56
+    },
+    {
+      "id": "IBT26-01-Q057",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen and Choose a Response — Prompt 7/15 (cafeteria bowl drop): Select the most natural reply.",
+      "options": [
+        "Wait—I left my biology notebook beside the courtyard fountain.",
+        "Dining services switch coffee roasters next spring.",
+        "Drop them inside the aqua chutes stationed by any dorm exit.",
+        "Green salads cost four dollars on Tuesday afternoons."
+      ],
+      "answer": "Drop them inside the aqua chutes stationed by any dorm exit.",
+      "acceptedAnswers": [
+        "Drop them inside the aqua chutes stationed by any dorm exit."
+      ],
+      "explanation": "Memberi petunjuk persis lokasi tempat pengembalian wadah makan.",
+      "rationaleSource": "IBT-MOD-03",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT01-LR07",
+      "sortIndex": 57
+    },
+    {
+      "id": "IBT26-01-Q058",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen and Choose a Response — Prompt 8/15 (missing citation page): Select the most natural reply.",
+      "options": [
+        "My old winter parka survived two weeks in Alaska.",
+        "Send me the journal title; I'll pull the clean PDF from online databases.",
+        "Glaciers reflect harsh afternoon glare cleanly across peaks.",
+        "Sorry, copying centers stop stapling packets at four-thirty."
+      ],
+      "answer": "Send me the journal title; I'll pull the clean PDF from online databases.",
+      "acceptedAnswers": [
+        "Send me the journal title; I'll pull the clean PDF from online databases."
+      ],
+      "explanation": "Menawarkan bantuan pragmatis mengambil file PDF utuh via pangkalan data.",
+      "rationaleSource": "IBT-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT01-LR08",
+      "sortIndex": 58
+    },
+    {
+      "id": "IBT26-01-Q059",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen and Choose a Response — Prompt 9/15 (coffee break invite): Select the most natural reply.",
+      "options": [
+        "I'd love to, provided we're back five minutes before Dr. Diaz starts.",
+        "Espresso mugs wash cleanest inside hot kitchen sinks.",
+        "Dr. Diaz cancelled his morning commute due to drizzle.",
+        "Yes, three seminar groups meet in different wings."
+      ],
+      "answer": "I'd love to, provided we're back five minutes before Dr. Diaz starts.",
+      "acceptedAnswers": [
+        "I'd love to, provided we're back five minutes before Dr. Diaz starts."
+      ],
+      "explanation": "Menerima ajakan dengan syarat kembali sebelum kelas dimulai.",
+      "rationaleSource": "IBT-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT01-LR09",
+      "sortIndex": 59
+    },
+    {
+      "id": "IBT26-01-Q060",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen and Choose a Response — Prompt 10/15 (keyboard shortcut help): Select the most natural reply.",
+      "options": [
+        "Footnotes always require twelve-point black ink margins.",
+        "Keyboard mice plug neatly into left USB docks.",
+        "Historical archives open Tuesdays through Saturdays.",
+        "Check your Settings gear icon—the style dropdown probably defaulted back to APA."
+      ],
+      "answer": "Check your Settings gear icon—the style dropdown probably defaulted back to APA.",
+      "acceptedAnswers": [
+        "Check your Settings gear icon—the style dropdown probably defaulted back to APA."
+      ],
+      "explanation": "Menunjukkan letak pengaturan yang harus diperiksa.",
+      "rationaleSource": "IBT-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT01-LR10",
+      "sortIndex": 60
+    },
+    {
+      "id": "IBT26-01-Q061",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen and Choose a Response — Prompt 11/15 (exam room shift): Select the most natural reply.",
+      "options": [
+        "Room 204 needs fresh chalk before Monday lectures.",
+        "Yes, I reviewed thirty flashcards beside Hall B yesterday.",
+        "Look at this morning's follow-up notice; they switched us across to spacious Hall B.",
+        "Midterms usually cover chapters one through seven carefully."
+      ],
+      "answer": "Look at this morning's follow-up notice; they switched us across to spacious Hall B.",
+      "acceptedAnswers": [
+        "Look at this morning's follow-up notice; they switched us across to spacious Hall B."
+      ],
+      "explanation": "Mengoreksi informasi ruang ujian sesuai pembaruan pagi.",
+      "rationaleSource": "IBT-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT01-LR11",
+      "sortIndex": 61
+    },
+    {
+      "id": "IBT26-01-Q062",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen and Choose a Response — Prompt 12/15 (rain coat advice): Select the most natural reply.",
+      "options": [
+        "Actually, my mountain frame weighs barely ten kilos.",
+        "Judging by those dark clouds stacking west, better slip a waterproof shell in your bag.",
+        "Bicycle tires handle steep gravel trails safely every summer.",
+        "Yes, town libraries sell plastic coffee lids for fifty cents."
+      ],
+      "answer": "Judging by those dark clouds stacking west, better slip a waterproof shell in your bag.",
+      "acceptedAnswers": [
+        "Judging by those dark clouds stacking west, better slip a waterproof shell in your bag."
+      ],
+      "explanation": "Mengisyaratkan saran membawa jas hujan karena mendung tebal.",
+      "rationaleSource": "IBT-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT01-LR12",
+      "sortIndex": 62
+    },
+    {
+      "id": "IBT26-01-Q063",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen and Choose a Response — Prompt 13/15 (volunteer shift swap): Select the most natural reply.",
+      "options": [
+        "I'm free until noon Saturday—want me to email the coordinator about trading?",
+        "Museum visitors rarely tour clay pots at midnight.",
+        "Saturday library hours shift smoothly during spring break.",
+        "Yes, I left my blue coat hanging near gallery desk two."
+      ],
+      "answer": "I'm free until noon Saturday—want me to email the coordinator about trading?",
+      "acceptedAnswers": [
+        "I'm free until noon Saturday—want me to email the coordinator about trading?"
+      ],
+      "explanation": "Menawarkan bertukar jadwal jaga secara kooperatif.",
+      "rationaleSource": "IBT-MOD-08",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT01-LR13",
+      "sortIndex": 63
+    },
+    {
+      "id": "IBT26-01-Q064",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen and Choose a Response — Prompt 14/15 (noisy hallway drill): Select the most natural reply.",
+      "options": [
+        "Microphones usually capture low drumbeats cleanly outdoors.",
+        "Yes, atrium floor tiles shine nicely after morning mopping.",
+        "We already memorized twelve speaking prompts yesterday.",
+        "Definitely—let's check whether Study Room 3 on the second floor is unlocked."
+      ],
+      "answer": "Definitely—let's check whether Study Room 3 on the second floor is unlocked.",
+      "acceptedAnswers": [
+        "Definitely—let's check whether Study Room 3 on the second floor is unlocked."
+      ],
+      "explanation": "Menyetujui dan menyarankan lokasi ruang belajar lantai dua yang lebih hening.",
+      "rationaleSource": "IBT-MOD-03",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT01-LR14",
+      "sortIndex": 64
+    },
+    {
+      "id": "IBT26-01-Q065",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen and Choose a Response — Prompt 15/15 (library card renewal): Select the most natural reply.",
+      "options": [
+        "Self-checkout desks sit beside bright north plaza windows.",
+        "Barcodes use crisp black bars on white matte cards.",
+        "Visiting alumni passes need a quick term stamp at the circulation counter first.",
+        "Digital scanners scan printed paperback prices effortlessly."
+      ],
+      "answer": "Visiting alumni passes need a quick term stamp at the circulation counter first.",
+      "acceptedAnswers": [
+        "Visiting alumni passes need a quick term stamp at the circulation counter first."
+      ],
+      "explanation": "Menjelaskan alasan penolakan teknis dan cara aktivasinya di meja sirkulasi.",
+      "rationaleSource": "IBT-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT01-LR15",
+      "sortIndex": 65
+    },
+    {
+      "id": "IBT26-01-Q066",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Conversation 1 — Interlibrary Map Loan — Item 1/4: Why did the woman visit the main circulation desk?",
+      "options": [
+        "Her camera flash broke inside Room 302.",
+        "She could not locate a 1958 basin survey map in basement drawers.",
+        "She wants to sell vintage coastal maps upstairs.",
+        "Roof rain soaked her finished lab notebook."
+      ],
+      "answer": "She could not locate a 1958 basin survey map in basement drawers.",
+      "acceptedAnswers": [
+        "She could not locate a 1958 basin survey map in basement drawers."
+      ],
+      "explanation": "Peta tahun 1958 tidak berada di laci basement.",
+      "rationaleSource": "IBT-MOD-03",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT01-C1",
+      "sortIndex": 66
+    },
+    {
+      "id": "IBT26-01-Q067",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Conversation 1 — Interlibrary Map Loan — Item 2/4: Why was the map transferred into Rare Cartography?",
+      "options": [
+        "Past roof leaks prompted safety relocation while repairing drawers.",
+        "Hydrology professors removed all twentieth-century maps.",
+        "Room 302 ran low on empty cabinet shelves.",
+        "Students checked the atlas out overnight."
+      ],
+      "answer": "Past roof leaks prompted safety relocation while repairing drawers.",
+      "acceptedAnswers": [
+        "Past roof leaks prompted safety relocation while repairing drawers."
+      ],
+      "explanation": "Kebocoran atap membuat koleksi dipindahkan selama perbaikan laci.",
+      "rationaleSource": "IBT-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT01-C1",
+      "sortIndex": 67
+    },
+    {
+      "id": "IBT26-01-Q068",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Conversation 1 — Interlibrary Map Loan — Item 3/4: Why does the woman mention advisor permission letters?",
+      "options": [
+        "To volunteer copying Curator Perez's summer bibliography.",
+        "To appeal a late overdue cartography fine.",
+        "To request extra flash photography bulbs.",
+        "To verify whether extra academic paperwork is mandatory before viewing the map."
+      ],
+      "answer": "To verify whether extra academic paperwork is mandatory before viewing the map.",
+      "acceptedAnswers": [
+        "To verify whether extra academic paperwork is mandatory before viewing the map."
+      ],
+      "explanation": "Ia memastikan apakah butuh surat pengantar dosen hanya untuk memotret angka elevasi.",
+      "rationaleSource": "IBT-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT01-C1",
+      "sortIndex": 68
+    },
+    {
+      "id": "IBT26-01-Q069",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Conversation 1 — Interlibrary Map Loan — Item 4/4: Under what simple conditions can she view and capture numbers inside Room 302?",
+      "options": [
+        "Bring an advisor escort alongside cotton gloves.",
+        "Visit exclusively after dinner at eight.",
+        "Show valid student ID to Curator Perez before 4:30 PM without camera flash.",
+        "Reserve an electronic microfilm locker three days early."
+      ],
+      "answer": "Show valid student ID to Curator Perez before 4:30 PM without camera flash.",
+      "acceptedAnswers": [
+        "Show valid student ID to Curator Perez before 4:30 PM without camera flash."
+      ],
+      "explanation": "Cukup menunjukkan kartu mahasiswa sebelum 16.30 dan tanpa lampu kilat.",
+      "rationaleSource": "IBT-MOD-03",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT01-C1",
+      "sortIndex": 69
+    },
+    {
+      "id": "IBT26-01-Q070",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Conversation 2 — Greenhouse Sensors & Battery Drift — Item 1/4: What discrepancy alerted the man on greenhouse bench six?",
+      "options": [
+        "Earthworms severed copper antenna cords.",
+        "Sensor outputs stayed high at thirty-eight percent despite visibly parched soil.",
+        "Batteries drained cleanly to zero before Tuesday afternoon.",
+        "Heat pipes scorched tender alpine vegetable seedlings."
+      ],
+      "answer": "Sensor outputs stayed high at thirty-eight percent despite visibly parched soil.",
+      "acceptedAnswers": [
+        "Sensor outputs stayed high at thirty-eight percent despite visibly parched soil."
+      ],
+      "explanation": "Pembacaan tetap tinggi padahal media tanam sudah kering.",
+      "rationaleSource": "IBT-MOD-03",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT01-C2",
+      "sortIndex": 70
+    },
+    {
+      "id": "IBT26-01-Q071",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Conversation 2 — Greenhouse Sensors & Battery Drift — Item 2/4: What physical culprit actually skewed the probe readings?",
+      "options": [
+        "A tiny hollow air pocket dug beside the sensor tip blocked true soil contact.",
+        "Submerged clay salt corroded battery clips overnight.",
+        "Broken window glass dripped condensation downward.",
+        "Someone toggled the logger app to Fahrenheit."
+      ],
+      "answer": "A tiny hollow air pocket dug beside the sensor tip blocked true soil contact.",
+      "acceptedAnswers": [
+        "A tiny hollow air pocket dug beside the sensor tip blocked true soil contact."
+      ],
+      "explanation": "Lubang udara akibat cacing memutus kontak keramik sensor ke tanah.",
+      "rationaleSource": "IBT-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT01-C2",
+      "sortIndex": 71
+    },
+    {
+      "id": "IBT26-01-Q072",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Conversation 2 — Greenhouse Sensors & Battery Drift — Item 3/4: Why does Lina initially ask about the corner heat pipe?",
+      "options": [
+        "She needs warmer piping to boil morning espresso water.",
+        "Heat pipes run directly beneath outdoor parking lawns.",
+        "She plans removing bench six altogether.",
+        "She suspects localized artificial drying or heat skew around the tip."
+      ],
+      "answer": "She suspects localized artificial drying or heat skew around the tip.",
+      "acceptedAnswers": [
+        "She suspects localized artificial drying or heat skew around the tip."
+      ],
+      "explanation": "Ia menduga anomali dipicu panas pipa pemanas atau penurunan baterai.",
+      "rationaleSource": "IBT-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT01-C2",
+      "sortIndex": 72
+    },
+    {
+      "id": "IBT26-01-Q073",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Conversation 2 — Greenhouse Sensors & Battery Drift — Item 4/4: What two-step routine does Lina advise going forward?",
+      "options": [
+        "Spray greenhouse worms lightly with vinegar daily.",
+        "Move all benches outside onto windy concrete slabs.",
+        "Tamp damp compost tightly around prongs after indoor calibration check.",
+        "Switch sensors completely out for plastic rain gauges."
+      ],
+      "answer": "Tamp damp compost tightly around prongs after indoor calibration check.",
+      "acceptedAnswers": [
+        "Tamp damp compost tightly around prongs after indoor calibration check."
+      ],
+      "explanation": "Padatkan kompos lembap di ujung probe serta kalibrasi titik nol di dalam ruangan.",
+      "rationaleSource": "IBT-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT01-C2",
+      "sortIndex": 73
+    },
+    {
+      "id": "IBT26-01-Q074",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Conversation 3 — Chemistry Poster Layout Revision — Item 1/4: What primary design flaw does the man flag immediately on her draft poster?",
+      "options": [
+        "Uploading PDFs after four incurs rush print charges.",
+        "Dense nine-point gray body bullets will be illegible to standing viewers.",
+        "Three-year biochar bars display completely backwards colors.",
+        "Oven kiln numbers contradict standard chemistry manuals."
+      ],
+      "answer": "Dense nine-point gray body bullets will be illegible to standing viewers.",
+      "acceptedAnswers": [
+        "Dense nine-point gray body bullets will be illegible to standing viewers."
+      ],
+      "explanation": "Teks metode terlalu kecil (9pt abu-abu) untuk dibaca dari jarak berdiri 2 meter.",
+      "rationaleSource": "IBT-MOD-03",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT01-C3",
+      "sortIndex": 74
+    },
+    {
+      "id": "IBT26-01-Q075",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Conversation 3 — Chemistry Poster Layout Revision — Item 2/4: Why had the woman shrunk typography down to tiny font originally?",
+      "options": [
+        "She feared trimming verbose kiln log details would disappoint reviewers.",
+        "Campus plotter machines cap title sizes at nine points.",
+        "Twenty-point sans-serif fonts crashed her laptop yesterday.",
+        "Judges ban summary tables inside poster frames."
+      ],
+      "answer": "She feared trimming verbose kiln log details would disappoint reviewers.",
+      "acceptedAnswers": [
+        "She feared trimming verbose kiln log details would disappoint reviewers."
+      ],
+      "explanation": "Ia khawatir memotong catatan suhu tungku mengurangi penilaian ketelitian.",
+      "rationaleSource": "IBT-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT01-C3",
+      "sortIndex": 75
+    },
+    {
+      "id": "IBT26-01-Q076",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Conversation 3 — Chemistry Poster Layout Revision — Item 3/4: How does the man propose keeping both visual punch AND full technical rigor?",
+      "options": [
+        "Print two separate oversized boards side by side silently.",
+        "Hand out bound forty-page books to every passing guest.",
+        "Delete the central three-year bar graph entirely.",
+        "Present big twenty-point highlights visually and link full kiln tables via QR code."
+      ],
+      "answer": "Present big twenty-point highlights visually and link full kiln tables via QR code.",
+      "acceptedAnswers": [
+        "Present big twenty-point highlights visually and link full kiln tables via QR code."
+      ],
+      "explanation": "Ia menyarankan menaikkan ukuran huruf ke >=20pt untuk poin utama + menaruh log lengkap di QR note.",
+      "rationaleSource": "IBT-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT01-C3",
+      "sortIndex": 76
+    },
+    {
+      "id": "IBT26-01-Q077",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Conversation 3 — Chemistry Poster Layout Revision — Item 4/4: When is her firm print upload deadline?",
+      "options": [
+        "Nine o'clock tomorrow morning.",
+        "Only following Tuesday advising hours.",
+        "At four o'clock later that day.",
+        "Friday midnight after symposium judging."
+      ],
+      "answer": "At four o'clock later that day.",
+      "acceptedAnswers": [
+        "At four o'clock later that day."
+      ],
+      "explanation": "Ia berencana mengunggah PDF pukul empat.",
+      "rationaleSource": "IBT-MOD-03",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT01-C3",
+      "sortIndex": 77
+    },
+    {
+      "id": "IBT26-01-Q078",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Conversation 4 — Weekend Jazz Rehearsal Space — Item 1/4: Why can't the jazz ensemble practice inside Studio C on Sunday?",
+      "options": [
+        "Music clubs suspended weekend campus rehearsals permanently.",
+        "Scheduled electrical inspection locks Studio C down for the afternoon.",
+        "Floor refinishing ruined piano casters Tuesday.",
+        "Acoustic drums belong strictly downtown at jazz cafes."
+      ],
+      "answer": "Scheduled electrical inspection locks Studio C down for the afternoon.",
+      "acceptedAnswers": [
+        "Scheduled electrical inspection locks Studio C down for the afternoon."
+      ],
+      "explanation": "Studio C dikunci untuk inspeksi kelistrikan Minggu siang.",
+      "rationaleSource": "IBT-MOD-03",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT01-C4",
+      "sortIndex": 78
+    },
+    {
+      "id": "IBT26-01-Q079",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Conversation 4 — Weekend Jazz Rehearsal Space — Item 2/4: What concern does the man raise about moving to Recital Lounge 208?",
+      "options": [
+        "He wonders whether the room lacks essential piano and drum setup gear.",
+        "West Wing elevators close completely on weekends.",
+        "Lounge acoustics amplify trumpet noise toward dorm halls.",
+        "Curators banned jazz instruments inside Lounge 208."
+      ],
+      "answer": "He wonders whether the room lacks essential piano and drum setup gear.",
+      "acceptedAnswers": [
+        "He wonders whether the room lacks essential piano and drum setup gear."
+      ],
+      "explanation": "Ia ragu ruangan itu memiliki piano tegak dan alas drum.",
+      "rationaleSource": "IBT-MOD-03",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT01-C4",
+      "sortIndex": 79
+    },
+    {
+      "id": "IBT26-01-Q080",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Conversation 4 — Weekend Jazz Rehearsal Space — Item 3/4: How does the woman reassure him regarding instruments near Lounge 208?",
+      "options": [
+        "Electrical technicians offer portable keyboards outside Studio C.",
+        "Band members may borrow folding pianos at the main bookstore.",
+        "Drummers rarely need carpeted mats in West Wing.",
+        "A freshly donated upright stands inside and percussion closets sit right across the hall."
+      ],
+      "answer": "A freshly donated upright stands inside and percussion closets sit right across the hall.",
+      "acceptedAnswers": [
+        "A freshly donated upright stands inside and percussion closets sit right across the hall."
+      ],
+      "explanation": "Sudah ada piano baru sejak Selasa dan lemari perkusi berada persis di seberang koridor.",
+      "rationaleSource": "IBT-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT01-C4",
+      "sortIndex": 80
+    },
+    {
+      "id": "IBT26-01-Q081",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Conversation 4 — Weekend Jazz Rehearsal Space — Item 4/4: When had facilities notified music groups about the Studio C shutdown?",
+      "options": [
+        "Last autumn semester.",
+        "Strictly during finals week.",
+        "On Monday.",
+        "Two hours before rehearsal."
+      ],
+      "answer": "On Monday.",
+      "acceptedAnswers": [
+        "On Monday."
+      ],
+      "explanation": "Staf fasilitas sudah memberi tahu klub musik pada hari Senin.",
+      "rationaleSource": "IBT-MOD-03",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT01-C4",
+      "sortIndex": 81
+    },
+    {
+      "id": "IBT26-01-Q082",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Announcement — Express Route Shuttle & Stadium Pipeline — Item 1/4: Why does this recorded transit announcement notify students?",
+      "options": [
+        "West Commons buses switch onto paid municipal tokens Monday.",
+        "A pipe repair detour temporarily drops one Route B bus stop for three weekdays.",
+        "East Stadium permanently bans private campus passenger bicycles.",
+        "Route A Orange Line ends evening service permanently Wednesday."
+      ],
+      "answer": "A pipe repair detour temporarily drops one Route B bus stop for three weekdays.",
+      "acceptedAnswers": [
+        "A pipe repair detour temporarily drops one Route B bus stop for three weekdays."
+      ],
+      "explanation": "Pengelasan pipa menutup sementara pemberhentian Route B di East Stadium selama Senin–Rabu.",
+      "rationaleSource": "IBT-MOD-04",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT01-T1",
+      "sortIndex": 82
+    },
+    {
+      "id": "IBT26-01-Q083",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Announcement — Express Route Shuttle & Stadium Pipeline — Item 2/4: How can riders reach Kinesiology Hall conveniently without extra fare during repair hours?",
+      "options": [
+        "Step off early at Botanical Arch or ride free shuttle Gold-2 from West Commons.",
+        "Wait past 6 PM daily at locked East Stadium gates.",
+        "Take municipal regional rail tickets north downtown.",
+        "Walk through active underground pipe construction trenches."
+      ],
+      "answer": "Step off early at Botanical Arch or ride free shuttle Gold-2 from West Commons.",
+      "acceptedAnswers": [
+        "Step off early at Botanical Arch or ride free shuttle Gold-2 from West Commons."
+      ],
+      "explanation": "Penumpang dapat turun di Botanical Arch atau naik shuttle gratis Gold-2.",
+      "rationaleSource": "IBT-MOD-04",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT01-T1",
+      "sortIndex": 83
+    },
+    {
+      "id": "IBT26-01-Q084",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Announcement — Express Route Shuttle & Stadium Pipeline — Item 3/4: How frequently does temporary feeder Gold-2 depart West Commons?",
+      "options": [
+        "Twice hourly at :15 and :45.",
+        "Strictly on Monday mornings at seven.",
+        "Only after Orange Line shuts down.",
+        "Every eight minutes."
+      ],
+      "answer": "Every eight minutes.",
+      "acceptedAnswers": [
+        "Every eight minutes."
+      ],
+      "explanation": "Shuttle Gold-2 berjalan setiap delapan menit.",
+      "rationaleSource": "IBT-MOD-04",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT01-T1",
+      "sortIndex": 84
+    },
+    {
+      "id": "IBT26-01-Q085",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Announcement — Express Route Shuttle & Stadium Pipeline — Item 4/4: What detail is noted about Route A Orange Line throughout Monday–Wednesday?",
+      "options": [
+        "Orange shuttles convert into student luggage haulers.",
+        "Morning Orange service halts at East Stadium.",
+        "Route A follows its ordinary uninterrupted timetable.",
+        "Route A doubles passenger wait intervals near Botanical Arch."
+      ],
+      "answer": "Route A follows its ordinary uninterrupted timetable.",
+      "acceptedAnswers": [
+        "Route A follows its ordinary uninterrupted timetable."
+      ],
+      "explanation": "Rute A tetap beroperasi normal tanpa perubahan.",
+      "rationaleSource": "IBT-MOD-04",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT01-T1",
+      "sortIndex": 85
+    },
+    {
+      "id": "IBT26-01-Q086",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Academic Talk — Thermal Stratification in Temperate Lakes — Item 1/4: What physical density property drives seasonal layering inside temperate deep lakes?",
+      "options": [
+        "Autumn wind gusts push cold stones upward.",
+        "Freshwater packs tightest at four degrees Celsius, floating warmer summer surface sheets cleanly above.",
+        "Ice freezes heaviest straight down onto sandy bottom reefs.",
+        "Salt runoff sinks brisk warm summer raindrops directly beneath mud."
+      ],
+      "answer": "Freshwater packs tightest at four degrees Celsius, floating warmer summer surface sheets cleanly above.",
+      "acceptedAnswers": [
+        "Freshwater packs tightest at four degrees Celsius, floating warmer summer surface sheets cleanly above."
+      ],
+      "explanation": "Densitas maksimum air tawar pada 4 °C membuat lapisan permukaan hangat mengambang terpisah.",
       "rationaleSource": "IBT-MOD-04",
       "difficulty": "B2",
       "points": 1,
       "license": "Original",
       "reviewStatus": "VERIFIED_ORIGINAL",
       "passageId": null,
-      "audioAssetId": "IBT01-A03",
-      "sortIndex": 6
+      "audioAssetId": "IBT01-T2",
+      "sortIndex": 86
     },
     {
-      "id": "IBT26-01-Q07",
-      "section": "WRITING",
-      "taskType": "SENTENCE_BUILD",
-      "prompt": "Build a grammatical question from the word tiles: 'Could you tell me ___?'",
+      "id": "IBT26-01-Q087",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Academic Talk — Thermal Stratification in Temperate Lakes — Item 2/4: What boundary layer separates sunny surface water from chilly bottom pools in midsummer?",
       "options": [
-        "where",
-        "the",
-        "chemistry",
-        "tutoring",
-        "center",
-        "moved"
+        "The thermocline.",
+        "The littoral shelf.",
+        "The benthic gravel wedge.",
+        "The solar canopy."
       ],
-      "answer": "where|the|chemistry|tutoring|center|moved",
+      "answer": "The thermocline.",
       "acceptedAnswers": [
-        "where|the|chemistry|tutoring|center|moved"
+        "The thermocline."
       ],
-      "explanation": "Embedded question sesudah 'Could you tell me' mengikuti pola Subjek + Kata Kerja ('where the chemistry tutoring center moved').",
-      "rationaleSource": "IBT-MOD-05",
-      "difficulty": "B2",
-      "points": 1,
-      "license": "Original",
-      "reviewStatus": "VERIFIED_ORIGINAL",
-      "passageId": null,
-      "audioAssetId": null,
-      "sortIndex": 7
-    },
-    {
-      "id": "IBT26-01-Q08",
-      "section": "WRITING",
-      "taskType": "WRITING_RESPONSE",
-      "prompt": "Write an Email (60–100 words): You missed Friday's mandatory lab safety orientation due to a documented clinic visit. Email your lab supervisor (Dr. Rivera) to apologize briefly, explain the situation, and request one alternative completion option before next week's lab.",
-      "options": [],
-      "answer": "",
-      "acceptedAnswers": [],
-      "explanation": "Email iBT 2026 dinilai dari kejelasan tujuan, nada profesional, pemenuhan ketiga poin prompt, dan ketepatan tata bahasa.",
-      "rationaleSource": "IBT-MOD-05",
-      "difficulty": "B2",
-      "points": 1,
-      "license": "Original",
-      "reviewStatus": "VERIFIED_ORIGINAL",
-      "passageId": null,
-      "audioAssetId": null,
-      "minWords": 50,
-      "recommendedWords": 80,
-      "rubricCriteria": [
-        "Clear greeting & purpose",
-        "All 3 prompt points covered",
-        "Polite academic tone",
-        "Clean sentence mechanics"
-      ],
-      "sortIndex": 8
-    },
-    {
-      "id": "IBT26-01-Q09",
-      "section": "WRITING",
-      "taskType": "WRITING_RESPONSE",
-      "prompt": "Write for an Academic Discussion (100–140 words): Professor Kim asks: 'Should universities require all undergraduate students, regardless of major, to complete at least one environmental literacy course?' Maya argues yes because climate decisions affect every profession; Liam argues electives should remain flexible so technical majors graduate on time. State your view and engage their points.",
-      "options": [],
-      "answer": "",
-      "acceptedAnswers": [],
-      "explanation": "Diskusi akademik menuntut posisi tegas, respons langsung ke poin Maya/Liam, alasan mendalam, dan contoh spesifik.",
-      "rationaleSource": "IBT-MOD-05",
-      "difficulty": "B2",
-      "points": 1,
-      "license": "Original",
-      "reviewStatus": "VERIFIED_ORIGINAL",
-      "passageId": null,
-      "audioAssetId": null,
-      "minWords": 95,
-      "recommendedWords": 120,
-      "rubricCriteria": [
-        "Clear stance",
-        "Engages Maya/Liam",
-        "Original reasoning + example",
-        "Cohesive academic prose"
-      ],
-      "sortIndex": 9
-    },
-    {
-      "id": "IBT26-01-Q10",
-      "section": "SPEAKING",
-      "taskType": "LISTEN_REPEAT",
-      "prompt": "Listen and Repeat: Play the audio prompt once, then record yourself repeating the exact sentence clearly with natural phrasing.",
-      "options": [],
-      "answer": "Please submit your revised field report before noon on Friday.",
-      "acceptedAnswers": [
-        "Please submit your revised field report before noon on Friday."
-      ],
-      "explanation": "Perhatikan kejelasan konsonan akhir ('submit', 'revised', 'report') dan jeda alami sebelum 'before noon'.",
-      "rationaleSource": "IBT-MOD-06",
+      "explanation": "Zona batas tajam suhu antara atas dan bawah disebut termoklin (thermocline).",
+      "rationaleSource": "IBT-MOD-04",
       "difficulty": "B1",
       "points": 1,
       "license": "Original",
       "reviewStatus": "VERIFIED_ORIGINAL",
       "passageId": null,
-      "audioAssetId": "IBT01-A04",
-      "referenceText": "Please submit your revised field report before noon on Friday.",
-      "sortIndex": 10
+      "audioAssetId": "IBT01-T2",
+      "sortIndex": 87
     },
     {
-      "id": "IBT26-01-Q11",
-      "section": "SPEAKING",
-      "taskType": "SPEAKING_RESPONSE",
-      "prompt": "Take an Interview (Question 1 · ~45s): 'When learning a new technical skill, do you prefer following structured video demonstrations or experimenting directly with hands-on projects? Give one reason and an example.'",
-      "options": [],
-      "answer": "",
-      "acceptedAnswers": [],
-      "explanation": "Pakai pola Direct Answer -> Reason -> Concrete Example; jaga tempo stabil tanpa jeda panjang.",
-      "rationaleSource": "IBT-MOD-06",
+      "id": "IBT26-01-Q088",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Academic Talk — Thermal Stratification in Temperate Lakes — Item 3/4: Why can deep bottom water suffer oxygen depletion late in hot August weeks?",
+      "options": [
+        "Microscopic green lake algae swallow every deep oxygen atom at midnight.",
+        "Warm surface streams evaporate dissolved nitrogen bubbles rapidly.",
+        "Lakes freeze solid below the four-degree thermocline.",
+        "Steep summer layering blocks wind-driven oxygenated surface water from mixing downward."
+      ],
+      "answer": "Steep summer layering blocks wind-driven oxygenated surface water from mixing downward.",
+      "acceptedAnswers": [
+        "Steep summer layering blocks wind-driven oxygenated surface water from mixing downward."
+      ],
+      "explanation": "Stratifikasi musim panas mengisolasi lapisan bawah dari pencampuran angin permukaan beroksigen.",
+      "rationaleSource": "IBT-MOD-04",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT01-T2",
+      "sortIndex": 88
+    },
+    {
+      "id": "IBT26-01-Q089",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Academic Talk — Thermal Stratification in Temperate Lakes — Item 4/4: What triggers natural 'autumn turnover' renewing deep-water oxygen every October?",
+      "options": [
+        "Ice skaters drill breathing holes across shallow marsh reeds.",
+        "Summer fish stir bottom sand violently.",
+        "Surface cooling near four degrees removes density barriers so fall breezes circulate whole lakes vertically.",
+        "Spring snowmelt floods heavy river gravel straight down deep bays."
+      ],
+      "answer": "Surface cooling near four degrees removes density barriers so fall breezes circulate whole lakes vertically.",
+      "acceptedAnswers": [
+        "Surface cooling near four degrees removes density barriers so fall breezes circulate whole lakes vertically."
+      ],
+      "explanation": "Pendinginan musim gugur menyamakan massa jenis atas-bawah sehingga angin mengaduk seluruh kolom air.",
+      "rationaleSource": "IBT-MOD-04",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT01-T2",
+      "sortIndex": 89
+    },
+    {
+      "id": "IBT26-01-Q090",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Academic Talk — Dendritic Copper Growth & Circuit Aging — Item 1/4: What hidden mechanism enables metallic 'dendrites' to creep across neighboring copper circuit pads?",
+      "options": [
+        "Acoustic bass speaker tremors fracture crystalline ceramic fuses slowly.",
+        "Moisture films + voltage drive dissolved metal ions from positive pads to crystalize needles toward negative lines.",
+        "Overheated plastic chip lids melt melted solder steadily sideways overnight.",
+        "High-speed fans blow crushed steel wire shavings directly onto motherboards."
+      ],
+      "answer": "Moisture films + voltage drive dissolved metal ions from positive pads to crystalize needles toward negative lines.",
+      "acceptedAnswers": [
+        "Moisture films + voltage drive dissolved metal ions from positive pads to crystalize needles toward negative lines."
+      ],
+      "explanation": "Kelembapan mikro + beda tegangan mendorong migrasi ion tembaga membentuk jarum penghubung korsleting.",
+      "rationaleSource": "IBT-MOD-04",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT01-T3",
+      "sortIndex": 90
+    },
+    {
+      "id": "IBT26-01-Q091",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Academic Talk — Dendritic Copper Growth & Circuit Aging — Item 2/4: What sudden hardware outcome occurs the instant a spiky dendritic filament spans the gap?",
+      "options": [
+        "A damaging electrical short circuit bridges across previously isolated lines.",
+        "Board computing speed jumps measurably without extra battery.",
+        "Trace voltage reverses polarity harmlessly downward.",
+        "Moisture droplets boil cleanly away leaving clean gold pads."
+      ],
+      "answer": "A damaging electrical short circuit bridges across previously isolated lines.",
+      "acceptedAnswers": [
+        "A damaging electrical short circuit bridges across previously isolated lines."
+      ],
+      "explanation": "Ujung jarum kristal yang menyentuh jalur seberang langsung menimbulkan hubungan singkat listrik.",
+      "rationaleSource": "IBT-MOD-04",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT01-T3",
+      "sortIndex": 91
+    },
+    {
+      "id": "IBT26-01-Q092",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Academic Talk — Dendritic Copper Growth & Circuit Aging — Item 3/4: Why does the lecturer emphasize 'trace humidity' rather than visible dripping puddles?",
+      "options": [
+        "Electronics factories deliberately immerse laptops weekly in salt baths.",
+        "Visible rain stops copper ions from ionizing completely.",
+        "Cold winter frost seals leaky polymer circuit paints.",
+        "Even invisible microscopic air moisture films suffice to mobilize copper ions under tight voltages."
+      ],
+      "answer": "Even invisible microscopic air moisture films suffice to mobilize copper ions under tight voltages.",
+      "acceptedAnswers": [
+        "Even invisible microscopic air moisture films suffice to mobilize copper ions under tight voltages."
+      ],
+      "explanation": "Film air tak kasat mata sekalipun cukup menjadi elektrolit di jalur sempit bertegangan.",
+      "rationaleSource": "IBT-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT01-T3",
+      "sortIndex": 92
+    },
+    {
+      "id": "IBT26-01-Q093",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Academic Talk — Dendritic Copper Growth & Circuit Aging — Item 4/4: How do engineers protect aerospace electronics operating near humid coastal air?",
+      "options": [
+        "Replacing metallic conductors entirely with paper fiber ink.",
+        "Storing navigation processors unpacked beside salt reservoirs.",
+        "Coating assembled circuit pins tightly in thin moisture-blocking conformal polymer barriers.",
+        "Doubling copper cooling fin fan speed inside wooden chassis boxes."
+      ],
+      "answer": "Coating assembled circuit pins tightly in thin moisture-blocking conformal polymer barriers.",
+      "acceptedAnswers": [
+        "Coating assembled circuit pins tightly in thin moisture-blocking conformal polymer barriers."
+      ],
+      "explanation": "Lapisan pelindung polimer (conformal coating) menyegel pin tembaga agar kedap uap lembap.",
+      "rationaleSource": "IBT-MOD-04",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT01-T3",
+      "sortIndex": 93
+    },
+    {
+      "id": "IBT26-01-Q094",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Academic Talk — Translating Oral Narratives vs Literal Glosses — Item 1/4: What dilemma do student linguists confront when rendering oral stories into English?",
+      "options": [
+        "Eliminating boat-building vocabulary from coastal town dictionaries.",
+        "Balancing sterile literal word-for-word mappings against over-smoothing living cultural metaphors.",
+        "Replacing every rare speaker audio recording solely with handwritten silent poems.",
+        "Measuring paper print weights across university folklore departments."
+      ],
+      "answer": "Balancing sterile literal word-for-word mappings against over-smoothing living cultural metaphors.",
+      "acceptedAnswers": [
+        "Balancing sterile literal word-for-word mappings against over-smoothing living cultural metaphors."
+      ],
+      "explanation": "Penerjemah harus menyeimbangkan ketepatan struktur harfiah tanpa menghilangkan makna metaforis alami.",
+      "rationaleSource": "IBT-MOD-04",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT01-T4",
+      "sortIndex": 94
+    },
+    {
+      "id": "IBT26-01-Q095",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Academic Talk — Translating Oral Narratives vs Literal Glosses — Item 2/4: Why does the speaker cite the boatbuilder saying 'the keel asks calm water twice'?",
+      "options": [
+        "To show concrete indigenous technical safety warnings reside embedded within figurative sayings.",
+        "To illustrate how ancient ferries drifted uncontrollably across shallow rivers.",
+        "To criticize shipbuilders who ignore textbook physics symbols.",
+        "To compare steel trawler pumps against coastal paddle boats."
+      ],
+      "answer": "To show concrete indigenous technical safety warnings reside embedded within figurative sayings.",
+      "acceptedAnswers": [
+        "To show concrete indigenous technical safety warnings reside embedded within figurative sayings."
+      ],
+      "explanation": "Contoh memperlihatkan nasihat konstruksi kapal tersimpan padat di balik ungkapan kiasan.",
+      "rationaleSource": "IBT-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT01-T4",
+      "sortIndex": 95
+    },
+    {
+      "id": "IBT26-01-Q096",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Academic Talk — Translating Oral Narratives vs Literal Glosses — Item 3/4: What recommended solution serves both syntactic linguists AND everyday general readers cleanly?",
+      "options": [
+        "Publishing strictly single English summaries omitting original recorded audio.",
+        "Printing only phonetic IPA glyphs without English gloss equivalents.",
+        "Deleting coastal idioms completely before seminar submission.",
+        "Pairing precise interlinear morpheme breakdown lines alongside clear footnoted idiomatic prose."
+      ],
+      "answer": "Pairing precise interlinear morpheme breakdown lines alongside clear footnoted idiomatic prose.",
+      "acceptedAnswers": [
+        "Pairing precise interlinear morpheme breakdown lines alongside clear footnoted idiomatic prose."
+      ],
+      "explanation": "Kombinasi glosa morfem per baris bagi peneliti + terjemahan idiomatik bercatatan kaki memuaskan dua audiens.",
+      "rationaleSource": "IBT-MOD-04",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT01-T4",
+      "sortIndex": 96
+    },
+    {
+      "id": "IBT26-01-Q097",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Academic Talk — Translating Oral Narratives vs Literal Glosses — Item 4/4: What does the phrase 'word-for-word ... dry textbook prose' warn translators against?",
+      "options": [
+        "Checking recorded speaker pauses twice in Praat software.",
+        "Consulting community elders prior to finalizing dictionary edits.",
+        "Stripping cultural cadence out or trapping grammar stiffly into unnatural English.",
+        "Printing folklore pages on extra-thick waterproof cotton paper."
+      ],
+      "answer": "Stripping cultural cadence out or trapping grammar stiffly into unnatural English.",
+      "acceptedAnswers": [
+        "Stripping cultural cadence out or trapping grammar stiffly into unnatural English."
+      ],
+      "explanation": "Terjemahan kaku atau terlalu datar menghilangkan nuansa asli penutur.",
+      "rationaleSource": "IBT-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT01-T4",
+      "sortIndex": 97
+    },
+    {
+      "id": "IBT26-01-Q098",
+      "section": "WRITING",
+      "taskType": "SENTENCE_BUILD",
+      "prompt": "Build a Sentence 1/10 — Context: Did the librarian say where old harbor atlases moved? | Arrange into one grammatical response:",
+      "options": [
+        "where",
+        "rare",
+        "maps",
+        "were",
+        "stored.",
+        "She",
+        "explained"
+      ],
+      "answer": "She|explained|where|rare|maps|were|stored.",
+      "acceptedAnswers": [
+        "She|explained|where|rare|maps|were|stored."
+      ],
+      "explanation": "Embedded clause memakai urutan subjek + kata kerja ('where rare maps were stored').",
+      "rationaleSource": "IBT-MOD-05",
       "difficulty": "B2",
       "points": 1,
       "license": "Original",
       "reviewStatus": "VERIFIED_ORIGINAL",
       "passageId": null,
       "audioAssetId": null,
-      "prepSeconds": 0,
-      "speakSeconds": 45,
+      "sortIndex": 98
+    },
+    {
+      "id": "IBT26-01-Q099",
+      "section": "WRITING",
+      "taskType": "SENTENCE_BUILD",
+      "prompt": "Build a Sentence 2/10 — Context: Why did irrigation engineers postpone burying soil probes? | Arrange into one grammatical response:",
+      "options": [
+        "They",
+        "damp",
+        "earth",
+        "settled",
+        "snugly.",
+        "until",
+        "waited"
+      ],
+      "answer": "They|waited|until|damp|earth|settled|snugly.",
+      "acceptedAnswers": [
+        "They|waited|until|damp|earth|settled|snugly."
+      ],
+      "explanation": "Klausa waktu menggunakan 'until + S + V' secara urut.",
+      "rationaleSource": "IBT-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 99
+    },
+    {
+      "id": "IBT26-01-Q100",
+      "section": "WRITING",
+      "taskType": "SENTENCE_BUILD",
+      "prompt": "Build a Sentence 3/10 — Context: Would Maya prefer borrowing dry-field boots before sunrise? | Arrange into one grammatical response:",
+      "options": [
+        "she",
+        "already",
+        "packed",
+        "spare",
+        "boots.",
+        "Ask",
+        "whether"
+      ],
+      "answer": "Ask|whether|she|already|packed|spare|boots.",
+      "acceptedAnswers": [
+        "Ask|whether|she|already|packed|spare|boots."
+      ],
+      "explanation": "Indirect yes/no question memakai 'whether + S + packed...'.",
+      "rationaleSource": "IBT-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 100
+    },
+    {
+      "id": "IBT26-01-Q101",
+      "section": "WRITING",
+      "taskType": "SENTENCE_BUILD",
+      "prompt": "Build a Sentence 4/10 — Context: How long does archival box board resist winter heat cycles? | Arrange into one grammatical response:",
+      "options": [
+        "Acid-free",
+        "protect",
+        "bindings",
+        "for",
+        "decades.",
+        "enclosures",
+        "rag"
+      ],
+      "answer": "Acid-free|rag|enclosures|protect|bindings|for|decades.",
+      "acceptedAnswers": [
+        "Acid-free|rag|enclosures|protect|bindings|for|decades."
+      ],
+      "explanation": "Kalimat deklaratif S + V + O + keterangan waktu.",
+      "rationaleSource": "IBT-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 101
+    },
+    {
+      "id": "IBT26-01-Q102",
+      "section": "WRITING",
+      "taskType": "SENTENCE_BUILD",
+      "prompt": "Build a Sentence 5/10 — Context: When will shuttle Gold-2 resume running beside East Stadium? | Arrange into one grammatical response:",
+      "options": [
+        "confirmed",
+        "Wednesday",
+        "evening",
+        "at",
+        "six.",
+        "Transit",
+        "staff"
+      ],
+      "answer": "Transit|staff|confirmed|Wednesday|evening|at|six.",
+      "acceptedAnswers": [
+        "Transit|staff|confirmed|Wednesday|evening|at|six."
+      ],
+      "explanation": "Objek langsung mengikuti kata kerja lampau 'confirmed'.",
+      "rationaleSource": "IBT-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 102
+    },
+    {
+      "id": "IBT26-01-Q103",
+      "section": "WRITING",
+      "taskType": "SENTENCE_BUILD",
+      "prompt": "Build a Sentence 6/10 — Context: What should students finish prior to laser cutter booking? | Arrange into one grammatical response:",
+      "options": [
+        "Everyone",
+        "that",
+        "ten-minute",
+        "ventilation",
+        "quiz.",
+        "complete",
+        "must"
+      ],
+      "answer": "Everyone|must|complete|that|ten-minute|ventilation|quiz.",
+      "acceptedAnswers": [
+        "Everyone|must|complete|that|ten-minute|ventilation|quiz."
+      ],
+      "explanation": "Modal 'must' langsung diikuti bare verb 'complete' + objek.",
+      "rationaleSource": "IBT-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 103
+    },
+    {
+      "id": "IBT26-01-Q104",
+      "section": "WRITING",
+      "taskType": "SENTENCE_BUILD",
+      "prompt": "Build a Sentence 7/10 — Context: Why do sandy plots benefit from adding five percent biochar? | Arrange into one grammatical response:",
+      "options": [
+        "retain",
+        "more",
+        "available",
+        "plant",
+        "moisture.",
+        "Porous",
+        "granules"
+      ],
+      "answer": "Porous|granules|retain|more|available|plant|moisture.",
+      "acceptedAnswers": [
+        "Porous|granules|retain|more|available|plant|moisture."
+      ],
+      "explanation": "Frasa subjek jamak 'Porous granules' berpasangan dengan verba jamak 'retain'.",
+      "rationaleSource": "IBT-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 104
+    },
+    {
+      "id": "IBT26-01-Q105",
+      "section": "WRITING",
+      "taskType": "SENTENCE_BUILD",
+      "prompt": "Build a Sentence 8/10 — Context: Did astronomers confirm whether dark clouds blocked Kepler mirrors? | Arrange into one grammatical response:",
+      "options": [
+        "Dr. Lin",
+        "thick",
+        "haze",
+        "dimmed",
+        "readings.",
+        "how",
+        "checked"
+      ],
+      "answer": "Dr. Lin|checked|how|thick|haze|dimmed|readings.",
+      "acceptedAnswers": [
+        "Dr. Lin|checked|how|thick|haze|dimmed|readings."
+      ],
+      "explanation": "Embedded question menggunakan 'how + noun phrase + verb'.",
+      "rationaleSource": "IBT-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 105
+    },
+    {
+      "id": "IBT26-01-Q106",
+      "section": "WRITING",
+      "taskType": "SENTENCE_BUILD",
+      "prompt": "Build a Sentence 9/10 — Context: How can small coastal farms keep harvested berries cool quickly? | Arrange into one grammatical response:",
+      "options": [
+        "chill",
+        "fruit",
+        "crates",
+        "before",
+        "noon.",
+        "Solar",
+        "units"
+      ],
+      "answer": "Solar|units|chill|fruit|crates|before|noon.",
+      "acceptedAnswers": [
+        "Solar|units|chill|fruit|crates|before|noon."
+      ],
+      "explanation": "S + V + O + prepositional time phrase.",
+      "rationaleSource": "IBT-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 106
+    },
+    {
+      "id": "IBT26-01-Q107",
+      "section": "WRITING",
+      "taskType": "SENTENCE_BUILD",
+      "prompt": "Build a Sentence 10/10 — Context: Did the professor mention if Flex Tokens cover lab checkoffs? | Arrange into one grammatical response:",
+      "options": [
+        "No,",
+        "always",
+        "require",
+        "live",
+        "attendance.",
+        "reflections",
+        "safety"
+      ],
+      "answer": "No,|safety|reflections|always|require|live|attendance.",
+      "acceptedAnswers": [
+        "No,|safety|reflections|always|require|live|attendance."
+      ],
+      "explanation": "Adverb frekuensi 'always' ditempatkan tepat sebelum kata kerja utama 'require'.",
+      "rationaleSource": "IBT-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 107
+    },
+    {
+      "id": "IBT26-01-Q108",
+      "section": "WRITING",
+      "taskType": "WRITING_RESPONSE",
+      "prompt": "Email — Field Lab Equipment Schedule Conflict\nWrite an email (70–120 words) to Prof. Vega explaining why your biology lab group needs to move Wednesday's greenhouse soil-sensor setup to Thursday at 2:00 PM, referencing one weather/schedule reason and asking politely for confirmation.",
+      "options": [],
+      "answer": "",
+      "acceptedAnswers": [],
+      "explanation": "Cek ulang struktur email: salam sopan -> alasan langsung di kalimat pertama -> detail spesifik & ajakan konfirmasi -> penutup rapi.",
+      "rationaleSource": "IBT-MOD-09",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "minWords": 70,
+      "recommendedWords": 95,
       "rubricCriteria": [
-        "Direct opinion",
-        "Supporting reason + example",
-        "Intelligibility & pacing",
+        "Clear communicative purpose",
+        "Specific schedule/reason details",
+        "Polite academic email register",
         "Grammatical accuracy"
       ],
-      "sortIndex": 11
+      "sortIndex": 108
     },
     {
-      "id": "IBT26-01-Q12",
-      "section": "SPEAKING",
-      "taskType": "SPEAKING_RESPONSE",
-      "prompt": "Take an Interview (Question 2 · ~45s): 'Some student clubs restrict meetings to members in a single major, while others stay open to everyone. Which policy benefits campus life more, and why?'",
+      "id": "IBT26-01-Q109",
+      "section": "WRITING",
+      "taskType": "WRITING_RESPONSE",
+      "prompt": "Academic Discussion — Campus Energy Priorities\nDr. Santos asks: 'Should universities invest scarce sustainability grants first in smart solar microgrid batteries or deep-retrofit thermal window insulation across older classrooms?' Student A argues batteries slash blackout risks; Student B favors insulation cutting heating bills daily. Contribute a clear 100–130 word post weighing both trade-offs.",
       "options": [],
       "answer": "",
       "acceptedAnswers": [],
-      "explanation": "Bandingkan kedua sisi secara singkat lalu tekankan satu manfaat utama dengan contoh kegiatan nyata.",
-      "rationaleSource": "IBT-MOD-06",
+      "explanation": "Nyatakan posisi jelas, rujuk argumen Student A/B dengan kata sendiri, serta tambahkan alasan mekanisme dan satu contoh konkret (100–130 kata).",
+      "rationaleSource": "IBT-MOD-05",
       "difficulty": "B2",
       "points": 1,
       "license": "Original",
       "reviewStatus": "VERIFIED_ORIGINAL",
       "passageId": null,
       "audioAssetId": null,
+      "minWords": 100,
+      "recommendedWords": 125,
+      "rubricCriteria": [
+        "Direct response engaging peers",
+        "Cohesive idea development",
+        "Syntactic variety",
+        "Accurate lexical control"
+      ],
+      "sortIndex": 109
+    },
+    {
+      "id": "IBT26-01-Q110",
+      "section": "SPEAKING",
+      "taskType": "LISTEN_REPEAT",
+      "prompt": "Listen and Repeat (IBT26-01-Q110): Listen cleanly to the spoken sentence (1/7) and repeat it aloud with natural rhythm and clear articulation.",
+      "options": [],
+      "answer": "",
+      "acceptedAnswers": [],
+      "explanation": "Latih pengelompokan jeda alami (chunking) dan akurasi pelafalan kalimat referensi: 'All chemistry safety forms are due on Tuesday before noon.'",
+      "rationaleSource": "IBT-MOD-10",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT01-SR01",
       "prepSeconds": 0,
+      "speakSeconds": 12,
+      "referenceText": "All chemistry safety forms are due on Tuesday before noon.",
+      "rubricCriteria": [
+        "Word accuracy",
+        "Natural chunk phrasing",
+        "Vowel & final-consonant clarity"
+      ],
+      "sortIndex": 110
+    },
+    {
+      "id": "IBT26-01-Q111",
+      "section": "SPEAKING",
+      "taskType": "LISTEN_REPEAT",
+      "prompt": "Listen and Repeat (IBT26-01-Q111): Listen cleanly to the spoken sentence (2/7) and repeat it aloud with natural rhythm and clear articulation.",
+      "options": [],
+      "answer": "",
+      "acceptedAnswers": [],
+      "explanation": "Latih pengelompokan jeda alami (chunking) dan akurasi pelafalan kalimat referensi: 'Desert succulents store carbon inside cellular vacuoles overnight.'",
+      "rationaleSource": "IBT-MOD-10",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT01-SR02",
+      "prepSeconds": 0,
+      "speakSeconds": 12,
+      "referenceText": "Desert succulents store carbon inside cellular vacuoles overnight.",
+      "rubricCriteria": [
+        "Word accuracy",
+        "Natural chunk phrasing",
+        "Vowel & final-consonant clarity"
+      ],
+      "sortIndex": 111
+    },
+    {
+      "id": "IBT26-01-Q112",
+      "section": "SPEAKING",
+      "taskType": "LISTEN_REPEAT",
+      "prompt": "Listen and Repeat (IBT26-01-Q112): Listen cleanly to the spoken sentence (3/7) and repeat it aloud with natural rhythm and clear articulation.",
+      "options": [],
+      "answer": "",
+      "acceptedAnswers": [],
+      "explanation": "Latih pengelompokan jeda alami (chunking) dan akurasi pelafalan kalimat referensi: 'Route B express buses bypass the south stadium during pipe welding.'",
+      "rationaleSource": "IBT-MOD-10",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT01-SR03",
+      "prepSeconds": 0,
+      "speakSeconds": 12,
+      "referenceText": "Route B express buses bypass the south stadium during pipe welding.",
+      "rubricCriteria": [
+        "Word accuracy",
+        "Natural chunk phrasing",
+        "Vowel & final-consonant clarity"
+      ],
+      "sortIndex": 112
+    },
+    {
+      "id": "IBT26-01-Q113",
+      "section": "SPEAKING",
+      "taskType": "LISTEN_REPEAT",
+      "prompt": "Listen and Repeat (IBT26-01-Q113): Listen cleanly to the spoken sentence (4/7) and repeat it aloud with natural rhythm and clear articulation.",
+      "options": [],
+      "answer": "",
+      "acceptedAnswers": [],
+      "explanation": "Latih pengelompokan jeda alami (chunking) dan akurasi pelafalan kalimat referensi: 'Please leave your library ID at the third-floor scanning counter.'",
+      "rationaleSource": "IBT-MOD-10",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT01-SR04",
+      "prepSeconds": 0,
+      "speakSeconds": 12,
+      "referenceText": "Please leave your library ID at the third-floor scanning counter.",
+      "rubricCriteria": [
+        "Word accuracy",
+        "Natural chunk phrasing",
+        "Vowel & final-consonant clarity"
+      ],
+      "sortIndex": 113
+    },
+    {
+      "id": "IBT26-01-Q114",
+      "section": "SPEAKING",
+      "taskType": "LISTEN_REPEAT",
+      "prompt": "Listen and Repeat (IBT26-01-Q114): Listen cleanly to the spoken sentence (5/7) and repeat it aloud with natural rhythm and clear articulation.",
+      "options": [],
+      "answer": "",
+      "acceptedAnswers": [],
+      "explanation": "Latih pengelompokan jeda alami (chunking) dan akurasi pelafalan kalimat referensi: 'Biochar granules hold rainwater smoothly inside sandy farm plots.'",
+      "rationaleSource": "IBT-MOD-10",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT01-SR05",
+      "prepSeconds": 0,
+      "speakSeconds": 12,
+      "referenceText": "Biochar granules hold rainwater smoothly inside sandy farm plots.",
+      "rubricCriteria": [
+        "Word accuracy",
+        "Natural chunk phrasing",
+        "Vowel & final-consonant clarity"
+      ],
+      "sortIndex": 114
+    },
+    {
+      "id": "IBT26-01-Q115",
+      "section": "SPEAKING",
+      "taskType": "LISTEN_REPEAT",
+      "prompt": "Listen and Repeat (IBT26-01-Q115): Listen cleanly to the spoken sentence (6/7) and repeat it aloud with natural rhythm and clear articulation.",
+      "options": [],
+      "answer": "",
+      "acceptedAnswers": [],
+      "explanation": "Latih pengelompokan jeda alami (chunking) dan akurasi pelafalan kalimat referensi: 'Review Chapter Four graphs ahead of Friday's afternoon advising hour.'",
+      "rationaleSource": "IBT-MOD-10",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT01-SR06",
+      "prepSeconds": 0,
+      "speakSeconds": 12,
+      "referenceText": "Review Chapter Four graphs ahead of Friday's afternoon advising hour.",
+      "rubricCriteria": [
+        "Word accuracy",
+        "Natural chunk phrasing",
+        "Vowel & final-consonant clarity"
+      ],
+      "sortIndex": 115
+    },
+    {
+      "id": "IBT26-01-Q116",
+      "section": "SPEAKING",
+      "taskType": "LISTEN_REPEAT",
+      "prompt": "Listen and Repeat (IBT26-01-Q116): Listen cleanly to the spoken sentence (7/7) and repeat it aloud with natural rhythm and clear articulation.",
+      "options": [],
+      "answer": "",
+      "acceptedAnswers": [],
+      "explanation": "Latih pengelompokan jeda alami (chunking) dan akurasi pelafalan kalimat referensi: 'The marine chronometer lost only five seconds across eighty ocean days.'",
+      "rationaleSource": "IBT-MOD-10",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT01-SR07",
+      "prepSeconds": 0,
+      "speakSeconds": 12,
+      "referenceText": "The marine chronometer lost only five seconds across eighty ocean days.",
+      "rubricCriteria": [
+        "Word accuracy",
+        "Natural chunk phrasing",
+        "Vowel & final-consonant clarity"
+      ],
+      "sortIndex": 116
+    },
+    {
+      "id": "IBT26-01-Q117",
+      "section": "SPEAKING",
+      "taskType": "SPEAKING_RESPONSE",
+      "prompt": "Take an Interview 1/4: Interviewer Q1: Welcome! To begin, what kind of off-campus field site or study space helps you concentrate best on tough assignments, and why?",
+      "options": [],
+      "answer": "",
+      "acceptedAnswers": [],
+      "explanation": "Jawab langsung posisi/pilihan Anda dalam 1 kalimat pembuka, ikuti 1–2 alasan mekanisme nyata, dan tutup dengan contoh singkat terfokus (45 detik).",
+      "rationaleSource": "IBT-MOD-06",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT01-SI01",
+      "prepSeconds": 10,
       "speakSeconds": 45,
       "rubricCriteria": [
-        "Clear comparison",
-        "Coherent elaboration",
-        "Natural lexical range",
-        "Fluency"
+        "Prompt relevance",
+        "Spontaneous fluency (~130-160 WPM)",
+        "Supporting detail & clarity",
+        "Sentence variety"
       ],
-      "sortIndex": 12
+      "sortIndex": 117
+    },
+    {
+      "id": "IBT26-01-Q118",
+      "section": "SPEAKING",
+      "taskType": "SPEAKING_RESPONSE",
+      "prompt": "Take an Interview 2/4: Interviewer Q2: Many science classes require collaborative lab partners while some students prefer solo work. Which style suits you better?",
+      "options": [],
+      "answer": "",
+      "acceptedAnswers": [],
+      "explanation": "Jawab langsung posisi/pilihan Anda dalam 1 kalimat pembuka, ikuti 1–2 alasan mekanisme nyata, dan tutup dengan contoh singkat terfokus (45 detik).",
+      "rationaleSource": "IBT-MOD-06",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT01-SI02",
+      "prepSeconds": 10,
+      "speakSeconds": 45,
+      "rubricCriteria": [
+        "Prompt relevance",
+        "Spontaneous fluency (~130-160 WPM)",
+        "Supporting detail & clarity",
+        "Sentence variety"
+      ],
+      "sortIndex": 118
+    },
+    {
+      "id": "IBT26-01-Q119",
+      "section": "SPEAKING",
+      "taskType": "SPEAKING_RESPONSE",
+      "prompt": "Take an Interview 3/4: Interviewer Q3: If a field sensor malfunctions the evening before a major deadline, how would you troubleshoot or adjust your team schedule?",
+      "options": [],
+      "answer": "",
+      "acceptedAnswers": [],
+      "explanation": "Jawab langsung posisi/pilihan Anda dalam 1 kalimat pembuka, ikuti 1–2 alasan mekanisme nyata, dan tutup dengan contoh singkat terfokus (45 detik).",
+      "rationaleSource": "IBT-MOD-06",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT01-SI03",
+      "prepSeconds": 10,
+      "speakSeconds": 45,
+      "rubricCriteria": [
+        "Prompt relevance",
+        "Spontaneous fluency (~130-160 WPM)",
+        "Supporting detail & clarity",
+        "Sentence variety"
+      ],
+      "sortIndex": 119
+    },
+    {
+      "id": "IBT26-01-Q120",
+      "section": "SPEAKING",
+      "taskType": "SPEAKING_RESPONSE",
+      "prompt": "Take an Interview 4/4: Interviewer Q4: Looking broader, should university campuses prioritize funding energy-saving smart buildings or green courtyard landscapes?",
+      "options": [],
+      "answer": "",
+      "acceptedAnswers": [],
+      "explanation": "Jawab langsung posisi/pilihan Anda dalam 1 kalimat pembuka, ikuti 1–2 alasan mekanisme nyata, dan tutup dengan contoh singkat terfokus (45 detik).",
+      "rationaleSource": "IBT-MOD-06",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT01-SI04",
+      "prepSeconds": 10,
+      "speakSeconds": 45,
+      "rubricCriteria": [
+        "Prompt relevance",
+        "Spontaneous fluency (~130-160 WPM)",
+        "Supporting detail & clarity",
+        "Sentence variety"
+      ],
+      "sortIndex": 120
     }
   ],
-  "checksum": "7cc84418600ec81d3b26ae01710610c6a108139f0987389f441919c9c6fd9f98"
+  "checksum": "998e32d1ab9ba4d65927df22fded02e873203429af7c686b1e09eab4b30ec586"
 }

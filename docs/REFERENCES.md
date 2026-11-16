@@ -58,3 +58,15 @@ Dokumen ini merangkum referensi **terverifikasi** yang relevan secara teknis dan
 - **`android/compose-samples`** (`https://github.com/android/compose-samples`) & **`android/media-samples`** (`https://github.com/android/media-samples`) — Referensi Compose state management, adaptive layout, dan Media3 ExoPlayer audio playback.
 - **`google-ai-edge/ai-edge-gallery`** (`https://github.com/google-ai-edge/ai-edge-gallery`) & **`google-ai-edge/LiteRT`** (`https://github.com/google-ai-edge/LiteRT`) — Referensi runtime `.litertlm` Gemma 4 E2B/E4B lokal di Android.
 - **`k2-fsa/sherpa-onnx`** (`https://github.com/k2-fsa/sherpa-onnx`) & **`ggerganov/whisper.cpp`** (`https://github.com/ggerganov/whisper.cpp`) — Referensi eksekusi Whisper ONNX/native STT dan VAD offline di Android.
+
+---
+
+## 5. Material Bank PDF Terverifikasi (`material_bank/`)
+
+Hasil crawling dan dorking terverifikasi (`tools/fetch_material_bank.py`, `material_bank/MANIFEST.json`) menghasilkan **17 dokumen PDF** (total 1.652 halaman -> **31** kutipan materi offline di tab **Materi** & indeks FTS4):
+- **10 PDF Open OER & Public Domain (`material_bank/open_oer_pdfs/`, di-commit ke repo)**:
+  - Grammar & Sentence Craft (`CC BY 4.0` / `CC BY-NC-SA 4.0`): LibreTexts *High-Intermediate Academic Grammar*, *ESOL Advanced Grammar*, *ESL Grammar The Way You Like It*.
+  - Academic Reading, Writing, Listening & Speaking (`CC BY 4.0`): LibreTexts *Intermediate Reading & Writing*, *ESL 304 Reading & Vocab*, *Iowa State Academic Writing Mod 1*, *Listening & Speaking*, *USA Journals Listening Strategies*.
+  - Science Passages (`Public Domain US Gov`): NOAA *Deep-Sea Corals Fact Sheet*, NASA *Glacier Ice Mass Fluctuations*.
+- **7 PDF Spesifikasi Resmi Publik (`material_bank/official_reference_pdfs/`, dikecualikan dari Git via `.gitignore` per Rule 8)**:
+  - ETS *TOEFL ITP Test Taker Handbook*, *TOEFL iBT Specifications (Jan 21, 2026)*, *TOEFL iBT Overview*, *ERIC EJ1487502 Technical Manual*, *IELTS Writing & Speaking Band Descriptors*, dan *IELTS-TOEFL Concordance 2026* dipakai khusus untuk kalibrasi jumlah soal, waktu, format tugas, dan deskriptor rubrik.

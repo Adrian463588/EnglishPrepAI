@@ -1,5 +1,20 @@
 # Changelog
 
+## 1.1.0 — 2026-11-16
+### Added
+- **Material Bank PDF Pipeline & In-App Reader (`specs/008`)**: Added `tools/fetch_material_bank.py`, `tools/build_material_bank.py`, and `material_bank/` (`17` verified PDFs, `1,652` pages -> `31` clean study digests in `app/src/main/assets/material_bank/material_bank.json`, FTS4-indexed by `AssetSeeder` & browsable inside `LearnScreen` with license attribution and 1-tap Tutor AI ask). Copyrighted official ETS/IELTS reference PDFs stay excluded via `.gitignore` per Rule 8.
+- **Expanded Curriculum (30 Modules, 90 Drills)**: Expanded `tools/curriculum_data.py`, `tools/curriculum_extra_oer.py`, and `content/CURRICULUM.md` from `18` to `30` bilingual modules (`10` per exam).
+- **Full-Blueprint 15 READY Packs (1,725 Total Items)**:
+  - `ITP-L1-01..05`: `5 x 140 = 700` items (`50` Listening, `40` Structure/WE, `50` Reading; `115 min`).
+  - `IBT26-01..05`: `5 x 120 = 600` items (`50` Reading, `47` Listening, `12` Writing, `11` Speaking; `90 min`; Jan 21, 2026 blueprint).
+  - `IELTS-A-01..05`: `5 x 85 = 425` items (`40` Listening, `40` Reading, `2` Writing, `3` Speaking; `165 min`).
+- **MS IMA-ADPCM Offline Audio Compression (`tools/ima_adpcm_wav.py`)**: Compressed all `390` offline 16 kHz mono WAV tracks into `57.00 MB` (~4x smaller than uncompressed PCM16) decoded natively by Media3 `WavExtractor` (`ImaAdPcmOutputWriter`).
+- **Exam UX & Non-Destructive DB Upgrade**:
+  - Updated `ExamViewModel` to preserve active audio playback cleanly across multi-question groups sharing the same `audioAssetId` (Part B/C, iBT Conversations/Talks, IELTS Parts 1-4).
+  - Extracted scrollable, section-filtered 5-column `QuestionNavigatorSheetContent` supporting 85, 120, and 140-item mocks with `>=48dp` targets.
+  - Updated `CatalogDao` & `AssetSeeder` to atomically upgrade legacy 12-item DB installs to full `140`/`120`/`85` `READY` packs without wiping user sessions/progress.
+- **Verification**: `36/36` unit/integration/Compose Robolectric tests pass, `lintDebug` `0` errors (`78` warnings), `assembleDebug` (`210,216,727` bytes / `200.5 MB`), R8 `assembleRelease` (`189,804,162` bytes / `181.0 MB`), and physical `SM-G988B` `v1.1.0` R8 Release upgrade verified live (`Ready • 140 soal`, IMA-ADPCM playback `00:04/00:11`, 140-item navigator jump to Reading Q91, and Material Bank reader).
+
 ## 1.0.0 — 2026-11-16
 ### Added
 - **Spec Kit & BMAD Documentation**: Constitution (`.specify/memory/constitution.md`), 4 feature spec bundles (`specs/001`..`004` with `spec.md`, `plan.md`, `tasks.md`, `acceptance.md`), 4 BMAD review reports (`docs/reviews/*.md`), and curated reference catalog (`docs/REFERENCES.md`).

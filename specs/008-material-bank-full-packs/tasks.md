@@ -1,0 +1,12 @@
+# Tasks: Material Bank & Full-Length 15 Exam Packs (`008-material-bank-full-packs`)
+
+- [x] **T08-01**: Write `specs/008-material-bank-full-packs/*` & `docs/reviews/bmad-material-bank-full-packs.md` (BMAD + Spec Kit planning gate).
+- [x] **T08-02**: Build `tools/fetch_material_bank.py` & `tools/build_material_bank.py` to download verified OER/CC-BY + official reference PDFs discovered via deep dorking, audit SHA-256 & licenses, populate `material_bank/`, and emit `app/src/main/assets/material_bank/material_bank.json`.
+- [x] **T08-03**: Expand `tools/curriculum_data.py` from `18` to `30` comprehensive bilingual modules (`10` ITP_L1, `10` IBT_2026, `10` IELTS_ACADEMIC; `>= 90` drills) tied to Material Bank references and update `content/CURRICULUM.md`.
+- [x] **T08-04**: Author & verify modular full-blueprint `ITP_L1` packs (`ITP-L1-01..05`, `140` items each = `700` questions: `50` Listening, `40` Structure/WE, `50` Reading).
+- [x] **T08-05**: Author & verify modular full-blueprint `IBT_2026` packs (`IBT26-01..05`, `120` items each = `600` items: `50` Reading, `47` Listening, `12` Writing, `11` Speaking per Jan 21, 2026 ETS blueprint).
+- [x] **T08-06**: Author & verify modular full-blueprint `IELTS_ACADEMIC` packs (`IELTS-A-01..05`, `85` items each = `425` items: `40` Listening, `40` Reading, `2` Writing, `3` Speaking Parts).
+- [x] **T08-07**: Implement MS IMA-ADPCM (`16 kHz`, 4-bit mono RIFF WAV) encoding in `tools/generate_assets.py` (verifying Media3 `ImaAdPcmOutputWriter` frame/block rules) and regenerate all `15` JSON packs, `index.json`, `curriculum.json`, and audio assets with automated zero-duplicate/zero-placeholder checks.
+- [x] **T08-08**: Update Android `AssetSeeder` (versioned transactional `@Upsert` + Material Bank FTS4 indexing), `ExamCatalogRepository` (load offline Material Bank entries), `LearnScreens`/`LearnViewModel` (Material Bank browser & reader), `ExamViewModel` (shared multi-question audio continuity), and `ExamScreen` (section-filtered scrollable navigator for up to 140 items).
+- [x] **T08-09**: Update tests (`AssetSeederAndFtsTest`, `ToeflSessionFlowIntegrationTest`, `UiAndAccessibilityTest`) + add Material Bank & 140-item navigator/shared-audio checks; pass `testDebugUnitTest`, `lintDebug`, `assembleDebug`, `assembleRelease`.
+- [x] **T08-10**: Verify R8 Release build & IMA-ADPCM audio playback + 140-item flows on physical `SM-G988B`, refresh screenshots, update `EPIC_STATUS.md`, `LICENSE_AND_SBOM_AUDIT.md`, `VERIFICATION_CHECKLIST.md`, `README.md`, `CHANGELOG.md`, and push to GitHub.

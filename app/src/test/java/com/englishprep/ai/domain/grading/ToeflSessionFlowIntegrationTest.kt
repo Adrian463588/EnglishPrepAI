@@ -47,7 +47,7 @@ class ToeflSessionFlowIntegrationTest {
             .allowMainThreadQueries()
             .build()
         AssetSeeder(context, db.catalogDao(), json).seedIfNeeded()
-        catalogRepo = ExamCatalogRepositoryImpl(db.catalogDao(), json)
+        catalogRepo = ExamCatalogRepositoryImpl(db.catalogDao(), json, context)
         sessionRepo = SessionProgressRepositoryImpl(db.sessionDao(), db.chatAndModelDao(), json)
     }
 
@@ -59,19 +59,19 @@ class ToeflSessionFlowIntegrationTest {
     @Test
     fun `toefl itp session loads valid listening wavs grades deterministically updates progress and spawns mistake retry`() = runTest {
         val bundle = catalogRepo.loadPackBundle("ITP-L1-01")!!
-        assertEquals(12, bundle.questions.size)
-        assertTrue(bundle.questions.any { it.section == ExamSection.LISTENING })
-        assertTrue(bundle.questions.any { it.section == ExamSection.STRUCTURE })
-        assertTrue(bundle.questions.any { it.section == ExamSection.READING })
+        assertEquals(140, bundle.questions.size)
+        assertEquals(50, bundle.questions.count { it.section == ExamSection.LISTENING })
+        assertEquals(40, bundle.questions.count { it.section == ExamSection.STRUCTURE })
+        assertEquals(50, bundle.questions.count { it.section == ExamSection.READING })
 
-        // Verify every Listening question references an existing non-empty RIFF WAV asset.
-        bundle.questions.filter { it.audioAssetId != null }.forEach { q ->
-            val asset = bundle.assets[q.audioAssetId]!!
+        // Verify every distinct Listening audio asset references a valid RIFF WAVE asset.
+        bundle.assets.values.forEach { asset ->
             val relPath = asset.relativePathOrUri.removePrefix("asset://")
             context.assets.open(relPath).use { stream ->
-                val header = ByteArray(4)
-                assertEquals(4, stream.read(header))
-                assertEquals("RIFF", String(header, Charsets.US_ASCII))
+                val header = ByteArray(12)
+                assertEquals(12, stream.read(header))
+                assertEquals("RIFF", String(header, 0, 4, Charsets.US_ASCII))
+                assertEquals("WAVE", String(header, 8, 4, Charsets.US_ASCII))
             }
         }
 
@@ -132,10 +132,10 @@ class ToeflSessionFlowIntegrationTest {
         }
 
         val overallEst = scoreEstimator.estimate(ExamId.ITP_L1, totalCorrect, totalObj)
-        assertTrue(overallEst.primaryEstimateLabel.contains("9/12"))
-        assertEquals(9, totalCorrect)
-        assertEquals(12, totalObj)
-        assertEquals(75, overallEst.accuracyPercent)
+        assertTrue(overallEst.primaryEstimateLabel.contains("137/140"))
+        assertEquals(137, totalCorrect)
+        assertEquals(140, totalObj)
+        assertEquals(98, overallEst.accuracyPercent)
 
         evaluations += EvaluationEntity(
             id = "EVAL_OVERALL_${UUID.randomUUID()}",
@@ -149,7 +149,7 @@ class ToeflSessionFlowIntegrationTest {
             aiFeedbackJson = null,
             createdAt = System.currentTimeMillis(),
         )
-        sessionRepo.updateSessionCheckpoint(session.id, 11, 45_000L)
+        sessionRepo.updateSessionCheckpoint(session.id, 139, 45_000L)
         sessionRepo.submitSession(session.id, evaluations, System.currentTimeMillis())
         moduleCounts.forEach { (modId, pair) ->
             sessionRepo.recordModuleDrill(ExamId.ITP_L1, modId, pair.first, pair.second)
@@ -159,7 +159,7 @@ class ToeflSessionFlowIntegrationTest {
         assertEquals(SessionState.SUBMITTED.name, storedSession.state)
 
         val storedAnswers = sessionRepo.observeAnswers(session.id).first()
-        assertEquals(12, storedAnswers.size)
+        assertEquals(140, storedAnswers.size)
         assertTrue(storedAnswers.all { it.submittedAt != null && it.answerJson.isNotBlank() })
 
         val storedEvals = sessionRepo.observeEvaluations(ExamId.ITP_L1).first()
@@ -179,17 +179,36 @@ class ToeflSessionFlowIntegrationTest {
     }
 
     @Test
-    fun `toefl ibt 2026 pack executes objective and subjective tasks cleanly`() = runTest {
-        val bundle = catalogRepo.loadPackBundle("IBT26-01")!!
-        assertEquals(12, bundle.questions.size)
-        assertTrue(bundle.questions.any { it.section == ExamSection.WRITING })
-        assertTrue(bundle.questions.any { it.section == ExamSection.SPEAKING })
-
-        val outcomes = bundle.questions.map { q ->
+    fun `toefl ibt 2026 and ielts academic full packs execute objective and subjective tasks cleanly`() = runTest {
+        val ibtBundle = catalogRepo.loadPackBundle("IBT26-01")!!
+        assertEquals(120, ibtBundle.questions.size)
+        assertTrue(ibtBundle.questions.any { it.section == ExamSection.WRITING })
+        assertTrue(ibtBundle.questions.any { it.section == ExamSection.SPEAKING })
+        ibtBundle.assets.values.forEach { asset ->
+            context.assets.open(asset.relativePathOrUri.removePrefix("asset://")).use { stream ->
+                val header = ByteArray(4)
+                assertEquals(4, stream.read(header))
+                assertEquals("RIFF", String(header, Charsets.US_ASCII))
+            }
+        }
+        val ibtOutcomes = ibtBundle.questions.map { q ->
             val draft = if (q.answer.isNotBlank()) q.answer else "Student draft response addressing every prompt detail."
             gradingEngine.grade(q, draft, hasAudioRecording = false)
         }
-        assertTrue(outcomes.any { it is GradingOutcome.Objective && it.isCorrect })
-        assertTrue(outcomes.any { it is GradingOutcome.SubjectivePending })
+        assertTrue(ibtOutcomes.any { it is GradingOutcome.Objective && it.isCorrect })
+        assertTrue(ibtOutcomes.any { it is GradingOutcome.SubjectivePending })
+
+        val ieltsBundle = catalogRepo.loadPackBundle("IELTS-A-01")!!
+        assertEquals(85, ieltsBundle.questions.size)
+        assertEquals(40, ieltsBundle.questions.count { it.section == ExamSection.LISTENING })
+        assertEquals(40, ieltsBundle.questions.count { it.section == ExamSection.READING })
+        assertEquals(2, ieltsBundle.questions.count { it.section == ExamSection.WRITING })
+        assertEquals(3, ieltsBundle.questions.count { it.section == ExamSection.SPEAKING })
+        val ieltsOutcomes = ieltsBundle.questions.map { q ->
+            val draft = if (q.answer.isNotBlank()) q.answer else "Structured academic response exploring key evidence clearly."
+            gradingEngine.grade(q, draft, hasAudioRecording = false)
+        }
+        assertEquals(80, ieltsOutcomes.count { it is GradingOutcome.Objective && it.isCorrect })
+        assertEquals(5, ieltsOutcomes.count { it is GradingOutcome.SubjectivePending })
     }
 }

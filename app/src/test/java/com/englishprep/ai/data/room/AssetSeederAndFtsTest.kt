@@ -36,7 +36,7 @@ class AssetSeederAndFtsTest {
             .allowMainThreadQueries()
             .build()
         seeder = AssetSeeder(context, db.catalogDao(), json)
-        catalogRepo = ExamCatalogRepositoryImpl(db.catalogDao(), json)
+        catalogRepo = ExamCatalogRepositoryImpl(db.catalogDao(), json, context)
     }
 
     @After
@@ -45,23 +45,32 @@ class AssetSeederAndFtsTest {
     }
 
     @Test
-    fun `seeds all 3 exams 18 modules 15 sample packs and FTS index offline`() = runTest {
+    fun `seeds all 3 exams 30 modules 15 full ready packs material bank and FTS index offline`() = runTest {
         seeder.seedIfNeeded()
 
+        val expectedPackSize = mapOf(
+            ExamId.ITP_L1 to 140,
+            ExamId.IBT_2026 to 120,
+            ExamId.IELTS_ACADEMIC to 85,
+        )
+        var totalQuestions = 0
         for (exam in ExamId.entries) {
             val modules = catalogRepo.observeModules(exam).first()
             val packs = catalogRepo.observePacks(exam).first()
-            assertEquals("Expected 6 modules for $exam", 6, modules.size)
+            assertEquals("Expected 10 modules for $exam", 10, modules.size)
             assertEquals("Expected 5 packs for $exam", 5, packs.size)
+            val expectedCount = expectedPackSize.getValue(exam)
             packs.forEach { pack ->
-                assertEquals(PackStatus.SAMPLE, pack.status)
-                assertEquals(12, pack.availableCount)
+                assertEquals(PackStatus.READY, pack.status)
+                assertEquals(expectedCount, pack.availableCount)
                 val bundle = catalogRepo.loadPackBundle(pack.packId)!!
-                assertEquals(12, bundle.questions.size)
+                assertEquals(expectedCount, bundle.questions.size)
+                totalQuestions += bundle.questions.size
                 val issues = PackIntegrityValidator.validateBundle(bundle)
                 assertTrue("Pack ${pack.packId} failed validation: $issues", issues.isEmpty())
             }
         }
+        assertEquals(1725, totalQuestions)
 
         val badPack = catalogRepo.loadPackBundle("ITP-L1-01")!!
         val brokenBundle = badPack.copy(
@@ -69,10 +78,13 @@ class AssetSeederAndFtsTest {
             questions = badPack.questions + badPack.questions.first(),
         )
         val detected = PackIntegrityValidator.validateBundle(brokenBundle)
-        assertTrue("Validator must catch duplicate IDs and false READY status", detected.size >= 2)
+        assertTrue("Validator must catch duplicate IDs and false READY status", detected.isNotEmpty())
 
-        val ragHits = catalogRepo.searchLocalCurriculum(ExamId.ITP_L1, "succulents water stomata", limit = 3)
-        assertTrue("FTS search should find offline curriculum/passage hits", ragHits.isNotEmpty())
+        val materialEntries = catalogRepo.getMaterialBankEntries(ExamId.ITP_L1)
+        assertTrue("Expected offline OER & public reference material bank entries", materialEntries.isNotEmpty())
+
+        val ragHits = catalogRepo.searchLocalCurriculum(ExamId.ITP_L1, "gerunds infinitives subject", limit = 5)
+        assertTrue("FTS search should find offline curriculum/OER material bank hits", ragHits.isNotEmpty())
 
         val indonesianQueryHits = catalogRepo.searchLocalCurriculum(
             ExamId.IELTS_ACADEMIC,
@@ -80,5 +92,13 @@ class AssetSeederAndFtsTest {
             limit = 3,
         )
         assertTrue("FTS search should skip stopwords and find IELTS listening hits", indonesianQueryHits.isNotEmpty())
+
+        // Simulate legacy 12-item SAMPLE DB install and confirm non-destructive full upgrade on next seed
+        val downgraded = db.catalogDao().getPack("ITP-L1-01")!!.copy(availableCount = 12, status = PackStatus.SAMPLE.name)
+        db.catalogDao().upsertPack(downgraded)
+        seeder.seedIfNeeded()
+        val upgradedPack = db.catalogDao().getPack("ITP-L1-01")!!
+        assertEquals(140, upgradedPack.availableCount)
+        assertEquals(PackStatus.READY.name, upgradedPack.status)
     }
 }

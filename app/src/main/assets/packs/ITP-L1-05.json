@@ -1,190 +1,1743 @@
 {
   "schemaVersion": 1,
   "exam": "ITP_L1",
-  "edition": "2026.1",
+  "edition": "2026.2",
   "packId": "ITP-L1-05",
-  "title": "ITP Paket 5 — Astronomy, Linguistics & Public Policy",
-  "theme": "Integrated diagnostic sample covering exoplanet spectroscopy, writing systems, and subjunctives.",
-  "status": "SAMPLE",
+  "title": "ITP Paket 5 — Astronomy, Scripts & Urban Policy",
+  "theme": "Full 140-item TOEFL ITP simulation examining exoplanet spectroscopy, Linear B/alphabet origins, and zoning reform.",
+  "status": "READY",
   "blueprintCount": 140,
-  "availableCount": 12,
-  "durationMinutes": 20,
+  "availableCount": 140,
+  "durationMinutes": 115,
   "blueprintDurationMinutes": 115,
   "license": "Original",
   "provenance": "EnglishPrepAI-Original-2026",
   "passages": [
     {
       "id": "ITP05-P1",
-      "title": "Reading Starlight Through Exoplanet Atmospheres",
-      "body": "Most planets orbiting distant stars lie too close to their host star's glare to be photographed directly. Instead, astronomers study exoplanet air using transit spectroscopy. Whenever an orbiting planet crosses directly in front of its star, a tiny fraction of starlight skims through the planet's thin atmospheric rim before reaching space telescopes. Because specific gases—such as water vapor, methane, or sodium—absorb narrow wavelengths of light, dark gaps in the recorded spectrum act like chemical fingerprints revealing what gases surround a world trillions of kilometers away.",
+      "title": "Atmospheric Spectroscopy of Distant Exoplanets",
+      "body": "Even aboard massive space observatories, most extrasolar worlds orbit far too tightly beside blazing host stars to separate cleanly into clear standalone photographs. Nevertheless, astrophysicists still decipher chemical fingerprints across light-years by capturing a split-second trick called 'transmission spectroscopy.' As a transiting planet glides across the glowing face of its star, a thin fraction of starlight skims straight through the planet's wispy upper atmosphere before streaking onward into spacecraft spectrograph prisms. Every gas molecule inside that planetary haze—water vapor, sodium, carbon dioxide, or methane—eagerly absorbs distinct characteristic infrared or optical wavelengths, engraving narrow dark bar-code dips onto the star's spectrum. Subtracting the clean un-eclipsed star spectrum reveals precisely what atoms shroud a world scientists have never visually resolved—though thick high-altitude cloud decks can mute those delicate gas spikes into flat murky curves.",
       "readingOrder": 1
     },
     {
       "id": "ITP05-P2",
-      "title": "How Sequoyah Engineered the Cherokee Syllabary",
-      "body": "In the early 1800s, Cherokee silversmith Sequoyah recognized that written symbols enabled rapid long-distance communication, yet English spelling poorly matched Cherokee speech sounds. Working over twelve years without formal linguistic training, he listened closely to everyday conversation and distilled the entire spoken language into eighty-five distinct syllable characters. Because each symbol stood consistently for one syllable rather than ambiguous silent letters, Cherokee learners often mastered reading and writing their own language within weeks.",
+      "title": "From Pictograms to the Consonant Alphabet: A Brief Script Evolution",
+      "body": "Writing did not emerge abruptly as an intuitive phonetic code; early Sumerian cuneiform and Egyptian hieroglyphs spent centuries representing concrete grain sheep jars or stylized bird outlines before clever shortcuts unlocked abstract speech. Crucially, scribes discovered the 'rebus principle': using an easily drawn symbol such as a flying bee purely for its spoken syllable sound rather than its buzzing insect meaning—paving the way straight toward phonetic scripts. Around 1800 BCE, Semitic miners working turquoise quarries in the Sinai desert stripped down unwieldy lists of hundreds of Egyptian signs into barely two dozen simple consonantal marks depicting the opening sound of each sketched object (the 'acrophonic principle': aleph = ox -> first sound /a/). Coastal Phoenician merchants carried this agile compact twenty-two-letter consonant kit briskly around Mediterranean ports, where ancient Greek adapters subsequently repurposed unused consonant letters to capture standalone vowels—forging compact alphabetic reading fluency open to ordinary citizens, not just royal court scribes.",
       "readingOrder": 2
+    },
+    {
+      "id": "ITP05-P3",
+      "title": "Tactical Urbanism and Low-Cost Street Redesign",
+      "body": "Transforming dangerous multi-lane urban intersections traditionally demanded five-year environmental blueprints, millions in concrete curbing, and endless zoning hearings—often leaving pedestrian corners perilous long after funding vanished. A nimble movement called 'tactical urbanism' turns sluggish infrastructure timelines upside down using quick, temporary, and measurably reversible pilot trials first. Municipal planners team with neighborhood residents over a single weekend using water-filled barricades, cheerful geometric paint, salvaged planter boxes, and chalked bike lanes to test tighter crosswalk turning radii and curb bulb-outs right on existing pavement. Because live empirical measurements then capture real car braking speeds, bus dwell times, and afternoon corner café counts across ninety trial days, cities fix blind spots cheaply before pouring permanent granite sidewalks—turning hesitant merchants from vocal opponents into eager champions once empirical foot-traffic tallies climb.",
+      "readingOrder": 3
+    },
+    {
+      "id": "ITP05-P4",
+      "title": "Acoustic Ecology and Marine Noise Masking",
+      "body": "Underwater whales, seals, and reef fish occupy an acoustic universe where light vanishes swiftly below one hundred meters while sound sails effortlessly four times faster than in dry open air. Over millennia, baleen whales evolved thunderous low-frequency songs beneath one hundred hertz that bounce cleanly across entire ocean basins through deep horizontal sound ducts, allowing widely dispersed pods to locate feeding fronts and mates across hundreds of kilometers. Yet booming commercial container shipping fleets over the past seventy years crowded that very same ten-to-hundred-hertz bandwidth with incessant low propeller cavitation rumble—shrinking an average whale's practical communication bubble by over seventy percent along busy trans-Pacific freight lanes. Encouragingly, marine naval architects discovered relatively straightforward engineering relief: slightly polishing curved 'quiet' propeller blades alongside trimming cruise speed by merely two knots cuts vessel cavitation roar precipitously while slashing bunker fuel burn.",
+      "readingOrder": 4
+    },
+    {
+      "id": "ITP05-P5",
+      "title": "How Endangered Languages Preserve Local Ecological Knowledge",
+      "body": "When a small indigenous community language falls silent after elders pass away, linguists lament more than lost poetic idioms or intricate verb prefixes: centuries of hyper-local botanical, seasonal, and tidal nomenclature often vanish alongside it. Standard global scientific taxonomies frequently group ten coastal mudflat snails under a single regional Latin label, whereas oral fisher vocabularies distinguish every species separately by spawning month, toxic algae diet, and precise reef depth. Across northern Australia and Pacific islands, field ethno-botanists partnering smoothly with indigenous knowledge keepers uncovered dozens of drought-hardy tuber crops, controlled low-intensity fire-stick grass-burning windows, and fine meteorological rain signals previously overlooked by short-term weather instruments. Recording bilingual audio dictionaries paired with young community story-telling workshops therefore safeguards both human cultural heritage and hard-won adaptive ecological memory.",
+      "readingOrder": 5
     }
   ],
   "assets": [
     {
-      "id": "ITP05-A01",
-      "relativePath": "audio/ITP05-A01.wav",
+      "id": "ITP05-L01",
+      "relativePath": "audio/ITP05-L01.wav",
       "kind": "AUDIO",
-      "caption": "W: Do you think our posters will finish printing before noon? M: Don't hold your breath—there are still twenty jobs ahead of us in the queue. N: What does the man imply?",
+      "caption": "M: How can astronomers spot worlds light-years away if glare from parent stars hides them? W: By tracking tiny predictable drops in starlight brightness whenever an orbiting planet crosses in front. N: What does the woman explain?",
       "license": "Original",
-      "sha256": "c328bf4333ffe3712d107fadbca9465ebde0be45f9073eaef3fc00b3de844f7a",
-      "byteSize": 352044,
-      "durationMs": 11000
+      "sha256": "faf95eef1164c117d1edf71c1faaf74275b984f41bd7d477653746e886740646",
+      "byteSize": 121660,
+      "durationMs": 14975
     },
     {
-      "id": "ITP05-A02",
-      "relativePath": "audio/ITP05-A02.wav",
+      "id": "ITP05-L02",
+      "relativePath": "audio/ITP05-L02.wav",
       "kind": "AUDIO",
-      "caption": "M: Everyone says Dr. Tanaka's applied statistics class is brutal. W: Her problem sets are tough, no doubt, yet her examples are the clearest I've ever seen. N: What is the woman's opinion of the course?",
+      "caption": "W: Were ancient Mycenaean clay tablets fired purposefully in pottery kilns to preserve tax lists? M: No—clerks scraped damp tablets clean yearly; accidental palace fires accidentally baked the final sets stone-hard. N: What does the man clarify?",
       "license": "Original",
-      "sha256": "a075cd35b87dd6e00fdcc4fcc637d1216a500f64914407c9eca4c7db68ab7ce8",
-      "byteSize": 456524,
-      "durationMs": 14265
+      "sha256": "9ead4ebc3406b6d3c777584017f150a64efab00e2f14b453e22b503de8b75ed1",
+      "byteSize": 141116,
+      "durationMs": 17370
     },
     {
-      "id": "ITP05-A03",
-      "relativePath": "audio/ITP05-A03.wav",
+      "id": "ITP05-L03",
+      "relativePath": "audio/ITP05-L03.wav",
       "kind": "AUDIO",
-      "caption": "M: Are we still leaving at seven Saturday for the limestone quarry trip? W: Yes, just remember no one boards the van unless the signed safety waiver reaches my mailbox by Thursday noon. N: What requirement must students fulfill?",
+      "caption": "M: Does the new boulevard code force cafes to pull all outdoor chairs inside by six? W: Only sidewalks narrower than two meters; wider plazas keep patio seating through ten. N: What does the woman clarify?",
       "license": "Original",
-      "sha256": "35cdfac55ab6100a5f762b3e8e06f8937fd71c4abf4064c669590cebcf1f29b9",
-      "byteSize": 492364,
-      "durationMs": 15385
+      "sha256": "f4d1f2e8423136315d9ba0be67e92a94522a0f449dcb261fb84616f82f1512b6",
+      "byteSize": 118076,
+      "durationMs": 14550
     },
     {
-      "id": "ITP05-A04",
-      "relativePath": "audio/ITP05-A04.wav",
+      "id": "ITP05-L04",
+      "relativePath": "audio/ITP05-L04.wav",
       "kind": "AUDIO",
-      "caption": "M: Taking a direct photograph of an exoplanet is like spotting a firefly beside a lighthouse. Because host-star glare overwhelms faint planetary light, astronomers watch tiny dips and chemical absorptions during planetary transits. N: Why is direct imaging of exoplanets difficult?",
+      "caption": "W: Wait—why crack the telescope dome roof open hours before twilight? M: Equalizing indoor mirror temperature with cool night air prevents blurry heat shimmer across star images. N: What does the man explain?",
       "license": "Original",
-      "sha256": "be2f26d13eeecb4a85fae79aebf1d7a7c79da7c5397ef8bda1350460af0b01dc",
-      "byteSize": 607084,
-      "durationMs": 18970
+      "sha256": "34d8d43da07932f97bc04df89c09fd3d7a1b73385c73949e08bc0d84162275f9",
+      "byteSize": 116028,
+      "durationMs": 14280
+    },
+    {
+      "id": "ITP05-L05",
+      "relativePath": "audio/ITP05-L05.wav",
+      "kind": "AUDIO",
+      "caption": "M: How could linguists break an unreadable hieroglyphic script with zero surviving speakers? W: Bilingual decrees engraved on the same stone let Champollion match royal Greek names to carved ovals. N: What does the woman explain?",
+      "license": "Original",
+      "sha256": "d44e3d8c653ddb8e7ab33190151fa4a6561316d99b27ecbb8949b135b32109ea",
+      "byteSize": 123452,
+      "durationMs": 15185
+    },
+    {
+      "id": "ITP05-L06",
+      "relativePath": "audio/ITP05-L06.wav",
+      "kind": "AUDIO",
+      "caption": "W: Is the north-bound express stopping on track four as printed on this kiosk board? M: Listen to the PA—track four switched for signal work, so north-bound trains moved over to platform two. N: What does the man warn?",
+      "license": "Original",
+      "sha256": "c3ed7b6e902883540fe64a9176f4d7ef6b4e4054426e64a0df2149cfb0acc87d",
+      "byteSize": 121660,
+      "durationMs": 14980
+    },
+    {
+      "id": "ITP05-L07",
+      "relativePath": "audio/ITP05-L07.wav",
+      "kind": "AUDIO",
+      "caption": "W: Wait—so adaptive telescopes physically deform glass mirrors every millisecond to fight twinkling stars? M: Actually, tiny computer pistons flex a small secondary mirror—not the massive four-meter primary bowl. N: What does the man clarify?",
+      "license": "Original",
+      "sha256": "7f6c6e9376055cb8c4061765ea6d3f061dbe4813f9f1cf92544233ce8fbb57ce",
+      "byteSize": 142652,
+      "durationMs": 17570
+    },
+    {
+      "id": "ITP05-L08",
+      "relativePath": "audio/ITP05-L08.wav",
+      "kind": "AUDIO",
+      "caption": "M: My aunt pronounces 'cot' and 'caught' identically, while my roommate hears a sharp vowel difference. W: That regional vowel merger has been creeping eastward for seventy years—even linguists trace it county by county. N: What does the woman note?",
+      "license": "Original",
+      "sha256": "b39aac366b71f8f8d7a2866e57e5450859e6c8727c4aff096ee18117262ad456",
+      "byteSize": 130876,
+      "durationMs": 16110
+    },
+    {
+      "id": "ITP05-L09",
+      "relativePath": "audio/ITP05-L09.wav",
+      "kind": "AUDIO",
+      "caption": "W: Why insist city streetlamps wear metal top hoods if bright intersections keep walkers safe? M: Full-cutoff shields aim all brightness downward onto sidewalks instead of blinding drivers and washing out stars. N: What does the man explain?",
+      "license": "Original",
+      "sha256": "1c25c88b390ac2fb137c9f0db08e74408c65ab619ec2ce3236dc64707eb00b2a",
+      "byteSize": 129596,
+      "durationMs": 15940
+    },
+    {
+      "id": "ITP05-L10",
+      "relativePath": "audio/ITP05-L10.wav",
+      "kind": "AUDIO",
+      "caption": "M: Wait—how did multispectral lamps uncover hidden trigonometry underneath a medieval prayer folio? W: Animal hide was so costly that scribes scraped off older texts, yet iron ink faint traces soaked deep inside skin pores. N: What does the woman explain?",
+      "license": "Original",
+      "sha256": "1e5821b4764890b6a52fb903e30735e504153ead9297442f67d327958cc9dca8",
+      "byteSize": 143420,
+      "durationMs": 17670
+    },
+    {
+      "id": "ITP05-L11",
+      "relativePath": "audio/ITP05-L11.wav",
+      "kind": "AUDIO",
+      "caption": "M: Nobody ever obeys painted red bus-only lanes on Elm Avenue anyway! W: Wait until next month—dashboard enforcement cameras start ticketing private cars blocking buses automatically. N: What does the woman mean?",
+      "license": "Original",
+      "sha256": "eb987a400a880a4d2bb647f114be3c9c5d6be0748cc2d0da96adaa744f8948e9",
+      "byteSize": 121660,
+      "durationMs": 14965
+    },
+    {
+      "id": "ITP05-L12",
+      "relativePath": "audio/ITP05-L12.wav",
+      "kind": "AUDIO",
+      "caption": "W: If space spectrometers detect free oxygen gas around an exoplanet, does that settle extraterrestrial biology? M: Hold on—harsh ultraviolet light can split ocean water and flood dead worlds with abiotic oxygen too. N: What does the man caution?",
+      "license": "Original",
+      "sha256": "351ed15e4ccf769a46de938a4469afd855be7c59d3f4068112642e819ca99785",
+      "byteSize": 144444,
+      "durationMs": 17795
+    },
+    {
+      "id": "ITP05-L13",
+      "relativePath": "audio/ITP05-L13.wav",
+      "kind": "AUDIO",
+      "caption": "M: I keep mixing up whether 'each of the tablets' takes 'was' or 'were'. W: Cover up the 'of...' phrase with your thumb—no one would say 'each were inscribed'! N: What does the woman suggest?",
+      "license": "Original",
+      "sha256": "51681ab55ede28fdbcc137a7bf739fe040852bef786c1a53a5f77e7b2a552268",
+      "byteSize": 108604,
+      "durationMs": 13370
+    },
+    {
+      "id": "ITP05-L14",
+      "relativePath": "audio/ITP05-L14.wav",
+      "kind": "AUDIO",
+      "caption": "W: Think our neighborhood association has to shovel public sidewalks after Tuesday's snowstorm? M: Under municipal bylaw 14, corner property owners clear sidewalks within twenty-four hours after snow stops. N: What does the man clarify?",
+      "license": "Original",
+      "sha256": "d7ae8a4605be72389b780c56059139e60080a3c3d0d253975c8856c9b04667ef",
+      "byteSize": 134716,
+      "durationMs": 16585
+    },
+    {
+      "id": "ITP05-L15",
+      "relativePath": "audio/ITP05-L15.wav",
+      "kind": "AUDIO",
+      "caption": "M: Why learn International Phonetic Alphabet symbols just to teach English reading? W: Standard English spelling hides fifty sounds behind twenty-six letters—IPA lets learners see pronunciation straight away. N: What does the woman imply?",
+      "license": "Original",
+      "sha256": "e7c84b05b9ea5eff2427d9b6cdfbd1cdcca569365019bd63c3383a6c9034f43a",
+      "byteSize": 129340,
+      "durationMs": 15925
+    },
+    {
+      "id": "ITP05-L16",
+      "relativePath": "audio/ITP05-L16.wav",
+      "kind": "AUDIO",
+      "caption": "M: Why coat infrared telescope mirrors in shiny gold instead of silver or household glass? W: Gold reflects faint long-wave infrared radiation above ninety-eight percent efficiency without tarnishing. N: What does the woman explain?",
+      "license": "Original",
+      "sha256": "2e7a0d6f7c1f89d21afd3219a3f2e06e165798aa7bcf1d5913b76ee1ed48e758",
+      "byteSize": 125500,
+      "durationMs": 15450
+    },
+    {
+      "id": "ITP05-L17",
+      "relativePath": "audio/ITP05-L17.wav",
+      "kind": "AUDIO",
+      "caption": "W: Critics claimed removing twenty street parking spots would starve downtown bakeries. M: Funny—three months after widening shaded sidewalks, morning foot traffic tripled bakery receipts! N: What does the man imply?",
+      "license": "Original",
+      "sha256": "bc4debb6e058f5ed7b8d6cde343c0fab203d2baa9f1ddfde5101b6ff2a51fa8b",
+      "byteSize": 124988,
+      "durationMs": 15375
+    },
+    {
+      "id": "ITP05-L18",
+      "relativePath": "audio/ITP05-L18.wav",
+      "kind": "AUDIO",
+      "caption": "M: Why haven't Roman carbon-soot inks faded yellowish like later iron-gall manuscripts? W: Lampblack carbon resists oxidation for millennia, whereas acidic iron-gall slowly bites through parchment. N: What does the woman explain?",
+      "license": "Original",
+      "sha256": "597a4cb76dbba0a37843e3cba76db08499b2eb0544b7348fb10688052262a74e",
+      "byteSize": 125756,
+      "durationMs": 15485
+    },
+    {
+      "id": "ITP05-L19",
+      "relativePath": "audio/ITP05-L19.wav",
+      "kind": "AUDIO",
+      "caption": "W: Is stamping a campus sticker on my bike frame really mandatory before Friday? M: Campus security tags unregistered bikes after five and locks them at the impounded shed. N: What does the man mean?",
+      "license": "Original",
+      "sha256": "79b3e4b2d3c3782587dc5afd546a0dc9305190a82930145806597f0dcb7604fe",
+      "byteSize": 109884,
+      "durationMs": 13525
+    },
+    {
+      "id": "ITP05-L20",
+      "relativePath": "audio/ITP05-L20.wav",
+      "kind": "AUDIO",
+      "caption": "M: Wait—does a space telescope hovering at the L2 point stay completely stationary out in space? W: Not motionless—it orbits the Sun alongside Earth every year in gentle synchronization, keeping Earth and Sun behind its heat shield. N: What does the woman explain?",
+      "license": "Original",
+      "sha256": "c31004d8ff87bb923d2375f48bdfde8dceef356061ae8d23a2e7123911e27e2e",
+      "byteSize": 150076,
+      "durationMs": 18480
+    },
+    {
+      "id": "ITP05-L21",
+      "relativePath": "audio/ITP05-L21.wav",
+      "kind": "AUDIO",
+      "caption": "W: How come downtown crosswalk chirps click faster at noon traffic peaks? M: Accessible signals adjust chime volume gently above background street noise without startling evening sleepers. N: What does the man explain?",
+      "license": "Original",
+      "sha256": "ae4864c0fd590f536c83c8f8cd4c63f0af1896cc35f7a7873d4d3b1c9d9b3f59",
+      "byteSize": 122428,
+      "durationMs": 15065
+    },
+    {
+      "id": "ITP05-L22",
+      "relativePath": "audio/ITP05-L22.wav",
+      "kind": "AUDIO",
+      "caption": "M: Notice the new dictionary dropped 'wrong' labels on several common spoken verbs? W: Descriptive lexicographers document how educated speakers actually talk rather than issuing personal grammar decrees. N: What does the woman explain?",
+      "license": "Original",
+      "sha256": "801947b41280ebd5b262a4d5c95b16b897dbb73e934790bf4fc43828b3b92f78",
+      "byteSize": 125500,
+      "durationMs": 15465
+    },
+    {
+      "id": "ITP05-L23",
+      "relativePath": "audio/ITP05-L23.wav",
+      "kind": "AUDIO",
+      "caption": "W: Do those tiny bus-stop solar strips really run the arrival screens through cloudy winters? M: Low-draw e-paper displays sipping power only when numbers refresh last days per charge. N: What does the man explain?",
+      "license": "Original",
+      "sha256": "10be64b27f433331f6dfefdde88978b2aadf480aab07a6f5d56d57efacf711ec",
+      "byteSize": 115260,
+      "durationMs": 14195
+    },
+    {
+      "id": "ITP05-L24",
+      "relativePath": "audio/ITP05-L24.wav",
+      "kind": "AUDIO",
+      "caption": "M: Reading cursive sixteenth-century port wills on fuzzy film reels strains my eyes in twenty minutes. W: Ask the archivist for digital TIFF scans—you can invert contrast and zoom four hundred percent cleanly. N: What does the woman recommend?",
+      "license": "Original",
+      "sha256": "23d9237809cbbff37b5ffbbc5fe2ee3a6e2d748557f5acb461c79a7846762153",
+      "byteSize": 132412,
+      "durationMs": 16305
+    },
+    {
+      "id": "ITP05-L25",
+      "relativePath": "audio/ITP05-L25.wav",
+      "kind": "AUDIO",
+      "caption": "M: Why search for fading helium plumes trailing close-orbiting exoplanets? W: Helium absorption reveals how fast intense starlight strips away young planetary atmospheres. N: What does the woman explain?",
+      "license": "Original",
+      "sha256": "7fb9c265fc8cbdadf43c948bf5584b92eae4d2704748e737dcb59eaea8645513",
+      "byteSize": 116284,
+      "durationMs": 14300
+    },
+    {
+      "id": "ITP05-L26",
+      "relativePath": "audio/ITP05-L26.wav",
+      "kind": "AUDIO",
+      "caption": "W: Wait—won't snowplows snap those flexible orange lane posts flat over January? M: They hinge inward cleanly under plow blades and spring upright as soon as the truck passes. N: What does the man clarify?",
+      "license": "Original",
+      "sha256": "43fa4e0317138eaa98743288f2435911dc2bb423b0077ebbf29f4f52b08c7740",
+      "byteSize": 117820,
+      "durationMs": 14505
+    },
+    {
+      "id": "ITP05-L27",
+      "relativePath": "audio/ITP05-L27.wav",
+      "kind": "AUDIO",
+      "caption": "M: Professor Hall wants thirty complex noun-clause diagrams before lab ends at four! W: Read the instructions closely—only the circled five are graded; the rest are practice keys. N: What does the woman mean?",
+      "license": "Original",
+      "sha256": "f3a3b01b74e315d705a832c328b998ae82b6818aa39917838969fdee8727fc4e",
+      "byteSize": 119612,
+      "durationMs": 14720
+    },
+    {
+      "id": "ITP05-L28",
+      "relativePath": "audio/ITP05-L28.wav",
+      "kind": "AUDIO",
+      "caption": "W: How come downtown vintage trolleys ring brass foot-gongs instead of electric horns? M: Drivers preserve original mechanical bells partly for pedestrian safety—humans recognize chimes faster than traffic horns. N: What does the man explain?",
+      "license": "Original",
+      "sha256": "7ddbf2bf21a0cdcaaa4f6784372bfdef6ba8c62dd611ecc10ecfe0a7a25349a7",
+      "byteSize": 135740,
+      "durationMs": 16700
+    },
+    {
+      "id": "ITP05-L29",
+      "relativePath": "audio/ITP05-L29.wav",
+      "kind": "AUDIO",
+      "caption": "M: Why wait until nine-thirty to open spectrograph shutters when sunset ended before eight? W: Residual solar scatter remains above our horizon until the Sun sinks eighteen degrees below—true dark sky starts later. N: What does the woman explain?",
+      "license": "Original",
+      "sha256": "a2ea395ab4f6fccb6f4540ce8137b12b4ccf8434e5b07cdce14dbf896ff839c7",
+      "byteSize": 131132,
+      "durationMs": 16129
+    },
+    {
+      "id": "ITP05-L30",
+      "relativePath": "audio/ITP05-L30.wav",
+      "kind": "AUDIO",
+      "caption": "W: Look at my urban housing draft—just three scribbles and a question mark from the grader! M: Drop by his Wednesday drop-in slot; his spoken margin walk-throughs always pack ten times more detail. N: What does the man suggest?",
+      "license": "Original",
+      "sha256": "ef4833751b18499ace555d36664aeafb365d294bd07ccb82e16cb4e819a4a723",
+      "byteSize": 126524,
+      "durationMs": 15590
+    },
+    {
+      "id": "ITP05-PB1",
+      "relativePath": "audio/ITP05-PB1.wav",
+      "kind": "AUDIO",
+      "caption": "M: Dr. Sato, our campus 16-inch optical reflector captured crisp star brightness dips last night right on cue during the Kepler-17b window! W: Wait—that two-percent dip looks textbook. Did you subtract scattered moonlight gradients using nearby comparison stars in the same frame? M: Yes, we logged three steady reference stars across four hours so thin passing clouds affected every curve equally. W: Tidy calibration. Calculate planet-to-star radius ratio before Thursday seminar—tiny brightness drops hold geometric clues directly.",
+      "license": "Original",
+      "sha256": "bae19716c7fd06a5fa840f1bc4130573cf3f12e3fe4b307847a634ec97e41298",
+      "byteSize": 303932,
+      "durationMs": 37455
+    },
+    {
+      "id": "ITP05-PB2",
+      "relativePath": "audio/ITP05-PB2.wav",
+      "kind": "AUDIO",
+      "caption": "W: Wait—why carry ultraviolet flashlamps over to a room holding scratched clay tablets and faded parchment prayers? M: Look closely at folio sixteen on the light table. Under ordinary halogen bulbs, it shows solely sixteenth-century hymn lyrics—yet ultraviolet wavelengths light up ghostly pale lines underneath. W: A palimpsest! Was animal parchment truly scarce enough that monks scraped entire trigonometry manuals off cleanly? M: Preparing calfskin vellum demanded weeks of soaking and scraping. Even after scribes erased old ink, trace iron ions clung deep inside skin pores waiting to fluoresce.",
+      "license": "Original",
+      "sha256": "2e28053685875a4d70126909d57138ae333e405bbc4072cd1c114d50d0f1368a",
+      "byteSize": 338492,
+      "durationMs": 41705
+    },
+    {
+      "id": "ITP05-PC1",
+      "relativePath": "audio/ITP05-PC1.wav",
+      "kind": "AUDIO",
+      "caption": "W: Until the mid-1990s, astronomers debated whether planets orbited distant stars at all, because starlight glare outshines nearby worlds a billionfold. W: Two indirect geometric tricks cracked the problem open. First, the radial-velocity 'wobble' method exploits mutual gravity: as a heavy planet circles a star, the star itself traces a tiny opposing tug-wobble. W: As the star rocks toward and away from Earth, Doppler shifts gently squeeze light wavelengths bluer then stretch them redder inside spectrograph lines. W: Paired with space-telescope transit tracking—which catches periodic fractions-of-a-percent dimming as planets edge across stellar disks—physicists now know both mass and physical diameter, exposing rocky densities vs puffy gas giants.",
+      "license": "Original",
+      "sha256": "17912626c7726daae0497d1901bc95535100f0887f1b96eba61ca215343943b3",
+      "byteSize": 406588,
+      "durationMs": 50115
+    },
+    {
+      "id": "ITP05-PC2",
+      "relativePath": "audio/ITP05-PC2.wav",
+      "kind": "AUDIO",
+      "caption": "M: When archaeologist Arthur Evans unearthed hundreds of baked clay tablets inside Knossos in 1900, he found two distinct scripts—calling the older undeciphered one Linear A and a later orderly script Linear B. M: Unlike Egyptian hieroglyphs backed by the bilingual Rosetta Stone, Linear B sat alone without any known sister translation, baffling codebreakers for half a century. M: Architect and amateur linguist Michael Ventris noticed roughly ninety distinct symbols—too many for a pure alphabet, too few for thousands of Chinese logograms—pointing straight toward a phonetic syllabary. M: Checking patterns tracked patiently by classicist Alice Kober, Ventris proved Linear B actually recorded archaic Mycenaean Greek centuries older than Homer, turning palace lists into vivid census proof.",
+      "license": "Original",
+      "sha256": "ee2a0e45edb9008b66828523d3c7886d1b257743f24af3010c7a72be0dc9d6f0",
+      "byteSize": 423484,
+      "durationMs": 52195
+    },
+    {
+      "id": "ITP05-PC3",
+      "relativePath": "audio/ITP05-PC3.wav",
+      "kind": "AUDIO",
+      "caption": "W: Spend one humid August afternoon crossing two adjacent city districts: an unshaded asphalt strip-mall road versus a pre-war street lined with four-story brick row buildings and mature elms. W: Infrared ground thermometers routinely record pavement differences exceeding fifteen degrees Celsius—even when city weather apps report one identical air forecast. W: Outdated mid-century zoning rules mandated wide paved setbacks solely for parking lots alongside single-use residential loops, multiplying exposed black asphalt heat reservoirs and forcing car dependence. W: Mixed-use infill zoning—permitting corner grocers beneath apartments, narrow traffic lanes, and porous cool-pavement trees—reduces urban heat islands simultaneously while bringing daily errands within ten-minute walks.",
+      "license": "Original",
+      "sha256": "2b065084edf4ce6224f214b2f0ef0c1f2fb5bfc308fac4a53ba625e750262e2e",
+      "byteSize": 406076,
+      "durationMs": 50055
     }
   ],
   "items": [
     {
-      "id": "ITP-L1-05-Q01",
+      "id": "ITP-L1-05-Q001",
       "section": "LISTENING",
       "taskType": "CHOICE_SINGLE",
-      "prompt": "Listen to the short exchange. What does the man mean?",
+      "prompt": "Listen to Part A dialogue 1 (exoplanet transit dip). What does the woman explain?",
       "options": [
-        "He doubts the library printing queue will clear quickly.",
-        "He already picked up his printed thesis.",
-        "He thinks the color printer is out of paper.",
-        "He wants to switch topics for his presentation."
+        "Astronomers infer distant planets from rhythmic dips in a star's light curve.",
+        "Parent stars grow brighter each time small planets eclipse them.",
+        "Giant optical mirrors filter out every ray of stellar glare.",
+        "Light-years shorten whenever telescopes face outer galaxies."
       ],
-      "answer": "He doubts the library printing queue will clear quickly.",
+      "answer": "Astronomers infer distant planets from rhythmic dips in a star's light curve.",
       "acceptedAnswers": [
-        "He doubts the library printing queue will clear quickly."
+        "Astronomers infer distant planets from rhythmic dips in a star's light curve."
       ],
-      "explanation": "Ungkapan 'Don't hold your breath—there are twenty people ahead of us' menandakan antrean akan lama.",
-      "rationaleSource": "ITP-MOD-01",
+      "explanation": "Metode transit mendeteksi eksoplanet lewat penurunan kecil teratur kecerahan bintang.",
+      "rationaleSource": "ITP-MOD-02",
       "difficulty": "B2",
       "points": 1,
       "license": "Original",
       "reviewStatus": "VERIFIED_ORIGINAL",
       "passageId": null,
-      "audioAssetId": "ITP05-A01",
+      "audioAssetId": "ITP05-L01",
       "sortIndex": 1
     },
     {
-      "id": "ITP-L1-05-Q02",
+      "id": "ITP-L1-05-Q002",
       "section": "LISTENING",
       "taskType": "CHOICE_SINGLE",
-      "prompt": "Listen to the conversation. What does the woman imply about Dr. Tanaka's statistics course?",
+      "prompt": "Listen to Part A dialogue 2 (linear b clay preservation). What does the man clarify?",
       "options": [
-        "It is challenging but clearly organized.",
-        "It requires no prior algebra knowledge.",
-        "It has been moved to an online-only format.",
-        "Few students enjoy Dr. Tanaka's office hours."
+        "Pottery kilns baked every weekly grocery tablet systematically.",
+        "Scribes sealed damp records inside bronze water chests.",
+        "Mycenaean tax archives survived mainly on dry palm leaves.",
+        "Unintentional building fires preserved clay records meant to be temporary."
       ],
-      "answer": "It is challenging but clearly organized.",
+      "answer": "Unintentional building fires preserved clay records meant to be temporary.",
       "acceptedAnswers": [
-        "It is challenging but clearly organized."
+        "Unintentional building fires preserved clay records meant to be temporary."
       ],
-      "explanation": "'Tough grading, sure, but her lecture notes are crystal clear' menunjukkan mata kuliah sulit namun sangat terstruktur.",
+      "explanation": "Tablet lempung awalnya hanya untuk catatan sementara sebelum kebakaran istana membakarnya menjadi awet.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP05-L02",
+      "sortIndex": 2
+    },
+    {
+      "id": "ITP-L1-05-Q003",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 3 (zoning setback dispute). What does the woman mean?",
+      "options": [
+        "Municipal zoning codes ban café chairs permanently.",
+        "Narrow alleys measure over two meters across.",
+        "Wide plaza cafes may keep patio tables out late unlike narrow sidewalk cafés.",
+        "Every downtown sidewalk cafe closes outdoor tables at six."
+      ],
+      "answer": "Wide plaza cafes may keep patio tables out late unlike narrow sidewalk cafés.",
+      "acceptedAnswers": [
+        "Wide plaza cafes may keep patio tables out late unlike narrow sidewalk cafés."
+      ],
+      "explanation": "Larangan jam enam hanya berlaku untuk trotoar di bawah dua meter.",
+      "rationaleSource": "ITP-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP05-L03",
+      "sortIndex": 3
+    },
+    {
+      "id": "ITP-L1-05-Q004",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 4 (observatory dome shutter). What does the man advise?",
+      "options": [
+        "Heavy steel shutters warp unless kept partially open daily.",
+        "Pre-cooling the dome minimizes distorting warm air currents during viewing.",
+        "Sunlight dries condensation cleanly off precision mirrors.",
+        "Twilight glare calibrates spectroscopic slits automatically."
+      ],
+      "answer": "Pre-cooling the dome minimizes distorting warm air currents during viewing.",
+      "acceptedAnswers": [
+        "Pre-cooling the dome minimizes distorting warm air currents during viewing."
+      ],
+      "explanation": "Penyamaran suhu awal mencegah distorsi gelombang panas udara di atas cermin teleskop.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP05-L04",
+      "sortIndex": 4
+    },
+    {
+      "id": "ITP-L1-05-Q005",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 5 (rosetta script clues). What does the woman mean?",
+      "options": [
+        "Parallel bilingual inscriptions provided key phonetic clues for decipherment.",
+        "Living priests quietly preserved spoken hieroglyphic dictionaries.",
+        "Early travelers guessed stone meanings strictly from animal pictures.",
+        "All three carved panels used identical Greek spelling."
+      ],
+      "answer": "Parallel bilingual inscriptions provided key phonetic clues for decipherment.",
+      "acceptedAnswers": [
+        "Parallel bilingual inscriptions provided key phonetic clues for decipherment."
+      ],
+      "explanation": "Prasasti dwibahasa sejajar memungkinkan pencocokan nama tokoh dalam kartus.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP05-L05",
+      "sortIndex": 5
+    },
+    {
+      "id": "ITP-L1-05-Q006",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 6 (commuter rail platform). What does the man tell the woman?",
+      "options": [
+        "Digital kiosk boards never change after noon.",
+        "All north-bound express trains skipped today's station.",
+        "Signal crews parked flatcars across Platform Two.",
+        "Board at Platform Two because Track Four is undergoing signal work."
+      ],
+      "answer": "Board at Platform Two because Track Four is undergoing signal work.",
+      "acceptedAnswers": [
+        "Board at Platform Two because Track Four is undergoing signal work."
+      ],
+      "explanation": "Perubahan jalur diumumkan melalui pengeras suara menuju peron dua.",
+      "rationaleSource": "ITP-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP05-L06",
+      "sortIndex": 6
+    },
+    {
+      "id": "ITP-L1-05-Q007",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 7 (adaptive mirror actuator). What does the man clarify?",
+      "options": [
+        "Atmospheric twinkling aids ground-based star resolution.",
+        "Secondary mirrors sit inside orbiting space shuttles.",
+        "Rapid micro-adjustments happen on a lightweight secondary mirror.",
+        "Primary four-meter glass bowls bend cleanly under manual levers."
+      ],
+      "answer": "Rapid micro-adjustments happen on a lightweight secondary mirror.",
+      "acceptedAnswers": [
+        "Rapid micro-adjustments happen on a lightweight secondary mirror."
+      ],
+      "explanation": "Aktuator cepat menggerakkan cermin sekunder kecil, bukan cermin utama raksasa.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "C1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP05-L07",
+      "sortIndex": 7
+    },
+    {
+      "id": "ITP-L1-05-Q008",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 8 (vowel merger survey). What does the woman imply?",
+      "options": [
+        "Older relatives rarely maintain distinct regional vowel systems.",
+        "Variation between merged and distinct vowels reflects a well-studied geographic sound shift.",
+        "Mispronouncing 'cot' stems strictly from poor classroom phonics.",
+        "Vowel mergers move exclusively from eastern harbors westward."
+      ],
+      "answer": "Variation between merged and distinct vowels reflects a well-studied geographic sound shift.",
+      "acceptedAnswers": [
+        "Variation between merged and distinct vowels reflects a well-studied geographic sound shift."
+      ],
+      "explanation": "Penggabungan vokal adalah perubahan dialek geografis yang terpetakan ahli linguistik.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP05-L08",
+      "sortIndex": 8
+    },
+    {
+      "id": "ITP-L1-05-Q009",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 9 (light pollution shield). What does the man advocate?",
+      "options": [
+        "Downward hoods improve street glare control while protecting dark night skies.",
+        "Turning off every intersection lamp halves pedestrian accidents.",
+        "Shiny metal reflectors bounce streetlights upward onto billboards.",
+        "Orange sodium bulbs cannot accept downward shields."
+      ],
+      "answer": "Downward hoods improve street glare control while protecting dark night skies.",
+      "acceptedAnswers": [
+        "Downward hoods improve street glare control while protecting dark night skies."
+      ],
+      "explanation": "Tudung pengarah cahaya ke bawah tetap menerangi trotoar tanpa menyilaukan atau mencemari langit malam.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP05-L09",
+      "sortIndex": 9
+    },
+    {
+      "id": "ITP-L1-05-Q010",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 10 (parchment palimpsest). What does the woman explain?",
+      "options": [
+        "Medieval priests inked prayer margins cleanly with bright fluorescent juice.",
+        "Paper manuscripts easily reveal pencil drafts under infrared flashlights.",
+        "Multispectral bulbs permanently bleach valuable ancient skins.",
+        "Scraped parchment still holds microscopic iron ink traces readable under special light."
+      ],
+      "answer": "Scraped parchment still holds microscopic iron ink traces readable under special light.",
+      "acceptedAnswers": [
+        "Scraped parchment still holds microscopic iron ink traces readable under special light."
+      ],
+      "explanation": "Resapan tinta besi di kulit perkamen bekas kerokan (palimpsest) terbaca kembali di bawah lampu multispektral.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP05-L10",
+      "sortIndex": 10
+    },
+    {
+      "id": "ITP-L1-05-Q011",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 11 (transit bus lane camera). What does the woman mean?",
+      "options": [
+        "Bus drivers rarely obey automated traffic red lights.",
+        "Private sedans may share bus lanes every Friday afternoon.",
+        "Automated cameras on buses will soon penalize motorists blocking dedicated lanes.",
+        "City engineers plan to paint Elm Avenue bus lanes green next spring."
+      ],
+      "answer": "Automated cameras on buses will soon penalize motorists blocking dedicated lanes.",
+      "acceptedAnswers": [
+        "Automated cameras on buses will soon penalize motorists blocking dedicated lanes."
+      ],
+      "explanation": "Kamera otomatis di bus mulai menilang mobil pribadi yang masuk jalur bus bulan depan.",
+      "rationaleSource": "ITP-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP05-L11",
+      "sortIndex": 11
+    },
+    {
+      "id": "ITP-L1-05-Q012",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 12 (spectral oxygen caveat). What does the man emphasize?",
+      "options": [
+        "Abiotic oxygen glows exclusively bright purple in telescopes.",
+        "Non-biological chemical reactions can also produce oxygen on lifeless worlds.",
+        "Spectrometers cannot separate ultraviolet starlight signatures.",
+        "Liquid oceans absorb every molecule of atmospheric oxygen."
+      ],
+      "answer": "Non-biological chemical reactions can also produce oxygen on lifeless worlds.",
+      "acceptedAnswers": [
+        "Non-biological chemical reactions can also produce oxygen on lifeless worlds."
+      ],
+      "explanation": "Reaksi fotolisis uap air abiotik dapat menghasilkan gas oksigen tanpa kehidupan.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "C1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP05-L12",
+      "sortIndex": 12
+    },
+    {
+      "id": "ITP-L1-05-Q013",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 13 (grammar exam review). What does the woman suggest?",
+      "options": [
+        "Mentally drop prepositional phrases to check verb agreement with 'each'.",
+        "Count every plural noun before picking auxiliary verbs.",
+        "Memorize Latin declension endings before writing tests.",
+        "Avoid using the word 'each' inside formal history essays."
+      ],
+      "answer": "Mentally drop prepositional phrases to check verb agreement with 'each'.",
+      "acceptedAnswers": [
+        "Mentally drop prepositional phrases to check verb agreement with 'each'."
+      ],
+      "explanation": "Menutup frasa preposisi memudahkan melihat inti subjek tunggal 'each'.",
+      "rationaleSource": "ITP-MOD-07",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP05-L13",
+      "sortIndex": 13
+    },
+    {
+      "id": "ITP-L1-05-Q014",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 14 (suburb sidewalk ordinance). What does the man mean?",
+      "options": [
+        "City plows salt private front driveways free after every storm.",
+        "Homeowner associations wait a week before shoveling walkways.",
+        "Bylaw 14 exempts corner buildings from winter snow checks.",
+        "Property holders have one day after snowfall ends to clear adjacent paths."
+      ],
+      "answer": "Property holders have one day after snowfall ends to clear adjacent paths.",
+      "acceptedAnswers": [
+        "Property holders have one day after snowfall ends to clear adjacent paths."
+      ],
+      "explanation": "Peraturan kota memberi batas 24 jam setelah salju berhenti untuk membersihkan trotoar.",
       "rationaleSource": "ITP-MOD-01",
       "difficulty": "B2",
       "points": 1,
       "license": "Original",
       "reviewStatus": "VERIFIED_ORIGINAL",
       "passageId": null,
-      "audioAssetId": "ITP05-A02",
-      "sortIndex": 2
+      "audioAssetId": "ITP05-L14",
+      "sortIndex": 14
     },
     {
-      "id": "ITP-L1-05-Q03",
+      "id": "ITP-L1-05-Q015",
       "section": "LISTENING",
       "taskType": "CHOICE_SINGLE",
-      "prompt": "Listen to the campus announcement dialogue. What must students do to join the weekend field trip?",
+      "prompt": "Listen to Part A dialogue 15 (phonetic alphabet trip). What does the woman imply?",
       "options": [
-        "Submit the signed safety waiver by Thursday noon.",
-        "Pay fifty dollars directly to the bus driver.",
-        "Bring personal geological hammers from home.",
-        "Pass an oral quiz before boarding."
+        "Learning fifty spelling rules eliminates accent errors automatically.",
+        "Students should spell essays exclusively in IPA symbols.",
+        "IPA notation represents spoken sounds far more consistently than traditional spelling.",
+        "English dictionaries contain exactly twenty-six spoken sounds."
       ],
-      "answer": "Submit the signed safety waiver by Thursday noon.",
+      "answer": "IPA notation represents spoken sounds far more consistently than traditional spelling.",
       "acceptedAnswers": [
-        "Submit the signed safety waiver by Thursday noon."
+        "IPA notation represents spoken sounds far more consistently than traditional spelling."
       ],
-      "explanation": "Asisten dosen mengingatkan formulir persetujuan keselamatan bertanda tangan wajib dikumpulkan sebelum Kamis siang.",
+      "explanation": "Simbol IPA memetakan bunyi ujaran secara presisi tanpa bias ejaan huruf Latin.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP05-L15",
+      "sortIndex": 15
+    },
+    {
+      "id": "ITP-L1-05-Q016",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 16 (telescope gold coating). What does the woman explain?",
+      "options": [
+        "Gold bullion weighs less than polished aluminum.",
+        "Gold mirrors reflect infrared wavelengths exceptionally well and resist tarnish.",
+        "Silver glass melts swiftly under deep-space starlight.",
+        "Infrared panels absorb ninety-eight percent of warm heat."
+      ],
+      "answer": "Gold mirrors reflect infrared wavelengths exceptionally well and resist tarnish.",
+      "acceptedAnswers": [
+        "Gold mirrors reflect infrared wavelengths exceptionally well and resist tarnish."
+      ],
+      "explanation": "Emas memantulkan spektrum inframerah sangat efisien dan tahan korosi.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP05-L16",
+      "sortIndex": 16
+    },
+    {
+      "id": "ITP-L1-05-Q017",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 17 (pedestrian plaza seating). What does the man imply?",
+      "options": [
+        "Expanding walkable space actually boosted downtown bakery business.",
+        "Downtown bakers lost most morning customers when parking vanished.",
+        "City drivers parked illegally along shaded pedestrian benches.",
+        "Street parking meters remained free throughout summer repairs."
+      ],
+      "answer": "Expanding walkable space actually boosted downtown bakery business.",
+      "acceptedAnswers": [
+        "Expanding walkable space actually boosted downtown bakery business."
+      ],
+      "explanation": "Data kenaikan lalu lintas pejalan kaki membantah kekhawatiran toko roti akan merugi.",
+      "rationaleSource": "ITP-MOD-01",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP05-L17",
+      "sortIndex": 17
+    },
+    {
+      "id": "ITP-L1-05-Q018",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 18 (ancient ink recipe). What does the woman note?",
+      "options": [
+        "Roman lampblack soot bleaches pale yellow after fifty winters.",
+        "Iron-gall scribes wrote strictly on thick marble columns.",
+        "Acids preserve dried parchment pages cleanly indefinitely.",
+        "Carbon-based ink stays chemically stable unlike acidic iron-gall ink."
+      ],
+      "answer": "Carbon-based ink stays chemically stable unlike acidic iron-gall ink.",
+      "acceptedAnswers": [
+        "Carbon-based ink stays chemically stable unlike acidic iron-gall ink."
+      ],
+      "explanation": "Tinta jelaga karbon stabil secara kimiawi sedangkan iron-gall bersifat asam mengikis kertas.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP05-L18",
+      "sortIndex": 18
+    },
+    {
+      "id": "ITP-L1-05-Q019",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 19 (dorm bicycle registration). What does the man tell the woman?",
+      "options": [
+        "Shed fees cover broken chains free for registered riders.",
+        "Bikes parked inside dorm rooms require annual stickers.",
+        "She should register her bicycle right away to prevent impoundment.",
+        "Security guards spray-paint campus bikes every Friday afternoon."
+      ],
+      "answer": "She should register her bicycle right away to prevent impoundment.",
+      "acceptedAnswers": [
+        "She should register her bicycle right away to prevent impoundment."
+      ],
+      "explanation": "Sepeda tanpa stiker registrasi akan diamankan petugas keamanan setelah pukul lima.",
+      "rationaleSource": "ITP-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP05-L19",
+      "sortIndex": 19
+    },
+    {
+      "id": "ITP-L1-05-Q020",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 20 (orbital lagrange point). What does the woman clarify?",
+      "options": [
+        "Heat shields face deep galaxies away from solar rays.",
+        "An L2 telescope moves cleanly around the Sun in step with Earth's annual orbit.",
+        "Stationary deep-space mirrors ignore solar gravity entirely.",
+        "Earth casts total darkness across L2 every winter solstice."
+      ],
+      "answer": "An L2 telescope moves cleanly around the Sun in step with Earth's annual orbit.",
+      "acceptedAnswers": [
+        "An L2 telescope moves cleanly around the Sun in step with Earth's annual orbit."
+      ],
+      "explanation": "Titik Lagrange L2 tetap mengorbit Matahari seiring dengan orbit Bumi di balik pelindung panas.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "C1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP05-L20",
+      "sortIndex": 20
+    },
+    {
+      "id": "ITP-L1-05-Q021",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 21 (crosswalk audio beacon). What does the man explain?",
+      "options": [
+        "Crosswalk audio beacons scale volume dynamically against ambient street noise.",
+        "Pedestrian buttons speed up traffic red lights at midday.",
+        "Birds nest inside loud speaker housings downtown.",
+        "Chimes shut down permanently whenever buses approach."
+      ],
+      "answer": "Crosswalk audio beacons scale volume dynamically against ambient street noise.",
+      "acceptedAnswers": [
+        "Crosswalk audio beacons scale volume dynamically against ambient street noise."
+      ],
+      "explanation": "Penanda audio pejalan kaki menyesuaikan volume otomatis terhadap kebisingan jalan sekitar.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP05-L21",
+      "sortIndex": 21
+    },
+    {
+      "id": "ITP-L1-05-Q022",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 22 (dictionary usage label). What does the woman imply?",
+      "options": [
+        "Newspaper editors dictate official dictionary verbs yearly.",
+        "Dictionaries encourage dropping punctuation marks in research prose.",
+        "Ancient Latin grammar guides every modern slang entry.",
+        "Modern dictionaries record real language usage neutrally rather than inventing rigid rules."
+      ],
+      "answer": "Modern dictionaries record real language usage neutrally rather than inventing rigid rules.",
+      "acceptedAnswers": [
+        "Modern dictionaries record real language usage neutrally rather than inventing rigid rules."
+      ],
+      "explanation": "Leksikograf deskriptif merekam pemakaian bahasa aktual secara empiris.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP05-L22",
+      "sortIndex": 22
+    },
+    {
+      "id": "ITP-L1-05-Q023",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 23 (bus shelter solar panel). What does the man mean?",
+      "options": [
+        "Transit riders hand-crank bus shelter batteries every morning.",
+        "Tiny solar strips power electric commuter buses overnight.",
+        "Energy-efficient e-ink screens need minimal solar charge even in winter.",
+        "Arrival screens stay blank whenever heavy clouds block sunshine."
+      ],
+      "answer": "Energy-efficient e-ink screens need minimal solar charge even in winter.",
+      "acceptedAnswers": [
+        "Energy-efficient e-ink screens need minimal solar charge even in winter."
+      ],
+      "explanation": "Layar e-paper hemat daya hanya menarik listrik saat teks kedatangan berubah.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP05-L23",
+      "sortIndex": 23
+    },
+    {
+      "id": "ITP-L1-05-Q024",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 24 (manuscript microfilm check). What does the woman advise?",
+      "options": [
+        "Translating sixteenth-century wills blindly from memory.",
+        "Requesting high-resolution digital scans for easier zoom and contrast control.",
+        "Borrowing thick reading glasses from the archivist desk.",
+        "Printing fuzzy microfilm reels onto glossy poster paper."
+      ],
+      "answer": "Requesting high-resolution digital scans for easier zoom and contrast control.",
+      "acceptedAnswers": [
+        "Requesting high-resolution digital scans for easier zoom and contrast control."
+      ],
+      "explanation": "Salinan digital beresolusi tinggi mempermudah perbesaran serta pembalikan kontras huruf lama.",
+      "rationaleSource": "ITP-MOD-07",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP05-L24",
+      "sortIndex": 24
+    },
+    {
+      "id": "ITP-L1-05-Q025",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 25 (exoplanet helium tail). What does the woman mean?",
+      "options": [
+        "Tracking escaping helium measures how quickly stars erode nearby planet atmospheres.",
+        "Trailing gas tails turn giant gas worlds into icy comets.",
+        "Helium clouds block harmful ultraviolet light safely.",
+        "Close-orbiting planets gain solid iron cores from stellar flares."
+      ],
+      "answer": "Tracking escaping helium measures how quickly stars erode nearby planet atmospheres.",
+      "acceptedAnswers": [
+        "Tracking escaping helium measures how quickly stars erode nearby planet atmospheres."
+      ],
+      "explanation": "Pengamatan ekor helium mengukur laju pengikisan atmosfer oleh radiasi bintang.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "C1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP05-L25",
+      "sortIndex": 25
+    },
+    {
+      "id": "ITP-L1-05-Q026",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 26 (campus bike lane bollard). What does the man mean?",
+      "options": [
+        "Drivers must remove orange lane bolts every November morning.",
+        "Snowplows avoid all campus bike boulevards all winter.",
+        "Hinged metal bars lift stalled delivery vans gently.",
+        "Flexible posts bend safely under plows without breaking."
+      ],
+      "answer": "Flexible posts bend safely under plows without breaking.",
+      "acceptedAnswers": [
+        "Flexible posts bend safely under plows without breaking."
+      ],
+      "explanation": "Tiang pembatas elastis melentur saat terdorong bajak salju lalu kembali tegak.",
       "rationaleSource": "ITP-MOD-02",
       "difficulty": "B1",
       "points": 1,
       "license": "Original",
       "reviewStatus": "VERIFIED_ORIGINAL",
       "passageId": null,
-      "audioAssetId": "ITP05-A03",
-      "sortIndex": 3
+      "audioAssetId": "ITP05-L26",
+      "sortIndex": 26
     },
     {
-      "id": "ITP-L1-05-Q04",
+      "id": "ITP-L1-05-Q027",
       "section": "LISTENING",
       "taskType": "CHOICE_SINGLE",
-      "prompt": "Listen to the astronomy talk. What limits direct photography of most exoplanets?",
+      "prompt": "Listen to Part A dialogue 27 (syntax tree lab). What does the woman imply?",
       "options": [
-        "Bright glare from their host stars hides faint planets.",
-        "Space telescopes cannot operate outside Earth's clouds.",
-        "Exoplanets reflect zero light from nearby stars.",
-        "Cosmic dust blocks every radio signal from space."
+        "All twenty-five practice diagrams require extra ink shading.",
+        "Professor Hall deleted five diagrams from the quiz.",
+        "He only needs to turn in five marked diagrams rather than all thirty.",
+        "Lab closes permanently before four PM today."
       ],
-      "answer": "Bright glare from their host stars hides faint planets.",
+      "answer": "He only needs to turn in five marked diagrams rather than all thirty.",
       "acceptedAnswers": [
-        "Bright glare from their host stars hides faint planets."
+        "He only needs to turn in five marked diagrams rather than all thirty."
       ],
-      "explanation": "Pembicara menjelaskan silau bintang induk mengaburkan planet di sekitarnya sehingga astronom memakai spektroskopi transit.",
+      "explanation": "Instruksi hanya menugaskan lima soal dilingkari sedangkan sisanya latihan mandiri.",
+      "rationaleSource": "ITP-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP05-L27",
+      "sortIndex": 27
+    },
+    {
+      "id": "ITP-L1-05-Q028",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 28 (historic streetcar bell). What does the man clarify?",
+      "options": [
+        "Visitors pay extra quarters to ring vintage brass gongs.",
+        "Traditional bells alert pedestrians distinctly amid chaotic city horns.",
+        "Electric trolley horns were outlawed across nineteenth-century towns.",
+        "Foot-gongs spin mechanical trolley wheels forward."
+      ],
+      "answer": "Traditional bells alert pedestrians distinctly amid chaotic city horns.",
+      "acceptedAnswers": [
+        "Traditional bells alert pedestrians distinctly amid chaotic city horns."
+      ],
+      "explanation": "Suara lonceng mekanis khas lebih cepat dikenali pejalan kaki dibanding klakson mobil.",
       "rationaleSource": "ITP-MOD-02",
       "difficulty": "B2",
       "points": 1,
       "license": "Original",
       "reviewStatus": "VERIFIED_ORIGINAL",
       "passageId": null,
-      "audioAssetId": "ITP05-A04",
-      "sortIndex": 4
+      "audioAssetId": "ITP05-L28",
+      "sortIndex": 28
     },
     {
-      "id": "ITP-L1-05-Q05",
+      "id": "ITP-L1-05-Q029",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 29 (astronomical twilight). What does the woman mean?",
+      "options": [
+        "Lingering twilight scatter requires waiting until astronomical darkness begins.",
+        "Spectrograph shutters seize shut before nine-thirty.",
+        "Mountains cast dark shadows across western skies by seven.",
+        "Observers finish telescope calibrations before sundown."
+      ],
+      "answer": "Lingering twilight scatter requires waiting until astronomical darkness begins.",
+      "acceptedAnswers": [
+        "Lingering twilight scatter requires waiting until astronomical darkness begins."
+      ],
+      "explanation": "Cahaya senja atmosfer masih tersisa hingga matahari 18 derajat di bawah cakrawala.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP05-L29",
+      "sortIndex": 29
+    },
+    {
+      "id": "ITP-L1-05-Q030",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part A dialogue 30 (seminar feedback slip). What does the man suggest?",
+      "options": [
+        "Adding three handwritten question marks across her conclusion.",
+        "Re-submitting the identical essay draft silently on Friday.",
+        "Switching out of Wednesday housing seminars altogether.",
+        "Visiting the instructor in person for thorough verbal comments on her draft."
+      ],
+      "answer": "Visiting the instructor in person for thorough verbal comments on her draft.",
+      "acceptedAnswers": [
+        "Visiting the instructor in person for thorough verbal comments on her draft."
+      ],
+      "explanation": "Mengunjungi jadwal konsultasi tatap muka memberikan masukan lisan jauh lebih rinci.",
+      "rationaleSource": "ITP-MOD-07",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP05-L30",
+      "sortIndex": 30
+    },
+    {
+      "id": "ITP-L1-05-Q031",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part B Conversation 1 (Observatory Exoplanet Transit Data) — Item 1/4. What event did the student successfully photograph with the campus telescope?",
+      "options": [
+        "A bright comet tail slicing behind Jupiter.",
+        "Solar flares radiating off southern mountain peaks.",
+        "A tiny starlight brightness dip caused by a transiting exoplanet.",
+        "An unexpected lunar crater impact inside clear skies."
+      ],
+      "answer": "A tiny starlight brightness dip caused by a transiting exoplanet.",
+      "acceptedAnswers": [
+        "A tiny starlight brightness dip caused by a transiting exoplanet."
+      ],
+      "explanation": "Mereka merekam penurunan cahaya bintang saat eksoplanet melintas (transit).",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP05-PB1",
+      "sortIndex": 31
+    },
+    {
+      "id": "ITP-L1-05-Q032",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part B Conversation 1 (Observatory Exoplanet Transit Data) — Item 2/4. Why does Dr. Sato ask about comparison stars inside the same camera frame?",
+      "options": [
+        "Extra stars expand telescope focal magnification cleanly.",
+        "Reference stars let observers divide out shifting haze or moonlight brightness drift.",
+        "Comparison stars emit matching planetary eclipses every Friday.",
+        "Bright guide stars heat icy mirror actuators automatically."
+      ],
+      "answer": "Reference stars let observers divide out shifting haze or moonlight brightness drift.",
+      "acceptedAnswers": [
+        "Reference stars let observers divide out shifting haze or moonlight brightness drift."
+      ],
+      "explanation": "Bintang pembanding memastikan penurunan cahaya memang berasal dari target, bukan kabut tipis atau cahaya bulan.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP05-PB1",
+      "sortIndex": 32
+    },
+    {
+      "id": "ITP-L1-05-Q033",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part B Conversation 1 (Observatory Exoplanet Transit Data) — Item 3/4. How clean was the student's four-hour calibration run?",
+      "options": [
+        "Steady readings across three comparison stars separated thin clouds from the transit dip.",
+        "Passing storm clouds ruined three hours of exposures.",
+        "The 16-inch drive motor stalled halfway through the night.",
+        "Moonlight glare washed out all nearby reference stars."
+      ],
+      "answer": "Steady readings across three comparison stars separated thin clouds from the transit dip.",
+      "acceptedAnswers": [
+        "Steady readings across three comparison stars separated thin clouds from the transit dip."
+      ],
+      "explanation": "Tiga bintang rujukan konstan memisahkan efek awan tipis dari sinyal transit.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP05-PB1",
+      "sortIndex": 33
+    },
+    {
+      "id": "ITP-L1-05-Q034",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part B Conversation 1 (Observatory Exoplanet Transit Data) — Item 4/4. What physical measurement can the student derive from depth of the light dip?",
+      "options": [
+        "Exact geological mineral makeup inside rocky mantle cores.",
+        "Distance in light-years back toward Earth observatories.",
+        "Average surface ocean salinity on the planet.",
+        "Ratio between the orbiting planet's radius and its host star's radius."
+      ],
+      "answer": "Ratio between the orbiting planet's radius and its host star's radius.",
+      "acceptedAnswers": [
+        "Ratio between the orbiting planet's radius and its host star's radius."
+      ],
+      "explanation": "Kedalaman kurva cahaya berbanding langsung dengan kuadrat rasio jejari planet terhadap bintang induk.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "C1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP05-PB1",
+      "sortIndex": 34
+    },
+    {
+      "id": "ITP-L1-05-Q035",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part B Conversation 2 (Ancient Script Archive & Multispectral Rig) — Item 1/4. What hidden layer appeared when ultraviolet light illuminated folio sixteen?",
+      "options": [
+        "Golden foil illuminations hidden underneath dry salt dust.",
+        "Watermarks printed by nineteenth-century mill factories.",
+        "Traces of an erased older trigonometry manuscript beneath later hymn ink.",
+        "Modern pencil price notes scratched along calfskin corners."
+      ],
+      "answer": "Traces of an erased older trigonometry manuscript beneath later hymn ink.",
+      "acceptedAnswers": [
+        "Traces of an erased older trigonometry manuscript beneath later hymn ink."
+      ],
+      "explanation": "Sinar UV menampakkan naskah trigonometri lebih tua di bawah teks lagu gereja.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP05-PB2",
+      "sortIndex": 35
+    },
+    {
+      "id": "ITP-L1-05-Q036",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part B Conversation 2 (Ancient Script Archive & Multispectral Rig) — Item 2/4. Why did medieval scribes frequently erase and reuse old manuscripts?",
+      "options": [
+        "Older hymns deteriorated unless rewritten yearly.",
+        "Producing animal parchment was slow and costly, motivating sheet recycling.",
+        "Monastic laws forbade keeping trigonometry texts intact past winter.",
+        "Scraped parchment absorbed fresh iron ink twice as dark."
+      ],
+      "answer": "Producing animal parchment was slow and costly, motivating sheet recycling.",
+      "acceptedAnswers": [
+        "Producing animal parchment was slow and costly, motivating sheet recycling."
+      ],
+      "explanation": "Pembuatan perkamen kulit hewan sangat mahal dan memakan waktu.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP05-PB2",
+      "sortIndex": 36
+    },
+    {
+      "id": "ITP-L1-05-Q037",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part B Conversation 2 (Ancient Script Archive & Multispectral Rig) — Item 3/4. Scientifically, what allows invisible erased text to glow back under UV cameras?",
+      "options": [
+        "Microscopic iron ink residue soaked deep below the scraped parchment surface.",
+        "Special colorless neon ink mixed by medieval astronomers.",
+        "Static electricity radiating off oak library tables.",
+        "Fresh water condensation freezing along calfskin creases."
+      ],
+      "answer": "Microscopic iron ink residue soaked deep below the scraped parchment surface.",
+      "acceptedAnswers": [
+        "Microscopic iron ink residue soaked deep below the scraped parchment surface."
+      ],
+      "explanation": "Residu kimia ion besi tinta lama yang meresap ke pori kulit berfluoresensi saat disinari UV.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP05-PB2",
+      "sortIndex": 37
+    },
+    {
+      "id": "ITP-L1-05-Q038",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part B Conversation 2 (Ancient Script Archive & Multispectral Rig) — Item 4/4. What archaeological term describes a recycled scraped manuscript?",
+      "options": [
+        "Hieroglyph.",
+        "Chronometer.",
+        "Syllabary.",
+        "Palimpsest."
+      ],
+      "answer": "Palimpsest.",
+      "acceptedAnswers": [
+        "Palimpsest."
+      ],
+      "explanation": "Pembicara menyebut istilah 'palimpsest' untuk manuskrip daur ulang.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP05-PB2",
+      "sortIndex": 38
+    },
+    {
+      "id": "ITP-L1-05-Q039",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part C Mini-Lecture 1 (Finding Exoplanets: Radial Velocity & Transit) — Item 1/4. Why could astronomers not photograph exoplanets directly for decades?",
+      "options": [
+        "Interstellar helium tails blocked visible starlight entirely.",
+        "Distant stars spin silently without gravitational orbits.",
+        "Parent stars blaze roughly a billion times brighter than dim orbiting planets.",
+        "Earliest refracting telescopes blurred red wavelengths naturally."
+      ],
+      "answer": "Parent stars blaze roughly a billion times brighter than dim orbiting planets.",
+      "acceptedAnswers": [
+        "Parent stars blaze roughly a billion times brighter than dim orbiting planets."
+      ],
+      "explanation": "Cahaya bintang induk jauh lebih terang sehingga menenggelamkan cahaya redup planet.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP05-PC1",
+      "sortIndex": 39
+    },
+    {
+      "id": "ITP-L1-05-Q040",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part C Mini-Lecture 1 (Finding Exoplanets: Radial Velocity & Transit) — Item 2/4. How does the 'radial-velocity' technique spot unseen planets?",
+      "options": [
+        "By tracking radio stations tuned near star polar poles.",
+        "By measuring rhythmic red-blue Doppler shifts as a star wobbles slightly under planetary gravity.",
+        "By weighing meteor dust hitting satellite solar wings.",
+        "By waiting for comets to collide inside outer gas clouds."
+      ],
+      "answer": "By measuring rhythmic red-blue Doppler shifts as a star wobbles slightly under planetary gravity.",
+      "acceptedAnswers": [
+        "By measuring rhythmic red-blue Doppler shifts as a star wobbles slightly under planetary gravity."
+      ],
+      "explanation": "Pergeseran Doppler spektrum cahaya bintang mendeteksi tarikan gravitasi planet.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP05-PC1",
+      "sortIndex": 40
+    },
+    {
+      "id": "ITP-L1-05-Q041",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part C Mini-Lecture 1 (Finding Exoplanets: Radial Velocity & Transit) — Item 3/4. Why is combining radial velocity AND transit data scientifically golden?",
+      "options": [
+        "Radial velocity delivers planetary mass while transit depth measures size, yielding density.",
+        "Both methods take sharp photographs of surface mountains cleanly.",
+        "Combined graphs turn puffy gas planets straight into rocky worlds.",
+        "Space telescopes bypass gravity equations automatically."
+      ],
+      "answer": "Radial velocity delivers planetary mass while transit depth measures size, yielding density.",
+      "acceptedAnswers": [
+        "Radial velocity delivers planetary mass while transit depth measures size, yielding density."
+      ],
+      "explanation": "Massa (dari goyangan Doppler) + jejari (dari transit) mengungkap kerapatan planet (berbatu vs gas).",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "C1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP05-PC1",
+      "sortIndex": 41
+    },
+    {
+      "id": "ITP-L1-05-Q042",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part C Mini-Lecture 1 (Finding Exoplanets: Radial Velocity & Transit) — Item 4/4. What can planetary bulk density reveal to astrophysicists?",
+      "options": [
+        "Exact language names spoken across distant moons.",
+        "Precise seasonal summer wind forecasts on nearby comets.",
+        "Magnetic iron mines inside the parent star core.",
+        "Whether a distant world resembles dense silicate rock or bloated hydrogen gas."
+      ],
+      "answer": "Whether a distant world resembles dense silicate rock or bloated hydrogen gas.",
+      "acceptedAnswers": [
+        "Whether a distant world resembles dense silicate rock or bloated hydrogen gas."
+      ],
+      "explanation": "Kerapatan membedakan planet batuan padat dari raksasa gas.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP05-PC1",
+      "sortIndex": 42
+    },
+    {
+      "id": "ITP-L1-05-Q043",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part C Mini-Lecture 2 (How Linear B Unlocked Bronze Age Archives) — Item 1/4. How did researchers deduce Linear B was a syllabary even before reading a word?",
+      "options": [
+        "Chariots painted on clay corners matched Roman letters.",
+        "Tablets averaged nearly three thousand symbols each.",
+        "Having roughly ninety symbols placed it between alphabets and logographic scripts.",
+        "Every clay slab carried bilingual Greek translations along margins."
+      ],
+      "answer": "Having roughly ninety symbols placed it between alphabets and logographic scripts.",
+      "acceptedAnswers": [
+        "Having roughly ninety symbols placed it between alphabets and logographic scripts."
+      ],
+      "explanation": "Jumlah ~90 tanda unik merupakan ciri khas skrip silabik (suku kata), bukan alfabet murni atau logogram.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP05-PC2",
+      "sortIndex": 43
+    },
+    {
+      "id": "ITP-L1-05-Q044",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part C Mini-Lecture 2 (How Linear B Unlocked Bronze Age Archives) — Item 2/4. What made deciphering Linear B unusually challenging compared with Egyptian hieroglyphs?",
+      "options": [
+        "Scribes altered alphabet signs monthly by royal decree.",
+        "Researchers lacked any surviving bilingual stone key paired with a known tongue.",
+        "Knossos palace fire vaporized every ink mark on papyrus.",
+        "All tablets were carved mirror-reversed along cylindrical rings."
+      ],
+      "answer": "Researchers lacked any surviving bilingual stone key paired with a known tongue.",
+      "acceptedAnswers": [
+        "Researchers lacked any surviving bilingual stone key paired with a known tongue."
+      ],
+      "explanation": "Tidak ada prasasti dwibahasa seperti Batu Rosetta untuk membandingkan teks.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP05-PC2",
+      "sortIndex": 44
+    },
+    {
+      "id": "ITP-L1-05-Q045",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part C Mini-Lecture 2 (How Linear B Unlocked Bronze Age Archives) — Item 3/4. Whose systematic grammatical pattern tables paved the way for Ventris's breakthrough?",
+      "options": [
+        "Classicist Alice Kober's inflection pattern grids.",
+        "John Harrison's marine navigation charts.",
+        "Arthur Evans's bilingual Cretan dictionary.",
+        "Homer's surviving vocal recordings."
+      ],
+      "answer": "Classicist Alice Kober's inflection pattern grids.",
+      "acceptedAnswers": [
+        "Classicist Alice Kober's inflection pattern grids."
+      ],
+      "explanation": "Tabel pola infleksi yang disusun Alice Kober mendasari penguraian vokal-konsonan Ventris.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP05-PC2",
+      "sortIndex": 45
+    },
+    {
+      "id": "ITP-L1-05-Q046",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part C Mini-Lecture 2 (How Linear B Unlocked Bronze Age Archives) — Item 4/4. What surprising historical discovery resulted once Linear B values snapped into place?",
+      "options": [
+        "Linear A immediately translated cleanly into Sanskrit poetry.",
+        "Mycenaean clerks exclusively wrote folk ballads on fired brick.",
+        "Knossos was built centuries after classical Athens.",
+        "The tablets proved Bronze Age Crete palaces kept administrative accounts in early Greek."
+      ],
+      "answer": "The tablets proved Bronze Age Crete palaces kept administrative accounts in early Greek.",
+      "acceptedAnswers": [
+        "The tablets proved Bronze Age Crete palaces kept administrative accounts in early Greek."
+      ],
+      "explanation": "Terbukti Linear B mencatat bahasa Yunani arkais ratusan tahun lebih tua dari Homer.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP05-PC2",
+      "sortIndex": 46
+    },
+    {
+      "id": "ITP-L1-05-Q047",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part C Mini-Lecture 3 (Urban Zoning & Heat-Cool Neighborhood Design) — Item 1/4. Why can two nearby city neighborhoods differ by fifteen degrees at pavement level?",
+      "options": [
+        "Brick row buildings reflect snow chill throughout August afternoons.",
+        "Weather apps deliberately inflate temperatures near downtown parks.",
+        "Unshaded asphalt parking expanses trap heat far more intensely than tree-shaded streets.",
+        "Suburban zoning boards ban residential air conditioners during July."
+      ],
+      "answer": "Unshaded asphalt parking expanses trap heat far more intensely than tree-shaded streets.",
+      "acceptedAnswers": [
+        "Unshaded asphalt parking expanses trap heat far more intensely than tree-shaded streets."
+      ],
+      "explanation": "Aspal luas terbuka menyerap panas intensif dibanding jalan teduh berpohon dan bangunan rapat.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP05-PC3",
+      "sortIndex": 47
+    },
+    {
+      "id": "ITP-L1-05-Q048",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part C Mini-Lecture 3 (Urban Zoning & Heat-Cool Neighborhood Design) — Item 2/4. How did older single-use mid-century zoning worsen urban heat accumulation?",
+      "options": [
+        "Mixed corner stores emitted excessive furnace steam.",
+        "Mandatory wide parking setbacks multiplied exposed dark pavement surfaces.",
+        "Tight brick alleys blocked coastal afternoon breezes completely.",
+        "Tree ordinances banned leafy elms beside apartment sidewalks."
+      ],
+      "answer": "Mandatory wide parking setbacks multiplied exposed dark pavement surfaces.",
+      "acceptedAnswers": [
+        "Mandatory wide parking setbacks multiplied exposed dark pavement surfaces."
+      ],
+      "explanation": "Aturan setback lebar untuk area parkir memperluas hamparan permukaan gelap penyerap panas.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP05-PC3",
+      "sortIndex": 48
+    },
+    {
+      "id": "ITP-L1-05-Q049",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part C Mini-Lecture 3 (Urban Zoning & Heat-Cool Neighborhood Design) — Item 3/4. What characterizes modern mixed-use 'infill' zoning reform?",
+      "options": [
+        "Blending housing above ground-floor shops along shaded walkable streets.",
+        "Relocating every grocery store outside highway ring exits.",
+        "Widening residential lanes exclusively for heavy trucks.",
+        "Demolishing multi-story brick buildings for gravel parking lots."
+      ],
+      "answer": "Blending housing above ground-floor shops along shaded walkable streets.",
+      "acceptedAnswers": [
+        "Blending housing above ground-floor shops along shaded walkable streets."
+      ],
+      "explanation": "Zonasi campuran memadukan hunian dan toko harian di jalur rindang nyaman pejalan kaki.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP05-PC3",
+      "sortIndex": 49
+    },
+    {
+      "id": "ITP-L1-05-Q050",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen to Part C Mini-Lecture 3 (Urban Zoning & Heat-Cool Neighborhood Design) — Item 4/4. Which twin benefit arises when urban districts pair street trees with walkable retail?",
+      "options": [
+        "Double parking meter fees alongside faster freeway commutes.",
+        "Complete elimination of seasonal winter heating bills.",
+        "Zero need for shaded public bus stops.",
+        "Lower neighborhood heat stress paired with shorter everyday walking trips."
+      ],
+      "answer": "Lower neighborhood heat stress paired with shorter everyday walking trips.",
+      "acceptedAnswers": [
+        "Lower neighborhood heat stress paired with shorter everyday walking trips."
+      ],
+      "explanation": "Menurunkan efek pulau panas kota sekaligus memangkas jarak kebutuhan berjalan kaki.",
+      "rationaleSource": "ITP-MOD-02",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "ITP05-PC3",
+      "sortIndex": 50
+    },
+    {
+      "id": "ITP-L1-05-Q051",
       "section": "STRUCTURE",
       "taskType": "CHOICE_SINGLE",
-      "prompt": "Public health officials recommended that the municipal reservoir ___ tested twice weekly after heavy rains.",
+      "prompt": "Little ___ astronomers realize in 1990 that thousands of exoplanets orbited nearby Sun-like stars.",
       "options": [
-        "be",
-        "is",
+        "did",
+        "had",
+        "were",
+        "would"
+      ],
+      "answer": "did",
+      "acceptedAnswers": [
+        "did"
+      ],
+      "explanation": "Adverb negatif 'Little' di awal kalimat memicu inversi auxiliary 'did' sebelum verba dasar 'realize'.",
+      "rationaleSource": "ITP-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 51
+    },
+    {
+      "id": "ITP-L1-05-Q052",
+      "section": "STRUCTURE",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Clay tablets inscribed in Linear B ___ preserved only because accidental palace fires baked them hard.",
+      "options": [
         "was",
-        "will be"
+        "have",
+        "had",
+        "were"
       ],
-      "answer": "be",
+      "answer": "were",
       "acceptedAnswers": [
-        "be"
+        "were"
       ],
-      "explanation": "Kata kerja mandative subjunctive setelah 'recommended that ...' menggunakan bare infinitive 'be'.",
+      "explanation": "Subjek jamak 'Clay tablets' + makna pasif lampau -> 'were preserved'.",
+      "rationaleSource": "ITP-MOD-03",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 52
+    },
+    {
+      "id": "ITP-L1-05-Q053",
+      "section": "STRUCTURE",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Spectrographs separate starlight into narrow wavelengths, ___ chemical elements inside planetary atmospheres.",
+      "options": [
+        "reveal",
+        "to be revealed",
+        "revealing",
+        "revealed"
+      ],
+      "answer": "revealing",
+      "acceptedAnswers": [
+        "revealing"
+      ],
+      "explanation": "Partisipial aktif sesudah koma menerangkan hasil aksi klausa utama ('revealing').",
+      "rationaleSource": "ITP-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 53
+    },
+    {
+      "id": "ITP-L1-05-Q054",
+      "section": "STRUCTURE",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Whereas alphabetical scripts represent individual consonants and vowels, syllabaries ___ distinct characters to entire syllables.",
+      "options": [
+        "are assigned to",
+        "assign",
+        "assigns",
+        "assigning"
+      ],
+      "answer": "assign",
+      "acceptedAnswers": [
+        "assign"
+      ],
+      "explanation": "Subjek jamak 'syllabaries' berpasangan dengan verba transitif aktif 'assign'.",
       "rationaleSource": "ITP-MOD-03",
       "difficulty": "B2",
       "points": 1,
@@ -192,24 +1745,99 @@
       "reviewStatus": "VERIFIED_ORIGINAL",
       "passageId": null,
       "audioAssetId": null,
-      "sortIndex": 5
+      "sortIndex": 54
     },
     {
-      "id": "ITP-L1-05-Q06",
+      "id": "ITP-L1-05-Q055",
       "section": "STRUCTURE",
       "taskType": "CHOICE_SINGLE",
-      "prompt": "___ its low density, aerogel supports thousands of times its own weight without collapsing.",
+      "prompt": "The transit panel recommended that public zoning ordinances ___ clearer height limits near historic squares.",
       "options": [
-        "Despite",
-        "Although",
-        "Because",
-        "Unless"
+        "incorporate",
+        "incorporates",
+        "incorporated",
+        "to incorporate"
       ],
-      "answer": "Despite",
+      "answer": "incorporate",
       "acceptedAnswers": [
-        "Despite"
+        "incorporate"
       ],
-      "explanation": "Diikuti noun phrase ('its low density') dan menyatakan kontras -> preposisi 'Despite'.",
+      "explanation": "Subjunctive sesudah 'recommended that' memerlukan kata kerja dasar 'incorporate'.",
+      "rationaleSource": "ITP-MOD-03",
+      "difficulty": "C1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 55
+    },
+    {
+      "id": "ITP-L1-05-Q056",
+      "section": "STRUCTURE",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Only by measuring infinitesimal Doppler shifts in stellar spectra ___ detect Earth-sized planets.",
+      "options": [
+        "astronomers can",
+        "can detect astronomers",
+        "do astronomers can",
+        "can astronomers"
+      ],
+      "answer": "can astronomers",
+      "acceptedAnswers": [
+        "can astronomers"
+      ],
+      "explanation": "'Only by + -ing' di awal kalimat memicu inversi modal + subjek ('can astronomers').",
+      "rationaleSource": "ITP-MOD-03",
+      "difficulty": "C1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 56
+    },
+    {
+      "id": "ITP-L1-05-Q057",
+      "section": "STRUCTURE",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Infrared space telescopes must ___ beyond Earth's thermal glare to capture faint exoplanet signatures.",
+      "options": [
+        "stationing",
+        "to station",
+        "be stationed",
+        "station"
+      ],
+      "answer": "be stationed",
+      "acceptedAnswers": [
+        "be stationed"
+      ],
+      "explanation": "Konstruksi pasif modal 'must + be + V3' ('be stationed').",
+      "rationaleSource": "ITP-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 57
+    },
+    {
+      "id": "ITP-L1-05-Q058",
+      "section": "STRUCTURE",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Linguists debate ___ Phoenician traders standardized consonant ordering during Mediterranean maritime voyages.",
+      "options": [
+        "as if",
+        "how",
+        "what",
+        "which"
+      ],
+      "answer": "how",
+      "acceptedAnswers": [
+        "how"
+      ],
+      "explanation": "'How' memperkenalkan noun clause objek yang menjelaskan cara standardisasi terjadi.",
       "rationaleSource": "ITP-MOD-03",
       "difficulty": "B2",
       "points": 1,
@@ -217,24 +1845,149 @@
       "reviewStatus": "VERIFIED_ORIGINAL",
       "passageId": null,
       "audioAssetId": null,
-      "sortIndex": 6
+      "sortIndex": 58
     },
     {
-      "id": "ITP-L1-05-Q07",
+      "id": "ITP-L1-05-Q059",
       "section": "STRUCTURE",
-      "taskType": "ERROR_IDENTIFICATION",
-      "prompt": "Neither the [A] chief meteorologist [B] nor her junior forecasters [C] was able to predict [D] the sudden hailstorm.",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Even the earliest municipal transit budgets suffered from ___ coordination between rail and ferry operators.",
       "options": [
-        "[A] chief meteorologist",
-        "[B] nor",
-        "[C] was able",
-        "[D] the sudden hailstorm"
+        "inadequate",
+        "inadequately",
+        "inadequacy of",
+        "lack adequate"
       ],
-      "answer": "[C] was able",
+      "answer": "inadequate",
       "acceptedAnswers": [
-        "[C] was able"
+        "inadequate"
       ],
-      "explanation": "Pada 'Neither A nor B', kata kerja mengikuti subjek terdekat ('her junior forecasters' jamak) sehingga harus 'were able'.",
+      "explanation": "Adjektiva 'inadequate' memodifikasi kata benda tak terhitung 'coordination'.",
+      "rationaleSource": "ITP-MOD-04",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 59
+    },
+    {
+      "id": "ITP-L1-05-Q060",
+      "section": "STRUCTURE",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Phoenician glassmakers refined sand-core vessels centuries before blown glass, ___ vibrant trade networks across port cities.",
+      "options": [
+        "fostered",
+        "to foster it",
+        "foster",
+        "fostering"
+      ],
+      "answer": "fostering",
+      "acceptedAnswers": [
+        "fostering"
+      ],
+      "explanation": "Frasa partisipial aktif sesudah koma menjelaskan dampak ('fostering').",
+      "rationaleSource": "ITP-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 60
+    },
+    {
+      "id": "ITP-L1-05-Q061",
+      "section": "STRUCTURE",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Neither orbital eccentricity nor minor stellar flare intensity alone ___ atmospheric retention on rocky exoplanets.",
+      "options": [
+        "determining",
+        "are determining",
+        "determines",
+        "determine"
+      ],
+      "answer": "determines",
+      "acceptedAnswers": [
+        "determines"
+      ],
+      "explanation": "'Neither A nor B' mengikuti unsur terdekat yang tunggal ('minor stellar flare intensity') -> 'determines'.",
+      "rationaleSource": "ITP-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 61
+    },
+    {
+      "id": "ITP-L1-05-Q062",
+      "section": "STRUCTURE",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "___ from clay seals and tax tallies, cuneiform evolved into an expressive literary script by 2400 BCE.",
+      "options": [
+        "Originates",
+        "Originating",
+        "Originated",
+        "Having originate"
+      ],
+      "answer": "Originating",
+      "acceptedAnswers": [
+        "Originating"
+      ],
+      "explanation": "Kata kerja intranstif 'originate' hanya memakai partisipial aktif 'Originating'.",
+      "rationaleSource": "ITP-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 62
+    },
+    {
+      "id": "ITP-L1-05-Q063",
+      "section": "STRUCTURE",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Urban zoning boards have avoided ___ narrow medieval alleys into high-speed arterial corridors.",
+      "options": [
+        "converting",
+        "to convert",
+        "converted",
+        "convert"
+      ],
+      "answer": "converting",
+      "acceptedAnswers": [
+        "converting"
+      ],
+      "explanation": "Verba 'avoid' selalu mengambil gerund ('converting').",
+      "rationaleSource": "ITP-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 63
+    },
+    {
+      "id": "ITP-L1-05-Q064",
+      "section": "STRUCTURE",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "The more densely packed transit hubs become, ___ pedestrian wayfinding signage grows.",
+      "options": [
+        "more crucial than",
+        "most crucial",
+        "as crucial as",
+        "the more crucial"
+      ],
+      "answer": "the more crucial",
+      "acceptedAnswers": [
+        "the more crucial"
+      ],
+      "explanation": "Konstruksi komparatif ganda membutuhkan 'the more crucial'.",
       "rationaleSource": "ITP-MOD-04",
       "difficulty": "B2",
       "points": 1,
@@ -242,24 +1995,74 @@
       "reviewStatus": "VERIFIED_ORIGINAL",
       "passageId": null,
       "audioAssetId": null,
-      "sortIndex": 7
+      "sortIndex": 64
     },
     {
-      "id": "ITP-L1-05-Q08",
+      "id": "ITP-L1-05-Q065",
+      "section": "STRUCTURE",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Should orbital mirrors lose thermal stability, adaptive actuators ___ slight geometric corrections automatically.",
+      "options": [
+        "would have applied",
+        "applying",
+        "apply",
+        "applied"
+      ],
+      "answer": "apply",
+      "acceptedAnswers": [
+        "apply"
+      ],
+      "explanation": "Conditional inversi 'Should S + V1...' (kemungkinan nyata/prosedur) mengambil present tense 'apply'.",
+      "rationaleSource": "ITP-MOD-08",
+      "difficulty": "C1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 65
+    },
+    {
+      "id": "ITP-L1-05-Q066",
       "section": "STRUCTURE",
       "taskType": "ERROR_IDENTIFICATION",
-      "prompt": "The [A] newly discovered manuscripts [B] provide [C] valuable insights [D] onto seventeenth-century maritime trade.",
+      "prompt": "Adaptive optics mirrors [A] flex hundreds of times [B] each second [C] to canceling atmospheric blur [D] above mountain telescopes.",
       "options": [
-        "[A] newly discovered",
-        "[B] provide",
-        "[C] valuable insights",
-        "[D] onto"
+        "[A] flex hundreds of times",
+        "[B] each second",
+        "[C] to canceling atmospheric blur",
+        "[D] above mountain telescopes"
       ],
-      "answer": "[D] onto",
+      "answer": "[C] to canceling atmospheric blur",
       "acceptedAnswers": [
-        "[D] onto"
+        "[C] to canceling atmospheric blur"
       ],
-      "explanation": "Kolokasi preposisi baku untuk 'insights' adalah 'insights into', bukan 'onto'.",
+      "explanation": "Infinitif tujuan 'to' diikuti bare infinitive 'cancel', bukan 'canceling'.",
+      "rationaleSource": "ITP-MOD-08",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 66
+    },
+    {
+      "id": "ITP-L1-05-Q067",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "Although linear cuneiform scribes [A] pressed wedge-shaped reeds [B] into damp clay, [C] Egyptian priests also wrote [D] swift on papyrus scrolls.",
+      "options": [
+        "[A] pressed wedge-shaped reeds",
+        "[B] into damp clay,",
+        "[C] Egyptian priests also wrote",
+        "[D] swift on papyrus scrolls"
+      ],
+      "answer": "[D] swift on papyrus scrolls",
+      "acceptedAnswers": [
+        "[D] swift on papyrus scrolls"
+      ],
+      "explanation": "Modifikator verba 'wrote' memerlukan adverb 'swiftly', bukan adjektiva 'swift'.",
       "rationaleSource": "ITP-MOD-04",
       "difficulty": "B2",
       "points": 1,
@@ -267,24 +2070,649 @@
       "reviewStatus": "VERIFIED_ORIGINAL",
       "passageId": null,
       "audioAssetId": null,
-      "sortIndex": 8
+      "sortIndex": 67
     },
     {
-      "id": "ITP-L1-05-Q09",
+      "id": "ITP-L1-05-Q068",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "Neither infrared space telescopes [A] nor ground-based spectrographs [B] has yet imaged surface rivers [C] on small Earth-sized [D] exoplanets.",
+      "options": [
+        "[A] nor ground-based spectrographs",
+        "[B] has yet imaged surface rivers",
+        "[C] on small Earth-sized",
+        "[D] exoplanets"
+      ],
+      "answer": "[B] has yet imaged surface rivers",
+      "acceptedAnswers": [
+        "[B] has yet imaged surface rivers"
+      ],
+      "explanation": "Subjek terdekat sesudah 'nor' ('spectrographs') jamak, sehingga auxiliary harus 'have'.",
+      "rationaleSource": "ITP-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 68
+    },
+    {
+      "id": "ITP-L1-05-Q069",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "Urban zoning commissions [A] debate whether narrow alleys [B] should be preserve [C] for pedestrian shops [D] or widened for buses.",
+      "options": [
+        "[A] debate whether narrow alleys",
+        "[B] should be preserve",
+        "[C] for pedestrian shops",
+        "[D] or widened for buses"
+      ],
+      "answer": "[B] should be preserve",
+      "acceptedAnswers": [
+        "[B] should be preserve"
+      ],
+      "explanation": "Modal pasif memerlukan past participle 'preserved'.",
+      "rationaleSource": "ITP-MOD-08",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 69
+    },
+    {
+      "id": "ITP-L1-05-Q070",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "Every exoplanet cataloged [A] through radial-velocity wobbles [B] exert a tiny gravitational tug [C] upon its parent [D] star.",
+      "options": [
+        "[A] through radial-velocity wobbles",
+        "[B] exert a tiny gravitational tug",
+        "[C] upon its parent",
+        "[D] star"
+      ],
+      "answer": "[B] exert a tiny gravitational tug",
+      "acceptedAnswers": [
+        "[B] exert a tiny gravitational tug"
+      ],
+      "explanation": "Subjek tunggal 'Every exoplanet' wajib diikuti kata kerja tunggal 'exerts'.",
+      "rationaleSource": "ITP-MOD-03",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 70
+    },
+    {
+      "id": "ITP-L1-05-Q071",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "Syllabic writing systems [A] use far less symbols [B] than logographic scripts [C] while requiring more signs [D] than strict alphabets.",
+      "options": [
+        "[A] use far less symbols",
+        "[B] than logographic scripts",
+        "[C] while requiring more signs",
+        "[D] than strict alphabets"
+      ],
+      "answer": "[A] use far less symbols",
+      "acceptedAnswers": [
+        "[A] use far less symbols"
+      ],
+      "explanation": "'Symbols' adalah nomina jamak terhitung sehingga harus memakai 'far fewer symbols'.",
+      "rationaleSource": "ITP-MOD-09",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 71
+    },
+    {
+      "id": "ITP-L1-05-Q072",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "Ancient Phoenician merchants [A] borrowed consonant signs [B] from Sinai miners [C] and adapting them [D] for rapid harbor accounting.",
+      "options": [
+        "[A] borrowed consonant signs",
+        "[B] from Sinai miners",
+        "[C] and adapting them",
+        "[D] for rapid harbor accounting"
+      ],
+      "answer": "[C] and adapting them",
+      "acceptedAnswers": [
+        "[C] and adapting them"
+      ],
+      "explanation": "Paralelisme verba lampau ('borrowed ... and adapted') menuntut bentuk past 'adapted'.",
+      "rationaleSource": "ITP-MOD-04",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 72
+    },
+    {
+      "id": "ITP-L1-05-Q073",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "Without active carbon regulation, [A] rocky planets close [B] to luminous stars [C] risk lose their surface [D] oceans to runaway evaporation.",
+      "options": [
+        "[A] rocky planets close",
+        "[B] to luminous stars",
+        "[C] risk lose their surface",
+        "[D] oceans to runaway evaporation"
+      ],
+      "answer": "[C] risk lose their surface",
+      "acceptedAnswers": [
+        "[C] risk lose their surface"
+      ],
+      "explanation": "Kata kerja 'risk' harus diikuti gerund 'losing', bukan bentuk dasar 'lose'.",
+      "rationaleSource": "ITP-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 73
+    },
+    {
+      "id": "ITP-L1-05-Q074",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "Between high-density housing blocks [A] and commuter tram lines [B] stand a pedestrian plaza [C] shaded by mature [D] plane trees.",
+      "options": [
+        "[A] and commuter tram lines",
+        "[B] stand a pedestrian plaza",
+        "[C] shaded by mature",
+        "[D] plane trees"
+      ],
+      "answer": "[B] stand a pedestrian plaza",
+      "acceptedAnswers": [
+        "[B] stand a pedestrian plaza"
+      ],
+      "explanation": "Subjek inversi tunggal 'a pedestrian plaza' membutuhkan kata kerja tunggal 'stands'.",
+      "rationaleSource": "ITP-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 74
+    },
+    {
+      "id": "ITP-L1-05-Q075",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "Exoplanets locked in tight orbits [A] keep one hemisphere [B] perpetual sunlit while [C] the opposite side remains [D] frozen in night.",
+      "options": [
+        "[A] keep one hemisphere",
+        "[B] perpetual sunlit while",
+        "[C] the opposite side remains",
+        "[D] frozen in night"
+      ],
+      "answer": "[B] perpetual sunlit while",
+      "acceptedAnswers": [
+        "[B] perpetual sunlit while"
+      ],
+      "explanation": "Adverb 'perpetually' wajib memodifikasi adjektiva 'sunlit'.",
+      "rationaleSource": "ITP-MOD-04",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 75
+    },
+    {
+      "id": "ITP-L1-05-Q076",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "The language committee insisted [A] that regional dictionaries [B] documents spoken dialect verbs [C] alongside standard written [D] literary forms.",
+      "options": [
+        "[A] that regional dictionaries",
+        "[B] documents spoken dialect verbs",
+        "[C] alongside standard written",
+        "[D] literary forms"
+      ],
+      "answer": "[B] documents spoken dialect verbs",
+      "acceptedAnswers": [
+        "[B] documents spoken dialect verbs"
+      ],
+      "explanation": "Subjunctive sesudah 'insisted that' memakai bare verb 'document', tanpa '-s'.",
+      "rationaleSource": "ITP-MOD-03",
+      "difficulty": "C1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 76
+    },
+    {
+      "id": "ITP-L1-05-Q077",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "Spectrometers mounted [A] inside orbital observatories [B] separate faint infrared light [C] into narrow bands indicative [D] for water vapor.",
+      "options": [
+        "[A] inside orbital observatories",
+        "[B] separate faint infrared light",
+        "[C] into narrow bands indicative",
+        "[D] for water vapor"
+      ],
+      "answer": "[D] for water vapor",
+      "acceptedAnswers": [
+        "[D] for water vapor"
+      ],
+      "explanation": "Adjektiva 'indicative' berpasangan dengan preposisi 'of', bukan 'for' ('indicative of').",
+      "rationaleSource": "ITP-MOD-09",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 77
+    },
+    {
+      "id": "ITP-L1-05-Q078",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "Unlike early wax tablets, [A] parchment folios resisted cracking [B] when bound inside [C] heavy oak covers [D] and stored horizontal.",
+      "options": [
+        "[A] parchment folios resisted cracking",
+        "[B] when bound inside",
+        "[C] heavy oak covers",
+        "[D] and stored horizontal"
+      ],
+      "answer": "[D] and stored horizontal",
+      "acceptedAnswers": [
+        "[D] and stored horizontal"
+      ],
+      "explanation": "Modifikator partisipial pasif 'stored' memerlukan adverb 'horizontally'.",
+      "rationaleSource": "ITP-MOD-04",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 78
+    },
+    {
+      "id": "ITP-L1-05-Q079",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "A growing number [A] of municipal transit agencies [B] is testing articulated battery buses [C] on steep hillside [D] commuter routes.",
+      "options": [
+        "[A] of municipal transit agencies",
+        "[B] is testing articulated battery buses",
+        "[C] on steep hillside",
+        "[D] commuter routes"
+      ],
+      "answer": "[B] is testing articulated battery buses",
+      "acceptedAnswers": [
+        "[B] is testing articulated battery buses"
+      ],
+      "explanation": "Subjek frasa 'A growing number of + plural noun' mengambil verba jamak 'are testing'.",
+      "rationaleSource": "ITP-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 79
+    },
+    {
+      "id": "ITP-L1-05-Q080",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "Clay sealings pressed onto [A] jar stoppers enabled port clerks [B] tracking olive oil origin [C] across distant Aegean [D] island routes.",
+      "options": [
+        "[A] jar stoppers enabled port clerks",
+        "[B] tracking olive oil origin",
+        "[C] across distant Aegean",
+        "[D] island routes"
+      ],
+      "answer": "[B] tracking olive oil origin",
+      "acceptedAnswers": [
+        "[B] tracking olive oil origin"
+      ],
+      "explanation": "Pola 'enable + object + to + V1' memerlukan 'to track', bukan 'tracking'.",
+      "rationaleSource": "ITP-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 80
+    },
+    {
+      "id": "ITP-L1-05-Q081",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "No sooner had Kepler [A] launched its photometer [B] than astronomers observed [C] tiny brightness dips caused [D] from transiting worlds.",
+      "options": [
+        "[A] launched its photometer",
+        "[B] than astronomers observed",
+        "[C] tiny brightness dips caused",
+        "[D] from transiting worlds"
+      ],
+      "answer": "[D] from transiting worlds",
+      "acceptedAnswers": [
+        "[D] from transiting worlds"
+      ],
+      "explanation": "Agentive pasif setelah 'caused' menggunakan preposisi 'by', bukan 'from'.",
+      "rationaleSource": "ITP-MOD-09",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 81
+    },
+    {
+      "id": "ITP-L1-05-Q082",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "Historic town ordinances [A] often prohibited baking ovens [B] inside timber row houses [C] due to repeated [D] catastrophic burn.",
+      "options": [
+        "[A] often prohibited baking ovens",
+        "[B] inside timber row houses",
+        "[C] due to repeated",
+        "[D] catastrophic burn"
+      ],
+      "answer": "[D] catastrophic burn",
+      "acceptedAnswers": [
+        "[D] catastrophic burn"
+      ],
+      "explanation": "Setelah adjektiva 'catastrophic', dibutuhkan nomina 'fires' atau 'burns'.",
+      "rationaleSource": "ITP-MOD-04",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 82
+    },
+    {
+      "id": "ITP-L1-05-Q083",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "Atmospheric oxygen alone [A] cannot prove extraterrestrial life [B] unless researchers also measure [C] chemically incompatible gases [D] such than methane.",
+      "options": [
+        "[A] cannot prove extraterrestrial life",
+        "[B] unless researchers also measure",
+        "[C] chemically incompatible gases",
+        "[D] such than methane"
+      ],
+      "answer": "[D] such than methane",
+      "acceptedAnswers": [
+        "[D] such than methane"
+      ],
+      "explanation": "Ungkapan pengenalan contoh baku adalah 'such as', bukan 'such than'.",
+      "rationaleSource": "ITP-MOD-09",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 83
+    },
+    {
+      "id": "ITP-L1-05-Q084",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "Linguists noticed that children [A] acquire vowel contrasts [B] more uniform in quiet nurseries [C] than beside noisy [D] urban expressways.",
+      "options": [
+        "[A] acquire vowel contrasts",
+        "[B] more uniform in quiet nurseries",
+        "[C] than beside noisy",
+        "[D] urban expressways"
+      ],
+      "answer": "[B] more uniform in quiet nurseries",
+      "acceptedAnswers": [
+        "[B] more uniform in quiet nurseries"
+      ],
+      "explanation": "Verba 'acquire' dimodifikasi adverb 'more uniformly'.",
+      "rationaleSource": "ITP-MOD-04",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 84
+    },
+    {
+      "id": "ITP-L1-05-Q085",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "Not only did parchment folios [A] endure centuries of handling, [B] but they also allowed scribes [C] scraping away faded ink [D] to reuse sheets.",
+      "options": [
+        "[A] endure centuries of handling,",
+        "[B] but they also allowed scribes",
+        "[C] scraping away faded ink",
+        "[D] to reuse sheets"
+      ],
+      "answer": "[C] scraping away faded ink",
+      "acceptedAnswers": [
+        "[C] scraping away faded ink"
+      ],
+      "explanation": "'Allow + object' menuntut to-infinitive 'to scrape', bukan 'scraping'.",
+      "rationaleSource": "ITP-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 85
+    },
+    {
+      "id": "ITP-L1-05-Q086",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "By shading public walkways [A] with overhanging balconies, [B] planners reduce afternoon asphalt [C] heat while encouraging [D] briskly pedestrian travel.",
+      "options": [
+        "[A] with overhanging balconies,",
+        "[B] planners reduce afternoon asphalt",
+        "[C] heat while encouraging",
+        "[D] briskly pedestrian travel"
+      ],
+      "answer": "[D] briskly pedestrian travel",
+      "acceptedAnswers": [
+        "[D] briskly pedestrian travel"
+      ],
+      "explanation": "Frasa nomina 'pedestrian travel' dimodifikasi adjektiva 'brisk', bukan adverb 'briskly'.",
+      "rationaleSource": "ITP-MOD-04",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 86
+    },
+    {
+      "id": "ITP-L1-05-Q087",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "Few scholars realized [A] that clay syllabary archives [B] discovered at Pylos [C] was preserved accidentally [D] by an ancient fire.",
+      "options": [
+        "[A] that clay syllabary archives",
+        "[B] discovered at Pylos",
+        "[C] was preserved accidentally",
+        "[D] by an ancient fire"
+      ],
+      "answer": "[C] was preserved accidentally",
+      "acceptedAnswers": [
+        "[C] was preserved accidentally"
+      ],
+      "explanation": "Subjek jamak 'clay syllabary archives' menuntut kata kerja jamak 'were preserved'.",
+      "rationaleSource": "ITP-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 87
+    },
+    {
+      "id": "ITP-L1-05-Q088",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "Light curves recorded [A] during secondary eclipses allow scientists [B] estimating daytime temperatures [C] on distant giant [D] gas worlds.",
+      "options": [
+        "[A] during secondary eclipses allow scientists",
+        "[B] estimating daytime temperatures",
+        "[C] on distant giant",
+        "[D] gas worlds"
+      ],
+      "answer": "[B] estimating daytime temperatures",
+      "acceptedAnswers": [
+        "[B] estimating daytime temperatures"
+      ],
+      "explanation": "'Allow + object' memerlukan 'to estimate', bukan 'estimating'.",
+      "rationaleSource": "ITP-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 88
+    },
+    {
+      "id": "ITP-L1-05-Q089",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "Because orbital dust interferes [A] in crisp starlight measurements, [B] astronomers station arrays [C] far beyond dense [D] inner zodiacal clouds.",
+      "options": [
+        "[A] in crisp starlight measurements,",
+        "[B] astronomers station arrays",
+        "[C] far beyond dense",
+        "[D] inner zodiacal clouds"
+      ],
+      "answer": "[A] in crisp starlight measurements,",
+      "acceptedAnswers": [
+        "[A] in crisp starlight measurements,"
+      ],
+      "explanation": "Kata kerja 'interfere' berpasangan dengan preposisi 'with', bukan 'in'.",
+      "rationaleSource": "ITP-MOD-09",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 89
+    },
+    {
+      "id": "ITP-L1-05-Q090",
+      "section": "STRUCTURE",
+      "taskType": "ERROR_IDENTIFICATION",
+      "prompt": "Regional zoning reform [A] succeeded partly [B] because neighborhood merchants [C] participated directly in [D] draft streetscape guidelines.",
+      "options": [
+        "[A] succeeded partly",
+        "[B] because neighborhood merchants",
+        "[C] participated directly in",
+        "[D] draft streetscape guidelines"
+      ],
+      "answer": "[D] draft streetscape guidelines",
+      "acceptedAnswers": [
+        "[D] draft streetscape guidelines"
+      ],
+      "explanation": "Sesudah preposisi 'in', kata kerja harus berbentuk gerund 'drafting'.",
+      "rationaleSource": "ITP-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 90
+    },
+    {
+      "id": "ITP-L1-05-Q091",
       "section": "READING",
       "taskType": "CHOICE_SINGLE",
-      "prompt": "According to Passage 1 ('Reading Starlight Through Exoplanet Atmospheres'), how do astronomers identify specific atmospheric gases?",
+      "prompt": "Passage 1 ('Atmospheric Spectroscopy of Distant Exoplanets') — Q1/10: What ingenious measurement lets astronomers analyze exoplanet air without direct photos?",
       "options": [
-        "By matching missing light wavelengths to known gas absorption signatures",
-        "By collecting dust samples with orbiting probes",
-        "By measuring the planet's color in visible photographs",
-        "By timing solar flares between adjacent galaxies"
+        "Reading dark absorption barcodes stamped onto starlight filtering through a planet's limb during transit.",
+        "Landing solar probe balloons onto rocky worlds forty light-years away.",
+        "Collecting stray interstellar hailstones inside Antarctic glacier trenches.",
+        "Listening for faint radio stations transmitted by hot gas giants."
       ],
-      "answer": "By matching missing light wavelengths to known gas absorption signatures",
+      "answer": "Reading dark absorption barcodes stamped onto starlight filtering through a planet's limb during transit.",
       "acceptedAnswers": [
-        "By matching missing light wavelengths to known gas absorption signatures"
+        "Reading dark absorption barcodes stamped onto starlight filtering through a planet's limb during transit."
       ],
-      "explanation": "Teks menyebut celah gelap pada panjang gelombang tertentu bertindak sebagai sidik jari kimia tiap gas.",
+      "explanation": "Spektroskopi transmisi membaca garis serapan khas atmosfer planet saat melintas di depan bintang.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP05-P1",
+      "audioAssetId": null,
+      "sortIndex": 91
+    },
+    {
+      "id": "ITP-L1-05-Q092",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 1 ('Atmospheric Spectroscopy of Distant Exoplanets') — Q2/10: When specifically does 'transmission spectroscopy' gather chemical atmospheric data?",
+      "options": [
+        "Only when a distant planet slips completely behind a black hole.",
+        "During midday hours on clear terrestrial city beaches.",
+        "Whenever meteorites shatter orbiting mirror shutters.",
+        "While an orbiting planet passes cleanly in front of its parent star."
+      ],
+      "answer": "While an orbiting planet passes cleanly in front of its parent star.",
+      "acceptedAnswers": [
+        "While an orbiting planet passes cleanly in front of its parent star."
+      ],
+      "explanation": "Data dikumpulkan tepat saat planet transit melewati piringan depan bintangnya.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP05-P1",
+      "audioAssetId": null,
+      "sortIndex": 92
+    },
+    {
+      "id": "ITP-L1-05-Q093",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 1 ('Atmospheric Spectroscopy of Distant Exoplanets') — Q3/10: How do scientists separate the tiny planetary air signal from overwhelming parent-star brightness?",
+      "options": [
+        "By pointing Hubble cameras exclusively away from stars into black voids.",
+        "By multiplying telescope mirror glass thickness fivefold cleanly.",
+        "By subtracting the ordinary unobstructed star spectrum from transit-phase light.",
+        "By dimming orbital fusion cores manually with copper filters."
+      ],
+      "answer": "By subtracting the ordinary unobstructed star spectrum from transit-phase light.",
+      "acceptedAnswers": [
+        "By subtracting the ordinary unobstructed star spectrum from transit-phase light."
+      ],
+      "explanation": "Pengurangan spektrum bintang bersih dari spektrum saat transit menyisakan sidik jari atmosfer planet.",
       "rationaleSource": "ITP-MOD-05",
       "difficulty": "B2",
       "points": 1,
@@ -292,24 +2720,24 @@
       "reviewStatus": "VERIFIED_ORIGINAL",
       "passageId": "ITP05-P1",
       "audioAssetId": null,
-      "sortIndex": 9
+      "sortIndex": 93
     },
     {
-      "id": "ITP-L1-05-Q10",
+      "id": "ITP-L1-05-Q094",
       "section": "READING",
       "taskType": "CHOICE_SINGLE",
-      "prompt": "In Passage 1, the word 'skims' is closest in meaning to:",
+      "prompt": "Passage 1 ('Atmospheric Spectroscopy of Distant Exoplanets') — Q4/10: What visual obstacle commonly frustrates crisp spectroscopic gas detection on exoplanets?",
       "options": [
-        "passes lightly across",
-        "bounces violently back",
-        "freezes inside",
-        "blocks completely"
+        "Excessive golden paint flaking inside prism housings.",
+        "Dense upper cloud hazes blocking light rays from reaching deeper gas layers.",
+        "Bright white icebergs floating cleanly across Jupiter's moons.",
+        "Loud radio interference emitted by passing cargo satellites."
       ],
-      "answer": "passes lightly across",
+      "answer": "Dense upper cloud hazes blocking light rays from reaching deeper gas layers.",
       "acceptedAnswers": [
-        "passes lightly across"
+        "Dense upper cloud hazes blocking light rays from reaching deeper gas layers."
       ],
-      "explanation": "'Skims through the planet's thin atmospheric rim' bermakna melintas tipis menyapu lapisan luar atmosfer.",
+      "explanation": "Lapisan awan tinggi tebal meredam puncak serapan spektrum hingga kurva tampak datar.",
       "rationaleSource": "ITP-MOD-05",
       "difficulty": "B2",
       "points": 1,
@@ -317,24 +2745,199 @@
       "reviewStatus": "VERIFIED_ORIGINAL",
       "passageId": "ITP05-P1",
       "audioAssetId": null,
-      "sortIndex": 10
+      "sortIndex": 94
     },
     {
-      "id": "ITP-L1-05-Q11",
+      "id": "ITP-L1-05-Q095",
       "section": "READING",
       "taskType": "CHOICE_SINGLE",
-      "prompt": "According to Passage 2 ('How Sequoyah Engineered the Cherokee Syllabary'), why could learners master the system quickly?",
+      "prompt": "Passage 1 ('Atmospheric Spectroscopy of Distant Exoplanets') — Q5/10: The word 'shroud' in the final sentence is closest in meaning to:",
       "options": [
-        "Each written character corresponded reliably to one spoken syllable.",
-        "It borrowed English spelling conventions directly.",
-        "Sequoyah taught every household in person.",
-        "It reduced Cherokee speech to ten numerical digits."
+        "envelop",
+        "ignite",
+        "destroy",
+        "weigh"
       ],
-      "answer": "Each written character corresponded reliably to one spoken syllable.",
+      "answer": "envelop",
       "acceptedAnswers": [
-        "Each written character corresponded reliably to one spoken syllable."
+        "envelop"
       ],
-      "explanation": "Paragraf menjelaskan konsistensi satu simbol per suku kata tanpa huruf bisu mempercepat penguasaan baca-tulis.",
+      "explanation": "'Shroud a world' bermakna menyelimuti atmosfer dunia tersebut.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP05-P1",
+      "audioAssetId": null,
+      "sortIndex": 95
+    },
+    {
+      "id": "ITP-L1-05-Q096",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 1 ('Atmospheric Spectroscopy of Distant Exoplanets') — Q6/10: The word 'decipher' in sentence 2 is closest in meaning to:",
+      "options": [
+        "hide",
+        "photograph",
+        "exaggerate",
+        "decode"
+      ],
+      "answer": "decode",
+      "acceptedAnswers": [
+        "decode"
+      ],
+      "explanation": "'Decipher chemical fingerprints' bermakna menguraikan/memecahkan kode kimia.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP05-P1",
+      "audioAssetId": null,
+      "sortIndex": 96
+    },
+    {
+      "id": "ITP-L1-05-Q097",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 1 ('Atmospheric Spectroscopy of Distant Exoplanets') — Q7/10: Why do gases leave unique bar-code signatures across separated wavelengths?",
+      "options": [
+        "Optical mirrors bend green oxygen straight into red methane lines.",
+        "Stars emit identical steady darkness across every gas sample.",
+        "Different molecular bonds absorb specific characteristic colors/energies selectively.",
+        "Every exoplanet spins fast enough to paint rainbow bands across telescopes."
+      ],
+      "answer": "Different molecular bonds absorb specific characteristic colors/energies selectively.",
+      "acceptedAnswers": [
+        "Different molecular bonds absorb specific characteristic colors/energies selectively."
+      ],
+      "explanation": "Setiap jenis molekul menyerap panjang gelombang inframerah/optik khas secara selektif.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP05-P1",
+      "audioAssetId": null,
+      "sortIndex": 97
+    },
+    {
+      "id": "ITP-L1-05-Q098",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 1 ('Atmospheric Spectroscopy of Distant Exoplanets') — Q8/10: What does 'that planetary haze' refer to in paragraph 1?",
+      "options": [
+        "Liquid nitrogen fog boiling inside camera chillers.",
+        "A planet's outer gaseous atmosphere skimming starlight during transit.",
+        "Dust blown upward off terrestrial mountain parking lots.",
+        "Cold asteroid debris surrounding binary stars."
+      ],
+      "answer": "A planet's outer gaseous atmosphere skimming starlight during transit.",
+      "acceptedAnswers": [
+        "A planet's outer gaseous atmosphere skimming starlight during transit."
+      ],
+      "explanation": "Mengacu selubung atmosfer tipis planet saat cahaya bintang menembusnya.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP05-P1",
+      "audioAssetId": null,
+      "sortIndex": 98
+    },
+    {
+      "id": "ITP-L1-05-Q099",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 1 ('Atmospheric Spectroscopy of Distant Exoplanets') — Q9/10: Which molecule is NOT named as detectable via exoplanet spectroscopy in this text?",
+      "options": [
+        "Uranium oxide vapor.",
+        "Carbon dioxide.",
+        "Methane.",
+        "Water vapor."
+      ],
+      "answer": "Uranium oxide vapor.",
+      "acceptedAnswers": [
+        "Uranium oxide vapor."
+      ],
+      "explanation": "Uap uranium oksida tidak disebut di teks.",
+      "rationaleSource": "ITP-MOD-10",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP05-P1",
+      "audioAssetId": null,
+      "sortIndex": 99
+    },
+    {
+      "id": "ITP-L1-05-Q100",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 1 ('Atmospheric Spectroscopy of Distant Exoplanets') — Q10/10: What balanced tone marks the closing clause about high cloud decks?",
+      "options": [
+        "Dismissive of space observatories as outdated laboratory hobbies.",
+        "Convinced alien civilizations deliberately paint grey clouds overhead.",
+        "Claiming clouds double infrared methane spikes effortlessly.",
+        "Scientifically realistic regarding observational limitations alongside analytical triumphs."
+      ],
+      "answer": "Scientifically realistic regarding observational limitations alongside analytical triumphs.",
+      "acceptedAnswers": [
+        "Scientifically realistic regarding observational limitations alongside analytical triumphs."
+      ],
+      "explanation": "Penutup bersikap realistis mencatat batas observasi awan tebal sekaligus keunggulan metode.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP05-P1",
+      "audioAssetId": null,
+      "sortIndex": 100
+    },
+    {
+      "id": "ITP-L1-05-Q101",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 2 ('From Pictograms to the Consonant Alphabet: A Brief Script Evolution') — Q1/10: How did ancient Mesopotamian and Egyptian scripts initially convey concepts visually?",
+      "options": [
+        "Exclusively with musical drum marks knotted onto wool strings.",
+        "Only inside printed metallic bronze dictionaries.",
+        "Primarily through stylized drawings of concrete goods and living objects.",
+        "Directly via twenty-six pure vowel and consonant letters."
+      ],
+      "answer": "Primarily through stylized drawings of concrete goods and living objects.",
+      "acceptedAnswers": [
+        "Primarily through stylized drawings of concrete goods and living objects."
+      ],
+      "explanation": "Skrip awal berawal dari piktogram benda konkret sebelum berevolusi ke nilai bunyi.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP05-P2",
+      "audioAssetId": null,
+      "sortIndex": 101
+    },
+    {
+      "id": "ITP-L1-05-Q102",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 2 ('From Pictograms to the Consonant Alphabet: A Brief Script Evolution') — Q2/10: What linguistic leap is defined as the 'rebus principle'?",
+      "options": [
+        "Eliminating every vowel mark permanently from poetry manuscripts.",
+        "Repurposing a picture symbol strictly for its spoken phonetic sound regardless of original meaning.",
+        "Carving sacred royal prayers exclusively inside dark limestone caves.",
+        "Memorizing five thousand unrelated logographic tax stamps backwards."
+      ],
+      "answer": "Repurposing a picture symbol strictly for its spoken phonetic sound regardless of original meaning.",
+      "acceptedAnswers": [
+        "Repurposing a picture symbol strictly for its spoken phonetic sound regardless of original meaning."
+      ],
+      "explanation": "Prinsip rebus memanfaatkan nilai bunyi gambar untuk mengeja kata lain.",
       "rationaleSource": "ITP-MOD-05",
       "difficulty": "B2",
       "points": 1,
@@ -342,24 +2945,49 @@
       "reviewStatus": "VERIFIED_ORIGINAL",
       "passageId": "ITP05-P2",
       "audioAssetId": null,
-      "sortIndex": 11
+      "sortIndex": 102
     },
     {
-      "id": "ITP-L1-05-Q12",
+      "id": "ITP-L1-05-Q103",
       "section": "READING",
       "taskType": "CHOICE_SINGLE",
-      "prompt": "In Passage 2, the word 'distilled' is closest in meaning to:",
+      "prompt": "Passage 2 ('From Pictograms to the Consonant Alphabet: A Brief Script Evolution') — Q3/10: What major contribution came from Semitic turquoise miners in Sinai around 1800 BCE?",
       "options": [
-        "condensed",
-        "translated",
-        "erased",
-        "complicated"
+        "Condensing hundreds of complex signs down into roughly twenty simple sound marks.",
+        "Inscribing legal books on glossy waterproof papyrus scrolls.",
+        "Replacing stone hammers cleanly with welded copper chisels.",
+        "Banning coastal maritime trade treaties across Mediterranean islands."
       ],
-      "answer": "condensed",
+      "answer": "Condensing hundreds of complex signs down into roughly twenty simple sound marks.",
       "acceptedAnswers": [
-        "condensed"
+        "Condensing hundreds of complex signs down into roughly twenty simple sound marks."
       ],
-      "explanation": "Menyaring bahasa lisan ke dalam 85 karakter suku kata berarti merangkum/menyuling ('condensed').",
+      "explanation": "Penambang Sinai memangkas ratusan lambang menjadi ~20-an tanda konsonan sederhana.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP05-P2",
+      "audioAssetId": null,
+      "sortIndex": 103
+    },
+    {
+      "id": "ITP-L1-05-Q104",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 2 ('From Pictograms to the Consonant Alphabet: A Brief Script Evolution') — Q4/10: What does 'this agile compact twenty-two-letter consonant kit' refer to in sentence 4?",
+      "options": [
+        "Wooden merchant tax tallies mailed from Song China.",
+        "Complex Bronze Age Mycenaean Greek palace tablets.",
+        "Unreadable cuneiform clay oven recipes.",
+        "The Phoenician consonant script descended from early alphabetic reduction."
+      ],
+      "answer": "The Phoenician consonant script descended from early alphabetic reduction.",
+      "acceptedAnswers": [
+        "The Phoenician consonant script descended from early alphabetic reduction."
+      ],
+      "explanation": "Merujuk aksara konsonan 22 huruf yang disebarkan pedagang Fenisia.",
       "rationaleSource": "ITP-MOD-05",
       "difficulty": "B2",
       "points": 1,
@@ -367,8 +2995,908 @@
       "reviewStatus": "VERIFIED_ORIGINAL",
       "passageId": "ITP05-P2",
       "audioAssetId": null,
-      "sortIndex": 12
+      "sortIndex": 104
+    },
+    {
+      "id": "ITP-L1-05-Q105",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 2 ('From Pictograms to the Consonant Alphabet: A Brief Script Evolution') — Q5/10: How did Greek adapters modify the borrowed Phoenician alphabet fundamentally?",
+      "options": [
+        "They carved signs upside down exclusively across copper shield backs.",
+        "They outlawed literacy among everyday artisan shipwrights.",
+        "They assigned explicit independent letters to pure spoken vowel sounds.",
+        "They tripled total character symbols back above two thousand glyphs."
+      ],
+      "answer": "They assigned explicit independent letters to pure spoken vowel sounds.",
+      "acceptedAnswers": [
+        "They assigned explicit independent letters to pure spoken vowel sounds."
+      ],
+      "explanation": "Orang Yunani menambahkan huruf vokal eksplisit menggunakan karakter konsonan Fenisia yang tak terpakai.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP05-P2",
+      "audioAssetId": null,
+      "sortIndex": 105
+    },
+    {
+      "id": "ITP-L1-05-Q106",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 2 ('From Pictograms to the Consonant Alphabet: A Brief Script Evolution') — Q6/10: The word 'unwieldy' in sentence 3 is closest in meaning to:",
+      "options": [
+        "melodic",
+        "cumbersome",
+        "graceful",
+        "tiny"
+      ],
+      "answer": "cumbersome",
+      "acceptedAnswers": [
+        "cumbersome"
+      ],
+      "explanation": "'Unwieldy lists of hundreds of signs' berarti sulit ditangani / terlalu besar.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP05-P2",
+      "audioAssetId": null,
+      "sortIndex": 106
+    },
+    {
+      "id": "ITP-L1-05-Q107",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 2 ('From Pictograms to the Consonant Alphabet: A Brief Script Evolution') — Q7/10: Why did shrinking scripts down to roughly two dozen letters broaden societal literacy?",
+      "options": [
+        "Ordinary workers could master compact phonetic symbols quickly compared with years of palace memorization.",
+        "Royal court scribes handed free gold pens across Mediterranean docks.",
+        "Copper ore mines supplied limitless black ink jars daily.",
+        "Merchants spoke identical grammar rules across every Aegean bay."
+      ],
+      "answer": "Ordinary workers could master compact phonetic symbols quickly compared with years of palace memorization.",
+      "acceptedAnswers": [
+        "Ordinary workers could master compact phonetic symbols quickly compared with years of palace memorization."
+      ],
+      "explanation": "Kesederhanaan ~20-an simbol memungkinkan warga biasa belajar membaca cepat.",
+      "rationaleSource": "ITP-MOD-10",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP05-P2",
+      "audioAssetId": null,
+      "sortIndex": 107
+    },
+    {
+      "id": "ITP-L1-05-Q108",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 2 ('From Pictograms to the Consonant Alphabet: A Brief Script Evolution') — Q8/10: Under the acrophonic naming method described with 'aleph = ox', a drawn ox signified:",
+      "options": [
+        "Whole herds belonging strictly to quarry kings.",
+        "Three ounces of dried ox meat taxed weekly.",
+        "Four seasonal calendar stars visible above Sinai.",
+        "The opening spoken sound of the everyday word for ox."
+      ],
+      "answer": "The opening spoken sound of the everyday word for ox.",
+      "acceptedAnswers": [
+        "The opening spoken sound of the everyday word for ox."
+      ],
+      "explanation": "Akrofonik mengambil bunyi awal dari nama gambar yang dilukis.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP05-P2",
+      "audioAssetId": null,
+      "sortIndex": 108
+    },
+    {
+      "id": "ITP-L1-05-Q109",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 2 ('From Pictograms to the Consonant Alphabet: A Brief Script Evolution') — Q9/10: The word 'forging' in the final clause is closest in meaning to:",
+      "options": [
+        "destroying",
+        "postponing",
+        "creating",
+        "copying carelessly"
+      ],
+      "answer": "creating",
+      "acceptedAnswers": [
+        "creating"
+      ],
+      "explanation": "'Forging compact alphabetic fluency' bermakna membentuk/menciptakan.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP05-P2",
+      "audioAssetId": null,
+      "sortIndex": 109
+    },
+    {
+      "id": "ITP-L1-05-Q110",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 2 ('From Pictograms to the Consonant Alphabet: A Brief Script Evolution') — Q10/10: Which transition step came LAST in the historical timeline narrated here?",
+      "options": [
+        "Egyptian scribes discovering rebus phonetic wordplay.",
+        "Greek adaptation adding explicit independent vowels.",
+        "Sumerian concrete picture marks for grain jars.",
+        "Semitic reduction inside Sinai desert mines."
+      ],
+      "answer": "Greek adaptation adding explicit independent vowels.",
+      "acceptedAnswers": [
+        "Greek adaptation adding explicit independent vowels."
+      ],
+      "explanation": "Tahap terakhir yang dipaparkan adalah penambahan vokal oleh Yunani.",
+      "rationaleSource": "ITP-MOD-10",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP05-P2",
+      "audioAssetId": null,
+      "sortIndex": 110
+    },
+    {
+      "id": "ITP-L1-05-Q111",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 3 ('Tactical Urbanism and Low-Cost Street Redesign') — Q1/10: What bottleneck motivated planners to pioneer 'tactical urbanism'?",
+      "options": [
+        "Conventional concrete street projects drag through years of costly approvals before helping walkers.",
+        "Subway lines require constant repaving every sunny weekend.",
+        "Granite quarries exhausted all downtown sidewalk stones by 2010.",
+        "Paint factories dumped surplus yellow ink along rural country bridges."
+      ],
+      "answer": "Conventional concrete street projects drag through years of costly approvals before helping walkers.",
+      "acceptedAnswers": [
+        "Conventional concrete street projects drag through years of costly approvals before helping walkers."
+      ],
+      "explanation": "Proyek beton konvensional terlalu mahal dan lamban sementara pejalan kaki tetap terancam bahaya.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP05-P3",
+      "audioAssetId": null,
+      "sortIndex": 111
+    },
+    {
+      "id": "ITP-L1-05-Q112",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 3 ('Tactical Urbanism and Low-Cost Street Redesign') — Q2/10: Which materials typically build a weekend tactical street pilot?",
+      "options": [
+        "Structural steel I-beams welded deep into limestone subways.",
+        "Asphalt paving trains running non-stop across four municipal winters.",
+        "Ornate stone fountains flown in from ancient European quarries.",
+        "Removable planters, paint stripes, chalk guides, and temporary barriers."
+      ],
+      "answer": "Removable planters, paint stripes, chalk guides, and temporary barriers.",
+      "acceptedAnswers": [
+        "Removable planters, paint stripes, chalk guides, and temporary barriers."
+      ],
+      "explanation": "Proyek percontohan singkat menggunakan pot tanaman, cat geometris, kapur, dan pembatas temporer.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP05-P3",
+      "audioAssetId": null,
+      "sortIndex": 112
+    },
+    {
+      "id": "ITP-L1-05-Q113",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 3 ('Tactical Urbanism and Low-Cost Street Redesign') — Q3/10: Why do hesitant local shop owners often swing behind permanent pedestrian improvements after pilot trials?",
+      "options": [
+        "Heavy barricades lock private customer vehicles outside town perimeters forever.",
+        "Planter boxes double neighborhood property tax bills promptly.",
+        "Hard ninety-day data frequently demonstrates calmer speeds alongside higher walking foot traffic.",
+        "Municipal drivers hand free restaurant meal coupons cleanly out of buses."
+      ],
+      "answer": "Hard ninety-day data frequently demonstrates calmer speeds alongside higher walking foot traffic.",
+      "acceptedAnswers": [
+        "Hard ninety-day data frequently demonstrates calmer speeds alongside higher walking foot traffic."
+      ],
+      "explanation": "Data empiris 90 hari sering membuktikan meningkatnya pengunjung pejalan kaki di depan toko.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP05-P3",
+      "audioAssetId": null,
+      "sortIndex": 113
+    },
+    {
+      "id": "ITP-L1-05-Q114",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 3 ('Tactical Urbanism and Low-Cost Street Redesign') — Q4/10: The word 'nimble' in sentence 2 is closest in meaning to:",
+      "options": [
+        "ancient",
+        "agile",
+        "stubborn",
+        "costly"
+      ],
+      "answer": "agile",
+      "acceptedAnswers": [
+        "agile"
+      ],
+      "explanation": "'A nimble movement' bermakna gerakan yang gesit/fleksibel.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP05-P3",
+      "audioAssetId": null,
+      "sortIndex": 114
+    },
+    {
+      "id": "ITP-L1-05-Q115",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 3 ('Tactical Urbanism and Low-Cost Street Redesign') — Q5/10: What core advantage does reversibility give engineers during temporary plaza testing?",
+      "options": [
+        "Flawed lane widths or bus turns can be spotted and tweaked cleanly before permanent concrete pouring.",
+        "Traffic lights stop consuming winter electrical current entirely.",
+        "Neighborhood children keep all wooden street flowerpots permanently afterward.",
+        "Sidewalk contractors bypass safety vests during sunny Saturday shifts."
+      ],
+      "answer": "Flawed lane widths or bus turns can be spotted and tweaked cleanly before permanent concrete pouring.",
+      "acceptedAnswers": [
+        "Flawed lane widths or bus turns can be spotted and tweaked cleanly before permanent concrete pouring."
+      ],
+      "explanation": "Sifat dapat diubah memungkinkan revisi cepat sebelum konstruksi permanen yang mahal dibangun.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP05-P3",
+      "audioAssetId": null,
+      "sortIndex": 115
+    },
+    {
+      "id": "ITP-L1-05-Q116",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 3 ('Tactical Urbanism and Low-Cost Street Redesign') — Q6/10: The phrase 'turn sluggish timelines upside down' means:",
+      "options": [
+        "posting calendar posters upside down atop city halls",
+        "canceling street engineering exams for incoming university interns",
+        "pouring wet concrete straight into frozen January ditches",
+        "radically accelerating initial real-world implementation"
+      ],
+      "answer": "radically accelerating initial real-world implementation",
+      "acceptedAnswers": [
+        "radically accelerating initial real-world implementation"
+      ],
+      "explanation": "Frasa idiomatis bermakna membalik pola lamban menjadi implementasi uji cepat.",
+      "rationaleSource": "ITP-MOD-10",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP05-P3",
+      "audioAssetId": null,
+      "sortIndex": 116
+    },
+    {
+      "id": "ITP-L1-05-Q117",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 3 ('Tactical Urbanism and Low-Cost Street Redesign') — Q7/10: What empirical metrics do cities gather during ninety-day street paint trials?",
+      "options": [
+        "Weekly marble erosion rates beneath historical train depots.",
+        "Seasonal migratory pigeon roosting frequencies.",
+        "Vehicle braking velocities, bus stops, and actual customer walking volume.",
+        "Deep subterranean water table salinity fluctuations."
+      ],
+      "answer": "Vehicle braking velocities, bus stops, and actual customer walking volume.",
+      "acceptedAnswers": [
+        "Vehicle braking velocities, bus stops, and actual customer walking volume."
+      ],
+      "explanation": "Teks menyebut kecepatan pengereman mobil, durasi berhenti bus, dan hitungan pejalan kaki.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP05-P3",
+      "audioAssetId": null,
+      "sortIndex": 117
+    },
+    {
+      "id": "ITP-L1-05-Q118",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 3 ('Tactical Urbanism and Low-Cost Street Redesign') — Q8/10: The word 'vocal' in 'vocal opponents' means:",
+      "options": [
+        "anonymous",
+        "outspoken",
+        "musical",
+        "whispering"
+      ],
+      "answer": "outspoken",
+      "acceptedAnswers": [
+        "outspoken"
+      ],
+      "explanation": "'Vocal opponents' adalah penentang yang lantang bersuara.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP05-P3",
+      "audioAssetId": null,
+      "sortIndex": 118
+    },
+    {
+      "id": "ITP-L1-05-Q119",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 3 ('Tactical Urbanism and Low-Cost Street Redesign') — Q9/10: Which feature is NOT part of tactical urbanism philosophy as described here?",
+      "options": [
+        "Replacing local input completely with closed-door national highway decrees.",
+        "Teaming planners directly with neighborhood citizens for short weekend builds.",
+        "Gathering real-world street behavior numbers prior to capital granite spending.",
+        "Shrink-testing wide fast car turning corners to slow traffic gently."
+      ],
+      "answer": "Replacing local input completely with closed-door national highway decrees.",
+      "acceptedAnswers": [
+        "Replacing local input completely with closed-door national highway decrees."
+      ],
+      "explanation": "Pendekatan justru melibatkan warga lokal, bukan keputusan sepihak tertutup.",
+      "rationaleSource": "ITP-MOD-10",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP05-P3",
+      "audioAssetId": null,
+      "sortIndex": 119
+    },
+    {
+      "id": "ITP-L1-05-Q120",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 3 ('Tactical Urbanism and Low-Cost Street Redesign') — Q10/10: How is the final transition between pilot testing and permanent sidewalks framed?",
+      "options": [
+        "Temporary orange cones remain nailed into roads permanently forever.",
+        "Concrete construction companies ban temporary street chalk nationwide.",
+        "Weekend volunteers tear down permanent brick corners manually.",
+        "Pilots inform smarter durable permanent construction once benefits prove out."
+      ],
+      "answer": "Pilots inform smarter durable permanent construction once benefits prove out.",
+      "acceptedAnswers": [
+        "Pilots inform smarter durable permanent construction once benefits prove out."
+      ],
+      "explanation": "Uji sementara memvalidasi desain terlebih dulu sebelum pengecoran trotoar granit permanen.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP05-P3",
+      "audioAssetId": null,
+      "sortIndex": 120
+    },
+    {
+      "id": "ITP-L1-05-Q121",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 4 ('Acoustic Ecology and Marine Noise Masking') — Q1/10: Why is sound fundamentally far more reliable than vision for long-range ocean animal communication?",
+      "options": [
+        "Dry ocean air conducts low-pitched whistles four times slower than granite.",
+        "Reef mud walls block every optical and sound wave within ten meters.",
+        "Dark water extinguishes sunlight quickly whereas seawater propagates sound swiftly for vast distances.",
+        "Blue whales emit bright bioluminescent pulses audible above salty waves."
+      ],
+      "answer": "Dark water extinguishes sunlight quickly whereas seawater propagates sound swiftly for vast distances.",
+      "acceptedAnswers": [
+        "Dark water extinguishes sunlight quickly whereas seawater propagates sound swiftly for vast distances."
+      ],
+      "explanation": "Cahaya cepat padam di laut sementara suara merambat empat kali lebih cepat dan jauh di air.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP05-P4",
+      "audioAssetId": null,
+      "sortIndex": 121
+    },
+    {
+      "id": "ITP-L1-05-Q122",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 4 ('Acoustic Ecology and Marine Noise Masking') — Q2/10: How does rising commercial shipping traffic physically restrict whale communication ranges?",
+      "options": [
+        "Fuel spills turn deep bass notes sharply above fifty kilohertz.",
+        "Propeller cavitation rumble overlaps cleanly atop whale song frequencies, masking distant calls.",
+        "Tall steel freight hulls smash silent surface coral beds nightly.",
+        "Ship radar beams freeze seawater temperature inside horizontal sound ducts."
+      ],
+      "answer": "Propeller cavitation rumble overlaps cleanly atop whale song frequencies, masking distant calls.",
+      "acceptedAnswers": [
+        "Propeller cavitation rumble overlaps cleanly atop whale song frequencies, masking distant calls."
+      ],
+      "explanation": "Deru kavitasi baling-baling kapal menumpuk di pita 10–100 Hz dan menyamarkan suara paus.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP05-P4",
+      "audioAssetId": null,
+      "sortIndex": 122
+    },
+    {
+      "id": "ITP-L1-05-Q123",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 4 ('Acoustic Ecology and Marine Noise Masking') — Q3/10: What does the text report regarding modern container lane 'communication bubbles'?",
+      "options": [
+        "Busy shipping corridors have compressed effective listening radii by roughly seventy-plus percent.",
+        "Modern ships actually tripled blue-whale basin calling ranges since 1950.",
+        "Baleen songs remain unmasked across every crowded European harbor.",
+        "Low-frequency channels became entirely silent once diesel turbines vanished."
+      ],
+      "answer": "Busy shipping corridors have compressed effective listening radii by roughly seventy-plus percent.",
+      "acceptedAnswers": [
+        "Busy shipping corridors have compressed effective listening radii by roughly seventy-plus percent."
+      ],
+      "explanation": "Radius komunikasi paus menyusut lebih dari 70% di jalur kargo padat.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP05-P4",
+      "audioAssetId": null,
+      "sortIndex": 123
+    },
+    {
+      "id": "ITP-L1-05-Q124",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 4 ('Acoustic Ecology and Marine Noise Masking') — Q4/10: What dual benefit accompanies slowing merchant container ships modestly by two knots?",
+      "options": [
+        "Faster port cargo unloading and zero marine hull rust.",
+        "Automatic clearance past rocky Arctic sea ice shelves.",
+        "Complete elimination of coastal fishing trawler sonar pings.",
+        "Both sharp underwater acoustic noise reduction and tangible fuel savings."
+      ],
+      "answer": "Both sharp underwater acoustic noise reduction and tangible fuel savings.",
+      "acceptedAnswers": [
+        "Both sharp underwater acoustic noise reduction and tangible fuel savings."
+      ],
+      "explanation": "Melambat dua knot menurunkan suara kavitasi secara drastis sekaligus menghemat bahan bakar.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP05-P4",
+      "audioAssetId": null,
+      "sortIndex": 124
+    },
+    {
+      "id": "ITP-L1-05-Q125",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 4 ('Acoustic Ecology and Marine Noise Masking') — Q5/10: The word 'incessant' in paragraph 2 is closest in meaning to:",
+      "options": [
+        "occasional",
+        "faint",
+        "unending",
+        "melodic"
+      ],
+      "answer": "unending",
+      "acceptedAnswers": [
+        "unending"
+      ],
+      "explanation": "'Incessant low propeller cavitation rumble' berarti bising terus-menerus tanpa henti.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP05-P4",
+      "audioAssetId": null,
+      "sortIndex": 125
+    },
+    {
+      "id": "ITP-L1-05-Q126",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 4 ('Acoustic Ecology and Marine Noise Masking') — Q6/10: The word 'precipitously' in the closing line is closest in meaning to:",
+      "options": [
+        "loudly",
+        "steeply",
+        "barely",
+        "hazardously"
+      ],
+      "answer": "steeply",
+      "acceptedAnswers": [
+        "steeply"
+      ],
+      "explanation": "'Cuts roar precipitously' berarti memangkas kebisingan secara tajam/drastis.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "C1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP05-P4",
+      "audioAssetId": null,
+      "sortIndex": 126
+    },
+    {
+      "id": "ITP-L1-05-Q127",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 4 ('Acoustic Ecology and Marine Noise Masking') — Q7/10: What mechanical source inside ship engineering creates most low-frequency vessel racket?",
+      "options": [
+        "Violently collapsing micro-vapor bubbles along spinning propeller tips ('cavitation').",
+        "Loud iron kitchen bells echoing from sailor dining halls.",
+        "Wooden rudder ropes squeaking slowly beneath dry winter docks.",
+        "Painted white funnel smoke stacks vibrating in crosswinds."
+      ],
+      "answer": "Violently collapsing micro-vapor bubbles along spinning propeller tips ('cavitation').",
+      "acceptedAnswers": [
+        "Violently collapsing micro-vapor bubbles along spinning propeller tips ('cavitation')."
+      ],
+      "explanation": "Kavitasi baling-baling menjadi sumber utama deru frekuensi rendah kapal.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP05-P4",
+      "audioAssetId": null,
+      "sortIndex": 127
+    },
+    {
+      "id": "ITP-L1-05-Q128",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 4 ('Acoustic Ecology and Marine Noise Masking') — Q8/10: What does 'that very same ten-to-hundred-hertz bandwidth' signify?",
+      "options": [
+        "A private satellite network used by trans-Pacific shipping captains.",
+        "Solar ultraviolet wavelengths heating ocean surface plankton.",
+        "Seventy-meter horizontal steel mooring cables.",
+        "The exact acoustic frequency range shared simultaneously by whale calls and noisy ships."
+      ],
+      "answer": "The exact acoustic frequency range shared simultaneously by whale calls and noisy ships.",
+      "acceptedAnswers": [
+        "The exact acoustic frequency range shared simultaneously by whale calls and noisy ships."
+      ],
+      "explanation": "Menunjuk pita frekuensi 10–100 Hz yang sama antara nyanyian paus balin dan kapal.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP05-P4",
+      "audioAssetId": null,
+      "sortIndex": 128
+    },
+    {
+      "id": "ITP-L1-05-Q129",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 4 ('Acoustic Ecology and Marine Noise Masking') — Q9/10: Which intervention is NOT proposed by naval architects in the passage?",
+      "options": [
+        "Easing cruising speeds gently across sensitive marine corridors.",
+        "Monitoring noise reductions paired with fuel efficiency benefits.",
+        "Deploying underwater loudspeaker sirens to chase whales out of oceans permanently.",
+        "Reshaping curved quiet propeller profiles cleanly."
+      ],
+      "answer": "Deploying underwater loudspeaker sirens to chase whales out of oceans permanently.",
+      "acceptedAnswers": [
+        "Deploying underwater loudspeaker sirens to chase whales out of oceans permanently."
+      ],
+      "explanation": "Sirene bawah laut untuk mengusir paus jelas tidak disebut dan bertolak belakang.",
+      "rationaleSource": "ITP-MOD-10",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP05-P4",
+      "audioAssetId": null,
+      "sortIndex": 129
+    },
+    {
+      "id": "ITP-L1-05-Q130",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 4 ('Acoustic Ecology and Marine Noise Masking') — Q10/10: What tone closes the passage?",
+      "options": [
+        "Indifferent toward acoustic overlap affecting whales.",
+        "Constructively optimistic, highlighting practical win-win mechanical fixes.",
+        "Hopelessly grim, claiming industrial commerce will cease entirely tomorrow.",
+        "Skeptical that marine engineers study propeller hydrodynamics."
+      ],
+      "answer": "Constructively optimistic, highlighting practical win-win mechanical fixes.",
+      "acceptedAnswers": [
+        "Constructively optimistic, highlighting practical win-win mechanical fixes."
+      ],
+      "explanation": "Paragraf berakhir konstruktif optimistis karena solusi teknis menguntungkan ekonomi dan ekologi.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP05-P4",
+      "audioAssetId": null,
+      "sortIndex": 130
+    },
+    {
+      "id": "ITP-L1-05-Q131",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 5 ('How Endangered Languages Preserve Local Ecological Knowledge') — Q1/10: What practical scientific resource is frequently lost when minor oral languages disappear?",
+      "options": [
+        "Granular local classifications of plants, weather cues, marine species, and fire ecology.",
+        "Printed medieval tax schedules written inside stone monasteries.",
+        "Universal algebraic astronomy charts preserved across Latin libraries.",
+        "Standardized industrial cargo tariff weights."
+      ],
+      "answer": "Granular local classifications of plants, weather cues, marine species, and fire ecology.",
+      "acceptedAnswers": [
+        "Granular local classifications of plants, weather cues, marine species, and fire ecology."
+      ],
+      "explanation": "Bahasa lokal menyimpan istilah presisi taksonomi tumbuhan, iklim mikro, serta ekosistem setempat.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP05-P5",
+      "audioAssetId": null,
+      "sortIndex": 131
+    },
+    {
+      "id": "ITP-L1-05-Q132",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 5 ('How Endangered Languages Preserve Local Ecological Knowledge') — Q2/10: How can traditional coastal fisher lexicons outperform broad standard classifications in practice?",
+      "options": [
+        "Translating Latin fish menus swiftly for luxury harbor cafes.",
+        "Eliminating ten distinct snail populations inside one dredge net.",
+        "Measuring exact iron weight inside modern brass anchors.",
+        "Distinguishing fine seasonal toxicity shifts, spawning behavior, and reef habitat micro-niches."
+      ],
+      "answer": "Distinguishing fine seasonal toxicity shifts, spawning behavior, and reef habitat micro-niches.",
+      "acceptedAnswers": [
+        "Distinguishing fine seasonal toxicity shifts, spawning behavior, and reef habitat micro-niches."
+      ],
+      "explanation": "Kosakata penutur asli membedakan musim bertelur, pola makan alga beracun, serta mikro-habitat.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP05-P5",
+      "audioAssetId": null,
+      "sortIndex": 132
+    },
+    {
+      "id": "ITP-L1-05-Q133",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 5 ('How Endangered Languages Preserve Local Ecological Knowledge') — Q3/10: What tangible stewardship practice highlighted in Australia demonstrates ecological knowledge preservation?",
+      "options": [
+        "Draining coastal salt marshes swiftly to catch mud snails dry.",
+        "Shutting local bilingual youth storytelling radio stations.",
+        "Timed gentle fire-stick grass management preventing catastrophic hot dry-season wildfires.",
+        "Planting water-hungry oak orchards across arid red sand plateaus."
+      ],
+      "answer": "Timed gentle fire-stick grass management preventing catastrophic hot dry-season wildfires.",
+      "acceptedAnswers": [
+        "Timed gentle fire-stick grass management preventing catastrophic hot dry-season wildfires."
+      ],
+      "explanation": "Pembakaran terkendali berintensitas rendah mencegah kebakaran besar musim kering.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP05-P5",
+      "audioAssetId": null,
+      "sortIndex": 133
+    },
+    {
+      "id": "ITP-L1-05-Q134",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 5 ('How Endangered Languages Preserve Local Ecological Knowledge') — Q4/10: The word 'lament' in sentence 1 is closest in meaning to:",
+      "options": [
+        "publish",
+        "mourn",
+        "celebrate",
+        "dismiss"
+      ],
+      "answer": "mourn",
+      "acceptedAnswers": [
+        "mourn"
+      ],
+      "explanation": "'Linguists lament' berarti menyayangkan/berduka atas hilangnya aset budaya.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP05-P5",
+      "audioAssetId": null,
+      "sortIndex": 134
+    },
+    {
+      "id": "ITP-L1-05-Q135",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 5 ('How Endangered Languages Preserve Local Ecological Knowledge') — Q5/10: The word 'intricate' in paragraph 1 means:",
+      "options": [
+        "complex and detailed",
+        "sloppy and brief",
+        "forgotten overnight",
+        "metallic"
+      ],
+      "answer": "complex and detailed",
+      "acceptedAnswers": [
+        "complex and detailed"
+      ],
+      "explanation": "'Intricate verb prefixes' berarti kompleks dan terperinci.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP05-P5",
+      "audioAssetId": null,
+      "sortIndex": 135
+    },
+    {
+      "id": "ITP-L1-05-Q136",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 5 ('How Endangered Languages Preserve Local Ecological Knowledge') — Q6/10: What does 'it' in 'often vanish alongside it' refer back to?",
+      "options": [
+        "a single regional Latin label",
+        "northern Australian desert soil",
+        "short-term weather instrumentation",
+        "a small indigenous community language"
+      ],
+      "answer": "a small indigenous community language",
+      "acceptedAnswers": [
+        "a small indigenous community language"
+      ],
+      "explanation": "Pronomina 'it' merujuk bahasa komunitas kecil yang punah.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP05-P5",
+      "audioAssetId": null,
+      "sortIndex": 136
+    },
+    {
+      "id": "ITP-L1-05-Q137",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 5 ('How Endangered Languages Preserve Local Ecological Knowledge') — Q7/10: How do field linguists and communities combine efforts effectively according to the closing sentence?",
+      "options": [
+        "By translating indigenous herb guides solely into dead classical Latin.",
+        "By restricting traditional knowledge strictly away from modern youth.",
+        "By documenting bilingual recordings while actively engaging young speakers in workshops.",
+        "By storing ancient clay tablets inside un-indexed dark cellar crates."
+      ],
+      "answer": "By documenting bilingual recordings while actively engaging young speakers in workshops.",
+      "acceptedAnswers": [
+        "By documenting bilingual recordings while actively engaging young speakers in workshops."
+      ],
+      "explanation": "Perekaman kamus audio dwibahasa bersama pelatihan bertutur generasi muda melestarikan bahasa dan ilmunya.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP05-P5",
+      "audioAssetId": null,
+      "sortIndex": 137
+    },
+    {
+      "id": "ITP-L1-05-Q138",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 5 ('How Endangered Languages Preserve Local Ecological Knowledge') — Q8/10: Why might short-term regional weather gauges miss fine local rainfall signals known by oral elders?",
+      "options": [
+        "High coastal clouds block oral storm proverbs completely.",
+        "Short instrument histories lack multi-generational baseline observations tied to flora/fauna shifts.",
+        "Electronic barometers rust solid outside Australian harbors daily.",
+        "Linguists refuse reading mercury rain tubes above thirty degrees."
+      ],
+      "answer": "Short instrument histories lack multi-generational baseline observations tied to flora/fauna shifts.",
+      "acceptedAnswers": [
+        "Short instrument histories lack multi-generational baseline observations tied to flora/fauna shifts."
+      ],
+      "explanation": "Instrumen modern berskala pendek sering melewatkan penanda halus ekologi lintas generasi.",
+      "rationaleSource": "ITP-MOD-10",
+      "difficulty": "C1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP05-P5",
+      "audioAssetId": null,
+      "sortIndex": 138
+    },
+    {
+      "id": "ITP-L1-05-Q139",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 5 ('How Endangered Languages Preserve Local Ecological Knowledge') — Q9/10: Which pairing is NOT mentioned as preserved within endangered local languages?",
+      "options": [
+        "Steel railway bridge engineering ratios.",
+        "Drought-resilient edible tuber names.",
+        "Controlled grass-burning schedule cues.",
+        "Spawning periods of coastal snails."
+      ],
+      "answer": "Steel railway bridge engineering ratios.",
+      "acceptedAnswers": [
+        "Steel railway bridge engineering ratios."
+      ],
+      "explanation": "Rasio teknik jembatan rel baja tidak dibahas.",
+      "rationaleSource": "ITP-MOD-10",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP05-P5",
+      "audioAssetId": null,
+      "sortIndex": 139
+    },
+    {
+      "id": "ITP-L1-05-Q140",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Passage 5 ('How Endangered Languages Preserve Local Ecological Knowledge') — Q10/10: Which overall theme unites all examples across this passage?",
+      "options": [
+        "Latin taxonomy must permanently replace local spoken names everywhere.",
+        "Oral folklore consists strictly of decorative animal metaphors.",
+        "Coastal snails grow fastest following unchecked summer forest burns.",
+        "Linguistic diversity and practical environmental stewardship reinforce one another directly."
+      ],
+      "answer": "Linguistic diversity and practical environmental stewardship reinforce one another directly.",
+      "acceptedAnswers": [
+        "Linguistic diversity and practical environmental stewardship reinforce one another directly."
+      ],
+      "explanation": "Teks menyatukan pelestarian bahasa dengan keberlanjutan pengetahuan ekologis lokal.",
+      "rationaleSource": "ITP-MOD-05",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "ITP05-P5",
+      "audioAssetId": null,
+      "sortIndex": 140
     }
   ],
-  "checksum": "9463571387329ffa4ed2113a94642daa26fd47c1dcc258b7726b8d9cb4566dfc"
+  "checksum": "d75adf0a913fc753cc6879a8002aff44c88fb1af73831eab1f887bfbab3909db"
 }

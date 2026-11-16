@@ -1,155 +1,1143 @@
 {
   "schemaVersion": 1,
   "exam": "IELTS_ACADEMIC",
-  "edition": "2026.1",
+  "edition": "2026.2",
   "packId": "IELTS-A-02",
-  "title": "IELTS Paket 2 — Coastal Conservation, Public Health & Reports",
-  "theme": "Oyster reef restoration, noise pollution trials, bar-chart comparisons, and cue card speaking.",
-  "status": "SAMPLE",
+  "title": "IELTS Paket 2 — Marine Restoration, Design & Literacy Science",
+  "theme": "Full 85-item IELTS Academic simulation covering Bike Rentals, Ceramic Museum, Botany Proposal, Salt Marsh Carbon, Oyster Reefs, Scandinavian Libraries & Phonics Neuroscience.",
+  "status": "READY",
   "blueprintCount": 85,
-  "availableCount": 12,
-  "durationMinutes": 35,
+  "availableCount": 85,
+  "durationMinutes": 165,
   "blueprintDurationMinutes": 165,
   "license": "Original",
   "provenance": "EnglishPrepAI-Original-2026",
   "passages": [
     {
       "id": "IELTS02-P1",
-      "title": "Living Breakwaters: Oyster Reefs Against Storm Erosion",
-      "body": "Paragraph A: Vertical concrete seawalls reflect incoming wave energy downward, scouring sandy beaches right in front of the barrier until footings collapse. Coastal engineers testing 'living shorelines' instead submerge biodegradable limestone cages seeded with juvenile oysters along shallow bays.\n\nParagraph B: Within three years, interlocking oyster shells cement themselves into dense reefs that rise naturally alongside gradual sea-level rise—something static concrete walls cannot do without costly rebuilding. Field sensors in Chesapeake tributaries recorded a forty-five percent drop in shoreline wave height behind mature oyster bars.\n\nParagraph C: However, oyster reefs fail in severely polluted harbors lacking dissolved oxygen or where heavy cargo wakes strike within twenty meters of shore. Under extreme industrial shipping traffic, engineers combine stone sills offshore with restored salt marshes behind them.",
+      "title": "Restoring Urban Oyster Reefs Inside Polluted Shipping Harbors",
+      "body": "Paragraph A: Long before industrial steel docks ringed New York Harbor, sprawling natural Eastern oyster beds stretched across hundreds of square kilometers of Hudson estuary shallows, anchoring rich mud habitats while clarifying turbid tidal plumes effortlessly.\n\nParagraph B: A single mature oyster pumps nearly two hundred liters of estuary silt and algae daily past feathery gills, binding harmless mud pellets down safely onto reef floors so bright sunshine reaches shallow eelgrass beds.\n\nParagraph C: Centuries of unchecked commercial harvest dredging alongside untreated city canal waste decimated native beds—not simply clearing delicious shellfish tables, yet erasing natural rough limestone breakwaters that buffered shorelines gently against Atlantic storms.\n\nParagraph D: Recently, coastal non-profit educators paired local vocational high-school marine carpentry students together with seafood wholesalers to cure mountains of discarded restaurant half-shells cleanly on sunny harbor islands for twelve months—removing lingering kitchen smells and drying pathogens safely before dropping stuffed gabion cages onto muddy harbor pilings.\n\nParagraph E: Remarkably, wild tiny harbor oyster larvae—still drifting sparingly from hidden survivors under crumbling docks—settled greedily atop cured recycled cages once clean calcium surfaces reappeared without dirty silt choking gills.",
       "readingOrder": 1
+    },
+    {
+      "id": "IELTS02-P2",
+      "title": "Quiet Rubberized Asphalt vs Concrete Road Noise",
+      "body": "Paragraph A: Commuter towns sprawling alongside suburban expressways commonly pour tall four-meter concrete noise barriers—deflecting mid-range horn chatter smoothly upward while spending fortunes blocking backyard valley greenery views completely.\n\nParagraph B: Wait—where does persistent sixty-to-ninety kilometer highway rush actually generate noisy roar? Above barely forty kilometers per hour, modern passenger sedans emit far louder aerodynamic tire-pavement slapping than silent mufflers under engine hoods!\n\nParagraph C: Highway material labs in Arizona and Netherlands test blending tiny ground-up scrap rubber tire crumb gently into porous 'open-graded friction asphalt' mats containing eighteen-percent interconnected air voids directly inside the top three pavement centimeters.\n\nParagraph D: When rubberized tires press cleanly across porous open-graded grooves, trapped high-pressure air pockets squeeze smoothly downward inside interconnected mineral voids instead of whistling explosively outward—trimming roadside decibels cleanly by four to five decibels (feeling perceptually almost half as loud to human ears!) while draining dangerous highway rain puddles instantly.\n\nParagraph E: Note one temperate engineering caveat: in harsh freezing northern zones, salted snowplow scraping gradually grinds fine porous lips away unless winter crews ease steel blade downward weight.",
+      "readingOrder": 2
+    },
+    {
+      "id": "IELTS02-P3",
+      "title": "Do Automated Handwriting Algorithms Flatten Classroom Cognition?",
+      "body": "Paragraph A: Several university boards eager to accelerate lecture note taking swiftly replaced spiral notebooks cleanly with silent glass tablet keyboards across first-year humanities halls—citing brisk typing speeds nearing sixty words per minute compared with barely twenty-two slow longhand pen words.\n\nParagraph B: Controlled memory trials conducted by Mueller and Oppenheimer quietly punctured simple speed optimism: although frantic laptop typists recorded nearly verbatim lecture slide transcripts cleanly word-for-word, cursive pen note-takers scored measurably sharper on conceptual synthesis questions weeks later.\n\nParagraph C: Crucially, the cognitive gap did NOT stem from glowing distraction web pop-ups alone—even offline air-gapped laptops locked inside blank word-processing windows still lagged handwriting in conceptual transfer tests! Why? Slow sluggish pen speed forces busy listeners actively to filter, condense, and paraphrase big claims mentally into personal sketchy summaries while listening.\n\nParagraph D: Notice also a balancing educational caution voiced cleanly by technology theorist Dr. Naomi Chen: students facing fine-motor dysgraphia or chronic wrist fatigue gain essential equal fluency exclusively via keyboards—making rigid blanket classroom laptop bans discriminatory unless balanced smoothly beside thoughtful pedagogical prompts.\n\nParagraph E: Wise seminar leaders therefore preserve keyboard access cleanly for accessibility while coaching laptop users gently to map conceptual flowcharts and close word-for-word transcription crutches.",
+      "readingOrder": 3
     }
   ],
   "assets": [
     {
-      "id": "IELTS02-A01",
-      "relativePath": "audio/IELTS02-A01.wav",
+      "id": "IELTS02-LP1",
+      "relativePath": "audio/IELTS02-LP1.wav",
       "kind": "AUDIO",
-      "caption": "M: So I just wear this decibel clip Monday through Friday? W: We used five weekdays last pilot, actually—please wear it for seven days so weekend street noise is captured too.",
+      "caption": "M: Hello, Harbour Conservation Society! Speaking with Liam—how can I assist you? W: Hi Liam, I'd love joining next Saturday's oyster-shell bag placement along Mudflat Point. What equipment is provided? M: Welcome aboard! Let me enter your name cleanly: is that Hannah Brooks, phone double-zero-four-seven-eight-five? W: Actually double-zero-four-seven-nine-five! Also, I own tall rubber waders—should I bring spare gardening shovels too? M: Leave shovels home—our barge carries stacked stainless tongs and woven coir mesh bags already. Bring polarized sunglasses plus at least two liters of drinking water since Mudflat pier taps stayed capped until November. W: Check! Do morning minivans still pick up volunteers at Central Rail Station at seven-thirty? M: Slightly earlier due to low spring tide windows: climb aboard outside Station Gate North promptly at seven-ten, and lunch wraps are vegetarian millet bowls unless noting dietary requests beforehand.",
       "license": "Original",
-      "sha256": "77b5ecfb204e08e5e72d67c12d8c249d975ee92e684bedc014547e94c88dffec",
-      "byteSize": 376044,
-      "durationMs": 11750
+      "sha256": "1fd502c906fea19d6df27969b1030c4f7d768e320563881520f008efa4ef8fea",
+      "byteSize": 553788,
+      "durationMs": 68265
     },
     {
-      "id": "IELTS02-A02",
-      "relativePath": "audio/IELTS02-A02.wav",
+      "id": "IELTS02-LP2",
+      "relativePath": "audio/IELTS02-LP2.wav",
       "kind": "AUDIO",
-      "caption": "W: Welcome to the wetland boardwalk. Previously, heavy rain washed gravel and mud from flat footpaths straight into the duck nesting reeds. Raising visitors onto cedar planks lets rainwater filter cleanly through native sedges below.",
+      "caption": "M: Good morning cyclists and birdwatchers joining our Reed-Marsh Wetland Park launch! M: First opened in 2019 atop abandoned industrial freight sidings, this forty-hectare basin cleans storm runoff cleanly before it enters East Estuary while welcoming public trail walks. M: Observe trail color markers carefully: the Blue Boardwalk spans level timber decks accessible cleanly to wheelchairs leading past open heron rookeries; the Yellow Spur dips across stepping logs where sturdy ankle boots are safest. M: Between March first and June fifteenth, Northern Marsh gates lock strictly shut to shelter nesting lapwings cleanly away from stray dogs—meanwhile South Wooden Hide stays unlocked dawn-to-dusk year-round carrying complimentary tripod binoculars for quiet observation.",
       "license": "Original",
-      "sha256": "9ec01b8236e86a2a2b55c612d4945b5cc02a9386f6a1a77505d94310916457f5",
-      "byteSize": 476204,
-      "durationMs": 14880
+      "sha256": "ef3b5a2b925eefc5ecad3e1435c84e04c9a28c2fe0f1bcc3cac52023ef9b4ea0",
+      "byteSize": 401980,
+      "durationMs": 49550
     },
     {
-      "id": "IELTS02-A03",
-      "relativePath": "audio/IELTS02-A03.wav",
+      "id": "IELTS02-LP3",
+      "relativePath": "audio/IELTS02-LP3.wav",
       "kind": "AUDIO",
-      "caption": "M: While thin rows of saplings block very little highway rumble, thick belts of evergreen shrubs and broad tree foliage scatter high-frequency tire hiss, softening perceived loudness along sidewalks.",
+      "caption": "W: Oliver, how's our literature synthesis on hospital ICU night-noise abatement coming ahead of Friday's seminar? M: Wait—look closely at Ward Seven data! I originally assumed blinking overhead monitor bells accounted for most patient sleep waking, yet acoustic logs point to something surprising. W: Don't tell me cleaning hallway squeegee carts or squeaky linen trolleys woke sleepers even louder? M: Spot on! Unlubricated polyurethane trolley casters clattering down tiled vinyl joints spike sudden sixty-eight-decibel transients—whereas quiet nursing whisper tones barely hit forty! Wait: Dr. Morales questioned whether sample night spans lasted long enough though. W: Right—let's exclude single-weekend pilot charts and weigh multi-month sleep-tracker studies heaviest inside Table Two so reviewers don't tear into weak short samples.",
       "license": "Original",
-      "sha256": "cc5a3d3a3fba32dbf560bd8b05f9fa340eae81f614dec0175222a09d6c4dbbc5",
-      "byteSize": 392684,
-      "durationMs": 12270
+      "sha256": "777390bd9e1ed4a69cce0d674bcb4e25ca934098fd2196351117df9bf0d8c684",
+      "byteSize": 454204,
+      "durationMs": 55985
+    },
+    {
+      "id": "IELTS02-LP4",
+      "relativePath": "audio/IELTS02-LP4.wav",
+      "kind": "AUDIO",
+      "caption": "W: Why did sprawling underwater eelgrass meadows across sheltered coastal bays die off rapidly during post-war suburban growth even where ships rarely dropped anchor? W: Trace upstream storm pipes: soluble turf fertilizers and septic nitrate surges fuel explosive green planktonic surface algal blooms, shading crystal-clear shallows into soupy opaque darkness so bottom grass photosynthesis stalls. W: Even worse, when billions of surface algae cells die, sink, and rot along calm bay bottoms, greedy bacterial decay strips dissolved oxygen clean down into lifeless 'hypoxic' dead zones suffocating slow seafloor scallops. W: Encouragingly, once bay municipalities upgraded sewage plants to biological denitrification and cut summer lawn nitrogen runoff, satellite water-transparency monitors charted sunlit clarity bouncing back—followed closely by resurgent crab nurseries weaving through freshly recovered green meadows within seven years.",
+      "license": "Original",
+      "sha256": "044b277d2a620d42fe44cbf5cb42067a2590bf45268e68f5edea480fa8994c2b",
+      "byteSize": 484412,
+      "durationMs": 59715
+    },
+    {
+      "id": "IELTS02-SP1",
+      "relativePath": "audio/IELTS02-SP1.wav",
+      "kind": "AUDIO",
+      "caption": "W: Hello, nice to meet you. Let's discuss time habits. Do you track tasks on paper notebooks or phone apps, how important is arriving ten minutes early in your culture, and when did waiting patiently actually help you?",
+      "license": "Original",
+      "sha256": "4c20ce4e2223397558e01388752c913ffa4cc8da27374a4e29cebed822bc05f8",
+      "byteSize": 122428,
+      "durationMs": 15070
+    },
+    {
+      "id": "IELTS02-SP2",
+      "relativePath": "audio/IELTS02-SP2.wav",
+      "kind": "AUDIO",
+      "caption": "W: Here is your Part 2 topic card. You now have one minute to prepare notes before speaking cleanly for up to two minutes.",
+      "license": "Original",
+      "sha256": "e01ffacc8768be717630131e40c66950d9a34af29a9175671dbef8f81c03162d",
+      "byteSize": 65596,
+      "durationMs": 8055
+    },
+    {
+      "id": "IELTS02-SP3",
+      "relativePath": "audio/IELTS02-SP3.wav",
+      "kind": "AUDIO",
+      "caption": "W: Old stone architecture often stands on valuable central land. How can city planners balance historic character with urgent affordable housing density, and should taxpayers fund structural retrofits of privately owned heritage facades?",
+      "license": "Original",
+      "sha256": "fef39d0ac8331dc378a4410a5cc4ca36719bcd7df97135f32a8ddd42f8b36861",
+      "byteSize": 120892,
+      "durationMs": 14885
     }
   ],
   "items": [
     {
-      "id": "IELTS-A-02-Q01",
+      "id": "IELTS-A-02-Q001",
       "section": "LISTENING",
       "taskType": "FILL_BLANK",
-      "prompt": "Listening Part 1 (NO MORE THAN TWO WORDS AND/OR A NUMBER): Complete the health survey line: 'Participants wear the acoustic monitor for ___ days before returning it.'",
+      "prompt": "Listening Part 1 (Coastal Eco-Volunteer Registration Phone Call — Q1): NUMBER ONLY: 'Corrected telephone ending for Hannah Brooks: 0047___'",
       "options": [],
-      "answer": "7",
+      "answer": "95",
       "acceptedAnswers": [
-        "7",
-        "seven"
+        "95"
       ],
-      "explanation": "Pewawancara sempat menyebut lima hari kerja, lalu mengoreksi: 'actually, please keep it on for seven full days so weekends are included.'",
+      "explanation": "Ia meralat 85 menjadi 95 ('double-zero-four-seven-nine-five').",
       "rationaleSource": "IELTS-MOD-01",
       "difficulty": "B1",
       "points": 1,
       "license": "Original",
       "reviewStatus": "VERIFIED_ORIGINAL",
       "passageId": null,
-      "audioAssetId": "IELTS02-A01",
-      "maxWords": 2,
+      "audioAssetId": "IELTS02-LP1",
+      "maxWords": 1,
       "sortIndex": 1
     },
     {
-      "id": "IELTS-A-02-Q02",
+      "id": "IELTS-A-02-Q002",
       "section": "LISTENING",
-      "taskType": "CHOICE_SINGLE",
-      "prompt": "Listening Part 2: Why did the botanical park replace paved gravel paths along the duck pond with boardwalks?",
-      "options": [
-        "To stop muddy runoff from washing into shallow nesting reeds",
-        "To double the speed of electric maintenance carts",
-        "To save money on recycled timber planks",
-        "To keep visitors completely outside the south gate"
-      ],
-      "answer": "To stop muddy runoff from washing into shallow nesting reeds",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 1 (Coastal Eco-Volunteer Registration Phone Call — Q2): NO MORE THAN TWO WORDS: 'Restoration site name: ___ Point'",
+      "options": [],
+      "answer": "Mudflat",
       "acceptedAnswers": [
-        "To stop muddy runoff from washing into shallow nesting reeds"
+        "mudflat",
+        "mudflat point"
       ],
-      "explanation": "Pemandu menjelaskan limpasan kerikil berlumpur saat hujan deras mengganggu zona sarang burung air.",
+      "explanation": "Lokasi pemasangan kantong cangkang adalah Mudflat Point.",
       "rationaleSource": "IELTS-MOD-01",
-      "difficulty": "B2",
+      "difficulty": "B1",
       "points": 1,
       "license": "Original",
       "reviewStatus": "VERIFIED_ORIGINAL",
       "passageId": null,
-      "audioAssetId": "IELTS02-A02",
+      "audioAssetId": "IELTS02-LP1",
+      "maxWords": 2,
       "sortIndex": 2
     },
     {
-      "id": "IELTS-A-02-Q03",
+      "id": "IELTS-A-02-Q003",
       "section": "LISTENING",
       "taskType": "FILL_BLANK",
-      "prompt": "Listening Part 4 (ONE WORD ONLY): 'Urban street trees lower ambient traffic noise slightly by scattering high-frequency sound waves across dense ___.'",
+      "prompt": "Listening Part 1 (Coastal Eco-Volunteer Registration Phone Call — Q3): ONE WORD ONLY: 'Natural biodegradable mesh bag fiber provided on barge: ___'",
       "options": [],
-      "answer": "foliage",
+      "answer": "coir",
       "acceptedAnswers": [
-        "foliage"
+        "coir"
       ],
-      "explanation": "Dosen menyebut daun/tajuk rapat ('foliage') menyebarkan gelombang frekuensi tinggi.",
+      "explanation": "Karung jaring alami yang dipakai berbahan serat sabut kelapa ('coir').",
       "rationaleSource": "IELTS-MOD-01",
-      "difficulty": "B2",
+      "difficulty": "B1",
       "points": 1,
       "license": "Original",
       "reviewStatus": "VERIFIED_ORIGINAL",
       "passageId": null,
-      "audioAssetId": "IELTS02-A03",
+      "audioAssetId": "IELTS02-LP1",
       "maxWords": 1,
       "sortIndex": 3
     },
     {
-      "id": "IELTS-A-02-Q04",
+      "id": "IELTS-A-02-Q004",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 1 (Coastal Eco-Volunteer Registration Phone Call — Q4): Which personal item does Liam confirm Hannah does NOT need to pack from home?",
+      "options": [
+        "Polarized sunny glasses.",
+        "Reusable two-liter hydration bottles.",
+        "Heavy steel digging shovels.",
+        "Tall waterproof rubber boots/waders."
+      ],
+      "answer": "Heavy steel digging shovels.",
+      "acceptedAnswers": [
+        "Heavy steel digging shovels."
+      ],
+      "explanation": "Sekop disediakan penuh di tongkang; peserta tidak perlu membawa dari rumah.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS02-LP1",
+      "sortIndex": 4
+    },
+    {
+      "id": "IELTS-A-02-Q005",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 1 (Coastal Eco-Volunteer Registration Phone Call — Q5): NUMBER ONLY (liters): 'Minimum recommended personal drinking water per volunteer: ___ liters'",
+      "options": [],
+      "answer": "2",
+      "acceptedAnswers": [
+        "2",
+        "two"
+      ],
+      "explanation": "Minimal membawa dua liter air minum pribadi.",
+      "rationaleSource": "IELTS-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS02-LP1",
+      "maxWords": 1,
+      "sortIndex": 5
+    },
+    {
+      "id": "IELTS-A-02-Q006",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 1 (Coastal Eco-Volunteer Registration Phone Call — Q6): Why must volunteers haul personal hydration supplies along Mudflat pier?",
+      "options": [
+        "Drinking water pier faucets stay shut off until November.",
+        "Brackish oyster barge tanks spoil bottled milk quickly.",
+        "Hot sun cracks glazed clay coffee flasks immediately.",
+        "Local bylaws ban plastic bottle tops past Station Gate North."
+      ],
+      "answer": "Drinking water pier faucets stay shut off until November.",
+      "acceptedAnswers": [
+        "Drinking water pier faucets stay shut off until November."
+      ],
+      "explanation": "Keran air minum dermaga ditutup hingga bulan November.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS02-LP1",
+      "sortIndex": 6
+    },
+    {
+      "id": "IELTS-A-02-Q007",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 1 (Coastal Eco-Volunteer Registration Phone Call — Q7): TIME ONLY: 'Adjusted Central Station Gate North minivan pickup time: ___'",
+      "options": [],
+      "answer": "7:10",
+      "acceptedAnswers": [
+        "7:10",
+        "7.10",
+        "seven-ten"
+      ],
+      "explanation": "Dipercepat dari 07.30 menjadi tepat 07.10 menyesuaikan jadwal surut.",
+      "rationaleSource": "IELTS-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS02-LP1",
+      "maxWords": 2,
+      "sortIndex": 7
+    },
+    {
+      "id": "IELTS-A-02-Q008",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 1 (Coastal Eco-Volunteer Registration Phone Call — Q8): What dictates pulling pickup twenty minutes earlier Saturday?",
+      "options": [
+        "Heavy afternoon coastal thunderstorm alerts.",
+        "Bakery truck schedules downtown.",
+        "Timing the low spring tidal window safely before water returns.",
+        "Saturday train repairs blocking Central Rail platforms."
+      ],
+      "answer": "Timing the low spring tidal window safely before water returns.",
+      "acceptedAnswers": [
+        "Timing the low spring tidal window safely before water returns."
+      ],
+      "explanation": "Jadwal dimajukan demi mengejar jendela air surut terendah.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS02-LP1",
+      "sortIndex": 8
+    },
+    {
+      "id": "IELTS-A-02-Q009",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 1 (Coastal Eco-Volunteer Registration Phone Call — Q9): ONE WORD ONLY: 'Default volunteer lunch bowls feature grain: ___'",
+      "options": [],
+      "answer": "millet",
+      "acceptedAnswers": [
+        "millet"
+      ],
+      "explanation": "Makan siang bawaan standar berupa mangkuk vegetarian berbahan millet.",
+      "rationaleSource": "IELTS-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS02-LP1",
+      "maxWords": 1,
+      "sortIndex": 9
+    },
+    {
+      "id": "IELTS-A-02-Q010",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 1 (Coastal Eco-Volunteer Registration Phone Call — Q10): What pickup entrance must Hannah wait beside at Central Station?",
+      "options": [
+        "Station Gate North.",
+        "Harbor South Ferry Arch.",
+        "Willow Crescent Gate.",
+        "East Stadium Terminal."
+      ],
+      "answer": "Station Gate North.",
+      "acceptedAnswers": [
+        "Station Gate North."
+      ],
+      "explanation": "Minivan menunggu di luar Station Gate North.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS02-LP1",
+      "sortIndex": 10
+    },
+    {
+      "id": "IELTS-A-02-Q011",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 2 (City Wetland Park & Bird Hide Audio Orientation — Q11): NUMBER ONLY: 'Year Wetland Park officially opened atop old rail sidings: ___'",
+      "options": [],
+      "answer": "2019",
+      "acceptedAnswers": [
+        "2019"
+      ],
+      "explanation": "Taman lahan basah dibuka pada tahun 2019.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS02-LP2",
+      "maxWords": 1,
+      "sortIndex": 11
+    },
+    {
+      "id": "IELTS-A-02-Q012",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 2 (City Wetland Park & Bird Hide Audio Orientation — Q12): NUMBER ONLY (hectares): 'Total surface park area treating urban storms: ___ hectares'",
+      "options": [],
+      "answer": "40",
+      "acceptedAnswers": [
+        "40",
+        "forty"
+      ],
+      "explanation": "Luas cekungan taman mencapai 40 hektar.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS02-LP2",
+      "maxWords": 1,
+      "sortIndex": 12
+    },
+    {
+      "id": "IELTS-A-02-Q013",
+      "section": "LISTENING",
+      "taskType": "MATCHING",
+      "prompt": "Listening Part 2 (City Wetland Park & Bird Hide Audio Orientation — Q13): Match each park feature or trail color to its rule:",
+      "options": [],
+      "answer": "Blue Boardwalk::Step-free accessible timber path|Yellow Spur::Log stepping trail needing boots|Northern Marsh::Seasonal spring bird lockup",
+      "acceptedAnswers": [
+        "Blue Boardwalk::Step-free accessible timber path|Yellow Spur::Log stepping trail needing boots|Northern Marsh::Seasonal spring bird lockup"
+      ],
+      "explanation": "Blue=akses kursi roda; Yellow=batang pijakan butuh sepatu bot; Northern Marsh=ditutup Maret–Juni.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS02-LP2",
+      "pairs": [
+        {
+          "left": "Blue Boardwalk",
+          "rightOptions": [
+            "Step-free accessible timber path",
+            "Log stepping trail needing boots",
+            "Seasonal spring bird lockup"
+          ]
+        },
+        {
+          "left": "Yellow Spur",
+          "rightOptions": [
+            "Step-free accessible timber path",
+            "Log stepping trail needing boots",
+            "Seasonal spring bird lockup"
+          ]
+        },
+        {
+          "left": "Northern Marsh",
+          "rightOptions": [
+            "Step-free accessible timber path",
+            "Log stepping trail needing boots",
+            "Seasonal spring bird lockup"
+          ]
+        }
+      ],
+      "sortIndex": 13
+    },
+    {
+      "id": "IELTS-A-02-Q014",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 2 (City Wetland Park & Bird Hide Audio Orientation — Q14): What former land use occupied this clean basin site before transformation?",
+      "options": [
+        "Abandoned industrial rail freight sidings.",
+        "Deep concrete municipal car washes.",
+        "Medieval lime brick factories.",
+        "Commercial salmon drying sheds."
+      ],
+      "answer": "Abandoned industrial rail freight sidings.",
+      "acceptedAnswers": [
+        "Abandoned industrial rail freight sidings."
+      ],
+      "explanation": "Sebelumnya merupakan lahan rel barang industri terbengkalai.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS02-LP2",
+      "sortIndex": 14
+    },
+    {
+      "id": "IELTS-A-02-Q015",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 2 (City Wetland Park & Bird Hide Audio Orientation — Q15): ONE WORD ONLY: 'Ground-nesting species protected by March–June Northern gate closures: ___'",
+      "options": [],
+      "answer": "lapwings",
+      "acceptedAnswers": [
+        "lapwings"
+      ],
+      "explanation": "Penutupan musim semi melindungi burung lapwing yang bersarang di tanah.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS02-LP2",
+      "maxWords": 1,
+      "sortIndex": 15
+    },
+    {
+      "id": "IELTS-A-02-Q016",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 2 (City Wetland Park & Bird Hide Audio Orientation — Q16): Which amenity sits unlocked every morning until sunset inside South Wooden Hide?",
+      "options": [
+        "Heated limestone benches powered by biogas.",
+        "Lending shelves stocked with watercolor easels.",
+        "Shared mounted tripod viewing binoculars free for quiet visitors.",
+        "Coin espresso vending machines beside duck ponds."
+      ],
+      "answer": "Shared mounted tripod viewing binoculars free for quiet visitors.",
+      "acceptedAnswers": [
+        "Shared mounted tripod viewing binoculars free for quiet visitors."
+      ],
+      "explanation": "Tersedia teropong tripod gratis di South Wooden Hide sepanjang tahun.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS02-LP2",
+      "sortIndex": 16
+    },
+    {
+      "id": "IELTS-A-02-Q017",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 2 (City Wetland Park & Bird Hide Audio Orientation — Q17): NO MORE THAN TWO WORDS: 'Recipient body receiving cleansed storm outflows: East ___'",
+      "options": [],
+      "answer": "Estuary",
+      "acceptedAnswers": [
+        "estuary",
+        "east estuary"
+      ],
+      "explanation": "Air limpasan bersih dialirkan menuju East Estuary.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS02-LP2",
+      "maxWords": 2,
+      "sortIndex": 17
+    },
+    {
+      "id": "IELTS-A-02-Q018",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 2 (City Wetland Park & Bird Hide Audio Orientation — Q18): When are Northern Marsh trails open freely for ordinary pedestrian hiking?",
+      "options": [
+        "Outside March 1 through June 15 nesting closures.",
+        "Solely Monday rainy evenings before midnight.",
+        "Throughout spring bird hatching weeks only.",
+        "Strictly while Yellow Spur logs submerge."
+      ],
+      "answer": "Outside March 1 through June 15 nesting closures.",
+      "acceptedAnswers": [
+        "Outside March 1 through June 15 nesting closures."
+      ],
+      "explanation": "Di luar periode penguncian 1 Maret–15 Juni.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS02-LP2",
+      "sortIndex": 18
+    },
+    {
+      "id": "IELTS-A-02-Q019",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 2 (City Wetland Park & Bird Hide Audio Orientation — Q19): Why are dogs excluded strictly near spring marsh gates?",
+      "options": [
+        "Wooden boardwalk varnish peels cleanly under dog claws.",
+        "Marsh crabs pinch unleashed pets regularly.",
+        "Park water tastes too salty for domestic dogs.",
+        "Preventing disturbance to vulnerable ground-nesting wetland birds."
+      ],
+      "answer": "Preventing disturbance to vulnerable ground-nesting wetland birds.",
+      "acceptedAnswers": [
+        "Preventing disturbance to vulnerable ground-nesting wetland birds."
+      ],
+      "explanation": "Menjaga ketenangan burung yang bersarang di permukaan rawa.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS02-LP2",
+      "sortIndex": 19
+    },
+    {
+      "id": "IELTS-A-02-Q020",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 2 (City Wetland Park & Bird Hide Audio Orientation — Q20): What accessibility trait distinguishes the Blue Boardwalk clearly?",
+      "options": [
+        "Bright neon floodlights glowing through night skies.",
+        "Audio megaphone warnings alerting passing ferries.",
+        "Smooth level plank decking usable smoothly by mobility wheelchairs.",
+        "Narrow cable suspension ropes spanning flood canals."
+      ],
+      "answer": "Smooth level plank decking usable smoothly by mobility wheelchairs.",
+      "acceptedAnswers": [
+        "Smooth level plank decking usable smoothly by mobility wheelchairs."
+      ],
+      "explanation": "Dek kayu rata bebas tangga ramah kursi roda.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS02-LP2",
+      "sortIndex": 20
+    },
+    {
+      "id": "IELTS-A-02-Q021",
+      "section": "LISTENING",
+      "taskType": "CHOICE_MULTI",
+      "prompt": "Listening Part 3 (Clinical Acoustics Noise-Trial Literature Review — Q21): Choose TWO unexpected acoustic insights highlighted by Oliver in ICU hallway logs:",
+      "options": [
+        "Hard cart wheels crossing floor seams generated sharp noise spikes",
+        "Clinical monitor alarms remained completely mute",
+        "Soft nursing staff voices stayed relatively quiet (~40 dB)",
+        "ICU sleep trackers recorded exclusively morning daylight"
+      ],
+      "answer": "Hard cart wheels crossing floor seams generated sharp noise spikes|Soft nursing staff voices stayed relatively quiet (~40 dB)",
+      "acceptedAnswers": [
+        "Hard cart wheels crossing floor seams generated sharp noise spikes|Soft nursing staff voices stayed relatively quiet (~40 dB)"
+      ],
+      "explanation": "Roda troli di sambungan lantai memicu lonjakan ~68 dB, sedangkan suara percakapan staf rendah (~40 dB).",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS02-LP3",
+      "sortIndex": 21
+    },
+    {
+      "id": "IELTS-A-02-Q022",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 3 (Clinical Acoustics Noise-Trial Literature Review — Q22): What mistaken assumption did Oliver hold at the start of reading Ward Seven logs?",
+      "options": [
+        "He guessed clinical medical alarms dominated night sleep disruption.",
+        "He assumed ICU corridors used quiet plush wool carpet.",
+        "He thought polyurethane trolley wheels made zero sound cleanly.",
+        "He blamed outdoor diesel buses passing hospital wards."
+      ],
+      "answer": "He guessed clinical medical alarms dominated night sleep disruption.",
+      "acceptedAnswers": [
+        "He guessed clinical medical alarms dominated night sleep disruption."
+      ],
+      "explanation": "Ia semula menyangka alarm monitor pasien yang paling sering membangunkan.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS02-LP3",
+      "sortIndex": 22
+    },
+    {
+      "id": "IELTS-A-02-Q023",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 3 (Clinical Acoustics Noise-Trial Literature Review — Q23): NUMBER ONLY (dB): 'Sharp acoustic peak produced by unlubricated wheel carts rolling seams: ___ decibels'",
+      "options": [],
+      "answer": "68",
+      "acceptedAnswers": [
+        "68",
+        "sixty-eight"
+      ],
+      "explanation": "Lonjakan mendadak troli mencapai 68 desibel.",
+      "rationaleSource": "IELTS-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS02-LP3",
+      "maxWords": 1,
+      "sortIndex": 23
+    },
+    {
+      "id": "IELTS-A-02-Q024",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 3 (Clinical Acoustics Noise-Trial Literature Review — Q24): What methodological critique did Dr. Morales raise against minor early studies?",
+      "options": [
+        "ICU nursing journals prohibited formatting comparative Table Two.",
+        "Polyurethane wheels slipped across smooth hospital tile.",
+        "Short single-weekend observation windows lacked statistical weight.",
+        "Sixty-eight decibel sensors drained ward wall batteries fast."
+      ],
+      "answer": "Short single-weekend observation windows lacked statistical weight.",
+      "acceptedAnswers": [
+        "Short single-weekend observation windows lacked statistical weight."
+      ],
+      "explanation": "Studi percontohan satu akhir pekan dinilai durasinya terlalu singkat.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS02-LP3",
+      "sortIndex": 24
+    },
+    {
+      "id": "IELTS-A-02-Q025",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 3 (Clinical Acoustics Noise-Trial Literature Review — Q25): How will the research pair address Dr. Morales's sample-duration criticism in Table Two?",
+      "options": [
+        "Asking nurses to skip overnight trolley linen swaps silently.",
+        "Prioritizing longer multi-month objective sleep-tracker trials over brief weekend samples.",
+        "Erasing decibel measurement numbers entirely from text.",
+        "Adding noisy cafeteria data cleanly beside Ward Seven logs."
+      ],
+      "answer": "Prioritizing longer multi-month objective sleep-tracker trials over brief weekend samples.",
+      "acceptedAnswers": [
+        "Prioritizing longer multi-month objective sleep-tracker trials over brief weekend samples."
+      ],
+      "explanation": "Memfokuskan bobot analisis pada studi multi-bulan berdurasi panjang.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS02-LP3",
+      "sortIndex": 25
+    },
+    {
+      "id": "IELTS-A-02-Q026",
+      "section": "LISTENING",
+      "taskType": "MATCHING",
+      "prompt": "Listening Part 3 (Clinical Acoustics Noise-Trial Literature Review — Q26): Match each ICU sound factor with its log value or decision:",
+      "options": [],
+      "answer": "Trolley wheels on seams::Spikes up to 68 dB|Staff quiet speech::Stays mild near 40 dB|Single-weekend pilots::Excluded for short duration",
+      "acceptedAnswers": [
+        "Trolley wheels on seams::Spikes up to 68 dB|Staff quiet speech::Stays mild near 40 dB|Single-weekend pilots::Excluded for short duration"
+      ],
+      "explanation": "Kecocokan hasil pengamatan suara ICU serta keputusan metodologis.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS02-LP3",
+      "pairs": [
+        {
+          "left": "Trolley wheels on seams",
+          "rightOptions": [
+            "Spikes up to 68 dB",
+            "Stays mild near 40 dB",
+            "Excluded for short duration"
+          ]
+        },
+        {
+          "left": "Staff quiet speech",
+          "rightOptions": [
+            "Spikes up to 68 dB",
+            "Stays mild near 40 dB",
+            "Excluded for short duration"
+          ]
+        },
+        {
+          "left": "Single-weekend pilots",
+          "rightOptions": [
+            "Spikes up to 68 dB",
+            "Stays mild near 40 dB",
+            "Excluded for short duration"
+          ]
+        }
+      ],
+      "sortIndex": 26
+    },
+    {
+      "id": "IELTS-A-02-Q027",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 3 (Clinical Acoustics Noise-Trial Literature Review — Q27): ONE WORD ONLY: 'Wheel treads rattling vinyl corridor seams were made of ___'",
+      "options": [],
+      "answer": "polyurethane",
+      "acceptedAnswers": [
+        "polyurethane"
+      ],
+      "explanation": "Bahan roda troli yang disebut adalah poliuretan ('polyurethane').",
+      "rationaleSource": "IELTS-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS02-LP3",
+      "maxWords": 1,
+      "sortIndex": 27
+    },
+    {
+      "id": "IELTS-A-02-Q028",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 3 (Clinical Acoustics Noise-Trial Literature Review — Q28): When is Oliver and his partner's research seminar presentation scheduled?",
+      "options": [
+        "Last November Monday.",
+        "Next spring vacation.",
+        "On Friday.",
+        "Tuesday afternoon."
+      ],
+      "answer": "On Friday.",
+      "acceptedAnswers": [
+        "On Friday."
+      ],
+      "explanation": "Mereka mempresentasikan tinjauan pustaka ini di seminar hari Jumat.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS02-LP3",
+      "sortIndex": 28
+    },
+    {
+      "id": "IELTS-A-02-Q029",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 3 (Clinical Acoustics Noise-Trial Literature Review — Q29): What practical engineering fix naturally follows from Ward Seven's finding?",
+      "options": [
+        "Banning nighttime hospital laundry delivery completely.",
+        "Fitting softer lubricated casters and smoothing vinyl floor joints cleanly.",
+        "Silencing critical patient heart telemetry monitors entirely.",
+        "Replacing ceramic kitchen tiles outdoors along walkways."
+      ],
+      "answer": "Fitting softer lubricated casters and smoothing vinyl floor joints cleanly.",
+      "acceptedAnswers": [
+        "Fitting softer lubricated casters and smoothing vinyl floor joints cleanly."
+      ],
+      "explanation": "Pelumasan serta roda lunak/lantai mulus langsung menekan lonjakan bising 68 dB.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS02-LP3",
+      "sortIndex": 29
+    },
+    {
+      "id": "IELTS-A-02-Q030",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 3 (Clinical Acoustics Noise-Trial Literature Review — Q30): NUMBER ONLY (dB): 'Approximate level of gentle corridor nursing conversation: ___ decibels'",
+      "options": [],
+      "answer": "40",
+      "acceptedAnswers": [
+        "40",
+        "forty"
+      ],
+      "explanation": "Suara perawat hanya sekitar 40 dB.",
+      "rationaleSource": "IELTS-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS02-LP3",
+      "maxWords": 1,
+      "sortIndex": 30
+    },
+    {
+      "id": "IELTS-A-02-Q031",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 4 (University Lecture — Eutrophication & Estuarine Seagrass Recovery — Q31): What chain reaction initially starves submerged coastal seagrass meadows of energy?",
+      "options": [
+        "Commercial container anchors shred deep oceanic seabed mud hourly.",
+        "Cold winter tides strip salt water completely clean out of harbors.",
+        "Hungry coastal seagulls devour underwater green stems daily.",
+        "Runoff fertilizer nutrients fuel dense surface algae blooms blocking sunlight from reaching bottom blades."
+      ],
+      "answer": "Runoff fertilizer nutrients fuel dense surface algae blooms blocking sunlight from reaching bottom blades.",
+      "acceptedAnswers": [
+        "Runoff fertilizer nutrients fuel dense surface algae blooms blocking sunlight from reaching bottom blades."
+      ],
+      "explanation": "Ledakan alga permukaan akibat limbah nutrien menutupi sinar matahari ke dasar laut.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS02-LP4",
+      "sortIndex": 31
+    },
+    {
+      "id": "IELTS-A-02-Q032",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 4 (University Lecture — Eutrophication & Estuarine Seagrass Recovery — Q32): ONE WORD ONLY: 'Biological term for dangerously oxygen-starved benthic water zones: ___'",
+      "options": [],
+      "answer": "hypoxic",
+      "acceptedAnswers": [
+        "hypoxic"
+      ],
+      "explanation": "Istilah zona perairan miskin oksigen adalah 'hypoxic'.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS02-LP4",
+      "maxWords": 1,
+      "sortIndex": 32
+    },
+    {
+      "id": "IELTS-A-02-Q033",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 4 (University Lecture — Eutrophication & Estuarine Seagrass Recovery — Q33): How specifically do dying surface algae plumes drain deep bottom-water oxygen?",
+      "options": [
+        "Submerged eelgrass breathes underwater oxygen exclusively during sunny noons.",
+        "Bottom bacteria devour huge dissolved oxygen reserves while decomposing sunken dead algae.",
+        "Living green algae exhale toxic carbon steam directly into scallops.",
+        "Surface scum blocks coastal storm breezes from lifting heavy salt mud."
+      ],
+      "answer": "Bottom bacteria devour huge dissolved oxygen reserves while decomposing sunken dead algae.",
+      "acceptedAnswers": [
+        "Bottom bacteria devour huge dissolved oxygen reserves while decomposing sunken dead algae."
+      ],
+      "explanation": "Bakteri pengurai alga mati menghabiskan oksigen terlarut di dasar laut.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS02-LP4",
+      "sortIndex": 33
+    },
+    {
+      "id": "IELTS-A-02-Q034",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 4 (University Lecture — Eutrophication & Estuarine Seagrass Recovery — Q34): ONE WORD ONLY: 'Filter shellfish harmed swiftly when bottom dead zones expand: ___'",
+      "options": [],
+      "answer": "scallops",
+      "acceptedAnswers": [
+        "scallops"
+      ],
+      "explanation": "Kuliah mencontohkan kerang 'scallops' yang tercekik di zona mati dasar.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS02-LP4",
+      "maxWords": 1,
+      "sortIndex": 34
+    },
+    {
+      "id": "IELTS-A-02-Q035",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 4 (University Lecture — Eutrophication & Estuarine Seagrass Recovery — Q35): NO MORE THAN TWO WORDS: 'Key sewage upgrade removing nitrogen cleanly before estuary discharge: biological ___'",
+      "options": [],
+      "answer": "denitrification",
+      "acceptedAnswers": [
+        "denitrification",
+        "biological denitrification"
+      ],
+      "explanation": "Teknologi instalasi air limbah disebut 'biological denitrification'.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS02-LP4",
+      "maxWords": 2,
+      "sortIndex": 35
+    },
+    {
+      "id": "IELTS-A-02-Q036",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 4 (University Lecture — Eutrophication & Estuarine Seagrass Recovery — Q36): NUMBER ONLY (years): 'Recovery span observed for crab-sheltering seagrass beds after nutrient cuts: within ___ years'",
+      "options": [],
+      "answer": "7",
+      "acceptedAnswers": [
+        "7",
+        "seven"
+      ],
+      "explanation": "Pemulihan padang lamun & kepiting tercatat dalam kurun tujuh tahun.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS02-LP4",
+      "maxWords": 1,
+      "sortIndex": 36
+    },
+    {
+      "id": "IELTS-A-02-Q037",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 4 (University Lecture — Eutrophication & Estuarine Seagrass Recovery — Q37): What satellite telemetry metric confirmed improving water health upstream of eelgrass growth?",
+      "options": [
+        "Sinking estuarine sediment sand depth counts.",
+        "Measured increases in water light clarity / transparency.",
+        "Rising hot mid-August seawater salt percentages.",
+        "Higher surface algae bloom thickness indices."
+      ],
+      "answer": "Measured increases in water light clarity / transparency.",
+      "acceptedAnswers": [
+        "Measured increases in water light clarity / transparency."
+      ],
+      "explanation": "Pemantau satelit melacak kenaikan kejernihan/transparansi air.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS02-LP4",
+      "sortIndex": 37
+    },
+    {
+      "id": "IELTS-A-02-Q038",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 4 (University Lecture — Eutrophication & Estuarine Seagrass Recovery — Q38): Why is the recovery example included at the conclusion of this lecture?",
+      "options": [
+        "To demonstrate degraded coastal marine ecosystems can rebound measurably once nutrient pollution drops.",
+        "To discourage municipal spending on household wastewater engineering.",
+        "To argue anchor chains outperform biological denitrification effortlessly.",
+        "To suggest crabs prefer muddy bare silt over sunlit green meadows."
+      ],
+      "answer": "To demonstrate degraded coastal marine ecosystems can rebound measurably once nutrient pollution drops.",
+      "acceptedAnswers": [
+        "To demonstrate degraded coastal marine ecosystems can rebound measurably once nutrient pollution drops."
+      ],
+      "explanation": "Membuktikan kerusakan eutrofikasi dapat pulih bila beban nutrien dipangkas.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS02-LP4",
+      "sortIndex": 38
+    },
+    {
+      "id": "IELTS-A-02-Q039",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 4 (University Lecture — Eutrophication & Estuarine Seagrass Recovery — Q39): ONE WORD ONLY: 'Major non-point upland contributor linked to suburban lawns: septic ___ surges'",
+      "options": [],
+      "answer": "nitrate",
+      "acceptedAnswers": [
+        "nitrate"
+      ],
+      "explanation": "Disebut limpasan nitrat pupuk halaman dan septik ('septic nitrate').",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS02-LP4",
+      "maxWords": 1,
+      "sortIndex": 39
+    },
+    {
+      "id": "IELTS-A-02-Q040",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 4 (University Lecture — Eutrophication & Estuarine Seagrass Recovery — Q40): Which organism category flourished alongside rejuvenated seagrass nurseries after water cleared?",
+      "options": [
+        "Deep oceanic sperm whales.",
+        "Urban brick streetcar bugs.",
+        "Juvenile coastal crabs.",
+        "Subsurface oil worms."
+      ],
+      "answer": "Juvenile coastal crabs.",
+      "acceptedAnswers": [
+        "Juvenile coastal crabs."
+      ],
+      "explanation": "Teks menyebut kembalinya pembibitan kepiting ('resurgent crab nurseries').",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS02-LP4",
+      "sortIndex": 40
+    },
+    {
+      "id": "IELTS-A-02-Q041",
       "section": "READING",
       "taskType": "CHOICE_SINGLE",
-      "prompt": "Passage 1 ('Living Breakwaters'): 'Vertical concrete seawalls eliminate beach erosion completely in front of the wall.' -> TRUE, FALSE, or NOT GIVEN?",
+      "prompt": "Reading Passage 1 ('Restoring Urban Oyster Reefs Inside Polluted Shipping Harbors' — Q41): Do the following statements agree with the information in the text? (TRUE / FALSE / NOT GIVEN): 'A solitary adult Eastern oyster can filter nearly two hundred liters of muddy water every day.'",
       "options": [
         "TRUE",
         "FALSE",
         "NOT GIVEN"
       ],
-      "answer": "FALSE",
+      "answer": "TRUE",
       "acceptedAnswers": [
-        "FALSE"
+        "TRUE"
       ],
-      "explanation": "Paragraf A menyatakan dinding beton memantulkan energi gelombang ke bawah dan justru menggerus pantai berpasir di depannya ('scouring sandy beaches').",
+      "explanation": "Paragraf B menyebut 'nearly two hundred liters ... daily'.",
       "rationaleSource": "IELTS-MOD-02",
-      "difficulty": "B2",
+      "difficulty": "B1",
       "points": 1,
       "license": "Original",
       "reviewStatus": "VERIFIED_ORIGINAL",
       "passageId": "IELTS02-P1",
       "audioAssetId": null,
-      "sortIndex": 4
+      "sortIndex": 41
     },
     {
-      "id": "IELTS-A-02-Q05",
+      "id": "IELTS-A-02-Q042",
       "section": "READING",
       "taskType": "CHOICE_SINGLE",
-      "prompt": "Passage 1: 'Oyster reefs grow fast enough to outpace every severe hurricane worldwide.' -> TRUE, FALSE, or NOT GIVEN?",
+      "prompt": "Reading Passage 1 ('Restoring Urban Oyster Reefs Inside Polluted Shipping Harbors' — Q42): Do the following statements agree with the information in the text? (TRUE / FALSE / NOT GIVEN): 'Historical harbor reefs sheltered shallow coasts gently by breaking rough Atlantic wave energy.'",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": "TRUE",
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "explanation": "Paragraf C menegaskan terumbu kapur meredam ombak badai Atlantik.",
+      "rationaleSource": "IELTS-MOD-02",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS02-P1",
+      "audioAssetId": null,
+      "sortIndex": 42
+    },
+    {
+      "id": "IELTS-A-02-Q043",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 1 ('Restoring Urban Oyster Reefs Inside Polluted Shipping Harbors' — Q43): Do the following statements agree with the information in the text? (TRUE / FALSE / NOT GIVEN): 'Marine wholesalers pay high cash bounties per kilogram directly to vocational school carpenters.'",
       "options": [
         "TRUE",
         "FALSE",
@@ -159,7 +1147,7 @@
       "acceptedAnswers": [
         "NOT GIVEN"
       ],
-      "explanation": "Paragraf B hanya menyebut terumbu tiram tumbuh naik mengikuti kenaikan muka air laut bertahap, tanpa klaim mengalahkan semua badai besar di seluruh dunia.",
+      "explanation": "Paragraf D menyebut kerja sama sekolah dan distributor makanan laut menyumbang cangkang bekas, tanpa menyebut pembayaran imbalan uang ke siswa.",
       "rationaleSource": "IELTS-MOD-02",
       "difficulty": "B2",
       "points": 1,
@@ -167,23 +1155,200 @@
       "reviewStatus": "VERIFIED_ORIGINAL",
       "passageId": "IELTS02-P1",
       "audioAssetId": null,
-      "sortIndex": 5
+      "sortIndex": 43
     },
     {
-      "id": "IELTS-A-02-Q06",
+      "id": "IELTS-A-02-Q044",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 1 ('Restoring Urban Oyster Reefs Inside Polluted Shipping Harbors' — Q44): Do the following statements agree with the information in the text? (TRUE / FALSE / NOT GIVEN): 'Recycled restaurant oyster shells drop straight off kitchen trucks wet into polluted bay mud on day one.'",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": "FALSE",
+      "acceptedAnswers": [
+        "FALSE"
+      ],
+      "explanation": "Paragraf D menjelaskan cangkang dijemur/disterilkan 12 bulan di pulau pelabuhan lebih dulu.",
+      "rationaleSource": "IELTS-MOD-02",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS02-P1",
+      "audioAssetId": null,
+      "sortIndex": 44
+    },
+    {
+      "id": "IELTS-A-02-Q045",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 1 ('Restoring Urban Oyster Reefs Inside Polluted Shipping Harbors' — Q45): Do the following statements agree with the information in the text? (TRUE / FALSE / NOT GIVEN): 'Living harbor oyster larvae perished totally across the entire Hudson River prior to student restoration.'",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": "FALSE",
+      "acceptedAnswers": [
+        "FALSE"
+      ],
+      "explanation": "Paragraf E menyebut larva liar masih mengalir tipis dari populasi penyintas di kolong dermaga tua.",
+      "rationaleSource": "IELTS-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS02-P1",
+      "audioAssetId": null,
+      "sortIndex": 45
+    },
+    {
+      "id": "IELTS-A-02-Q046",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 1 ('Restoring Urban Oyster Reefs Inside Polluted Shipping Harbors' — Q46): Do the following statements agree with the information in the text? (TRUE / FALSE / NOT GIVEN): 'Cleaned gabion cages attract free-swimming baby oysters strictly through injected artificial coral perfumes.'",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": "FALSE",
+      "acceptedAnswers": [
+        "FALSE"
+      ],
+      "explanation": "Paragraf E menyatakan larva menempel alami begitu permukaan kalsium bersih tersedia.",
+      "rationaleSource": "IELTS-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS02-P1",
+      "audioAssetId": null,
+      "sortIndex": 46
+    },
+    {
+      "id": "IELTS-A-02-Q047",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 1 ('Restoring Urban Oyster Reefs Inside Polluted Shipping Harbors' — Q47): Do the following statements agree with the information in the text? (TRUE / FALSE / NOT GIVEN): 'Curing discarded culinary shells outdoors eliminates lingering odor alongside unwanted microbes.'",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": "TRUE",
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "explanation": "Paragraf D menyebut penjemuran 12 bulan menghilangkan bau dapur dan patogen.",
+      "rationaleSource": "IELTS-MOD-02",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS02-P1",
+      "audioAssetId": null,
+      "sortIndex": 47
+    },
+    {
+      "id": "IELTS-A-02-Q048",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Reading Passage 1 ('Restoring Urban Oyster Reefs Inside Polluted Shipping Harbors' — Q48): NUMBER ONLY (months): 'Time discarded half-shells cure outdoors under sun before harbor placement: ___ months'",
+      "options": [],
+      "answer": "12",
+      "acceptedAnswers": [
+        "12",
+        "twelve"
+      ],
+      "explanation": "Cangkang dikeringkan alami selama dua belas bulan.",
+      "rationaleSource": "IELTS-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS02-P1",
+      "audioAssetId": null,
+      "maxWords": 1,
+      "sortIndex": 48
+    },
+    {
+      "id": "IELTS-A-02-Q049",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Reading Passage 1 ('Restoring Urban Oyster Reefs Inside Polluted Shipping Harbors' — Q49): ONE WORD ONLY: 'Fine benthic sea plants gaining clear sunlight once oysters capture suspended algae: ___ beds'",
+      "options": [],
+      "answer": "eelgrass",
+      "acceptedAnswers": [
+        "eelgrass"
+      ],
+      "explanation": "Paragraf B menyebut 'shallow eelgrass beds'.",
+      "rationaleSource": "IELTS-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS02-P1",
+      "audioAssetId": null,
+      "maxWords": 1,
+      "sortIndex": 49
+    },
+    {
+      "id": "IELTS-A-02-Q050",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Reading Passage 1 ('Restoring Urban Oyster Reefs Inside Polluted Shipping Harbors' — Q50): ONE WORD ONLY: 'Structured stone-and-wire enclosures loaded tightly with cured shell mounds: ___ cages'",
+      "options": [],
+      "answer": "gabion",
+      "acceptedAnswers": [
+        "gabion"
+      ],
+      "explanation": "Paragraf D menggunakan keranjang kawat batu 'gabion cages'.",
+      "rationaleSource": "IELTS-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS02-P1",
+      "audioAssetId": null,
+      "maxWords": 1,
+      "sortIndex": 50
+    },
+    {
+      "id": "IELTS-A-02-Q051",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Reading Passage 1 ('Restoring Urban Oyster Reefs Inside Polluted Shipping Harbors' — Q51): ONE WORD ONLY: 'Water-pumping filtering shellfish organs handling suspended bay mud: feathery ___'",
+      "options": [],
+      "answer": "gills",
+      "acceptedAnswers": [
+        "gills"
+      ],
+      "explanation": "Paragraf B menyebut penyaringan melalui insang berbulu ('feathery gills').",
+      "rationaleSource": "IELTS-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS02-P1",
+      "audioAssetId": null,
+      "maxWords": 1,
+      "sortIndex": 51
+    },
+    {
+      "id": "IELTS-A-02-Q052",
       "section": "READING",
       "taskType": "MATCHING",
-      "prompt": "Match each paragraph (A, B, C) of Passage 1 to its core idea:",
-      "options": [
-        "Paragraph A :: Contrasting rigid seawalls with seeded oyster cages",
-        "Paragraph B :: Self-adjusting vertical growth and wave-height reduction",
-        "Paragraph C :: Ecological and shipping limits requiring hybrid designs"
-      ],
-      "answer": "Paragraph A::Contrasting rigid seawalls with seeded oyster cages|Paragraph B::Self-adjusting vertical growth and wave-height reduction|Paragraph C::Ecological and shipping limits requiring hybrid designs",
+      "prompt": "Reading Passage 1 ('Restoring Urban Oyster Reefs Inside Polluted Shipping Harbors' — Q52): Match paragraphs cleanly to their focal process stage:",
+      "options": [],
+      "answer": "Paragraph B::Natural clarity & filtration physiology|Paragraph C::Historical reef depletion causes|Paragraph D::Vocational shell-curing workflow",
       "acceptedAnswers": [
-        "Paragraph A::Contrasting rigid seawalls with seeded oyster cages|Paragraph B::Self-adjusting vertical growth and wave-height reduction|Paragraph C::Ecological and shipping limits requiring hybrid designs"
+        "Paragraph B::Natural clarity & filtration physiology|Paragraph C::Historical reef depletion causes|Paragraph D::Vocational shell-curing workflow"
       ],
-      "explanation": "A membandingkan seawall dengan sangkar tiram; B memaparkan pertumbuhan alami & penurunan gelombang 45%; C mengulas batas oksigen/kapal kargo.",
+      "explanation": "Kesesuaian ide utama tiap paragraf.",
       "rationaleSource": "IELTS-MOD-03",
       "difficulty": "B2",
       "points": 1,
@@ -193,62 +1358,735 @@
       "audioAssetId": null,
       "pairs": [
         {
-          "left": "Paragraph A",
-          "rightOptions": [
-            "Contrasting rigid seawalls with seeded oyster cages",
-            "Self-adjusting vertical growth and wave-height reduction",
-            "Ecological and shipping limits requiring hybrid designs"
-          ]
-        },
-        {
           "left": "Paragraph B",
           "rightOptions": [
-            "Contrasting rigid seawalls with seeded oyster cages",
-            "Self-adjusting vertical growth and wave-height reduction",
-            "Ecological and shipping limits requiring hybrid designs"
+            "Natural clarity & filtration physiology",
+            "Historical reef depletion causes",
+            "Vocational shell-curing workflow"
           ]
         },
         {
           "left": "Paragraph C",
           "rightOptions": [
-            "Contrasting rigid seawalls with seeded oyster cages",
-            "Self-adjusting vertical growth and wave-height reduction",
-            "Ecological and shipping limits requiring hybrid designs"
+            "Natural clarity & filtration physiology",
+            "Historical reef depletion causes",
+            "Vocational shell-curing workflow"
+          ]
+        },
+        {
+          "left": "Paragraph D",
+          "rightOptions": [
+            "Natural clarity & filtration physiology",
+            "Historical reef depletion causes",
+            "Vocational shell-curing workflow"
           ]
         }
       ],
-      "sortIndex": 6
+      "sortIndex": 52
     },
     {
-      "id": "IELTS-A-02-Q07",
+      "id": "IELTS-A-02-Q053",
       "section": "READING",
-      "taskType": "FILL_BLANK",
-      "prompt": "Summary Completion (ONE WORD ONLY from Passage 1): 'Because oyster shells attach together over time, living reefs adapt naturally to gradual sea-level ___.'",
-      "options": [],
-      "answer": "rise",
-      "acceptedAnswers": [
-        "rise"
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 1 ('Restoring Urban Oyster Reefs Inside Polluted Shipping Harbors' — Q53): Why do project organizers cure shells outdoors for a year rather than importing quarried limestone gravel?",
+      "options": [
+        "Students prefer scraping rough limestone edges indoors daily.",
+        "Recycling abundant kitchen calcium provides ideal larval chemistry while diverting restaurant shell waste cleanly.",
+        "Limestone gravel dissolves completely inside fresh ocean currents overnight.",
+        "Quarry trucks refuse driving onto sunny island harbors."
       ],
-      "explanation": "Paragraf B secara harfiah memuat frasa 'gradual sea-level rise'.",
-      "rationaleSource": "IELTS-MOD-03",
-      "difficulty": "B1",
+      "answer": "Recycling abundant kitchen calcium provides ideal larval chemistry while diverting restaurant shell waste cleanly.",
+      "acceptedAnswers": [
+        "Recycling abundant kitchen calcium provides ideal larval chemistry while diverting restaurant shell waste cleanly."
+      ],
+      "explanation": "Cangkang restoran melimpah, bebas limbah ke TPA, serta berkimia kalsium alami bagi larva tiram.",
+      "rationaleSource": "IELTS-MOD-08",
+      "difficulty": "B2",
       "points": 1,
       "license": "Original",
       "reviewStatus": "VERIFIED_ORIGINAL",
       "passageId": "IELTS02-P1",
       "audioAssetId": null,
-      "maxWords": 1,
-      "sortIndex": 7
+      "sortIndex": 53
     },
     {
-      "id": "IELTS-A-02-Q08",
+      "id": "IELTS-A-02-Q054",
+      "section": "READING",
+      "taskType": "MATCHING",
+      "prompt": "Reading Passage 2 ('Quiet Rubberized Asphalt vs Concrete Road Noise' — Q54): Choose the best summary heading for Paragraphs A, C, and D:",
+      "options": [],
+      "answer": "Paragraph A::Costly drawbacks of tall visual barrier walls|Paragraph C::Recycled porous pavement composition|Paragraph D::Acoustic & rain-drainage mechanism",
+      "acceptedAnswers": [
+        "Paragraph A::Costly drawbacks of tall visual barrier walls|Paragraph C::Recycled porous pavement composition|Paragraph D::Acoustic & rain-drainage mechanism"
+      ],
+      "explanation": "Pemetaan topik masing-masing paragraf tentang aspal karet berpori.",
+      "rationaleSource": "IELTS-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS02-P2",
+      "audioAssetId": null,
+      "pairs": [
+        {
+          "left": "Paragraph A",
+          "rightOptions": [
+            "Costly drawbacks of tall visual barrier walls",
+            "Recycled porous pavement composition",
+            "Acoustic & rain-drainage mechanism"
+          ]
+        },
+        {
+          "left": "Paragraph C",
+          "rightOptions": [
+            "Costly drawbacks of tall visual barrier walls",
+            "Recycled porous pavement composition",
+            "Acoustic & rain-drainage mechanism"
+          ]
+        },
+        {
+          "left": "Paragraph D",
+          "rightOptions": [
+            "Costly drawbacks of tall visual barrier walls",
+            "Recycled porous pavement composition",
+            "Acoustic & rain-drainage mechanism"
+          ]
+        }
+      ],
+      "sortIndex": 54
+    },
+    {
+      "id": "IELTS-A-02-Q055",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 2 ('Quiet Rubberized Asphalt vs Concrete Road Noise' — Q55): Do the following statements agree with the information in the text? (TRUE / FALSE / NOT GIVEN): 'At highway speeds exceeding forty kilometers hourly, vehicle engine exhaust creates louder total road din than tire contact.'",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": "FALSE",
+      "acceptedAnswers": [
+        "FALSE"
+      ],
+      "explanation": "Paragraf B menyebut di atas 40 km/jam suara benturan ban terhadap permukaan jalan lebih mendominasi daripada mesin.",
+      "rationaleSource": "IELTS-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS02-P2",
+      "audioAssetId": null,
+      "sortIndex": 55
+    },
+    {
+      "id": "IELTS-A-02-Q056",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 2 ('Quiet Rubberized Asphalt vs Concrete Road Noise' — Q56): Do the following statements agree with the information in the text? (TRUE / FALSE / NOT GIVEN): 'Open-graded porous asphalt blends incorporate small ground rubber fragments from discarded scrap tires.'",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": "TRUE",
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "explanation": "Paragraf C memakai serbuk karet ban bekas daur ulang ('ground-up scrap rubber tire crumb').",
+      "rationaleSource": "IELTS-MOD-02",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS02-P2",
+      "audioAssetId": null,
+      "sortIndex": 56
+    },
+    {
+      "id": "IELTS-A-02-Q057",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 2 ('Quiet Rubberized Asphalt vs Concrete Road Noise' — Q57): Do the following statements agree with the information in the text? (TRUE / FALSE / NOT GIVEN): 'Dropping roadside noise roughly four to five decibels makes traffic sound nearly twice as quiet to everyday listeners.'",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": "TRUE",
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "explanation": "Paragraf D mencatat penurunan 4–5 dB terasa hampir setengah kali lebih senyap bagi pendengaran manusia.",
+      "rationaleSource": "IELTS-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS02-P2",
+      "audioAssetId": null,
+      "sortIndex": 57
+    },
+    {
+      "id": "IELTS-A-02-Q058",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 2 ('Quiet Rubberized Asphalt vs Concrete Road Noise' — Q58): Do the following statements agree with the information in the text? (TRUE / FALSE / NOT GIVEN): 'Arizona DOT banned all rubberized highway overlays immediately after heavy monsoon storms in 2020.'",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": "NOT GIVEN",
+      "acceptedAnswers": [
+        "NOT GIVEN"
+      ],
+      "explanation": "Arizona disebut melakukan uji coba; pelarangan tahun 2020 tidak pernah disebut.",
+      "rationaleSource": "IELTS-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS02-P2",
+      "audioAssetId": null,
+      "sortIndex": 58
+    },
+    {
+      "id": "IELTS-A-02-Q059",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Reading Passage 2 ('Quiet Rubberized Asphalt vs Concrete Road Noise' — Q59): NUMBER ONLY (%): 'Target internal air-void percentage mixed inside porous upper pavement mats: ___%'",
+      "options": [],
+      "answer": "18",
+      "acceptedAnswers": [
+        "18",
+        "eighteen"
+      ],
+      "explanation": "Kadar rongga udara internal mencapai 18%.",
+      "rationaleSource": "IELTS-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS02-P2",
+      "audioAssetId": null,
+      "maxWords": 1,
+      "sortIndex": 59
+    },
+    {
+      "id": "IELTS-A-02-Q060",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Reading Passage 2 ('Quiet Rubberized Asphalt vs Concrete Road Noise' — Q60): NUMBER ONLY (cm): 'Approximate depth thickness of quiet open-graded asphalt wearing top layers: ___ centimeters'",
+      "options": [],
+      "answer": "3",
+      "acceptedAnswers": [
+        "3",
+        "three"
+      ],
+      "explanation": "Lapisan atas berpori setebal tiga sentimeter.",
+      "rationaleSource": "IELTS-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS02-P2",
+      "audioAssetId": null,
+      "maxWords": 1,
+      "sortIndex": 60
+    },
+    {
+      "id": "IELTS-A-02-Q061",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Reading Passage 2 ('Quiet Rubberized Asphalt vs Concrete Road Noise' — Q61): NUMBER ONLY (km/h): 'Approximate vehicle speed threshold above which tire noise dominates car engines: ___ km/h'",
+      "options": [],
+      "answer": "40",
+      "acceptedAnswers": [
+        "40",
+        "forty"
+      ],
+      "explanation": "Ambang kecepatan di atas 40 km/jam.",
+      "rationaleSource": "IELTS-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS02-P2",
+      "audioAssetId": null,
+      "maxWords": 1,
+      "sortIndex": 61
+    },
+    {
+      "id": "IELTS-A-02-Q062",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Reading Passage 2 ('Quiet Rubberized Asphalt vs Concrete Road Noise' — Q62): ONE WORD ONLY: 'Hazardous winter maintenance trucks requiring gentler blade adjustments over open-pore asphalt: ___'",
+      "options": [],
+      "answer": "snowplows",
+      "acceptedAnswers": [
+        "snowplow",
+        "snowplows"
+      ],
+      "explanation": "Paragraf E menyebut bajak salju bergaram mengikis bibir pori ('salted snowplow scraping').",
+      "rationaleSource": "IELTS-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS02-P2",
+      "audioAssetId": null,
+      "maxWords": 1,
+      "sortIndex": 62
+    },
+    {
+      "id": "IELTS-A-02-Q063",
+      "section": "READING",
+      "taskType": "CHOICE_MULTI",
+      "prompt": "Reading Passage 2 ('Quiet Rubberized Asphalt vs Concrete Road Noise' — Q63): Choose TWO verified benefits produced concurrently by porous rubberized surface layers:",
+      "options": [
+        "Immediate evacuation of blinding roadway rainwater puddles",
+        "Complete elimination of suburban street tree maintenance",
+        "Measured 4–5 decibel cuts directly at moving wheel sources",
+        "Lifetime immunity against heavy snowplow metal blades"
+      ],
+      "answer": "Immediate evacuation of blinding roadway rainwater puddles|Measured 4–5 decibel cuts directly at moving wheel sources",
+      "acceptedAnswers": [
+        "Immediate evacuation of blinding roadway rainwater puddles|Measured 4–5 decibel cuts directly at moving wheel sources"
+      ],
+      "explanation": "Keunggulan ganda: meredam 4–5 dB bising langsung di sumber roda sekaligus mengalirkan genangan air hujan.",
+      "rationaleSource": "IELTS-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS02-P2",
+      "audioAssetId": null,
+      "sortIndex": 63
+    },
+    {
+      "id": "IELTS-A-02-Q064",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 2 ('Quiet Rubberized Asphalt vs Concrete Road Noise' — Q64): Why is eliminating tire noise directly on the road surface often superior to erecting concrete highway walls?",
+      "options": [
+        "Rubber crumb asphalt cleans engine oil exhaust inside car mufflers.",
+        "Concrete walls break easily under passenger car tires.",
+        "Tall walls only shelter immediate backyards unevenly while blocking scenic sunlight and greenery.",
+        "Porous pavement absorbs overhead highway jetliner roar automatically."
+      ],
+      "answer": "Tall walls only shelter immediate backyards unevenly while blocking scenic sunlight and greenery.",
+      "acceptedAnswers": [
+        "Tall walls only shelter immediate backyards unevenly while blocking scenic sunlight and greenery."
+      ],
+      "explanation": "Mengatasi sumber bising di jalan lebih efektif tanpa menutup pemandangan dan menghabiskan biaya dinding tinggi.",
+      "rationaleSource": "IELTS-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS02-P2",
+      "audioAssetId": null,
+      "sortIndex": 64
+    },
+    {
+      "id": "IELTS-A-02-Q065",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 2 ('Quiet Rubberized Asphalt vs Concrete Road Noise' — Q65): Do the following statements agree with the information in the text? (TRUE / FALSE / NOT GIVEN): 'Highway noise barriers taller than four meters typically open wide unobstructed views across valleys.'",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": "FALSE",
+      "acceptedAnswers": [
+        "FALSE"
+      ],
+      "explanation": "Paragraf A mencatat dinding beton empat meter justru memblokir panorama lembah warga ('blocking backyard valley greenery views completely').",
+      "rationaleSource": "IELTS-MOD-02",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS02-P2",
+      "audioAssetId": null,
+      "sortIndex": 65
+    },
+    {
+      "id": "IELTS-A-02-Q066",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Reading Passage 2 ('Quiet Rubberized Asphalt vs Concrete Road Noise' — Q66): NO MORE THAN TWO WORDS: 'Standard civil engineering label for open-void crumb pavement mats: open-graded ___ asphalt'",
+      "options": [],
+      "answer": "friction",
+      "acceptedAnswers": [
+        "friction"
+      ],
+      "explanation": "Paragraf C menyebut istilah teknis 'open-graded friction asphalt'.",
+      "rationaleSource": "IELTS-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS02-P2",
+      "audioAssetId": null,
+      "maxWords": 1,
+      "sortIndex": 66
+    },
+    {
+      "id": "IELTS-A-02-Q067",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 3 ('Do Automated Handwriting Algorithms Flatten Classroom Cognition?' — Q67): Do the following statements reflect the claims of the writer? (YES / NO / NOT GIVEN): 'Typing faster verbatim transcripts guarantees stronger long-term conceptual comprehension than slower handwriting.'",
+      "options": [
+        "YES",
+        "NO",
+        "NOT GIVEN"
+      ],
+      "answer": "NO",
+      "acceptedAnswers": [
+        "NO"
+      ],
+      "explanation": "Paragraf B membuktikan pengetik cepat verbatim justru tertinggal pada pertanyaan sintesis konsep jangka panjang.",
+      "rationaleSource": "IELTS-MOD-08",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS02-P3",
+      "audioAssetId": null,
+      "sortIndex": 67
+    },
+    {
+      "id": "IELTS-A-02-Q068",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 3 ('Do Automated Handwriting Algorithms Flatten Classroom Cognition?' — Q68): Do the following statements reflect the claims of the writer? (YES / NO / NOT GIVEN): 'Switching off Wi-Fi distracting notifications completely closes the cognitive memory gap between typing and handwriting.'",
+      "options": [
+        "YES",
+        "NO",
+        "NOT GIVEN"
+      ],
+      "answer": "NO",
+      "acceptedAnswers": [
+        "NO"
+      ],
+      "explanation": "Paragraf C menegaskan laptop offline tanpa distraksi tetap tertinggal karena pengetikan cepat mendorong transkripsi mekanis tanpa parafrase aktif.",
+      "rationaleSource": "IELTS-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS02-P3",
+      "audioAssetId": null,
+      "sortIndex": 68
+    },
+    {
+      "id": "IELTS-A-02-Q069",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 3 ('Do Automated Handwriting Algorithms Flatten Classroom Cognition?' — Q69): Do the following statements reflect the claims of the writer? (YES / NO / NOT GIVEN): 'Enforcing rigid sweeping bans against student keyboards harms equitable access for writers with motor challenges.'",
+      "options": [
+        "YES",
+        "NO",
+        "NOT GIVEN"
+      ],
+      "answer": "YES",
+      "acceptedAnswers": [
+        "YES"
+      ],
+      "explanation": "Paragraf D mendukung pandangan Dr. Chen bahwa larangan total laptop diskriminatif bagi mahasiswa disgrafia atau cedera motorik halus.",
+      "rationaleSource": "IELTS-MOD-08",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS02-P3",
+      "audioAssetId": null,
+      "sortIndex": 69
+    },
+    {
+      "id": "IELTS-A-02-Q070",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 3 ('Do Automated Handwriting Algorithms Flatten Classroom Cognition?' — Q70): Do the following statements reflect the claims of the writer? (YES / NO / NOT GIVEN): 'Dr. Naomi Chen recommends handwritten ink pens exclusively inside European high schools.'",
+      "options": [
+        "YES",
+        "NO",
+        "NOT GIVEN"
+      ],
+      "answer": "NOT GIVEN",
+      "acceptedAnswers": [
+        "NOT GIVEN"
+      ],
+      "explanation": "Dr. Chen memperingatkan bahaya larangan laptop, bukan menganjurkan pena eksklusif di SMA Eropa.",
+      "rationaleSource": "IELTS-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS02-P3",
+      "audioAssetId": null,
+      "sortIndex": 70
+    },
+    {
+      "id": "IELTS-A-02-Q071",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 3 ('Do Automated Handwriting Algorithms Flatten Classroom Cognition?' — Q71): Do the following statements reflect the claims of the writer? (YES / NO / NOT GIVEN): 'Encouraging laptop learners to synthesize ideas conceptually instead of typing word-for-word helps close cognitive losses.'",
+      "options": [
+        "YES",
+        "NO",
+        "NOT GIVEN"
+      ],
+      "answer": "YES",
+      "acceptedAnswers": [
+        "YES"
+      ],
+      "explanation": "Paragraf E menganjurkan pelatihan pemetaan konsep alih-alih mengetik kata per kata.",
+      "rationaleSource": "IELTS-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS02-P3",
+      "audioAssetId": null,
+      "sortIndex": 71
+    },
+    {
+      "id": "IELTS-A-02-Q072",
+      "section": "READING",
+      "taskType": "MATCHING",
+      "prompt": "Reading Passage 3 ('Do Automated Handwriting Algorithms Flatten Classroom Cognition?' — Q72): Match researchers accurately to their cited contribution in Paragraphs B and D:",
+      "options": [],
+      "answer": "Mueller and Oppenheimer::Verbatim typing reduces active mental paraphrasing|Dr. Naomi Chen::Blanket laptop bans penalize students with motor fatigue",
+      "acceptedAnswers": [
+        "Mueller and Oppenheimer::Verbatim typing reduces active mental paraphrasing|Dr. Naomi Chen::Blanket laptop bans penalize students with motor fatigue"
+      ],
+      "explanation": "Pemetaan studi Mueller/Oppenheimer vs perspektif aksesibilitas Chen.",
+      "rationaleSource": "IELTS-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS02-P3",
+      "audioAssetId": null,
+      "pairs": [
+        {
+          "left": "Mueller and Oppenheimer",
+          "rightOptions": [
+            "Verbatim typing reduces active mental paraphrasing",
+            "Blanket laptop bans penalize students with motor fatigue"
+          ]
+        },
+        {
+          "left": "Dr. Naomi Chen",
+          "rightOptions": [
+            "Verbatim typing reduces active mental paraphrasing",
+            "Blanket laptop bans penalize students with motor fatigue"
+          ]
+        }
+      ],
+      "sortIndex": 72
+    },
+    {
+      "id": "IELTS-A-02-Q073",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Reading Passage 3 ('Do Automated Handwriting Algorithms Flatten Classroom Cognition?' — Q73): NUMBER ONLY (wpm): 'Approximate fast student lecture keyboard speed cited: ___ words per minute'",
+      "options": [],
+      "answer": "60",
+      "acceptedAnswers": [
+        "60",
+        "sixty"
+      ],
+      "explanation": "Paragraf A mencatat kecepatan ketik mendekati 60 kata per menit.",
+      "rationaleSource": "IELTS-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS02-P3",
+      "audioAssetId": null,
+      "maxWords": 1,
+      "sortIndex": 73
+    },
+    {
+      "id": "IELTS-A-02-Q074",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Reading Passage 3 ('Do Automated Handwriting Algorithms Flatten Classroom Cognition?' — Q74): NUMBER ONLY (wpm): 'Typical slower manual pen handwriting rate per minute: barely ___'",
+      "options": [],
+      "answer": "22",
+      "acceptedAnswers": [
+        "22",
+        "twenty-two"
+      ],
+      "explanation": "Kecepatan tulis tangan sekitar 22 kata per menit.",
+      "rationaleSource": "IELTS-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS02-P3",
+      "audioAssetId": null,
+      "maxWords": 1,
+      "sortIndex": 74
+    },
+    {
+      "id": "IELTS-A-02-Q075",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Reading Passage 3 ('Do Automated Handwriting Algorithms Flatten Classroom Cognition?' — Q75): ONE WORD ONLY: 'Generative mental skill forced upon pen users due to slow physical speed: active ___'",
+      "options": [],
+      "answer": "paraphrasing",
+      "acceptedAnswers": [
+        "paraphrase",
+        "paraphrasing",
+        "condense"
+      ],
+      "explanation": "Tulis tangan memaksa penyaringan dan parafrase aktif.",
+      "rationaleSource": "IELTS-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS02-P3",
+      "audioAssetId": null,
+      "maxWords": 1,
+      "sortIndex": 75
+    },
+    {
+      "id": "IELTS-A-02-Q076",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Reading Passage 3 ('Do Automated Handwriting Algorithms Flatten Classroom Cognition?' — Q76): ONE WORD ONLY: 'Fine-motor handwriting difficulty cited as benefiting genuinely from digital keyboards: ___'",
+      "options": [],
+      "answer": "dysgraphia",
+      "acceptedAnswers": [
+        "dysgraphia"
+      ],
+      "explanation": "Paragraf D menyebut kondisi 'fine-motor dysgraphia'.",
+      "rationaleSource": "IELTS-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS02-P3",
+      "audioAssetId": null,
+      "maxWords": 1,
+      "sortIndex": 76
+    },
+    {
+      "id": "IELTS-A-02-Q077",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 3 ('Do Automated Handwriting Algorithms Flatten Classroom Cognition?' — Q77): Why did air-gapped laptops without internet still produce weaker synthesis recall in Paragraph C?",
+      "options": [
+        "Laptop batteries slowed screen scrolling every five minutes.",
+        "Because near-effortless transcription velocity allowed minds to copy words passively without semantic filtering.",
+        "Offline laptop keyboards glowed harshly causing immediate visual sleepiness.",
+        "Pen paper ink emitted calming floral odors boosting hippocampal recall."
+      ],
+      "answer": "Because near-effortless transcription velocity allowed minds to copy words passively without semantic filtering.",
+      "acceptedAnswers": [
+        "Because near-effortless transcription velocity allowed minds to copy words passively without semantic filtering."
+      ],
+      "explanation": "Kecepatan mengetik tinggi memungkinkan penyalinan pasif tanpa pemrosesan makna aktif.",
+      "rationaleSource": "IELTS-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS02-P3",
+      "audioAssetId": null,
+      "sortIndex": 77
+    },
+    {
+      "id": "IELTS-A-02-Q078",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 3 ('Do Automated Handwriting Algorithms Flatten Classroom Cognition?' — Q78): How should seminar instructors resolve the tension between deep synthesis and disability inclusion cleanly?",
+      "options": [
+        "Keep laptop access open for accommodation while guiding learners away from blind transcription toward mapping.",
+        "Collect all laptops at doorboxes except Fridays.",
+        "Require blind typing exams strictly in noisy dining cafeterias.",
+        "Grade handwritten calligraphy neatness exclusively."
+      ],
+      "answer": "Keep laptop access open for accommodation while guiding learners away from blind transcription toward mapping.",
+      "acceptedAnswers": [
+        "Keep laptop access open for accommodation while guiding learners away from blind transcription toward mapping."
+      ],
+      "explanation": "Menjaga akses inklusif sekaligus membiasakan pembuatan bagan konsep daripada menyalin mentah.",
+      "rationaleSource": "IELTS-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS02-P3",
+      "audioAssetId": null,
+      "sortIndex": 78
+    },
+    {
+      "id": "IELTS-A-02-Q079",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 3 ('Do Automated Handwriting Algorithms Flatten Classroom Cognition?' — Q79): What evidence proved web pop-up distractions weren't the sole mechanism behind shallow laptop memory?",
+      "options": [
+        "All students deleted social apps permanently prior to semester surveys.",
+        "Spiral notebooks carried colorful cartoons distracting cursive writers too.",
+        "Lecture speakers banned overhead visual projection slides.",
+        "Controlled sessions using isolated offline computers locked in blank word processors showed matching gaps."
+      ],
+      "answer": "Controlled sessions using isolated offline computers locked in blank word processors showed matching gaps.",
+      "acceptedAnswers": [
+        "Controlled sessions using isolated offline computers locked in blank word processors showed matching gaps."
+      ],
+      "explanation": "Uji laptop offline terisolasi tetap menampilkan ketertinggalan sintesis.",
+      "rationaleSource": "IELTS-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS02-P3",
+      "audioAssetId": null,
+      "sortIndex": 79
+    },
+    {
+      "id": "IELTS-A-02-Q080",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 3 ('Do Automated Handwriting Algorithms Flatten Classroom Cognition?' — Q80): Which summary best describes Paragraph E's final synthesis?",
+      "options": [
+        "Only twenty-two words per minute should ever be graded cleanly.",
+        "Students must carry twin wooden tablets plus spiral paper.",
+        "Tool modality matters less than deliberate active cognitive synthesis supported by inclusive classroom policy.",
+        "Mechanical laptops will completely destroy traditional university learning forever."
+      ],
+      "answer": "Tool modality matters less than deliberate active cognitive synthesis supported by inclusive classroom policy.",
+      "acceptedAnswers": [
+        "Tool modality matters less than deliberate active cognitive synthesis supported by inclusive classroom policy."
+      ],
+      "explanation": "Kesimpulan memadukan sintesis aktif dengan kebijakan kelas inklusif.",
+      "rationaleSource": "IELTS-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS02-P3",
+      "audioAssetId": null,
+      "sortIndex": 80
+    },
+    {
+      "id": "IELTS-A-02-Q081",
       "section": "WRITING",
       "taskType": "WRITING_RESPONSE",
-      "prompt": "IELTS Academic Writing Task 1 (>=150 words, 20 min): The figures below show average daily minutes spent walking or cycling by adults in Metro City (2010 vs 2024) by age group:\n- Ages 18–29: 22 min (2010) -> 38 min (2024)\n- Ages 30–49: 16 min (2010) -> 29 min (2024)\n- Ages 50–64: 19 min (2010) -> 27 min (2024)\n- Ages 65+: 14 min (2010) -> 18 min (2024)\nSummarize the main trends and compare age groups.",
+      "prompt": "Writing Task 1 (Process Diagram — At least 150 words, 20 min): The diagram illustrates closed-loop urban greywater purification inside a multi-story apartment complex. Sink and shower water passes first through a coarse mesh screen (removing hair/lint), enters an aerated bio-filter tank (microbes break down soap organics), moves through a subsurface gravel reed-bed planter outside, gets sanitized under UV light indoors, and finally feeds non-potable toilet cisterns and rooftop drip irrigation. Summarize the stages clearly in logical sequence.",
       "options": [],
       "answer": "",
       "acceptedAnswers": [],
-      "explanation": "Tekankan dalam Overview bahwa seluruh kelompok usia meningkat, dengan lonjakan terbesar pada dewasa muda 18–29 dan kenaikan terendah pada 65+.",
+      "explanation": "Band 7+ Task 1 wajib menyertakan Overview tren utama tanpa opini pribadi, membandingkan angka/tahapan ekstrem secara akurat.",
       "rationaleSource": "IELTS-MOD-04",
       "difficulty": "B2",
       "points": 1,
@@ -257,119 +2095,119 @@
       "passageId": null,
       "audioAssetId": null,
       "minWords": 150,
-      "recommendedWords": 175,
+      "recommendedWords": 180,
       "rubricCriteria": [
-        "Overview clarity",
-        "Accurate group comparisons",
-        "Cohesive flow",
-        "Grammar & lexical range"
+        "Clear Overview statement",
+        "Accurate data/stage selection",
+        "Trend comparisons & passive/sequence connectors",
+        "Lexical precision"
       ],
-      "sortIndex": 8
+      "sortIndex": 81
     },
     {
-      "id": "IELTS-A-02-Q09",
+      "id": "IELTS-A-02-Q082",
       "section": "WRITING",
       "taskType": "WRITING_RESPONSE",
-      "prompt": "IELTS Academic Writing Task 2 (>=250 words, 40 min): In many cities, public funding prioritizes expanding road networks rather than public parks and coastal wetlands. To what extent do you agree or disagree that green spaces deserve equal priority for public health?",
+      "prompt": "Writing Task 2 (Academic Essay — At least 250 words, 40 min): In numerous university towns, fast automated delivery robots and high-speed bike lanes now compete for narrow historic pedestrian sidewalks. Should municipal governments restrict sidewalk commercial automation heavily to safeguard unhurried pedestrian sociability, or integrate dedicated micro-lanes proactively? Discuss both views and give your opinion.",
       "options": [],
       "answer": "",
       "acceptedAnswers": [],
-      "explanation": "Nyatakan tingkat persetujuan tegas sejak pendahuluan dan dukung dengan dua argumen kesehatan fisik/mental + keseimbangan anggaran transportasi.",
+      "explanation": "Band 7+ Task 2 menuntut tesis tegas konsisten di pembuka hingga penutup, pengembangan paragraf tubuh bertumpu mekanisme & contoh, serta kendali klausa kompleks.",
       "rationaleSource": "IELTS-MOD-05",
-      "difficulty": "B2",
-      "points": 1,
-      "license": "Original",
-      "reviewStatus": "VERIFIED_ORIGINAL",
-      "passageId": null,
-      "audioAssetId": null,
-      "minWords": 250,
-      "recommendedWords": 275,
-      "rubricCriteria": [
-        "Clear extent of agreement",
-        "Paragraph development",
-        "Topic-specific vocabulary",
-        "Grammatical accuracy"
-      ],
-      "sortIndex": 9
-    },
-    {
-      "id": "IELTS-A-02-Q10",
-      "section": "SPEAKING",
-      "taskType": "SPEAKING_RESPONSE",
-      "prompt": "IELTS Speaking Part 1 (~30–45s): 'Do you enjoy spending time near rivers, lakes, or the sea? What activities do people usually do there in your area?'",
-      "options": [],
-      "answer": "",
-      "acceptedAnswers": [],
-      "explanation": "Berikan 3–4 kalimat alami disertai detail suasana atau aktivitas lokal.",
-      "rationaleSource": "IELTS-MOD-06",
-      "difficulty": "B1",
-      "points": 1,
-      "license": "Original",
-      "reviewStatus": "VERIFIED_ORIGINAL",
-      "passageId": null,
-      "audioAssetId": null,
-      "prepSeconds": 0,
-      "speakSeconds": 45,
-      "rubricCriteria": [
-        "Fluency",
-        "Natural vocabulary",
-        "Sentence variety",
-        "Pronunciation"
-      ],
-      "sortIndex": 10
-    },
-    {
-      "id": "IELTS-A-02-Q11",
-      "section": "SPEAKING",
-      "taskType": "SPEAKING_RESPONSE",
-      "prompt": "IELTS Speaking Part 2 Cue Card (1 min prep · 2 min speak): Describe an outdoor park, beach, or natural place you visited that felt peaceful.\nYou should say:\n- where it is\n- who you went there with\n- what you saw and heard\n- and explain why this place felt restorative.",
-      "options": [],
-      "answer": "",
-      "acceptedAnswers": [],
-      "explanation": "Gunakan detail sensorik (udara, suara ombak/angin, vegetasi) untuk berbicara utuh hingga 90–120 detik.",
-      "rationaleSource": "IELTS-MOD-06",
-      "difficulty": "B2",
-      "points": 1,
-      "license": "Original",
-      "reviewStatus": "VERIFIED_ORIGINAL",
-      "passageId": null,
-      "audioAssetId": null,
-      "prepSeconds": 60,
-      "speakSeconds": 120,
-      "rubricCriteria": [
-        "Descriptive detail",
-        "Smooth storytelling",
-        "Lexical precision",
-        "Grammar"
-      ],
-      "sortIndex": 11
-    },
-    {
-      "id": "IELTS-A-02-Q12",
-      "section": "SPEAKING",
-      "taskType": "SPEAKING_RESPONSE",
-      "prompt": "IELTS Speaking Part 3 (~60s): 'How can coastal communities balance economic shipping needs with marine habitat conservation?'",
-      "options": [],
-      "answer": "",
-      "acceptedAnswers": [],
-      "explanation": "Bahas zonasi pelabuhan, regulasi limbah/kecepatan kapal, dan solusi teknik seperti terumbu pelindung.",
-      "rationaleSource": "IELTS-MOD-06",
       "difficulty": "C1",
       "points": 1,
       "license": "Original",
       "reviewStatus": "VERIFIED_ORIGINAL",
       "passageId": null,
       "audioAssetId": null,
-      "prepSeconds": 0,
+      "minWords": 250,
+      "recommendedWords": 290,
+      "rubricCriteria": [
+        "Full prompt coverage & clear position",
+        "Coherent paragraphing",
+        "Precise collocations",
+        "Complex grammar range & accuracy"
+      ],
+      "sortIndex": 82
+    },
+    {
+      "id": "IELTS-A-02-Q083",
+      "section": "SPEAKING",
+      "taskType": "SPEAKING_RESPONSE",
+      "prompt": "Examiner Part 1 (Punctuality & Calendars — 4–5 min): Hello, nice to meet you. Let's discuss time habits. Do you track tasks on paper notebooks or phone apps, how important is arriving ten minutes early in your culture, and when did waiting patiently actually help you?",
+      "options": [],
+      "answer": "",
+      "acceptedAnswers": [],
+      "explanation": "Part 1 idealnya berdurasi ~25–35 detik per pertanyaan gabungan dengan ekstensi 2–3 kalimat alami dan intonasi santai tanpa menghafal templat.",
+      "rationaleSource": "IELTS-MOD-06",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS02-SP1",
+      "prepSeconds": 5,
+      "speakSeconds": 45,
+      "rubricCriteria": [
+        "Natural conversational extension",
+        "Everyday topic collocations",
+        "Clear stress & rhythm",
+        "Self-correction control"
+      ],
+      "sortIndex": 83
+    },
+    {
+      "id": "IELTS-A-02-Q084",
+      "section": "SPEAKING",
+      "taskType": "SPEAKING_RESPONSE",
+      "prompt": "Speaking Part 2 (Cue Card — 1 min prep, 2 min talk): Describe an old building or public bridge in your city whose architecture or history caught your attention. You should say: where it stands, what materials or proportions make it memorable, who uses it day-to-day today, and explain why preserving structures like it matters to residents.",
+      "options": [],
+      "answer": "",
+      "acceptedAnswers": [],
+      "explanation": "Gunakan 60 detik persiapan untuk mencatat 4–5 kata kunci linimasa (Konteks -> Tantangan -> Aksi -> Dampak), lalu bicaralah lancar hingga 2 menit penuh.",
+      "rationaleSource": "IELTS-MOD-06",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS02-SP2",
+      "prepSeconds": 60,
+      "speakSeconds": 120,
+      "rubricCriteria": [
+        "Full 2-minute sustained narrative",
+        "Discourse markers across stages",
+        "Vivid specific vocabulary",
+        "Tenses accuracy across past & present reflection"
+      ],
+      "sortIndex": 84
+    },
+    {
+      "id": "IELTS-A-02-Q085",
+      "section": "SPEAKING",
+      "taskType": "SPEAKING_RESPONSE",
+      "prompt": "Examiner Part 3 (Heritage vs Urban Density — 4–5 min): Old stone architecture often stands on valuable central land. How can city planners balance historic character with urgent affordable housing density, and should taxpayers fund structural retrofits of privately owned heritage facades?",
+      "options": [],
+      "answer": "",
+      "acceptedAnswers": [],
+      "explanation": "Part 3 menuntut abstraksi gagasan tingkat masyarakat: pakai hedging ('on balance', 'tends to'), kontras dua sisi, dan alasan sebab-akibat analitis.",
+      "rationaleSource": "IELTS-MOD-10",
+      "difficulty": "C1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS02-SP3",
+      "prepSeconds": 10,
       "speakSeconds": 60,
       "rubricCriteria": [
-        "Balanced analysis",
-        "Coherence",
-        "Precision",
-        "Fluency"
+        "Abstract analytical reasoning",
+        "Hedging & nuanced stance",
+        "Complex clause variety",
+        "Natural pronunciation under cognitive load"
       ],
-      "sortIndex": 12
+      "sortIndex": 85
     }
   ],
-  "checksum": "24c4bc4befd775b614bf86e8a590ff2596c589527b446ed6d65967b177354028"
+  "checksum": "9fe7934e873908056449c5974a240b6a1b4508c07e591689c2f4a021a21f0d80"
 }

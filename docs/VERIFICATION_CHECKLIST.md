@@ -1,17 +1,22 @@
 # Checklist Verifikasi Implementasi — English Prep AI
 
-Status: Diverifikasi aktual pada **2026-11-16** (JVM + Robolectric + Lint + Debug APK + Perangkat Fisik `SM-G988B` Android 13 `arm64-v8a`).
+Status: Diverifikasi aktual pada **2026-11-16** (`v1.1.0` / `versionCode = 2` — JVM + Robolectric + Lint + Debug APK + R8 Release APK + Perangkat Fisik `SM-G988B` Android 13 `arm64-v8a`).
 
 ## 1. Spec-Driven Development & Arsitektur
-- [x] **Spec Kit** terpasang & terisi: `.specify/memory/constitution.md`, `specs/001`..`007` (`spec.md`, `plan.md`, `tasks.md`, `acceptance.md`).
-- [x] **BMAD Reviews**: `docs/reviews/bmad-{analyst-goals,architect-choices,ux-journeys,qa-coverage,security-devsecops,release-docs,epic-closure}.md`.
-- [x] **QA & SBOM Traceability Ledger**: `docs/qa/EPIC_STATUS.md` & `docs/qa/LICENSE_AND_SBOM_AUDIT.md` (menilai jujur item terverifikasi vs item yang memerlukan bobot `.litertlm`/`.onnx` eksternal atau penulisan full-pack 140/120/85 butir).
+- [x] **Spec Kit** terpasang & terisi: `.specify/memory/constitution.md`, `specs/001`..`008` (`spec.md`, `plan.md`, `tasks.md`, `acceptance.md`).
+- [x] **BMAD Reviews**: `docs/reviews/bmad-{analyst-goals,architect-choices,ux-journeys,qa-coverage,security-devsecops,release-docs,epic-closure,material-bank-full-packs}.md`.
+- [x] **QA & SBOM Traceability Ledger**: `docs/qa/EPIC_STATUS.md` & `docs/qa/LICENSE_AND_SBOM_AUDIT.md` (menilai jujur item terverifikasi vs item yang memerlukan bobot `.litertlm`/`.onnx` eksternal, Switch Access fisik, atau tinjauan ahli manusia untuk bank soal baru).
 - [x] **Clean MVVM + UDF + Single `:app` Module**: `ui -> domain <- data`, Hilt DI (`DatabaseModule`, `RepositoryModule`), DRY/KISS/SOLID/YAGNI/Ponytail.
 
-## 2. Materi, Soal Tryout & Media Offline
-- [x] **Susunan Materi Lengkap**: 18 modul terstruktur (`ITP-MOD-01..06`, `IBT-MOD-01..06`, `IELTS-MOD-01..06`) + 54 soal drill interaktif (`content/CURRICULUM.md`, `curriculum.json`).
-- [x] **5 Paket Soal per Jenis Tes (15 Paket Total)**: `ITP-L1-01..05`, `IBT26-01..05`, `IELTS-A-01..05` (total 180 butir soal orisinal) dengan label jujur `Sample • 12/<blueprint> soal`.
-- [x] **Audio Listening Offline**: 62 berkas WAV 16 kHz mono (`23.70 MB`) disintesis dan diuji putar offline lewat Media3 ExoPlayer `1.5.1`.
+## 2. Material Bank, Materi Lengkap & 15 Paket Soal Tryout Penuh
+- [x] **Bank Materi PDF Offline (`material_bank/`)**: 17 PDF terverifikasi (1.652 halaman, `10` OER CC-BY/Public Domain ter-commit + `7` dokumen referensi resmi ETS/IELTS lokal via `.gitignore`) diekstrak ke `material_bank/extracted/*.md` dan `app/src/main/assets/material_bank/material_bank.json` (`31` entri studi + FTS4 RAG + pembaca di tab **Materi**).
+- [x] **Susunan Materi Lengkap**: 30 modul terstruktur (`ITP-MOD-01..10`, `IBT-MOD-01..10`, `IELTS-MOD-01..10`) + 90 soal drill interaktif (`content/CURRICULUM.md`, `curriculum.json`).
+- [x] **5 Paket Soal Penuh per Jenis Tes (15 Paket `READY`, 1.725 Butir)**:
+  - TOEFL ITP Level 1 (`ITP-L1-01..05`): 5 x 140 = **700 butir** (`50` Listening, `40` Structure/WE, `50` Reading, `115` menit).
+  - TOEFL iBT 2026 (`IBT26-01..05`): 5 x 120 = **600 butir** (`50` Reading, `47` Listening, `12` Writing, `11` Speaking, `90` menit).
+  - IELTS Academic (`IELTS-A-01..05`): 5 x 85 = **425 butir** (`40` Listening, `40` Reading, `2` Writing, `3` Speaking Parts, `165` menit).
+- [x] **Audio Listening Offline (IMA-ADPCM)**: 390 berkas WAV 16 kHz mono terkompresi MS IMA-ADPCM (`57.00 MB`) diputar lokal lewat Media3 ExoPlayer `1.5.1` (`ImaAdPcmOutputWriter`) dengan kontinuitas audio antarmulti-soal satu rekaman.
+- [x] **Navigator Soal 140 Item**: `QuestionNavigatorSheetContent`scrollable berfilter seksi dengan target sentuh >=48dp.
 - [x] **Diferensiasi Tes**: TOEFL ITP Level 1 tidak memaksakan Speaking/Writing ke ujian inti; TOEFL iBT 2026 & IELTS Academic memisahkan skala & tipe tugas masing-masing.
 
 ## 3. Mesin Kuis, Audio, Speaking, Database & Analitik
@@ -38,12 +43,11 @@ Status: Diverifikasi aktual pada **2026-11-16** (JVM + Robolectric + Lint + Debu
 - [x] **Anti-AI-Slop & Micro-Interactions**: Desain editorial tenang beraksen *deep teal*, transisi `NavHost` + `AnimatedContent` antar soal + sorotan opsi animatif `SelectableOptionRow`, kontrol `hapticsEnabled` & *reduce motion* terhubung di `SemanticStatusColors`, tanpa gradien mencolok, tanpa deretan chip di atas pesan Chat, tanpa tombol mengambang di layar ujian, `imePadding()`, target sentuh `>=48dp`, *font scale* `2.0x` teruji.
 - [x] **Izin & Offline-First**: `dumpsys package` memastikan `android.permission.INTERNET` **tidak** diminta (`RECORD_AUDIO`, `POST_NOTIFICATIONS`, `WAKE_LOCK`, `ACCESS_NETWORK_STATE`, `RECEIVE_BOOT_COMPLETED` saja); `RECORD_AUDIO` dan `POST_NOTIFICATIONS` diminta just-in-time.
 - [x] **Hasil Pengujian Terakhir**:
-  - `.\gradlew.bat testDebugUnitTest`: **34/34 lulus** (0 gagal, 0 error, 0 dilewati — termasuk `ToeflSessionFlowIntegrationTest`, `RoomIntegrityAndRecoveryTest`, `SecurityHardeningTest`, dan 8 `UiAndAccessibilityTest`).
+  - `.\gradlew.bat testDebugUnitTest`: **36/36 lulus** (0 gagal, 0 error, 0 dilewati — termasuk `AssetSeederAndFtsTest` untuk 30 modul/15 paket `1,725` soal/Material Bank/upgrade DB, `ToeflSessionFlowIntegrationTest` untuk ITP 140 + iBT 120 + IELTS 85, `RoomIntegrityAndRecoveryTest`, `SecurityHardeningTest`, dan 10 Compose `UiAndAccessibilityTest`).
   - `.\gradlew.bat lintDebug`: **0 error**, 78 warning.
-  - `.\gradlew.bat assembleDebug` (`174,932,472` byte) & `.\gradlew.bat assembleRelease` (`154,405,955` byte — **menyusut ~20.5 MB via R8 + shrinkResources**): **sukses** dengan `mapping.txt` terverifikasi.
-  - Uji perangkat fisik (`SM-G988B`, Android 13 `arm64-v8a`): R8 Release (`195–366 ms` cold start) memverifikasi Home polish, Bookmark & Last Read modul, Sample strict guard, Audio Media3 + transkrip mode Latihan, dialog konfirmasi belum dijawab, `ResultsScreen` skor mentah (`Skor Mentah: 7/12 (58%)` + `Dilewati: 1` + `v1.1-raw-deterministic`), `ProgressScreen` (`58%`, modul lemah `ITP-MOD-02..05`), dan status R8 tanpa crash di `logcat`.
+  - `.\gradlew.bat assembleDebug` (`210,216,727` byte / `200.5 MB`) & `.\gradlew.bat assembleRelease` (`189,804,162` byte / `181.0 MB` — **menyusut ~20.4 MB via R8 + shrinkResources**): **sukses** dengan `mapping.txt` terverifikasi.
+  - Uji perangkat fisik (`SM-G988B`, Android 13 `arm64-v8a`): instalasi upgrade `v1.1.0` (`versionCode = 2`) R8 Release mengonfirmasi preservasi riwayat belajar lama, `Ready • 140 soal` (`Full Mock Strict`), pemutaran audio MS IMA-ADPCM (`00:04 / 00:11`), navigator 140 soal berfilter seksi melompat ke `Soal 91/140` Reading, pembaca Bank Materi OER PDF (`13-material-bank-oer.png`), serta nol crash di `logcat`.
 
-## 7. Repository GitHub, README & Release (`specs/006`)
-- [x] **Repository GitHub (`gh`)**: `https://github.com/Adrian463588/EnglishPrepAI` (publik, branch default `main`), terisi deskripsi resmi & 15 topics (`android`, `jetpack-compose`, `kotlin`, `toefl`, `ielts`, `offline-first`, `on-device-ai`, `gemma-4`, `whisper-onnx`, `r8-proguard`, `devsecops`, `clean-architecture`, `mvvm`, `room-database`, `spec-driven-development`).
-- [x] **README.md & Tangkapan Layar Real-Time**: Tautan unduhan + versi `v1.0.0` di bagian paling atas, rincian proyek, 11 tangkapan layar perangkat fisik `SM-G988B` (`docs/screenshots/*.png`), struktur direktori, arsitektur Mermaid, cara pakai/build, spesifikasi 17 entitas Room + DataStore beserta diagram ER Mermaid, serta checklist verifikasi.
-- [x] **GitHub Release `v1.0.0`**: Diterbitkan melalui `gh release create v1.0.0` dengan aset `EnglishPrepAI-v1.0.0-universal-debug.apk` (`174,821,885` byte, SHA-256 `FDBFD27005EF2CED76CC90C233F3806B0217996D9010DA9AC0775B118E0025E1`).
+## 7. Repository GitHub, README & Release (`specs/006`, `specs/008`)
+- [x] **Repository GitHub (`gh`)**: `https://github.com/Adrian463588/EnglishPrepAI` (publik, branch default `main`), deskripsi & topics terisi, 13 screenshot nyata `docs/screenshots/*.png`, `README.md` versi `v1.1.0`.
+- [x] **GitHub Release `v1.1.0`**: Diterbitkan melalui `gh release create v1.1.0` dengan aset `EnglishPrepAI-v1.1.0-universal-debug.apk` (`210,216,727` byte / `200.5 MB`, SHA-256 `A80E8F52F7FD1AAF8E6C6F1FC8ED9C6E11D18B1B27E6D9A91B2298627B0F931F`).

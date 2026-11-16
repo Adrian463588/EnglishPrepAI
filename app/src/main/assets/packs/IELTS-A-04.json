@@ -1,155 +1,1094 @@
 {
   "schemaVersion": 1,
   "exam": "IELTS_ACADEMIC",
-  "edition": "2026.1",
+  "edition": "2026.2",
   "packId": "IELTS-A-04",
-  "title": "IELTS Paket 4 — Behavioral Science, Heritage & Adaptation",
-  "theme": "Spatial memory maps, museum acoustics, multi-metric summaries, and opinion essays.",
-  "status": "SAMPLE",
+  "title": "IELTS Paket 4 — Ancient Trade, Bioacoustics & Reflective Cities",
+  "theme": "Full 85-item IELTS Academic simulation covering Lab Access, Woodland Bridge, Soil Microbiome, Glacial Mills, Roman Levantine Glass, Coral Playback & Thermochromic Roofs.",
+  "status": "READY",
   "blueprintCount": 85,
-  "availableCount": 12,
-  "durationMinutes": 35,
+  "availableCount": 85,
+  "durationMinutes": 165,
   "blueprintDurationMinutes": 165,
   "license": "Original",
   "provenance": "EnglishPrepAI-Original-2026",
   "passages": [
     {
       "id": "IELTS04-P1",
-      "title": "Wayfinding Without Screens: How Spatial Memory Strengthens",
-      "body": "Paragraph A: Turn-by-turn satellite navigation trims wrong turns on unfamiliar highways, yet neuroscientists warn constant reliance leaves commuters with fragmented mental maps. In controlled maze and city-walk experiments, drivers following voice prompts recalled fewer side-street junctions afterward than peers navigating from brief landmark briefings.\n\nParagraph B: Dr. Priya Subramanian found hippocampal blood flow dropped measurably when GPS directions automated every turn, whereas manual route planning activated spatial grid cells tied to long-term orientation. Interestingly, glancing at a static overview map before departure preserved high spatial recall even when participants kept backup navigation silenced inside a pocket.",
+      "title": "Shipping Raw Roman Glass Across the Mediterranean",
+      "body": "Paragraph A: Archaeologists excavating ancient stone ruins across Britain, Gaul, and North Africa routinely assumed early glassblowers melted local river sand right inside dozens of scattered provincial town workshops. Tiny crucible fragments near Roman bathhouses reinforced that tidy decentralized picture.\n\nParagraph B: Chemical trace-element isotopes from blown cups across forty European towns contradicted this assumption completely. Practically all clear blue-green early Imperial glassware shared an unmistakable chemical signature matching pure silica sand dug exclusively along Israel's narrow Belus River coast combined with alkaline Egyptian natron lake salts.\n\nParagraph C: Excavations beside Levantine coastal hills eventually exposed huge tank furnaces measuring six meters square that fired ten tons of raw colorless slabs in single continuous multi-week burns. Workers smashed cooled translucent glass cakes into jagged cobalt-tinted chunks called 'cullet' using iron hammers before crating tons onto Mediterranean cargo vessels.\n\nParagraph D: Secondary European artisans living two thousand kilometers northwest never smelted raw coastal sand themselves; instead, compact urban workshops simply remelted imported raw Egyptian-Levantine slabs in low wood-fired reheating pots requiring barely nine hundred degrees—saving vast charcoal firewood supplies while crafting delicate perfume flasks cleanly on demand.\n\nParagraph E: Surprisingly, even broken Roman household tavern goblets re-entered regional trade loops cleanly via dockside glass-recycling barrels, cutting furnace energy expenditure by a third whenever European cargo fleets encountered winter Mediterranean storms.",
       "readingOrder": 1
+    },
+    {
+      "id": "IELTS04-P2",
+      "title": "Listening Underwater to Heal Silent Tropical Coral Reefs",
+      "body": "Paragraph A: Healthy tropical coral reefs burst noisily like crackling midnight campfires underwater: snapping shrimp flick spring-loaded claws loudly while damselfish grunt territory warnings across sunlit branching limestone ridges.\n\nParagraph B: Following destructive underwater heatwaves that bleach corals chalk-white, devastated seabed gardens fall hauntingly mute—losing acoustic beacons that tiny free-swimming fish larvae drifting miles offshore rely upon when picking dark nighttime currents toward shelter.\n\nParagraph C: Marine bioacousticians moored weatherproof underwater loudspeaker reefs across bleached barrier sections in northern Queensland, replaying crisp acoustic recordings captured years earlier across thriving neighbor reefs for forty consecutive autumn nights.\n\nParagraph D: Night-net catches alongside visual diver surveys verified juvenile cardinalfish and butterflyfish settled onto acoustically enriched rubble plots at double the density observed beside silent identical dead coral reefs merely four hundred meters downstream.\n\nParagraph E: Researchers caution loudly that marine speakers supply zero temperature immunity alone; acoustic enrichment acts cleanly as a targeted biological catalyst strictly paired alongside water-quality safeguards and global climate emission curbs.",
+      "readingOrder": 2
+    },
+    {
+      "id": "IELTS04-P3",
+      "title": "Do Super-Reflective White Roofs Backfire Inside Cold Northern Cities?",
+      "body": "Paragraph A: Across sun-drenched Phoenix and Athens, coating dark asphalt flat roofs in dazzling titanium-white elastomeric paint slashes indoor air-conditioning bills noticeably—bouncing shortwave summer radiation promptly out into space before sticky black tar traps heat indoors.\n\nParagraph B: Excited urban sustainability mandates rushed quickly to replicate cool-roof laws nationwide—requiring new dark commercial warehouses across rainy Seattle, chilly Toronto, and misty Edinburgh to paint rooftops gleaming arctic white too.\n\nParagraph C: However, atmospheric building physicist Dr. Kenji Morita tracked paired brick office towers across Toronto and Berlin over thirty-six consecutive months and flagged an overlooked 'winter heating penalty': snowy white roofs bounce away weak low-angle February sunshine precisely when poorly insulated attics desperately crave free passive solar warmth, forcing natural gas boilers upward during damp freezing mornings.\n\nParagraph D: Furthermore, sticky downtown soot, rotting windblown maple leaves, and winter moss tarnish pristine white coatings across damp northern latitudes downward within eighteen rainy months—slashing lab-rated eighty-percent reflectance near plain weathered gray unless crews wash decks yearly.\n\nParagraph E: Forward-thinking material engineers now skip fixed seasonal extremes via dynamic thermochromic polymers—clear-gray tiles warming interiors cleanly under chilly ten-degree January fog yet turning brightly chalk-white automatically once roof skins reach twenty-eight degrees Celsius in July.",
+      "readingOrder": 3
     }
   ],
   "assets": [
     {
-      "id": "IELTS04-A01",
-      "relativePath": "audio/IELTS04-A01.wav",
+      "id": "IELTS04-LP1",
+      "relativePath": "audio/IELTS04-LP1.wav",
       "kind": "AUDIO",
-      "caption": "W: Welcome aboard! Normally volunteers check in at the Main Lobby, though painters are working there Saturday—please report to the West Wing Desk by 9:30 AM instead.",
+      "caption": "W: Hello, Botanical Heritage Volunteer Desk—Rachel speaking! M: Hi Rachel, I signed up for next Thursday's dried fern labeling shift, and wanted to double-check my badge spelling before arriving. W: Sure—I see David Kowalski written neatly down, phone ending seven-two-five... wait, sorry, did our secretary flip seven-two-five to seven-five-two? M: Yes! Seven-five-two is right! Also, should volunteers start in Old Library Basement or Botany East Annex? W: Old Basement flooded slightly during winter pipes—so we relocated all filing trolleys directly into Room 318 inside Botany East Annex. Leave coffee flasks cleanly inside locker hallway B since liquids sit barred near herbarium glue. M: Smart rule! How long are Thursday evening shifts? W: Five-thirty through eight-fifteen PM, including complimentary warm chickpea soup wraps during our six-forty break—remember wear flat rubber soles over smooth waxed corridor stones.",
       "license": "Original",
-      "sha256": "a8de8437c33725a04a3a4a804d49d367ff38ae6a97f581e27862aec05fc45b49",
-      "byteSize": 344364,
-      "durationMs": 10760
+      "sha256": "9c1ad35836e3b9993e815533b139ed8c681d54307e47cb3d58b74d4ddc432ed5",
+      "byteSize": 548156,
+      "durationMs": 67555
     },
     {
-      "id": "IELTS04-A02",
-      "relativePath": "audio/IELTS04-A02.wav",
+      "id": "IELTS04-LP2",
+      "relativePath": "audio/IELTS04-LP2.wav",
       "kind": "AUDIO",
-      "caption": "M: Did the laptop group outperform note-takers because they typed twice as many words? W: Actually the reverse—students writing brief margin summaries by hand scored higher on conceptual synthesis questions.",
+      "caption": "W: Good morning tour leaders! Before opening our renovated Natural Sound Hall next Monday, walk cleanly through our four refreshed rooms. W: Entry Vestibule One features matte pale birch baffles specifically engineered to absorb noisy streetcar rumble outside—keeping gallery quiet near thirty-two decibels calmly! W: Step inside Tactile Chamber Two where visually impaired guests hold bronze whale baleen casts beside vibrating bone-conduction benches; remember tactile cards here print fresh Braille margins every Tuesday. W: Across Circular Rotunda Three, avoid letting groups shout upward beneath central plaster arches because curved marble spots bounce single coughs wildly into twelve-second focus echoes; finally exit steadily through Courtyard Four's sensory quiet garden stocked cleanly with shaded teak benches.",
       "license": "Original",
-      "sha256": "37ae30378503120ec144c73d90eef8dca1f98c7d84170b8247a3a35c98cfa6b3",
-      "byteSize": 409804,
-      "durationMs": 12805
+      "sha256": "6b8c0d86fb947536473db4ec6da471393c4268ae7d6c052f5a0e6a030b298ee3",
+      "byteSize": 412476,
+      "durationMs": 50835
     },
     {
-      "id": "IELTS04-A03",
-      "relativePath": "audio/IELTS04-A03.wav",
+      "id": "IELTS04-LP3",
+      "relativePath": "audio/IELTS04-LP3.wav",
       "kind": "AUDIO",
-      "caption": "M: Because harsh chemical brushes can etch ancient marble carvings, museum conservators calibrate millisecond laser pulses that vaporize dark urban soot crusts instantly while leaving pale white stone untouched.",
+      "caption": "M: Dr. Nair, Tariq and I coded feedback from sixty first-time Natural History visitors testing new audio smartphone guides against classic folded paper pocket maps. W: Interesting match-up! Tell me—did younger phone users find the dinosaur fossil wings noticeably faster than folded map readers? M: Unexpected twist actually! Smartphone GPS drifted erratically inside granite lower basement walls, sending screen-gazing walkers cleanly past unmarked stairwell alcoves—whereas clean high-contrast folding paper sheets oriented ninety percent swiftly on turn one! W: Aha! What happened inside wide crowded mammal halls upstairs though, where visitors struggled linking Latin skeletons cleanly to short stories? M: Right—paired audio playback triggered purely by numeric plaque codes shone brilliantly upstairs! Guests loved tapping numbers while looking straight at tusks rather than squinting past tiny folded wall print. Wait—Dr. Rao noted elderly guests found small earphone tips fiddly though. W: Totally fair caveat! Recommend dual design cleanly in your abstract: crisp pocket paper floorplans for rapid wayfinding plus tactile large keypad wands alongside clean Bluetooth phone streaming.",
       "license": "Original",
-      "sha256": "895d04a48cb0733ab51abe4c63bad8c2a377982de2458f33c85d90afb8a5f932",
-      "byteSize": 407564,
-      "durationMs": 12735
+      "sha256": "71b6dface50af35963131036a609891c4c06c1537cdec291fe14dc776a9b68cc",
+      "byteSize": 656188,
+      "durationMs": 80870
+    },
+    {
+      "id": "IELTS04-LP4",
+      "relativePath": "audio/IELTS04-LP4.wav",
+      "kind": "AUDIO",
+      "caption": "M: Step below shallow tropical coral reefs holding an underwater hydrophone and listen carefully: forget silent underwater deserts—you immediately hear roaring constant bacon-sizzling static! M: Most of that ceaseless crackle stems not from crashing stones, but tiny five-centimeter snapping shrimp flexing specialized asymmetrical oversized piston claws shut at thirty meters per second—collapsing tiny vacuum cavitation vapor bubbles with deafening micro-shockwaves! M: Notice an unexpected coastal application: pelagic oyster and barnacle free-swimming larvae actively steer miles shoreward following dense snapping-shrimp reef noise beacons back toward healthy hard rocky beds—meaning degraded bleached dead reefs turn eerily mute and stop attracting fresh babies. M: Coastal biologists recently placed durable waterproof reef loudspeakers broadcasting healthy archival coral soundtracks across barren sand rubble patches, doubling baby oyster settlement rates smoothly within single tidal seasons!",
+      "license": "Original",
+      "sha256": "05d5b4b0b3037aef3bc5e0e1adfc4c12766d8e41a5d6c9963770140a16da499f",
+      "byteSize": 503868,
+      "durationMs": 62095
+    },
+    {
+      "id": "IELTS04-SP1",
+      "relativePath": "audio/IELTS04-SP1.wav",
+      "kind": "AUDIO",
+      "caption": "W: Welcome. Let's talk about local weather and routines. Which season feels easiest for outdoor study in your town, how does heavy sudden rain affect weekend travel plans there, and do people dress mainly for comfort or formal tradition?",
+      "license": "Original",
+      "sha256": "4a691b322358284df7e12fd8b75b4ee2bfa948ff191e7f2c6420f8f9bf7816d5",
+      "byteSize": 127804,
+      "durationMs": 15730
+    },
+    {
+      "id": "IELTS04-SP2",
+      "relativePath": "audio/IELTS04-SP2.wav",
+      "kind": "AUDIO",
+      "caption": "W: Here is your Part 2 topic card. You now have one minute to prepare notes before speaking cleanly for up to two minutes.",
+      "license": "Original",
+      "sha256": "e01ffacc8768be717630131e40c66950d9a34af29a9175671dbef8f81c03162d",
+      "byteSize": 65596,
+      "durationMs": 8055
+    },
+    {
+      "id": "IELTS04-SP3",
+      "relativePath": "audio/IELTS04-SP3.wav",
+      "kind": "AUDIO",
+      "caption": "W: Smaller circles often settle disagreements face-to-face, yet citywide referendums can harden opposing camps. Why do technical compromises work smoothly in workshops yet stall on televised public panels, and should citizens' assemblies help set local environmental budgets?",
+      "license": "Original",
+      "sha256": "49fbd1ee1d8f1cc2af57f7347e10b691206a8a2d56fb334cf153aee9a93af8e3",
+      "byteSize": 143932,
+      "durationMs": 17710
     }
   ],
   "items": [
     {
-      "id": "IELTS-A-04-Q01",
+      "id": "IELTS-A-04-Q001",
       "section": "LISTENING",
       "taskType": "FILL_BLANK",
-      "prompt": "Listening Part 1 (NO MORE THAN TWO WORDS AND/OR A NUMBER): 'Museum Volunteer Orientation — Report to the ___ Desk by 9:30 AM.'",
+      "prompt": "Listening Part 1 (Community Herbarium Specimen Cataloging Call — Q1): NUMBER ONLY: 'Corrected telephone ending for David Kowalski: ...___'",
       "options": [],
-      "answer": "West Wing",
+      "answer": "752",
       "acceptedAnswers": [
-        "west wing",
-        "west"
+        "752"
       ],
-      "explanation": "Pustakawan menyebut Main Lobby penuh renovasi sehingga orientasi pindah ke West Wing Desk.",
+      "explanation": "Ia membetulkan angka tujuh-dua-lima menjadi tujuh-lima-dua (752).",
       "rationaleSource": "IELTS-MOD-01",
       "difficulty": "B1",
       "points": 1,
       "license": "Original",
       "reviewStatus": "VERIFIED_ORIGINAL",
       "passageId": null,
-      "audioAssetId": "IELTS04-A01",
-      "maxWords": 2,
+      "audioAssetId": "IELTS04-LP1",
+      "maxWords": 1,
       "sortIndex": 1
     },
     {
-      "id": "IELTS-A-04-Q02",
+      "id": "IELTS-A-04-Q002",
       "section": "LISTENING",
-      "taskType": "CHOICE_SINGLE",
-      "prompt": "Listening Part 3: What surprise did the psychology students discover in their attention-span pilot study?",
-      "options": [
-        "Students taking handwritten margin notes recalled conceptual links better than laptop typists.",
-        "Laptop typists achieved higher scores on every conceptual question.",
-        "Silent rooms lowered reading speed by twenty percent.",
-        "Background alarms improved exam accuracy significantly."
-      ],
-      "answer": "Students taking handwritten margin notes recalled conceptual links better than laptop typists.",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 1 (Community Herbarium Specimen Cataloging Call — Q2): SPELLING CHECK (ONE WORD ONLY): 'Volunteer surname on schedule sheet: ___'",
+      "options": [],
+      "answer": "Kowalski",
       "acceptedAnswers": [
-        "Students taking handwritten margin notes recalled conceptual links better than laptop typists."
+        "kowalski"
       ],
-      "explanation": "Dialog menyoroti pencatat tangan lebih efektif menyarikan hubungan konsep dibanding pengetik verbatim di laptop.",
+      "explanation": "Nama keluarga yang dicatat adalah Kowalski.",
       "rationaleSource": "IELTS-MOD-01",
-      "difficulty": "B2",
+      "difficulty": "B1",
       "points": 1,
       "license": "Original",
       "reviewStatus": "VERIFIED_ORIGINAL",
       "passageId": null,
-      "audioAssetId": "IELTS04-A02",
+      "audioAssetId": "IELTS04-LP1",
+      "maxWords": 1,
       "sortIndex": 2
     },
     {
-      "id": "IELTS-A-04-Q03",
+      "id": "IELTS-A-04-Q003",
       "section": "LISTENING",
-      "taskType": "FILL_BLANK",
-      "prompt": "Listening Part 4 (ONE WORD ONLY): 'Conservators use gentle laser pulses to lift dark ___ crusts off marble sculptures without scratching stone.'",
-      "options": [],
-      "answer": "soot",
-      "acceptedAnswers": [
-        "soot"
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 1 (Community Herbarium Specimen Cataloging Call — Q3): Why were filing cabinets transferred out of the Old Library Basement?",
+      "options": [
+        "Electric lamps failed permanently in basement wings.",
+        "Minor winter water pipe leaks prompted relocation.",
+        "Herbarium glue smelled fiercely underground.",
+        "Basement wooden desks broke under fern folders."
       ],
-      "explanation": "Dosen menjelaskan pulsa laser mengangkat kerak jelaga ('soot') gelap tanpa menyentuh permukaan marmer.",
-      "rationaleSource": "IELTS-MOD-01",
+      "answer": "Minor winter water pipe leaks prompted relocation.",
+      "acceptedAnswers": [
+        "Minor winter water pipe leaks prompted relocation."
+      ],
+      "explanation": "Kebocoran pipa musim dingin membuat koleksi dipindahkan.",
+      "rationaleSource": "IELTS-MOD-07",
       "difficulty": "B2",
       "points": 1,
       "license": "Original",
       "reviewStatus": "VERIFIED_ORIGINAL",
       "passageId": null,
-      "audioAssetId": "IELTS04-A03",
-      "maxWords": 1,
+      "audioAssetId": "IELTS04-LP1",
       "sortIndex": 3
     },
     {
-      "id": "IELTS-A-04-Q04",
-      "section": "READING",
-      "taskType": "CHOICE_SINGLE",
-      "prompt": "Passage 1 ('Wayfinding Without Screens'): 'People following voice GPS directions remember more side-street intersections than landmark navigators.' -> TRUE, FALSE, or NOT GIVEN?",
-      "options": [
-        "TRUE",
-        "FALSE",
-        "NOT GIVEN"
-      ],
-      "answer": "FALSE",
+      "id": "IELTS-A-04-Q004",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 1 (Community Herbarium Specimen Cataloging Call — Q4): NUMBER ONLY: 'Room number housing relocated filing carts in Botany East Annex: Room ___'",
+      "options": [],
+      "answer": "318",
       "acceptedAnswers": [
-        "FALSE"
+        "318"
       ],
-      "explanation": "Paragraf A menyatakan pengemudi yang mengikuti GPS suara mengingat LEBIH SEDIKIT persimpangan jalan kecil ('recalled fewer side-street junctions').",
-      "rationaleSource": "IELTS-MOD-02",
+      "explanation": "Lokasi baru berada di Ruang 318, Botany East Annex.",
+      "rationaleSource": "IELTS-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS04-LP1",
+      "maxWords": 1,
+      "sortIndex": 4
+    },
+    {
+      "id": "IELTS-A-04-Q005",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 1 (Community Herbarium Specimen Cataloging Call — Q5): ONE WORD ONLY: 'Hallway letter where volunteers lock drinking flasks: Locker Hallway ___'",
+      "options": [],
+      "answer": "B",
+      "acceptedAnswers": [
+        "b",
+        "B"
+      ],
+      "explanation": "Botol minum harus disimpan di loker koridor B.",
+      "rationaleSource": "IELTS-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS04-LP1",
+      "maxWords": 1,
+      "sortIndex": 5
+    },
+    {
+      "id": "IELTS-A-04-Q006",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 1 (Community Herbarium Specimen Cataloging Call — Q6): Why are drinks forbidden inside Room 318 worktables?",
+      "options": [
+        "Steel trolleys rust instantly near plastic water cups.",
+        "Room tables run short electrical scanners.",
+        "Preventing liquid spills near priceless paper herbarium glue mounts.",
+        "Chickpea soup wraps attract hungry winter moths cleanly."
+      ],
+      "answer": "Preventing liquid spills near priceless paper herbarium glue mounts.",
+      "acceptedAnswers": [
+        "Preventing liquid spills near priceless paper herbarium glue mounts."
+      ],
+      "explanation": "Larangan cairan melindungi lembar herbarium dan lem kertas berharga.",
+      "rationaleSource": "IELTS-MOD-07",
       "difficulty": "B2",
       "points": 1,
       "license": "Original",
       "reviewStatus": "VERIFIED_ORIGINAL",
-      "passageId": "IELTS04-P1",
-      "audioAssetId": null,
-      "sortIndex": 4
+      "passageId": null,
+      "audioAssetId": "IELTS04-LP1",
+      "sortIndex": 6
     },
     {
-      "id": "IELTS-A-04-Q05",
+      "id": "IELTS-A-04-Q007",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 1 (Community Herbarium Specimen Cataloging Call — Q7): TIME ONLY: 'Thursday evening volunteer shift finish time: ___ PM'",
+      "options": [],
+      "answer": "8:15",
+      "acceptedAnswers": [
+        "8:15",
+        "8.15",
+        "eight-fifteen"
+      ],
+      "explanation": "Jadwal berakhir pukul 20.15.",
+      "rationaleSource": "IELTS-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS04-LP1",
+      "maxWords": 1,
+      "sortIndex": 7
+    },
+    {
+      "id": "IELTS-A-04-Q008",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 1 (Community Herbarium Specimen Cataloging Call — Q8): ONE WORD ONLY: 'Warm vegetarian break snack provided at six-forty: ___ soup'",
+      "options": [],
+      "answer": "chickpea",
+      "acceptedAnswers": [
+        "chickpea"
+      ],
+      "explanation": "Konsumsi istirahat malam adalah sup buncis arab ('chickpea soup').",
+      "rationaleSource": "IELTS-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS04-LP1",
+      "maxWords": 1,
+      "sortIndex": 8
+    },
+    {
+      "id": "IELTS-A-04-Q009",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 1 (Community Herbarium Specimen Cataloging Call — Q9): Which footwear safety tip is emphasized along East Annex corridors?",
+      "options": [
+        "Putting clean green rubber workshop boots cleanly on.",
+        "Removing heavy shoes inside locker hallway B.",
+        "Wearing hard aluminum steel-toed mountaineering cleats.",
+        "Wearing slip-resistant flat rubber soles across slick waxed floors."
+      ],
+      "answer": "Wearing slip-resistant flat rubber soles across slick waxed floors.",
+      "acceptedAnswers": [
+        "Wearing slip-resistant flat rubber soles across slick waxed floors."
+      ],
+      "explanation": "Sepatu bersol karet datar mencegah tergelincir di lantai koridor licin berlapis lilin.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS04-LP1",
+      "sortIndex": 9
+    },
+    {
+      "id": "IELTS-A-04-Q010",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 1 (Community Herbarium Specimen Cataloging Call — Q10): NO MORE THAN TWO WORDS: 'Type of pressed specimens volunteers label Thursday: dried ___'",
+      "options": [],
+      "answer": "ferns",
+      "acceptedAnswers": [
+        "ferns",
+        "dried ferns"
+      ],
+      "explanation": "Kegiatan berfokus melabeli spesimen pakis kering ('dried ferns').",
+      "rationaleSource": "IELTS-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS04-LP1",
+      "maxWords": 2,
+      "sortIndex": 10
+    },
+    {
+      "id": "IELTS-A-04-Q011",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 2 (Museum Acoustic Gallery Accessibility Briefing — Q11): NUMBER ONLY (dB): 'Low background decibel ambient target inside matte Vestibule One: ___ decibels'",
+      "options": [],
+      "answer": "32",
+      "acceptedAnswers": [
+        "32",
+        "thirty-two"
+      ],
+      "explanation": "Target kebisingan latar ruang depan ditekan ke ~32 desibel.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS04-LP2",
+      "maxWords": 1,
+      "sortIndex": 11
+    },
+    {
+      "id": "IELTS-A-04-Q012",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 2 (Museum Acoustic Gallery Accessibility Briefing — Q12): ONE WORD ONLY: 'Wood species lining front vestibule baffles: pale ___'",
+      "options": [],
+      "answer": "birch",
+      "acceptedAnswers": [
+        "birch"
+      ],
+      "explanation": "Penyekat kayu memakai kayu birch pucat ('pale birch').",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS04-LP2",
+      "maxWords": 1,
+      "sortIndex": 12
+    },
+    {
+      "id": "IELTS-A-04-Q013",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 2 (Museum Acoustic Gallery Accessibility Briefing — Q13): Which outdoor noise source is Entry Vestibule One designed specifically to filter out?",
+      "options": [
+        "Coastal helicopter engines landing nearby.",
+        "Indoor courtyard teak waterfalls loudly.",
+        "Subterranean subway bell sirens.",
+        "Passing city streetcar rumble outside main doors."
+      ],
+      "answer": "Passing city streetcar rumble outside main doors.",
+      "acceptedAnswers": [
+        "Passing city streetcar rumble outside main doors."
+      ],
+      "explanation": "Merendam deru trem jalan raya tepat di pintu masuk.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS04-LP2",
+      "sortIndex": 13
+    },
+    {
+      "id": "IELTS-A-04-Q014",
+      "section": "LISTENING",
+      "taskType": "MATCHING",
+      "prompt": "Listening Part 2 (Museum Acoustic Gallery Accessibility Briefing — Q14): Match each Sound Hall Zone to its distinctive visitor trait:",
+      "options": [],
+      "answer": "Vestibule One::Damps noisy outside traffic|Tactile Chamber Two::Holds bronze whale tactile casts|Circular Rotunda Three::Produces curved marble echo focal spots",
+      "acceptedAnswers": [
+        "Vestibule One::Damps noisy outside traffic|Tactile Chamber Two::Holds bronze whale tactile casts|Circular Rotunda Three::Produces curved marble echo focal spots"
+      ],
+      "explanation": "Cocokkan fungsi unik ruang satu, dua, dan tiga sesuai tur audio.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS04-LP2",
+      "pairs": [
+        {
+          "left": "Vestibule One",
+          "rightOptions": [
+            "Damps noisy outside traffic",
+            "Holds bronze whale tactile casts",
+            "Produces curved marble echo focal spots",
+            "Offers quiet teak outdoor garden seating"
+          ]
+        },
+        {
+          "left": "Tactile Chamber Two",
+          "rightOptions": [
+            "Damps noisy outside traffic",
+            "Holds bronze whale tactile casts",
+            "Produces curved marble echo focal spots",
+            "Offers quiet teak outdoor garden seating"
+          ]
+        },
+        {
+          "left": "Circular Rotunda Three",
+          "rightOptions": [
+            "Damps noisy outside traffic",
+            "Holds bronze whale tactile casts",
+            "Produces curved marble echo focal spots",
+            "Offers quiet teak outdoor garden seating"
+          ]
+        }
+      ],
+      "sortIndex": 14
+    },
+    {
+      "id": "IELTS-A-04-Q015",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 2 (Museum Acoustic Gallery Accessibility Briefing — Q15): ONE WORD ONLY: 'Tactile raised-dot printing updated weekly every Tuesday: ___'",
+      "options": [],
+      "answer": "Braille",
+      "acceptedAnswers": [
+        "braille"
+      ],
+      "explanation": "Kartu sentuh berhuruf Braille diperbarui tiap Selasa.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS04-LP2",
+      "maxWords": 1,
+      "sortIndex": 15
+    },
+    {
+      "id": "IELTS-A-04-Q016",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 2 (Museum Acoustic Gallery Accessibility Briefing — Q16): How can blind or low-vision guests experience sound sensations inside Chamber Two?",
+      "options": [
+        "Via gentle vibrations pulsing straight through specialized bone-conduction benches.",
+        "By reading microscopic visual graphs clipped onto birch railings.",
+        "By clapping swiftly below curved marble skylights.",
+        "Listening through noisy hallway streetcar open windows."
+      ],
+      "answer": "Via gentle vibrations pulsing straight through specialized bone-conduction benches.",
+      "acceptedAnswers": [
+        "Via gentle vibrations pulsing straight through specialized bone-conduction benches."
+      ],
+      "explanation": "Bangku konduksi tulang menghantarkan getaran bunyi secara taktil.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS04-LP2",
+      "sortIndex": 16
+    },
+    {
+      "id": "IELTS-A-04-Q017",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 2 (Museum Acoustic Gallery Accessibility Briefing — Q17): NUMBER ONLY (seconds): 'Echo linger time measured directly beneath curved Rotunda Three ceilings: ___ seconds'",
+      "options": [],
+      "answer": "12",
+      "acceptedAnswers": [
+        "12",
+        "twelve"
+      ],
+      "explanation": "Pantulan fokus kubah marmer menciptakan gema hingga 12 detik.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS04-LP2",
+      "maxWords": 1,
+      "sortIndex": 17
+    },
+    {
+      "id": "IELTS-A-04-Q018",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 2 (Museum Acoustic Gallery Accessibility Briefing — Q18): Why do docents ask groups to speak softly below Rotunda Three's center dome?",
+      "options": [
+        "Braille cards shake sideways off bronze shelves.",
+        "Bats roost silently beneath courtyard shaded eaves.",
+        "Concave curved surfaces focus even faint coughs sharply back down loudly.",
+        "Loud laughter peels white acoustic felt panels off arches."
+      ],
+      "answer": "Concave curved surfaces focus even faint coughs sharply back down loudly.",
+      "acceptedAnswers": [
+        "Concave curved surfaces focus even faint coughs sharply back down loudly."
+      ],
+      "explanation": "Geometri kubah cekung memusatkan gema batuk/teriakan secara ekstrem.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS04-LP2",
+      "sortIndex": 18
+    },
+    {
+      "id": "IELTS-A-04-Q019",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 2 (Museum Acoustic Gallery Accessibility Briefing — Q19): ONE WORD ONLY: 'Durable hardwood material forming outdoor quiet Courtyard Four seats: ___ benches'",
+      "options": [],
+      "answer": "teak",
+      "acceptedAnswers": [
+        "teak"
+      ],
+      "explanation": "Bangku taman di halaman sunyi keempat terbuat dari kayu jati ('teak').",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS04-LP2",
+      "maxWords": 1,
+      "sortIndex": 19
+    },
+    {
+      "id": "IELTS-A-04-Q020",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 2 (Museum Acoustic Gallery Accessibility Briefing — Q20): On what day next week does the renovated Natural Sound Hall open officially?",
+      "options": [
+        "Next Monday.",
+        "Wednesday morning.",
+        "Tomorrow at noon.",
+        "Last Friday evening."
+      ],
+      "answer": "Next Monday.",
+      "acceptedAnswers": [
+        "Next Monday."
+      ],
+      "explanation": "Pembukaan resmi aula berlangsung Senin mendatang.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS04-LP2",
+      "sortIndex": 20
+    },
+    {
+      "id": "IELTS-A-04-Q021",
+      "section": "LISTENING",
+      "taskType": "CHOICE_MULTI",
+      "prompt": "Listening Part 3 (Museum Visitor Spatial-Map & Audio Guide Study — Q21): Choose TWO verified weaknesses observed when relying exclusively on smartphone indoor wayfinding:",
+      "options": [
+        "Indoor granite walls degraded indoor GPS position accuracy",
+        "Visitors staring down at screens missed subtle side stairwell exits",
+        "Ninety percent of paper sheets tore before reaching lobby doors",
+        "Audio clips froze above two hundred visitors"
+      ],
+      "answer": "Indoor granite walls degraded indoor GPS position accuracy|Visitors staring down at screens missed subtle side stairwell exits",
+      "acceptedAnswers": [
+        "Indoor granite walls degraded indoor GPS position accuracy|Visitors staring down at screens missed subtle side stairwell exits"
+      ],
+      "explanation": "Dinding granit mengganggu GPS dalam ruang dan pengunjung yang menunduk ke layar kerap melewatkan tangga sudut.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS04-LP3",
+      "sortIndex": 21
+    },
+    {
+      "id": "IELTS-A-04-Q022",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 3 (Museum Visitor Spatial-Map & Audio Guide Study — Q22): NUMBER ONLY (%): 'Share of folded paper-map holders orienting swiftly at turn one: ___%'",
+      "options": [],
+      "answer": "90",
+      "acceptedAnswers": [
+        "90",
+        "ninety"
+      ],
+      "explanation": "Sebanyak 90% pengguna peta lipat kertas langsung menemukan arah belokan pertama.",
+      "rationaleSource": "IELTS-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS04-LP3",
+      "maxWords": 1,
+      "sortIndex": 22
+    },
+    {
+      "id": "IELTS-A-04-Q023",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 3 (Museum Visitor Spatial-Map & Audio Guide Study — Q23): In which museum task did audio guides clearly outperform compact printed cards cleanly?",
+      "options": [
+        "Folding sturdy cardboard souvenir boxes.",
+        "Listening to rich storytelling upstairs while keeping eyes fixed directly onto tall skeleton displays.",
+        "Navigating winding granite basement corridors toward coat rooms.",
+        "Calculating gift-shop ticket pricing discounts cleanly."
+      ],
+      "answer": "Listening to rich storytelling upstairs while keeping eyes fixed directly onto tall skeleton displays.",
+      "acceptedAnswers": [
+        "Listening to rich storytelling upstairs while keeping eyes fixed directly onto tall skeleton displays."
+      ],
+      "explanation": "Panduan audio unggul di galeri mamalia atas karena pengunjung dapat tetap menatap kerangka fosil sembari mendengar cerita.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS04-LP3",
+      "sortIndex": 23
+    },
+    {
+      "id": "IELTS-A-04-Q024",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 3 (Museum Visitor Spatial-Map & Audio Guide Study — Q24): What interaction input kept upstairs audio triggers quick and effortless for users?",
+      "options": [
+        "Typing simple numeric wall-plaque codes rather than hunting indoor GPS menus.",
+        "Scanning shaky blurry QR stickers on glass ceiling lights.",
+        "Shouting Latin animal names into basement elevator mics.",
+        "Holding folded paper maps over infrared wall alarms."
+      ],
+      "answer": "Typing simple numeric wall-plaque codes rather than hunting indoor GPS menus.",
+      "acceptedAnswers": [
+        "Typing simple numeric wall-plaque codes rather than hunting indoor GPS menus."
+      ],
+      "explanation": "Menekan angka kode papan pameran langsung memutar audio secara presisi.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS04-LP3",
+      "sortIndex": 24
+    },
+    {
+      "id": "IELTS-A-04-Q025",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 3 (Museum Visitor Spatial-Map & Audio Guide Study — Q25): What usability limitation did Dr. Rao highlight among older museum guests?",
+      "options": [
+        "Grandparents disliked listening to dinosaur skeletal facts.",
+        "Pocket paper trail numbers measured way too big.",
+        "Upper staircases lacked sturdy handrails.",
+        "Small in-ear tip buds felt awkward or uncomfortable to adjust."
+      ],
+      "answer": "Small in-ear tip buds felt awkward or uncomfortable to adjust.",
+      "acceptedAnswers": [
+        "Small in-ear tip buds felt awkward or uncomfortable to adjust."
+      ],
+      "explanation": "Dr. Rao mencatat ujung earphone mungil sulit dipasang oleh pengunjung lanjut usia.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS04-LP3",
+      "sortIndex": 25
+    },
+    {
+      "id": "IELTS-A-04-Q026",
+      "section": "LISTENING",
+      "taskType": "MATCHING",
+      "prompt": "Listening Part 3 (Museum Visitor Spatial-Map & Audio Guide Study — Q26): Match each orientation tool to its standout museum strength or limit:",
+      "options": [],
+      "answer": "Printed pocket paper map::Instant indoor basement direction|Numeric-key audio playback::Seamless eyes-up storytelling|Tiny rubber earbuds::Fiddly physical ear-tip fit",
+      "acceptedAnswers": [
+        "Printed pocket paper map::Instant indoor basement direction|Numeric-key audio playback::Seamless eyes-up storytelling|Tiny rubber earbuds::Fiddly physical ear-tip fit"
+      ],
+      "explanation": "Ringkasan temuan uji banding peta vs panduan audio.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS04-LP3",
+      "pairs": [
+        {
+          "left": "Printed pocket paper map",
+          "rightOptions": [
+            "Instant indoor basement direction",
+            "Seamless eyes-up storytelling",
+            "Fiddly physical ear-tip fit"
+          ]
+        },
+        {
+          "left": "Numeric-key audio playback",
+          "rightOptions": [
+            "Instant indoor basement direction",
+            "Seamless eyes-up storytelling",
+            "Fiddly physical ear-tip fit"
+          ]
+        },
+        {
+          "left": "Tiny rubber earbuds",
+          "rightOptions": [
+            "Instant indoor basement direction",
+            "Seamless eyes-up storytelling",
+            "Fiddly physical ear-tip fit"
+          ]
+        }
+      ],
+      "sortIndex": 26
+    },
+    {
+      "id": "IELTS-A-04-Q027",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 3 (Museum Visitor Spatial-Map & Audio Guide Study — Q27): NUMBER ONLY: 'Total number of first-time museum visitors sampled across Tariq's trial: ___'",
+      "options": [],
+      "answer": "60",
+      "acceptedAnswers": [
+        "60",
+        "sixty"
+      ],
+      "explanation": "Studi mengodekan umpan balik 60 pengunjung baru pertama kali.",
+      "rationaleSource": "IELTS-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS04-LP3",
+      "maxWords": 1,
+      "sortIndex": 27
+    },
+    {
+      "id": "IELTS-A-04-Q028",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 3 (Museum Visitor Spatial-Map & Audio Guide Study — Q28): What balanced hybrid accessibility system do Dr. Nair and the student recommend jointly?",
+      "options": [
+        "Clear high-contrast folding paper maps PLUS choice between tactile button wands and personal Bluetooth.",
+        "Banning smartphones inside Natural History lobbies forever.",
+        "Projecting noisy speaker voices straight down echoing rotunda stone walls.",
+        "Printing twenty-page Greek paleontology essays weekly."
+      ],
+      "answer": "Clear high-contrast folding paper maps PLUS choice between tactile button wands and personal Bluetooth.",
+      "acceptedAnswers": [
+        "Clear high-contrast folding paper maps PLUS choice between tactile button wands and personal Bluetooth."
+      ],
+      "explanation": "Menggabungkan kejelasan peta saku kontras tinggi untuk orientasi ruang dan opsi tongkat tombol audio/Bluetooth.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS04-LP3",
+      "sortIndex": 28
+    },
+    {
+      "id": "IELTS-A-04-Q029",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 3 (Museum Visitor Spatial-Map & Audio Guide Study — Q29): ONE WORD ONLY: 'Architectural wall stone blamed for disrupting indoor cellular positioning: ___'",
+      "options": [],
+      "answer": "granite",
+      "acceptedAnswers": [
+        "granite"
+      ],
+      "explanation": "Dinding batu granit ruang bawah tanah menghalangi sinyal posisi.",
+      "rationaleSource": "IELTS-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS04-LP3",
+      "maxWords": 1,
+      "sortIndex": 29
+    },
+    {
+      "id": "IELTS-A-04-Q030",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 3 (Museum Visitor Spatial-Map & Audio Guide Study — Q30): Where inside the museum did dense Latin taxonomic print prove awkward while looking at skeletons?",
+      "options": [
+        "Out in sunny outdoor entrance parks.",
+        "Strictly at front ticket coat desks.",
+        "Inside crowded upstairs mammal exhibit halls.",
+        "Beside empty basement stair doors."
+      ],
+      "answer": "Inside crowded upstairs mammal exhibit halls.",
+      "acceptedAnswers": [
+        "Inside crowded upstairs mammal exhibit halls."
+      ],
+      "explanation": "Di ruang pamer mamalia lantai atas yang padat.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS04-LP3",
+      "sortIndex": 30
+    },
+    {
+      "id": "IELTS-A-04-Q031",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 4 (University Lecture — Bioacoustics of Snapping Shrimp & Ship Paint — Q31): What surprising acoustic texture fills healthy shallow tropical reef hydrophone recordings?",
+      "options": [
+        "Silent flat stillness absent measurable sound pressure.",
+        "Unending loud frying/crackling pops generated by snapping shrimp claws.",
+        "Crystal church-bell harmony sung by bright parrotfish.",
+        "Gentle rhythmic whale rumbles humming softly near noon."
+      ],
+      "answer": "Unending loud frying/crackling pops generated by snapping shrimp claws.",
+      "acceptedAnswers": [
+        "Unending loud frying/crackling pops generated by snapping shrimp claws."
+      ],
+      "explanation": "Rekaman hidrofon terumbu sehat terdengar gemeretak bak gorengan akibat udang letup.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS04-LP4",
+      "sortIndex": 31
+    },
+    {
+      "id": "IELTS-A-04-Q032",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 4 (University Lecture — Bioacoustics of Snapping Shrimp & Ship Paint — Q32): NUMBER ONLY (cm): 'Approximate tiny body length of loud coastal snapping shrimp: ___ centimeters'",
+      "options": [],
+      "answer": "5",
+      "acceptedAnswers": [
+        "5",
+        "five"
+      ],
+      "explanation": "Ukuran udang kecil hanya sekitar lima sentimeter.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS04-LP4",
+      "maxWords": 1,
+      "sortIndex": 32
+    },
+    {
+      "id": "IELTS-A-04-Q033",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 4 (University Lecture — Bioacoustics of Snapping Shrimp & Ship Paint — Q33): How physically does such a tiny shrimp snap generate an astonishing sharp underwater crack?",
+      "options": [
+        "Razor claws clap bright limestone pebbles cleanly underwater.",
+        "Shrimp chew noisy barnacle iron screws hourly.",
+        "Hollow tail antennae whistle sharply through salty waves.",
+        "High-speed claw closure creates vacuum cavitation bubbles whose explosive collapse fires tiny shockwaves."
+      ],
+      "answer": "High-speed claw closure creates vacuum cavitation bubbles whose explosive collapse fires tiny shockwaves.",
+      "acceptedAnswers": [
+        "High-speed claw closure creates vacuum cavitation bubbles whose explosive collapse fires tiny shockwaves."
+      ],
+      "explanation": "Cakar piston menutup super cepat membentuk gelembung vakum kavitasi yang meletus keras.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS04-LP4",
+      "sortIndex": 33
+    },
+    {
+      "id": "IELTS-A-04-Q034",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 4 (University Lecture — Bioacoustics of Snapping Shrimp & Ship Paint — Q34): ONE WORD ONLY: 'Drifting baby marine organisms that navigate shoreward homing onto reef crackle sounds: ___'",
+      "options": [],
+      "answer": "larvae",
+      "acceptedAnswers": [
+        "larvae"
+      ],
+      "explanation": "Larva kerang/tiram ('larvae') memanfaatkan jejak suara terumbu sebagai kompas pulang.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS04-LP4",
+      "maxWords": 1,
+      "sortIndex": 34
+    },
+    {
+      "id": "IELTS-A-04-Q035",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 4 (University Lecture — Bioacoustics of Snapping Shrimp & Ship Paint — Q35): Why can damaged bleached or dredged reefs struggle to regrow spontaneously even after water cleans up?",
+      "options": [
+        "Hungry parrotfish erase sand grains permanently.",
+        "Dead flat sand reefs fall acoustically quiet, failing to call drifting pelagic larvae inward.",
+        "Loud snapping shrimp poison returning oyster juveniles daily.",
+        "Warm salty tides wash underwater speakers miles inland."
+      ],
+      "answer": "Dead flat sand reefs fall acoustically quiet, failing to call drifting pelagic larvae inward.",
+      "acceptedAnswers": [
+        "Dead flat sand reefs fall acoustically quiet, failing to call drifting pelagic larvae inward."
+      ],
+      "explanation": "Terumbu rusak menjadi senyap sehingga tidak lagi memberi sinyal akustik pemanggil larva.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS04-LP4",
+      "sortIndex": 35
+    },
+    {
+      "id": "IELTS-A-04-Q036",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 4 (University Lecture — Bioacoustics of Snapping Shrimp & Ship Paint — Q36): What ingenious habitat engineering experiment doubled baby oyster recruitment across degraded patches?",
+      "options": [
+        "Playing healthy recorded coral reef acoustic soundtracks through submerged waterproof speakers.",
+        "Scattering fluorescent plastic beads across dark muddy bay floors.",
+        "Freezing oyster nets gently beside harbor ice piers.",
+        "Dredging quiet sandy lanes wider weekly."
+      ],
+      "answer": "Playing healthy recorded coral reef acoustic soundtracks through submerged waterproof speakers.",
+      "acceptedAnswers": [
+        "Playing healthy recorded coral reef acoustic soundtracks through submerged waterproof speakers."
+      ],
+      "explanation": "Memutar ulang rekaman akustik terumbu sehat via speaker bawah air memandu larva menempel kembali.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS04-LP4",
+      "sortIndex": 36
+    },
+    {
+      "id": "IELTS-A-04-Q037",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 4 (University Lecture — Bioacoustics of Snapping Shrimp & Ship Paint — Q37): NUMBER ONLY (m/s): 'Approximate snapping claw jet velocity stated in the lecture: ___ meters per second'",
+      "options": [],
+      "answer": "30",
+      "acceptedAnswers": [
+        "30",
+        "thirty"
+      ],
+      "explanation": "Laju tutup cakar memicu semburan ~30 meter per detik.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS04-LP4",
+      "maxWords": 1,
+      "sortIndex": 37
+    },
+    {
+      "id": "IELTS-A-04-Q038",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 4 (University Lecture — Bioacoustics of Snapping Shrimp & Ship Paint — Q38): ONE WORD ONLY: 'Physical vapor explosion mechanism powering loud snaps: ___ bubbles.'",
+      "options": [],
+      "answer": "cavitation",
+      "acceptedAnswers": [
+        "cavitation"
+      ],
+      "explanation": "Proses fisik yang mendasarinya disebut kavitasi ('cavitation').",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS04-LP4",
+      "maxWords": 1,
+      "sortIndex": 38
+    },
+    {
+      "id": "IELTS-A-04-Q039",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 4 (University Lecture — Bioacoustics of Snapping Shrimp & Ship Paint — Q39): In ecological impact metrics, how strongly did underwater sound playback improve shell colonization?",
+      "options": [
+        "Replacing natural limestone skeletons with wooden blocks.",
+        "Doubling juvenile settlement counts cleanly within one breeding season.",
+        "Slowing adult barnacle survival downward by half.",
+        "Eliminating noisy container ferry sonar indefinitely."
+      ],
+      "answer": "Doubling juvenile settlement counts cleanly within one breeding season.",
+      "acceptedAnswers": [
+        "Doubling juvenile settlement counts cleanly within one breeding season."
+      ],
+      "explanation": "Tingkat penempelan anakan tiram berlipat ganda hanya dalam satu musim pasang.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS04-LP4",
+      "sortIndex": 39
+    },
+    {
+      "id": "IELTS-A-04-Q040",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 4 (University Lecture — Bioacoustics of Snapping Shrimp & Ship Paint — Q40): What broader conservation truth does this bioacoustic breakthrough underscore?",
+      "options": [
+        "Ecological soundscapes are active sensory infrastructure guiding habitat recovery, not passive noise.",
+        "Seafloor habitats stay purely silent below five shallow meters.",
+        "Waterproof speaker cords poison snapping shrimp populations rapidly.",
+        "Visual sunshine cues replace acoustic hearing completely near docks."
+      ],
+      "answer": "Ecological soundscapes are active sensory infrastructure guiding habitat recovery, not passive noise.",
+      "acceptedAnswers": [
+        "Ecological soundscapes are active sensory infrastructure guiding habitat recovery, not passive noise."
+      ],
+      "explanation": "Lanskap suara laut merupakan infrastruktur sensorik penting dalam pemulihan ekosistem.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS04-LP4",
+      "sortIndex": 40
+    },
+    {
+      "id": "IELTS-A-04-Q041",
       "section": "READING",
       "taskType": "CHOICE_SINGLE",
-      "prompt": "Passage 1: 'Reviewing a static overview map prior to departure prevents spatial memory loss even with a backup phone nearby.' -> TRUE, FALSE, or NOT GIVEN?",
+      "prompt": "Reading Passage 1 ('Shipping Raw Roman Glass Across the Mediterranean' — Q41): Do the following statements agree with the information in the text? (TRUE / FALSE / NOT GIVEN): 'Crucible sherds discovered near Roman bathhouses initially suggested local towns smelted raw glass directly from local riverbeds.'",
       "options": [
         "TRUE",
         "FALSE",
@@ -159,21 +1098,69 @@
       "acceptedAnswers": [
         "TRUE"
       ],
-      "explanation": "Kalimat terakhir Paragraf B mengonfirmasi melihat peta ringkas statis sebelum berangkat mempertahankan daya ingat spasial walau membawa navigasi cadangan dalam saku.",
+      "explanation": "Paragraf A mencatat pecahan krusibel di pemandian membuat arkeolog mengira kota provinsi melebur pasir sungai lokal.",
       "rationaleSource": "IELTS-MOD-02",
-      "difficulty": "B2",
+      "difficulty": "B1",
       "points": 1,
       "license": "Original",
       "reviewStatus": "VERIFIED_ORIGINAL",
       "passageId": "IELTS04-P1",
       "audioAssetId": null,
-      "sortIndex": 5
+      "sortIndex": 41
     },
     {
-      "id": "IELTS-A-04-Q06",
+      "id": "IELTS-A-04-Q042",
       "section": "READING",
       "taskType": "CHOICE_SINGLE",
-      "prompt": "Passage 1: 'Dr. Priya Subramanian recommends banning turn-by-turn navigation apps for commercial ambulance drivers.' -> TRUE, FALSE, or NOT GIVEN?",
+      "prompt": "Reading Passage 1 ('Shipping Raw Roman Glass Across the Mediterranean' — Q42): Do the following statements agree with the information in the text? (TRUE / FALSE / NOT GIVEN): 'Isotope trace profiles revealed nearly identical sand origins matching Israel's Belus coast across forty Western sites.'",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": "TRUE",
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "explanation": "Paragraf B menyebut isotop seluruh sampel cocok dengan pasir murni pesisir Sungai Belus.",
+      "rationaleSource": "IELTS-MOD-02",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS04-P1",
+      "audioAssetId": null,
+      "sortIndex": 42
+    },
+    {
+      "id": "IELTS-A-04-Q043",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 1 ('Shipping Raw Roman Glass Across the Mediterranean' — Q43): Do the following statements agree with the information in the text? (TRUE / FALSE / NOT GIVEN): 'Levantine primary coastal furnaces were small portable clay jars holding fewer than fifty kilograms of melted silica.'",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": "FALSE",
+      "acceptedAnswers": [
+        "FALSE"
+      ],
+      "explanation": "Paragraf C menjelaskan tungku tangki raksasa berukuran enam meter persegi yang memproduksi sepuluh ton kaca per pembakaran.",
+      "rationaleSource": "IELTS-MOD-02",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS04-P1",
+      "audioAssetId": null,
+      "sortIndex": 43
+    },
+    {
+      "id": "IELTS-A-04-Q044",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 1 ('Shipping Raw Roman Glass Across the Mediterranean' — Q44): Do the following statements agree with the information in the text? (TRUE / FALSE / NOT GIVEN): 'Egyptian natron salt prices doubled sharply during late August grain harvests.'",
       "options": [
         "TRUE",
         "FALSE",
@@ -183,7 +1170,7 @@
       "acceptedAnswers": [
         "NOT GIVEN"
       ],
-      "explanation": "Teks membahas temuan aliran darah hipokampus, namun sama sekali tidak menyebut pengemudi ambulans atau usulan pelarangan aplikasi.",
+      "explanation": "Paragraf B hanya menyebut garam danau natron Mesir sebagai bahan baku tanpa informasi harga musiman.",
       "rationaleSource": "IELTS-MOD-02",
       "difficulty": "B2",
       "points": 1,
@@ -191,19 +1178,91 @@
       "reviewStatus": "VERIFIED_ORIGINAL",
       "passageId": "IELTS04-P1",
       "audioAssetId": null,
-      "sortIndex": 6
+      "sortIndex": 44
     },
     {
-      "id": "IELTS-A-04-Q07",
+      "id": "IELTS-A-04-Q045",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 1 ('Shipping Raw Roman Glass Across the Mediterranean' — Q45): Do the following statements agree with the information in the text? (TRUE / FALSE / NOT GIVEN): 'Northwest European glassblowers saved substantial forest fuel by merely softening pre-fused Levantine glass lumps.'",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": "TRUE",
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "explanation": "Paragraf D menegaskan bengkel Eropa cukup melelehkan ulang pada ~900 derajat sehingga menghemat arang kayu.",
+      "rationaleSource": "IELTS-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS04-P1",
+      "audioAssetId": null,
+      "sortIndex": 45
+    },
+    {
+      "id": "IELTS-A-04-Q046",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 1 ('Shipping Raw Roman Glass Across the Mediterranean' — Q46): Do the following statements agree with the information in the text? (TRUE / FALSE / NOT GIVEN): 'European merchant vessels regularly refused loading cracked glass cullet due to sharp timber hull scratches.'",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": "FALSE",
+      "acceptedAnswers": [
+        "FALSE"
+      ],
+      "explanation": "Paragraf C menyebut pekerja sengaja memecah lempeng menjadi cullet lalu mengapalkannya via peti kargo ke Mediterania.",
+      "rationaleSource": "IELTS-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS04-P1",
+      "audioAssetId": null,
+      "sortIndex": 46
+    },
+    {
+      "id": "IELTS-A-04-Q047",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 1 ('Shipping Raw Roman Glass Across the Mediterranean' — Q47): Do the following statements agree with the information in the text? (TRUE / FALSE / NOT GIVEN): 'Collecting shattered tavern goblets in dockside recycling barrels lowered workshop heat demand by roughly thirty-three percent.'",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": "TRUE",
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "explanation": "Paragraf E menyebut daur ulang pecahan gelas memotong konsumsi energi tungku hingga sepertiga.",
+      "rationaleSource": "IELTS-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS04-P1",
+      "audioAssetId": null,
+      "sortIndex": 47
+    },
+    {
+      "id": "IELTS-A-04-Q048",
       "section": "READING",
       "taskType": "FILL_BLANK",
-      "prompt": "Summary Completion (ONE WORD ONLY from Passage 1): 'Manual route planning engages spatial ___ cells associated with long-term orientation.'",
+      "prompt": "Reading Passage 1 ('Shipping Raw Roman Glass Across the Mediterranean' — Q48): ONE WORD ONLY: 'Raw jagged glass chunks fractured neatly for crating aboard maritime vessels: ___'",
       "options": [],
-      "answer": "grid",
+      "answer": "cullet",
       "acceptedAnswers": [
-        "grid"
+        "cullet"
       ],
-      "explanation": "Paragraf B menyebut secara tepat 'activated spatial grid cells'.",
+      "explanation": "Paragraf C menyebut potongan kaca mentah itu 'cullet'.",
       "rationaleSource": "IELTS-MOD-03",
       "difficulty": "B2",
       "points": 1,
@@ -212,17 +1271,812 @@
       "passageId": "IELTS04-P1",
       "audioAssetId": null,
       "maxWords": 1,
-      "sortIndex": 7
+      "sortIndex": 48
     },
     {
-      "id": "IELTS-A-04-Q08",
+      "id": "IELTS-A-04-Q049",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Reading Passage 1 ('Shipping Raw Roman Glass Across the Mediterranean' — Q49): ONE WORD ONLY: 'Egyptian alkaline lake mineral paired alongside Levantine sand inside huge coastal tanks: ___'",
+      "options": [],
+      "answer": "natron",
+      "acceptedAnswers": [
+        "natron"
+      ],
+      "explanation": "Paragraf B menyebut 'alkaline Egyptian natron lake salts'.",
+      "rationaleSource": "IELTS-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS04-P1",
+      "audioAssetId": null,
+      "maxWords": 1,
+      "sortIndex": 49
+    },
+    {
+      "id": "IELTS-A-04-Q050",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Reading Passage 1 ('Shipping Raw Roman Glass Across the Mediterranean' — Q50): NUMBER ONLY (tons): 'Single multi-week furnace yield produced in coastal tank kilns: ___ tons'",
+      "options": [],
+      "answer": "10",
+      "acceptedAnswers": [
+        "10",
+        "ten"
+      ],
+      "explanation": "Tungku pesisir menghasilkan sepuluh ton dalam satu siklus pembakaran.",
+      "rationaleSource": "IELTS-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS04-P1",
+      "audioAssetId": null,
+      "maxWords": 1,
+      "sortIndex": 50
+    },
+    {
+      "id": "IELTS-A-04-Q051",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Reading Passage 1 ('Shipping Raw Roman Glass Across the Mediterranean' — Q51): NUMBER ONLY (°C): 'Low wood-fired reheating temperature needed across European workshops: ___ degrees'",
+      "options": [],
+      "answer": "900",
+      "acceptedAnswers": [
+        "900"
+      ],
+      "explanation": "Paragraf D mencatat cukup sembilan ratus derajat.",
+      "rationaleSource": "IELTS-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS04-P1",
+      "audioAssetId": null,
+      "maxWords": 1,
+      "sortIndex": 51
+    },
+    {
+      "id": "IELTS-A-04-Q052",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 1 ('Shipping Raw Roman Glass Across the Mediterranean' — Q52): Why were massive primary smelters located near eastern desert coasts rather than inside timber-rich European valleys?",
+      "options": [
+        "Primary silica fusion demanded specialized Belus sand plus lakeside Egyptian natron salts found locally there.",
+        "European winters always froze river barges inside limestone harbors continuously.",
+        "Roman legal edicts prohibited brick chimneys anywhere north of Genoa.",
+        "Glassblowers outside Syria disliked glowing translucent tableware completely."
+      ],
+      "answer": "Primary silica fusion demanded specialized Belus sand plus lakeside Egyptian natron salts found locally there.",
+      "acceptedAnswers": [
+        "Primary silica fusion demanded specialized Belus sand plus lakeside Egyptian natron salts found locally there."
+      ],
+      "explanation": "Pasir silika murni Belus dan garam natron hanya tersedia di Timur Mediterania.",
+      "rationaleSource": "IELTS-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS04-P1",
+      "audioAssetId": null,
+      "sortIndex": 52
+    },
+    {
+      "id": "IELTS-A-04-Q053",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 1 ('Shipping Raw Roman Glass Across the Mediterranean' — Q53): What economic advantage motivated dockside goblet recycling during tempestuous winter sailing months?",
+      "options": [
+        "Recycled tavern mugs turned permanently purple under foggy rain clouds.",
+        "Dock masters rewarded barrel haulers with silver grain rations annually.",
+        "Broken tavern shards eliminated iron blowing tubes entirely.",
+        "Pre-melted broken shards softened swiftly at lower fuel cost whenever fresh raw Levant shipments stalled."
+      ],
+      "answer": "Pre-melted broken shards softened swiftly at lower fuel cost whenever fresh raw Levant shipments stalled.",
+      "acceptedAnswers": [
+        "Pre-melted broken shards softened swiftly at lower fuel cost whenever fresh raw Levant shipments stalled."
+      ],
+      "explanation": "Pecahan gelas daur ulang menghemat sepertiga energi saat pasokan kapal baru terganggu badai musim dingin.",
+      "rationaleSource": "IELTS-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS04-P1",
+      "audioAssetId": null,
+      "sortIndex": 53
+    },
+    {
+      "id": "IELTS-A-04-Q054",
+      "section": "READING",
+      "taskType": "MATCHING",
+      "prompt": "Reading Passage 2 ('Listening Underwater to Heal Silent Tropical Coral Reefs' — Q54): Choose the best heading for Paragraphs A–D:",
+      "options": [],
+      "answer": "Paragraph A::Natural soundscapes of vibrant reefs|Paragraph B::Acoustic silence after bleaching events|Paragraph C::Field playback experiment in Queensland|Paragraph D::Doubled juvenile reef fish recruitment",
+      "acceptedAnswers": [
+        "Paragraph A::Natural soundscapes of vibrant reefs|Paragraph B::Acoustic silence after bleaching events|Paragraph C::Field playback experiment in Queensland|Paragraph D::Doubled juvenile reef fish recruitment"
+      ],
+      "explanation": "Pemetaan topik utama tiap paragraf dari deskripsi suara sehat hingga hasil rekrutmen ikan.",
+      "rationaleSource": "IELTS-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS04-P2",
+      "audioAssetId": null,
+      "pairs": [
+        {
+          "left": "Paragraph A",
+          "rightOptions": [
+            "Natural soundscapes of vibrant reefs",
+            "Acoustic silence after bleaching events",
+            "Field playback experiment in Queensland",
+            "Doubled juvenile reef fish recruitment"
+          ]
+        },
+        {
+          "left": "Paragraph B",
+          "rightOptions": [
+            "Natural soundscapes of vibrant reefs",
+            "Acoustic silence after bleaching events",
+            "Field playback experiment in Queensland",
+            "Doubled juvenile reef fish recruitment"
+          ]
+        },
+        {
+          "left": "Paragraph C",
+          "rightOptions": [
+            "Natural soundscapes of vibrant reefs",
+            "Acoustic silence after bleaching events",
+            "Field playback experiment in Queensland",
+            "Doubled juvenile reef fish recruitment"
+          ]
+        },
+        {
+          "left": "Paragraph D",
+          "rightOptions": [
+            "Natural soundscapes of vibrant reefs",
+            "Acoustic silence after bleaching events",
+            "Field playback experiment in Queensland",
+            "Doubled juvenile reef fish recruitment"
+          ]
+        }
+      ],
+      "sortIndex": 54
+    },
+    {
+      "id": "IELTS-A-04-Q055",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 2 ('Listening Underwater to Heal Silent Tropical Coral Reefs' — Q55): Do the following statements agree with the information in the text? (TRUE / FALSE / NOT GIVEN): 'Tiny crustacean shrimp produce rapid snapping sounds across lively thriving coral colonies.'",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": "TRUE",
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "explanation": "Paragraf A menjelaskan udang katik menjentikkan capit pegasnya menghasilkan suara gemeretak.",
+      "rationaleSource": "IELTS-MOD-02",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS04-P2",
+      "audioAssetId": null,
+      "sortIndex": 55
+    },
+    {
+      "id": "IELTS-A-04-Q056",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 2 ('Listening Underwater to Heal Silent Tropical Coral Reefs' — Q56): Do the following statements agree with the information in the text? (TRUE / FALSE / NOT GIVEN): 'Tiny ocean fish larvae navigate exclusively during cloudless midday glare using surface stars.'",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": "FALSE",
+      "acceptedAnswers": [
+        "FALSE"
+      ],
+      "explanation": "Paragraf B menyebut larva ikan memilih arus malam hari mengikuti penunjuk akustik.",
+      "rationaleSource": "IELTS-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS04-P2",
+      "audioAssetId": null,
+      "sortIndex": 56
+    },
+    {
+      "id": "IELTS-A-04-Q057",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 2 ('Listening Underwater to Heal Silent Tropical Coral Reefs' — Q57): Do the following statements agree with the information in the text? (TRUE / FALSE / NOT GIVEN): 'Queensland researchers anchored playback speakers near northern dead patches for forty nights straight.'",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": "TRUE",
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "explanation": "Paragraf C menyatakan pengeras suara bawah laut diputar 40 malam berturut-turut di Queensland utara.",
+      "rationaleSource": "IELTS-MOD-02",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS04-P2",
+      "audioAssetId": null,
+      "sortIndex": 57
+    },
+    {
+      "id": "IELTS-A-04-Q058",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 2 ('Listening Underwater to Heal Silent Tropical Coral Reefs' — Q58): Do the following statements agree with the information in the text? (TRUE / FALSE / NOT GIVEN): 'Northern Queensland boat skippers paid carbon rebates to turn off diesel trawler propellers.'",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": "NOT GIVEN",
+      "acceptedAnswers": [
+        "NOT GIVEN"
+      ],
+      "explanation": "Teks tidak membahas insentif kapal penangkap ikan lokal.",
+      "rationaleSource": "IELTS-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS04-P2",
+      "audioAssetId": null,
+      "sortIndex": 58
+    },
+    {
+      "id": "IELTS-A-04-Q059",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Reading Passage 2 ('Listening Underwater to Heal Silent Tropical Coral Reefs' — Q59): ONE WORD ONLY: 'Oceanic heat spikes turn branching reef structures chalk-white via mass ___'",
+      "options": [],
+      "answer": "bleaching",
+      "acceptedAnswers": [
+        "bleaching",
+        "bleach"
+      ],
+      "explanation": "Paragraf B menyebut karang memutih karena 'heatwaves that bleach corals'.",
+      "rationaleSource": "IELTS-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS04-P2",
+      "audioAssetId": null,
+      "maxWords": 1,
+      "sortIndex": 59
+    },
+    {
+      "id": "IELTS-A-04-Q060",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Reading Passage 2 ('Listening Underwater to Heal Silent Tropical Coral Reefs' — Q60): NUMBER ONLY (m): 'Gap separating noisy experimental rubble plots from silent control coral sites: ___ meters'",
+      "options": [],
+      "answer": "400",
+      "acceptedAnswers": [
+        "400"
+      ],
+      "explanation": "Situs kontrol sunyi berjarak 400 meter di hilir arus.",
+      "rationaleSource": "IELTS-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS04-P2",
+      "audioAssetId": null,
+      "maxWords": 1,
+      "sortIndex": 60
+    },
+    {
+      "id": "IELTS-A-04-Q061",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Reading Passage 2 ('Listening Underwater to Heal Silent Tropical Coral Reefs' — Q61): ONE WORD ONLY: 'Biological crustacean responsible for crisp underwater campfire-like crackling: snapping ___'",
+      "options": [],
+      "answer": "shrimp",
+      "acceptedAnswers": [
+        "shrimp"
+      ],
+      "explanation": "Paragraf A menyebut 'snapping shrimp'.",
+      "rationaleSource": "IELTS-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS04-P2",
+      "audioAssetId": null,
+      "maxWords": 1,
+      "sortIndex": 61
+    },
+    {
+      "id": "IELTS-A-04-Q062",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Reading Passage 2 ('Listening Underwater to Heal Silent Tropical Coral Reefs' — Q62): ONE WORD ONLY: 'Exact scientific word defining speaker sound as an ecological accelerator rather than sole cure: biological ___'",
+      "options": [],
+      "answer": "catalyst",
+      "acceptedAnswers": [
+        "catalyst"
+      ],
+      "explanation": "Paragraf E menyebutnya 'targeted biological catalyst'.",
+      "rationaleSource": "IELTS-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS04-P2",
+      "audioAssetId": null,
+      "maxWords": 1,
+      "sortIndex": 62
+    },
+    {
+      "id": "IELTS-A-04-Q063",
+      "section": "READING",
+      "taskType": "CHOICE_MULTI",
+      "prompt": "Reading Passage 2 ('Listening Underwater to Heal Silent Tropical Coral Reefs' — Q63): Choose TWO precautions emphasized in Paragraph E regarding underwater sound enrichment:",
+      "options": [
+        "Speakers provide no heat-tolerance protection against warming seas by themselves",
+        "Acoustic lures function only when combined with cleaner runoff and carbon emission cuts",
+        "Recorded shrimp noise melts bleached skeletons instantly within one week",
+        "Loudspeaker floats block migratory whales completely across reefs"
+      ],
+      "answer": "Speakers provide no heat-tolerance protection against warming seas by themselves|Acoustic lures function only when combined with cleaner runoff and carbon emission cuts",
+      "acceptedAnswers": [
+        "Speakers provide no heat-tolerance protection against warming seas by themselves|Acoustic lures function only when combined with cleaner runoff and carbon emission cuts"
+      ],
+      "explanation": "Paragraf E memperingatkan speaker tak memberi kekebalan suhu panas dan harus disertai pengendalian mutu air serta emisi.",
+      "rationaleSource": "IELTS-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS04-P2",
+      "audioAssetId": null,
+      "sortIndex": 63
+    },
+    {
+      "id": "IELTS-A-04-Q064",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 2 ('Listening Underwater to Heal Silent Tropical Coral Reefs' — Q64): Why did silent bleached coral rubble fail to attract drifting nocturnal fish larvae naturally?",
+      "options": [
+        "Lost crustacean and fish chorus deprived approaching pelagic larvae of directional settlement cues.",
+        "White bleached chalk blinded pelagic larvae horizontally across ocean tides.",
+        "Underwater limestone towers sank below sunlit pelagic oxygen levels.",
+        "Cold abyssal sharks surrounded pale reefs permanently each dusk."
+      ],
+      "answer": "Lost crustacean and fish chorus deprived approaching pelagic larvae of directional settlement cues.",
+      "acceptedAnswers": [
+        "Lost crustacean and fish chorus deprived approaching pelagic larvae of directional settlement cues."
+      ],
+      "explanation": "Tanpa paduan suara udang dan ikan karang, larva pelagis kehilangan navigasi menuju habitat dasar.",
+      "rationaleSource": "IELTS-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS04-P2",
+      "audioAssetId": null,
+      "sortIndex": 64
+    },
+    {
+      "id": "IELTS-A-04-Q065",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 2 ('Listening Underwater to Heal Silent Tropical Coral Reefs' — Q65): Which experimental safeguard ensured silent control plots matched enriched plots fairly in Queensland?",
+      "options": [
+        "Feeding frozen brine pellets strictly above noisy wooden loudspeakers.",
+        "Painting silent stone blocks dark purple prior to October tides.",
+        "Placing copper wire fences around sunlit neighbor barrier reefs.",
+        "Locating matching dead rubble plots merely four hundred meters downstream under identical tide flows."
+      ],
+      "answer": "Locating matching dead rubble plots merely four hundred meters downstream under identical tide flows.",
+      "acceptedAnswers": [
+        "Locating matching dead rubble plots merely four hundred meters downstream under identical tide flows."
+      ],
+      "explanation": "Lokasi kontrol menggunakan puing karang mati identik di hilir sejauh 400 m untuk pembandingan setara.",
+      "rationaleSource": "IELTS-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS04-P2",
+      "audioAssetId": null,
+      "sortIndex": 65
+    },
+    {
+      "id": "IELTS-A-04-Q066",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 2 ('Listening Underwater to Heal Silent Tropical Coral Reefs' — Q66): What role does grazing damselfish and butterflyfish settlement play once acoustic lures attract them?",
+      "options": [
+        "Butterflyfish heat cool currents via swimming muscles steadily.",
+        "Cardinalfish consume wandering snapping shrimp completely overnight.",
+        "Young grazers clear fuzzy algae carpets, keeping bare limestone open for baby coral polyps.",
+        "Juvenile fish cement shattered branches shut using sticky mud bubbles."
+      ],
+      "answer": "Young grazers clear fuzzy algae carpets, keeping bare limestone open for baby coral polyps.",
+      "acceptedAnswers": [
+        "Young grazers clear fuzzy algae carpets, keeping bare limestone open for baby coral polyps."
+      ],
+      "explanation": "Secara logika paragraf B–E, hadirnya ikan muda memulihkan siklus ekosistem terumbu karang.",
+      "rationaleSource": "IELTS-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS04-P2",
+      "audioAssetId": null,
+      "sortIndex": 66
+    },
+    {
+      "id": "IELTS-A-04-Q067",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 3 ('Do Super-Reflective White Roofs Backfire Inside Cold Northern Cities?' — Q67): Do the following statements reflect the claims of the writer? (YES / NO / NOT GIVEN): 'Bright titanium-white roof membranes cut indoor cooling electricity sharply in sun-baked desert cities.'",
+      "options": [
+        "YES",
+        "NO",
+        "NOT GIVEN"
+      ],
+      "answer": "YES",
+      "acceptedAnswers": [
+        "YES"
+      ],
+      "explanation": "Paragraf A mengonfirmasi di Phoenix dan Athens atap putih memangkas biaya AC secara nyata.",
+      "rationaleSource": "IELTS-MOD-08",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS04-P3",
+      "audioAssetId": null,
+      "sortIndex": 67
+    },
+    {
+      "id": "IELTS-A-04-Q068",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 3 ('Do Super-Reflective White Roofs Backfire Inside Cold Northern Cities?' — Q68): Do the following statements reflect the claims of the writer? (YES / NO / NOT GIVEN): 'Cold northern warehouses always shrink total annual gas plus electricity expenditure after adopting fixed white coatings.'",
+      "options": [
+        "YES",
+        "NO",
+        "NOT GIVEN"
+      ],
+      "answer": "NO",
+      "acceptedAnswers": [
+        "NO"
+      ],
+      "explanation": "Paragraf C menyoroti 'winter heating penalty' yang menaikkan pemakaian pemanas gas di pagi musim dingin.",
+      "rationaleSource": "IELTS-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS04-P3",
+      "audioAssetId": null,
+      "sortIndex": 68
+    },
+    {
+      "id": "IELTS-A-04-Q069",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 3 ('Do Super-Reflective White Roofs Backfire Inside Cold Northern Cities?' — Q69): Do the following statements reflect the claims of the writer? (YES / NO / NOT GIVEN): 'Urban smog and windblown foliage gradually dull white rooftop brightness in rainy northern climates.'",
+      "options": [
+        "YES",
+        "NO",
+        "NOT GIVEN"
+      ],
+      "answer": "YES",
+      "acceptedAnswers": [
+        "YES"
+      ],
+      "explanation": "Paragraf D memaparkan jelaga, daun kering, dan lumut menggelapkan pantulan dalam 18 bulan hujan.",
+      "rationaleSource": "IELTS-MOD-08",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS04-P3",
+      "audioAssetId": null,
+      "sortIndex": 69
+    },
+    {
+      "id": "IELTS-A-04-Q070",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 3 ('Do Super-Reflective White Roofs Backfire Inside Cold Northern Cities?' — Q70): Do the following statements reflect the claims of the writer? (YES / NO / NOT GIVEN): 'Berlin building codes levy heavy municipal fines on landlords avoiding annual power-washing crews.'",
+      "options": [
+        "YES",
+        "NO",
+        "NOT GIVEN"
+      ],
+      "answer": "NOT GIVEN",
+      "acceptedAnswers": [
+        "NOT GIVEN"
+      ],
+      "explanation": "Paragraf D menyebut penuaan reflektansi kecuali dicuci tahunan, namun tidak pernah menyebut denda kota Berlin.",
+      "rationaleSource": "IELTS-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS04-P3",
+      "audioAssetId": null,
+      "sortIndex": 70
+    },
+    {
+      "id": "IELTS-A-04-Q071",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 3 ('Do Super-Reflective White Roofs Backfire Inside Cold Northern Cities?' — Q71): Do the following statements reflect the claims of the writer? (YES / NO / NOT GIVEN): 'Thermochromic rooftop surfaces stay permanently coal-black across sizzling mid-summer afternoons.'",
+      "options": [
+        "YES",
+        "NO",
+        "NOT GIVEN"
+      ],
+      "answer": "NO",
+      "acceptedAnswers": [
+        "NO"
+      ],
+      "explanation": "Paragraf E menjelaskan polimer termokromik justru berubah menjadi putih terang otomatis di atas 28 °C saat musim panas.",
+      "rationaleSource": "IELTS-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS04-P3",
+      "audioAssetId": null,
+      "sortIndex": 71
+    },
+    {
+      "id": "IELTS-A-04-Q072",
+      "section": "READING",
+      "taskType": "MATCHING",
+      "prompt": "Reading Passage 3 ('Do Super-Reflective White Roofs Backfire Inside Cold Northern Cities?' — Q72): Match each climate approach cleanly to its operating limitation or mechanism:",
+      "options": [],
+      "answer": "Static titanium-white paint::Rejects scarce solar warmth during foggy winters & gathers soot|Thermochromic smart tile::Switches hue passively near twenty-eight degrees Celsius",
+      "acceptedAnswers": [
+        "Static titanium-white paint::Rejects scarce solar warmth during foggy winters & gathers soot|Thermochromic smart tile::Switches hue passively near twenty-eight degrees Celsius"
+      ],
+      "explanation": "Pembandingan cat putih statis (C–D) versus polimer adaptif termokromik (E).",
+      "rationaleSource": "IELTS-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS04-P3",
+      "audioAssetId": null,
+      "pairs": [
+        {
+          "left": "Static titanium-white paint",
+          "rightOptions": [
+            "Rejects scarce solar warmth during foggy winters & gathers soot",
+            "Switches hue passively near twenty-eight degrees Celsius"
+          ]
+        },
+        {
+          "left": "Thermochromic smart tile",
+          "rightOptions": [
+            "Rejects scarce solar warmth during foggy winters & gathers soot",
+            "Switches hue passively near twenty-eight degrees Celsius"
+          ]
+        }
+      ],
+      "sortIndex": 72
+    },
+    {
+      "id": "IELTS-A-04-Q073",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Reading Passage 3 ('Do Super-Reflective White Roofs Backfire Inside Cold Northern Cities?' — Q73): NO MORE THAN TWO WORDS: 'Energy surge caused when bright white surfaces bounce useful cold-season sunshine back skyward: winter ___ penalty'",
+      "options": [],
+      "answer": "heating",
+      "acceptedAnswers": [
+        "heating"
+      ],
+      "explanation": "Paragraf C menamainya 'winter heating penalty'.",
+      "rationaleSource": "IELTS-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS04-P3",
+      "audioAssetId": null,
+      "maxWords": 1,
+      "sortIndex": 73
+    },
+    {
+      "id": "IELTS-A-04-Q074",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Reading Passage 3 ('Do Super-Reflective White Roofs Backfire Inside Cold Northern Cities?' — Q74): NUMBER ONLY (months): 'Weathering window before moist northern air and soot visibly fade crisp eighty-percent white gloss: ___ months'",
+      "options": [],
+      "answer": "18",
+      "acceptedAnswers": [
+        "18",
+        "eighteen"
+      ],
+      "explanation": "Paragraf D mencatat penurunan keabu-abuan terjadi dalam 18 bulan hujan.",
+      "rationaleSource": "IELTS-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS04-P3",
+      "audioAssetId": null,
+      "maxWords": 1,
+      "sortIndex": 74
+    },
+    {
+      "id": "IELTS-A-04-Q075",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Reading Passage 3 ('Do Super-Reflective White Roofs Backfire Inside Cold Northern Cities?' — Q75): NUMBER ONLY (°C): 'Surface temperature trigger turning smart thermochromic roof polymers gleaming white: ___ degrees'",
+      "options": [],
+      "answer": "28",
+      "acceptedAnswers": [
+        "28",
+        "twenty-eight"
+      ],
+      "explanation": "Polimer berubah menjadi putih cerah otomatis saat permukaan mencapai 28 °C.",
+      "rationaleSource": "IELTS-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS04-P3",
+      "audioAssetId": null,
+      "maxWords": 1,
+      "sortIndex": 75
+    },
+    {
+      "id": "IELTS-A-04-Q076",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Reading Passage 3 ('Do Super-Reflective White Roofs Backfire Inside Cold Northern Cities?' — Q76): ONE WORD ONLY: 'Damp green botanical growth tarnishing northern flat warehouse roofs alongside street soot: ___'",
+      "options": [],
+      "answer": "moss",
+      "acceptedAnswers": [
+        "moss"
+      ],
+      "explanation": "Paragraf D menyebut 'downtown soot, rotting windblown maple leaves, and winter moss'.",
+      "rationaleSource": "IELTS-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS04-P3",
+      "audioAssetId": null,
+      "maxWords": 1,
+      "sortIndex": 76
+    },
+    {
+      "id": "IELTS-A-04-Q077",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 3 ('Do Super-Reflective White Roofs Backfire Inside Cold Northern Cities?' — Q77): Why did uniform cool-roof statutes disappoint municipal energy auditors in Berlin and Toronto?",
+      "options": [
+        "Flat asphalt shingles shattered neatly beneath gleaming titanium brush strokes.",
+        "Natural snowdrifts absorbed bright solar heat exclusively inside southern valleys.",
+        "Building tenants removed glass windows permanently every frosty December morning.",
+        "Mandatory summer reflectance rules ignored multi-season gas boiler spikes triggered across dim icy winters."
+      ],
+      "answer": "Mandatory summer reflectance rules ignored multi-season gas boiler spikes triggered across dim icy winters.",
+      "acceptedAnswers": [
+        "Mandatory summer reflectance rules ignored multi-season gas boiler spikes triggered across dim icy winters."
+      ],
+      "explanation": "Aturan pukul rata tidak memperhitungkan penalti beban pemanas musim dingin.",
+      "rationaleSource": "IELTS-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS04-P3",
+      "audioAssetId": null,
+      "sortIndex": 77
+    },
+    {
+      "id": "IELTS-A-04-Q078",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 3 ('Do Super-Reflective White Roofs Backfire Inside Cold Northern Cities?' — Q78): What operational burden threatens lab-certified white roofs in temperate smoky ports?",
+      "options": [
+        "Titanium pigment emits noxious sulfur odor into attic ducts annually.",
+        "Maintenance roofs attract massive wandering river gulls weekly.",
+        "Frequent damp grime accumulation erodes rated eighty-percent albedo unless cleaned repeatedly.",
+        "White elastomeric film turns liquid during light drizzle every spring."
+      ],
+      "answer": "Frequent damp grime accumulation erodes rated eighty-percent albedo unless cleaned repeatedly.",
+      "acceptedAnswers": [
+        "Frequent damp grime accumulation erodes rated eighty-percent albedo unless cleaned repeatedly."
+      ],
+      "explanation": "Debu kota dan lumut menjatuhkan reflektansi laboratorium 80% menjadi kelabu kusam.",
+      "rationaleSource": "IELTS-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS04-P3",
+      "audioAssetId": null,
+      "sortIndex": 78
+    },
+    {
+      "id": "IELTS-A-04-Q079",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 3 ('Do Super-Reflective White Roofs Backfire Inside Cold Northern Cities?' — Q79): How do adaptive thermochromic materials resolve the seasonal heat trade-off smoothly?",
+      "options": [
+        "White paint shifts permanently clear whenever rain sensors beep softly.",
+        "Dark gray surfaces capture free winter sun below ten degrees before lightening near July peaks.",
+        "Electric motorized shades unroll steel shields over snow drifts automatically.",
+        "Roofs detach rubber shingles manually every April equinox."
+      ],
+      "answer": "Dark gray surfaces capture free winter sun below ten degrees before lightening near July peaks.",
+      "acceptedAnswers": [
+        "Dark gray surfaces capture free winter sun below ten degrees before lightening near July peaks."
+      ],
+      "explanation": "Ubin termokromik menyerap hangatnya matahari dingin lalu memantulkannya saat panas terik.",
+      "rationaleSource": "IELTS-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS04-P3",
+      "audioAssetId": null,
+      "sortIndex": 79
+    },
+    {
+      "id": "IELTS-A-04-Q080",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 3 ('Do Super-Reflective White Roofs Backfire Inside Cold Northern Cities?' — Q80): What overarching engineering lesson anchors Dr. Kenji Morita's comparative architectural critique?",
+      "options": [
+        "Context-blind passive climate mandates fail unless tuned cleanly to regional solar budgets across full annual cycles.",
+        "Dark black asphalt roofs remain categorically superior worldwide across all latitudes.",
+        "Cool-roof paint works identically well everywhere regardless of moisture or fog.",
+        "Boiler subsidies replace envelope roof insulation cleanly across all centuries."
+      ],
+      "answer": "Context-blind passive climate mandates fail unless tuned cleanly to regional solar budgets across full annual cycles.",
+      "acceptedAnswers": [
+        "Context-blind passive climate mandates fail unless tuned cleanly to regional solar budgets across full annual cycles."
+      ],
+      "explanation": "Kebijakan iklim pasif harus mempertimbangkan keseimbangan termal setahun penuh di iklim lokal.",
+      "rationaleSource": "IELTS-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS04-P3",
+      "audioAssetId": null,
+      "sortIndex": 80
+    },
+    {
+      "id": "IELTS-A-04-Q081",
       "section": "WRITING",
       "taskType": "WRITING_RESPONSE",
-      "prompt": "IELTS Academic Writing Task 1 (>=150 words, 20 min): The data below show the primary navigation methods used by adult travelers across three trip types in 2025 (%):\n- Daily Work Commute: GPS App 62%, Memory/Landmarks 34%, Paper Map 4%\n- Domestic Weekend Trip: GPS App 78%, Memory/Landmarks 15%, Paper Map 7%\n- Hiking Trail Navigation: GPS App 44%, Memory/Landmarks 22%, Paper Map 34%\nSummarize and compare the main patterns.",
+      "prompt": "Writing Task 1 (Map Comparison — At least 150 words, 20 min): Two campus maps show Riverside University Docklands in 1995 versus today. In 1995, bare gravel parking lots flanked the west riverbank beside an inactive timber coal jetty, one narrow stone footpath, and open reed marshes north of the boathouse. Today, the gravel lots became a terraced flood-sponge meadow park, the coal jetty rebuilt into a solar passenger ferry dock linked by a curved timber footbridge to a Marine Ecology Lab replacing one marsh edge while restoring wetlands eastward. Report major spatial transformations clearly.",
       "options": [],
       "answer": "",
       "acceptedAnswers": [],
-      "explanation": "Sorot dominasi GPS di perjalanan akhir pekan/komuter kontras dengan porsi peta kertas yang masih tinggi (34%) pada jalur pendakian.",
+      "explanation": "Band 7+ Task 1 wajib menyertakan Overview tren utama tanpa opini pribadi, membandingkan angka/tahapan ekstrem secara akurat.",
       "rationaleSource": "IELTS-MOD-04",
       "difficulty": "B2",
       "points": 1,
@@ -231,119 +2085,119 @@
       "passageId": null,
       "audioAssetId": null,
       "minWords": 150,
-      "recommendedWords": 175,
+      "recommendedWords": 180,
       "rubricCriteria": [
-        "Clear Overview",
-        "Accurate comparisons across 3 trip types",
-        "Cohesion",
-        "Grammar accuracy"
+        "Clear Overview statement",
+        "Accurate data/stage selection",
+        "Trend comparisons & passive/sequence connectors",
+        "Lexical precision"
       ],
-      "sortIndex": 8
+      "sortIndex": 81
     },
     {
-      "id": "IELTS-A-04-Q09",
+      "id": "IELTS-A-04-Q082",
       "section": "WRITING",
       "taskType": "WRITING_RESPONSE",
-      "prompt": "IELTS Academic Writing Task 2 (>=250 words, 40 min): Public museums increasingly spend major budgets on interactive touchscreen displays rather than traditional labeled artifact cabinets. Do the advantages of high-tech museum displays outweigh the disadvantages?",
+      "prompt": "Writing Task 2 (Academic Essay — At least 250 words, 40 min): Some municipal transit agencies eliminate off-peak bus fares completely for residents while raising central street parking charges steeply. Do the social and environmental benefits of zero-fare public buses justify higher charges on private inner-city motorists? Evaluate advantages, unintended side effects, and state your own position.",
       "options": [],
       "answer": "",
       "acceptedAnswers": [],
-      "explanation": "Evaluasi kedua sisi (keterlibatan pengunjung vs biaya pemeliharaan/gangguan fokus pada artefak asli) lalu nyatakan apakah keunggulannya lebih besar.",
+      "explanation": "Band 7+ Task 2 menuntut tesis tegas konsisten di pembuka hingga penutup, pengembangan paragraf tubuh bertumpu mekanisme & contoh, serta kendali klausa kompleks.",
       "rationaleSource": "IELTS-MOD-05",
-      "difficulty": "B2",
-      "points": 1,
-      "license": "Original",
-      "reviewStatus": "VERIFIED_ORIGINAL",
-      "passageId": null,
-      "audioAssetId": null,
-      "minWords": 250,
-      "recommendedWords": 275,
-      "rubricCriteria": [
-        "Outweigh evaluation clear",
-        "Balanced mechanism analysis",
-        "Precise vocabulary",
-        "Cohesive structure"
-      ],
-      "sortIndex": 9
-    },
-    {
-      "id": "IELTS-A-04-Q10",
-      "section": "SPEAKING",
-      "taskType": "SPEAKING_RESPONSE",
-      "prompt": "IELTS Speaking Part 1 (~30–45s): 'Are you good at remembering directions in a new town without checking your phone? How do you usually find your way?'",
-      "options": [],
-      "answer": "",
-      "acceptedAnswers": [],
-      "explanation": "Jawab santai dalam 3–4 kalimat dengan menyebut penanda visual (landmarks) atau peta.",
-      "rationaleSource": "IELTS-MOD-06",
-      "difficulty": "B1",
-      "points": 1,
-      "license": "Original",
-      "reviewStatus": "VERIFIED_ORIGINAL",
-      "passageId": null,
-      "audioAssetId": null,
-      "prepSeconds": 0,
-      "speakSeconds": 45,
-      "rubricCriteria": [
-        "Fluency",
-        "Natural tone",
-        "Vocabulary",
-        "Clarity"
-      ],
-      "sortIndex": 10
-    },
-    {
-      "id": "IELTS-A-04-Q11",
-      "section": "SPEAKING",
-      "taskType": "SPEAKING_RESPONSE",
-      "prompt": "IELTS Speaking Part 2 Cue Card (1 min prep · 2 min speak): Describe a museum, exhibition, or historical landmark that taught you something memorable.\nYou should say:\n- where it was\n- what you saw there\n- how information was presented\n- and explain why the visit stayed in your memory.",
-      "options": [],
-      "answer": "",
-      "acceptedAnswers": [],
-      "explanation": "Bangun alur cerita dari kedatangan -> pameran paling berkesan -> pelajaran/insight yang terbawa hingga kini.",
-      "rationaleSource": "IELTS-MOD-06",
-      "difficulty": "B2",
-      "points": 1,
-      "license": "Original",
-      "reviewStatus": "VERIFIED_ORIGINAL",
-      "passageId": null,
-      "audioAssetId": null,
-      "prepSeconds": 60,
-      "speakSeconds": 120,
-      "rubricCriteria": [
-        "Narrative structure",
-        "Lexical resource",
-        "Fluency",
-        "Grammar range"
-      ],
-      "sortIndex": 11
-    },
-    {
-      "id": "IELTS-A-04-Q12",
-      "section": "SPEAKING",
-      "taskType": "SPEAKING_RESPONSE",
-      "prompt": "IELTS Speaking Part 3 (~60s): 'Should city governments preserve free entry to national museums even when budgets tighten, or charge visitors to fund conservation?'",
-      "options": [],
-      "answer": "",
-      "acceptedAnswers": [],
-      "explanation": "Bahas akses pendidikan setara bagi masyarakat vs model tiket bertingkat (gratis bagi pelajar/warga lokal, tiket bagi turis).",
-      "rationaleSource": "IELTS-MOD-06",
       "difficulty": "C1",
       "points": 1,
       "license": "Original",
       "reviewStatus": "VERIFIED_ORIGINAL",
       "passageId": null,
       "audioAssetId": null,
-      "prepSeconds": 0,
+      "minWords": 250,
+      "recommendedWords": 290,
+      "rubricCriteria": [
+        "Full prompt coverage & clear position",
+        "Coherent paragraphing",
+        "Precise collocations",
+        "Complex grammar range & accuracy"
+      ],
+      "sortIndex": 82
+    },
+    {
+      "id": "IELTS-A-04-Q083",
+      "section": "SPEAKING",
+      "taskType": "SPEAKING_RESPONSE",
+      "prompt": "Examiner Part 1 (Weather & Clothing — 4–5 min): Welcome. Let's talk about local weather and routines. Which season feels easiest for outdoor study in your town, how does heavy sudden rain affect weekend travel plans there, and do people dress mainly for comfort or formal tradition?",
+      "options": [],
+      "answer": "",
+      "acceptedAnswers": [],
+      "explanation": "Part 1 idealnya berdurasi ~25–35 detik per pertanyaan gabungan dengan ekstensi 2–3 kalimat alami dan intonasi santai tanpa menghafal templat.",
+      "rationaleSource": "IELTS-MOD-06",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS04-SP1",
+      "prepSeconds": 5,
+      "speakSeconds": 45,
+      "rubricCriteria": [
+        "Natural conversational extension",
+        "Everyday topic collocations",
+        "Clear stress & rhythm",
+        "Self-correction control"
+      ],
+      "sortIndex": 83
+    },
+    {
+      "id": "IELTS-A-04-Q084",
+      "section": "SPEAKING",
+      "taskType": "SPEAKING_RESPONSE",
+      "prompt": "Speaking Part 2 (Cue Card — 1 min prep, 2 min talk): Describe a difficult group decision or committee choice you helped resolve peacefully without formal authority. You should say: what the disagreement involved, why each side hesitated initially, what practical compromise you proposed, and explain what you learned about listening carefully.",
+      "options": [],
+      "answer": "",
+      "acceptedAnswers": [],
+      "explanation": "Gunakan 60 detik persiapan untuk mencatat 4–5 kata kunci linimasa (Konteks -> Tantangan -> Aksi -> Dampak), lalu bicaralah lancar hingga 2 menit penuh.",
+      "rationaleSource": "IELTS-MOD-06",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS04-SP2",
+      "prepSeconds": 60,
+      "speakSeconds": 120,
+      "rubricCriteria": [
+        "Full 2-minute sustained narrative",
+        "Discourse markers across stages",
+        "Vivid specific vocabulary",
+        "Tenses accuracy across past & present reflection"
+      ],
+      "sortIndex": 84
+    },
+    {
+      "id": "IELTS-A-04-Q085",
+      "section": "SPEAKING",
+      "taskType": "SPEAKING_RESPONSE",
+      "prompt": "Examiner Part 3 (Consensus & Civic Participation — 4–5 min): Smaller circles often settle disagreements face-to-face, yet citywide referendums can harden opposing camps. Why do technical compromises work smoothly in workshops yet stall on televised public panels, and should citizens' assemblies help set local environmental budgets?",
+      "options": [],
+      "answer": "",
+      "acceptedAnswers": [],
+      "explanation": "Part 3 menuntut abstraksi gagasan tingkat masyarakat: pakai hedging ('on balance', 'tends to'), kontras dua sisi, dan alasan sebab-akibat analitis.",
+      "rationaleSource": "IELTS-MOD-10",
+      "difficulty": "C1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS04-SP3",
+      "prepSeconds": 10,
       "speakSeconds": 60,
       "rubricCriteria": [
-        "Policy nuance",
-        "Coherence",
-        "Academic lexis",
-        "Pronunciation"
+        "Abstract analytical reasoning",
+        "Hedging & nuanced stance",
+        "Complex clause variety",
+        "Natural pronunciation under cognitive load"
       ],
-      "sortIndex": 12
+      "sortIndex": 85
     }
   ],
-  "checksum": "1fee169f498355e7c1511e48b5f74828854ab37bbb40cddf34380388660f0c63"
+  "checksum": "c7a193553e4b909fe678e4e76a6cc044c4039561c8b0f27bad4f95fbd1cfbceb"
 }

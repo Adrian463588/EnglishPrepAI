@@ -197,6 +197,7 @@ fun EnglishPrepRootApp() {
                     composable<AppRoute.Learn> {
                         LearnRoute(
                             onOpenModule = { mid -> navController.navigate(AppRoute.ModuleDetail(mid)) },
+                            onAskTutor = { srcId -> navController.navigate(AppRoute.Chat(srcId)) },
                         )
                     }
                     composable<AppRoute.ModuleDetail> {

@@ -1,371 +1,3365 @@
 {
   "schemaVersion": 1,
   "exam": "IBT_2026",
-  "edition": "2026.1",
+  "edition": "2026.2",
   "packId": "IBT26-04",
-  "title": "iBT 2026 Paket 4 — Economics, Daily Life & Technical Interviews",
-  "theme": "Behavioral nudges, refund policies, paragraph ordering, and professional email tasks.",
-  "status": "SAMPLE",
+  "title": "iBT 2026 Paket 4 — Behavioral Economics & Food Systems",
+  "theme": "Full 120-item Jan 2026 iBT simulation testing choice overload, fog-harvesting, solar cold-chains, cave echoes, and synthetic interviews.",
+  "status": "READY",
   "blueprintCount": 120,
-  "availableCount": 12,
-  "durationMinutes": 25,
+  "availableCount": 120,
+  "durationMinutes": 90,
   "blueprintDurationMinutes": 90,
   "license": "Original",
   "provenance": "EnglishPrepAI-Original-2026",
   "passages": [
     {
-      "id": "IBT04-P1",
-      "title": "Daily Life Policy: Campus Conference Registration Refunds",
-      "body": "Annual Undergraduate Research Symposium — Fee Policy:\nPresenters pay a $25 registration fee covering lunch and printed abstracts. Cancellations submitted via the portal at least ten calendar days prior to May 2 receive a full refund minus a $3 processing charge. Within ten days of the event, refunds are unavailable, though presenters may transfer their slot to a co-author without penalty by emailing symposium@campus.edu.",
+      "id": "IBT04-CW1",
+      "title": "Complete the Words — Dryland Fog-Harvesting Mesh Towers",
+      "body": "Along rain-parched coastal plateaus where rain gauges measure barely ten millimeters annually, dense marine fog dri___ [1] reliably uphill off chilly ocean currents every morning. Lacking flowing rivers, hillside villages stretch fine polypropylene mesh screens ver___ [2] across windy ridge crests. As microscopic mist drops pass through braided plastic fil___ [3], tiny droplets merge until gravity pulls fresh clear water into cov___ [4] storage gutters feeding hillside olive orchards. Field trials comparing novel 3D harp weaves against flat older sheets revealed forty-percent higher capture yields alongside lower tear ris___ [5] during severe mountain gusts. Community cooperatives organize rotating weekly shifts to flush settling tanks, tighten anchor cab___ [6], and mend tiny sun-worn seams promptly before summer dust clo___ [7] mesh pores. Independent water testing confirms atmospheric fog condensate tastes markedly fresher than brackish shallow bore wells, cutting expensive bottled water deliv___ [8] for rural schoolhouses. Hydrologists caution against assuming fog nets alone satisfy heavy urban industry, yet as localized household supple___ [9] in arid coastal valleys they offer durable low-energy drought resi___ [10].",
       "readingOrder": 1
     },
     {
-      "id": "IBT04-P2",
-      "title": "Default Choices in Household Energy Conservation",
-      "body": "Conventional public-utility campaigns often assume consumers adopt cleaner electricity plans purely after reading cost spreadsheets. Field experiments across mid-sized towns reveal a stronger behavioral lever: default enrollment. When municipalities set modest time-of-use conservation plans as the automatic option while letting households opt out via a single postcard, participation climbed from eighteen percent to over seventy-four percent. Economists attribute this gap to status-quo bias rather than indifference, since exit rates remained below five percent even one year later.",
+      "id": "IBT04-CW2",
+      "title": "Complete the Words — Bio-Based Acoustic Ceiling Foam",
+      "body": "Traditional open-cell polyurethane wall panels deaden noisy office chatter well, yet rely entirely on petroleum feedstocks that crumble into persistent microplastic dust after renovation. Materials chemists at coastal agricultural labs have started growing pale featherlight acoustic panels directly from crop husk waste bound safely together with fungal mycelium networks. After sterilizing discarded oat hulls inside aluminum molds, technicians inoculate the damp mix with benign oyster-mushroom rootlets that weave microscopic hollow tubes within five quiet dark days. Gently oven-drying finished bricks stops live fungal growth completely, leaving porous fibrous interiors remarkably skilled at scat___ [1] harsh mid-range vocal echoes across busy university study commons. Independent lab burns further showed natural mineral ash crusts retard flame spread smoothly without relying on brominated chemical addi___ [2]. Acoustic testers measuring standard reverberation decay across identical small conference rooms found mushroom-hull tiles matched commercial fiberglass absorption cur___ [3] closely between five hundred and four thousand hertz. Equally encouraging for campus sustainability officers, obsolete boards removed during hallway upgrades can simply be chip___ [4] and composted safely onto landscaped shrub beds instead of crowding sealed municipal land___ [5]. Pilot installations inside two library group booths drawn up last semester sparked virtually zero chemical off-gassing odors, keeping allergic student readers comfortable even when summer humidity clim___ [6] steeply. Engineers currently focus on trimming mold-press drying elec___ [7] and applying translucent plant-wax coatings around vulnerable lower corners so passing backpack zip___ [8] never fray delicate mycelium faces dur___ [9] hurried semester fin___ [10].",
       "readingOrder": 2
+    },
+    {
+      "id": "IBT04-DL1",
+      "title": "Campus Email: Economics Lab Dataset Confidentiality",
+      "body": "From: Prof. Nair (ECON 340) | Subject: Household Panel File Rules\nNotice when downloading the anonymized regional household income CSV inside the shared server: never copy raw spreadsheet files onto personal cloud folders, USB sticks, or third-party AI web chats! Analyze summary regressions strictly inside virtual lab terminals. Exporting final aggregate slope tables and clean charts for Friday posters is explicitly encouraged.",
+      "readingOrder": 3
+    },
+    {
+      "id": "IBT04-DL2",
+      "title": "Health Clinic Flyer: Flu Vaccine Clinic Pop-Up",
+      "body": "Student Wellness Services | Courtyard Tent (Nov 4–5, 9 AM–4 PM)\nNo advance appointment needed for standard seasonal flu shots—bring valid student ID and wear short sleeves. Free for all enrolled undergraduates regardless of private insurance plan. Severe egg-allergy alternative vaccines are stocked strictly inside Main Clinic Suite 110 (call ext. 4412 ahead).",
+      "readingOrder": 4
+    },
+    {
+      "id": "IBT04-DL3",
+      "title": "Museum Curator Memo: Volunteer Tour Scripting",
+      "body": "Natural History Docent Coordinators | Fossil Hall Refresh\nThank you for mentoring incoming Saturday guides! Notice: guests frequently ask why ammonite fossils appear atop alpine ridges. Instead of reciting geological epoch dates silently memorized off wall labels, start every gallery stop with a tactile fossil cast passed hand-to-hand while inviting visitors to guess how oceanic shells reached snowy heights.",
+      "readingOrder": 5
+    },
+    {
+      "id": "IBT04-DL4",
+      "title": "Dorm Kitchen Protocol: Shared Spice & Fridge Purges",
+      "body": "Green House Co-op Kitchen Rules\nEvery Sunday evening at 8:00 PM, floor stewards empty unlabeled jars and spoiled produce out of shared refrigerators—always label personal boxes clearly with masking tape name + date! Shared olive oil, salt, and bulk oats restock weekly out of house dues; please run industrial dishwashers immediately whenever sink racks hit half capacity.",
+      "readingOrder": 6
+    },
+    {
+      "id": "IBT04-DL5",
+      "title": "Grant Office Checklist: Undergraduate Travel Reimbursement",
+      "body": "Office of Undergraduate Research | Post-Conference Expense Guide\nTravel reimbursement claims must upload itemized hotel folios and boarding stubs within 14 calendar days after return flight arrival—credit-card summary lines showing only total dollar charges get rejected! Meals cap flat at $52/day (no alcohol receipts). Direct bank deposits clear roughly ten business days after department chair signoff.",
+      "readingOrder": 7
+    },
+    {
+      "id": "IBT04-AC1",
+      "title": "Choice Overload and Default Architecture in Economics",
+      "body": "Classic consumer theory assumed expanding product assortments unconditionally enhances buyer welfare: someone who dislikes twenty-four jams can simply ignore twenty-three and buy their favorite jar cleanly. Yet celebrated field trials by behavioral psychologists revealed a striking twist when shoppers browsed a weekend gourmet jam tasting table: displays boasting twenty-four flavors drew eager tasting crowds initially, whereas a modest six-jar table converted shoppers into actual cash purchases nearly tenfold higher. When evaluating too many multi-attribute choices simultaneously, cognitive fatigue sets in swiftly alongside nagging post-purchase regret over missed unchosen alternatives—often paralyzing busy decision-makers into skipping selection entirely. Behavioral economists therefore highlight thoughtful 'default architecture': rather than removing choices forcefully, automatic enrollment options alongside clean filtered shortlists raise pension savings rates dramatically while keeping full opt-out freedom completely intact.",
+      "readingOrder": 8
+    },
+    {
+      "id": "IBT04-AC2",
+      "title": "High-Speed Freight and Cold-Chain Food Spoilage in Tropical Ports",
+      "body": "Approximately a third of global perishable horticulture harvest vanishes between farm gates and distant kitchen tables—not primarily due to barren harvests, but because broken 'cold-chain' gaps strike between rural orchards and humid port cranes. Fresh tropical mangoes and crisp leafy greens respire dynamically long after leaving branches: every hour lingering warm inside unshaded wooden crates multiplies fungal spores exponentially while draining natural moisture sweetness. Rather than building mammoth distant grid-powered freezer warehouses alone, agricultural engineers increasingly place compact solar-driven 'pre-cooling' insulated containers directly at village harvest edges so field warmth drops swiftly from thirty-five down toward twelve degrees Celsius within ninety minutes of cutting. Combined with breathable perforated starch films maintaining balanced humidity inside modest highway vans, farm cooperatives deliver crisp marketable produce clean past port customs—boosting grower income while curbing wasted irrigation energy upstream.",
+      "readingOrder": 9
+    },
+    {
+      "id": "IBT04-AC3",
+      "title": "Acoustic Mapping of Cavernous Limestone Cave Heritage Sites",
+      "body": "Step gently inside Upper Paleolithic limestone caverns in southern France or Spain and flashlights reveal breathtaking polychrome bison galloping cleanly across undulating dark rock domes. Curiously, archaeological acoustics researchers mapping echo decay across hundreds of cave nooks discovered early artists rarely painted isolated dead corners randomly; ochre bulls cluster heavily right inside glowing resonant chambers where rhythmic chanting, bone flutes, or clapped stalactites ring sharply like resonant brass drums. Mapping thousands of impulse echoes using modern balloon pops paired with three-dimensional sphere microphones uncovered startling acoustic targeting: spots amplifying clear 110-hertz vocal resonance frequently frame dense overlapping prehistoric wall scenes, whereas muffled acoustically dead alcoves directly adjacent sit completely blank. Respecting fragile calcite walls, preservation acousticians capture full impulse signatures remotely without loud hammers—allowing distant learners safely inside headphones to explore prehistoric subterranean soundscapes without breathing destructive humid visitor CO2 inside sealed caves.",
+      "readingOrder": 10
     }
   ],
   "assets": [
     {
-      "id": "IBT04-A01",
-      "relativePath": "audio/IBT04-A01.wav",
+      "id": "IBT04-LR01",
+      "relativePath": "audio/IBT04-LR01.wav",
       "kind": "AUDIO",
-      "caption": "M: Would you like me to send over the club budget draft before tomorrow's finance meeting?",
+      "caption": "M: Quick question—can I copy our ECON 340 household CSV onto my laptop cloud folder tonight?",
       "license": "Original",
-      "sha256": "b7df01fb9b7cbf0bcb5309359796e98fe4115f0e6139fe6f7678f55514ab9a0c",
-      "byteSize": 168684,
-      "durationMs": 5270
+      "sha256": "746de2d5739447f4018c002241a8faa6abca1d9732a04687968dd07dbaafc439",
+      "byteSize": 65852,
+      "durationMs": 8109
     },
     {
-      "id": "IBT04-A02",
-      "relativePath": "audio/IBT04-A02.wav",
+      "id": "IBT04-LR02",
+      "relativePath": "audio/IBT04-LR02.wav",
       "kind": "AUDIO",
-      "caption": "W: I currently work eight hours weekly at the library, and the economics lab offered me ten hours. Does campus policy allow eighteen total hours? M: During regular terms the cap is twenty hours combined, so eighteen stays safely within guidelines. N: Why did the student inquire about hours?",
+      "caption": "W: Do students with severe egg allergies just walk straight up to the courtyard vaccine tent?",
       "license": "Original",
-      "sha256": "695a097b38d9476ce8ed7c11ae637d176596179cf370746ec8bae143d0def5b8",
-      "byteSize": 653484,
-      "durationMs": 20420
+      "sha256": "f02e616e637aa83b7a70f5f691109ccbb6d93b5b3ee210708c6a470f82fd11bf",
+      "byteSize": 44604,
+      "durationMs": 5465
     },
     {
-      "id": "IBT04-A03",
-      "relativePath": "audio/IBT04-A03.wav",
+      "id": "IBT04-LR03",
+      "relativePath": "audio/IBT04-LR03.wav",
       "kind": "AUDIO",
-      "caption": "M: Why did switching from opt-in to opt-out quadruple clean-energy enrollment even though leaving took one stamp? Behavioral economists point to friction and status-quo bias—people stick with sensible defaults when no penalty blocks opting out. N: What drives high retention in default programs?",
+      "caption": "M: Should new Saturday Fossil Hall volunteers memorize every Latin geological sub-period card?",
       "license": "Original",
-      "sha256": "0880c4297a94956b02ee21d5f07a6cd1da8311d7dbc91f6d9b695ce136ccb9a1",
-      "byteSize": 599404,
-      "durationMs": 18730
+      "sha256": "f3d1b8ce26029649faf64fbd8331d5c71c191c2d7de7e2d0bda9e379f0fb4f59",
+      "byteSize": 50748,
+      "durationMs": 6245
     },
     {
-      "id": "IBT04-A04",
-      "relativePath": "audio/IBT04-A04.wav",
+      "id": "IBT04-LR04",
+      "relativePath": "audio/IBT04-LR04.wav",
       "kind": "AUDIO",
-      "caption": "M: Quarterly reimbursement forms must include itemized receipts and advisor signatures.",
+      "caption": "W: Hey, what happened to my labeled soup box—Wait, why is the third fridge shelf half empty?",
       "license": "Original",
-      "sha256": "3955893f163163ba3cb60969770d4f2d1f04e81d111159f8d4c84502860825c8",
-      "byteSize": 184524,
-      "durationMs": 5765
+      "sha256": "6d45af9c93a1a6f94d2492371b61defba1879c28ba30c4b55944467b641862b7",
+      "byteSize": 54588,
+      "durationMs": 6710
+    },
+    {
+      "id": "IBT04-LR05",
+      "relativePath": "audio/IBT04-LR05.wav",
+      "kind": "AUDIO",
+      "caption": "M: Can I upload a single screenshot of my credit-card statement total to claim hotel reimbursement?",
+      "license": "Original",
+      "sha256": "ed556e675f36e4a8fcd24777a2f07a022a1fb7161cc75f53acaa8ae6c197a6a2",
+      "byteSize": 50492,
+      "durationMs": 6215
+    },
+    {
+      "id": "IBT04-LR06",
+      "relativePath": "audio/IBT04-LR06.wav",
+      "kind": "AUDIO",
+      "caption": "W: Wait—how can tall plastic hillside nets squeeze drinking water from dry coastal air without rain?",
+      "license": "Original",
+      "sha256": "9545bda0ac79bbbea141c96153b7a67aac25a0e18d793e53034177a747c70ad3",
+      "byteSize": 54076,
+      "durationMs": 6645
+    },
+    {
+      "id": "IBT04-LR07",
+      "relativePath": "audio/IBT04-LR07.wav",
+      "kind": "AUDIO",
+      "caption": "M: Are lightweight mushroom-hull ceiling boards mostly decorative, or do they block office noise too?",
+      "license": "Original",
+      "sha256": "1d68161c4b730a0acaf89a795ff0079888121c266b0ce98452efe64b7f87127f",
+      "byteSize": 51004,
+      "durationMs": 6280
+    },
+    {
+      "id": "IBT04-LR08",
+      "relativePath": "audio/IBT04-LR08.wav",
+      "kind": "AUDIO",
+      "caption": "W: Wait—why did six jars of jam actually sell far better than twenty-four delicious flavors?",
+      "license": "Original",
+      "sha256": "8eac42e4b48dd90cbf80587db085dcf374ece89628402bc9c4c91da2fe11c1f6",
+      "byteSize": 51004,
+      "durationMs": 6275
+    },
+    {
+      "id": "IBT04-LR09",
+      "relativePath": "audio/IBT04-LR09.wav",
+      "kind": "AUDIO",
+      "caption": "M: Why haul portable solar chillers straight into farm fields instead of cooling mangoes back at the port?",
+      "license": "Original",
+      "sha256": "28af373be582c90c0a19ece9e921825f5affa185d7b0aa432d73966cccba73ed",
+      "byteSize": 51772,
+      "durationMs": 6345
+    },
+    {
+      "id": "IBT04-LR10",
+      "relativePath": "audio/IBT04-LR10.wav",
+      "kind": "AUDIO",
+      "caption": "W: Why avoid testing stone cave resonance with loud rock speakers or metal hammers?",
+      "license": "Original",
+      "sha256": "556ddd1c55bd38f1a2224e6b3c1ea62f4acf9d171f86e6a5ff5183e8425c58c1",
+      "byteSize": 41788,
+      "durationMs": 5120
+    },
+    {
+      "id": "IBT04-LR11",
+      "relativePath": "audio/IBT04-LR11.wav",
+      "kind": "AUDIO",
+      "caption": "M: How come pressing washed sea kelp in tap water bleached brown leaves into dull green?",
+      "license": "Original",
+      "sha256": "c1d79b3ee8c42e48bd147811974568c015c4053069f0abf8311fb785f15875b0",
+      "byteSize": 43324,
+      "durationMs": 5310
+    },
+    {
+      "id": "IBT04-LR12",
+      "relativePath": "audio/IBT04-LR12.wav",
+      "kind": "AUDIO",
+      "caption": "W: Which wooden half did a medieval London merchant take away after paying harbor tax?",
+      "license": "Original",
+      "sha256": "cd44bb3fa417ccb6ade23b751a89d5b9bdd8ad6682772aff7cdc59f471720b4a",
+      "byteSize": 41532,
+      "durationMs": 5090
+    },
+    {
+      "id": "IBT04-LR13",
+      "relativePath": "audio/IBT04-LR13.wav",
+      "kind": "AUDIO",
+      "caption": "M: Why pile washed kitchen oyster shells straight onto muddy bay piers anyway?",
+      "license": "Original",
+      "sha256": "ad2b2bbb86c5daa64b2eb0bd3327d7939bc703d90e1ba38e66d44ac607021ae0",
+      "byteSize": 39228,
+      "durationMs": 4825
+    },
+    {
+      "id": "IBT04-LR14",
+      "relativePath": "audio/IBT04-LR14.wav",
+      "kind": "AUDIO",
+      "caption": "W: How did medieval jewelers verify whether a gold sovereign hid cheap brass underneath without melting it?",
+      "license": "Original",
+      "sha256": "262cdbb35e9527f8cec4ed00863bf6fbe6ba08a9a575a8a256e694fb1ddb5739",
+      "byteSize": 48700,
+      "durationMs": 5995
+    },
+    {
+      "id": "IBT04-LR15",
+      "relativePath": "audio/IBT04-LR15.wav",
+      "kind": "AUDIO",
+      "caption": "M: What stops ancient marsh grass roots from rotting cleanly into CO2 gas like forest autumn leaves?",
+      "license": "Original",
+      "sha256": "262db2a0bd22d11cbbdbde54fcb2b06db49bf1c28678398b370377c9874a111a",
+      "byteSize": 52028,
+      "durationMs": 6390
+    },
+    {
+      "id": "IBT04-C1",
+      "relativePath": "audio/IBT04-C1.wav",
+      "kind": "AUDIO",
+      "caption": "M: Hi Prof. Nair—my teammate asked if I could paste the aggregate regional earnings table directly into our public lab webpage tomorrow afternoon. W: Public aggregated regression slopes and group averages are completely welcome! Just double-check none of the raw panel household rows slipped along into downloadable appendix spreadsheets. M: Understood—we'll keep raw individual ID CSVs inside the locked virtual cluster strictly. W: Wise move. Remember ethics auditors check shared appendices too, so inspect every cell formula before hitting upload.",
+      "license": "Original",
+      "sha256": "b0d4fb98c830f3357197d7ea57bc47c6e8d4e255fa8b791f6af0a2ed86ec094e",
+      "byteSize": 299068,
+      "durationMs": 36855
+    },
+    {
+      "id": "IBT04-C2",
+      "relativePath": "audio/IBT04-C2.wav",
+      "kind": "AUDIO",
+      "caption": "W: Excuse me, why was my student conference hotel claim flagged 'incomplete' when my attached credit-card line showed every dollar charged? M: See the guideline note—bank card statements display just one lump charge at checkout, masking whether movie rentals or mini-bar snacks sat buried inside. W: Aha! So I have to phone the downtown conference hotel front desk for an itemized nightly breakdown PDF? M: Precisely—zero-balance folio bills listing room tax and nightly lodging separately clear audit review smoothly within forty-eight hours.",
+      "license": "Original",
+      "sha256": "3d037575cfd674461159f4c6bb7b81373e30713623fef09c742c02ca73a2c06c",
+      "byteSize": 297276,
+      "durationMs": 36620
+    },
+    {
+      "id": "IBT04-C3",
+      "relativePath": "audio/IBT04-C3.wav",
+      "kind": "AUDIO",
+      "caption": "M: Hey Sofia, notice two corner eyelets ripped on hillside fog collector Net B after last night's coastal gust? W: Whoa—let's slacken bottom guide wires slightly right away before winds widen that snag! Look at those edge grommets: bare rope rubbed hard against sharp steel turnbuckles. M: Should we loop flexible rubber garden sleeves over corner shackles before tensioning Net B back tight tomorrow morning? W: Smart low-tech fix! Cushioning sharp steel corners stops chafe cleanly while keeping polypropylene weave taut across incoming fog bands.",
+      "license": "Original",
+      "sha256": "3f03c6e547607f8eab60dacec707e15df97a163491664e60f8d9b8847eae9471",
+      "byteSize": 296764,
+      "durationMs": 36565
+    },
+    {
+      "id": "IBT04-C4",
+      "relativePath": "audio/IBT04-C4.wav",
+      "kind": "AUDIO",
+      "caption": "W: Hey Jordan—before Saturday's family crowd floods Fossil Hall, notice how youngsters glaze over if we spend four straight minutes pronouncing Greek marine epoch subdivisions? M: Guilty as charged! Every time I recite 'Lower Jurassic Pliensbachian' off the wall card, six elementary kids wander straight off toward dinosaur legs! W: Try slipping that sturdy cast coiled ammonite shell straight into a kid's hands first and ask: 'Why did a cousin of coastal squid turn to rock three kilometers up an icy peak?' M: Genius hook—let curiosity spark the geologic uplift story before dropping scientific vocabulary later naturally!",
+      "license": "Original",
+      "sha256": "0f743e1e7c44f3f6308aa577dc70fc348c7aac14833048498f376c350829852e",
+      "byteSize": 337468,
+      "durationMs": 41580
+    },
+    {
+      "id": "IBT04-T1",
+      "relativePath": "audio/IBT04-T1.wav",
+      "kind": "AUDIO",
+      "caption": "N: Good morning campus community: Student Wellness mobile nursing teams open no-appointment seasonal flu vaccinations inside the Central Courtyard Canopy today and tomorrow, nine AM until four PM. N: Bring a valid student ID and wear accessible short sleeves; standard doses carry zero charge for all enrolled undergraduates regardless of external insurance carrier. N: Students requiring specialized egg-allergy formulations should phone Clinic Suite 110 on extension 4412 rather than queueing at the courtyard tent.",
+      "license": "Original",
+      "sha256": "e18c267c9b6e83a8bcf477d4945ece140bf1b30835ebd516e1670e821ecbc6e2",
+      "byteSize": 284220,
+      "durationMs": 35030
+    },
+    {
+      "id": "IBT04-T2",
+      "relativePath": "audio/IBT04-T2.wav",
+      "kind": "AUDIO",
+      "caption": "M: Why do well-educated college hires delay signing up for generous employer retirement savings plans when every spreadsheet demonstrates matched accounts double money effortlessly? M: Behavioral economics pinpoints twin culprits: 'present bias' overweights immediate Friday paycheck shrinkages heavily over comfortable decades later, while tedious multi-page investment menus trigger classic 'status-quo procrastination'. M: Test cities flipped simple onboarding forms from opt-in ('check yes to join') over to gentle opt-out auto-enrollment ('five percent sets aside automatically unless you prefer checking no'). M: Participation rocketed cleanly from barely forty percent above eighty-five percent overnight—proving tiny paper frictions quietly outweigh grand theoretical incentives when people juggle busy schedules.",
+      "license": "Original",
+      "sha256": "c1b52beb689149eab633b1a52cdbb3423387ea9e120058e3f842c1e40fc7c92e",
+      "byteSize": 411964,
+      "durationMs": 50765
+    },
+    {
+      "id": "IBT04-T3",
+      "relativePath": "audio/IBT04-T3.wav",
+      "kind": "AUDIO",
+      "caption": "W: Unpack fragile laboratory microscopes or glassware today and crisp white blocks of expanded polystyrene cradle corners neatly—yet that crumbly oil foam defies city recycling bins for centuries. W: Bio-fabrication engineers grow custom biodegradable replacements quite literally from agricultural leftovers: pasteurized hemp hurds or humble oat hulls blended lightly with benign Ganoderma fungus spawn. W: Placed quietly inside three-dimensional plastic trays at room temperature for five dark days, microscopic white mycelium rootlets weave dense springy foam matrices around loose husks cleanly with zero synthetic glue. W: Finished gentle kiln drying locks shapes firmly and kills living spores permanently—yielding tough cushioned bumpers that break smoothly down into garden flowerbed mulch within thirty damp days once retired.",
+      "license": "Original",
+      "sha256": "42c9f2f0e37b5636173c1882fc740cec5d545d4857b0fb6ed355ce8b11cf9af9",
+      "byteSize": 418876,
+      "durationMs": 51615
+    },
+    {
+      "id": "IBT04-T4",
+      "relativePath": "audio/IBT04-T4.wav",
+      "kind": "AUDIO",
+      "caption": "M: Whenever visitors tour dark subterranean Paleolithic rock shelters adorned with vivid ochre deer and galloping bulls, eyes absorb visuals first—yet human ears uncover equally startling design intentionality. M: Archaeological sound teams placing neutral balloon bursts plus tiny microphone spheres across narrow limestone halls mapped resonance spikes beside every art panel versus adjacent bare stony dead walls. M: Repeatedly across French and Spanish sites, intense artwork overlays cluster tightly inside high-amplification corners booming clearly around ninety to one hundred ten hertz—matching resonant human male and female humming tones or hollow bird-bone flute fundamentals remarkably closely. M: Adjacent hushed alcoves damping sound flatly remained stubbornly blank—strongly suggesting acoustic echo drama guided ceremonial site selection right alongside flickering tallow lamp shadows.",
+      "license": "Original",
+      "sha256": "c32bb5ef262cccc1a1e816dbdfe51a4dc4257025b3f1078f17246f5a72a9f03e",
+      "byteSize": 458044,
+      "durationMs": 56460
+    },
+    {
+      "id": "IBT04-SR01",
+      "relativePath": "audio/IBT04-SR01.wav",
+      "kind": "AUDIO",
+      "caption": "W: Never copy raw household panel files onto personal cloud drives.",
+      "license": "Original",
+      "sha256": "8eaeabfa351023c24d79f0986528ac62e29b4676ecc3345291d4dd380f810bc7",
+      "byteSize": 39228,
+      "durationMs": 4815
+    },
+    {
+      "id": "IBT04-SR02",
+      "relativePath": "audio/IBT04-SR02.wav",
+      "kind": "AUDIO",
+      "caption": "M: Attach itemized hotel folios rather than monthly card totals alone.",
+      "license": "Original",
+      "sha256": "50e2eecdc23652bf284a0f1df621a40627ef4934b6855986b1d08de7b6c95739",
+      "byteSize": 40508,
+      "durationMs": 4985
+    },
+    {
+      "id": "IBT04-SR03",
+      "relativePath": "audio/IBT04-SR03.wav",
+      "kind": "AUDIO",
+      "caption": "W: Courtyard flu shots require no appointment for enrolled undergraduates.",
+      "license": "Original",
+      "sha256": "74246d0290a86286cfb9c430bcb0c50b99ecb89380268bb660726b8bfead4570",
+      "byteSize": 41276,
+      "durationMs": 5060
+    },
+    {
+      "id": "IBT04-SR04",
+      "relativePath": "audio/IBT04-SR04.wav",
+      "kind": "AUDIO",
+      "caption": "M: Wrap labeled masking tape securely on shared dorm fridge tubs weekly.",
+      "license": "Original",
+      "sha256": "64a148aee72bd9af361f5f847c5c7748672cc001a015dab9973d00a8f1dae846",
+      "byteSize": 38972,
+      "durationMs": 4795
+    },
+    {
+      "id": "IBT04-SR05",
+      "relativePath": "audio/IBT04-SR05.wav",
+      "kind": "AUDIO",
+      "caption": "W: Smaller product displays help hesitant buyers avoid choice fatigue.",
+      "license": "Original",
+      "sha256": "9a6475b0cc197eeb88b8dccce5d47a4f67b90f82b20581d3fa62afc6a8dd8712",
+      "byteSize": 39228,
+      "durationMs": 4805
+    },
+    {
+      "id": "IBT04-SR06",
+      "relativePath": "audio/IBT04-SR06.wav",
+      "kind": "AUDIO",
+      "caption": "M: Solar farm chillers drop fresh mango heat smoothly before port transit.",
+      "license": "Original",
+      "sha256": "042ffcf65d2914239fe3feeeef0ff54de8b0df203826e613b5445d3a12baa26d",
+      "byteSize": 41532,
+      "durationMs": 5105
+    },
+    {
+      "id": "IBT04-SR07",
+      "relativePath": "audio/IBT04-SR07.wav",
+      "kind": "AUDIO",
+      "caption": "W: Balloon burst echoes reveal vivid acoustic signatures in dark rock caves.",
+      "license": "Original",
+      "sha256": "365596b961b1ea0a0e44139f4211048ffbb1508aa65bde10ee59d3dd8358bd0c",
+      "byteSize": 39740,
+      "durationMs": 4875
+    },
+    {
+      "id": "IBT04-SI01",
+      "relativePath": "audio/IBT04-SI01.wav",
+      "kind": "AUDIO",
+      "caption": "M: When purchasing electronics or groceries in a store with twenty nearly identical options, how do you pick quickly without second-guessing?",
+      "license": "Original",
+      "sha256": "d22f05d927757be29a04ae9f10707538eec2df267b561121d4f99a1ebfbf139b",
+      "byteSize": 69692,
+      "durationMs": 8585
+    },
+    {
+      "id": "IBT04-SI02",
+      "relativePath": "audio/IBT04-SI02.wav",
+      "kind": "AUDIO",
+      "caption": "W: Tell me about a financial or scheduling habit you adjusted during college to save time or avoid waste.",
+      "license": "Original",
+      "sha256": "cab626164d0d817f1c3f1a7339551f43a0c7884dca7265f812e7338816be3f9e",
+      "byteSize": 51516,
+      "durationMs": 6335
+    },
+    {
+      "id": "IBT04-SI03",
+      "relativePath": "audio/IBT04-SI03.wav",
+      "kind": "AUDIO",
+      "caption": "M: If you managed a crowded college dorm kitchen where food kept spoiling anonymously, what humane fairness rule would you enforce?",
+      "license": "Original",
+      "sha256": "e636550c52b4989f7f6b71070371f6c7190d9728e3028ef6089f3fc4725e4d4a",
+      "byteSize": 63548,
+      "durationMs": 7810
+    },
+    {
+      "id": "IBT04-SI04",
+      "relativePath": "audio/IBT04-SI04.wav",
+      "kind": "AUDIO",
+      "caption": "W: Should public programs use automatic opt-out defaults—for example in waste composting or retirement savings—or keep everything strictly opt-in?",
+      "license": "Original",
+      "sha256": "6ad389701d3ae00c177d78fed73d213ca9b51ae0b6b46d0b7b634b52a98880e4",
+      "byteSize": 80444,
+      "durationMs": 9885
     }
   ],
   "items": [
     {
-      "id": "IBT26-04-Q01",
+      "id": "IBT26-04-Q001",
       "section": "READING",
       "taskType": "FILL_BLANK",
-      "prompt": "Complete the Word: 'Households could easily opt out without paying any admin________ penalty.' (Write the full adjective matching 'admin________')",
+      "prompt": "Complete the Word (Complete the Words — Dryland Fog-Harvesting Mesh Towers — Blank [1]): Fill the missing full word for 'dri___ (moves gently in currents)'.",
       "options": [],
-      "answer": "administrative",
+      "answer": "drifts",
       "acceptedAnswers": [
-        "administrative"
+        "drifts"
       ],
-      "explanation": "Adjektiva 'administrative' memodifikasi nomina 'penalty' (denda administratif).",
-      "rationaleSource": "IBT-MOD-01",
+      "explanation": "Verba tunggal sesuai 'dense marine fog' -> 'drifts'.",
+      "rationaleSource": "IBT-MOD-07",
       "difficulty": "B2",
       "points": 1,
       "license": "Original",
       "reviewStatus": "VERIFIED_ORIGINAL",
-      "passageId": null,
+      "passageId": "IBT04-CW1",
       "audioAssetId": null,
       "sortIndex": 1
     },
     {
-      "id": "IBT26-04-Q02",
+      "id": "IBT26-04-Q002",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Complete the Word (Complete the Words — Dryland Fog-Harvesting Mesh Towers — Blank [2]): Fill the missing full word for 'ver___ (upright from ground up)'.",
+      "options": [],
+      "answer": "vertically",
+      "acceptedAnswers": [
+        "vertically"
+      ],
+      "explanation": "Adverbia memodifikasi kata kerja 'stretch' -> 'vertically'.",
+      "rationaleSource": "IBT-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT04-CW1",
+      "audioAssetId": null,
+      "sortIndex": 2
+    },
+    {
+      "id": "IBT26-04-Q003",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Complete the Word (Complete the Words — Dryland Fog-Harvesting Mesh Towers — Blank [3]): Fill the missing full word for 'fil___ (thin thread strands)'.",
+      "options": [],
+      "answer": "filaments",
+      "acceptedAnswers": [
+        "filaments"
+      ],
+      "explanation": "Nomina jamak serat jaring penangkap kabut -> 'filaments'.",
+      "rationaleSource": "IBT-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT04-CW1",
+      "audioAssetId": null,
+      "sortIndex": 3
+    },
+    {
+      "id": "IBT26-04-Q004",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Complete the Word (Complete the Words — Dryland Fog-Harvesting Mesh Towers — Blank [4]): Fill the missing full word for 'cov___ (shielded from evaporation)'.",
+      "options": [],
+      "answer": "covered",
+      "acceptedAnswers": [
+        "covered"
+      ],
+      "explanation": "Adjektiva partisipial pasif menerangkan 'storage gutters' -> 'covered'.",
+      "rationaleSource": "IBT-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT04-CW1",
+      "audioAssetId": null,
+      "sortIndex": 4
+    },
+    {
+      "id": "IBT26-04-Q005",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Complete the Word (Complete the Words — Dryland Fog-Harvesting Mesh Towers — Blank [5]): Fill the missing full word for 'ris___ (chances of breakage)'.",
+      "options": [],
+      "answer": "risks",
+      "acceptedAnswers": [
+        "risks"
+      ],
+      "explanation": "Nomina jamak sejajar 'higher yields' -> 'risks'.",
+      "rationaleSource": "IBT-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT04-CW1",
+      "audioAssetId": null,
+      "sortIndex": 5
+    },
+    {
+      "id": "IBT26-04-Q006",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Complete the Word (Complete the Words — Dryland Fog-Harvesting Mesh Towers — Blank [6]): Fill the missing full word for 'cab___ (supporting metal wire lines)'.",
+      "options": [],
+      "answer": "cables",
+      "acceptedAnswers": [
+        "cables"
+      ],
+      "explanation": "Nomina jamak kawat penahan tiang -> 'cables'.",
+      "rationaleSource": "IBT-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT04-CW1",
+      "audioAssetId": null,
+      "sortIndex": 6
+    },
+    {
+      "id": "IBT26-04-Q007",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Complete the Word (Complete the Words — Dryland Fog-Harvesting Mesh Towers — Blank [7]): Fill the missing full word for 'clo___ (blocks small openings)'.",
+      "options": [],
+      "answer": "clogs",
+      "acceptedAnswers": [
+        "clogs"
+      ],
+      "explanation": "Verba tunggal sesuai 'summer dust' -> 'clogs'.",
+      "rationaleSource": "IBT-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT04-CW1",
+      "audioAssetId": null,
+      "sortIndex": 7
+    },
+    {
+      "id": "IBT26-04-Q008",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Complete the Word (Complete the Words — Dryland Fog-Harvesting Mesh Towers — Blank [8]): Fill the missing full word for 'deliv___ (paid transport shipments)'.",
+      "options": [],
+      "answer": "deliveries",
+      "acceptedAnswers": [
+        "deliveries"
+      ],
+      "explanation": "Nomina jamak kiriman truk air -> 'deliveries'.",
+      "rationaleSource": "IBT-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT04-CW1",
+      "audioAssetId": null,
+      "sortIndex": 8
+    },
+    {
+      "id": "IBT26-04-Q009",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Complete the Word (Complete the Words — Dryland Fog-Harvesting Mesh Towers — Blank [9]): Fill the missing full word for 'supple___ (helpful added supply)'.",
+      "options": [],
+      "answer": "supplements",
+      "acceptedAnswers": [
+        "supplements"
+      ],
+      "explanation": "Nomina jamak pelengkap pasokan air -> 'supplements'.",
+      "rationaleSource": "IBT-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT04-CW1",
+      "audioAssetId": null,
+      "sortIndex": 9
+    },
+    {
+      "id": "IBT26-04-Q010",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Complete the Word (Complete the Words — Dryland Fog-Harvesting Mesh Towers — Blank [10]): Fill the missing full word for 'resi___ (ability to endure drought)'.",
+      "options": [],
+      "answer": "resilience",
+      "acceptedAnswers": [
+        "resilience"
+      ],
+      "explanation": "Nomina abstrak ketahanan kekeringan -> 'resilience'.",
+      "rationaleSource": "IBT-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT04-CW1",
+      "audioAssetId": null,
+      "sortIndex": 10
+    },
+    {
+      "id": "IBT26-04-Q011",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Complete the Word (Complete the Words — Bio-Based Acoustic Ceiling Foam — Blank [1]): Fill the missing full word for 'scat___ (dispersing sound waves)'.",
+      "options": [],
+      "answer": "scattering",
+      "acceptedAnswers": [
+        "scattering"
+      ],
+      "explanation": "Gerund setelah preposisi 'at' -> 'scattering'.",
+      "rationaleSource": "IBT-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT04-CW2",
+      "audioAssetId": null,
+      "sortIndex": 11
+    },
+    {
+      "id": "IBT26-04-Q012",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Complete the Word (Complete the Words — Bio-Based Acoustic Ceiling Foam — Blank [2]): Fill the missing full word for 'addi___ (chemical supplements added)'.",
+      "options": [],
+      "answer": "additives",
+      "acceptedAnswers": [
+        "additives"
+      ],
+      "explanation": "Nomina jamak bahan kimia tambahan -> 'additives'.",
+      "rationaleSource": "IBT-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT04-CW2",
+      "audioAssetId": null,
+      "sortIndex": 12
+    },
+    {
+      "id": "IBT26-04-Q013",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Complete the Word (Complete the Words — Bio-Based Acoustic Ceiling Foam — Blank [3]): Fill the missing full word for 'cur___ (plotted measurement lines)'.",
+      "options": [],
+      "answer": "curves",
+      "acceptedAnswers": [
+        "curves"
+      ],
+      "explanation": "Nomina jamak kurva daya serap frekuensi -> 'curves'.",
+      "rationaleSource": "IBT-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT04-CW2",
+      "audioAssetId": null,
+      "sortIndex": 13
+    },
+    {
+      "id": "IBT26-04-Q014",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Complete the Word (Complete the Words — Bio-Based Acoustic Ceiling Foam — Blank [4]): Fill the missing full word for 'chip___ (shredded into small pieces)'.",
+      "options": [],
+      "answer": "chipped",
+      "acceptedAnswers": [
+        "chipped"
+      ],
+      "explanation": "Past participle pasif setelah 'be' -> 'chipped'.",
+      "rationaleSource": "IBT-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT04-CW2",
+      "audioAssetId": null,
+      "sortIndex": 14
+    },
+    {
+      "id": "IBT26-04-Q015",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Complete the Word (Complete the Words — Bio-Based Acoustic Ceiling Foam — Blank [5]): Fill the missing full word for 'land___ (waste burial sites)'.",
+      "options": [],
+      "answer": "landfills",
+      "acceptedAnswers": [
+        "landfills"
+      ],
+      "explanation": "Nomina jamak tempat pembuangan akhir -> 'landfills'.",
+      "rationaleSource": "IBT-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT04-CW2",
+      "audioAssetId": null,
+      "sortIndex": 15
+    },
+    {
+      "id": "IBT26-04-Q016",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Complete the Word (Complete the Words — Bio-Based Acoustic Ceiling Foam — Blank [6]): Fill the missing full word for 'clim___ (rises upward steeply)'.",
+      "options": [],
+      "answer": "climbs",
+      "acceptedAnswers": [
+        "climbs"
+      ],
+      "explanation": "Verba tunggal sesuai 'summer humidity' -> 'climbs'.",
+      "rationaleSource": "IBT-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT04-CW2",
+      "audioAssetId": null,
+      "sortIndex": 16
+    },
+    {
+      "id": "IBT26-04-Q017",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Complete the Word (Complete the Words — Bio-Based Acoustic Ceiling Foam — Blank [7]): Fill the missing full word for 'elec___ (power energy needed)'.",
+      "options": [],
+      "answer": "electricity",
+      "acceptedAnswers": [
+        "electricity"
+      ],
+      "explanation": "Nomina daya listrik pengeringan -> 'electricity'.",
+      "rationaleSource": "IBT-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT04-CW2",
+      "audioAssetId": null,
+      "sortIndex": 17
+    },
+    {
+      "id": "IBT26-04-Q018",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Complete the Word (Complete the Words — Bio-Based Acoustic Ceiling Foam — Blank [8]): Fill the missing full word for 'zip___ (metal backpack fasteners)'.",
+      "options": [],
+      "answer": "zippers",
+      "acceptedAnswers": [
+        "zippers"
+      ],
+      "explanation": "Nomina jamak ritsleting tas mahasiswa -> 'zippers'.",
+      "rationaleSource": "IBT-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT04-CW2",
+      "audioAssetId": null,
+      "sortIndex": 18
+    },
+    {
+      "id": "IBT26-04-Q019",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Complete the Word (Complete the Words — Bio-Based Acoustic Ceiling Foam — Blank [9]): Fill the missing full word for 'dur___ (across a time period)'.",
+      "options": [],
+      "answer": "during",
+      "acceptedAnswers": [
+        "during"
+      ],
+      "explanation": "Preposisi waktu ujian akhir -> 'during'.",
+      "rationaleSource": "IBT-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT04-CW2",
+      "audioAssetId": null,
+      "sortIndex": 19
+    },
+    {
+      "id": "IBT26-04-Q020",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Complete the Word (Complete the Words — Bio-Based Acoustic Ceiling Foam — Blank [10]): Fill the missing full word for 'fin___ (end-of-term exam period)'.",
+      "options": [],
+      "answer": "finals",
+      "acceptedAnswers": [
+        "finals"
+      ],
+      "explanation": "Nomina majemuk 'semester finals' -> 'finals'.",
+      "rationaleSource": "IBT-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT04-CW2",
+      "audioAssetId": null,
+      "sortIndex": 20
+    },
+    {
+      "id": "IBT26-04-Q021",
       "section": "READING",
       "taskType": "CHOICE_SINGLE",
-      "prompt": "If a presenter cancels 4 days before May 2, what option avoids losing the registration value?",
+      "prompt": "Read in Daily Life ('Campus Email: Economics Lab Dataset Confidentiality' — Q1/3): Which handling action is strictly prohibited for the raw ECON 340 household CSV?",
       "options": [
-        "Transferring the presentation slot to a co-author by email",
-        "Requesting a full $25 refund on the portal",
-        "Paying a $3 late cancellation charge",
-        "Submitting abstract edits after May 2"
+        "Generating aggregate statistical regressions inside virtual lab desktops.",
+        "Exporting finished clean slope charts onto Friday class posters.",
+        "Working jointly with assigned lab partners inside computer rooms.",
+        "Copying raw data files onto personal clouds, thumb drives, or online AI sites."
       ],
-      "answer": "Transferring the presentation slot to a co-author by email",
+      "answer": "Copying raw data files onto personal clouds, thumb drives, or online AI sites.",
       "acceptedAnswers": [
-        "Transferring the presentation slot to a co-author by email"
+        "Copying raw data files onto personal clouds, thumb drives, or online AI sites."
       ],
-      "explanation": "Dalam rentang kurang dari 10 hari, pengembalian dana tidak tersedia, namun pengalihan ke rekan penulis melalui email bebas penalti.",
+      "explanation": "Dilarang menyalin file mentah ke cloud pribadi, USB, atau situs AI luar.",
+      "rationaleSource": "IBT-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT04-DL1",
+      "audioAssetId": null,
+      "sortIndex": 21
+    },
+    {
+      "id": "IBT26-04-Q022",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Read in Daily Life ('Campus Email: Economics Lab Dataset Confidentiality' — Q2/3): What output from the dataset MAY students export outside the lab for Friday's seminar?",
+      "options": [
+        "Password keys accessing shared economics terminals.",
+        "Raw individual salary spreadsheets.",
+        "Aggregated slope tables and summary statistical figures.",
+        "Complete unedited household street identifiers."
+      ],
+      "answer": "Aggregated slope tables and summary statistical figures.",
+      "acceptedAnswers": [
+        "Aggregated slope tables and summary statistical figures."
+      ],
+      "explanation": "Tabel agregat dan grafik ringkasan akhir justru dianjurkan untuk poster.",
       "rationaleSource": "IBT-MOD-01",
       "difficulty": "B2",
       "points": 1,
       "license": "Original",
       "reviewStatus": "VERIFIED_ORIGINAL",
-      "passageId": "IBT04-P1",
+      "passageId": "IBT04-DL1",
       "audioAssetId": null,
-      "sortIndex": 2
+      "sortIndex": 22
     },
     {
-      "id": "IBT26-04-Q03",
+      "id": "IBT26-04-Q023",
       "section": "READING",
-      "taskType": "REORDER",
-      "prompt": "Order these 4 research steps from Passage 2 logically (1 = earliest step, 4 = conclusion):",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Read in Daily Life ('Campus Email: Economics Lab Dataset Confidentiality' — Q3/3): Where should primary statistical computations execute?",
       "options": [
-        "Utility mails default enrollment notice with simple opt-out card",
-        "Households remain enrolled unless opting out",
-        "Participation exceeds 74% compared with 18% opt-in rate",
-        "Economists verify low 1-year exit rates reflect status-quo bias"
+        "On personal smartphone calculators.",
+        "Inside university virtual laboratory computer environments.",
+        "Across public home coffee-shop tablet apps.",
+        "Inside emailed paper spreadsheets printed at dorms."
       ],
-      "answer": "Utility mails default enrollment notice with simple opt-out card|Households remain enrolled unless opting out|Participation exceeds 74% compared with 18% opt-in rate|Economists verify low 1-year exit rates reflect status-quo bias",
+      "answer": "Inside university virtual laboratory computer environments.",
       "acceptedAnswers": [
-        "Utility mails default enrollment notice with simple opt-out card|Households remain enrolled unless opting out|Participation exceeds 74% compared with 18% opt-in rate|Economists verify low 1-year exit rates reflect status-quo bias"
+        "Inside university virtual laboratory computer environments."
       ],
-      "explanation": "Urutan kausal bergerak dari intervensi default -> perilaku rumah tangga -> hasil partisipasi -> interpretasi ekonomi setahun kemudian.",
+      "explanation": "Analisis harus dijalankan di dalam terminal virtual lab.",
+      "rationaleSource": "IBT-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT04-DL1",
+      "audioAssetId": null,
+      "sortIndex": 23
+    },
+    {
+      "id": "IBT26-04-Q024",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Read in Daily Life ('Health Clinic Flyer: Flu Vaccine Clinic Pop-Up' — Q1/3): Who needs to schedule ahead or visit Main Clinic Suite 110 instead of the outdoor tent?",
+      "options": [
+        "Students requiring specialized severe egg-allergy vaccine variants.",
+        "Enrolled undergraduates lacking private health insurance cards.",
+        "Visitors preferring quick midday short-sleeve shots.",
+        "Faculty members walking past the courtyard between 9 AM and 4 PM."
+      ],
+      "answer": "Students requiring specialized severe egg-allergy vaccine variants.",
+      "acceptedAnswers": [
+        "Students requiring specialized severe egg-allergy vaccine variants."
+      ],
+      "explanation": "Vaksin alternatif alergi telur berat hanya tersedia di ruang klinik utama 110.",
+      "rationaleSource": "IBT-MOD-01",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT04-DL2",
+      "audioAssetId": null,
+      "sortIndex": 24
+    },
+    {
+      "id": "IBT26-04-Q025",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Read in Daily Life ('Health Clinic Flyer: Flu Vaccine Clinic Pop-Up' — Q2/3): What payment applies to enrolled undergraduates getting standard tent flu shots?",
+      "options": [
+        "Fifteen-dollar tent administrative copay.",
+        "Free exclusively on Tuesday morning hours.",
+        "Half price if wearing short sleeves.",
+        "Zero cost regardless of private coverage plans."
+      ],
+      "answer": "Zero cost regardless of private coverage plans.",
+      "acceptedAnswers": [
+        "Zero cost regardless of private coverage plans."
+      ],
+      "explanation": "Gratis bagi seluruh mahasiswa terdaftar terlepas dari asuransi.",
+      "rationaleSource": "IBT-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT04-DL2",
+      "audioAssetId": null,
+      "sortIndex": 25
+    },
+    {
+      "id": "IBT26-04-Q026",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Read in Daily Life ('Health Clinic Flyer: Flu Vaccine Clinic Pop-Up' — Q3/3): What two practical items make tent check-in fastest?",
+      "options": [
+        "Scheduling hourly digital tickets weeks beforehand.",
+        "Bringing sealed sterile needles from pharmacy counters.",
+        "Carrying a valid campus ID and wearing short-sleeved shirts.",
+        "Printing five signed medical history books."
+      ],
+      "answer": "Carrying a valid campus ID and wearing short-sleeved shirts.",
+      "acceptedAnswers": [
+        "Carrying a valid campus ID and wearing short-sleeved shirts."
+      ],
+      "explanation": "Cukup bawa kartu mahasiswa dan mengenakan lengan pendek.",
+      "rationaleSource": "IBT-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT04-DL2",
+      "audioAssetId": null,
+      "sortIndex": 26
+    },
+    {
+      "id": "IBT26-04-Q027",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Read in Daily Life ('Museum Curator Memo: Volunteer Tour Scripting' — Q1/3): What teaching technique do coordinators urge new Fossil Hall guides to avoid?",
+      "options": [
+        "Mentoring Saturday student volunteers on questioning habits.",
+        "Reciting memorized bare epoch dates passively off museum plaques.",
+        "Inviting families to inspect tactile cast models first.",
+        "Connecting marine fossils interactively to alpine mountain uplift."
+      ],
+      "answer": "Reciting memorized bare epoch dates passively off museum plaques.",
+      "acceptedAnswers": [
+        "Reciting memorized bare epoch dates passively off museum plaques."
+      ],
+      "explanation": "Pembimbing diminta menghindari hafalan kaku tanggal era geologi dari papan keterangan.",
+      "rationaleSource": "IBT-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT04-DL3",
+      "audioAssetId": null,
+      "sortIndex": 27
+    },
+    {
+      "id": "IBT26-04-Q028",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Read in Daily Life ('Museum Curator Memo: Volunteer Tour Scripting' — Q2/3): How should docents open explanations around alpine marine fossils?",
+      "options": [
+        "Pass around physical fossil casts and pose an intriguing question about location.",
+        "Hand visitors printed 40-page geology theses silently.",
+        "Lock fragile glass exhibits shut before noon crowds arrive.",
+        "Point immediately to gift-shop geology posters."
+      ],
+      "answer": "Pass around physical fossil casts and pose an intriguing question about location.",
+      "acceptedAnswers": [
+        "Pass around physical fossil casts and pose an intriguing question about location."
+      ],
+      "explanation": "Mulai dengan memegang cetakan fosil dan mengajak pengunjung menebak mengapa cangkang laut ada di gunung.",
+      "rationaleSource": "IBT-MOD-01",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT04-DL3",
+      "audioAssetId": null,
+      "sortIndex": 28
+    },
+    {
+      "id": "IBT26-04-Q029",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Read in Daily Life ('Museum Curator Memo: Volunteer Tour Scripting' — Q3/3): Which day of week specifically brings the incoming trainee guides mentioned?",
+      "options": [
+        "Wednesday.",
+        "Tuesday.",
+        "Monday.",
+        "Saturday."
+      ],
+      "answer": "Saturday.",
+      "acceptedAnswers": [
+        "Saturday."
+      ],
+      "explanation": "Teks menyinggung 'incoming Saturday guides'.",
+      "rationaleSource": "IBT-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT04-DL3",
+      "audioAssetId": null,
+      "sortIndex": 29
+    },
+    {
+      "id": "IBT26-04-Q030",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Read in Daily Life ('Dorm Kitchen Protocol: Shared Spice & Fridge Purges' — Q1/3): How do co-op residents prevent floor stewards from throwing out good stored leftovers Sunday night?",
+      "options": [
+        "Wash clean plates immediately inside hallway bathrooms.",
+        "Pay extra weekly house dues at dinner.",
+        "Stick masking tape naming the owner and storage date on containers.",
+        "Lock small coolers inside carpeted bedroom closets."
+      ],
+      "answer": "Stick masking tape naming the owner and storage date on containers.",
+      "acceptedAnswers": [
+        "Stick masking tape naming the owner and storage date on containers."
+      ],
+      "explanation": "Kotak makanan harus dilabeli selotip berisi nama dan tanggal agar tidak dibuang.",
+      "rationaleSource": "IBT-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT04-DL4",
+      "audioAssetId": null,
+      "sortIndex": 30
+    },
+    {
+      "id": "IBT26-04-Q031",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Read in Daily Life ('Dorm Kitchen Protocol: Shared Spice & Fridge Purges' — Q2/3): Which staples are funded collectively via house dues rather than bought individually?",
+      "options": [
+        "Imported frozen seafood fillets.",
+        "Olive oil, cooking salt, and bulk rolled oats.",
+        "Private labeled restaurant containers.",
+        "Disposable cardboard coffee cups."
+      ],
+      "answer": "Olive oil, cooking salt, and bulk rolled oats.",
+      "acceptedAnswers": [
+        "Olive oil, cooking salt, and bulk rolled oats."
+      ],
+      "explanation": "Minyak zaitun, garam, dan gandum curah diisi ulang mingguan dari iuran rumah.",
+      "rationaleSource": "IBT-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT04-DL4",
+      "audioAssetId": null,
+      "sortIndex": 31
+    },
+    {
+      "id": "IBT26-04-Q032",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Read in Daily Life ('Dorm Kitchen Protocol: Shared Spice & Fridge Purges' — Q3/3): When should residents start the commercial kitchen dishwasher?",
+      "options": [
+        "As soon as clean-waiting loading racks become half full.",
+        "Strictly once weekly right after Sunday 8 PM fridge sweeps.",
+        "Only when dining halls close across Thanksgiving break.",
+        "Every morning before 6 AM breakfast cooking."
+      ],
+      "answer": "As soon as clean-waiting loading racks become half full.",
+      "acceptedAnswers": [
+        "As soon as clean-waiting loading racks become half full."
+      ],
+      "explanation": "Segera nyalakan saat rak cuci mencapai kapasitas setengah penuh.",
+      "rationaleSource": "IBT-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT04-DL4",
+      "audioAssetId": null,
+      "sortIndex": 32
+    },
+    {
+      "id": "IBT26-04-Q033",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Read in Daily Life ('Grant Office Checklist: Undergraduate Travel Reimbursement' — Q1/3): Why are plain credit-card monthly statement lines rejected for hotel or airfare claims?",
+      "options": [
+        "Card banks withhold passenger landing stubs for fourteen days.",
+        "Meal costs always include unauthorized restaurant beverages.",
+        "Department chairs refuse electronic bank deposit numbers.",
+        "Auditors require fully itemized line-by-line receipts rather than lump totals."
+      ],
+      "answer": "Auditors require fully itemized line-by-line receipts rather than lump totals.",
+      "acceptedAnswers": [
+        "Auditors require fully itemized line-by-line receipts rather than lump totals."
+      ],
+      "explanation": "Harus mengunggah bukti rinci per item, bukan sekadar ringkasan tagihan kartu kredit.",
+      "rationaleSource": "IBT-MOD-01",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT04-DL5",
+      "audioAssetId": null,
+      "sortIndex": 33
+    },
+    {
+      "id": "IBT26-04-Q034",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Read in Daily Life ('Grant Office Checklist: Undergraduate Travel Reimbursement' — Q2/3): Within how many calendar days of returning home must students submit travel documentation?",
+      "options": [
+        "Fifty-two days flat.",
+        "Immediately prior to purchasing flight tickets.",
+        "Fourteen calendar days.",
+        "Ten business days."
+      ],
+      "answer": "Fourteen calendar days.",
+      "acceptedAnswers": [
+        "Fourteen calendar days."
+      ],
+      "explanation": "Batas unggah klaim adalah 14 hari kalender sejak penerbangan pulang tiba.",
+      "rationaleSource": "IBT-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT04-DL5",
+      "audioAssetId": null,
+      "sortIndex": 34
+    },
+    {
+      "id": "IBT26-04-Q035",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Read in Daily Life ('Grant Office Checklist: Undergraduate Travel Reimbursement' — Q3/3): How quickly do approved reimbursements arrive after department chair approval?",
+      "options": [
+        "End of following summer semester.",
+        "Approximately ten business days via direct deposit.",
+        "Same afternoon in cash at conference hotel lobbies.",
+        "Fifty-two hours straight into student meal cards."
+      ],
+      "answer": "Approximately ten business days via direct deposit.",
+      "acceptedAnswers": [
+        "Approximately ten business days via direct deposit."
+      ],
+      "explanation": "Dana cair sekitar sepuluh hari kerja lewat transfer langsung.",
+      "rationaleSource": "IBT-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT04-DL5",
+      "audioAssetId": null,
+      "sortIndex": 35
+    },
+    {
+      "id": "IBT26-04-Q036",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Academic Passage 1 ('Choice Overload and Default Architecture in Economics' — Q1/5): How did classic economic theory conflict with actual shopper behavior observed in gourmet jam field trials?",
+      "options": [
+        "Vast 24-variety tables pulled browsers yet drastically trailed compact 6-option tables in real purchases.",
+        "Twenty-four jams doubled actual jam buying instantly whenever free bread ran out.",
+        "Buyers eagerly consumed every sour flavor cleanly without paying cash.",
+        "Small tasting booths frightened weekend market shoppers sharply away."
+      ],
+      "answer": "Vast 24-variety tables pulled browsers yet drastically trailed compact 6-option tables in real purchases.",
+      "acceptedAnswers": [
+        "Vast 24-variety tables pulled browsers yet drastically trailed compact 6-option tables in real purchases."
+      ],
+      "explanation": "Pilihan berlebihan menarik perhatian awal tetapi menurunkan keputusan pembelian nyata akibat kelelahan kognitif.",
+      "rationaleSource": "IBT-MOD-02",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT04-AC1",
+      "audioAssetId": null,
+      "sortIndex": 36
+    },
+    {
+      "id": "IBT26-04-Q037",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Academic Passage 1 ('Choice Overload and Default Architecture in Economics' — Q2/5): What psychological factors drive decision paralysis under sprawling uncurated menus?",
+      "options": [
+        "High wooden store shelves blocking short shoppers visually from counting jars.",
+        "Bright store ceiling lamps bleaching colored fruit jam jars.",
+        "Sticker shock caused strictly by glass jar sizes.",
+        "Mental comparison fatigue paired with lingering anxiety over potentially picking second-best."
+      ],
+      "answer": "Mental comparison fatigue paired with lingering anxiety over potentially picking second-best.",
+      "acceptedAnswers": [
+        "Mental comparison fatigue paired with lingering anxiety over potentially picking second-best."
+      ],
+      "explanation": "Kelelahan kognitif dan penyesalan antisipatif membuat konsumen menunda memilih.",
       "rationaleSource": "IBT-MOD-02",
       "difficulty": "B2",
       "points": 1,
       "license": "Original",
       "reviewStatus": "VERIFIED_ORIGINAL",
-      "passageId": "IBT04-P2",
+      "passageId": "IBT04-AC1",
       "audioAssetId": null,
-      "sortIndex": 3
+      "sortIndex": 37
     },
     {
-      "id": "IBT26-04-Q04",
+      "id": "IBT26-04-Q038",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Academic Passage 1 ('Choice Overload and Default Architecture in Economics' — Q3/5): Why did the passage introduce behavioral 'default architecture' near the conclusion?",
+      "options": [
+        "To abolish retirement pension savings accounts completely nationwide.",
+        "To praise hidden website fees that lock buyers permanently in.",
+        "To illustrate practical policy design using clean defaults without restricting voluntary user freedom.",
+        "To argue governments must prohibit stores from stocking beyond six jam flavors."
+      ],
+      "answer": "To illustrate practical policy design using clean defaults without restricting voluntary user freedom.",
+      "acceptedAnswers": [
+        "To illustrate practical policy design using clean defaults without restricting voluntary user freedom."
+      ],
+      "explanation": "Default architecture menaikkan partisipasi (mis. tabungan pensiun) tanpa menghilangkan kebebasan keluar.",
+      "rationaleSource": "IBT-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT04-AC1",
+      "audioAssetId": null,
+      "sortIndex": 38
+    },
+    {
+      "id": "IBT26-04-Q039",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Academic Passage 1 ('Choice Overload and Default Architecture in Economics' — Q4/5): What preserves consumer autonomy inside ethical 'default architecture' savings plans?",
+      "options": [
+        "Algorithms randomly select jam jars monthly without user passwords.",
+        "Individuals remain completely free at any time to opt out or select custom mixes.",
+        "Banks freeze early withdrawals cleanly until age eighty.",
+        "Employers hide salary deductions cleanly inside unreadable margins."
+      ],
+      "answer": "Individuals remain completely free at any time to opt out or select custom mixes.",
+      "acceptedAnswers": [
+        "Individuals remain completely free at any time to opt out or select custom mixes."
+      ],
+      "explanation": "Kebebasan opt-out dan pilihan kustom tetap dipertahankan penuh.",
+      "rationaleSource": "IBT-MOD-02",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT04-AC1",
+      "audioAssetId": null,
+      "sortIndex": 39
+    },
+    {
+      "id": "IBT26-04-Q040",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Academic Passage 1 ('Choice Overload and Default Architecture in Economics' — Q5/5): The word 'nagging' in paragraph 2 is closest in meaning to:",
+      "options": [
+        "persistent",
+        "delightful",
+        "silent",
+        "brief"
+      ],
+      "answer": "persistent",
+      "acceptedAnswers": [
+        "persistent"
+      ],
+      "explanation": "'Nagging regret' bermakna rasa sesal/ragu yang terus mengganggu pikiran.",
+      "rationaleSource": "IBT-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT04-AC1",
+      "audioAssetId": null,
+      "sortIndex": 40
+    },
+    {
+      "id": "IBT26-04-Q041",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Academic Passage 2 ('High-Speed Freight and Cold-Chain Food Spoilage in Tropical Ports' — Q1/5): Where does a striking portion of tropical produce waste originate according to paragraph 1?",
+      "options": [
+        "Cold ocean waves freezing apples aboard ocean liners.",
+        "Automated laser customs inspections shredding ripe leaves cleanly.",
+        "Barren rocky orchards producing dry wooden tree fruit.",
+        "Warm post-harvest handling gaps prior to loading chilled long-haul containers."
+      ],
+      "answer": "Warm post-harvest handling gaps prior to loading chilled long-haul containers.",
+      "acceptedAnswers": [
+        "Warm post-harvest handling gaps prior to loading chilled long-haul containers."
+      ],
+      "explanation": "Pemutusan rantai dingin di celah antara kebun desa dan pelabuhan memicu pembusukan cepat.",
+      "rationaleSource": "IBT-MOD-02",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT04-AC2",
+      "audioAssetId": null,
+      "sortIndex": 41
+    },
+    {
+      "id": "IBT26-04-Q042",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Academic Passage 2 ('High-Speed Freight and Cold-Chain Food Spoilage in Tropical Ports' — Q2/5): Biologically, why does delaying cooling right after picking swiftly damage freshly cut greens?",
+      "options": [
+        "Sunlit wooden crates emit toxic paint fumes within two minutes.",
+        "Warm breeze freezes cellulose walls solid along truck walls.",
+        "Sustained warm cellular respiration burns moisture sugars rapidly while fueling mold blooms.",
+        "Chlorophyll vanishes permanently unless bathed in icy seawater."
+      ],
+      "answer": "Sustained warm cellular respiration burns moisture sugars rapidly while fueling mold blooms.",
+      "acceptedAnswers": [
+        "Sustained warm cellular respiration burns moisture sugars rapidly while fueling mold blooms."
+      ],
+      "explanation": "Respirasi pasca-panen di suhu tinggi menguras kadar gula/air dan memicu spora jamur.",
+      "rationaleSource": "IBT-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT04-AC2",
+      "audioAssetId": null,
+      "sortIndex": 42
+    },
+    {
+      "id": "IBT26-04-Q043",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Academic Passage 2 ('High-Speed Freight and Cold-Chain Food Spoilage in Tropical Ports' — Q3/5): How do off-grid farm cooperatives shrink field-heat delays before coastal port shipping?",
+      "options": [
+        "Shipping harvests strictly by high-altitude night hot-air balloons.",
+        "Using compact solar-powered pre-cooling units parked right beside village harvest sites.",
+        "Packing dry dusty corn hulls around hot mangoes inside dark sheds.",
+        "Switching orchards strictly toward metallic canned tomatoes."
+      ],
+      "answer": "Using compact solar-powered pre-cooling units parked right beside village harvest sites.",
+      "acceptedAnswers": [
+        "Using compact solar-powered pre-cooling units parked right beside village harvest sites."
+      ],
+      "explanation": "Pendingin awal bertenaga surya di tepi kebun menurunkan suhu segera setelah panen.",
+      "rationaleSource": "IBT-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT04-AC2",
+      "audioAssetId": null,
+      "sortIndex": 43
+    },
+    {
+      "id": "IBT26-04-Q044",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Academic Passage 2 ('High-Speed Freight and Cold-Chain Food Spoilage in Tropical Ports' — Q4/5): What supportive role does perforated breathable packaging play inside transport vans?",
+      "options": [
+        "Balancing moisture humidity evenly without choking fresh fruit inside stagnant sweat.",
+        "Sealing vacuum space tight so bacteria multiply explosively.",
+        "Hardening tender tropical skins cleanly into stone-like shells.",
+        "Replacing insulated refrigerated van walls permanently."
+      ],
+      "answer": "Balancing moisture humidity evenly without choking fresh fruit inside stagnant sweat.",
+      "acceptedAnswers": [
+        "Balancing moisture humidity evenly without choking fresh fruit inside stagnant sweat."
+      ],
+      "explanation": "Film berpori menjaga kelembapan seimbang sekaligus membiarkan respirasi terkendali.",
+      "rationaleSource": "IBT-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT04-AC2",
+      "audioAssetId": null,
+      "sortIndex": 44
+    },
+    {
+      "id": "IBT26-04-Q045",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Academic Passage 2 ('High-Speed Freight and Cold-Chain Food Spoilage in Tropical Ports' — Q5/5): Why does reducing post-harvest spoilage simultaneously conserve upstream water and fertilizer?",
+      "options": [
+        "Chilled containers squeeze drinking water straight back out of ocean clouds.",
+        "Port customs workers water orchard seedlings cleanly at docks.",
+        "Solar fans synthesize synthetic nitrogen fertilizer inside cold trucks.",
+        "Every kilogram saved avoids wasting the farm irrigation and nutrients already invested growing it."
+      ],
+      "answer": "Every kilogram saved avoids wasting the farm irrigation and nutrients already invested growing it.",
+      "acceptedAnswers": [
+        "Every kilogram saved avoids wasting the farm irrigation and nutrients already invested growing it."
+      ],
+      "explanation": "Mencegah busuk berarti seluruh air irigasi dan pupuk yang dipakai menanamnya tidak terbuang percuma.",
+      "rationaleSource": "IBT-MOD-02",
+      "difficulty": "C1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT04-AC2",
+      "audioAssetId": null,
+      "sortIndex": 45
+    },
+    {
+      "id": "IBT26-04-Q046",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Academic Passage 3 ('Acoustic Mapping of Cavernous Limestone Cave Heritage Sites' — Q1/5): What striking correlation did archaeological acoustic teams observe inside painted Paleolithic caves?",
+      "options": [
+        "Chalk bison images vanished swiftly wherever bone flutes sounded nearby.",
+        "Artists painted exclusively near breezy sunny open cliff entrances.",
+        "Rich painted chambers align tightly with spots generating clear resonant echoes and warm chants.",
+        "Prehistoric hunters painted strictly inside ultra-quiet foam-lined side closets."
+      ],
+      "answer": "Rich painted chambers align tightly with spots generating clear resonant echoes and warm chants.",
+      "acceptedAnswers": [
+        "Rich painted chambers align tightly with spots generating clear resonant echoes and warm chants."
+      ],
+      "explanation": "Lukisan dinding gua terkonsentrasi di ruang berakustik gema kuat, bukan di ceruk senyap bersebelahan.",
+      "rationaleSource": "IBT-MOD-02",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT04-AC3",
+      "audioAssetId": null,
+      "sortIndex": 46
+    },
+    {
+      "id": "IBT26-04-Q047",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Academic Passage 3 ('Acoustic Mapping of Cavernous Limestone Cave Heritage Sites' — Q2/5): How do acoustic surveyors capture a cave's echo blueprint non-destructively today?",
+      "options": [
+        "Drilling deep seismic holes through mossy canyon plateaus.",
+        "Recording harmless balloon bursts cleanly with spherical spatial microphones.",
+        "Striking prehistoric ochre stalactites fiercely with steel sledgehammers.",
+        "Installing bright industrial rock-concert speakers against painted ceilings."
+      ],
+      "answer": "Recording harmless balloon bursts cleanly with spherical spatial microphones.",
+      "acceptedAnswers": [
+        "Recording harmless balloon bursts cleanly with spherical spatial microphones."
+      ],
+      "explanation": "Letusan balon dan mikrofon 3D menangkap profil gema tanpa menyentuh atau merusak batuan rapuh.",
+      "rationaleSource": "IBT-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT04-AC3",
+      "audioAssetId": null,
+      "sortIndex": 47
+    },
+    {
+      "id": "IBT26-04-Q048",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Academic Passage 3 ('Acoustic Mapping of Cavernous Limestone Cave Heritage Sites' — Q3/5): Why are physical public tours strictly limited inside sensitive ancient painted caves?",
+      "options": [
+        "Human breath heat and humid carbon dioxide corrode ancient limestone mineral films and pigments.",
+        "Loud visitor footsteps shatter stalagmites instantaneously.",
+        "Camera straps block underground mountain rivers continuously.",
+        "Ochre paint rubs cleanly off modern synthetic rain coats."
+      ],
+      "answer": "Human breath heat and humid carbon dioxide corrode ancient limestone mineral films and pigments.",
+      "acceptedAnswers": [
+        "Human breath heat and humid carbon dioxide corrode ancient limestone mineral films and pigments."
+      ],
+      "explanation": "Kelembapan dan CO2 napas pengunjung merusak lapisan kalsit dan pigmen purba.",
+      "rationaleSource": "IBT-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT04-AC3",
+      "audioAssetId": null,
+      "sortIndex": 48
+    },
+    {
+      "id": "IBT26-04-Q049",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Academic Passage 3 ('Acoustic Mapping of Cavernous Limestone Cave Heritage Sites' — Q4/5): What makes virtual acoustic cave archives practically valuable for students worldwide?",
+      "options": [
+        "Students learn balloon blowing choreography for summer festivals.",
+        "Downloads translate French ochre paints cleanly into German sentences.",
+        "Acoustic grids eliminate every museum photography copyright globally.",
+        "Remote listeners experience authentic spatial echoes safely without entering fragile underground caverns."
+      ],
+      "answer": "Remote listeners experience authentic spatial echoes safely without entering fragile underground caverns.",
+      "acceptedAnswers": [
+        "Remote listeners experience authentic spatial echoes safely without entering fragile underground caverns."
+      ],
+      "explanation": "Rekaman impuls gema memungkinkan simulasi ruang dengar purba dari jarak jauh tanpa merusak gua.",
+      "rationaleSource": "IBT-MOD-02",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT04-AC3",
+      "audioAssetId": null,
+      "sortIndex": 49
+    },
+    {
+      "id": "IBT26-04-Q050",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Academic Passage 3 ('Acoustic Mapping of Cavernous Limestone Cave Heritage Sites' — Q5/5): The word 'undulating' in sentence 1 is closest in meaning to:",
+      "options": [
+        "brightly painted blue",
+        "crumbling swiftly",
+        "gently wavy",
+        "razor-flat"
+      ],
+      "answer": "gently wavy",
+      "acceptedAnswers": [
+        "gently wavy"
+      ],
+      "explanation": "'Undulating rock domes' bermakna permukaan batu yang bergelombang alami.",
+      "rationaleSource": "IBT-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IBT04-AC3",
+      "audioAssetId": null,
+      "sortIndex": 50
+    },
+    {
+      "id": "IBT26-04-Q051",
       "section": "LISTENING",
       "taskType": "CHOICE_SINGLE",
-      "prompt": "Listen and Choose a Response: Select the most appropriate reply.",
+      "prompt": "Listen and Choose a Response — Prompt 1/15 (econ data security): Select the most natural reply.",
       "options": [
-        "Yes, please attach the latest budget spreadsheet so I can review it beforehand.",
-        "The elevator on the west side stops at floor four.",
-        "I ordered two boxes of envelopes yesterday afternoon.",
-        "No, the stadium lights stay off until Friday."
+        "Household regressions plot cleanly inside blue bar charts.",
+        "Friday seminar posters hang neatly across hallway corridors.",
+        "Laptop keyboards type faster inside warm quiet apartments.",
+        "Definitely not! Policy restricts raw panel spreadsheets strictly to virtual lab terminals."
       ],
-      "answer": "Yes, please attach the latest budget spreadsheet so I can review it beforehand.",
+      "answer": "Definitely not! Policy restricts raw panel spreadsheets strictly to virtual lab terminals.",
       "acceptedAnswers": [
-        "Yes, please attach the latest budget spreadsheet so I can review it beforehand."
+        "Definitely not! Policy restricts raw panel spreadsheets strictly to virtual lab terminals."
       ],
-      "explanation": "Menjawab tawaran pengiriman agenda dan angka anggaran rapat secara konstruktif.",
+      "explanation": "Menolak tegas dan mengingatkan kebijakan kerahasiaan data lab.",
+      "rationaleSource": "IBT-MOD-08",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT04-LR01",
+      "sortIndex": 51
+    },
+    {
+      "id": "IBT26-04-Q052",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen and Choose a Response — Prompt 2/15 (flu clinic allergy): Select the most natural reply.",
+      "options": [
+        "Short sleeves speed up standard undergraduate check-in lines.",
+        "Flu shots protect dorm roommates calmly all winter.",
+        "Call Clinic Suite 110 ahead instead—only main clinic stocks specialized egg-free doses.",
+        "Outdoor courtyard tents fold away neatly before November rains."
+      ],
+      "answer": "Call Clinic Suite 110 ahead instead—only main clinic stocks specialized egg-free doses.",
+      "acceptedAnswers": [
+        "Call Clinic Suite 110 ahead instead—only main clinic stocks specialized egg-free doses."
+      ],
+      "explanation": "Menjelaskan vaksin alternatif alergi telur berat hanya tersedia di Klinik 110.",
+      "rationaleSource": "IBT-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT04-LR02",
+      "sortIndex": 52
+    },
+    {
+      "id": "IBT26-04-Q053",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen and Choose a Response — Prompt 3/15 (museum docent approach): Select the most natural reply.",
+      "options": [
+        "Fossil Hall opens thirty minutes later every winter Sunday.",
+        "Skip rigid memorization—pass around tactile fossil casts first and let guests hypothesize why sea shells sit on peaks!",
+        "Stone display cabinets wash cleanly on Tuesday nights.",
+        "Saturday children love dinosaur stickers at lobby entrances."
+      ],
+      "answer": "Skip rigid memorization—pass around tactile fossil casts first and let guests hypothesize why sea shells sit on peaks!",
+      "acceptedAnswers": [
+        "Skip rigid memorization—pass around tactile fossil casts first and let guests hypothesize why sea shells sit on peaks!"
+      ],
+      "explanation": "Mengganti hafalan kaku dengan interaksi benda peraga dan pertanyaan pemantik.",
+      "rationaleSource": "IBT-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT04-LR03",
+      "sortIndex": 53
+    },
+    {
+      "id": "IBT26-04-Q054",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen and Choose a Response — Prompt 4/15 (fridge cleanup label): Select the most natural reply.",
+      "options": [
+        "Stewards swept unlabeled tubs last night at eight; labeled masking-tape containers stayed untouched.",
+        "Bulk olive oil pours cleanest from dark tinted glass flasks.",
+        "Dining dishwashers finish rinse cycles under twenty minutes.",
+        "Tomato soup tastes richer with toasted bread slices."
+      ],
+      "answer": "Stewards swept unlabeled tubs last night at eight; labeled masking-tape containers stayed untouched.",
+      "acceptedAnswers": [
+        "Stewards swept unlabeled tubs last night at eight; labeled masking-tape containers stayed untouched."
+      ],
+      "explanation": "Pembersihan Minggu jam 8 malam membuang wadah yang tidak dilabeli nama/tanggal.",
       "rationaleSource": "IBT-MOD-03",
       "difficulty": "B1",
       "points": 1,
       "license": "Original",
       "reviewStatus": "VERIFIED_ORIGINAL",
       "passageId": null,
-      "audioAssetId": "IBT04-A01",
-      "sortIndex": 4
+      "audioAssetId": "IBT04-LR04",
+      "sortIndex": 54
     },
     {
-      "id": "IBT26-04-Q05",
+      "id": "IBT26-04-Q055",
       "section": "LISTENING",
       "taskType": "CHOICE_SINGLE",
-      "prompt": "Listen to the conversation. Why is the student asking about work-study hours?",
+      "prompt": "Listen and Choose a Response — Prompt 5/15 (travel receipt rule): Select the most natural reply.",
       "options": [
-        "She wants to check if adding a second campus job exceeds weekly limits.",
-        "She forgot how to submit her bank account form.",
-        "She plans to graduate two semesters early.",
-        "She needs permission to miss economics class."
+        "Hotel breakfast trays include orange juice free downstairs.",
+        "Flight boarding passes fold cleanly inside jacket pockets.",
+        "Direct bank deposits clear within ten business weekdays.",
+        "No—finance audits reject lump totals unless itemized nightly folio receipts accompany them."
       ],
-      "answer": "She wants to check if adding a second campus job exceeds weekly limits.",
+      "answer": "No—finance audits reject lump totals unless itemized nightly folio receipts accompany them.",
       "acceptedAnswers": [
-        "She wants to check if adding a second campus job exceeds weekly limits."
+        "No—finance audits reject lump totals unless itemized nightly folio receipts accompany them."
       ],
-      "explanation": "Mahasiswa memastikan total jam kerja gabungan antara perpustakaan dan lab komputer tidak melampaui batas mingguan.",
+      "explanation": "Menginformasikan bukti tagihan global ditolak tanpa rincian per item.",
+      "rationaleSource": "IBT-MOD-03",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT04-LR05",
+      "sortIndex": 55
+    },
+    {
+      "id": "IBT26-04-Q056",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen and Choose a Response — Prompt 6/15 (fog net mesh): Select the most natural reply.",
+      "options": [
+        "Morning sunlight condenses dry desert sand straight into snow.",
+        "Wooden wind turbines shake mist buckets manually at noon.",
+        "Windblown mist droplets catch onto braided mesh filaments until heavy drops drip neatly into pipes.",
+        "Plastic pipes pump cold underground river aquifers uphill hourly."
+      ],
+      "answer": "Windblown mist droplets catch onto braided mesh filaments until heavy drops drip neatly into pipes.",
+      "acceptedAnswers": [
+        "Windblown mist droplets catch onto braided mesh filaments until heavy drops drip neatly into pipes."
+      ],
+      "explanation": "Menjelaskan mekanisme tangkap tetesan kabut oleh jaring.",
+      "rationaleSource": "IBT-MOD-03",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT04-LR06",
+      "sortIndex": 56
+    },
+    {
+      "id": "IBT26-04-Q057",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen and Choose a Response — Prompt 7/15 (mycelium ceiling): Select the most natural reply.",
+      "options": [
+        "Clean office desks match pale white bookshelves nicely.",
+        "Acoustics labs proved they soak up vocal echoes right alongside conventional fiberglass panels.",
+        "Fresh oyster mushrooms sprout crispy caps cleanly in butter.",
+        "Polyurethane sprays smell strongly inside winter garages."
+      ],
+      "answer": "Acoustics labs proved they soak up vocal echoes right alongside conventional fiberglass panels.",
+      "acceptedAnswers": [
+        "Acoustics labs proved they soak up vocal echoes right alongside conventional fiberglass panels."
+      ],
+      "explanation": "Menegaskan performa penyerapan gema sebanding dengan panel komersial.",
+      "rationaleSource": "IBT-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT04-LR07",
+      "sortIndex": 57
+    },
+    {
+      "id": "IBT26-04-Q058",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen and Choose a Response — Prompt 8/15 (choice overload jam): Select the most natural reply.",
+      "options": [
+        "Facing twenty-four comparisons tires busy shoppers out until many walk away empty-handed.",
+        "Gourmet store jars break twice faster on larger tables.",
+        "Most shoppers hate sweet fruit preserves except strawberry.",
+        "Store clerks hid sixteen wooden spoons behind counters."
+      ],
+      "answer": "Facing twenty-four comparisons tires busy shoppers out until many walk away empty-handed.",
+      "acceptedAnswers": [
+        "Facing twenty-four comparisons tires busy shoppers out until many walk away empty-handed."
+      ],
+      "explanation": "Menjelaskan fenomena kelelahan memilih (choice overload) membuat pembeli batal beli.",
+      "rationaleSource": "IBT-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT04-LR08",
+      "sortIndex": 58
+    },
+    {
+      "id": "IBT26-04-Q059",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen and Choose a Response — Prompt 9/15 (mango pre-cooling): Select the most natural reply.",
+      "options": [
+        "Port customs gates prohibit refrigerated diesel vans overnight.",
+        "Solar chillers weigh thirty tons aboard dusty farm tracks.",
+        "Ripe leafy vegetables stay crisp weeks without cool chambers.",
+        "Tropical heat triggers mold spores within hours of cutting, spoiling fruit well before trucks reach ports."
+      ],
+      "answer": "Tropical heat triggers mold spores within hours of cutting, spoiling fruit well before trucks reach ports.",
+      "acceptedAnswers": [
+        "Tropical heat triggers mold spores within hours of cutting, spoiling fruit well before trucks reach ports."
+      ],
+      "explanation": "Menunggu hingga pelabuhan terlambat karena respirasi panas di awal memicu pembusukan cepat.",
       "rationaleSource": "IBT-MOD-03",
       "difficulty": "B2",
       "points": 1,
       "license": "Original",
       "reviewStatus": "VERIFIED_ORIGINAL",
       "passageId": null,
-      "audioAssetId": "IBT04-A02",
-      "sortIndex": 5
+      "audioAssetId": "IBT04-LR09",
+      "sortIndex": 59
     },
     {
-      "id": "IBT26-04-Q06",
+      "id": "IBT26-04-Q060",
       "section": "LISTENING",
       "taskType": "CHOICE_SINGLE",
-      "prompt": "Listen to the economics talk. Why did default enrollment raise participation dramatically without coercion?",
+      "prompt": "Listen and Choose a Response — Prompt 10/15 (cave acoustic echoes): Select the most natural reply.",
       "options": [
-        "Many residents stick with pre-selected options when switching feels mildly effortful.",
-        "Utilities charged triple fees to anyone returning opt-out postcards.",
-        "Residents had no legal right to switch back later.",
-        "Advertisements ran continuously on local television."
+        "Bone flutes carry louder notes across bright parking lots.",
+        "Steel speakers echo weakly inside marble museum stairs.",
+        "Gentle balloon bursts preserve ancient ochre pigment untouched while mapping full 3D echoes safely.",
+        "Balloons blow cool mountain winds deep down limestone tunnels."
       ],
-      "answer": "Many residents stick with pre-selected options when switching feels mildly effortful.",
+      "answer": "Gentle balloon bursts preserve ancient ochre pigment untouched while mapping full 3D echoes safely.",
       "acceptedAnswers": [
-        "Many residents stick with pre-selected options when switching feels mildly effortful."
+        "Gentle balloon bursts preserve ancient ochre pigment untouched while mapping full 3D echoes safely."
       ],
-      "explanation": "Pembicara menjelaskan bias status-quo: masyarakat cenderung bertahan pada opsi bawaan saat opsi keluar tetap bebas dan mudah.",
+      "explanation": "Letusan balon aman bagi permukaan kalsit dan lukisan prasejarah.",
+      "rationaleSource": "IBT-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT04-LR10",
+      "sortIndex": 60
+    },
+    {
+      "id": "IBT26-04-Q061",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen and Choose a Response — Prompt 11/15 (kelp herbarium color): Select the most natural reply.",
+      "options": [
+        "Archival acid-free cardboard turns green kelp dry pink.",
+        "Pure freshwater bursts kelp cells by osmosis and rinses golden brown pigments down the drain.",
+        "Warm iron presses scorch crisp salty seaweed strips fast.",
+        "Sea otters eat bitter fucoxanthin dyes underwater."
+      ],
+      "answer": "Pure freshwater bursts kelp cells by osmosis and rinses golden brown pigments down the drain.",
+      "acceptedAnswers": [
+        "Pure freshwater bursts kelp cells by osmosis and rinses golden brown pigments down the drain."
+      ],
+      "explanation": "Tekanan osmotik air tawar memecah sel dan melunturkan pigmen cokelat.",
+      "rationaleSource": "IBT-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT04-LR11",
+      "sortIndex": 61
+    },
+    {
+      "id": "IBT26-04-Q062",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen and Choose a Response — Prompt 12/15 (tally stick foil): Select the most natural reply.",
+      "options": [
+        "The merchant kept the carved 'stock' stick while treasury sheriffs locked up the twin stub.",
+        "Copper foundry clerks melted bronze coins straight inside oak jars.",
+        "Tax receipts dissolved cleanly in warm harbor ale daily.",
+        "Guild masters stamped leather pouches twice monthly."
+      ],
+      "answer": "The merchant kept the carved 'stock' stick while treasury sheriffs locked up the twin stub.",
+      "acceptedAnswers": [
+        "The merchant kept the carved 'stock' stick while treasury sheriffs locked up the twin stub."
+      ],
+      "explanation": "Pedagang memegang belahan 'stock' sementara kantor perbendaharaan menyimpan 'foil'.",
+      "rationaleSource": "IBT-MOD-03",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT04-LR12",
+      "sortIndex": 62
+    },
+    {
+      "id": "IBT26-04-Q063",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen and Choose a Response — Prompt 13/15 (oyster shell larvae): Select the most natural reply.",
+      "options": [
+        "Sharp shells shred stray jellyfish along crowded harbors.",
+        "Bay mud turns crystal clear inside ceramic seafood pots.",
+        "Restaurants sell clean shells cleanly for sidewalk asphalt.",
+        "Tiny drifting baby oysters need hard calcium shell surfaces to attach rather than choking in silt."
+      ],
+      "answer": "Tiny drifting baby oysters need hard calcium shell surfaces to attach rather than choking in silt.",
+      "acceptedAnswers": [
+        "Tiny drifting baby oysters need hard calcium shell surfaces to attach rather than choking in silt."
+      ],
+      "explanation": "Larva tiram butuh permukaan kalsium cangkang untuk menempel.",
+      "rationaleSource": "IBT-MOD-03",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT04-LR13",
+      "sortIndex": 63
+    },
+    {
+      "id": "IBT26-04-Q064",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen and Choose a Response — Prompt 14/15 (coin touchstone): Select the most natural reply.",
+      "options": [
+        "Dip gold pieces boiling inside sharp lemon vinegar baths.",
+        "Listen carefully when coins bounce down marble church steps.",
+        "Rub a discreet corner streak across black touchstone and match color against reference alloy needles.",
+        "Weigh coin strings beside heavy wooden wheat baskets."
+      ],
+      "answer": "Rub a discreet corner streak across black touchstone and match color against reference alloy needles.",
+      "acceptedAnswers": [
+        "Rub a discreet corner streak across black touchstone and match color against reference alloy needles."
+      ],
+      "explanation": "Menggoreskan ke batu uji hitam lalu mencocokkan warna goresan.",
+      "rationaleSource": "IBT-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT04-LR14",
+      "sortIndex": 64
+    },
+    {
+      "id": "IBT26-04-Q065",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listen and Choose a Response — Prompt 15/15 (salt marsh carbon): Select the most natural reply.",
+      "options": [
+        "Deep mangrove boulders seal greenhouse fumes underground.",
+        "Twice-daily seawater tides seal out oxygen inside mud while salty sulfates suppress methane loss.",
+        "Cordgrass needles taste bitter to hungry winter soil insects.",
+        "Salty bay fog freezes peat marshes solid all July."
+      ],
+      "answer": "Twice-daily seawater tides seal out oxygen inside mud while salty sulfates suppress methane loss.",
+      "acceptedAnswers": [
+        "Twice-daily seawater tides seal out oxygen inside mud while salty sulfates suppress methane loss."
+      ],
+      "explanation": "Genangan pasang anoksik menghambat pembusukan dan sulfat menekan metana.",
+      "rationaleSource": "IBT-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT04-LR15",
+      "sortIndex": 65
+    },
+    {
+      "id": "IBT26-04-Q066",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Conversation 1 — ECON 340 Lab Data Compliance — Item 1/4: What sharing question brings the student to Prof. Nair?",
+      "options": [
+        "Whether households prefer paper survey checks over bank deposits.",
+        "When ECON 340 cancels final oral presentations.",
+        "Whether publicizing team summary earnings slopes on a web poster complies with lab policy.",
+        "How to copy encrypted server passwords onto personal campus smartphones."
+      ],
+      "answer": "Whether publicizing team summary earnings slopes on a web poster complies with lab policy.",
+      "acceptedAnswers": [
+        "Whether publicizing team summary earnings slopes on a web poster complies with lab policy."
+      ],
+      "explanation": "Ia memastikan apakah tabel agregat boleh dibagikan ke halaman web publik.",
+      "rationaleSource": "IBT-MOD-03",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT04-C1",
+      "sortIndex": 66
+    },
+    {
+      "id": "IBT26-04-Q067",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Conversation 1 — ECON 340 Lab Data Compliance — Item 2/4: What boundary determines what data MAY vs may NOT leave virtual terminals?",
+      "options": [
+        "Charts uploaded Saturdays lock out Monday access.",
+        "Aggregated group metrics and chart curves may share freely; individual household raw CSV rows cannot.",
+        "Raw residential home addresses belong online while averages stay hidden.",
+        "Professors sign individual print receipts for every webpage graphic."
+      ],
+      "answer": "Aggregated group metrics and chart curves may share freely; individual household raw CSV rows cannot.",
+      "acceptedAnswers": [
+        "Aggregated group metrics and chart curves may share freely; individual household raw CSV rows cannot."
+      ],
+      "explanation": "Metrik agregat boleh dibagikan sedangkan data mentah per rumah tangga wajib tetap di server virtual.",
+      "rationaleSource": "IBT-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT04-C1",
+      "sortIndex": 67
+    },
+    {
+      "id": "IBT26-04-Q068",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Conversation 1 — ECON 340 Lab Data Compliance — Item 3/4: Why does Prof. Nair warn inspecting every spreadsheet cell formula?",
+      "options": [
+        "Hidden linked sheet tabs sometimes leak confidential raw sample rows inside appendix workbooks.",
+        "Formulas multiply regional earnings taxes erroneously inside browsers.",
+        "Campus audit scripts reject color shading above row ten.",
+        "Laptop web pages erase raw average labels weekly."
+      ],
+      "answer": "Hidden linked sheet tabs sometimes leak confidential raw sample rows inside appendix workbooks.",
+      "acceptedAnswers": [
+        "Hidden linked sheet tabs sometimes leak confidential raw sample rows inside appendix workbooks."
+      ],
+      "explanation": "Rumus atau sheet tersembunyi di lampiran sering membocorkan data mentah secara tidak sengaja.",
+      "rationaleSource": "IBT-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT04-C1",
+      "sortIndex": 68
+    },
+    {
+      "id": "IBT26-04-Q069",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Conversation 1 — ECON 340 Lab Data Compliance — Item 4/4: Where do raw individual household files safely reside throughout the term?",
+      "options": [
+        "Inside emailed personal PDF notes.",
+        "Printed inside hallway cardboard folders.",
+        "Attached onto campus cafe bulletin kiosks.",
+        "Inside the access-restricted university virtual compute cluster."
+      ],
+      "answer": "Inside the access-restricted university virtual compute cluster.",
+      "acceptedAnswers": [
+        "Inside the access-restricted university virtual compute cluster."
+      ],
+      "explanation": "Tetap terkunci di klaster virtual kampus.",
+      "rationaleSource": "IBT-MOD-03",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT04-C1",
+      "sortIndex": 69
+    },
+    {
+      "id": "IBT26-04-Q070",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Conversation 2 — Grant Travel Receipt Rejection — Item 1/4: Why did the grant office stall the student's conference reimbursement?",
+      "options": [
+        "Her conference boarding stub dated three days after travel.",
+        "Faculty chairs forgot adding bank account signatures.",
+        "A summary card transaction omitted itemized nightly room and tax charges.",
+        "Room rates jumped above fifty-two dollars nightly during conference week."
+      ],
+      "answer": "A summary card transaction omitted itemized nightly room and tax charges.",
+      "acceptedAnswers": [
+        "A summary card transaction omitted itemized nightly room and tax charges."
+      ],
+      "explanation": "Bukti transaksi kartu kredit hanya memuat total gabungan tanpa rincian per malam.",
+      "rationaleSource": "IBT-MOD-03",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT04-C2",
+      "sortIndex": 70
+    },
+    {
+      "id": "IBT26-04-Q071",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Conversation 2 — Grant Travel Receipt Rejection — Item 2/4: What audit ambiguity makes plain credit-card lump totals unacceptable?",
+      "options": [
+        "Credit companies encrypt room taxes for fourteen weekdays.",
+        "They fail to prove non-eligible personal expenses like snacks were excluded.",
+        "Paper card bills fade blue inside damp finance mailrooms.",
+        "Downtown conference hotels discount student rooms below tax limits."
+      ],
+      "answer": "They fail to prove non-eligible personal expenses like snacks were excluded.",
+      "acceptedAnswers": [
+        "They fail to prove non-eligible personal expenses like snacks were excluded."
+      ],
+      "explanation": "Auditan perlu membuktikan tidak ada tagihan pribadi non-layak tergabung di nominal total.",
+      "rationaleSource": "IBT-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT04-C2",
+      "sortIndex": 71
+    },
+    {
+      "id": "IBT26-04-Q072",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Conversation 2 — Grant Travel Receipt Rejection — Item 3/4: How can she obtain an acceptable document quickly?",
+      "options": [
+        "Request an itemized zero-balance hotel folio showing nightly room rates and tax lines.",
+        "Submit two handwritten notes citing card numbers.",
+        "Ask flight stewards for dining meal vouchers downtown.",
+        "Wait until December semester buyback weeks."
+      ],
+      "answer": "Request an itemized zero-balance hotel folio showing nightly room rates and tax lines.",
+      "acceptedAnswers": [
+        "Request an itemized zero-balance hotel folio showing nightly room rates and tax lines."
+      ],
+      "explanation": "Meminta rincian tagihan nol (zero-balance itemized folio) ke pihak hotel.",
+      "rationaleSource": "IBT-MOD-03",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT04-C2",
+      "sortIndex": 72
+    },
+    {
+      "id": "IBT26-04-Q073",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Conversation 2 — Grant Travel Receipt Rejection — Item 4/4: How long after uploading a corrected folio should audit approval clear?",
+      "options": [
+        "Not until forty days after graduation.",
+        "Exactly ten weekend minutes.",
+        "Three fiscal months later.",
+        "Within roughly forty-eight hours."
+      ],
+      "answer": "Within roughly forty-eight hours.",
+      "acceptedAnswers": [
+        "Within roughly forty-eight hours."
+      ],
+      "explanation": "Peninjauan audit selesai dalam ~48 jam.",
+      "rationaleSource": "IBT-MOD-03",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT04-C2",
+      "sortIndex": 73
+    },
+    {
+      "id": "IBT26-04-Q074",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Conversation 3 — Fog Net Mesh Tensioning in Winter Wind — Item 1/4: What physical damage did the coastal wind gust inflict on fog collector Net B?",
+      "options": [
+        "PVC drainage pipes snapped cleanly in middle joints.",
+        "Moss sealed mesh filaments shut within twenty minutes.",
+        "Two outer edge corner eyelets tore near rubbing metal hardware.",
+        "Solar pump motors submerged beneath olive orchard trenches."
+      ],
+      "answer": "Two outer edge corner eyelets tore near rubbing metal hardware.",
+      "acceptedAnswers": [
+        "Two outer edge corner eyelets tore near rubbing metal hardware."
+      ],
+      "explanation": "Dua lubang tali sudut jaring robek setelah angin malam.",
+      "rationaleSource": "IBT-MOD-03",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT04-C3",
+      "sortIndex": 74
+    },
+    {
+      "id": "IBT26-04-Q075",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Conversation 3 — Fog Net Mesh Tensioning in Winter Wind — Item 2/4: Why did the corner eyelets wear thin and rip?",
+      "options": [
+        "Excessive frozen rainwater weighed down mesh topsides.",
+        "Bare tensioning ropes chafed directly against sharp unpadded steel turnbuckles.",
+        "Salty fog brine rusted yellow nylon rope within an hour.",
+        "Hillside sheep chewed polypropylene filaments off posts."
+      ],
+      "answer": "Bare tensioning ropes chafed directly against sharp unpadded steel turnbuckles.",
+      "acceptedAnswers": [
+        "Bare tensioning ropes chafed directly against sharp unpadded steel turnbuckles."
+      ],
+      "explanation": "Tali bergesekan langsung pada pengencang baja tajam tanpa bantalan.",
+      "rationaleSource": "IBT-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT04-C3",
+      "sortIndex": 75
+    },
+    {
+      "id": "IBT26-04-Q076",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Conversation 3 — Fog Net Mesh Tensioning in Winter Wind — Item 3/4: What straightforward repair does the man suggest to prevent repeated corner tears?",
+      "options": [
+        "Sliding protective rubber sleeves around shackles before tightening cords.",
+        "Dropping tall hillside collector towers flat during foggy mornings.",
+        "Painting sharp steel cables with thin tree resin.",
+        "Replacing polypropylene nets strictly with dry sheet cotton."
+      ],
+      "answer": "Sliding protective rubber sleeves around shackles before tightening cords.",
+      "acceptedAnswers": [
+        "Sliding protective rubber sleeves around shackles before tightening cords."
+      ],
+      "explanation": "Menambahkan selongsong karet pelindung di pengait sudut sebelum mengencangkan ulang.",
+      "rationaleSource": "IBT-MOD-03",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT04-C3",
+      "sortIndex": 76
+    },
+    {
+      "id": "IBT26-04-Q077",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Conversation 3 — Fog Net Mesh Tensioning in Winter Wind — Item 4/4: Why do they temporarily slacken guide wires before full morning repairs?",
+      "options": [
+        "Loosened screens gather twice more morning fog cleanly.",
+        "Gravity drainage gutters operate smoothly only when twisted sideways.",
+        "Turnbuckles unscrew exclusively after noon sun warms steel.",
+        "Reducing tension prevents wind gusts from ripping the small tear wider overnight."
+      ],
+      "answer": "Reducing tension prevents wind gusts from ripping the small tear wider overnight.",
+      "acceptedAnswers": [
+        "Reducing tension prevents wind gusts from ripping the small tear wider overnight."
+      ],
+      "explanation": "Mengendurkan tegangan menghentikan robekan melebar sebelum diperbaiki.",
+      "rationaleSource": "IBT-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT04-C3",
+      "sortIndex": 77
+    },
+    {
+      "id": "IBT26-04-Q078",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Conversation 4 — Fossil Docent Tour Coaching — Item 1/4: What honest problem did Jordan admit about his earlier Fossil Hall tour scripts?",
+      "options": [
+        "Family tours run too loudly near dinosaur halls Saturday mornings.",
+        "Wall exhibit cards print tiny blurry Latin fonts.",
+        "Technical geological epoch jargon quickly loses young weekend visitors' attention.",
+        "Children kept dropping fragile real ammonite shells onto stone floors."
+      ],
+      "answer": "Technical geological epoch jargon quickly loses young weekend visitors' attention.",
+      "acceptedAnswers": [
+        "Technical geological epoch jargon quickly loses young weekend visitors' attention."
+      ],
+      "explanation": "Hafalan istilah periode geologi panjang cepat membuat pengunjung muda kehilangan minat.",
+      "rationaleSource": "IBT-MOD-03",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT04-C4",
+      "sortIndex": 78
+    },
+    {
+      "id": "IBT26-04-Q079",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Conversation 4 — Fossil Docent Tour Coaching — Item 2/4: How does his mentor suggest launching discussions around high-mountain marine fossils?",
+      "options": [
+        "Show long statistical tide spreadsheets beside elevator doors.",
+        "Place a tactile fossil cast in visitors' hands and pose a puzzle about how ocean shells climbed peaks.",
+        "Hand incoming classes flashcard decks reciting Jurassic dates first.",
+        "Lock glass cabinets cleanly prior to introducing coiled shells."
+      ],
+      "answer": "Place a tactile fossil cast in visitors' hands and pose a puzzle about how ocean shells climbed peaks.",
+      "acceptedAnswers": [
+        "Place a tactile fossil cast in visitors' hands and pose a puzzle about how ocean shells climbed peaks."
+      ],
+      "explanation": "Memakai benda peraga sentuh + pertanyaan teka-teki memicu rasa ingin tahu.",
+      "rationaleSource": "IBT-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT04-C4",
+      "sortIndex": 79
+    },
+    {
+      "id": "IBT26-04-Q080",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Conversation 4 — Fossil Docent Tour Coaching — Item 3/4: What does 'Guilty as charged' reveal about Jordan's reaction?",
+      "options": [
+        "He readily admits he often overuses dry technical terms prematurely.",
+        "Finance officers fined him for breaking tour microphones.",
+        "Curators blamed Jordan for chipped Saturday floor tiles.",
+        "He insists elementary visitors prefer reading Latin wall placards."
+      ],
+      "answer": "He readily admits he often overuses dry technical terms prematurely.",
+      "acceptedAnswers": [
+        "He readily admits he often overuses dry technical terms prematurely."
+      ],
+      "explanation": "Idiom pengakuan jujur bahwa ia memang sering melakukan kesalahan itu.",
+      "rationaleSource": "IBT-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT04-C4",
+      "sortIndex": 80
+    },
+    {
+      "id": "IBT26-04-Q081",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Conversation 4 — Fossil Docent Tour Coaching — Item 4/4: When should formal paleontological terminology appear under the revised tour flow?",
+      "options": [
+        "Strictly at lobby entry desks before viewing galleries.",
+        "Written cleanly on exit slips only.",
+        "Replaced permanently with invented cartoon nicknames.",
+        "Naturally after hands-on curiosity engages guests in mountain uplift."
+      ],
+      "answer": "Naturally after hands-on curiosity engages guests in mountain uplift.",
+      "acceptedAnswers": [
+        "Naturally after hands-on curiosity engages guests in mountain uplift."
+      ],
+      "explanation": "Istilah teknis diperkenalkan setelah ketertarikan konsep terbentuk terlebih dulu.",
+      "rationaleSource": "IBT-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT04-C4",
+      "sortIndex": 81
+    },
+    {
+      "id": "IBT26-04-Q082",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Announcement — Campus Courtyard Vaccine Pop-Up — Item 1/4: Who is eligible for free courtyard tent vaccinations without booking beforehand?",
+      "options": [
+        "Exclusively graduate nursing fellows with Suite 110 slips.",
+        "Downtown visitors calling extension 4412 Mondays.",
+        "Every enrolled undergraduate presenting student ID during tent hours.",
+        "Only uninsured first-year engineering majors."
+      ],
+      "answer": "Every enrolled undergraduate presenting student ID during tent hours.",
+      "acceptedAnswers": [
+        "Every enrolled undergraduate presenting student ID during tent hours."
+      ],
+      "explanation": "Seluruh mahasiswa sarjana terdaftar gratis tanpa janji temu terlepas dari status asuransi.",
+      "rationaleSource": "IBT-MOD-04",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT04-T1",
+      "sortIndex": 82
+    },
+    {
+      "id": "IBT26-04-Q083",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Announcement — Campus Courtyard Vaccine Pop-Up — Item 2/4: What category of recipients should arrange separate care inside Main Clinic Suite 110?",
+      "options": [
+        "Foreign exchange scholars without extension phones.",
+        "Individuals carrying severe egg allergies needing alternative vaccine batches.",
+        "Students wearing warm winter fleece sweaters.",
+        "Walk-in attendees arriving right after nine AM."
+      ],
+      "answer": "Individuals carrying severe egg allergies needing alternative vaccine batches.",
+      "acceptedAnswers": [
+        "Individuals carrying severe egg allergies needing alternative vaccine batches."
+      ],
+      "explanation": "Pemilik alergi telur berat dialihkan ke Klinik 110.",
+      "rationaleSource": "IBT-MOD-04",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT04-T1",
+      "sortIndex": 83
+    },
+    {
+      "id": "IBT26-04-Q084",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Announcement — Campus Courtyard Vaccine Pop-Up — Item 3/4: Across which operating hours does the courtyard pop-up station accept walk-ins?",
+      "options": [
+        "Nine AM to four PM today and tomorrow (Nov 4–5).",
+        "Eight PM until midnight Fridays only.",
+        "Strictly weekday lunch intervals.",
+        "Continuous 24-hour nursing triage."
+      ],
+      "answer": "Nine AM to four PM today and tomorrow (Nov 4–5).",
+      "acceptedAnswers": [
+        "Nine AM to four PM today and tomorrow (Nov 4–5)."
+      ],
+      "explanation": "Beroperasi pukul 09.00–16.00 selama dua hari.",
+      "rationaleSource": "IBT-MOD-04",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT04-T1",
+      "sortIndex": 84
+    },
+    {
+      "id": "IBT26-04-Q085",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Announcement — Campus Courtyard Vaccine Pop-Up — Item 4/4: What practical clothing suggestion minimizes tent queue wait times?",
+      "options": [
+        "Carrying extra cotton medical blankets.",
+        "Removing heavy athletic shoes outside tents.",
+        "Signing five green laminated health clipboards.",
+        "Wearing short-sleeved tops for immediate arm access."
+      ],
+      "answer": "Wearing short-sleeved tops for immediate arm access.",
+      "acceptedAnswers": [
+        "Wearing short-sleeved tops for immediate arm access."
+      ],
+      "explanation": "Mengenakan lengan pendek mempermudah penyuntikan.",
+      "rationaleSource": "IBT-MOD-04",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT04-T1",
+      "sortIndex": 85
+    },
+    {
+      "id": "IBT26-04-Q086",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Academic Talk — Behavioral Anchoring & Default Retirement Savings — Item 1/4: What twin psychological barriers suppress voluntary opt-in retirement enrollment among young earners?",
+      "options": [
+        "Fear that matching accounts violate municipal housing bylaws.",
+        "Inflation wiping out savings balances within twenty-four hours.",
+        "Overvaluing instant paycheck cash ('present bias') coupled with friction over complex signup forms.",
+        "Absolute distrust toward employer bank transfers downtown."
+      ],
+      "answer": "Overvaluing instant paycheck cash ('present bias') coupled with friction over complex signup forms.",
+      "acceptedAnswers": [
+        "Overvaluing instant paycheck cash ('present bias') coupled with friction over complex signup forms."
+      ],
+      "explanation": "Bias waktu kini ditambah kerumitan formulir memicu penundaan terus-menerus.",
       "rationaleSource": "IBT-MOD-04",
       "difficulty": "B2",
       "points": 1,
       "license": "Original",
       "reviewStatus": "VERIFIED_ORIGINAL",
       "passageId": null,
-      "audioAssetId": "IBT04-A03",
-      "sortIndex": 6
+      "audioAssetId": "IBT04-T2",
+      "sortIndex": 86
     },
     {
-      "id": "IBT26-04-Q07",
-      "section": "WRITING",
-      "taskType": "SENTENCE_BUILD",
-      "prompt": "Build a grammatical sentence from the tiles: 'Economists measured ___.'",
+      "id": "IBT26-04-Q087",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Academic Talk — Behavioral Anchoring & Default Retirement Savings — Item 2/4: What simple policy tweak lifted worker enrollment from ~40% to over 85%?",
       "options": [
-        "how",
-        "quickly",
-        "households",
-        "adjusted",
-        "peak",
-        "usage"
+        "Hosting midnight mandatory pension math lectures yearly.",
+        "Shifting default signup status to auto-enrollment with easy voluntary opt-out.",
+        "Doubling weekly paperwork length to twenty mandatory pages.",
+        "Lowering employer contribution bonuses down toward zero."
       ],
-      "answer": "how|quickly|households|adjusted|peak|usage",
+      "answer": "Shifting default signup status to auto-enrollment with easy voluntary opt-out.",
       "acceptedAnswers": [
-        "how|quickly|households|adjusted|peak|usage"
+        "Shifting default signup status to auto-enrollment with easy voluntary opt-out."
       ],
-      "explanation": "Susunan tepat: 'how quickly households adjusted peak usage'.",
-      "rationaleSource": "IBT-MOD-05",
-      "difficulty": "B2",
-      "points": 1,
-      "license": "Original",
-      "reviewStatus": "VERIFIED_ORIGINAL",
-      "passageId": null,
-      "audioAssetId": null,
-      "sortIndex": 7
-    },
-    {
-      "id": "IBT26-04-Q08",
-      "section": "WRITING",
-      "taskType": "WRITING_RESPONSE",
-      "prompt": "Write an Email (60–100 words): You are treasurer of the Economics Society and accidentally submitted an outdated receipt PDF in your reimbursement request to Student Activities (Ms. Brooks). Apologize concisely, explain that the corrected receipt is attached, and confirm the final total ($48.50).",
-      "options": [],
-      "answer": "",
-      "acceptedAnswers": [],
-      "explanation": "Email harus jelas menyebutkan kesalahan dokumen lama, lampiran baru, dan angka pasti $48.50.",
-      "rationaleSource": "IBT-MOD-05",
-      "difficulty": "B2",
-      "points": 1,
-      "license": "Original",
-      "reviewStatus": "VERIFIED_ORIGINAL",
-      "passageId": null,
-      "audioAssetId": null,
-      "minWords": 50,
-      "recommendedWords": 75,
-      "rubricCriteria": [
-        "States exact correction ($48.50)",
-        "Concise professional apology",
-        "Clear follow-up",
-        "Grammar accuracy"
-      ],
-      "sortIndex": 8
-    },
-    {
-      "id": "IBT26-04-Q09",
-      "section": "WRITING",
-      "taskType": "WRITING_RESPONSE",
-      "prompt": "Write for an Academic Discussion (100–140 words): Prof. Chen asks: 'Should undergraduate economics courses focus more on real-world policy case studies even if it leaves less time for abstract mathematical proofs?' Clara favors case studies for career readiness; Ben argues mathematical foundations prevent shallow analysis. Share your stance.",
-      "options": [],
-      "answer": "",
-      "acceptedAnswers": [],
-      "explanation": "Integrasikan kedua poin Clara dan Ben sambil merumuskan keseimbangan atau prioritas yang didukung alasan.",
-      "rationaleSource": "IBT-MOD-05",
-      "difficulty": "B2",
-      "points": 1,
-      "license": "Original",
-      "reviewStatus": "VERIFIED_ORIGINAL",
-      "passageId": null,
-      "audioAssetId": null,
-      "minWords": 95,
-      "recommendedWords": 120,
-      "rubricCriteria": [
-        "Engages both classmates",
-        "Coherent stance",
-        "Relevant illustration",
-        "Academic vocabulary"
-      ],
-      "sortIndex": 9
-    },
-    {
-      "id": "IBT26-04-Q10",
-      "section": "SPEAKING",
-      "taskType": "LISTEN_REPEAT",
-      "prompt": "Listen and Repeat: Play the audio prompt once, then record yourself clearly.",
-      "options": [],
-      "answer": "Quarterly reimbursement forms must include itemized receipts and advisor signatures.",
-      "acceptedAnswers": [
-        "Quarterly reimbursement forms must include itemized receipts and advisor signatures."
-      ],
-      "explanation": "Pertahankan kejelasan gugus konsonan pada 'Quarterly', 'reimbursement', dan 'itemized receipts'.",
-      "rationaleSource": "IBT-MOD-06",
-      "difficulty": "B2",
-      "points": 1,
-      "license": "Original",
-      "reviewStatus": "VERIFIED_ORIGINAL",
-      "passageId": null,
-      "audioAssetId": "IBT04-A04",
-      "referenceText": "Quarterly reimbursement forms must include itemized receipts and advisor signatures.",
-      "sortIndex": 10
-    },
-    {
-      "id": "IBT26-04-Q11",
-      "section": "SPEAKING",
-      "taskType": "SPEAKING_RESPONSE",
-      "prompt": "Take an Interview (Question 1 · ~45s): 'When managing personal finances as a student, is a fixed weekly budget or tracking every transaction in an app more helpful for you? Explain why.'",
-      "options": [],
-      "answer": "",
-      "acceptedAnswers": [],
-      "explanation": "Pilih satu pendekatan, jelaskan alasannya secara praktis, dan beri satu contoh kebiasaan pribadi.",
-      "rationaleSource": "IBT-MOD-06",
+      "explanation": "Mengubah skema menjadi pendaftaran otomatis dengan hak opt-out bebas melesatkan partisipasi.",
+      "rationaleSource": "IBT-MOD-04",
       "difficulty": "B1",
       "points": 1,
       "license": "Original",
       "reviewStatus": "VERIFIED_ORIGINAL",
       "passageId": null,
-      "audioAssetId": null,
-      "prepSeconds": 0,
-      "speakSeconds": 45,
-      "rubricCriteria": [
-        "Direct choice",
-        "Concrete reason",
-        "Clear pronunciation",
-        "Coherence"
-      ],
-      "sortIndex": 11
+      "audioAssetId": "IBT04-T2",
+      "sortIndex": 87
     },
     {
-      "id": "IBT26-04-Q12",
-      "section": "SPEAKING",
-      "taskType": "SPEAKING_RESPONSE",
-      "prompt": "Take an Interview (Question 2 · ~45s): 'Do automatic reminders help people build sustainable habits, or do too many notifications eventually get ignored? Explain with an example.'",
-      "options": [],
-      "answer": "",
-      "acceptedAnswers": [],
-      "explanation": "Beri perspektif bernuansa tentang manfaat awal vs kejenuhan notifikasi disertai contoh nyata.",
-      "rationaleSource": "IBT-MOD-06",
+      "id": "IBT26-04-Q088",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Academic Talk — Behavioral Anchoring & Default Retirement Savings — Item 3/4: What broader economics insight does this enrollment jump confirm?",
+      "options": [
+        "Tiny procedural default frictions wield surprisingly huge real-world impact compared with theory.",
+        "Workers reject free money intentionally whenever spreadsheets use percentages.",
+        "Financial literacy drops whenever digital apps replace bank tellers.",
+        "Automatic saving only functions properly for elderly managers."
+      ],
+      "answer": "Tiny procedural default frictions wield surprisingly huge real-world impact compared with theory.",
+      "acceptedAnswers": [
+        "Tiny procedural default frictions wield surprisingly huge real-world impact compared with theory."
+      ],
+      "explanation": "Hambatan administratif kecil sering berdampak lebih besar daripada rasio insentif teoretis.",
+      "rationaleSource": "IBT-MOD-04",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT04-T2",
+      "sortIndex": 88
+    },
+    {
+      "id": "IBT26-04-Q089",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Academic Talk — Behavioral Anchoring & Default Retirement Savings — Item 4/4: Does opt-out enrollment lock employees irreversibly into paycheck deductions?",
+      "options": [
+        "Yes—city treasurers freeze withdrawals for twenty-five work years.",
+        "Only five percent of clerks qualify for cancellations annually.",
+        "Opting out triggers stiff financial administrative penalties.",
+        "No—participants retain explicit clear rights to opt out whenever desired."
+      ],
+      "answer": "No—participants retain explicit clear rights to opt out whenever desired.",
+      "acceptedAnswers": [
+        "No—participants retain explicit clear rights to opt out whenever desired."
+      ],
+      "explanation": "Peserta bebas penuh memilih keluar kapan saja.",
+      "rationaleSource": "IBT-MOD-04",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT04-T2",
+      "sortIndex": 89
+    },
+    {
+      "id": "IBT26-04-Q090",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Academic Talk — How Mycelium Packaging Bricks Replace Petrochemical Foam — Item 1/4: What stubborn environmental bottleneck pushes labs away from conventional expanded polystyrene shipping blocks?",
+      "options": [
+        "Oat hulls cost twenty times higher than imported oil foam blocks.",
+        "Glass microscopes crack easily inside stiff polystyrene boxes.",
+        "Oil-based foam packs resist economical municipal recycling and persist as debris for centuries.",
+        "Expanded polystyrene dissolves immediately in light humid ocean rainstorms."
+      ],
+      "answer": "Oil-based foam packs resist economical municipal recycling and persist as debris for centuries.",
+      "acceptedAnswers": [
+        "Oil-based foam packs resist economical municipal recycling and persist as debris for centuries."
+      ],
+      "explanation": "Styrofoam minyak bumi tidak ekonomis didaur ulang dan mengotori lingkungan berabad-abad.",
+      "rationaleSource": "IBT-MOD-04",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT04-T3",
+      "sortIndex": 90
+    },
+    {
+      "id": "IBT26-04-Q091",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Academic Talk — How Mycelium Packaging Bricks Replace Petrochemical Foam — Item 2/4: How does fungal mycelium hold agricultural husks together inside molded trays?",
+      "options": [
+        "Plastic wrappers seal raw mushrooms smoothly atop foam borders.",
+        "Microscopic filamentous rootlets grow naturally through damp hulls binding fibers without added glues.",
+        "Technicians melt toxic pine resin deeply atop hemp shells.",
+        "Compressed high steam presses sawdust tightly until glass crystals form."
+      ],
+      "answer": "Microscopic filamentous rootlets grow naturally through damp hulls binding fibers without added glues.",
+      "acceptedAnswers": [
+        "Microscopic filamentous rootlets grow naturally through damp hulls binding fibers without added glues."
+      ],
+      "explanation": "Serat miselium tumbuh menjalin sekam menjadi matriks padat lentur secara alami tanpa lem sintetis.",
+      "rationaleSource": "IBT-MOD-04",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT04-T3",
+      "sortIndex": 91
+    },
+    {
+      "id": "IBT26-04-Q092",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Academic Talk — How Mycelium Packaging Bricks Replace Petrochemical Foam — Item 3/4: Why do manufacturers bake finished mycelium forms briefly at gentle kiln warmth?",
+      "options": [
+        "Halting fungal growth permanently and stabilizing dry firm structural cushion stiffness.",
+        "Melting oyster mushrooms smoothly onto bright metallic shiny varnish.",
+        "Doubling wet shipping weight before cargo pallet drops.",
+        "Growing fragrant wild forest mushrooms out of microscope boxes."
+      ],
+      "answer": "Halting fungal growth permanently and stabilizing dry firm structural cushion stiffness.",
+      "acceptedAnswers": [
+        "Halting fungal growth permanently and stabilizing dry firm structural cushion stiffness."
+      ],
+      "explanation": "Pengeringan oven ringan mematikan spora aktif sekaligus mengunci bentuk kokoh kering.",
+      "rationaleSource": "IBT-MOD-04",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT04-T3",
+      "sortIndex": 92
+    },
+    {
+      "id": "IBT26-04-Q093",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Academic Talk — How Mycelium Packaging Bricks Replace Petrochemical Foam — Item 4/4: How rapidly do retired mushroom-fiber bumpers return cleanly to fertile garden soil?",
+      "options": [
+        "After waiting roughly four hundred sunny winters.",
+        "Immediately within three seconds under faucet taps.",
+        "Never—kiln drying renders bio-foam permanent.",
+        "Within roughly thirty damp days of backyard or municipal composting."
+      ],
+      "answer": "Within roughly thirty damp days of backyard or municipal composting.",
+      "acceptedAnswers": [
+        "Within roughly thirty damp days of backyard or municipal composting."
+      ],
+      "explanation": "Terurai alami di kompos taman dalam kisaran 30 hari lembap.",
+      "rationaleSource": "IBT-MOD-04",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT04-T3",
+      "sortIndex": 93
+    },
+    {
+      "id": "IBT26-04-Q094",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Academic Talk — Mapping Soundscapes Inside Paleolithic Caverns — Item 1/4: What surprising spatial pattern emerged from acoustic measurements in European Ice Age caves?",
+      "options": [
+        "Ochre pigments echo fifty times louder whenever splashed across wet stone.",
+        "Every painted cave lacks any audible acoustic echo whatsoever.",
+        "Rich painted murals sit disproportionately inside spots with intense vocal resonance, skipping silent dead alcoves.",
+        "Prehistoric hunters painted strictly inside ultra-quiet sound-absorbing mud pockets."
+      ],
+      "answer": "Rich painted murals sit disproportionately inside spots with intense vocal resonance, skipping silent dead alcoves.",
+      "acceptedAnswers": [
+        "Rich painted murals sit disproportionately inside spots with intense vocal resonance, skipping silent dead alcoves."
+      ],
+      "explanation": "Lukisan berkelompok di zona berakustik gema vokal kuat sementara sudut mati dibiarkan kosong.",
+      "rationaleSource": "IBT-MOD-04",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT04-T4",
+      "sortIndex": 94
+    },
+    {
+      "id": "IBT26-04-Q095",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Academic Talk — Mapping Soundscapes Inside Paleolithic Caverns — Item 2/4: Which gentle sound source did modern surveyors employ to map ancient caves safely without hammering stone?",
+      "options": [
+        "Singing rock anthems into heavy diesel megaphones.",
+        "Popping small calibrated balloons paired with omnidirectional sphere microphones.",
+        "Blasting electric brass horns along painted calcite stalactites.",
+        "Banging iron survey pickaxes forcefully atop ancient ceilings."
+      ],
+      "answer": "Popping small calibrated balloons paired with omnidirectional sphere microphones.",
+      "acceptedAnswers": [
+        "Popping small calibrated balloons paired with omnidirectional sphere microphones."
+      ],
+      "explanation": "Letusan balon dan mikrofon 3D menangkap profil impuls gema tanpa menyentuh dinding.",
+      "rationaleSource": "IBT-MOD-04",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT04-T4",
+      "sortIndex": 95
+    },
+    {
+      "id": "IBT26-04-Q096",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Academic Talk — Mapping Soundscapes Inside Paleolithic Caverns — Item 3/4: Why did researchers link the ninety-to-one-hundred-ten hertz spikes meaningfully to prehistoric rituals?",
+      "options": [
+        "That exact pitch span amplifies human chanting and hollow bone flutes richly inside caverns.",
+        "Heavy subterranean rivers roar continuously above ninety-five degrees.",
+        "Falling limestone boulders vibrate exclusively around ten minutes hourly.",
+        "Ancient stone lamps burned whistling steadily at one hundred hertz."
+      ],
+      "answer": "That exact pitch span amplifies human chanting and hollow bone flutes richly inside caverns.",
+      "acceptedAnswers": [
+        "That exact pitch span amplifies human chanting and hollow bone flutes richly inside caverns."
+      ],
+      "explanation": "Puncak 90–110 Hz cocok sempurna memperkuat nyanyian manusia serta seruling tulang purba.",
+      "rationaleSource": "IBT-MOD-04",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT04-T4",
+      "sortIndex": 96
+    },
+    {
+      "id": "IBT26-04-Q097",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Academic Talk — Mapping Soundscapes Inside Paleolithic Caverns — Item 4/4: What joint sensory experience does the lecturer propose guided ancient cave painters?",
+      "options": [
+        "Memorizing written seasonal calendars printed onto mammoth hides.",
+        "Evading chilly outdoor summer sandstorms quickly underground.",
+        "Painting smooth dry portraits strictly at bright midday.",
+        "Blending dramatic flickering lamp light together with booming acoustic resonance."
+      ],
+      "answer": "Blending dramatic flickering lamp light together with booming acoustic resonance.",
+      "acceptedAnswers": [
+        "Blending dramatic flickering lamp light together with booming acoustic resonance."
+      ],
+      "explanation": "Gabungan efek visual cahaya obor berkelip dengan gema akustik memandu pemilihan titik lukis.",
+      "rationaleSource": "IBT-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT04-T4",
+      "sortIndex": 97
+    },
+    {
+      "id": "IBT26-04-Q098",
+      "section": "WRITING",
+      "taskType": "SENTENCE_BUILD",
+      "prompt": "Build a Sentence 1/10 — Context: Can ECON 340 partners paste raw household spreadsheets onto websites? | Arrange into one grammatical response:",
+      "options": [
+        "Only",
+        "may",
+        "appear",
+        "outside",
+        "clusters.",
+        "charts",
+        "summarized"
+      ],
+      "answer": "Only|summarized|charts|may|appear|outside|clusters.",
+      "acceptedAnswers": [
+        "Only|summarized|charts|may|appear|outside|clusters."
+      ],
+      "explanation": "Subjek terbatas 'Only summarized charts' dengan modal izin 'may appear'.",
+      "rationaleSource": "IBT-MOD-05",
       "difficulty": "B2",
       "points": 1,
       "license": "Original",
       "reviewStatus": "VERIFIED_ORIGINAL",
       "passageId": null,
       "audioAssetId": null,
+      "sortIndex": 98
+    },
+    {
+      "id": "IBT26-04-Q099",
+      "section": "WRITING",
+      "taskType": "SENTENCE_BUILD",
+      "prompt": "Build a Sentence 2/10 — Context: Why did finance clerks bounce her hotel expense report yesterday? | Arrange into one grammatical response:",
+      "options": [
+        "omitted",
+        "itemized",
+        "nightly",
+        "room",
+        "rates.",
+        "Card",
+        "slips"
+      ],
+      "answer": "Card|slips|omitted|itemized|nightly|room|rates.",
+      "acceptedAnswers": [
+        "Card|slips|omitted|itemized|nightly|room|rates."
+      ],
+      "explanation": "Keterangan sebab penolakan tagihan tanpa rincian harian.",
+      "rationaleSource": "IBT-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 99
+    },
+    {
+      "id": "IBT26-04-Q100",
+      "section": "WRITING",
+      "taskType": "SENTENCE_BUILD",
+      "prompt": "Build a Sentence 3/10 — Context: How can docents hook young kids right inside Fossil Hall? | Arrange into one grammatical response:",
+      "options": [
+        "Let",
+        "tactile",
+        "ammonite",
+        "casts",
+        "first.",
+        "hold",
+        "visitors"
+      ],
+      "answer": "Let|visitors|hold|tactile|ammonite|casts|first.",
+      "acceptedAnswers": [
+        "Let|visitors|hold|tactile|ammonite|casts|first."
+      ],
+      "explanation": "Causative 'Let + object + bare infinitive' membuka interaksi.",
+      "rationaleSource": "IBT-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 100
+    },
+    {
+      "id": "IBT26-04-Q101",
+      "section": "WRITING",
+      "taskType": "SENTENCE_BUILD",
+      "prompt": "Build a Sentence 4/10 — Context: Where should Green House cooks stick food storage identification names? | Arrange into one grammatical response:",
+      "options": [
+        "tape",
+        "firmly",
+        "onto",
+        "every",
+        "box.",
+        "Press",
+        "dated"
+      ],
+      "answer": "Press|dated|tape|firmly|onto|every|box.",
+      "acceptedAnswers": [
+        "Press|dated|tape|firmly|onto|every|box."
+      ],
+      "explanation": "Imperatif instruksi pelabelan kotak makanan.",
+      "rationaleSource": "IBT-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 101
+    },
+    {
+      "id": "IBT26-04-Q102",
+      "section": "WRITING",
+      "taskType": "SENTENCE_BUILD",
+      "prompt": "Build a Sentence 5/10 — Context: What protects seaside fog nets against ripping on sharp shackles? | Arrange into one grammatical response:",
+      "options": [
+        "Rubber",
+        "taut",
+        "corner",
+        "wire",
+        "eyelets.",
+        "cushion",
+        "sleeves"
+      ],
+      "answer": "Rubber|sleeves|cushion|taut|corner|wire|eyelets.",
+      "acceptedAnswers": [
+        "Rubber|sleeves|cushion|taut|corner|wire|eyelets."
+      ],
+      "explanation": "Subjek benda jamak + verba + objek jelas.",
+      "rationaleSource": "IBT-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 102
+    },
+    {
+      "id": "IBT26-04-Q103",
+      "section": "WRITING",
+      "taskType": "SENTENCE_BUILD",
+      "prompt": "Build a Sentence 6/10 — Context: Why did shoppers actually purchase more from tiny jam displays? | Arrange into one grammatical response:",
+      "options": [
+        "prevent",
+        "mental",
+        "fatigue",
+        "and",
+        "regret.",
+        "Smaller",
+        "menus"
+      ],
+      "answer": "Smaller|menus|prevent|mental|fatigue|and|regret.",
+      "acceptedAnswers": [
+        "Smaller|menus|prevent|mental|fatigue|and|regret."
+      ],
+      "explanation": "Kalimat ringkas psikologi perilaku tentang beban pilihan.",
+      "rationaleSource": "IBT-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 103
+    },
+    {
+      "id": "IBT26-04-Q104",
+      "section": "WRITING",
+      "taskType": "SENTENCE_BUILD",
+      "prompt": "Build a Sentence 7/10 — Context: How do farm chillers stop ripe tropical mangoes spoiling early? | Arrange into one grammatical response:",
+      "options": [
+        "Solar",
+        "fungal",
+        "growth",
+        "soon",
+        "afterward.",
+        "slows",
+        "cooling"
+      ],
+      "answer": "Solar|cooling|slows|fungal|growth|soon|afterward.",
+      "acceptedAnswers": [
+        "Solar|cooling|slows|fungal|growth|soon|afterward."
+      ],
+      "explanation": "Gerund subjek tunggal + verba tunggal 'slows'.",
+      "rationaleSource": "IBT-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 104
+    },
+    {
+      "id": "IBT26-04-Q105",
+      "section": "WRITING",
+      "taskType": "SENTENCE_BUILD",
+      "prompt": "Build a Sentence 8/10 — Context: What acoustic hint guided Upper Paleolithic ochre cave wall artists? | Arrange into one grammatical response:",
+      "options": [
+        "amplified",
+        "ancient",
+        "chants",
+        "inside",
+        "chambers.",
+        "Vibrant",
+        "echoes"
+      ],
+      "answer": "Vibrant|echoes|amplified|ancient|chants|inside|chambers.",
+      "acceptedAnswers": [
+        "Vibrant|echoes|amplified|ancient|chants|inside|chambers."
+      ],
+      "explanation": "Struktur lampau menerangkan peran gema dalam pemilihan ruang.",
+      "rationaleSource": "IBT-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 105
+    },
+    {
+      "id": "IBT26-04-Q106",
+      "section": "WRITING",
+      "taskType": "SENTENCE_BUILD",
+      "prompt": "Build a Sentence 9/10 — Context: Why won't dry mycelium bricks crumble inside damp autumn flowerbeds? | Arrange into one grammatical response:",
+      "options": [
+        "Natural",
+        "retired",
+        "bumpers",
+        "within",
+        "days.",
+        "compost",
+        "microbes"
+      ],
+      "answer": "Natural|microbes|compost|retired|bumpers|within|days.",
+      "acceptedAnswers": [
+        "Natural|microbes|compost|retired|bumpers|within|days."
+      ],
+      "explanation": "Kalimat aktif menyoroti penguraian organik aman.",
+      "rationaleSource": "IBT-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 106
+    },
+    {
+      "id": "IBT26-04-Q107",
+      "section": "WRITING",
+      "taskType": "SENTENCE_BUILD",
+      "prompt": "Build a Sentence 10/10 — Context: Who qualifies automatically for free flu shots in Courtyard Canopy? | Arrange into one grammatical response:",
+      "options": [
+        "undergraduates",
+        "carrying",
+        "valid",
+        "student",
+        "ID.",
+        "All",
+        "enrolled"
+      ],
+      "answer": "All|enrolled|undergraduates|carrying|valid|student|ID.",
+      "acceptedAnswers": [
+        "All|enrolled|undergraduates|carrying|valid|student|ID."
+      ],
+      "explanation": "Frasa nomina panjang dengan partisipial aktif menerangkan persyaratan.",
+      "rationaleSource": "IBT-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "sortIndex": 107
+    },
+    {
+      "id": "IBT26-04-Q108",
+      "section": "WRITING",
+      "taskType": "WRITING_RESPONSE",
+      "prompt": "Email — Resolving Reimbursement Folio Documentation\nWrite a polite email (70–120 words) to the Travel Grants Desk attaching your newly acquired zero-balance hotel folio (replacing the earlier card total) and asking whether your undergraduate conference travel claim can enter this Friday's payout cycle.",
+      "options": [],
+      "answer": "",
+      "acceptedAnswers": [],
+      "explanation": "Cek ulang struktur email: salam sopan -> alasan langsung di kalimat pertama -> detail spesifik & ajakan konfirmasi -> penutup rapi.",
+      "rationaleSource": "IBT-MOD-09",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "minWords": 70,
+      "recommendedWords": 95,
+      "rubricCriteria": [
+        "Clear communicative purpose",
+        "Specific schedule/reason details",
+        "Polite academic email register",
+        "Grammatical accuracy"
+      ],
+      "sortIndex": 108
+    },
+    {
+      "id": "IBT26-04-Q109",
+      "section": "WRITING",
+      "taskType": "WRITING_RESPONSE",
+      "prompt": "Academic Discussion — Designing Opt-Out Environmental Programs\nProf. Nair asks: 'Do opt-out municipal composting programs—where households enroll by default unless opting out—cross an ethical boundary compared with voluntary signup flyers?' Evaluate autonomy vs real-world behavioral friction cleanly in 100–130 words.",
+      "options": [],
+      "answer": "",
+      "acceptedAnswers": [],
+      "explanation": "Nyatakan posisi jelas, rujuk argumen Student A/B dengan kata sendiri, serta tambahkan alasan mekanisme dan satu contoh konkret (100–130 kata).",
+      "rationaleSource": "IBT-MOD-05",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": null,
+      "minWords": 100,
+      "recommendedWords": 125,
+      "rubricCriteria": [
+        "Direct response engaging peers",
+        "Cohesive idea development",
+        "Syntactic variety",
+        "Accurate lexical control"
+      ],
+      "sortIndex": 109
+    },
+    {
+      "id": "IBT26-04-Q110",
+      "section": "SPEAKING",
+      "taskType": "LISTEN_REPEAT",
+      "prompt": "Listen and Repeat (IBT26-04-Q110): Listen cleanly to the spoken sentence (1/7) and repeat it aloud with natural rhythm and clear articulation.",
+      "options": [],
+      "answer": "",
+      "acceptedAnswers": [],
+      "explanation": "Latih pengelompokan jeda alami (chunking) dan akurasi pelafalan kalimat referensi: 'Never copy raw household panel files onto personal cloud drives.'",
+      "rationaleSource": "IBT-MOD-10",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT04-SR01",
       "prepSeconds": 0,
+      "speakSeconds": 12,
+      "referenceText": "Never copy raw household panel files onto personal cloud drives.",
+      "rubricCriteria": [
+        "Word accuracy",
+        "Natural chunk phrasing",
+        "Vowel & final-consonant clarity"
+      ],
+      "sortIndex": 110
+    },
+    {
+      "id": "IBT26-04-Q111",
+      "section": "SPEAKING",
+      "taskType": "LISTEN_REPEAT",
+      "prompt": "Listen and Repeat (IBT26-04-Q111): Listen cleanly to the spoken sentence (2/7) and repeat it aloud with natural rhythm and clear articulation.",
+      "options": [],
+      "answer": "",
+      "acceptedAnswers": [],
+      "explanation": "Latih pengelompokan jeda alami (chunking) dan akurasi pelafalan kalimat referensi: 'Attach itemized hotel folios rather than monthly card totals alone.'",
+      "rationaleSource": "IBT-MOD-10",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT04-SR02",
+      "prepSeconds": 0,
+      "speakSeconds": 12,
+      "referenceText": "Attach itemized hotel folios rather than monthly card totals alone.",
+      "rubricCriteria": [
+        "Word accuracy",
+        "Natural chunk phrasing",
+        "Vowel & final-consonant clarity"
+      ],
+      "sortIndex": 111
+    },
+    {
+      "id": "IBT26-04-Q112",
+      "section": "SPEAKING",
+      "taskType": "LISTEN_REPEAT",
+      "prompt": "Listen and Repeat (IBT26-04-Q112): Listen cleanly to the spoken sentence (3/7) and repeat it aloud with natural rhythm and clear articulation.",
+      "options": [],
+      "answer": "",
+      "acceptedAnswers": [],
+      "explanation": "Latih pengelompokan jeda alami (chunking) dan akurasi pelafalan kalimat referensi: 'Courtyard flu shots require no appointment for enrolled undergraduates.'",
+      "rationaleSource": "IBT-MOD-10",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT04-SR03",
+      "prepSeconds": 0,
+      "speakSeconds": 12,
+      "referenceText": "Courtyard flu shots require no appointment for enrolled undergraduates.",
+      "rubricCriteria": [
+        "Word accuracy",
+        "Natural chunk phrasing",
+        "Vowel & final-consonant clarity"
+      ],
+      "sortIndex": 112
+    },
+    {
+      "id": "IBT26-04-Q113",
+      "section": "SPEAKING",
+      "taskType": "LISTEN_REPEAT",
+      "prompt": "Listen and Repeat (IBT26-04-Q113): Listen cleanly to the spoken sentence (4/7) and repeat it aloud with natural rhythm and clear articulation.",
+      "options": [],
+      "answer": "",
+      "acceptedAnswers": [],
+      "explanation": "Latih pengelompokan jeda alami (chunking) dan akurasi pelafalan kalimat referensi: 'Wrap labeled masking tape securely on shared dorm fridge tubs weekly.'",
+      "rationaleSource": "IBT-MOD-10",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT04-SR04",
+      "prepSeconds": 0,
+      "speakSeconds": 12,
+      "referenceText": "Wrap labeled masking tape securely on shared dorm fridge tubs weekly.",
+      "rubricCriteria": [
+        "Word accuracy",
+        "Natural chunk phrasing",
+        "Vowel & final-consonant clarity"
+      ],
+      "sortIndex": 113
+    },
+    {
+      "id": "IBT26-04-Q114",
+      "section": "SPEAKING",
+      "taskType": "LISTEN_REPEAT",
+      "prompt": "Listen and Repeat (IBT26-04-Q114): Listen cleanly to the spoken sentence (5/7) and repeat it aloud with natural rhythm and clear articulation.",
+      "options": [],
+      "answer": "",
+      "acceptedAnswers": [],
+      "explanation": "Latih pengelompokan jeda alami (chunking) dan akurasi pelafalan kalimat referensi: 'Smaller product displays help hesitant buyers avoid choice fatigue.'",
+      "rationaleSource": "IBT-MOD-10",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT04-SR05",
+      "prepSeconds": 0,
+      "speakSeconds": 12,
+      "referenceText": "Smaller product displays help hesitant buyers avoid choice fatigue.",
+      "rubricCriteria": [
+        "Word accuracy",
+        "Natural chunk phrasing",
+        "Vowel & final-consonant clarity"
+      ],
+      "sortIndex": 114
+    },
+    {
+      "id": "IBT26-04-Q115",
+      "section": "SPEAKING",
+      "taskType": "LISTEN_REPEAT",
+      "prompt": "Listen and Repeat (IBT26-04-Q115): Listen cleanly to the spoken sentence (6/7) and repeat it aloud with natural rhythm and clear articulation.",
+      "options": [],
+      "answer": "",
+      "acceptedAnswers": [],
+      "explanation": "Latih pengelompokan jeda alami (chunking) dan akurasi pelafalan kalimat referensi: 'Solar farm chillers drop fresh mango heat smoothly before port transit.'",
+      "rationaleSource": "IBT-MOD-10",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT04-SR06",
+      "prepSeconds": 0,
+      "speakSeconds": 12,
+      "referenceText": "Solar farm chillers drop fresh mango heat smoothly before port transit.",
+      "rubricCriteria": [
+        "Word accuracy",
+        "Natural chunk phrasing",
+        "Vowel & final-consonant clarity"
+      ],
+      "sortIndex": 115
+    },
+    {
+      "id": "IBT26-04-Q116",
+      "section": "SPEAKING",
+      "taskType": "LISTEN_REPEAT",
+      "prompt": "Listen and Repeat (IBT26-04-Q116): Listen cleanly to the spoken sentence (7/7) and repeat it aloud with natural rhythm and clear articulation.",
+      "options": [],
+      "answer": "",
+      "acceptedAnswers": [],
+      "explanation": "Latih pengelompokan jeda alami (chunking) dan akurasi pelafalan kalimat referensi: 'Balloon burst echoes reveal vivid acoustic signatures in dark rock caves.'",
+      "rationaleSource": "IBT-MOD-10",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT04-SR07",
+      "prepSeconds": 0,
+      "speakSeconds": 12,
+      "referenceText": "Balloon burst echoes reveal vivid acoustic signatures in dark rock caves.",
+      "rubricCriteria": [
+        "Word accuracy",
+        "Natural chunk phrasing",
+        "Vowel & final-consonant clarity"
+      ],
+      "sortIndex": 116
+    },
+    {
+      "id": "IBT26-04-Q117",
+      "section": "SPEAKING",
+      "taskType": "SPEAKING_RESPONSE",
+      "prompt": "Take an Interview 1/4: Interviewer Q1: When purchasing electronics or groceries in a store with twenty nearly identical options, how do you pick quickly without second-guessing?",
+      "options": [],
+      "answer": "",
+      "acceptedAnswers": [],
+      "explanation": "Jawab langsung posisi/pilihan Anda dalam 1 kalimat pembuka, ikuti 1–2 alasan mekanisme nyata, dan tutup dengan contoh singkat terfokus (45 detik).",
+      "rationaleSource": "IBT-MOD-06",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT04-SI01",
+      "prepSeconds": 10,
       "speakSeconds": 45,
       "rubricCriteria": [
-        "Nuanced stance",
-        "Concrete illustration",
-        "Smooth flow",
-        "Lexical range"
+        "Prompt relevance",
+        "Spontaneous fluency (~130-160 WPM)",
+        "Supporting detail & clarity",
+        "Sentence variety"
       ],
-      "sortIndex": 12
+      "sortIndex": 117
+    },
+    {
+      "id": "IBT26-04-Q118",
+      "section": "SPEAKING",
+      "taskType": "SPEAKING_RESPONSE",
+      "prompt": "Take an Interview 2/4: Interviewer Q2: Tell me about a financial or scheduling habit you adjusted during college to save time or avoid waste.",
+      "options": [],
+      "answer": "",
+      "acceptedAnswers": [],
+      "explanation": "Jawab langsung posisi/pilihan Anda dalam 1 kalimat pembuka, ikuti 1–2 alasan mekanisme nyata, dan tutup dengan contoh singkat terfokus (45 detik).",
+      "rationaleSource": "IBT-MOD-06",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT04-SI02",
+      "prepSeconds": 10,
+      "speakSeconds": 45,
+      "rubricCriteria": [
+        "Prompt relevance",
+        "Spontaneous fluency (~130-160 WPM)",
+        "Supporting detail & clarity",
+        "Sentence variety"
+      ],
+      "sortIndex": 118
+    },
+    {
+      "id": "IBT26-04-Q119",
+      "section": "SPEAKING",
+      "taskType": "SPEAKING_RESPONSE",
+      "prompt": "Take an Interview 3/4: Interviewer Q3: If you managed a crowded college dorm kitchen where food kept spoiling anonymously, what humane fairness rule would you enforce?",
+      "options": [],
+      "answer": "",
+      "acceptedAnswers": [],
+      "explanation": "Jawab langsung posisi/pilihan Anda dalam 1 kalimat pembuka, ikuti 1–2 alasan mekanisme nyata, dan tutup dengan contoh singkat terfokus (45 detik).",
+      "rationaleSource": "IBT-MOD-06",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT04-SI03",
+      "prepSeconds": 10,
+      "speakSeconds": 45,
+      "rubricCriteria": [
+        "Prompt relevance",
+        "Spontaneous fluency (~130-160 WPM)",
+        "Supporting detail & clarity",
+        "Sentence variety"
+      ],
+      "sortIndex": 119
+    },
+    {
+      "id": "IBT26-04-Q120",
+      "section": "SPEAKING",
+      "taskType": "SPEAKING_RESPONSE",
+      "prompt": "Take an Interview 4/4: Interviewer Q4: Should public programs use automatic opt-out defaults—for example in waste composting or retirement savings—or keep everything strictly opt-in?",
+      "options": [],
+      "answer": "",
+      "acceptedAnswers": [],
+      "explanation": "Jawab langsung posisi/pilihan Anda dalam 1 kalimat pembuka, ikuti 1–2 alasan mekanisme nyata, dan tutup dengan contoh singkat terfokus (45 detik).",
+      "rationaleSource": "IBT-MOD-06",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IBT04-SI04",
+      "prepSeconds": 10,
+      "speakSeconds": 45,
+      "rubricCriteria": [
+        "Prompt relevance",
+        "Spontaneous fluency (~130-160 WPM)",
+        "Supporting detail & clarity",
+        "Sentence variety"
+      ],
+      "sortIndex": 120
     }
   ],
-  "checksum": "353b64f718ed1bebeb3abdc2fa38ce26ecc812be2caa6ab9096d086287b5ff08"
+  "checksum": "7662dfd5beb0952e01216d0453461f92776ab0ec5795e29ee9a7d624b5d1f7ae"
 }

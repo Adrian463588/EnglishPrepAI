@@ -11,6 +11,7 @@ import com.englishprep.ai.domain.models.AudioSource
 import com.englishprep.ai.domain.models.CourseModuleItem
 import com.englishprep.ai.domain.models.ExamId
 import com.englishprep.ai.domain.models.ExamSection
+import com.englishprep.ai.domain.models.MaterialBankEntry
 import com.englishprep.ai.domain.repositories.ExamCatalogRepository
 import com.englishprep.ai.domain.repositories.SessionProgressRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -20,6 +21,7 @@ import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.flatMapLatest
+import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
@@ -34,6 +36,8 @@ data class LearnUiState(
     val lastReadModuleId: String? = null,
     val modules: List<CourseModuleItem> = emptyList(),
     val masteryByModuleId: Map<String, Int> = emptyMap(),
+    val materialBankEntries: List<MaterialBankEntry> = emptyList(),
+    val expandedMaterialId: String? = null,
 )
 
 @OptIn(ExperimentalCoroutinesApi::class)
@@ -46,17 +50,22 @@ class LearnViewModel @Inject constructor(
 
     private val sectionFilter = MutableStateFlow<ExamSection?>(null)
     private val bookmarkFilter = MutableStateFlow(false)
+    private val expandedMaterialId = MutableStateFlow<String?>(null)
 
     val uiState: StateFlow<LearnUiState> = preferences.settingsFlow.flatMapLatest { settings ->
         combine(
             catalogRepository.observeModules(settings.selectedExam),
             sessionRepository.observeStudyProgress(settings.selectedExam),
+            flow { emit(catalogRepository.getMaterialBankEntries(settings.selectedExam)) },
             sectionFilter,
-            bookmarkFilter,
-        ) { modules, progress, filter, onlyBookmarked ->
+            combine(bookmarkFilter, expandedMaterialId, ::Pair),
+        ) { modules, progress, materials, filter, (onlyBookmarked, expandedId) ->
             val filtered = modules.filter { mod ->
                 (filter == null || mod.section == filter) &&
                     (!onlyBookmarked || mod.id in settings.bookmarkedModuleIds)
+            }
+            val filteredMaterials = materials.filter { entry ->
+                filter == null || entry.skill == "ALL" || entry.skill == filter.name
             }
             val masteryMap = progress.associate { it.moduleId to (it.masteryEstimate * 100f).toInt() }
             LearnUiState(
@@ -68,6 +77,8 @@ class LearnViewModel @Inject constructor(
                 lastReadModuleId = settings.lastReadModuleId,
                 modules = filtered,
                 masteryByModuleId = masteryMap,
+                materialBankEntries = filteredMaterials,
+                expandedMaterialId = expandedId,
             )
         }
     }.stateIn(
@@ -82,6 +93,10 @@ class LearnViewModel @Inject constructor(
 
     fun toggleBookmarkFilter() {
         bookmarkFilter.value = !bookmarkFilter.value
+    }
+
+    fun toggleMaterialExpanded(id: String) {
+        expandedMaterialId.update { current -> if (current == id) null else id }
     }
 }
 

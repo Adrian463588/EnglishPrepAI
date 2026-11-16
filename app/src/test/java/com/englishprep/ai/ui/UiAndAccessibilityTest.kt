@@ -19,6 +19,7 @@ import com.englishprep.ai.domain.models.ContentPackSummary
 import com.englishprep.ai.domain.models.ExamId
 import com.englishprep.ai.domain.models.ExamMode
 import com.englishprep.ai.domain.models.ExamSection
+import com.englishprep.ai.domain.models.MaterialBankEntry
 import com.englishprep.ai.domain.models.MediaAssetItem
 import com.englishprep.ai.domain.models.PackStatus
 import com.englishprep.ai.domain.models.QuestionItem
@@ -29,6 +30,7 @@ import com.englishprep.ai.ui.feature.chat.ChatScreen
 import com.englishprep.ai.ui.feature.chat.ChatUiState
 import com.englishprep.ai.ui.feature.exam.ExamScreen
 import com.englishprep.ai.ui.feature.exam.ExamUiState
+import com.englishprep.ai.ui.feature.exam.QuestionNavigatorSheetContent
 import com.englishprep.ai.ui.feature.home.HomeScreen
 import com.englishprep.ai.ui.feature.home.HomeUiState
 import com.englishprep.ai.ui.feature.learn.LearnScreen
@@ -111,7 +113,7 @@ class UiAndAccessibilityTest {
     }
 
     @Test
-    fun `practice screen renders Sample badge with available over blueprint ratio`() {
+    fun `practice screen renders Sample badge with available over blueprint ratio and Ready badge for full packs`() {
         val samplePack = ContentPackSummary(
             packId = "IELTS-A-01",
             examId = ExamId.IELTS_ACADEMIC,
@@ -127,13 +129,28 @@ class UiAndAccessibilityTest {
             provenance = "Original",
             audioBytes = 1_048_576L,
         )
+        val readyPack = ContentPackSummary(
+            packId = "ITP-L1-01",
+            examId = ExamId.ITP_L1,
+            edition = "2026.2",
+            title = "ITP Paket 1",
+            theme = "Full 140",
+            status = PackStatus.READY,
+            blueprintCount = 140,
+            availableCount = 140,
+            durationMinutes = 115,
+            blueprintDurationMinutes = 115,
+            license = "Original",
+            provenance = "Original",
+            audioBytes = 3_900_000L,
+        )
         composeRule.setContent {
             EnglishPrepTheme {
                 PracticeScreen(
                     state = PracticeUiState(
                         isLoading = false,
-                        selectedExam = ExamId.IELTS_ACADEMIC,
-                        packs = listOf(samplePack),
+                        selectedExam = ExamId.ITP_L1,
+                        packs = listOf(readyPack, samplePack),
                     ),
                     onStartPractice = {},
                     onStartStrict = {},
@@ -142,8 +159,9 @@ class UiAndAccessibilityTest {
                 )
             }
         }
+        composeRule.onNodeWithText("Ready • 140 soal").assertIsDisplayed()
+        composeRule.onNodeWithText("Full Mock Strict").assertHeightIsAtLeast(48.dp)
         composeRule.onNodeWithText("Sample • 12/85 soal").assertIsDisplayed()
-        composeRule.onNodeWithText("Mode Latihan").assertHeightIsAtLeast(48.dp)
         composeRule.onNodeWithText("Tryout Strict (Sample)").assertHeightIsAtLeast(48.dp)
     }
 
@@ -322,5 +340,84 @@ class UiAndAccessibilityTest {
             }
         }
         composeRule.onNodeWithText("Kumpulkan").assertHeightIsAtLeast(48.dp)
+    }
+
+    @Test
+    fun `exam navigator renders section-filtered 140 questions with 48dp targets without overflow`() {
+        val questions140 = (1..140).map { i ->
+            val section = when {
+                i <= 50 -> ExamSection.LISTENING
+                i <= 90 -> ExamSection.STRUCTURE
+                else -> ExamSection.READING
+            }
+            QuestionItem(
+                id = "Q-$i",
+                packId = "ITP-L1-01",
+                section = section,
+                taskType = TaskType.CHOICE_SINGLE,
+                prompt = "Question $i",
+                options = listOf("A", "B", "C", "D"),
+                answer = "A",
+                explanation = "Exp",
+                rationaleSource = "ITP-MOD-01",
+            )
+        }
+        var jumpedTo = -1
+        composeRule.setContent {
+            EnglishPrepTheme(reduceMotion = true) {
+                QuestionNavigatorSheetContent(
+                    questions = questions140,
+                    answers = mapOf("Q-1" to "A"),
+                    flaggedIds = emptySet(),
+                    currentIndex = 0,
+                    onSelectQuestion = { jumpedTo = it },
+                )
+            }
+        }
+        composeRule.onNodeWithText("Navigasi Soal (1/140 terjawab)").assertIsDisplayed()
+        composeRule.onNodeWithText("Reading (50)").assertHeightIsAtLeast(48.dp).performClick()
+        composeRule.onNodeWithText("91").assertHeightIsAtLeast(48.dp).performClick()
+        assertEquals(90, jumpedTo)
+    }
+
+    @Test
+    fun `learn screen displays OER material bank entries and ask tutor action`() {
+        val sampleEntry = MaterialBankEntry(
+            id = "MB-OER-GRAM-01-SEC-1",
+            sourceId = "MB-OER-GRAM-01",
+            examScope = "ALL",
+            skill = "STRUCTURE",
+            sourceTitle = "High-Intermediate Academic Grammar",
+            chapterTitle = "Gerunds and Infinitives",
+            pageRange = "31-31",
+            pdfFileName = "libretexts_academic_grammar_esl_ccby.pdf",
+            authorOrOrg = "LibreTexts",
+            license = "CC BY 4.0",
+            sourceUrl = "https://libretexts.org",
+            redistributable = true,
+            excerpt = "Gerunds are -ing forms of verbs used as nouns.",
+        )
+        var tutorSrc = ""
+        composeRule.setContent {
+            EnglishPrepTheme {
+                LearnScreen(
+                    state = LearnUiState(
+                        isLoading = false,
+                        selectedExam = ExamId.ITP_L1,
+                        materialBankEntries = listOf(sampleEntry),
+                        expandedMaterialId = sampleEntry.id,
+                    ),
+                    onSelectSection = {},
+                    onOpenModule = {},
+                    onAskTutor = { tutorSrc = it },
+                )
+            }
+        }
+        composeRule.onNodeWithText("Bank Materi OER & Panduan PDF (1)").assertIsDisplayed()
+        composeRule.onNode(hasScrollAction()).performScrollToNode(hasText("Tanya AI tentang materi ini"))
+        composeRule.onNodeWithText("Gerunds and Infinitives").assertIsDisplayed()
+        composeRule.onNodeWithText("Gerunds are -ing forms of verbs used as nouns.").assertIsDisplayed()
+        composeRule.onNodeWithText("Tanya AI tentang materi ini").assertHeightIsAtLeast(48.dp).performClick()
+        assertEquals("MB-OER-GRAM-01-SEC-1", tutorSrc)
     }
 }

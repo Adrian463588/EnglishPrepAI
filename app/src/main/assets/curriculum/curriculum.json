@@ -1035,6 +1035,801 @@
         }
       ],
       "audioAssetPath": "audio/IELTS-MOD-06-DEMO.wav"
+    },
+    {
+      "id": "ITP-MOD-07",
+      "examId": "ITP_L1",
+      "section": "LISTENING",
+      "title": "Listening Part A: Conditionals, Wishes, Advice & Passive Reversals",
+      "objective": "Mengidentifikasi kenyataan tersirat di balik kalimat pengandaian (wish/if-clause), saran tidak langsung, dan pergeseran aktif-pasif pada dialog ITP.",
+      "theory": "Mengacu modul mendengarkan OER (MB-OER-LST-02 & MB-OER-GRAM-02): konstruksi wish/unreal conditional menyatakan kebalikan dari fakta saat ini atau lampau. Misalnya 'I wish my advisor were here' bermakna pembimbing sedang tidak berada di tempat. Pada pola saran ('Why don't we...', 'Had you considered...'), jawaban tepat merefleksikan tindakan yang diusulkan, bukan penolakan harfiah.",
+      "workedExample": "Man: 'Did Dr. Alvarez sign your lab requisition?' Woman: 'If only she had checked her inbox before noon.' -> Jawaban: Dr. Alvarez has not signed the form yet.",
+      "commonMistake": "Mengartikan kata kerja positif sesudah 'wish' atau 'if only' sebagai kejadian yang benar-benar terlaksana.",
+      "difficulty": "B2",
+      "estimatedMinutes": 18,
+      "sortIndex": 7,
+      "license": "CC BY 4.0 / Original",
+      "provenance": "MB-OER-LST-02;ETS-ITP-L-PA",
+      "audioScript": "M: Did you submit the budget form on time? W: Had I seen the deadline email yesterday, I wouldn't be waiting in line today.",
+      "drills": [
+        {
+          "id": "DRILL-ITP-07-Q1",
+          "taskType": "CHOICE_SINGLE",
+          "prompt": "Woman: 'If I had backed up my slides earlier, I wouldn't be panicking now.' — What does the woman mean?",
+          "options": [
+            "She forgot to save a backup copy of her slides earlier.",
+            "She already presented her slides without difficulty.",
+            "She plans to skip saving backups in the future.",
+            "She lent her laptop backup drive to a classmate."
+          ],
+          "answer": "She forgot to save a backup copy of her slides earlier.",
+          "acceptedAnswers": [
+            "She forgot to save a backup copy of her slides earlier."
+          ],
+          "explanation": "Past unreal conditional ('If I had backed up...') menyiratkan tindakan pencadangan tidak terjadi."
+        },
+        {
+          "id": "DRILL-ITP-07-Q2",
+          "taskType": "CHOICE_SINGLE",
+          "prompt": "Man: 'Where is the quarterly climate bulletin?' Woman: 'Didn't Maya put it in the top drawer?' — What does the woman imply?",
+          "options": [
+            "She thinks Maya probably stored the bulletin in the top drawer.",
+            "She insists Maya never reads climate bulletins.",
+            "She wants the man to buy a new filing cabinet.",
+            "She removed the folder from Maya's desk."
+          ],
+          "answer": "She thinks Maya probably stored the bulletin in the top drawer.",
+          "acceptedAnswers": [
+            "She thinks Maya probably stored the bulletin in the top drawer."
+          ],
+          "explanation": "Negative question 'Didn't X do Y?' mengekspresikan ekspektasi atau ingatan bahwa hal tersebut sudah dilakukan."
+        },
+        {
+          "id": "DRILL-ITP-07-Q3",
+          "taskType": "CHOICE_SINGLE",
+          "prompt": "Woman: 'The bus to the observatory only runs every two hours.' Man: 'Looks like we'd better grab a taxi instead.' — What do they decide?",
+          "options": [
+            "Take a taxi to save waiting time.",
+            "Wait two hours inside the observatory lobby.",
+            "Cancel their observatory visit altogether.",
+            "Walk along the highway with heavy tripods."
+          ],
+          "answer": "Take a taxi to save waiting time.",
+          "acceptedAnswers": [
+            "Take a taxi to save waiting time."
+          ],
+          "explanation": "'Had better + V1' menandai rekomendasi kuat atas solusi alternatif."
+        }
+      ],
+      "audioAssetPath": "audio/ITP-MOD-07-DEMO.wav"
+    },
+    {
+      "id": "ITP-MOD-08",
+      "examId": "ITP_L1",
+      "section": "STRUCTURE",
+      "title": "Structure: Gerunds, Infinitives, Modals & Participial Reductions",
+      "objective": "Menguasai perbedaan objek gerund (-ing) vs infinitive (to + V1), bentuk modal pasif (MB-OER-GRAM-01/02), dan klausa partisipial ringkas.",
+      "theory": "Berdasarkan Bab 2.4 High-Intermediate Academic Grammar ESL (CC BY 4.0) dan ESOL Advanced Grammar Ch. 4: kata kerja tertentu wajib diikuti gerund (avoid, consider, suggest, enjoy), sedangkan yang lain menuntut infinitive (decide, refuse, manage). Dalam kalimat pasif bermodal, pakai pola 'modal + be + V3' (can be recycled, must be verified). Klausa sifat aktif dapat diringkas menjadi present participle (-ing) dan pasif menjadi past participle (-ed/V3).",
+      "workedExample": "Prompt: 'The specimens ___ in liquid nitrogen remained viable for three years.' -> 'stored' (reduksi klausa pasif 'which were stored').",
+      "commonMistake": "Memakai bentuk aktif '-ing' atau kata kerja berhingga ganda tanpa penghubung klausa.",
+      "difficulty": "B2",
+      "estimatedMinutes": 22,
+      "sortIndex": 8,
+      "license": "CC BY 4.0 / OER",
+      "provenance": "MB-OER-GRAM-01;MB-OER-GRAM-02",
+      "audioScript": null,
+      "drills": [
+        {
+          "id": "DRILL-ITP-08-Q1",
+          "taskType": "CHOICE_SINGLE",
+          "prompt": "Geologists avoided ___ core samples near the fractured fault line until tremor activity subsided.",
+          "options": [
+            "drilling",
+            "to drill",
+            "drilled",
+            "drill"
+          ],
+          "answer": "drilling",
+          "acceptedAnswers": [
+            "drilling"
+          ],
+          "explanation": "Kata kerja 'avoid' selalu diikuti bentuk gerund (-ing), bukan to-infinitive."
+        },
+        {
+          "id": "DRILL-ITP-08-Q2",
+          "taskType": "CHOICE_SINGLE",
+          "prompt": "Deep-water coral data collected by remote submersibles must ___ before publication.",
+          "options": [
+            "be calibrated",
+            "calibrating",
+            "calibrated",
+            "to calibrate"
+          ],
+          "answer": "be calibrated",
+          "acceptedAnswers": [
+            "be calibrated"
+          ],
+          "explanation": "Struktur pasif setelah modal 'must' memerlukan 'be + past participle' (MB-OER-GRAM-02 Ch. 4.1.3)."
+        },
+        {
+          "id": "DRILL-ITP-08-Q3",
+          "taskType": "CHOICE_SINGLE",
+          "prompt": "___ from satellite altimetry, Arctic sea-ice thickness charts reveal long-term thinning trends.",
+          "options": [
+            "Derived",
+            "Deriving",
+            "To derive",
+            "They derived"
+          ],
+          "answer": "Derived",
+          "acceptedAnswers": [
+            "Derived"
+          ],
+          "explanation": "Partisipial pembuka merujuk pada subjek 'charts' yang bersifat pasif ('yang diturunkan dari...')."
+        }
+      ],
+      "audioAssetPath": null
+    },
+    {
+      "id": "ITP-MOD-09",
+      "examId": "ITP_L1",
+      "section": "STRUCTURE",
+      "title": "Written Expression: Prepositional Idioms, Determiners & Parallel Clauses",
+      "objective": "Menemukan kesalahan halus pada preposisi terikat, kata sandang/kuantifier (count vs noncount), dan kesetaraan konstruksi klausa.",
+      "theory": "Mengacu ESL Grammar (MB-OER-GRAM-03 Ch. 2.6 & Ch. 4.13): periksa pasangan preposisi wajib (consist of, depend on, capable of, responsible for), kuantifier benda tak terhitung (much/less/amount of vs many/fewer/number of), serta keseimbangan bentuk dalam pasangan korrelatif (both A and B, not only A but also B, neither A nor B).",
+      "workedExample": "Prompt: 'The expedition carried [A] lesser drinking water [B] than planned [C] due to [D] leaking canisters.' -> [A] lesser (seharusnya less).",
+      "commonMistake": "Tertukar antara 'amount of' (noncount) vs 'number of' (jamak terhitung), atau menggunakan 'despite of'.",
+      "difficulty": "B2-C1",
+      "estimatedMinutes": 20,
+      "sortIndex": 9,
+      "license": "OER / Original",
+      "provenance": "MB-OER-GRAM-03;ETS-ITP-S-ERR",
+      "audioScript": null,
+      "drills": [
+        {
+          "id": "DRILL-ITP-09-Q1",
+          "taskType": "CHOICE_SINGLE",
+          "prompt": "Select the underlined error: 'Ocean salinity [A] depends primarily [B] in evaporation rates, [C] river discharge, and [D] seasonal ice melt.'",
+          "options": [
+            "[A] depends",
+            "[B] in evaporation rates",
+            "[C] river discharge",
+            "[D] seasonal ice melt"
+          ],
+          "answer": "[B] in evaporation rates",
+          "acceptedAnswers": [
+            "[B] in evaporation rates"
+          ],
+          "explanation": "Kata kerja 'depend' berpasangan dengan preposisi 'on/upon', bukan 'in'."
+        },
+        {
+          "id": "DRILL-ITP-09-Q2",
+          "taskType": "CHOICE_SINGLE",
+          "prompt": "___ the high pressure two kilometers below sea level, chemosynthetic tube worms thrive beside hydrothermal vents.",
+          "options": [
+            "Despite",
+            "Although",
+            "Because",
+            "Even"
+          ],
+          "answer": "Despite",
+          "acceptedAnswers": [
+            "Despite"
+          ],
+          "explanation": "Setelah 'Despite' langsung diikuti frasa nomina; 'Although' memerlukan klausa (S + V)."
+        },
+        {
+          "id": "DRILL-ITP-09-Q3",
+          "taskType": "CHOICE_SINGLE",
+          "prompt": "Select the underlined error: 'An [A] increasing amount of [B] coastal municipalities [C] are adopting permeable [D] pavement standards.'",
+          "options": [
+            "[A] increasing amount of",
+            "[B] coastal municipalities",
+            "[C] are adopting",
+            "[D] pavement standards"
+          ],
+          "answer": "[A] increasing amount of",
+          "acceptedAnswers": [
+            "[A] increasing amount of"
+          ],
+          "explanation": "'Municipalities' adalah benda jamak terhitung sehingga harus menggunakan 'number of', bukan 'amount of'."
+        }
+      ],
+      "audioAssetPath": null
+    },
+    {
+      "id": "ITP-MOD-10",
+      "examId": "ITP_L1",
+      "section": "READING",
+      "title": "Reading Academic Synthesis: Science Processes & Author Organization",
+      "objective": "Mengidentifikasi struktur organisasi bacaan ilmiah (klasifikasi, sebab-akibat, kronologi) dan mengevaluasi soal kecuali (NOT/EXCEPT) pada teks ITP 300+ kata.",
+      "theory": "Menggunakan kerangka bacaan ilmiah domain publik NOAA & NASA (MB-OER-SCI-01 & MB-OER-SCI-02): bacaan sains ITP sering membandingkan sistem lama vs mekanisme baru (mis. terumbu karang dangkal vs karang laut dalam yang hidup tanpa zooxanthellae fotosintetik). Pada pertanyaan 'Which of the following is NOT mentioned?', eliminasi 3 opsi yang memiliki padanan parafrase eksplisit di paragraf terkait.",
+      "workedExample": "Passage fact: Deep-sea corals filter organic detritus rather than relying on photosynthetic algae -> Opsi salah: 'They require bright sunlight for algal symbiosis.'",
+      "commonMistake": "Terjebak opsi yang benar menurut pengetahuan umum tetapi tidak tercantum di teks, atau keliru memilih pengecualian.",
+      "difficulty": "B2-C1",
+      "estimatedMinutes": 25,
+      "sortIndex": 10,
+      "license": "Public Domain / Original",
+      "provenance": "MB-OER-SCI-01;MB-OER-SCI-02",
+      "audioScript": null,
+      "drills": [
+        {
+          "id": "DRILL-ITP-10-Q1",
+          "taskType": "CHOICE_SINGLE",
+          "prompt": "Passage: 'Unlike tropical reef corals that depend on sunlit algae, deep-sea corals survive in dark waters by capturing drifting organic particles.' How do deep-sea corals obtain nutrition?",
+          "options": [
+            "By trapping suspended organic debris from ocean currents",
+            "Through symbiotic photosynthesis in shallow lagoons",
+            "By absorbing geothermal sulfur from continental shelves",
+            "Through seasonal migration to warmer surfaces"
+          ],
+          "answer": "By trapping suspended organic debris from ocean currents",
+          "acceptedAnswers": [
+            "By trapping suspended organic debris from ocean currents"
+          ],
+          "explanation": "'Capturing drifting organic particles' diparafrasakan oleh 'trapping suspended organic debris'."
+        },
+        {
+          "id": "DRILL-ITP-10-Q2",
+          "taskType": "CHOICE_SINGLE",
+          "prompt": "Which paragraph transition signal most clearly introduces a competing scientific explanation?",
+          "options": [
+            "Conversely, subsequent radiocarbon dating indicated...",
+            "In summary, these specimens shared four traits...",
+            "For instance, one specimen measured 14 centimeters...",
+            "Similarly, neighboring basins displayed identical clay..."
+          ],
+          "answer": "Conversely, subsequent radiocarbon dating indicated...",
+          "acceptedAnswers": [
+            "Conversely, subsequent radiocarbon dating indicated..."
+          ],
+          "explanation": "'Conversely' menandai pertentangan atau penjelasan tandingan."
+        },
+        {
+          "id": "DRILL-ITP-10-Q3",
+          "taskType": "CHOICE_SINGLE",
+          "prompt": "When answering a 'Where in the passage does the author describe X?' question, what is the fastest accurate verification?",
+          "options": [
+            "Scan topic sentences and confirm the exact line span containing concrete evidence for X",
+            "Guess based on whether X sounds introductory or concluding",
+            "Pick the longest paragraph automatically",
+            "Assume all dates appear in Paragraph 1"
+          ],
+          "answer": "Scan topic sentences and confirm the exact line span containing concrete evidence for X",
+          "acceptedAnswers": [
+            "Scan topic sentences and confirm the exact line span containing concrete evidence for X"
+          ],
+          "explanation": "Soal lokasi baris menuntut kecocokan fakta eksplisit pada rentang baris tertentu."
+        }
+      ],
+      "audioAssetPath": null
+    },
+    {
+      "id": "IBT-MOD-07",
+      "examId": "IBT_2026",
+      "section": "READING",
+      "title": "iBT 2026 Reading Mastery: Morphological Clues in Complete the Words",
+      "objective": "Memprediksi bentuk kata yang hilang pada format C-test iBT 2026 lewat analisis akar kata, sufiks kelas kata, dan kolokasi akademik.",
+      "theory": "Mengacu Spesifikasi ETS iBT Jan 2026 (MB-REF-IBT-01) dan ESL 304 (MB-OER-READ-01): pada tugas Complete the Words, setengah huruf akhir kata disembunyikan (mis. 'infra___' atau 'signif___'). Cek: (1) penanda gramatikal sebelum/sesudah rumpang ('will + V1', 'the + N + of', 'increasingly + Adv/Adj'), (2) jumlah huruf/makna logis paragraf, dan (3) kesesuaian bentuk tunggal/jamak atau kala waktu.",
+      "workedExample": "Context: 'Volcanic ash layers allow archaeologists to estab___ reliable dates.' -> 'establish' (bentuk dasar setelah infinitive marker 'to').",
+      "commonMistake": "Mengisi kata benda atau adjektiva di posisi yang menuntut verba transitif atau adverbia.",
+      "difficulty": "B2",
+      "estimatedMinutes": 18,
+      "sortIndex": 7,
+      "license": "Original / ETS Spec Ref",
+      "provenance": "MB-REF-IBT-01;MB-OER-READ-01",
+      "audioScript": null,
+      "drills": [
+        {
+          "id": "DRILL-IBT-07-Q1",
+          "taskType": "FILL_BLANK",
+          "prompt": "Complete the Word: 'Sensors trans___ real-time salinity measurements from moorings to coastal servers.' (Full verb)",
+          "options": [],
+          "answer": "transmit",
+          "acceptedAnswers": [
+            "transmit",
+            "transfer"
+          ],
+          "explanation": "Subjek jamak 'Sensors' butuh verb dasar 'transmit' sesuai konteks pengiriman data."
+        },
+        {
+          "id": "DRILL-IBT-07-Q2",
+          "taskType": "FILL_BLANK",
+          "prompt": "Complete the Word: 'The museum requires visitors to make an ad___ reservation before entering the manuscript vault.' (Full adjective meaning made beforehand)",
+          "options": [],
+          "answer": "advance",
+          "acceptedAnswers": [
+            "advance"
+          ],
+          "explanation": "'An advance reservation' adalah kolokasi baku bermakna reservasi yang dipesan lebih dulu."
+        },
+        {
+          "id": "DRILL-IBT-07-Q3",
+          "taskType": "CHOICE_SINGLE",
+          "prompt": "In 'Read in Daily Life', which cue most frequently signals an exception to a general campus rule?",
+          "options": [
+            "'Unless', 'except for', or bolded effective dates",
+            "'Congratulations' or 'Welcome back'",
+            "Font size of the university crest",
+            "The sender's street ZIP code alone"
+          ],
+          "answer": "'Unless', 'except for', or bolded effective dates",
+          "acceptedAnswers": [
+            "'Unless', 'except for', or bolded effective dates"
+          ],
+          "explanation": "Soal Daily Life menguji ketelitian memahami syarat, batas waktu, dan pengecualian kebijakan."
+        }
+      ],
+      "audioAssetPath": null
+    },
+    {
+      "id": "IBT-MOD-08",
+      "examId": "IBT_2026",
+      "section": "LISTENING",
+      "title": "iBT 2026 Listening Mastery: Pragmatic Function & Speaker Attitude",
+      "objective": "Menilai maksud pragmatis kalimat singkat ('Why does the professor say...?') dan menyaring pilihan respons alami pada Listen & Choose a Response.",
+      "theory": "Berdasarkan kerangka konstruksi iBT RR-106 (MB-REF-IBT-03) dan teknik mendengarkan aktif CC-BY (MB-OER-LSPK-01): ujaran tidak selalu bermakna literal. Nada turun naik, ragu ('Wait—are you sure about Friday?'), atau jeda pendek menandakan koreksi atau penolakan sopan. Pada pengumuman/kuliah iBT 2026 yang ringkas, catat perubahan ruang, syarat prasyarat, serta contoh konkret yang mengilustrasikan teori utama.",
+      "workedExample": "Speaker: 'Hold on, didn't the dean reschedule the lab audit to Thursday morning?' -> Tujuan: Express doubt about the listener's Friday schedule.",
+      "commonMistake": "Memilih jawaban yang hanya cocok dengan satu kata kunci awal tanpa melihat fungsi tanya/ekspresi penutur.",
+      "difficulty": "B2",
+      "estimatedMinutes": 20,
+      "sortIndex": 8,
+      "license": "CC BY 4.0 / Research Ref",
+      "provenance": "MB-REF-IBT-03;MB-OER-LSPK-01",
+      "audioScript": "W: Should we reserve Studio B for Thursday's recording? M: Actually, the acoustic engineer booked Studio B all afternoon, so let's switch to Studio C.",
+      "drills": [
+        {
+          "id": "DRILL-IBT-08-Q1",
+          "taskType": "CHOICE_SINGLE",
+          "prompt": "A classmate asks: 'Mind if I borrow the reference atlas for ten minutes?' Which response clearly grants permission?",
+          "options": [
+            "Go right ahead—I'm finished with that section.",
+            "Yes, I mind very much if anyone opens it.",
+            "I visited the downtown bookstore yesterday afternoon.",
+            "No, the geography exam isn't until March."
+          ],
+          "answer": "Go right ahead—I'm finished with that section.",
+          "acceptedAnswers": [
+            "Go right ahead—I'm finished with that section."
+          ],
+          "explanation": "Ungkapan ramah 'Go right ahead' mengizinkan peminjaman secara alami."
+        },
+        {
+          "id": "DRILL-IBT-08-Q2",
+          "taskType": "CHOICE_SINGLE",
+          "prompt": "In a lecture, the professor says: 'Before you think glaciers move smoothly like slow rivers, remember they also fracture violently along fault planes.' Why does the professor mention 'slow rivers'?",
+          "options": [
+            "To contrast a common intuition with sudden brittle sliding behavior",
+            "To prove all glaciers turn into warm rivers each summer",
+            "To explain municipal flood-wall construction",
+            "To introduce marine coral habitats"
+          ],
+          "answer": "To contrast a common intuition with sudden brittle sliding behavior",
+          "acceptedAnswers": [
+            "To contrast a common intuition with sudden brittle sliding behavior"
+          ],
+          "explanation": "Berdasarkan temuan NASA glacier dynamics (MB-OER-SCI-02), dosen membantah anggapan gerak mulus seragam dengan retakan tiba-tiba."
+        },
+        {
+          "id": "DRILL-IBT-08-Q3",
+          "taskType": "CHOICE_SINGLE",
+          "prompt": "Which note-taking strategy works best in shorter 2026 iBT Listening talks?",
+          "options": [
+            "Abbreviate main concepts, arrows for cause/effect (->), and mark self-corrections (*)",
+            "Try to transcribe every full preposition word-for-word",
+            "Wait until the audio ends completely before checking prompts",
+            "Ignore lecturer emphasis phrases like 'Crucially...'"
+          ],
+          "answer": "Abbreviate main concepts, arrows for cause/effect (->), and mark self-corrections (*)",
+          "acceptedAnswers": [
+            "Abbreviate main concepts, arrows for cause/effect (->), and mark self-corrections (*)"
+          ],
+          "explanation": "Singkatan & simbol alur menjaga perhatian pada hubungan logika antaride."
+        }
+      ],
+      "audioAssetPath": "audio/IBT-MOD-08-DEMO.wav"
+    },
+    {
+      "id": "IBT-MOD-09",
+      "examId": "IBT_2026",
+      "section": "WRITING",
+      "title": "iBT 2026 Writing Mastery: Syntax Assembly, Email Register & Discussion Synthesis",
+      "objective": "Membangun struktur klausa majemuk bebas error pada Build a Sentence dan menulis balasan email kampus serta diskusi akademik iBT 2026 yang terfokus.",
+      "theory": "Merujuk Iowa State Academic Writing (MB-OER-WRITE-01) dan spesifikasi ETS 2026: (1) Pada Build a Sentence, hindari inversi pada embedded question ('Do you know when the lab opens?', bukan 'when does the lab open'); (2) Pada Write an Email (~70-120 kata), pakai sapaan sopan, tujuan jelas di kalimat awal, rincian alasan/jadwal spesifik, dan penutup ramah; (3) Pada Academic Discussion (~100-130 kata), bangun argumen orisinal yang merespons rekan kelas dengan bukti konkret.",
+      "workedExample": "Prompt fragments: ['wondered', 'whether', 'I', 'reviewed', 'you', 'the budget'] -> 'I wondered whether you reviewed the budget.'",
+      "commonMistake": "Melupakan kesepakatan subject-verb atau memakai register terlalu santai dalam email akademik ke profesor.",
+      "difficulty": "B2-C1",
+      "estimatedMinutes": 22,
+      "sortIndex": 9,
+      "license": "CC BY 4.0 / ETS Spec Ref",
+      "provenance": "MB-OER-WRITE-01;MB-REF-IBT-01",
+      "audioScript": null,
+      "drills": [
+        {
+          "id": "DRILL-IBT-09-Q1",
+          "taskType": "CHOICE_SINGLE",
+          "prompt": "Which embedded question word order is grammatically correct for Build a Sentence?",
+          "options": [
+            "Could you tell me where the archival records are stored?",
+            "Could you tell me where are the archival records stored?",
+            "Could you tell me stored where are archival records?",
+            "Tell could you me archival where records are stored?"
+          ],
+          "answer": "Could you tell me where the archival records are stored?",
+          "acceptedAnswers": [
+            "Could you tell me where the archival records are stored?"
+          ],
+          "explanation": "Embedded wh-clause di dalam kalimat tanya mengikuti urutan S + V biasa ('the archival records are stored')."
+        },
+        {
+          "id": "DRILL-IBT-09-Q2",
+          "taskType": "CHOICE_SINGLE",
+          "prompt": "When writing an academic email to request a lab extension under the 2026 iBT format, which element is essential?",
+          "options": [
+            "Explicit reason, specific proposed new date, and respectful closing",
+            "At least three informal emojis to sound friendly",
+            "Copying the exact prompt instructions twice to increase length",
+            "Using all capital letters in the subject line"
+          ],
+          "answer": "Explicit reason, specific proposed new date, and respectful closing",
+          "acceptedAnswers": [
+            "Explicit reason, specific proposed new date, and respectful closing"
+          ],
+          "explanation": "Rubrik email menilai kelengkapan poin tugas, kejelasan komunikasi, dan ketepatan register sopan."
+        },
+        {
+          "id": "DRILL-IBT-09-Q3",
+          "taskType": "CHOICE_SINGLE",
+          "prompt": "In Write for an Academic Discussion, how do you demonstrate critical engagement?",
+          "options": [
+            "Refer specifically to a peer's claim, add a fresh supporting/counter example, and avoid verbatim prompt copying",
+            "State 'I agree with both students' and stop after 40 words",
+            "Switch to an unrelated anecdote from primary school",
+            "Use bullet fragments without complete sentences"
+          ],
+          "answer": "Refer specifically to a peer's claim, add a fresh supporting/counter example, and avoid verbatim prompt copying",
+          "acceptedAnswers": [
+            "Refer specifically to a peer's claim, add a fresh supporting/counter example, and avoid verbatim prompt copying"
+          ],
+          "explanation": "Elaborasi logis dan keterhubungan dengan diskusi rekan adalah indikator utama skor tinggi."
+        }
+      ],
+      "audioAssetPath": null
+    },
+    {
+      "id": "IBT-MOD-10",
+      "examId": "IBT_2026",
+      "section": "SPEAKING",
+      "title": "iBT 2026 Speaking Mastery: Phonological Chunking & Rapid Interview Framing",
+      "objective": "Menjaga akurasi pengulangan frasa pada Listen & Repeat dan membangun jawaban terstruktur dalam wawancara beruntun 45 detik.",
+      "theory": "Mengacu Pronunciation CC-BY (MB-OER-LSPK-01 Ch. 1.2) dan rubrik iBT Speaking 2026: pada 7 tugas Listen & Repeat, tahan memori kerja dengan membagi kalimat menjadi 2-3 kelompok makna (subject phrase | verb+object | prepositional ending). Pada 4 pertanyaan Take an Interview tanpa waktu persiapan panjang, jawab langsung tesis di 5 detik pertama, tambah 1 alasan mekanisme, lalu tutup dengan contoh nyata singkat.",
+      "workedExample": "Listen & Repeat chunking: '[Due to heavy snowfall] / [all shuttle buses will depart] / [from the west transit hub.]'",
+      "commonMistake": "Berhenti total di tengah kalimat atau bergumam terlalu lama saat mencoba mengingat satu kata tepat.",
+      "difficulty": "B2",
+      "estimatedMinutes": 18,
+      "sortIndex": 10,
+      "license": "CC BY 4.0 / Research Ref",
+      "provenance": "MB-OER-LSPK-01;MB-REF-IBT-01",
+      "audioScript": null,
+      "drills": [
+        {
+          "id": "DRILL-IBT-10-Q1",
+          "taskType": "CHOICE_SINGLE",
+          "prompt": "What is the most effective memory strategy for long sentences in TOEFL iBT 2026 'Listen and Repeat'?",
+          "options": [
+            "Group words into 2–3 syntactic meaning chunks and mirror the speaker's stress rhythm",
+            "Focus only on memorizing the first two words and guess the ending",
+            "Speak in monotone staccato syllables with equal gaps",
+            "Insert extra introductory filler phrases like 'Um, well, he said that...'"
+          ],
+          "answer": "Group words into 2–3 syntactic meaning chunks and mirror the speaker's stress rhythm",
+          "acceptedAnswers": [
+            "Group words into 2–3 syntactic meaning chunks and mirror the speaker's stress rhythm"
+          ],
+          "explanation": "Chunking sintaktis memperluas kapasitas memori jangka pendek sekaligus menjaga inteligibilitas."
+        },
+        {
+          "id": "DRILL-IBT-10-Q2",
+          "taskType": "CHOICE_SINGLE",
+          "prompt": "During 'Take an Interview', you get a question on urban public transit funding. Which opening works strongest?",
+          "options": [
+            "'I strongly support expanding electric bus corridors because they cut commuter delays and urban emissions.'",
+            "'Wait... urban transit... let me think about cars and bikes for twenty seconds...'",
+            "'Good morning distinguished examiner, today I shall discuss a controversial topic since time immemorial.'",
+            "'Yes.' (pause 15 seconds)"
+          ],
+          "answer": "'I strongly support expanding electric bus corridors because they cut commuter delays and urban emissions.'",
+          "acceptedAnswers": [
+            "'I strongly support expanding electric bus corridors because they cut commuter delays and urban emissions.'"
+          ],
+          "explanation": "Posisi jelas + dua alasan ringkas langsung membuka alur penjelasan yang terarah."
+        },
+        {
+          "id": "DRILL-IBT-10-Q3",
+          "taskType": "CHOICE_SINGLE",
+          "prompt": "Which factor does NOT help Speaking intelligibility in automated or local rubric checks?",
+          "options": [
+            "Rushing words at >220 WPM while swallowing consonant endings",
+            "Maintaining steady pacing around 130–160 WPM with clear word stress",
+            "Self-correcting cleanly if a minor plural slips",
+            "Linking function words naturally between stressed content words"
+          ],
+          "answer": "Rushing words at >220 WPM while swallowing consonant endings",
+          "acceptedAnswers": [
+            "Rushing words at >220 WPM while swallowing consonant endings"
+          ],
+          "explanation": "Kecepatan ekstrem mengorbankan kejelasan konsonan akhir dan tekanan kata."
+        }
+      ],
+      "audioAssetPath": null
+    },
+    {
+      "id": "IELTS-MOD-07",
+      "examId": "IELTS_ACADEMIC",
+      "section": "LISTENING",
+      "title": "IELTS Listening Mastery: Signposting, Numbers, Dates & Multiple-Speaker Part 3",
+      "objective": "Memetakan transisi Part 1–4, menulis angka/tanggal/ejaan secara presisi, dan membedakan kesepakatan akhir antara 2–3 pembicara akademik di Part 3.",
+      "theory": "Mengacu materi pendengaran CC-BY (MB-OER-LST-02 & MB-OER-LSPK-01): di IELTS Listening, penomoran soal hampir selalu berurutan sesuai aliran rekaman. Perhatikan jebakan self-correction di Part 1 (mis. kode pos/biaya/hari), rujukan peta atau klasifikasi di Part 2, dan pergantian persetujuan di Part 3 ('I thought X, though your graph actually proves Y'). Pada Part 4, kata pengisi rumpang persis seperti terdengar di audio tanpa mengubah kelas kata.",
+      "workedExample": "Audio Part 3: Mia: 'Let's include sample sizes above 200.' Leo: 'Actually, budget limits us to 85 households, though adding follow-up interviews balances depth.' -> Agreed constraint: 85 households with interviews.",
+      "commonMistake": "Menulis jawaban melebihi batas instruksi ('ONE WORD AND/OR A NUMBER') atau memasukkan artikel ('the/a') saat batas hanya satu kata.",
+      "difficulty": "B2",
+      "estimatedMinutes": 22,
+      "sortIndex": 7,
+      "license": "CC BY 4.0 / Original",
+      "provenance": "MB-OER-LST-02;IELTS-L-P14",
+      "audioScript": "M: For our soil seminar, I originally drafted twelve survey pages. W: That's far too long for busy farmers—if we trim it to three concise sections, response rates will double. M: Good point, let's lock three sections.",
+      "drills": [
+        {
+          "id": "DRILL-IELTS-07-Q1",
+          "taskType": "CHOICE_SINGLE",
+          "prompt": "Instruction says: 'Write ONE WORD AND/OR A NUMBER'. Audio: 'We meet in Hall three, room fourteen.' Which answer violates the word/number rule?",
+          "options": [
+            "in fourteen / room number 14",
+            "14",
+            "fourteen",
+            "Hall 3"
+          ],
+          "answer": "in fourteen / room number 14",
+          "acceptedAnswers": [
+            "in fourteen / room number 14"
+          ],
+          "explanation": "Batas ONE WORD AND/OR A NUMBER mengizinkan maksimal satu kata plus satu angka; frasa tiga kata langsung dianggap salah."
+        },
+        {
+          "id": "DRILL-IELTS-07-Q2",
+          "taskType": "CHOICE_SINGLE",
+          "prompt": "In IELTS Part 3, Tutor says: 'Your questionnaire design was ambitious, wasn't it?' Student replies: 'Too broad, really—we should tighten it to three core variables.' What do they agree?",
+          "options": [
+            "Narrow the survey scope to three core variables.",
+            "Expand the questionnaire with twenty new sections.",
+            "Delete the entire survey method from Chapter 2.",
+            "Print posters before finalizing the questions."
+          ],
+          "answer": "Narrow the survey scope to three core variables.",
+          "acceptedAnswers": [
+            "Narrow the survey scope to three core variables."
+          ],
+          "explanation": "Evaluasi kritis mengarah ke keputusan penyempitan cakupan."
+        },
+        {
+          "id": "DRILL-IELTS-07-Q3",
+          "taskType": "CHOICE_SINGLE",
+          "prompt": "Before IELTS Listening Part 4 begins, how should you use the 30–40 second preview window?",
+          "options": [
+            "Predict the required part of speech (singular noun, verb, adjective) around each gap",
+            "Read back through Part 1 answers without looking at Part 4 prompts",
+            "Try to memorize all 10 distractors verbatim",
+            "Close your eyes until the lecturer says 'Good morning'"
+          ],
+          "answer": "Predict the required part of speech (singular noun, verb, adjective) around each gap",
+          "acceptedAnswers": [
+            "Predict the required part of speech (singular noun, verb, adjective) around each gap"
+          ],
+          "explanation": "Prediksi kelas kata membuat telinga otomatis menangkap kata target saat rekaman berputar."
+        }
+      ],
+      "audioAssetPath": "audio/IELTS-MOD-07-DEMO.wav"
+    },
+    {
+      "id": "IELTS-MOD-08",
+      "examId": "IELTS_ACADEMIC",
+      "section": "READING",
+      "title": "IELTS Reading: Matching Features, Researcher Claims & Paraphrase Mining",
+      "objective": "Menjodohkan pernyataan ke peneliti/institusi atau tahun tepat dan menelusuri padanan sinonim ilmiah dalam bacaan IELTS 600–800 kata.",
+      "theory": "Merujuk keterampilan membaca EAP & artikel ilmiah publik (MB-OER-READ-01, MB-OER-SCI-01/02): teknik tercepat untuk Matching Features adalah memindai teks hanya untuk menandai nama peneliti/lembaga (mis. Dr. Nair, NOAA, University of Graz) lalu membaca 2–4 kalimat tepat di sekitar nama tersebut. Cocokkan makna dengan daftar klaim menggunakan sinonim konseptual, bukan kesamaan satu kata identik.",
+      "workedExample": "Text: 'Sauber and Molnia reported that rapid ice thinning reduces overburden pressure along Alaskan coastal faults.' -> Matches statement linking glacier melt to seismic fault instability.",
+      "commonMistake": "Terhenti di kata pertama yang muncul beberapa kali tanpa memeriksa peneliti mana yang benar-benar menyatakan klaim itu.",
+      "difficulty": "B2-C1",
+      "estimatedMinutes": 25,
+      "sortIndex": 8,
+      "license": "CC BY 4.0 / Public Domain",
+      "provenance": "MB-OER-READ-01;MB-OER-SCI-02",
+      "audioScript": null,
+      "drills": [
+        {
+          "id": "DRILL-IELTS-08-Q1",
+          "taskType": "CHOICE_SINGLE",
+          "prompt": "Text excerpt: 'While early oceanographers believed corals only grew above 100 meters, NOAA submersibles documented living cold-water reefs 2,000 meters deep.' What misconception was overturned?",
+          "options": [
+            "That coral ecosystems are strictly confined to shallow sunlit depths",
+            "That oceanographers had never used submarines before 2025",
+            "That deep-sea corals grow faster in boiling tropical vents",
+            "That coastal storms never affect shallow ecosystems"
+          ],
+          "answer": "That coral ecosystems are strictly confined to shallow sunlit depths",
+          "acceptedAnswers": [
+            "That coral ecosystems are strictly confined to shallow sunlit depths"
+          ],
+          "explanation": "'Only grew above 100 meters' setara dengan terbatas pada perairan dangkal."
+        },
+        {
+          "id": "DRILL-IELTS-08-Q2",
+          "taskType": "CHOICE_SINGLE",
+          "prompt": "When solving 'Matching Information to Paragraphs (A–F)', remember that...",
+          "options": [
+            "Some paragraphs may contain more than one answer while others contain none (if stated in instructions)",
+            "Paragraph A always matches Question 1 sequentially",
+            "You must use every paragraph letter once even without a note saying so",
+            "Only read the very last word of each paragraph"
+          ],
+          "answer": "Some paragraphs may contain more than one answer while others contain none (if stated in instructions)",
+          "acceptedAnswers": [
+            "Some paragraphs may contain more than one answer while others contain none (if stated in instructions)"
+          ],
+          "explanation": "Berbeda dengan Matching Headings, Matching Information mengizinkan penggunaan ulang huruf bila instruksi menyebut NB."
+        },
+        {
+          "id": "DRILL-IELTS-08-Q3",
+          "taskType": "CHOICE_SINGLE",
+          "prompt": "In IELTS Reading YES / NO / NOT GIVEN, what does 'NO' strictly evaluate?",
+          "options": [
+            "Whether a statement contradicts the writer's expressed view or claim",
+            "Whether the reader personally disagrees with the topic",
+            "Whether the statement mentions statistics not found anywhere in the passage",
+            "Whether the statement uses British instead of American spelling"
+          ],
+          "answer": "Whether a statement contradicts the writer's expressed view or claim",
+          "acceptedAnswers": [
+            "Whether a statement contradicts the writer's expressed view or claim"
+          ],
+          "explanation": "YNNG mengukur klaim/pandangan penulis, dan 'NO' menandakan kontradiksi langsung terhadap sikap penulis."
+        }
+      ],
+      "audioAssetPath": null
+    },
+    {
+      "id": "IELTS-MOD-09",
+      "examId": "IELTS_ACADEMIC",
+      "section": "WRITING",
+      "title": "IELTS Writing Band 7–8 Precision: Data Verbs, Complex Clauses & Hedging",
+      "objective": "Meningkatkan skor Lexical Resource & Grammatical Range pada Task 1 dan Task 2 mengacu langsung Deskriptor Band IELTS resmi.",
+      "theory": "Mengacu IELTS Writing Band Descriptors (MB-REF-IELTS-01) dan Iowa State Academic Writing (MB-OER-WRITE-01): kriteria Band 7–8 mensyaratkan 'a variety of complex structures' dan kalimat bebas-error yang sering, plus 'skillful use of uncommon/collocational items'. Di Task 1, ganti pengulangan 'went up' dengan 'rose sharply / experienced a modest rebound / plateaued at'. Di Task 2, hindari generalisasi mutlak ('always ruins society') dengan academic hedging ('tends to erode', 'may exacerbate', 'depending on regulatory oversight').",
+      "workedExample": "Weak: 'Solar power increased bigly and everyone likes it.' -> Band 7.5+: 'Solar output rose sharply from 14% to 38%, whereas coal consumption declined steadily across the decade.'",
+      "commonMistake": "Memakai idiom informal percakapan ('every coin has two sides', 'nowadays people think') atau memaksakan kata langka yang salah konteks.",
+      "difficulty": "B2-C1",
+      "estimatedMinutes": 25,
+      "sortIndex": 9,
+      "license": "CC BY 4.0 / Official Criteria Ref",
+      "provenance": "MB-REF-IELTS-01;MB-OER-WRITE-01",
+      "audioScript": null,
+      "drills": [
+        {
+          "id": "DRILL-IELTS-09-Q1",
+          "taskType": "CHOICE_SINGLE",
+          "prompt": "Which Task 1 sentence shows the clearest high-band comparative accuracy and cohesion?",
+          "options": [
+            "Whereas municipal rail ridership climbed by 24% between 2015 and 2024, private car commuting fell marginally by 6%.",
+            "Train up 24% and car down 6% in table.",
+            "Everyone stopped driving cars because trains are awesome and popular everywhere.",
+            "In 2015 trains 24% and then in 2024 it increased to good numbers."
+          ],
+          "answer": "Whereas municipal rail ridership climbed by 24% between 2015 and 2024, private car commuting fell marginally by 6%.",
+          "acceptedAnswers": [
+            "Whereas municipal rail ridership climbed by 24% between 2015 and 2024, private car commuting fell marginally by 6%."
+          ],
+          "explanation": "Kontras klausa subordinator 'Whereas...' membandingkan dua tren disertai angka presisi."
+        },
+        {
+          "id": "DRILL-IELTS-09-Q2",
+          "taskType": "CHOICE_SINGLE",
+          "prompt": "Which revision demonstrates appropriate academic hedging in IELTS Writing Task 2?",
+          "options": [
+            "Remote work policies can improve retention, provided firms maintain structured onboarding for junior staff.",
+            "Remote work ALWAYS makes EVERY worker 100% happier without any flaw.",
+            "Working from home is super good and companies are silly if they dislike it.",
+            "There are pros and cons to working from home in this modern globe today."
+          ],
+          "answer": "Remote work policies can improve retention, provided firms maintain structured onboarding for junior staff.",
+          "acceptedAnswers": [
+            "Remote work policies can improve retention, provided firms maintain structured onboarding for junior staff."
+          ],
+          "explanation": "Hedging + kondisi ('can improve..., provided...') mencerminkan analisis bernuansa Band 7–8."
+        },
+        {
+          "id": "DRILL-IELTS-09-Q3",
+          "taskType": "CHOICE_SINGLE",
+          "prompt": "According to public Task 1 Band Descriptors, what caps Task Achievement around Band 5 if missing?",
+          "options": [
+            "Absence of a clear Overview summarizing key trends/stages",
+            "Writing 165 words instead of 220 words",
+            "Using American spelling consistently",
+            "Writing numbers like '42%' instead of 'forty-two per cent'"
+          ],
+          "answer": "Absence of a clear Overview summarizing key trends/stages",
+          "acceptedAnswers": [
+            "Absence of a clear Overview summarizing key trends/stages"
+          ],
+          "explanation": "Deskriptor Task 1 menyebut secara eksplisit ketiadaan Overview membatasi skor Task Achievement."
+        }
+      ],
+      "audioAssetPath": null
+    },
+    {
+      "id": "IELTS-MOD-10",
+      "examId": "IELTS_ACADEMIC",
+      "section": "SPEAKING",
+      "title": "IELTS Speaking Pronunciation & Part 3 Analytical Extension",
+      "objective": "Mengatur intonasi penekanan makna, keterhubungan ucapan (connected speech), dan perluasan jawaban abstrak Part 3 sesuai Speaking Band Descriptors.",
+      "theory": "Merujuk IELTS Speaking Band Descriptors (MB-REF-IELTS-02) dan modul Pronunciation LibreTexts (MB-OER-LSPK-01 Ch. 1.2): Pronunciation Band 7+ menuntut pengendalian fitur fonologis berkelanjutan—termasuk sentence stress pada kata kontras ('NOT just cheaper, but SAFER') dan pelafalan gugus konsonan akhir. Saat mendapat pertanyaan sulit di Part 3, pakai rumus PEEL lisan: Posisi ringkas -> Mekanisme sebab-akibat -> Dampak sosial -> Pengecualian singkat.",
+      "workedExample": "Question: 'Why do older architectural landmarks still matter in rapidly expanding cities?' -> Frame: Heritage identity (point) -> shared civic memory across generations (mechanism) -> balancing preservation vs housing needs (nuance).",
+      "commonMistake": "Memberi jawaban 1 kalimat pendek lalu diam menunggu penguji memancing pertanyaan tambahan.",
+      "difficulty": "B2-C1",
+      "estimatedMinutes": 20,
+      "sortIndex": 10,
+      "license": "CC BY 4.0 / Official Criteria Ref",
+      "provenance": "MB-REF-IELTS-02;MB-OER-LSPK-01",
+      "audioScript": null,
+      "drills": [
+        {
+          "id": "DRILL-IELTS-10-Q1",
+          "taskType": "CHOICE_SINGLE",
+          "prompt": "In IELTS Speaking Part 3, if an examiner asks an unfamiliar policy question, what keeps Fluency & Coherence intact?",
+          "options": [
+            "Buy 2 seconds naturally ('That's a nuanced issue; from an urban planning angle, I'd say...') then give a structured point + reason",
+            "Stay silent for 12 seconds then whisper 'I don't know'",
+            "Switch topic completely to describe your favorite childhood meal",
+            "Recite a memorized statistics list unrelated to the question"
+          ],
+          "answer": "Buy 2 seconds naturally ('That's a nuanced issue; from an urban planning angle, I'd say...') then give a structured point + reason",
+          "acceptedAnswers": [
+            "Buy 2 seconds naturally ('That's a nuanced issue; from an urban planning angle, I'd say...') then give a structured point + reason"
+          ],
+          "explanation": "Penanda jeda alami menjaga kelancaran sambil menyusun argumen."
+        },
+        {
+          "id": "DRILL-IELTS-10-Q2",
+          "taskType": "CHOICE_SINGLE",
+          "prompt": "Which feature directly raises IELTS Pronunciation clarity without requiring a native British or American accent?",
+          "options": [
+            "Clear word stress, sentence-level contrast intonation, and steady phrasing chunks",
+            "Forcing an exaggerated slang accent that causes consonant drops",
+            "Speaking in whispers to hide grammar slips",
+            "Stressing every single syllable identically"
+          ],
+          "answer": "Clear word stress, sentence-level contrast intonation, and steady phrasing chunks",
+          "acceptedAnswers": [
+            "Clear word stress, sentence-level contrast intonation, and steady phrasing chunks"
+          ],
+          "explanation": "Deskriptor Speaking menilai inteligibilitas, ritme, dan intonasi, bukan aksen daerah tertentu."
+        },
+        {
+          "id": "DRILL-IELTS-10-Q3",
+          "taskType": "CHOICE_SINGLE",
+          "prompt": "Which four bullet habits turn a Part 2 Cue Card (2-minute monologue) from under-length into natural flow?",
+          "options": [
+            "Brief setting -> step-by-step concrete incident -> sensory detail/feeling -> broader reflection on why it mattered",
+            "Repeating the prompt sentence ten times slowly",
+            "Listing isolated single adjectives without verbs",
+            "Counting out loud from one to sixty during prep minute"
+          ],
+          "answer": "Brief setting -> step-by-step concrete incident -> sensory detail/feeling -> broader reflection on why it mattered",
+          "acceptedAnswers": [
+            "Brief setting -> step-by-step concrete incident -> sensory detail/feeling -> broader reflection on why it mattered"
+          ],
+          "explanation": "Alur naratif + refleksi akhir mudah mengisi 90–120 detik secara alami."
+        }
+      ],
+      "audioAssetPath": null
     }
   ]
 }

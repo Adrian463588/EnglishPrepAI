@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
   "exam": "IELTS_ACADEMIC",
-  "edition": "2026.1",
+  "edition": "2026.2",
   "packId": "IELTS-A-01",
-  "title": "IELTS Paket 1 — Renewable Energy, Urban Housing & Seminars",
-  "theme": "District heating, Passivhaus retrofits, TFNG, Matching Headings, Task 1 table & Speaking Cue Card.",
-  "status": "SAMPLE",
+  "title": "IELTS Paket 1 — Housing, Energy & Cold-Climate Architecture",
+  "theme": "Full 85-item IELTS Academic simulation spanning Campus Housing, Arboretum Volunteer, Dissertation Tutorial, Deep Sea Plankton, Solar Retrofits, Spanish Toldos & Consumer Energy Feedback.",
+  "status": "READY",
   "blueprintCount": 85,
-  "availableCount": 12,
-  "durationMinutes": 35,
+  "availableCount": 85,
+  "durationMinutes": 165,
   "blueprintDurationMinutes": 165,
   "license": "Original",
   "provenance": "EnglishPrepAI-Original-2026",
@@ -16,116 +16,1081 @@
     {
       "id": "IELTS01-P1",
       "title": "Passive Solar Retrofits in Cold-Climate Apartments",
-      "body": "Paragraph A: Many European apartment blocks constructed between 1950 and 1975 lose over half their winter heat through uninsulated concrete facades and single-pane windows. Rather than demolishing sturdy concrete frames—which wastes embedded structural carbon—engineers increasingly wrap occupied exteriors with prefabricated timber-and-mineral-wool panels while tenants remain inside.\n\nParagraph B: Monitoring across three pilot estates in Graz showed annual space-heating demand fell by seventy-eight percent after facade wrapping and heat-recovery ventilation installation. Crucially, indoor temperatures remained steady during January cold snaps without relying on auxiliary electric heaters.\n\nParagraph C: Despite proven energy savings, municipal housing boards still face financing bottlenecks. Upfront retrofit loans often fall on building owners while lower monthly heating bills benefit tenants, creating a 'split-incentive' barrier that slows widespread adoption unless utility rebates share gains.",
+      "body": "Paragraph A: Many European apartment blocks constructed between 1950 and 1975 lose over half their winter warmth through thin uninsulated concrete facades and single-pane steel windows. Rather than demolishing sound structural concrete frames—which squanders huge embodied construction carbon—municipal engineers wrap occupied exteriors in prefabricated timber-and-mineral-wool cladding panels while residents stay indoors.\n\nParagraph B: Monitoring across three pilot estates in Graz documented average space-heating drops reaching seventy-eight percent following exterior cladding paired with mechanical heat-recovery ventilation. Crucially, indoor living rooms remained steadily comfortable throughout harsh January cold snaps without running emergency electric coil heaters.\n\nParagraph C: Deep retrofit crews assemble laser-scanned wall panels in sheltered regional factories down to two-millimeter precision, bolting window cassettes seamlessly outside old concrete edges with minimal sidewalk scaffolding noise. Total crane installation per four-story apartment block wraps inside barely sixteen days.\n\nParagraph D: Despite proven thermal efficiency, municipal housing trusts regularly run into financing traps called the 'split-incentive' hurdle: private or public landlords shoulder steep upfront loan costs immediately whereas tenants enjoy markedly lower monthly gas bills afterward—forcing cities like Vienna to design clean long-term utility-shared repayment tariffs.\n\nParagraph E: Post-occupancy health clinics additionally recorded sharper evening sleep stability and steep drops in bedroom wall condensation mold once triple-glazed warm frames pushed interior corner surfaces cleanly above dew-point moisture thresholds.",
       "readingOrder": 1
+    },
+    {
+      "id": "IELTS01-P2",
+      "title": "Night Cooling Strategies Across Dense Mediterranean Cities",
+      "body": "Paragraph A: Historic compact limestone quarters in Seville, Cordoba, and Fez stayed surprisingly liveable across sizzling forty-degree July afternoons long before mechanical compressors arrived, harnessing clever street proportions paired with thick thermal-inertia courtyards.\n\nParagraph B: Modern microclimate sensors mounted along narrow two-meter winding alleys record daytime air resting six degrees cooler than exposed wide suburban boulevards merely three blocks away, because tall chalk-whitewashed upper balconies shield lower walls steadily from direct solar angles.\n\nParagraph C: Inside traditional dwellings, central shaded wells open vertically skyward; as cool dense night air pools steadily onto damp patio stone fountains until dawn, warm indoor daytime convection vents out overhead before shutters latch firmly shut ahead of noon glare.\n\nParagraph D: When mid-twentieth-century planners demolished narrow winding market lanes in favor of sun-baked wide glass strip corridors, outdoor courtyard cooling loops broke swiftly—forcing households onto costly peak afternoon wall-mounted condensers whose outward exhaust fans further baked neighboring alleys.\n\nParagraph E: Contemporary architectural simulators modeled merging lightweight retractable fabric street awnings ('toldos') with permeable limestone pavers, restoring nearly three degrees of ambient afternoon relief along open commercial squares.",
+      "readingOrder": 2
+    },
+    {
+      "id": "IELTS01-P3",
+      "title": "Re-Examining the Myth of Passive Consumer Energy Feedback",
+      "body": "Paragraph A: Early optimistic utility pilots predicted installing glossy digital electricity meters inside kitchen hallways would cut household power usage twenty percent almost effortlessly once families viewed live kilowatt digits.\n\nParagraph B: Yet longitudinal multi-year social studies across Leeds and Seattle uncovered a sobering 'novelty fade': households checked blinking kitchen displays closely throughout month one before drifting straight back toward prior laundry and oven routines as colored bars blended cleanly into daily wallpaper.\n\nParagraph C: Behavioral researcher Dr. Helen Kwak showed raw hourly kilowatt graphs confuse busy parents—asking folks to juggle abstract physics units against invisible nighttime tariff curves works poorly compared with actionable clear appliance nudges ('Shifting dishwasher start past 9 PM saves £14 quarterly').\n\nParagraph D: Similarly, social economist Tomas Silva demonstrated neighbor norm bars carry real friction risks: while above-average consumers trimmed minor habits downward, ultra-frugal pensioners spotting green 'well below street average' smiley icons quietly crept usage UP slightly—a 'boomerang effect' erasing aggregate neighborhood reductions!\n\nParagraph E: Modern responsive energy tools bypass human willpower exhaustion altogether through automated smart-tariff scheduling—charging home storage batteries cleanly overnight only during wind peaks while letting residents keep full simple override dials.",
+      "readingOrder": 3
     }
   ],
   "assets": [
     {
-      "id": "IELTS01-A01",
-      "relativePath": "audio/IELTS01-A01.wav",
+      "id": "IELTS01-LP1",
+      "relativePath": "audio/IELTS01-LP1.wav",
       "kind": "AUDIO",
-      "caption": "W: Hello, I'd like to reserve places for the community bike repair workshop. M: Sure! Last spring we took fifteen people, sorry—with only six workstands available now, we cap each session at twelve participants.",
+      "caption": "W: Good morning! I'd like to register for the community bike repair workshop this month. M: Happy to help! What's your surname for our sheet? Is it Patel or... wait let me type slowly. W: It's Alverez—A-L-V-E-R-E-Z. And I live along Willow Crescent, flat 14B. M: Got it, Alverez. Last spring we fit fifteen spots, sorry—with only six repair workstands open now, we strictly cap each evening session at twelve participants. W: Are Tuesday classes still held on Riverside Street? M: Oh, we shifted out of Riverside Depot two weeks back—meet beside Harbor Annex in Hall Oak. Just remember bring clean rubber gloves for chain grease and lock helmets outside. W: Right! How much is the three-week tune-up fee including brake cables? M: Tuition alone runs thirty-five pounds, though an optional seven-pound spare cable pack brings everything neatly to forty-two pounds—paid via bank card rather than cash at the gate.",
       "license": "Original",
-      "sha256": "b54ab810a76588c04cad8d5602e86bdcdeeeec9d64f96881a9303f4314413cdd",
-      "byteSize": 491404,
-      "durationMs": 15355
+      "sha256": "91af5045a6ded10740b878ea1eda8cb428be3f26ff50c5dad46ca3ad6aa144aa",
+      "byteSize": 557884,
+      "durationMs": 68755
     },
     {
-      "id": "IELTS01-A02",
-      "relativePath": "audio/IELTS01-A02.wav",
+      "id": "IELTS01-LP2",
+      "relativePath": "audio/IELTS01-LP2.wav",
       "kind": "AUDIO",
-      "caption": "M: Did the city permit delay our rooftop run? W: No, the permit cleared Monday—what really stalled us were two cracked copper manifold joints and a faulty infrared sensor giving wild readings. M: True, once we re-soldered the manifold and swapped the sensor, data stabilized.",
+      "caption": "W: Welcome visitors to the Municipal Clean-Heat Energy Center! Please keep orange safety lanyards clipped visibly whenever walking past pipe galleries. W: In 2016 this former brick coal station reopened strictly as an automated heat-exchange hub feeding four thousand coastal apartments using deep saltwater heat pumps paired with rooftop thermal glass tubes. W: On your right, Gallery One houses insulated blue distribution valves built back in 2018; opposite sits Gallery Two storing solid sand-battery heat silos commissioned later in 2022, capable of banking surplus wind energy cleanly for eleven weeks. W: Watch closely past Hall Three—overhead steam vents stay closed weekdays until technicians test bronze check-gauges Fridays after four, so photography stays prohibited solely beside pressurized Pump Room Four while welcome everywhere else.",
       "license": "Original",
-      "sha256": "69aabd045b377caaf8a377f6d183bd3d143606d11da6c39e0f5ca12db4aec22e",
-      "byteSize": 590284,
-      "durationMs": 18445
+      "sha256": "d087c372a8bc50920b9cb6700acec99f944408fa1f2d6de82e4dc40f74d6f091",
+      "byteSize": 451132,
+      "durationMs": 55590
     },
     {
-      "id": "IELTS01-A03",
-      "relativePath": "audio/IELTS01-A03.wav",
+      "id": "IELTS01-LP3",
+      "relativePath": "audio/IELTS01-LP3.wav",
       "kind": "AUDIO",
-      "caption": "W: Unlike shallow backyard heat pumps, deep geothermal district networks tap naturally heated brine trapped two kilometers underground inside porous sandstone strata, before injecting cooled water back to preserve reservoir pressure.",
+      "caption": "M: Dr. Nair, Maya and I brought our rooftop solar hot-water prototype logs—did the delayed city rooftop permit stall testing like last month? W: No, the building office actually cleared your permit Monday—wait, what held up last week's thermal efficiency data instead? W: Wait—let me confirm cleanly: earlier copper pipe solder joints cracked twice under freeze expansion AND our infrared thermometer sensor spat wild noisy spikes until swapping probes Tuesday. M: True—once we re-soldered the copper manifold and fitted fresh platinum thermistors, water gain stabilized sharply around sixty-four percent! Now should we drop cold December trials from Chapter Three or highlight cloudy recovery too? W: Keep overcast cold metrics prominently right beside sunny averages—urban housing boards care far more about January reliability than sunny August peaks.",
       "license": "Original",
-      "sha256": "e47968ae33ace6434072b9a9f595c553b03ca78c82e49d1d732ce7082037fc6c",
-      "byteSize": 461484,
-      "durationMs": 14420
+      "sha256": "1ebc81ba6f4818b0741833b3225f3dc86f2bc17684e72392e3994d0050252d4b",
+      "byteSize": 458556,
+      "durationMs": 56520
+    },
+    {
+      "id": "IELTS01-LP4",
+      "relativePath": "audio/IELTS01-LP4.wav",
+      "kind": "AUDIO",
+      "caption": "W: Today's Energy Systems lecture contrasts backyard residential ground loops with full city-scale deep geothermal district heating networks powering thousands of homes continuously. W: Unlike shallow trenches pulling gentle twelve-degree subsoil heat, deep geothermal wells drill roughly two kilometers downward straight through dense shale caps until tapping natural hot salt water—brine—trapped inside porous sandstone rock strata near ninety degrees Celsius. W: A production pump lifts scalding brine upward through insulated steel pipes into a city substation titanium heat-exchanger, warming separate clean municipal freshwater radiating gently underneath neighborhood street mains without smelly dissolved brine ever touching home taps. W: Crucially, cooled spent brine gets pumped continuously back down a companion injection well half a kilometer away—preserving deep underground pore pressure and preventing land sinking above historic neighborhoods for decades.",
+      "license": "Original",
+      "sha256": "83177b995610d7caacd9d47d8bcf24e0fd0973eb0d3a4ad3cf7352c2a7e70561",
+      "byteSize": 473916,
+      "durationMs": 58410
+    },
+    {
+      "id": "IELTS01-SP1",
+      "relativePath": "audio/IELTS01-SP1.wav",
+      "kind": "AUDIO",
+      "caption": "W: Good afternoon. Let's talk about your neighborhood. How long have you lived there, what kind of local spot helps you focus or unwind, and has public transport near your street changed recently?",
+      "license": "Original",
+      "sha256": "98955b38b924573714fb052cdbc0ee430c14b9ec2615a5d963cfcf95e8cc3c3e",
+      "byteSize": 109372,
+      "durationMs": 13450
+    },
+    {
+      "id": "IELTS01-SP2",
+      "relativePath": "audio/IELTS01-SP2.wav",
+      "kind": "AUDIO",
+      "caption": "W: Here is your Part 2 topic card. You now have one minute to prepare notes before speaking cleanly for up to two minutes.",
+      "license": "Original",
+      "sha256": "e01ffacc8768be717630131e40c66950d9a34af29a9175671dbef8f81c03162d",
+      "byteSize": 65596,
+      "durationMs": 8055
+    },
+    {
+      "id": "IELTS01-SP3",
+      "relativePath": "audio/IELTS01-SP3.wav",
+      "kind": "AUDIO",
+      "caption": "W: You mentioned learning from structured written manuals. Do you think modern short video tutorials make deep conceptual mastery easier or shallower compared with working slowly through printed textbooks, and how might universities measure real competence beyond memorized facts?",
+      "license": "Original",
+      "sha256": "2c13839caea82837b766e8afda865d47fb63ed388f79b2cb369ecf38e8529538",
+      "byteSize": 137276,
+      "durationMs": 16890
     }
   ],
   "items": [
     {
-      "id": "IELTS-A-01-Q01",
+      "id": "IELTS-A-01-Q001",
       "section": "LISTENING",
       "taskType": "FILL_BLANK",
-      "prompt": "Listening Part 1 (NO MORE THAN TWO WORDS AND/OR A NUMBER): Complete the workshop booking note: 'Community Bike Repair Workshop — Maximum group size: ___ participants.'",
+      "prompt": "Listening Part 1 (Community Bike Repair & Tool Membership Inquiry — Q1): Spelling check (ONE WORD ONLY): Complete the surname: 'Applicant Surname: ___'",
       "options": [],
-      "answer": "12",
+      "answer": "Alverez",
       "acceptedAnswers": [
-        "12",
-        "twelve"
+        "alverez"
       ],
-      "explanation": "Pembicara awalnya menyebut 15, lalu meralat: 'sorry, with six workstands we cap each session at 12 participants.'",
+      "explanation": "Wanita mengeja tegas: A-L-V-E-R-E-Z.",
       "rationaleSource": "IELTS-MOD-01",
       "difficulty": "B1",
       "points": 1,
       "license": "Original",
       "reviewStatus": "VERIFIED_ORIGINAL",
       "passageId": null,
-      "audioAssetId": "IELTS01-A01",
-      "maxWords": 2,
+      "audioAssetId": "IELTS01-LP1",
+      "maxWords": 1,
       "sortIndex": 1
     },
     {
-      "id": "IELTS-A-01-Q02",
+      "id": "IELTS-A-01-Q002",
       "section": "LISTENING",
-      "taskType": "CHOICE_MULTI",
-      "prompt": "Listening Part 3 (Choose TWO letters): Which TWO reasons do the engineering students agree delayed their solar water-heater prototype?",
-      "options": [
-        "Cracked copper manifold solder joints",
-        "Cloudy winter test weeks",
-        "Missing city rooftop permit",
-        "Broken infrared temperature sensor"
-      ],
-      "answer": "Cracked copper manifold solder joints|Broken infrared temperature sensor",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 1 (Community Bike Repair & Tool Membership Inquiry — Q2): Word/number (ONE WORD AND/OR A NUMBER): 'Address: Flat ___, Willow Crescent.'",
+      "options": [],
+      "answer": "14B",
       "acceptedAnswers": [
-        "Cracked copper manifold solder joints|Broken infrared temperature sensor"
+        "14b"
       ],
-      "explanation": "Kedua mahasiswa menyepakati kebocoran sambungan tembaga dan kerusakan sensor inframerah menunda pengujian; izin atap justru sudah terbit.",
+      "explanation": "Nomor unit yang disebut adalah Flat 14B.",
       "rationaleSource": "IELTS-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS01-LP1",
+      "maxWords": 1,
+      "sortIndex": 2
+    },
+    {
+      "id": "IELTS-A-01-Q003",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 1 (Community Bike Repair & Tool Membership Inquiry — Q3): Word/number (ONE WORD AND/OR A NUMBER): 'Maximum participants per session: ___'",
+      "options": [],
+      "answer": "12",
+      "acceptedAnswers": [
+        "12",
+        "twelve"
+      ],
+      "explanation": "Ia meralat 15 tahun lalu menjadi kapasitas kini maksimal 12 peserta.",
+      "rationaleSource": "IELTS-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS01-LP1",
+      "maxWords": 1,
+      "sortIndex": 3
+    },
+    {
+      "id": "IELTS-A-01-Q004",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 1 (Community Bike Repair & Tool Membership Inquiry — Q4): Why was group capacity capped lower this term?",
+      "options": [
+        "Half the instructors moved to Riverside Depot.",
+        "Fire wardens reduced seating across Willow Crescent.",
+        "Only twelve rubber tool kits arrived downtown.",
+        "Only six physical repair stands remain operational."
+      ],
+      "answer": "Only six physical repair stands remain operational.",
+      "acceptedAnswers": [
+        "Only six physical repair stands remain operational."
+      ],
+      "explanation": "Ketersediaan enam standar kerja membatasi kelas maksimal 12 orang.",
+      "rationaleSource": "IELTS-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS01-LP1",
+      "sortIndex": 4
+    },
+    {
+      "id": "IELTS-A-01-Q005",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 1 (Community Bike Repair & Tool Membership Inquiry — Q5): NO MORE THAN TWO WORDS: 'Current venue name: Harbor ___'",
+      "options": [],
+      "answer": "Annex",
+      "acceptedAnswers": [
+        "annex",
+        "harbor annex"
+      ],
+      "explanation": "Lokasi pindah ke Harbor Annex meninggalkan Riverside Depot.",
+      "rationaleSource": "IELTS-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS01-LP1",
+      "maxWords": 2,
+      "sortIndex": 5
+    },
+    {
+      "id": "IELTS-A-01-Q006",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 1 (Community Bike Repair & Tool Membership Inquiry — Q6): Inside which room do repair benches stand?",
+      "options": [
+        "Elm Basement.",
+        "Hall Oak.",
+        "Riverside Lounge.",
+        "Willow Room."
+      ],
+      "answer": "Hall Oak.",
+      "acceptedAnswers": [
+        "Hall Oak."
+      ],
+      "explanation": "Disebut bertemu di Harbor Annex bagian Hall Oak.",
+      "rationaleSource": "IELTS-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS01-LP1",
+      "sortIndex": 6
+    },
+    {
+      "id": "IELTS-A-01-Q007",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 1 (Community Bike Repair & Tool Membership Inquiry — Q7): NO MORE THAN TWO WORDS: 'Bring personal: clean rubber ___'",
+      "options": [],
+      "answer": "gloves",
+      "acceptedAnswers": [
+        "gloves",
+        "rubber gloves"
+      ],
+      "explanation": "Peserta diminta membawa sarung tangan karet bersih.",
+      "rationaleSource": "IELTS-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS01-LP1",
+      "maxWords": 2,
+      "sortIndex": 7
+    },
+    {
+      "id": "IELTS-A-01-Q008",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 1 (Community Bike Repair & Tool Membership Inquiry — Q8): Where should riders stow cycling helmets while inside the shop?",
+      "options": [
+        "Hung atop upright brake workstands.",
+        "Inside green plastic parts drawers.",
+        "Stored beneath wooden reception stools.",
+        "Locked neatly outside the workshop room."
+      ],
+      "answer": "Locked neatly outside the workshop room.",
+      "acceptedAnswers": [
+        "Locked neatly outside the workshop room."
+      ],
+      "explanation": "Instruksi menyebut mengunci helm di luar ruang.",
+      "rationaleSource": "IELTS-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS01-LP1",
+      "sortIndex": 8
+    },
+    {
+      "id": "IELTS-A-01-Q009",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 1 (Community Bike Repair & Tool Membership Inquiry — Q9): A NUMBER ONLY: 'Combined total fee including optional cable kit (£): ___'",
+      "options": [],
+      "answer": "42",
+      "acceptedAnswers": [
+        "42",
+        "forty-two"
+      ],
+      "explanation": "Biaya kelas £35 + paket kabel £7 menjadi total £42.",
+      "rationaleSource": "IELTS-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS01-LP1",
+      "maxWords": 1,
+      "sortIndex": 9
+    },
+    {
+      "id": "IELTS-A-01-Q010",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 1 (Community Bike Repair & Tool Membership Inquiry — Q10): Which payment mode is accepted at the workshop check-in desk?",
+      "options": [
+        "Bookstore voucher tokens.",
+        "Bank payment card.",
+        "Coins wrapped inside cash envelopes.",
+        "Municipal library fee stamps."
+      ],
+      "answer": "Bank payment card.",
+      "acceptedAnswers": [
+        "Bank payment card."
+      ],
+      "explanation": "Pembayaran diterima melalui bank card alih-alih tunai.",
+      "rationaleSource": "IELTS-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS01-LP1",
+      "sortIndex": 10
+    },
+    {
+      "id": "IELTS-A-01-Q011",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 2 (District Heating & Solar Eco-Center Tour Briefing — Q11): ONE WORD ONLY: 'Wear visible ___ safety lanyards across pipe galleries.'",
+      "options": [],
+      "answer": "orange",
+      "acceptedAnswers": [
+        "orange"
+      ],
+      "explanation": "Pemandu menginstruksikan lanyard pengaman berwarna oranye.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS01-LP2",
+      "maxWords": 1,
+      "sortIndex": 11
+    },
+    {
+      "id": "IELTS-A-01-Q012",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 2 (District Heating & Solar Eco-Center Tour Briefing — Q12): When did the old coal warehouse convert into a modern heat-exchange facility?",
+      "options": [
+        "In 2018.",
+        "In 2022.",
+        "Last Friday afternoon.",
+        "In 2016."
+      ],
+      "answer": "In 2016.",
+      "acceptedAnswers": [
+        "In 2016."
+      ],
+      "explanation": "Peralihan fungsi gedung stasiun batu bara tua berlangsung tahun 2016.",
+      "rationaleSource": "IELTS-MOD-07",
       "difficulty": "B2",
       "points": 1,
       "license": "Original",
       "reviewStatus": "VERIFIED_ORIGINAL",
       "passageId": null,
-      "audioAssetId": "IELTS01-A02",
-      "sortIndex": 2
+      "audioAssetId": "IELTS01-LP2",
+      "sortIndex": 12
     },
     {
-      "id": "IELTS-A-01-Q03",
+      "id": "IELTS-A-01-Q013",
       "section": "LISTENING",
       "taskType": "FILL_BLANK",
-      "prompt": "Listening Part 4 (ONE WORD ONLY): Complete the lecture note: 'Deep geothermal district loops draw warm brine from permeable ___ rock strata.'",
+      "prompt": "Listening Part 2 (District Heating & Solar Eco-Center Tour Briefing — Q13): NUMBER ONLY: 'Approximate apartment homes heated downtown: ___'",
+      "options": [],
+      "answer": "4000",
+      "acceptedAnswers": [
+        "4000",
+        "4,000",
+        "four thousand"
+      ],
+      "explanation": "Menyuplai panas bagi sekitar 4.000 apartemen pesisir.",
+      "rationaleSource": "IELTS-MOD-01",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS01-LP2",
+      "maxWords": 2,
+      "sortIndex": 13
+    },
+    {
+      "id": "IELTS-A-01-Q014",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 2 (District Heating & Solar Eco-Center Tour Briefing — Q14): What two renewable sources combine cleanly to warm municipal apartment water loops?",
+      "options": [
+        "Natural gas turbines paired cleanly with mountain glaciers.",
+        "Deep sea heat pumps paired with rooftop thermal glass solar panels.",
+        "Wood-pellet ovens paired with diesel harbor barges.",
+        "Coal dust gasifiers paired with shallow tidal dams."
+      ],
+      "answer": "Deep sea heat pumps paired with rooftop thermal glass solar panels.",
+      "acceptedAnswers": [
+        "Deep sea heat pumps paired with rooftop thermal glass solar panels."
+      ],
+      "explanation": "Pompa panas air laut + panel surya termal atap.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS01-LP2",
+      "sortIndex": 14
+    },
+    {
+      "id": "IELTS-A-01-Q015",
+      "section": "LISTENING",
+      "taskType": "MATCHING",
+      "prompt": "Listening Part 2 (District Heating & Solar Eco-Center Tour Briefing — Q15): Match each tour Wing to its main equipment:",
+      "options": [],
+      "answer": "Gallery One::Insulated 2018 distribution valves|Gallery Two::2022 sand-battery heat silos|Pump Room Four::Restricted high-pressure pump hall",
+      "acceptedAnswers": [
+        "Gallery One::Insulated 2018 distribution valves|Gallery Two::2022 sand-battery heat silos|Pump Room Four::Restricted high-pressure pump hall"
+      ],
+      "explanation": "Urutan tur: Gallery One (katup 2018), Gallery Two (baterai pasir 2022), Pump Room Four (ruang pompa bertekanan).",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS01-LP2",
+      "pairs": [
+        {
+          "left": "Gallery One",
+          "rightOptions": [
+            "Insulated 2018 distribution valves",
+            "2022 sand-battery heat silos",
+            "Restricted high-pressure pump hall"
+          ]
+        },
+        {
+          "left": "Gallery Two",
+          "rightOptions": [
+            "Insulated 2018 distribution valves",
+            "2022 sand-battery heat silos",
+            "Restricted high-pressure pump hall"
+          ]
+        },
+        {
+          "left": "Pump Room Four",
+          "rightOptions": [
+            "Insulated 2018 distribution valves",
+            "2022 sand-battery heat silos",
+            "Restricted high-pressure pump hall"
+          ]
+        }
+      ],
+      "sortIndex": 15
+    },
+    {
+      "id": "IELTS-A-01-Q016",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 2 (District Heating & Solar Eco-Center Tour Briefing — Q16): NO MORE THAN TWO WORDS: 'Surplus sand-battery heat lasts up to ___'",
+      "options": [],
+      "answer": "11 weeks",
+      "acceptedAnswers": [
+        "11 weeks",
+        "eleven weeks"
+      ],
+      "explanation": "Menyimpan surplus energi panas angin hingga sebelas minggu.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS01-LP2",
+      "maxWords": 2,
+      "sortIndex": 16
+    },
+    {
+      "id": "IELTS-A-01-Q017",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 2 (District Heating & Solar Eco-Center Tour Briefing — Q17): When do maintenance crews run bronze check-gauge tests on overhead steam vents?",
+      "options": [
+        "Tuesday mornings at nine.",
+        "Strictly on winter holidays.",
+        "On Fridays after 4:00 PM.",
+        "Every weekday noon cleanly."
+      ],
+      "answer": "On Fridays after 4:00 PM.",
+      "acceptedAnswers": [
+        "On Fridays after 4:00 PM."
+      ],
+      "explanation": "Pengujian berlangsung hari Jumat setelah pukul empat sore.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS01-LP2",
+      "sortIndex": 17
+    },
+    {
+      "id": "IELTS-A-01-Q018",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 2 (District Heating & Solar Eco-Center Tour Briefing — Q18): Where inside the Eco-Center are visitor cameras temporarily banned?",
+      "options": [
+        "Beside sand silos in Gallery Two.",
+        "Inside pressurized Pump Room Four only.",
+        "Throughout all public entrance brick halls.",
+        "Looking upward toward rooftop solar panels."
+      ],
+      "answer": "Inside pressurized Pump Room Four only.",
+      "acceptedAnswers": [
+        "Inside pressurized Pump Room Four only."
+      ],
+      "explanation": "Fotografi dilarang khusus di dekat ruang pompa bertekanan Room Four.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS01-LP2",
+      "sortIndex": 18
+    },
+    {
+      "id": "IELTS-A-01-Q019",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 2 (District Heating & Solar Eco-Center Tour Briefing — Q19): ONE WORD ONLY: 'Battery thermal storage inside Gallery Two relies on solid ___.'",
+      "options": [],
+      "answer": "sand",
+      "acceptedAnswers": [
+        "sand"
+      ],
+      "explanation": "Silo penyimpanan panas menggunakan media pasir ('sand-battery').",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS01-LP2",
+      "maxWords": 1,
+      "sortIndex": 19
+    },
+    {
+      "id": "IELTS-A-01-Q020",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 2 (District Heating & Solar Eco-Center Tour Briefing — Q20): What overall purpose drives this Municipal Clean-Heat briefing?",
+      "options": [
+        "Recruiting apprentice diesel boiler stokers immediately.",
+        "Selling individual homeowner coal stoves cheaply.",
+        "Advertising weekend harbor ferries outside Hall Three.",
+        "Orienting tour guests safely across historic conversion milestones and active equipment rooms."
+      ],
+      "answer": "Orienting tour guests safely across historic conversion milestones and active equipment rooms.",
+      "acceptedAnswers": [
+        "Orienting tour guests safely across historic conversion milestones and active equipment rooms."
+      ],
+      "explanation": "Pengarahan orientasi keselamatan dan teknologi transisi panas gedung.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS01-LP2",
+      "sortIndex": 20
+    },
+    {
+      "id": "IELTS-A-01-Q021",
+      "section": "LISTENING",
+      "taskType": "CHOICE_MULTI",
+      "prompt": "Listening Part 3 (Solar Water-Heater Student Research Review — Q21): Choose TWO verified causes that delayed the solar prototype trial last week:",
+      "options": [
+        "Cracked copper manifold solder joints",
+        "Delayed municipal rooftop permit",
+        "Faulty infrared temperature sensor",
+        "Missing roof solar collector glass"
+      ],
+      "answer": "Cracked copper manifold solder joints|Faulty infrared temperature sensor",
+      "acceptedAnswers": [
+        "Cracked copper manifold solder joints|Faulty infrared temperature sensor"
+      ],
+      "explanation": "Izin atap sudah terbit Senin; kendala nyata berasal dari sambungan tembaga retak dan sensor inframerah rusak.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS01-LP3",
+      "sortIndex": 21
+    },
+    {
+      "id": "IELTS-A-01-Q022",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 3 (Solar Water-Heater Student Research Review — Q22): When did municipal building clerks officially clear their rooftop testing permit?",
+      "options": [
+        "Thursday evening past midnight.",
+        "Earlier on Monday.",
+        "Two winters prior.",
+        "Waitlist paused permanently."
+      ],
+      "answer": "Earlier on Monday.",
+      "acceptedAnswers": [
+        "Earlier on Monday."
+      ],
+      "explanation": "Izin atap sebenarnya sudah diterbitkan hari Senin.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS01-LP3",
+      "sortIndex": 22
+    },
+    {
+      "id": "IELTS-A-01-Q023",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 3 (Solar Water-Heater Student Research Review — Q23): NUMBER ONLY (%): 'Steady thermal capture gain once sensor swaps finished: ___%'",
+      "options": [],
+      "answer": "64",
+      "acceptedAnswers": [
+        "64",
+        "sixty-four"
+      ],
+      "explanation": "Setelah diperbaiki, tangkapan panas stabil sekitar 64%.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS01-LP3",
+      "maxWords": 1,
+      "sortIndex": 23
+    },
+    {
+      "id": "IELTS-A-01-Q024",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 3 (Solar Water-Heater Student Research Review — Q24): What upgraded sensor cured unstable noisy readings on Tuesday?",
+      "options": [
+        "Gluing cardboard shades over mercury tubes.",
+        "Doubling copper pipe wall paint thickness.",
+        "Cleaning glass panels using tap vinegar.",
+        "Swapping onto platinum thermistor probes."
+      ],
+      "answer": "Swapping onto platinum thermistor probes.",
+      "acceptedAnswers": [
+        "Swapping onto platinum thermistor probes."
+      ],
+      "explanation": "Mereka mengganti sensor ke termistor platina.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS01-LP3",
+      "sortIndex": 24
+    },
+    {
+      "id": "IELTS-A-01-Q025",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 3 (Solar Water-Heater Student Research Review — Q25): What draft thesis edit does the student initially consider cutting?",
+      "options": [
+        "Adding brightly painted yellow roof schematics.",
+        "Shortening abstract words down to twenty.",
+        "Omitting sluggish overcast December readings from Chapter Three.",
+        "Expanding bibliography footnotes across ten extra books."
+      ],
+      "answer": "Omitting sluggish overcast December readings from Chapter Three.",
+      "acceptedAnswers": [
+        "Omitting sluggish overcast December readings from Chapter Three."
+      ],
+      "explanation": "Mahasiswa mempertimbangkan membuang uji Desember berawan karena angkanya rendah.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS01-LP3",
+      "sortIndex": 25
+    },
+    {
+      "id": "IELTS-A-01-Q026",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 3 (Solar Water-Heater Student Research Review — Q26): Why does Dr. Nair insist retaining gloomy winter data visibly in the report?",
+      "options": [
+        "Platinum probes stop recording strictly during warm July sun.",
+        "Urban building managers judge viability primarily by overcast winter dependability.",
+        "Sunny August benchmarks contain illegal metric errors.",
+        "Chapter Three lacks sufficient quantitative tables otherwise."
+      ],
+      "answer": "Urban building managers judge viability primarily by overcast winter dependability.",
+      "acceptedAnswers": [
+        "Urban building managers judge viability primarily by overcast winter dependability."
+      ],
+      "explanation": "Dewan perumahan kota menilai kehandalan musim dingin berawan jauh lebih krusial.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS01-LP3",
+      "sortIndex": 26
+    },
+    {
+      "id": "IELTS-A-01-Q027",
+      "section": "LISTENING",
+      "taskType": "MATCHING",
+      "prompt": "Listening Part 3 (Solar Water-Heater Student Research Review — Q27): Match each component issue with its corrective step:",
+      "options": [],
+      "answer": "Copper manifold joints::Re-soldered against freezing expansion|Temperature readout spikes::Replaced with platinum probe|Rooftop testing permit::Cleared Monday by office",
+      "acceptedAnswers": [
+        "Copper manifold joints::Re-soldered against freezing expansion|Temperature readout spikes::Replaced with platinum probe|Rooftop testing permit::Cleared Monday by office"
+      ],
+      "explanation": "Ringkasan kronologis perbaikan sistem serta status izin.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS01-LP3",
+      "pairs": [
+        {
+          "left": "Copper manifold joints",
+          "rightOptions": [
+            "Re-soldered against freezing expansion",
+            "Replaced with platinum probe",
+            "Cleared Monday by office"
+          ]
+        },
+        {
+          "left": "Temperature readout spikes",
+          "rightOptions": [
+            "Re-soldered against freezing expansion",
+            "Replaced with platinum probe",
+            "Cleared Monday by office"
+          ]
+        },
+        {
+          "left": "Rooftop testing permit",
+          "rightOptions": [
+            "Re-soldered against freezing expansion",
+            "Replaced with platinum probe",
+            "Cleared Monday by office"
+          ]
+        }
+      ],
+      "sortIndex": 27
+    },
+    {
+      "id": "IELTS-A-01-Q028",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 3 (Solar Water-Heater Student Research Review — Q28): How does Dr. Nair assess their engineering troubleshooting response overall?",
+      "options": [
+        "Disappointed they missed July hurricane testing cycles.",
+        "Alarmed copper pipes violated municipal fire setbacks.",
+        "Skeptical solar pipes can heat housing water anywhere.",
+        "Constructively appreciative of verifying hardware before trusting cold averages."
+      ],
+      "answer": "Constructively appreciative of verifying hardware before trusting cold averages.",
+      "acceptedAnswers": [
+        "Constructively appreciative of verifying hardware before trusting cold averages."
+      ],
+      "explanation": "Apresiatif atas ketelitian mengisolasi masalah perangkat keras serta mempertahankan data lapangan jujur.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS01-LP3",
+      "sortIndex": 28
+    },
+    {
+      "id": "IELTS-A-01-Q029",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 3 (Solar Water-Heater Student Research Review — Q29): ONE WORD ONLY: 'What structural liquid hazard fractured the initial copper joints? ___ expansion.'",
+      "options": [],
+      "answer": "freeze",
+      "acceptedAnswers": [
+        "freeze"
+      ],
+      "explanation": "Ekspansi pembekuan air mematahkan sambungan las tembaga.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS01-LP3",
+      "maxWords": 1,
+      "sortIndex": 29
+    },
+    {
+      "id": "IELTS-A-01-Q030",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 3 (Solar Water-Heater Student Research Review — Q30): Which chapter will display overcast winter figures directly beside sunny runs?",
+      "options": [
+        "Bibliography Index.",
+        "Chapter Three.",
+        "Chapter One.",
+        "Appendix B."
+      ],
+      "answer": "Chapter Three.",
+      "acceptedAnswers": [
+        "Chapter Three."
+      ],
+      "explanation": "Mahasiswa menyebut data Desember tersebut di Chapter Three.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS01-LP3",
+      "sortIndex": 30
+    },
+    {
+      "id": "IELTS-A-01-Q031",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 4 (University Lecture — Deep Geothermal District Heating Networks — Q31): NUMBER ONLY (km): 'Approximate vertical depth drilled to reach deep urban geothermal brine: ___ kilometers'",
+      "options": [],
+      "answer": "2",
+      "acceptedAnswers": [
+        "2",
+        "two"
+      ],
+      "explanation": "Sumur pengeboran mencapai kedalaman sekitar dua kilometer.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS01-LP4",
+      "maxWords": 1,
+      "sortIndex": 31
+    },
+    {
+      "id": "IELTS-A-01-Q032",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 4 (University Lecture — Deep Geothermal District Heating Networks — Q32): ONE WORD ONLY: 'Natural hot subterranean brine sits inside permeable ___ strata.'",
       "options": [],
       "answer": "sandstone",
       "acceptedAnswers": [
         "sandstone"
       ],
-      "explanation": "Dosen menjelaskan fluida panas dipompa dari lapisan batuan 'sandstone' yang permeabel sebelum disirkulasikan ulang.",
-      "rationaleSource": "IELTS-MOD-01",
+      "explanation": "Dosen menyebut lapisan batuan berpori 'porous sandstone strata'.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS01-LP4",
+      "maxWords": 1,
+      "sortIndex": 32
+    },
+    {
+      "id": "IELTS-A-01-Q033",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 4 (University Lecture — Deep Geothermal District Heating Networks — Q33): ONE WORD ONLY: 'Impermeable geological rock layer sealing deep hot brine below: dense ___ caps.'",
+      "options": [],
+      "answer": "shale",
+      "acceptedAnswers": [
+        "shale"
+      ],
+      "explanation": "Penutup geologis kedap di atas lapisan reservoar disebut 'shale caps'.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS01-LP4",
+      "maxWords": 1,
+      "sortIndex": 33
+    },
+    {
+      "id": "IELTS-A-01-Q034",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 4 (University Lecture — Deep Geothermal District Heating Networks — Q34): NUMBER ONLY (°C): 'Typical subterranean brine extraction temperature noted: ___ degrees Celsius.'",
+      "options": [],
+      "answer": "90",
+      "acceptedAnswers": [
+        "90",
+        "ninety"
+      ],
+      "explanation": "Suhu air garam panas alami mendekati 90 °C.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS01-LP4",
+      "maxWords": 1,
+      "sortIndex": 34
+    },
+    {
+      "id": "IELTS-A-01-Q035",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 4 (University Lecture — Deep Geothermal District Heating Networks — Q35): What metal composes the core city substation heat exchanger transferring warmth safely?",
+      "options": [
+        "Corrosion-resistant titanium plates.",
+        "Porous soft terracotta bricks.",
+        "Copper alloy bicycle tubing.",
+        "Unlined grey Portland concrete."
+      ],
+      "answer": "Corrosion-resistant titanium plates.",
+      "acceptedAnswers": [
+        "Corrosion-resistant titanium plates."
+      ],
+      "explanation": "Penukar panas menggunakan pelat titanium tahan korosi garam.",
+      "rationaleSource": "IELTS-MOD-07",
       "difficulty": "B2",
       "points": 1,
       "license": "Original",
       "reviewStatus": "VERIFIED_ORIGINAL",
       "passageId": null,
-      "audioAssetId": "IELTS01-A03",
-      "maxWords": 1,
-      "sortIndex": 3
+      "audioAssetId": "IELTS01-LP4",
+      "sortIndex": 35
     },
     {
-      "id": "IELTS-A-01-Q04",
+      "id": "IELTS-A-01-Q036",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 4 (University Lecture — Deep Geothermal District Heating Networks — Q36): Why doesn't mineral-salty deep brine corrode apartment bathroom pipes indoors?",
+      "options": [
+        "Brine boils completely dry before climbing above five hundred meters.",
+        "Municipal homes run purely dry air blowers instead of hydronic pipes.",
+        "Filter salt baskets clear seawater completely downstream.",
+        "Heat passes indirectly inside closed titanium exchangers into clean municipal freshwater mains."
+      ],
+      "answer": "Heat passes indirectly inside closed titanium exchangers into clean municipal freshwater mains.",
+      "acceptedAnswers": [
+        "Heat passes indirectly inside closed titanium exchangers into clean municipal freshwater mains."
+      ],
+      "explanation": "Air geothermal tidak bercampur langsung; panasnya ditransfer ke loop air bersih terpisah.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS01-LP4",
+      "sortIndex": 36
+    },
+    {
+      "id": "IELTS-A-01-Q037",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 4 (University Lecture — Deep Geothermal District Heating Networks — Q37): ONE WORD ONLY: 'Spent chilled brine returns underground via a twin ___ well.'",
+      "options": [],
+      "answer": "injection",
+      "acceptedAnswers": [
+        "injection"
+      ],
+      "explanation": "Air dingin dipompa kembali melalui sumur injeksi pendamping ('injection well').",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS01-LP4",
+      "maxWords": 1,
+      "sortIndex": 37
+    },
+    {
+      "id": "IELTS-A-01-Q038",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 4 (University Lecture — Deep Geothermal District Heating Networks — Q38): What twin environmental harms does continuous brine reinjection actively prevent?",
+      "options": [
+        "Dissolving porous backyard limestone garden walls.",
+        "Losing deep aquifer pore pressure AND causing gradual ground subsidence overhead.",
+        "Heating nearby winter coastal rivers above boiling temperatures.",
+        "Flooding municipal transit subway roofs daily."
+      ],
+      "answer": "Losing deep aquifer pore pressure AND causing gradual ground subsidence overhead.",
+      "acceptedAnswers": [
+        "Losing deep aquifer pore pressure AND causing gradual ground subsidence overhead."
+      ],
+      "explanation": "Re-injeksi menjaga tekanan pori reservoar serta mencegah penurunan muka tanah.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS01-LP4",
+      "sortIndex": 38
+    },
+    {
+      "id": "IELTS-A-01-Q039",
+      "section": "LISTENING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Listening Part 4 (University Lecture — Deep Geothermal District Heating Networks — Q39): NO MORE THAN TWO WORDS: 'Rough spacing keeping chilled return water clear of hot production draw: ___ kilometer'",
+      "options": [],
+      "answer": "half a",
+      "acceptedAnswers": [
+        "half a",
+        "0.5"
+      ],
+      "explanation": "Sumur injeksi ditempatkan sekitar setengah kilometer jauhnya.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS01-LP4",
+      "maxWords": 2,
+      "sortIndex": 39
+    },
+    {
+      "id": "IELTS-A-01-Q040",
+      "section": "LISTENING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Listening Part 4 (University Lecture — Deep Geothermal District Heating Networks — Q40): How does deep geothermal district warming fundamentally differ from shallow suburban loops?",
+      "options": [
+        "It burns volcanic surface oil alongside wind generators.",
+        "Shallow trenches pump brine down two-kilometer boreholes.",
+        "Residential boilers discard brine straight into rivers.",
+        "It taps hot deep sandstone reservoirs directly rather than low-grade shallow garden warmth."
+      ],
+      "answer": "It taps hot deep sandstone reservoirs directly rather than low-grade shallow garden warmth.",
+      "acceptedAnswers": [
+        "It taps hot deep sandstone reservoirs directly rather than low-grade shallow garden warmth."
+      ],
+      "explanation": "Memanfaatkan panas alami suhu tinggi di kedalaman 2 km alih-alih suhu tanah permukaan 12 °C.",
+      "rationaleSource": "IELTS-MOD-07",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS01-LP4",
+      "sortIndex": 40
+    },
+    {
+      "id": "IELTS-A-01-Q041",
       "section": "READING",
       "taskType": "CHOICE_SINGLE",
-      "prompt": "Reading Passage 1 ('Passive Solar Retrofits'): 'Prefabricated panel installation requires all residents to move out during construction.' -> TRUE, FALSE, or NOT GIVEN?",
+      "prompt": "Reading Passage 1 ('Passive Solar Retrofits in Cold-Climate Apartments' — Q41): Do the following statements agree with the information in the text? (TRUE / FALSE / NOT GIVEN): 'Deep prefabricated timber-panel wrapping requires emptying apartment buildings of all residents during installation.'",
       "options": [
         "TRUE",
         "FALSE",
@@ -135,21 +1100,45 @@
       "acceptedAnswers": [
         "FALSE"
       ],
-      "explanation": "Paragraf A menyatakan secara eksplisit panel dipasang pada bagian luar gedung 'while tenants remain inside'.",
+      "explanation": "Paragraf A menegaskan panel dipasang dari bagian luar saat penghuni tetap tinggal di dalam ('while tenants remain inside').",
       "rationaleSource": "IELTS-MOD-02",
-      "difficulty": "B2",
+      "difficulty": "B1",
       "points": 1,
       "license": "Original",
       "reviewStatus": "VERIFIED_ORIGINAL",
       "passageId": "IELTS01-P1",
       "audioAssetId": null,
-      "sortIndex": 4
+      "sortIndex": 41
     },
     {
-      "id": "IELTS-A-01-Q05",
+      "id": "IELTS-A-01-Q042",
       "section": "READING",
       "taskType": "CHOICE_SINGLE",
-      "prompt": "Reading Passage 1: 'Graz pilot estates lowered heating bills more substantially than comparable retrofit projects in Vienna.' -> TRUE, FALSE, or NOT GIVEN?",
+      "prompt": "Reading Passage 1 ('Passive Solar Retrofits in Cold-Climate Apartments' — Q42): Do the following statements agree with the information in the text? (TRUE / FALSE / NOT GIVEN): 'Demolishing structurally sound 1960s apartment shells wastes substantial embedded embodied carbon.'",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": "TRUE",
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "explanation": "Paragraf A menyebut pembongkaran kerangka beton memboroskan karbon struktural tertanam.",
+      "rationaleSource": "IELTS-MOD-02",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS01-P1",
+      "audioAssetId": null,
+      "sortIndex": 42
+    },
+    {
+      "id": "IELTS-A-01-Q043",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 1 ('Passive Solar Retrofits in Cold-Climate Apartments' — Q43): Do the following statements agree with the information in the text? (TRUE / FALSE / NOT GIVEN): 'Vienna retrofit teams achieved slightly lower winter gas reductions than Graz pilot blocks.'",
       "options": [
         "TRUE",
         "FALSE",
@@ -159,7 +1148,7 @@
       "acceptedAnswers": [
         "NOT GIVEN"
       ],
-      "explanation": "Paragraf B menyebut penurunan 78% di Graz, tetapi tidak pernah membandingkan dengan kota Vienna.",
+      "explanation": "Teks hanya menyebut penghematan 78% di Graz; Vienna disebut dalam konteks skema tarif pembiayaan, bukan angka penurunan gas.",
       "rationaleSource": "IELTS-MOD-02",
       "difficulty": "B2",
       "points": 1,
@@ -167,23 +1156,226 @@
       "reviewStatus": "VERIFIED_ORIGINAL",
       "passageId": "IELTS01-P1",
       "audioAssetId": null,
-      "sortIndex": 5
+      "sortIndex": 43
     },
     {
-      "id": "IELTS-A-01-Q06",
+      "id": "IELTS-A-01-Q044",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 1 ('Passive Solar Retrofits in Cold-Climate Apartments' — Q44): Do the following statements agree with the information in the text? (TRUE / FALSE / NOT GIVEN): 'Factory timber panels are measured with millimeter optical laser scans prior to craning on site.'",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": "TRUE",
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "explanation": "Paragraf C menyatakan fabrikasi mengikuti pemindaian laser presisi dua milimeter.",
+      "rationaleSource": "IELTS-MOD-02",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS01-P1",
+      "audioAssetId": null,
+      "sortIndex": 44
+    },
+    {
+      "id": "IELTS-A-01-Q045",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 1 ('Passive Solar Retrofits in Cold-Climate Apartments' — Q45): Do the following statements agree with the information in the text? (TRUE / FALSE / NOT GIVEN): 'Adding mechanical heat-recovery ventilation inside Graz blocks eliminated mold risk alongside heating drops.'",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": "TRUE",
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "explanation": "Paragraf B & E mencatat ventilasi pemulihan panas + bingkai hangat menghilangkan kondensasi jamur serta menghemat 78% panas.",
+      "rationaleSource": "IELTS-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS01-P1",
+      "audioAssetId": null,
+      "sortIndex": 45
+    },
+    {
+      "id": "IELTS-A-01-Q046",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 1 ('Passive Solar Retrofits in Cold-Climate Apartments' — Q46): Do the following statements agree with the information in the text? (TRUE / FALSE / NOT GIVEN): 'Every prefabricated retrofit crane assembly finishes under sixteen rainy autumn hours.'",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": "FALSE",
+      "acceptedAnswers": [
+        "FALSE"
+      ],
+      "explanation": "Paragraf C menyebut durasi sekitar 16 hari ('sixteen days'), bukan jam.",
+      "rationaleSource": "IELTS-MOD-02",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS01-P1",
+      "audioAssetId": null,
+      "sortIndex": 46
+    },
+    {
+      "id": "IELTS-A-01-Q047",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 1 ('Passive Solar Retrofits in Cold-Climate Apartments' — Q47): Do the following statements agree with the information in the text? (TRUE / FALSE / NOT GIVEN): 'Private utility banks waive interest rates completely on Graz cladding mortgages.'",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": "NOT GIVEN",
+      "acceptedAnswers": [
+        "NOT GIVEN"
+      ],
+      "explanation": "Teks tidak menyebut pembebasan bunga pinjaman bank swasta di Graz.",
+      "rationaleSource": "IELTS-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS01-P1",
+      "audioAssetId": null,
+      "sortIndex": 47
+    },
+    {
+      "id": "IELTS-A-01-Q048",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Reading Passage 1 ('Passive Solar Retrofits in Cold-Climate Apartments' — Q48): ONE WORD AND/OR A NUMBER: 'Graz monitoring showed annual space-heating demand fell by ___ percent.'",
+      "options": [],
+      "answer": "78",
+      "acceptedAnswers": [
+        "78",
+        "seventy-eight"
+      ],
+      "explanation": "Paragraf B mencatat penurunan kebutuhan pemanasan ruang sebesar 78%.",
+      "rationaleSource": "IELTS-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS01-P1",
+      "audioAssetId": null,
+      "maxWords": 2,
+      "sortIndex": 48
+    },
+    {
+      "id": "IELTS-A-01-Q049",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Reading Passage 1 ('Passive Solar Retrofits in Cold-Climate Apartments' — Q49): ONE WORD ONLY: 'Natural insulating filler paired inside prefabricated timber frames: mineral ___'",
+      "options": [],
+      "answer": "wool",
+      "acceptedAnswers": [
+        "wool"
+      ],
+      "explanation": "Paragraf A menyebut 'timber-and-mineral-wool cladding panels'.",
+      "rationaleSource": "IELTS-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS01-P1",
+      "audioAssetId": null,
+      "maxWords": 1,
+      "sortIndex": 49
+    },
+    {
+      "id": "IELTS-A-01-Q050",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Reading Passage 1 ('Passive Solar Retrofits in Cold-Climate Apartments' — Q50): NO MORE THAN TWO WORDS: 'Main economic barrier separating landlord loan outlay from tenant bill savings: split-___ barrier'",
+      "options": [],
+      "answer": "incentive",
+      "acceptedAnswers": [
+        "incentive"
+      ],
+      "explanation": "Paragraf D menamai hambatan tersebut sebagai 'split-incentive'.",
+      "rationaleSource": "IELTS-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS01-P1",
+      "audioAssetId": null,
+      "maxWords": 1,
+      "sortIndex": 50
+    },
+    {
+      "id": "IELTS-A-01-Q051",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Reading Passage 1 ('Passive Solar Retrofits in Cold-Climate Apartments' — Q51): NUMBER ONLY (days): 'Typical exterior facade assembly timeline per four-story housing block: ___ days'",
+      "options": [],
+      "answer": "16",
+      "acceptedAnswers": [
+        "16",
+        "sixteen"
+      ],
+      "explanation": "Pemasangan derek per blok memakan waktu 16 hari.",
+      "rationaleSource": "IELTS-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS01-P1",
+      "audioAssetId": null,
+      "maxWords": 1,
+      "sortIndex": 51
+    },
+    {
+      "id": "IELTS-A-01-Q052",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 1 ('Passive Solar Retrofits in Cold-Climate Apartments' — Q52): How did interior bedroom air quality improve after triple-glazed frame installation?",
+      "options": [
+        "Bedroom fans blew salty coastal wind straight indoors daily.",
+        "Residents turned radiator dials down permanently below ten degrees.",
+        "Brick seams absorbed dusty hallway smells automatically.",
+        "Warmer interior corner surfaces stopped damp vapor from condensing into mold."
+      ],
+      "answer": "Warmer interior corner surfaces stopped damp vapor from condensing into mold.",
+      "acceptedAnswers": [
+        "Warmer interior corner surfaces stopped damp vapor from condensing into mold."
+      ],
+      "explanation": "Paragraf E menjelaskan permukaan sudut hangat berada di atas titik embun sehingga mencegah jamur.",
+      "rationaleSource": "IELTS-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS01-P1",
+      "audioAssetId": null,
+      "sortIndex": 52
+    },
+    {
+      "id": "IELTS-A-01-Q053",
       "section": "READING",
       "taskType": "MATCHING",
-      "prompt": "Match each paragraph (A, B, C) of Passage 1 to its best heading:",
-      "options": [
-        "Paragraph A :: Preserving existing structures through exterior insulation",
-        "Paragraph B :: Measured thermal performance after renovation",
-        "Paragraph C :: Financial barriers dividing owners and occupants"
-      ],
-      "answer": "Paragraph A::Preserving existing structures through exterior insulation|Paragraph B::Measured thermal performance after renovation|Paragraph C::Financial barriers dividing owners and occupants",
+      "prompt": "Reading Passage 1 ('Passive Solar Retrofits in Cold-Climate Apartments' — Q53): Match paragraphs A, C, and D cleanly with their central themes:",
+      "options": [],
+      "answer": "Paragraph A::Saving structural carbon via exterior wraps|Paragraph C::Precision off-site factory panel speed|Paragraph D::Overcoming landlord-tenant financing mismatch",
       "acceptedAnswers": [
-        "Paragraph A::Preserving existing structures through exterior insulation|Paragraph B::Measured thermal performance after renovation|Paragraph C::Financial barriers dividing owners and occupants"
+        "Paragraph A::Saving structural carbon via exterior wraps|Paragraph C::Precision off-site factory panel speed|Paragraph D::Overcoming landlord-tenant financing mismatch"
       ],
-      "explanation": "Paragraf A membahas pelestarian rangka beton lewat panel luar; B membahas hasil pengukuran di Graz; C membahas kendala 'split-incentive'.",
+      "explanation": "Ringkasan kesesuaian ide utama Paragraf A, C, dan D.",
       "rationaleSource": "IELTS-MOD-03",
       "difficulty": "B2",
       "points": 1,
@@ -195,60 +1387,718 @@
         {
           "left": "Paragraph A",
           "rightOptions": [
-            "Preserving existing structures through exterior insulation",
-            "Measured thermal performance after renovation",
-            "Financial barriers dividing owners and occupants"
-          ]
-        },
-        {
-          "left": "Paragraph B",
-          "rightOptions": [
-            "Preserving existing structures through exterior insulation",
-            "Measured thermal performance after renovation",
-            "Financial barriers dividing owners and occupants"
+            "Saving structural carbon via exterior wraps",
+            "Precision off-site factory panel speed",
+            "Overcoming landlord-tenant financing mismatch"
           ]
         },
         {
           "left": "Paragraph C",
           "rightOptions": [
-            "Preserving existing structures through exterior insulation",
-            "Measured thermal performance after renovation",
-            "Financial barriers dividing owners and occupants"
+            "Saving structural carbon via exterior wraps",
+            "Precision off-site factory panel speed",
+            "Overcoming landlord-tenant financing mismatch"
+          ]
+        },
+        {
+          "left": "Paragraph D",
+          "rightOptions": [
+            "Saving structural carbon via exterior wraps",
+            "Precision off-site factory panel speed",
+            "Overcoming landlord-tenant financing mismatch"
           ]
         }
       ],
-      "sortIndex": 6
+      "sortIndex": 53
     },
     {
-      "id": "IELTS-A-01-Q07",
+      "id": "IELTS-A-01-Q054",
       "section": "READING",
-      "taskType": "FILL_BLANK",
-      "prompt": "Summary Completion (ONE WORD ONLY from Passage 1): 'Demolishing older apartment buildings is avoided where possible because it discards embodied ___ stored in concrete frames.'",
+      "taskType": "MATCHING",
+      "prompt": "Reading Passage 2 ('Night Cooling Strategies Across Dense Mediterranean Cities' — Q54): Choose the best heading for Paragraphs A–D:",
       "options": [],
-      "answer": "carbon",
+      "answer": "Paragraph A::Pre-electric thermal comfort overview|Paragraph B::Measurable shade drops in narrow alleys|Paragraph C::Daily vertical courtyard airflow cycle|Paragraph D::Heat penalties of modern glass corridors",
       "acceptedAnswers": [
-        "carbon"
+        "Paragraph A::Pre-electric thermal comfort overview|Paragraph B::Measurable shade drops in narrow alleys|Paragraph C::Daily vertical courtyard airflow cycle|Paragraph D::Heat penalties of modern glass corridors"
       ],
-      "explanation": "Paragraf A menyebut 'wastes embedded structural carbon'.",
+      "explanation": "Setiap heading merangkum topik utama paragraf masing-masing secara utuh.",
       "rationaleSource": "IELTS-MOD-03",
       "difficulty": "B2",
       "points": 1,
       "license": "Original",
       "reviewStatus": "VERIFIED_ORIGINAL",
-      "passageId": "IELTS01-P1",
+      "passageId": "IELTS01-P2",
       "audioAssetId": null,
-      "maxWords": 1,
-      "sortIndex": 7
+      "pairs": [
+        {
+          "left": "Paragraph A",
+          "rightOptions": [
+            "Pre-electric thermal comfort overview",
+            "Measurable shade drops in narrow alleys",
+            "Daily vertical courtyard airflow cycle",
+            "Heat penalties of modern glass corridors"
+          ]
+        },
+        {
+          "left": "Paragraph B",
+          "rightOptions": [
+            "Pre-electric thermal comfort overview",
+            "Measurable shade drops in narrow alleys",
+            "Daily vertical courtyard airflow cycle",
+            "Heat penalties of modern glass corridors"
+          ]
+        },
+        {
+          "left": "Paragraph C",
+          "rightOptions": [
+            "Pre-electric thermal comfort overview",
+            "Measurable shade drops in narrow alleys",
+            "Daily vertical courtyard airflow cycle",
+            "Heat penalties of modern glass corridors"
+          ]
+        },
+        {
+          "left": "Paragraph D",
+          "rightOptions": [
+            "Pre-electric thermal comfort overview",
+            "Measurable shade drops in narrow alleys",
+            "Daily vertical courtyard airflow cycle",
+            "Heat penalties of modern glass corridors"
+          ]
+        }
+      ],
+      "sortIndex": 54
     },
     {
-      "id": "IELTS-A-01-Q08",
+      "id": "IELTS-A-01-Q055",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 2 ('Night Cooling Strategies Across Dense Mediterranean Cities' — Q55): Do the following statements agree with the information in the text? (TRUE / FALSE / NOT GIVEN): 'Sensors placed in narrow whitewashed alleys measured daytime warmth six degrees hotter than wide boulevards.'",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": "FALSE",
+      "acceptedAnswers": [
+        "FALSE"
+      ],
+      "explanation": "Paragraf B menyebut gang sempit justru 6 derajat LEBIH SEJUK ('six degrees cooler') dibanding bulevar terbuka.",
+      "rationaleSource": "IELTS-MOD-02",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS01-P2",
+      "audioAssetId": null,
+      "sortIndex": 55
+    },
+    {
+      "id": "IELTS-A-01-Q056",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 2 ('Night Cooling Strategies Across Dense Mediterranean Cities' — Q56): Do the following statements agree with the information in the text? (TRUE / FALSE / NOT GIVEN): 'Mechanical window air conditioners intensify surrounding street warmth due to outdoor fan exhaust.'",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": "TRUE",
+      "acceptedAnswers": [
+        "TRUE"
+      ],
+      "explanation": "Paragraf D mencatat kipas buangan AC memperpanas gang di sekitarnya ('exhaust fans further baked neighboring alleys').",
+      "rationaleSource": "IELTS-MOD-02",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS01-P2",
+      "audioAssetId": null,
+      "sortIndex": 56
+    },
+    {
+      "id": "IELTS-A-01-Q057",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 2 ('Night Cooling Strategies Across Dense Mediterranean Cities' — Q57): Do the following statements agree with the information in the text? (TRUE / FALSE / NOT GIVEN): 'Retractable toldo fabric shades outlast solid limestone marble arches over fifty rainy winters.'",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": "NOT GIVEN",
+      "acceptedAnswers": [
+        "NOT GIVEN"
+      ],
+      "explanation": "Paragraf E hanya membahas efektivitas pendinginan toldo sekitar 3 derajat, tanpa membandingkan umur pakainya dengan marmer.",
+      "rationaleSource": "IELTS-MOD-02",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS01-P2",
+      "audioAssetId": null,
+      "sortIndex": 57
+    },
+    {
+      "id": "IELTS-A-01-Q058",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Reading Passage 2 ('Night Cooling Strategies Across Dense Mediterranean Cities' — Q58): ONE WORD ONLY: 'White outer coatings reflecting midday solar shafts off narrow walls: chalk-___ coatings'",
+      "options": [],
+      "answer": "whitewashed",
+      "acceptedAnswers": [
+        "whitewashed",
+        "lime"
+      ],
+      "explanation": "Paragraf B menyebut 'chalk-whitewashed upper balconies'.",
+      "rationaleSource": "IELTS-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS01-P2",
+      "audioAssetId": null,
+      "maxWords": 1,
+      "sortIndex": 58
+    },
+    {
+      "id": "IELTS-A-01-Q059",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Reading Passage 2 ('Night Cooling Strategies Across Dense Mediterranean Cities' — Q59): NUMBER ONLY (m): 'Approximate width cited for cool winding shaded alleys downtown: ___ meters'",
+      "options": [],
+      "answer": "2",
+      "acceptedAnswers": [
+        "2",
+        "two"
+      ],
+      "explanation": "Gang sempit dicatat selebar sekitar 2 meter.",
+      "rationaleSource": "IELTS-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS01-P2",
+      "audioAssetId": null,
+      "maxWords": 1,
+      "sortIndex": 59
+    },
+    {
+      "id": "IELTS-A-01-Q060",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Reading Passage 2 ('Night Cooling Strategies Across Dense Mediterranean Cities' — Q60): ONE WORD ONLY: 'Spanish textile overhead shade system modeled cleanly over modern town squares: ___'",
+      "options": [],
+      "answer": "toldos",
+      "acceptedAnswers": [
+        "toldos"
+      ],
+      "explanation": "Paragraf E menyebut kanopi kain tarik 'toldos'.",
+      "rationaleSource": "IELTS-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS01-P2",
+      "audioAssetId": null,
+      "maxWords": 1,
+      "sortIndex": 60
+    },
+    {
+      "id": "IELTS-A-01-Q061",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Reading Passage 2 ('Night Cooling Strategies Across Dense Mediterranean Cities' — Q61): NUMBER ONLY (°C): 'Simulated ambient cooling restoration along wide plazas using permeable stone + awnings: nearly ___ degrees'",
+      "options": [],
+      "answer": "3",
+      "acceptedAnswers": [
+        "3",
+        "three"
+      ],
+      "explanation": "Simulasi mengembalikan penurunan suhu hampir 3 derajat.",
+      "rationaleSource": "IELTS-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS01-P2",
+      "audioAssetId": null,
+      "maxWords": 1,
+      "sortIndex": 61
+    },
+    {
+      "id": "IELTS-A-01-Q062",
+      "section": "READING",
+      "taskType": "CHOICE_MULTI",
+      "prompt": "Reading Passage 2 ('Night Cooling Strategies Across Dense Mediterranean Cities' — Q62): Choose TWO traditional building behaviors operating across daily summer cycles in Paragraph C:",
+      "options": [
+        "Closing window shutters prior to scorching midday sun",
+        "Running rooftop electric water spray fans overnight",
+        "Allowing chilly night breezes to sink down open courtyard fountains",
+        "Removing whitewashed limestone awnings monthly"
+      ],
+      "answer": "Closing window shutters prior to scorching midday sun|Allowing chilly night breezes to sink down open courtyard fountains",
+      "acceptedAnswers": [
+        "Closing window shutters prior to scorching midday sun|Allowing chilly night breezes to sink down open courtyard fountains"
+      ],
+      "explanation": "Udara malam sejuk mengendap ke pelataran dalam lalu penutup jendela dirapatkan sebelum tengah hari terik.",
+      "rationaleSource": "IELTS-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS01-P2",
+      "audioAssetId": null,
+      "sortIndex": 62
+    },
+    {
+      "id": "IELTS-A-01-Q063",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 2 ('Night Cooling Strategies Across Dense Mediterranean Cities' — Q63): What dual urban failure followed replacing narrow medieval lanes with wide glass boulevards?",
+      "options": [
+        "Loss of street self-shading paired with heat-dumping mechanical AC compressors.",
+        "Frequent winter river ice jams flooding dry lime fountains.",
+        "Collapse of historic stone wells under morning commuters.",
+        "Lack of whitewash chalk quarry workers downtown."
+      ],
+      "answer": "Loss of street self-shading paired with heat-dumping mechanical AC compressors.",
+      "acceptedAnswers": [
+        "Loss of street self-shading paired with heat-dumping mechanical AC compressors."
+      ],
+      "explanation": "Gang kehilangan peneduh diri sekaligus dibanjiri buangan panas AC mekanis.",
+      "rationaleSource": "IELTS-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS01-P2",
+      "audioAssetId": null,
+      "sortIndex": 63
+    },
+    {
+      "id": "IELTS-A-01-Q064",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 2 ('Night Cooling Strategies Across Dense Mediterranean Cities' — Q64): Do the following statements agree with the information in the text? (TRUE / FALSE / NOT GIVEN): 'Traditional courtyards in Seville kept limestone cool chiefly by running continuous electric floor turbines overnight.'",
+      "options": [
+        "TRUE",
+        "FALSE",
+        "NOT GIVEN"
+      ],
+      "answer": "FALSE",
+      "acceptedAnswers": [
+        "FALSE"
+      ],
+      "explanation": "Paragraf A dan C menegaskan desain tradisional bekerja jauh sebelum kompresor mekanis ada, lewat konveksi alami serta pelataran air malam hari.",
+      "rationaleSource": "IELTS-MOD-02",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS01-P2",
+      "audioAssetId": null,
+      "sortIndex": 64
+    },
+    {
+      "id": "IELTS-A-01-Q065",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Reading Passage 2 ('Night Cooling Strategies Across Dense Mediterranean Cities' — Q65): ONE WORD ONLY: 'Architectural urban material helping pavers cut plaza daytime temperatures when paired with canopy toldos: permeable ___'",
+      "options": [],
+      "answer": "limestone",
+      "acceptedAnswers": [
+        "limestone"
+      ],
+      "explanation": "Paragraf E menyebut kombinasi toldos dengan 'permeable limestone pavers'.",
+      "rationaleSource": "IELTS-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS01-P2",
+      "audioAssetId": null,
+      "maxWords": 1,
+      "sortIndex": 65
+    },
+    {
+      "id": "IELTS-A-01-Q066",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 2 ('Night Cooling Strategies Across Dense Mediterranean Cities' — Q66): Why do overhanging upper white balconies keep two-meter ground alleys substantially cooler than sunlit suburbs?",
+      "options": [
+        "Narrow lanes forbid daytime neighborhood strolling completely.",
+        "Elevated projections intercept steep midday sunlight while bright surfaces reflect radiation skyward.",
+        "Balcony timber fans push river mist into basement kitchens continuously.",
+        "Tall glass balconies absorb street traffic fumes quietly."
+      ],
+      "answer": "Elevated projections intercept steep midday sunlight while bright surfaces reflect radiation skyward.",
+      "acceptedAnswers": [
+        "Elevated projections intercept steep midday sunlight while bright surfaces reflect radiation skyward."
+      ],
+      "explanation": "Balkon atas meneduhi dinding bawah dari sinar langsung sekaligus memantulkan radiasi.",
+      "rationaleSource": "IELTS-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS01-P2",
+      "audioAssetId": null,
+      "sortIndex": 66
+    },
+    {
+      "id": "IELTS-A-01-Q067",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 3 ('Re-Examining the Myth of Passive Consumer Energy Feedback' — Q67): Do the following statements reflect the claims of the writer? (YES / NO / NOT GIVEN): 'Simply placing digital kilowatt screens in hallways consistently sustains twenty-percent long-term savings on its own.'",
+      "options": [
+        "YES",
+        "NO",
+        "NOT GIVEN"
+      ],
+      "answer": "NO",
+      "acceptedAnswers": [
+        "NO"
+      ],
+      "explanation": "Paragraf B membuktikan adanya 'novelty fade' di mana kebiasaan pengguna kembali seperti semula sesudah bulan pertama.",
+      "rationaleSource": "IELTS-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS01-P3",
+      "audioAssetId": null,
+      "sortIndex": 67
+    },
+    {
+      "id": "IELTS-A-01-Q068",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 3 ('Re-Examining the Myth of Passive Consumer Energy Feedback' — Q68): Do the following statements reflect the claims of the writer? (YES / NO / NOT GIVEN): 'Concrete appliance-level cost feedback engages tired families more effectively than raw kilowatt-hour bar charts.'",
+      "options": [
+        "YES",
+        "NO",
+        "NOT GIVEN"
+      ],
+      "answer": "YES",
+      "acceptedAnswers": [
+        "YES"
+      ],
+      "explanation": "Paragraf C menegaskan riset Dr. Kwak bahwa pesan tindakan langsung (hemat £14) jauh lebih efektif daripada angka kilowatt abstrak.",
+      "rationaleSource": "IELTS-MOD-08",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS01-P3",
+      "audioAssetId": null,
+      "sortIndex": 68
+    },
+    {
+      "id": "IELTS-A-01-Q069",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 3 ('Re-Examining the Myth of Passive Consumer Energy Feedback' — Q69): Do the following statements reflect the claims of the writer? (YES / NO / NOT GIVEN): 'Showing neighborhood utility benchmarks never accidentally increases low-usage pensioners' bills.'",
+      "options": [
+        "YES",
+        "NO",
+        "NOT GIVEN"
+      ],
+      "answer": "NO",
+      "acceptedAnswers": [
+        "NO"
+      ],
+      "explanation": "Paragraf D mencatat 'boomerang effect' di mana rumah tangga hemat justru sedikit menaikkan konsumsi setelah melihat dirinya jauh di bawah rata-rata.",
+      "rationaleSource": "IELTS-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS01-P3",
+      "audioAssetId": null,
+      "sortIndex": 69
+    },
+    {
+      "id": "IELTS-A-01-Q070",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 3 ('Re-Examining the Myth of Passive Consumer Energy Feedback' — Q70): Do the following statements reflect the claims of the writer? (YES / NO / NOT GIVEN): 'Seattle families tested glossy kitchen monitors longer than households living in Leeds.'",
+      "options": [
+        "YES",
+        "NO",
+        "NOT GIVEN"
+      ],
+      "answer": "NOT GIVEN",
+      "acceptedAnswers": [
+        "NOT GIVEN"
+      ],
+      "explanation": "Paragraf B menyebut kedua kota (Leeds dan Seattle) tetapi tidak membandingkan durasi pengujian di antara keduanya.",
+      "rationaleSource": "IELTS-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS01-P3",
+      "audioAssetId": null,
+      "sortIndex": 70
+    },
+    {
+      "id": "IELTS-A-01-Q071",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 3 ('Re-Examining the Myth of Passive Consumer Energy Feedback' — Q71): Do the following statements reflect the claims of the writer? (YES / NO / NOT GIVEN): 'Automating battery charging via wind-peak pricing minimizes mental fatigue compared with manual switch-watching.'",
+      "options": [
+        "YES",
+        "NO",
+        "NOT GIVEN"
+      ],
+      "answer": "YES",
+      "acceptedAnswers": [
+        "YES"
+      ],
+      "explanation": "Paragraf E mendukung penjadwalan tarif otomatis agar pengguna tidak mengalami 'willpower exhaustion'.",
+      "rationaleSource": "IELTS-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS01-P3",
+      "audioAssetId": null,
+      "sortIndex": 71
+    },
+    {
+      "id": "IELTS-A-01-Q072",
+      "section": "READING",
+      "taskType": "MATCHING",
+      "prompt": "Reading Passage 3 ('Re-Examining the Myth of Passive Consumer Energy Feedback' — Q72): Match each researcher cleanly to their empirical energy finding:",
+      "options": [],
+      "answer": "Dr. Helen Kwak::Specific euro/pound task advice beats abstract kWh numbers|Tomas Silva::Social average rankings triggered low-user boomerang rebounds",
+      "acceptedAnswers": [
+        "Dr. Helen Kwak::Specific euro/pound task advice beats abstract kWh numbers|Tomas Silva::Social average rankings triggered low-user boomerang rebounds"
+      ],
+      "explanation": "Pemetaan temuan Kwak (paragraf C) vs Silva (paragraf D).",
+      "rationaleSource": "IELTS-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS01-P3",
+      "audioAssetId": null,
+      "pairs": [
+        {
+          "left": "Dr. Helen Kwak",
+          "rightOptions": [
+            "Specific euro/pound task advice beats abstract kWh numbers",
+            "Social average rankings triggered low-user boomerang rebounds"
+          ]
+        },
+        {
+          "left": "Tomas Silva",
+          "rightOptions": [
+            "Specific euro/pound task advice beats abstract kWh numbers",
+            "Social average rankings triggered low-user boomerang rebounds"
+          ]
+        }
+      ],
+      "sortIndex": 72
+    },
+    {
+      "id": "IELTS-A-01-Q073",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Reading Passage 3 ('Re-Examining the Myth of Passive Consumer Energy Feedback' — Q73): NO MORE THAN TWO WORDS: 'Sociological decline when early excitement over new wall monitors wears flat: novelty ___'",
+      "options": [],
+      "answer": "fade",
+      "acceptedAnswers": [
+        "fade"
+      ],
+      "explanation": "Paragraf B menyebut istilah tersebut 'novelty fade'.",
+      "rationaleSource": "IELTS-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS01-P3",
+      "audioAssetId": null,
+      "maxWords": 1,
+      "sortIndex": 73
+    },
+    {
+      "id": "IELTS-A-01-Q074",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Reading Passage 3 ('Re-Examining the Myth of Passive Consumer Energy Feedback' — Q74): ONE WORD ONLY: 'Unexpected reverse uptick seen among frugal households seeing low rankings: ___ effect'",
+      "options": [],
+      "answer": "boomerang",
+      "acceptedAnswers": [
+        "boomerang"
+      ],
+      "explanation": "Paragraf D menamainya 'boomerang effect'.",
+      "rationaleSource": "IELTS-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS01-P3",
+      "audioAssetId": null,
+      "maxWords": 1,
+      "sortIndex": 74
+    },
+    {
+      "id": "IELTS-A-01-Q075",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Reading Passage 3 ('Re-Examining the Myth of Passive Consumer Energy Feedback' — Q75): NUMBER ONLY (£): 'Specific concrete quarterly savings cited cleanly for delayed dishwasher starts: £___'",
+      "options": [],
+      "answer": "14",
+      "acceptedAnswers": [
+        "14",
+        "fourteen"
+      ],
+      "explanation": "Contoh hemat konkret Dr. Kwak adalah £14 per kuartal.",
+      "rationaleSource": "IELTS-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS01-P3",
+      "audioAssetId": null,
+      "maxWords": 1,
+      "sortIndex": 75
+    },
+    {
+      "id": "IELTS-A-01-Q076",
+      "section": "READING",
+      "taskType": "FILL_BLANK",
+      "prompt": "Reading Passage 3 ('Re-Examining the Myth of Passive Consumer Energy Feedback' — Q76): NO MORE THAN TWO WORDS: 'Energy automation storage devices charged neatly during surplus wind spikes: ___ batteries'",
+      "options": [],
+      "answer": "home storage",
+      "acceptedAnswers": [
+        "storage",
+        "home storage"
+      ],
+      "explanation": "Paragraf E menyebut pengisian 'home storage batteries'.",
+      "rationaleSource": "IELTS-MOD-03",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS01-P3",
+      "audioAssetId": null,
+      "maxWords": 2,
+      "sortIndex": 76
+    },
+    {
+      "id": "IELTS-A-01-Q077",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 3 ('Re-Examining the Myth of Passive Consumer Energy Feedback' — Q77): Why did blinking color power screens fade into household obscurity after barely thirty days?",
+      "options": [
+        "Municipal privacy boards unplugged neighborhood wireless networks.",
+        "Green bars drained kitchen breaker panels noticeably.",
+        "Constant manual unit monitoring lacks specific behavioral guidance and competes with busy routines.",
+        "Electric screens overheated kitchen drywall paint swiftly."
+      ],
+      "answer": "Constant manual unit monitoring lacks specific behavioral guidance and competes with busy routines.",
+      "acceptedAnswers": [
+        "Constant manual unit monitoring lacks specific behavioral guidance and competes with busy routines."
+      ],
+      "explanation": "Grafik pasif tidak mengarahkan aksi spesifik dan kalah oleh rutinitas keseharian.",
+      "rationaleSource": "IELTS-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS01-P3",
+      "audioAssetId": null,
+      "sortIndex": 77
+    },
+    {
+      "id": "IELTS-A-01-Q078",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 3 ('Re-Examining the Myth of Passive Consumer Energy Feedback' — Q78): Which group drove the unexpected upward consumption nudge in Tomas Silva's social ranking trial?",
+      "options": [
+        "Rental students lacking automated tariff batteries.",
+        "Very low-consumption thrifty households realizing they sat far below neighborhood norms.",
+        "Luxury home owners owning heated winter swimming garages.",
+        "Industrial office cafes operating twenty-four espresso stations."
+      ],
+      "answer": "Very low-consumption thrifty households realizing they sat far below neighborhood norms.",
+      "acceptedAnswers": [
+        "Very low-consumption thrifty households realizing they sat far below neighborhood norms."
+      ],
+      "explanation": "Rumah tangga yang sangat hemat melihat ikon senyum jauh di bawah rata-rata lalu agak melonggarkan pemakaian.",
+      "rationaleSource": "IELTS-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS01-P3",
+      "audioAssetId": null,
+      "sortIndex": 78
+    },
+    {
+      "id": "IELTS-A-01-Q079",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 3 ('Re-Examining the Myth of Passive Consumer Energy Feedback' — Q79): How do responsive smart systems avoid repeating the 'novelty fade' mistake cleanly?",
+      "options": [
+        "They automate overnight wind-tariff charging silently in background while preserving manual override ease.",
+        "They sound loud piercing bells whenever television screens draw excess wattage.",
+        "They fine families monthly unless reading five kilowatt tutorials.",
+        "They erase household utility display apps altogether."
+      ],
+      "answer": "They automate overnight wind-tariff charging silently in background while preserving manual override ease.",
+      "acceptedAnswers": [
+        "They automate overnight wind-tariff charging silently in background while preserving manual override ease."
+      ],
+      "explanation": "Sistem otomatis bekerja diam-diam mengikuti tarif angin murah sambil menyisakan kontrol manual.",
+      "rationaleSource": "IELTS-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS01-P3",
+      "audioAssetId": null,
+      "sortIndex": 79
+    },
+    {
+      "id": "IELTS-A-01-Q080",
+      "section": "READING",
+      "taskType": "CHOICE_SINGLE",
+      "prompt": "Reading Passage 3 ('Re-Examining the Myth of Passive Consumer Energy Feedback' — Q80): What best reflects the writer's overall evaluation of smart home energy engagement?",
+      "options": [
+        "Manual meter reading remains the single trustworthy method nationwide.",
+        "Behavioral science offers zero insights into utility planning.",
+        "Visual screens hurt neighborhood conservation goals uniformly.",
+        "Actionable concrete nudges and user-respecting automation outperform passive bare numbers."
+      ],
+      "answer": "Actionable concrete nudges and user-respecting automation outperform passive bare numbers.",
+      "acceptedAnswers": [
+        "Actionable concrete nudges and user-respecting automation outperform passive bare numbers."
+      ],
+      "explanation": "Penulis menyimpulkan kombinasi arahan praktis dan otomasi cerdas jauh mengungguli tampilan data mentah pasif.",
+      "rationaleSource": "IELTS-MOD-08",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": "IELTS01-P3",
+      "audioAssetId": null,
+      "sortIndex": 80
+    },
+    {
+      "id": "IELTS-A-01-Q081",
       "section": "WRITING",
       "taskType": "WRITING_RESPONSE",
-      "prompt": "IELTS Academic Writing Task 1 (>=150 words, 20 min): The table below shows percentage of household electricity generated from solar, wind, and natural gas in Townsville (2015 vs 2025):\n- Solar: 6% (2015) -> 29% (2025)\n- Wind: 14% (2015) -> 33% (2025)\n- Natural Gas: 68% (2015) -> 31% (2025)\n- Hydro/Other: 12% (2015) -> 7% (2025)\nSummarize the information by selecting and reporting the main features, and make comparisons where relevant.",
+      "prompt": "Writing Task 1 (Academic Report — At least 150 words, 20 min): The table below compares municipal household waste outcomes (Landfilled, Recycled, Composted, Incinerated with Heat Recovery) across three medium-sized cities in 2010 and 2024. City A cut landfilling from 68% down to 22% while doubling recycling (24%->51%) and lifting composting (8%->27%). City B cut landfilling slowly (75%->55%, recycling 18%->31%, incineration 7%->14%). City C reached near-zero landfill (52%->9%, recycling 44%, composting 19%, incineration 28%). Summarize the information by selecting and reporting the main features, and make comparisons where relevant.",
       "options": [],
       "answer": "",
       "acceptedAnswers": [],
-      "explanation": "Wajib sertakan paraphrased intro, Overview jelas (lonjakan surya/angin vs penurunan tajam gas alam), serta perbandingan angka akurat.",
+      "explanation": "Band 7+ Task 1 wajib menyertakan Overview tren utama tanpa opini pribadi, membandingkan angka/tahapan ekstrem secara akurat.",
       "rationaleSource": "IELTS-MOD-04",
       "difficulty": "B2",
       "points": 1,
@@ -257,119 +2107,119 @@
       "passageId": null,
       "audioAssetId": null,
       "minWords": 150,
-      "recommendedWords": 175,
+      "recommendedWords": 180,
       "rubricCriteria": [
-        "Task Achievement (Overview + key figures)",
-        "Coherence & Cohesion",
-        "Lexical Resource",
-        "Grammatical Range & Accuracy"
+        "Clear Overview statement",
+        "Accurate data/stage selection",
+        "Trend comparisons & passive/sequence connectors",
+        "Lexical precision"
       ],
-      "sortIndex": 8
+      "sortIndex": 81
     },
     {
-      "id": "IELTS-A-01-Q09",
+      "id": "IELTS-A-01-Q082",
       "section": "WRITING",
       "taskType": "WRITING_RESPONSE",
-      "prompt": "IELTS Academic Writing Task 2 (>=250 words, 40 min): Some urban planners believe historic buildings should be demolished to build high-density energy-efficient housing, while others argue preserving architectural heritage is equally vital. Discuss both views and give your own opinion.",
+      "prompt": "Writing Task 2 (Academic Essay — At least 250 words, 40 min): Many municipal libraries now replace large quiet printed reference shelves with open communal maker workshops, digital editing desks, and toddler storytelling corners. To what extent do you think the benefits of this shift outweigh the drawbacks for lifelong learners and community reading culture?",
       "options": [],
       "answer": "",
       "acceptedAnswers": [],
-      "explanation": "Bahas kedua pandangan secara seimbang lalu nyatakan posisi pribadi yang konsisten disertai contoh nyata.",
+      "explanation": "Band 7+ Task 2 menuntut tesis tegas konsisten di pembuka hingga penutup, pengembangan paragraf tubuh bertumpu mekanisme & contoh, serta kendali klausa kompleks.",
       "rationaleSource": "IELTS-MOD-05",
-      "difficulty": "B2",
-      "points": 1,
-      "license": "Original",
-      "reviewStatus": "VERIFIED_ORIGINAL",
-      "passageId": null,
-      "audioAssetId": null,
-      "minWords": 250,
-      "recommendedWords": 275,
-      "rubricCriteria": [
-        "Task Response (both views + stance)",
-        "Coherence & Cohesion",
-        "Lexical Resource",
-        "Grammatical Range & Accuracy"
-      ],
-      "sortIndex": 9
-    },
-    {
-      "id": "IELTS-A-01-Q10",
-      "section": "SPEAKING",
-      "taskType": "SPEAKING_RESPONSE",
-      "prompt": "IELTS Speaking Part 1 (~30–45s): 'Let's talk about where you live. What kind of building is your home, and what feature makes it comfortable or inconvenient during hot or rainy seasons?'",
-      "options": [],
-      "answer": "",
-      "acceptedAnswers": [],
-      "explanation": "Jawab langsung 3–4 kalimat dengan kosakata deskriptif alami (ventilation, shading, quiet street).",
-      "rationaleSource": "IELTS-MOD-06",
-      "difficulty": "B1",
-      "points": 1,
-      "license": "Original",
-      "reviewStatus": "VERIFIED_ORIGINAL",
-      "passageId": null,
-      "audioAssetId": null,
-      "prepSeconds": 0,
-      "speakSeconds": 45,
-      "rubricCriteria": [
-        "Fluency & Coherence",
-        "Lexical Resource",
-        "Grammatical Range",
-        "Pronunciation"
-      ],
-      "sortIndex": 10
-    },
-    {
-      "id": "IELTS-A-01-Q11",
-      "section": "SPEAKING",
-      "taskType": "SPEAKING_RESPONSE",
-      "prompt": "IELTS Speaking Part 2 Cue Card (1 min prep · 2 min speak): Describe an environmentally friendly improvement or building you noticed in your city.\nYou should say:\n- where it is located\n- what problem it addresses\n- how people use it\n- and explain why you think it is effective.",
-      "options": [],
-      "answer": "",
-      "acceptedAnswers": [],
-      "explanation": "Manfaatkan 60 detik persiapan untuk mencatat 4 kata kunci bullet lalu berbicara lancar 90–120 detik.",
-      "rationaleSource": "IELTS-MOD-06",
-      "difficulty": "B2",
-      "points": 1,
-      "license": "Original",
-      "reviewStatus": "VERIFIED_ORIGINAL",
-      "passageId": null,
-      "audioAssetId": null,
-      "prepSeconds": 60,
-      "speakSeconds": 120,
-      "rubricCriteria": [
-        "Fluency & Coherence",
-        "Lexical Resource",
-        "Grammatical Range & Accuracy",
-        "Pronunciation"
-      ],
-      "sortIndex": 11
-    },
-    {
-      "id": "IELTS-A-01-Q12",
-      "section": "SPEAKING",
-      "taskType": "SPEAKING_RESPONSE",
-      "prompt": "IELTS Speaking Part 3 (~60s): 'Why do some households hesitate to adopt energy-saving upgrades even when long-term utility costs are lower?'",
-      "options": [],
-      "answer": "",
-      "acceptedAnswers": [],
-      "explanation": "Fokus pada analisis abstrak: biaya awal tinggi, kurangnya informasi terpercaya, dan masalah sewa-menyewa (split incentives).",
-      "rationaleSource": "IELTS-MOD-06",
       "difficulty": "C1",
       "points": 1,
       "license": "Original",
       "reviewStatus": "VERIFIED_ORIGINAL",
       "passageId": null,
       "audioAssetId": null,
-      "prepSeconds": 0,
+      "minWords": 250,
+      "recommendedWords": 290,
+      "rubricCriteria": [
+        "Full prompt coverage & clear position",
+        "Coherent paragraphing",
+        "Precise collocations",
+        "Complex grammar range & accuracy"
+      ],
+      "sortIndex": 82
+    },
+    {
+      "id": "IELTS-A-01-Q083",
+      "section": "SPEAKING",
+      "taskType": "SPEAKING_RESPONSE",
+      "prompt": "Examiner Part 1 (Neighborhood & Daily Habits — 4–5 min): Good afternoon. Let's talk about your neighborhood. How long have you lived there, what kind of local spot helps you focus or unwind, and has public transport near your street changed recently?",
+      "options": [],
+      "answer": "",
+      "acceptedAnswers": [],
+      "explanation": "Part 1 idealnya berdurasi ~25–35 detik per pertanyaan gabungan dengan ekstensi 2–3 kalimat alami dan intonasi santai tanpa menghafal templat.",
+      "rationaleSource": "IELTS-MOD-06",
+      "difficulty": "B1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS01-SP1",
+      "prepSeconds": 5,
+      "speakSeconds": 45,
+      "rubricCriteria": [
+        "Natural conversational extension",
+        "Everyday topic collocations",
+        "Clear stress & rhythm",
+        "Self-correction control"
+      ],
+      "sortIndex": 83
+    },
+    {
+      "id": "IELTS-A-01-Q084",
+      "section": "SPEAKING",
+      "taskType": "SPEAKING_RESPONSE",
+      "prompt": "Speaking Part 2 (Cue Card — 1 min prep, 2 min talk): Describe a skill you taught yourself using offline books or printed guides without enrolling in a paid course. You should say: what the skill was, why you decided to learn it independently, what obstacles slowed you down initially, and explain how practicing it changed your daily confidence.",
+      "options": [],
+      "answer": "",
+      "acceptedAnswers": [],
+      "explanation": "Gunakan 60 detik persiapan untuk mencatat 4–5 kata kunci linimasa (Konteks -> Tantangan -> Aksi -> Dampak), lalu bicaralah lancar hingga 2 menit penuh.",
+      "rationaleSource": "IELTS-MOD-06",
+      "difficulty": "B2",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS01-SP2",
+      "prepSeconds": 60,
+      "speakSeconds": 120,
+      "rubricCriteria": [
+        "Full 2-minute sustained narrative",
+        "Discourse markers across stages",
+        "Vivid specific vocabulary",
+        "Tenses accuracy across past & present reflection"
+      ],
+      "sortIndex": 84
+    },
+    {
+      "id": "IELTS-A-01-Q085",
+      "section": "SPEAKING",
+      "taskType": "SPEAKING_RESPONSE",
+      "prompt": "Examiner Part 3 (Independent Learning & Technology — 4–5 min): You mentioned learning from structured written manuals. Do you think modern short video tutorials make deep conceptual mastery easier or shallower compared with working slowly through printed textbooks, and how might universities measure real competence beyond memorized facts?",
+      "options": [],
+      "answer": "",
+      "acceptedAnswers": [],
+      "explanation": "Part 3 menuntut abstraksi gagasan tingkat masyarakat: pakai hedging ('on balance', 'tends to'), kontras dua sisi, dan alasan sebab-akibat analitis.",
+      "rationaleSource": "IELTS-MOD-10",
+      "difficulty": "C1",
+      "points": 1,
+      "license": "Original",
+      "reviewStatus": "VERIFIED_ORIGINAL",
+      "passageId": null,
+      "audioAssetId": "IELTS01-SP3",
+      "prepSeconds": 10,
       "speakSeconds": 60,
       "rubricCriteria": [
-        "Analytical extension",
-        "Cohesive discourse markers",
-        "Academic vocabulary",
-        "Pronunciation"
+        "Abstract analytical reasoning",
+        "Hedging & nuanced stance",
+        "Complex clause variety",
+        "Natural pronunciation under cognitive load"
       ],
-      "sortIndex": 12
+      "sortIndex": 85
     }
   ],
-  "checksum": "8cb876e7a1314bdbe684869c74e13421492b8b373368674ddac536dd474de8b1"
+  "checksum": "03e13a443e88a01e9dec1c6fd531df4b7b1824b4bc74bc4c7c4ff28e998611b0"
 }
