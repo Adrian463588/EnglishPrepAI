@@ -2,6 +2,10 @@
 
 ## 1.1.1 — 2026-11-16
 ### Added & Improved
+- **DevSecOps Hardening & GitHub Actions CI/CD Fix (`specs/010`)**:
+  - Fixed executable permission bit (`100755`) on `gradlew` (resolving past `./gradlew: Permission denied` CI failures) and overhauled `.github/workflows/android-devsecops.yml` with Node 24 actions (`actions/checkout@v7`, `actions/setup-java@v6`, `android-actions/setup-android@v4`, `gradle/actions/setup-gradle@v6`, `actions/upload-artifact@v7`), least-privilege `permissions: contents: read`, credential/secret regex scanner, offline AI/ML & Material Bank integrity check, sequential Gradle steps, and compiled APK inspection via `aapt2`.
+  - Hardened `app/build.gradle.kts` (`isDebuggable = false`, `isJniDebuggable = false`, `vcsInfo { include = false }`, `DebugProbesKt.bin` exclusion) and `AndroidManifest.xml` (`android:usesCleartextTraffic="false"`), verified `181.11 MB` (`189,908,998` bytes) with zero `INTERNET` or `application-debuggable` flags in compiled Release APK.
+  - Added author attribution signature (`Dibuat oleh Adrian Syah Abidin`) to `README.md`.
 - **Custom Android Adaptive & Monochrome App Icon (`specs/009`)**: Replaced placeholder icon with bespoke vector/radial-teal open-book/audio/bookmark/check artwork (`ic_launcher_foreground.xml`, `ic_launcher_background.xml`, `ic_launcher_monochrome.xml`, `mipmap-anydpi-v26/*`) plus symmetric 4x-supersampled raster mipmap icons across `mdpi`..`xxxhdpi` and `docs/screenshots/app-icon-512.png` via `tools/generate_app_icon.py`. Removed unused `values/ic_launcher_background.xml` so `IconLauncherShape` and `UnusedResources` lint warnings dropped to 0.
 - **Menu-by-Menu Responsive & Adaptive UI/UX Polish**:
   - `AppComponents.kt`: Added `rememberIsExpandedWidth()`, `ResponsiveScreenContainer`, `TextStyle.tabular()` (`tnum`), centered `AppButton` text wrapping, `SelectableOptionRow` press scale (`0.985f`) + `LocalIndication.current` ripple, and `AudioPlayerBar` title ellipsis + `tnum` timestamps + animated Surface speed pills.

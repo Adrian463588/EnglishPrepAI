@@ -3,7 +3,7 @@
 - **Project**: English Prep AI (`com.englishprep.ai`, `v1.1.1`, `versionCode = 3`)
 - **Audit Date**: `2026-11-16`
 - **Tested Hardware**: Samsung Galaxy `SM-G988B` (Android 13, `arm64-v8a`, `1080x2400`)
-- **Automated Verification**: `40/40` JVM/Robolectric tests pass (`0` skipped), `lintDebug` (`0` errors, `76` warnings), R8 `assembleRelease` (`mapping.txt` verified, `181.11 MB` / `189,909,942` bytes).
+- **Automated Verification**: `40/40` JVM/Robolectric tests pass (`0` skipped), `lintDebug` (`0` errors, `76` warnings), R8 `assembleRelease` (`mapping.txt` verified, `181.11 MB` / `189,908,998` bytes, `aapt2` verified no `INTERNET`/`debuggable`).
 
 > Rule: Items requiring user-imported multi-GB `.litertlm`/`.onnx` weights, independent physical Switch Access sessions, or human linguistic/psychometric peer review across authored items remain `[ ]` (`PARTIAL` / `BLOCKED_EXTERNAL`) until those external artifacts or human reviews are completed.
 
@@ -13,7 +13,7 @@
 
 | Epic | Title | Priority | Status | Primary Evidence Path | Tested Env / API | Defects / Remaining Notes |
 |---|---|---|---|---|---|---|
-| EPIC-00 | SDD, Governance & Quality Gates | P0 | VERIFIED | `.specify/memory/constitution.md`, `specs/001`..`009`, `.github/workflows/android-devsecops.yml`, `docs/qa/LICENSE_AND_SBOM_AUDIT.md` | Windows + JDK 17 + GitHub CI | None |
+| EPIC-00 | SDD, Governance & Quality Gates | P0 | VERIFIED | `.specify/memory/constitution.md`, `specs/001`..`010`, `.github/workflows/android-devsecops.yml`, `docs/qa/LICENSE_AND_SBOM_AUDIT.md` | Windows + JDK 17 + GitHub CI | None |
 | EPIC-01 | Android Foundation & Clean MVVM | P0 | VERIFIED | `app/src/main/java/com/englishprep/ai/**`, `MainActivity.kt` | `SM-G988B` API 33 + JVM | None |
 | EPIC-02 | Navigation, Home & Exam Selector | P0 | VERIFIED | `HomeScreen.kt`, `HomeViewModel.kt`, `UiAndAccessibilityTest.kt`, `docs/screenshots/01-home.png`, `02-exam-switcher.png` | `SM-G988B` API 33 + Robolectric | None |
 | EPIC-03 | Offline Learning Catalog & Lesson Player | P0 | VERIFIED | `LearnScreens.kt`, `LearnViewModel.kt`, `material_bank/`, `docs/screenshots/03-learn-modules.png`, `13-material-bank-oer.png` | `SM-G988B` API 33 + Robolectric | 30 modules, 90 drills, 31 Material Bank PDF digests offline |

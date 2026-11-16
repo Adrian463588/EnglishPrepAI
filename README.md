@@ -84,10 +84,11 @@ EnglishPrepAI/
 │   ├── 006-github-repo-docs-release/      # Spec, plan, tasks, acceptance: Repo GitHub, README & Release
 │   ├── 007-epic-audit-polish-gates/       # Spec, plan, tasks, acceptance: Audit EPIC-00..21 & anti-slop craft
 │   ├── 008-material-bank-full-packs/      # Spec, plan, tasks, acceptance: Bank Materi PDF, 30 modul, 1.725 soal
-│   └── 009-uiux-responsive-icon-polish/   # Spec, plan, tasks, acceptance: Audit UI/UX responsif & ikon adaptif aplikasi
+│   ├── 009-uiux-responsive-icon-polish/   # Spec, plan, tasks, acceptance: Audit UI/UX responsif & ikon adaptif aplikasi
+│   └── 010-devsecops-ci-hardening-release/# Spec, plan, tasks, acceptance: Perbaikan CI/CD DevSecOps, R8 & guard ML offline
 ├── docs/
 │   ├── qa/                                # EPIC_STATUS.md (matrix bukti) & LICENSE_AND_SBOM_AUDIT.md
-│   ├── reviews/                           # Laporan tinjauan BMAD (Analyst, Architect, UX, QA, Security, Release, Closure, Material Bank, UI/UX Icon)
+│   ├── reviews/                           # Laporan tinjauan BMAD (Analyst, Architect, UX, QA, Security, Release, Closure, Material Bank, UI/UX Icon, DevSecOps CI)
 │   ├── screenshots/                       # 13 tangkapan layar nyata dari SM-G988B + pratinjau app-icon-512.png
 │   ├── REFERENCES.md                      # Katalog model Hugging Face, dataset terbuka & referensi GitHub
 │   └── VERIFICATION_CHECKLIST.md          # Checklist bukti uji unit, lint, R8 & perangkat fisik
@@ -265,8 +266,9 @@ Menyimpan preferensi ringan non-relasional: `selected_exam`, `language`, `audio_
 
 ## Ringkasan keamanan & DevSecOps
 
-- **R8 + ProGuard Full Optimization**: Aktif pada build `release` ([`proguard-rules.pro`](app/proguard-rules.pro)) dengan `-repackageclasses 'o'`, redaksi `SourceFile`, dan stripping `android.util.Log` (`v`/`d`/`i`/`w`), mengurangi ukuran APK dari `200.6 MB` (debug) ke `181.11 MB` (unsigned release).
-- **Kebijakan Privasi Offline & Backup**: `INTERNET` permission tidak pernah dideklarasikan di [`AndroidManifest.xml`](app/src/main/AndroidManifest.xml), `android:allowBackup="false"`, serta eksklusi penuh `database`, `sharedpref`, dan `file` pada aturan backup XML.
+- **R8 + ProGuard Full Optimization**: Aktif pada build `release` ([`proguard-rules.pro`](app/proguard-rules.pro)) dengan `isMinifyEnabled = true`, `isShrinkResources = true`, `isDebuggable = false`, `vcsInfo.include = false`, penghapusan `DebugProbesKt.bin`, `-repackageclasses 'o'`, redaksi `SourceFile`, dan stripping `android.util.Log` (`v`/`d`/`i`/`w`), mengurangi ukuran APK dari `200.6 MB` (debug) ke `181.11 MB` (unsigned release).
+- **Kebijakan Privasi Offline & Backup**: `INTERNET` permission tidak pernah dideklarasikan di [`AndroidManifest.xml`](app/src/main/AndroidManifest.xml) maupun APK terkompilasi, `android:allowBackup="false"`, `android:usesCleartextTraffic="false"`, serta eksklusi penuh `database`, `sharedpref`, dan `file` pada aturan backup XML.
+- **Gerbang CI/CD GitHub Actions (`android-devsecops.yml`)**: Izin minimum `contents: read`, validasi wrapper Gradle & mode eksekusi `100755`, pemindaian kebocoran kredensial, pemeriksaan higienis ML/Material Bank offline, unit test, Android Lint, build R8 Release, dan verifikasi biner APK via `aapt2`.
 - **RASP & Kriptografi Lokal**: `AndroidAppIntegrityInspector` membaca flag debuggable, status debugger, heuristik root dasar, status `allowBackup`, dan SHA-256 sertifikat penandatangan. Verifikasi paket eksternal bertanda tangan memakai `DetachedSignatureVerifier` (`SHA256withECDSA`), sementara kunci lokal memakai `AndroidKeystoreSealer` (`AES/GCM/NoPadding` pada `AndroidKeyStore`).
 - **Catatan batas objektif**: Aplikasi yang berjalan 100% offline tanpa server tepercaya tidak dapat menjamin perlindungan mutlak terhadap pemodifikasian binary pada perangkat yang telah di-root. Kontrol di atas bertujuan meningkatkan transparansi integritas lokal dan biaya analisis balik.
 
@@ -276,10 +278,16 @@ Menyimpan preferensi ringan non-relasional: `selected_exam`, `language`, `audio_
 
 Dokumen rinci tersedia pada [VERIFICATION_CHECKLIST.md](docs/VERIFICATION_CHECKLIST.md), [EPIC_STATUS.md](docs/qa/EPIC_STATUS.md), audit lisensi pada [LICENSE_AND_SBOM_AUDIT.md](docs/qa/LICENSE_AND_SBOM_AUDIT.md), dan referensi model/dataset/repo di [REFERENCES.md](docs/REFERENCES.md).
 
-- [x] **Spec-Driven Development**: Konstitusi Spec Kit (`.specify/memory/constitution.md`), 9 fitur terdokumentasi di `specs/001` sampai `specs/009`, serta 9 laporan tinjauan BMAD di `docs/reviews/`.
+- [x] **Spec-Driven Development**: Konstitusi Spec Kit (`.specify/memory/constitution.md`), 10 fitur terdokumentasi di `specs/001` sampai `specs/010`, serta 10 laporan tinjauan BMAD di `docs/reviews/`.
 - [x] **Bank Materi PDF, 30 Modul & 15 Paket Penuh (1.725 Soal)**: 17 PDF Material Bank (`31` entri studi + indeks FTS4 di tab Materi), 30 modul (dengan bookmark & last-read), 90 drill interaktif, 15 paket soal berstatus `READY` penuh (`5x140` ITP, `5x120` iBT 2026, `5x85` IELTS Academic), serta 390 berkas audio MS IMA-ADPCM offline (`57.00 MB`).
 - [x] **Mesin Inti Aplikasi**: `QuizGradingEngine` (10 tipe tugas + normalisasi `TFNG`/`YNNG`), `PackIntegrityValidator` (15 paket penuh valid), `ExamScoreEstimator` (skor mentah deterministik non-resmi `v1.1-raw-deterministic`), `Media3AudioEngine` (ExoPlayer `1.5.1` IMA-ADPCM + kontinuitas audio antarmulti-soal), `QuestionNavigatorSheetContent` (navigator terfilter 140 item + legenda), `WavAudioRecorder` + hapus rekaman, `WhisperOnnxSpeechEngine` (ORT `1.22.0`), `LiteRtLmGemma4Engine` (`0.13.1`), FTS4 RAG fallback (dengan lock Strict Mode), Room `@Upsert` DB upgrade non-destruktif + DataStore, `SafSecurityValidator`, dan `ProgressScreen`.
 - [x] **UI/UX Responsif, Anti-AI-Slop & Ikon Adaptif (`specs/009`)**: Tata letak adaptif `320dp @ 2.0x` hingga tablet 2 kolom `840dp+` (`ResponsiveScreenContainer`), `FlowRow` CTA/bottom-bar anti-kliping, mikro-interaksi `SelectableOptionRow`/`AudioPlayerBar`/progress strip `3dp`/ekspansi Bank Materi, filter hasil `ResultsScreen`, switch baris penuh `toggleable`, angka tabular `tnum`, serta ikon adaptif + monochrome + 5 densitas mipmap (`docs/screenshots/app-icon-512.png`).
-- [x] **DevSecOps, R8 & RASP**: `isMinifyEnabled = true`, `isShrinkResources = true`, ProGuard hardening, `allowBackup="false"`, ECDSA & AES-GCM, Workflow CI GitHub Actions (`.github/workflows/android-devsecops.yml`).
+- [x] **DevSecOps, R8 & RASP**: `isMinifyEnabled = true`, `isShrinkResources = true`, `isDebuggable = false`, `vcsInfo.include = false`, `usesCleartextTraffic="false"`, `allowBackup="false"`, ProGuard hardening, ECDSA & AES-GCM, serta Workflow CI GitHub Actions (`.github/workflows/android-devsecops.yml`) dengan pemindai kebocoran kredensial, guard ML offline, dan inspeksi `aapt2` pada Release APK.
 - [x] **Pengujian Terverifikasi**: 40/40 unit, DB migration/upgrade & Robolectric Compose UI tests lulus (`testDebugUnitTest`), `lintDebug` 0 error (`76` warning), `assembleDebug` & R8 `assembleRelease` sukses (`mapping.txt` terverifikasi), dan QA fisik `v1.1.1` pada `SM-G988B` (ikon adaptif, semua menu responsif, filter Materi/Results, `Ready • 140 soal`, playback IMA-ADPCM, navigator 140 item, Tutor AI Chat, R8 status, dan Bank Materi OER).
 - [x] **Distribusi GitHub CLI**: Repository publik `Adrian463588/EnglishPrepAI`, deskripsi, topics, `README.md` dengan tautan unduhan & 13 tangkapan layar real-time + ikon aplikasi, serta GitHub Release `v1.1.1`.
+
+---
+
+## Penulis
+
+**Dibuat oleh Adrian Syah Abidin**

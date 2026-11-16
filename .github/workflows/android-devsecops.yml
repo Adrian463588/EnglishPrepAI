@@ -4,45 +4,148 @@ on:
   push:
     branches: [ main, master ]
   pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   verify-devsecops:
     runs-on: ubuntu-latest
+    timeout-minutes: 25
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Set up JDK 17
-        uses: actions/setup-java@v4
+        uses: actions/setup-java@v6
         with:
           distribution: temurin
           java-version: 17
-          cache: gradle
 
-      - name: Secret & Manifest Security Hygiene Check
+      - name: Set up Android SDK (API 35 & Build Tools 35.0.0)
+        uses: android-actions/setup-android@v4
+        with:
+          log-accepted-android-sdk-licenses: false
+          packages: platforms;android-35 build-tools;35.0.0
+
+      - name: Set up Gradle & Validate Wrapper
+        uses: gradle/actions/setup-gradle@v6
+        with:
+          cache-provider: basic
+
+      - name: Secret, Credential & Manifest Hygiene Check
         run: |
-          if git ls-files | grep -E '\.(jks|keystore|p12)$|keystore\.properties$'; then
-            echo "ERROR: Signing keystore or secret properties tracked in Git!"
+          set -euo pipefail
+          chmod +x gradlew
+          if ! git ls-files --stage gradlew | grep -q '^100755'; then
+            echo "ERROR: gradlew must carry executable mode 100755 in Git index!"
             exit 1
           fi
+          if git ls-files | grep -E '\.(jks|keystore|p12|pem|key)$|(^|/)(keystore|local)\.properties$'; then
+            echo "ERROR: Signing keystore or local credential file tracked in Git!"
+            exit 1
+          fi
+          python3 - <<'PY'
+          import re, subprocess, sys
+          files = subprocess.check_output(['git', 'ls-files'], text=True).splitlines()
+          patterns = [
+              ('AWS Access Key', re.compile(r'AKIA[0-9A-Z]{16}')),
+              ('GitHub Token', re.compile(r'(ghp|gho|ghu|ghs|ghr)_[A-Za-z0-9]{20,}|github_pat_[A-Za-z0-9_]{20,}')),
+              ('HuggingFace Token', re.compile(r'hf_[A-Za-z0-9]{20,}')),
+              ('Google API Key', re.compile(r'AIza[0-9A-Za-z\-_]{35}')),
+              ('API Secret Key', re.compile(r'sk-[A-Za-z0-9]{20,}')),
+              ('Private Key Block', re.compile(r'-----BEGIN [A-Z ]*PRIVATE KEY-----')),
+              ('Bearer Header Secret', re.compile(r'Authorization\s*[:=]\s*["\x27]?Bearer\s+[A-Za-z0-9._\-]{16,}')),
+          ]
+          hits = []
+          for f in files:
+              if f.endswith(('.png', '.wav', '.pdf', '.jar', '.bin', '.webp')):
+                  continue
+              with open(f, 'r', encoding='utf-8', errors='ignore') as fh:
+                  text = fh.read()
+              for label, pat in patterns:
+                  for m in pat.finditer(text):
+                      hits.append(f'{label} in {f}: {m.group(0)[:20]}...')
+          if hits:
+              print('\n'.join(hits))
+              sys.exit(1)
+          print(f'Secret hygiene scan passed across {len(files)} tracked files (0 leaks).')
+          PY
           if grep -q 'android.permission.INTERNET' app/src/main/AndroidManifest.xml; then
             echo "ERROR: Unexpected INTERNET permission found in AndroidManifest.xml!"
             exit 1
           fi
-          if ! grep -q 'android:allowBackup="false"' app/src/main/AndroidManifest.xml; then
-            echo "ERROR: android:allowBackup=\"false\" missing in AndroidManifest.xml!"
+          if grep -q 'android:debuggable="true"' app/src/main/AndroidManifest.xml; then
+            echo "ERROR: android:debuggable=\"true\" must never appear in AndroidManifest.xml!"
             exit 1
           fi
+          grep -q 'android:allowBackup="false"' app/src/main/AndroidManifest.xml
+          grep -q 'android:usesCleartextTraffic="false"' app/src/main/AndroidManifest.xml
+          grep -q 'isMinifyEnabled = true' app/build.gradle.kts
+          grep -q 'isShrinkResources = true' app/build.gradle.kts
+          grep -q 'isDebuggable = false' app/build.gradle.kts
+          grep -q -- '-repackageclasses' app/proguard-rules.pro
+          grep -q 'android.util.Log' app/proguard-rules.pro
 
-      - name: Run Unit & Integration Tests
+      - name: Offline AI/ML & Content Integrity Hygiene Check
+        run: |
+          set -euo pipefail
+          if git ls-files | grep -E '\.(litertlm|onnx|gguf|tflite)$|^material_bank/official_reference_pdfs/.*\.pdf$'; then
+            echo "ERROR: Large raw ML weights or copyrighted reference PDFs must stay outside Git!"
+            exit 1
+          fi
+          python3 - <<'PY'
+          import json
+          idx = json.load(open('packs/index.json', encoding='utf-8'))
+          packs = idx['packs'] if isinstance(idx, dict) else idx
+          assert len(packs) == 15, f'Expected 15 packs, found {len(packs)}'
+          ready = [p for p in packs if p.get('status') == 'READY']
+          assert len(ready) == 15, f'Expected 15 READY packs, found {len(ready)}'
+          bank = json.load(open('app/src/main/assets/material_bank/material_bank.json', encoding='utf-8'))
+          assert len(bank) >= 30, f'Expected >=30 material bank entries, found {len(bank)}'
+          print(f'Verified {len(ready)} READY packs and {len(bank)} Material Bank digests.')
+          PY
+
+      - name: Run Unit & Robolectric Compose Tests
         run: ./gradlew testDebugUnitTest --console=plain
 
       - name: Run Android Lint Security & Quality Gate
         run: ./gradlew lintDebug --console=plain
 
       - name: Build Hardened Release APK with R8 + Resource Shrinking
+        run: ./gradlew assembleRelease --console=plain
+
+      - name: Verify Compiled Release APK & R8 Mapping
         run: |
-          ./gradlew assembleRelease --console=plain
+          set -euo pipefail
+          APK=$(find app/build/outputs/apk/release -name "*.apk" | head -n 1)
+          test -s "$APK"
           test -s app/build/outputs/mapping/release/mapping.txt
-          test -s app/build/outputs/apk/release/app-release-unsigned.apk || test -s app/build/outputs/apk/release/app-release.apk
+          grep -q ' -> o\.' app/build/outputs/mapping/release/mapping.txt
+          AAPT2=$(find "$ANDROID_HOME/build-tools" -name aapt2 | sort -V | tail -n 1)
+          if "$AAPT2" dump permissions "$APK" | grep -q 'android.permission.INTERNET'; then
+            echo "ERROR: Compiled Release APK gained android.permission.INTERNET from dependencies!"
+            exit 1
+          fi
+          if "$AAPT2" dump badging "$APK" | grep -q 'application-debuggable'; then
+            echo "ERROR: Compiled Release APK is marked debuggable!"
+            exit 1
+          fi
+          echo "Verified R8 Release APK hygiene & zero INTERNET permission on $APK"
+
+      - name: Upload Verification Artifacts
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: devsecops-reports-${{ github.run_number }}
+          retention-days: 7
+          path: |
+            app/build/reports/lint-results-debug.html
+            app/build/reports/tests/testDebugUnitTest/
+            app/build/outputs/mapping/release/mapping.txt

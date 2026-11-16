@@ -3,8 +3,8 @@
 Status: Diverifikasi aktual pada **2026-11-16** (`v1.1.1` / `versionCode = 3` — JVM + Robolectric + Lint + Debug APK + R8 Release APK + Perangkat Fisik `SM-G988B` Android 13 `arm64-v8a`).
 
 ## 1. Spec-Driven Development & Arsitektur
-- [x] **Spec Kit** terpasang & terisi: `.specify/memory/constitution.md`, `specs/001`..`009` (`spec.md`, `plan.md`, `tasks.md`, `acceptance.md`).
-- [x] **BMAD Reviews**: `docs/reviews/bmad-{analyst-goals,architect-choices,ux-journeys,qa-coverage,security-devsecops,release-docs,epic-closure,material-bank-full-packs,uiux-responsive-icon}.md`.
+- [x] **Spec Kit** terpasang & terisi: `.specify/memory/constitution.md`, `specs/001`..`010` (`spec.md`, `plan.md`, `tasks.md`, `acceptance.md`).
+- [x] **BMAD Reviews**: `docs/reviews/bmad-{analyst-goals,architect-choices,ux-journeys,qa-coverage,security-devsecops,release-docs,epic-closure,material-bank-full-packs,uiux-responsive-icon,devsecops-ci-release}.md`.
 - [x] **QA & SBOM Traceability Ledger**: `docs/qa/EPIC_STATUS.md` & `docs/qa/LICENSE_AND_SBOM_AUDIT.md` (menilai jujur item terverifikasi vs item yang memerlukan bobot `.litertlm`/`.onnx` eksternal, Switch Access fisik, atau tinjauan ahli manusia untuk bank soal baru).
 - [x] **Clean MVVM + UDF + Single `:app` Module**: `ui -> domain <- data`, Hilt DI (`DatabaseModule`, `RepositoryModule`), DRY/KISS/SOLID/YAGNI/Ponytail.
 
@@ -36,7 +36,8 @@ Status: Diverifikasi aktual pada **2026-11-16** (`v1.1.1` / `versionCode = 3` �
 - [x] **R8 Full Mode + ProGuard + Resource Shrinking**: `isMinifyEnabled = true`, `isShrinkResources = true`, `proguard-android-optimize.txt`, `-repackageclasses 'o'`, `-renamesourcefileattribute "App"`, stripping `android.util.Log` (`v/d/i/w`), serta keep rule spesifik `@Serializable`/JNI/Room (`QuizGradingEngine -> o.Bd0`, `SafSecurityValidator -> o.ei0`, `AndroidAppIntegrityInspector -> o.a3` pada `mapping.txt`).
 - [x] **Hygiene Signing & Backup**: `.gitignore` mengecualikan `*.jks`, `*.keystore`, `*.p12`, `keystore.properties`; `app/build.gradle.kts` mendukung `keystore.properties` opsional + `EXPECTED_RELEASE_SIGNING_SHA256` tanpa hardcode rahasia; `android:allowBackup="false"` + aturan eksklusi XML penuh (`ALLOW_BACKUP` hilang dari `dumpsys package`).
 - [x] **RASP Integritas Lokal & Kriptografi Offline**: `AndroidAppIntegrityInspector` (`SecurityPostureEvaluator` — cek `FLAG_DEBUGGABLE`, debugger, SHA-256 sertifikat penandatangan, heuristik root, status `allowBackup`) tampil pada **Profil -> Keamanan & Integritas R8**; `DetachedSignatureVerifier` (`SHA256withECDSA`) & `AndroidKeystoreSealer` (`AES/GCM/NoPadding`) lulus uji JVM (`SecurityHardeningTest`). *(Catatan: pemeriksaan integritas sisi-klien offline berfungsi sebagai transparansi lokal; proteksi absolut tetap memerlukan kontrol server bila online).*
-- [x] **Pipeline DevSecOps CI**: `.github/workflows/android-devsecops.yml` (hygiene rahasia/manifest, `testDebugUnitTest`, `lintDebug`, `assembleRelease` R8 gate).
+- [x] **Pipeline DevSecOps CI & Guard ML Offline**: `.github/workflows/android-devsecops.yml` (`contents: read`, `gradlew` `100755`, regex credential scan, zero raw `.litertlm`/`.onnx`/PDF berhak cipta, SDK 35 + Gradle wrapper validation, sequential unit test, `lintDebug`, R8 `assembleRelease`, inspeksi biner `aapt2`).
+- [x] **Hardening R8 Release & Manifest (`specs/010`)**: `isDebuggable = false`, `isJniDebuggable = false`, `vcsInfo.include = false`, `DebugProbesKt.bin` strip, `android:usesCleartextTraffic="false"`, dan inspeksi `aapt2` biner APK membuktikan 0 `INTERNET` & 0 `application-debuggable`.
 
 ## 6. UI/UX Best Practices, Tap Budget & Pengujian Aktual
 - [x] **Tap Budget dari Beranda**: `<=1` tap ke Lanjutkan/Mulai Paket Utama & Tanya AI; `2` tap ke Ganti Jenis Ujian atau Mulai Paket Tryout; `<=3` tap ke Detail Modul Materi.
