@@ -108,8 +108,9 @@ jobs:
           ready = [p for p in packs if p.get('status') == 'READY']
           assert len(ready) == 15, f'Expected 15 READY packs, found {len(ready)}'
           bank = json.load(open('app/src/main/assets/material_bank/material_bank.json', encoding='utf-8'))
-          assert len(bank) >= 30, f'Expected >=30 material bank entries, found {len(bank)}'
-          print(f'Verified {len(ready)} READY packs and {len(bank)} Material Bank digests.')
+          entries = bank['entries'] if isinstance(bank, dict) else bank
+          assert len(entries) >= 30, f'Expected >=30 material bank entries, found {len(entries)}'
+          print(f'Verified {len(ready)} READY packs and {len(entries)} Material Bank digests.')
           PY
 
       - name: Run Unit & Robolectric Compose Tests
