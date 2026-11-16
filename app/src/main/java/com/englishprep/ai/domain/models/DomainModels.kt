@@ -13,7 +13,7 @@ enum class ExamId(
     ITP_L1(
         title = "TOEFL ITP Level 1",
         subtitle = "Listening, Structure & Written Expression, Reading",
-        scaleLabel = "310–677 (Estimasi Non-Resmi)",
+        scaleLabel = "Format 310-677 (Latihan memakai skor mentah)",
         officialReferenceUrl = "https://www.ets.org/toefl/itp/test-content.html",
         supportsWriting = false,
         supportsSpeaking = false,
@@ -21,15 +21,15 @@ enum class ExamId(
     IBT_2026(
         title = "TOEFL iBT (2026)",
         subtitle = "Post-Jan 2026: Reading, Listening, Writing, Speaking",
-        scaleLabel = "1–6 Band (Transisi 0–120 · Non-Resmi)",
+        scaleLabel = "Format 1-6 (Latihan non-adaptif, skor mentah)",
         officialReferenceUrl = "https://www.ets.org/toefl/test-takers/ibt/about/content.html?version=after-jan-2026",
         supportsWriting = true,
         supportsSpeaking = true,
     ),
     IELTS_ACADEMIC(
         title = "IELTS Academic",
-        subtitle = "Listening, Reading, Writing Tasks 1–2, Speaking Parts 1–3",
-        scaleLabel = "Band 0–9 (Estimasi Non-Resmi)",
+        subtitle = "Listening, Reading, Writing Tasks 1-2, Speaking Parts 1-3",
+        scaleLabel = "Format Band 0-9 (Latihan memakai skor mentah)",
         officialReferenceUrl = "https://ielts.org/take-a-test/test-types/ielts-academic-test",
         supportsWriting = true,
         supportsSpeaking = true,
@@ -178,10 +178,12 @@ data class ScoreEstimate(
     val examId: ExamId,
     val rawCorrect: Int,
     val rawTotal: Int,
+    val skippedCount: Int = 0,
     val accuracyPercent: Int,
     val primaryEstimateLabel: String,
     val secondaryNote: String,
     val officialEquivalent: Boolean = false,
+    val policyVersion: String = "v1.1-raw-deterministic",
 )
 
 data class SpeakingMetrics(

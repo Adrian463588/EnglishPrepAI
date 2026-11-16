@@ -178,6 +178,9 @@ interface ChatAndModelDao {
     @Upsert
     suspend fun insertMessage(message: ChatMessageEntity)
 
+    @Query("DELETE FROM chat_messages WHERE threadId = :threadId")
+    suspend fun clearThreadMessages(threadId: String)
+
     @Query("DELETE FROM chat_threads")
     suspend fun clearAllChatThreads()
 

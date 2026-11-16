@@ -107,6 +107,7 @@ interface AiAndImportRepository {
         citations: List<String> = emptyList(),
         modelId: String? = null,
     )
+    suspend fun clearThreadMessages(threadId: String)
     suspend fun importModelFileViaSaf(uriString: String, expectedFamily: String): Result<ModelInstallEntity>
     suspend fun importWhisperFolderViaSaf(treeUriString: String): Result<ModelInstallEntity>
     suspend fun importStudyPackViaSaf(uriString: String): Result<String>

@@ -129,4 +129,34 @@ class QuizGradingEngineTest {
         assertEquals(40, outcome.wordCount)
         assertFalse(outcome.meetsMinimumWords)
     }
+
+    @Test
+    fun `tfng ynng and short answer punctuation follow explicit normalization policy`() {
+        val tfng = QuestionItem(
+            id = "Q7",
+            packId = "IELTS-A-01",
+            section = ExamSection.READING,
+            taskType = TaskType.CHOICE_SINGLE,
+            prompt = "True / False / Not Given: statement",
+            options = listOf("True", "False", "Not Given"),
+            answer = "Not Given",
+            explanation = "No passage evidence.",
+            rationaleSource = "IELTS-MOD-03",
+        )
+        assertTrue((engine.grade(tfng, "ng") as GradingOutcome.Objective).isCorrect)
+        assertTrue((engine.grade(tfng, "NOT GIVEN.") as GradingOutcome.Objective).isCorrect)
+
+        val ynng = QuestionItem(
+            id = "Q8",
+            packId = "IELTS-A-01",
+            section = ExamSection.READING,
+            taskType = TaskType.FILL_BLANK,
+            prompt = "YES, NO or NOT GIVEN",
+            answer = "YES",
+            explanation = "Writer agrees.",
+            rationaleSource = "IELTS-MOD-03",
+        )
+        assertTrue((engine.grade(ynng, "y") as GradingOutcome.Objective).isCorrect)
+        assertTrue((engine.grade(ynng, "yes!") as GradingOutcome.Objective).isCorrect)
+    }
 }

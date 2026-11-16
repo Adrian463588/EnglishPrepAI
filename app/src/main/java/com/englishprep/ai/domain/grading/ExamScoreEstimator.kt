@@ -6,53 +6,44 @@ import javax.inject.Inject
 import javax.inject.Singleton
 import kotlin.math.roundToInt
 
+/**
+ * Computes deterministic raw objective accuracy metrics without fabricating
+ * uncalibrated scaled scores (310-677, 1-6/0-120, or official IELTS bands).
+ */
 @Singleton
 class ExamScoreEstimator @Inject constructor() {
 
-    fun estimate(examId: ExamId, rawCorrect: Int, rawTotal: Int): ScoreEstimate {
+    fun estimate(
+        examId: ExamId,
+        rawCorrect: Int,
+        rawTotal: Int,
+        skippedCount: Int = 0,
+    ): ScoreEstimate {
         val safeTotal = rawTotal.coerceAtLeast(1)
         val ratio = (rawCorrect.toFloat() / safeTotal.toFloat()).coerceIn(0f, 1f)
         val pct = (ratio * 100f).roundToInt()
 
-        return when (examId) {
-            ExamId.ITP_L1 -> {
-                val estScore = (310f + ratio * (677f - 310f)).roundToInt().coerceIn(310, 677)
-                ScoreEstimate(
-                    examId = examId,
-                    rawCorrect = rawCorrect,
-                    rawTotal = rawTotal,
-                    accuracyPercent = pct,
-                    primaryEstimateLabel = "Est. ITP $estScore / 677",
-                    secondaryNote = "Estimasi non-resmi ($rawCorrect/$rawTotal benar); konversi skor ITP resmi memerlukan tabel ETS berlisensi.",
-                    officialEquivalent = false,
-                )
-            }
-            ExamId.IBT_2026 -> {
-                val bandRaw = (1.0 + ratio * 5.0).coerceIn(1.0, 6.0)
-                val roundedHalf = (bandRaw * 2.0).roundToInt() / 2.0
-                val legacyApprox = (roundedHalf / 6.0 * 120.0).roundToInt()
-                ScoreEstimate(
-                    examId = examId,
-                    rawCorrect = rawCorrect,
-                    rawTotal = rawTotal,
-                    accuracyPercent = pct,
-                    primaryEstimateLabel = "Est. $roundedHalf / 6 (≈$legacyApprox/120)",
-                    secondaryNote = "Ringkasan akurasi latihan non-resmi; ujian iBT 2026 bersifat adaptif sehingga rumus lokal tidak mereplikasi skor resmi ETS.",
-                    officialEquivalent = false,
-                )
-            }
-            ExamId.IELTS_ACADEMIC -> {
-                val band = ((ratio * 9.0) * 2.0).roundToInt() / 2.0
-                ScoreEstimate(
-                    examId = examId,
-                    rawCorrect = rawCorrect,
-                    rawTotal = rawTotal,
-                    accuracyPercent = pct,
-                    primaryEstimateLabel = "Est. Band ${"%.1f".format(band)} / 9.0",
-                    secondaryNote = "Estimasi objektif non-resmi ($rawCorrect/$rawTotal benar); komponen Writing/Speaking dinilai terpisah dengan rubrik.",
-                    officialEquivalent = false,
-                )
-            }
+        val primaryLabel = "Skor Mentah: $rawCorrect/$rawTotal ($pct%)"
+        val note = when (examId) {
+            ExamId.ITP_L1 -> "Skor latihan mentah non-resmi ($rawCorrect/$rawTotal benar, $skippedCount dilewati); tabel konversi ETS ITP 310-677 berlisensi tidak disertakan."
+            ExamId.IBT_2026 -> "Ringkasan akurasi latihan non-resmi ($rawCorrect/$rawTotal benar, $skippedCount dilewati); ujian iBT 2026 bersifat adaptif dan aplikasi tidak mereplikasi skala 1-6/0-120 resmi ETS."
+            ExamId.IELTS_ACADEMIC -> "Skor latihan objektif non-resmi ($rawCorrect/$rawTotal benar, $skippedCount dilewati); penilaian Writing/Speaking menggunakan komentar rubrik terpisah, bukan Band resmi."
         }
+
+        return ScoreEstimate(
+            examId = examId,
+            rawCorrect = rawCorrect,
+            rawTotal = rawTotal,
+            skippedCount = skippedCount,
+            accuracyPercent = pct,
+            primaryEstimateLabel = primaryLabel,
+            secondaryNote = note,
+            officialEquivalent = false,
+            policyVersion = POLICY_VERSION,
+        )
+    }
+
+    companion object {
+        const val POLICY_VERSION = "v1.1-raw-deterministic"
     }
 }

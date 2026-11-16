@@ -21,6 +21,8 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material.icons.automirrored.filled.Chat
+import androidx.compose.material.icons.filled.Bookmark
+import androidx.compose.material.icons.filled.BookmarkBorder
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.FilterChip
@@ -38,6 +40,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.semantics.heading
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.unit.dp
@@ -52,6 +55,7 @@ import com.englishprep.ai.ui.components.InlineFeedback
 import com.englishprep.ai.ui.components.ModuleRow
 import com.englishprep.ai.ui.components.QuestionCard
 import com.englishprep.ai.ui.components.SectionHeading
+import com.englishprep.ai.ui.components.SelectableOptionRow
 import com.englishprep.ai.ui.theme.AppSpacing
 
 @Composable
@@ -63,6 +67,7 @@ fun LearnRoute(
     LearnScreen(
         state = state,
         onSelectSection = viewModel::selectSection,
+        onToggleBookmarked = viewModel::toggleBookmarkFilter,
         onOpenModule = onOpenModule,
     )
 }
@@ -73,6 +78,7 @@ fun LearnScreen(
     state: LearnUiState,
     onSelectSection: (ExamSection?) -> Unit,
     onOpenModule: (String) -> Unit,
+    onToggleBookmarked: () -> Unit = {},
     modifier: Modifier = Modifier,
 ) {
     if (state.isLoading) {
@@ -126,14 +132,43 @@ fun LearnScreen(
                     )
                     availableSections.forEach { sec ->
                         FilterChip(
-                            selected = state.selectedSection == sec,
+                            selected = !state.bookmarkedOnly && state.selectedSection == sec,
                             onClick = { onSelectSection(sec) },
                             label = { Text(sec.label) },
                             modifier = Modifier.defaultMinSize(minHeight = AppSpacing.minTouchTarget),
                         )
                     }
+                    FilterChip(
+                        selected = state.bookmarkedOnly,
+                        onClick = onToggleBookmarked,
+                        label = { Text("Tersimpan (${state.bookmarkedIds.size})") },
+                        modifier = Modifier.defaultMinSize(minHeight = AppSpacing.minTouchTarget),
+                    )
+                }
+                state.lastReadModuleId?.let { lastId ->
+                    Spacer(modifier = Modifier.height(AppSpacing.xs))
+                    Text(
+                        text = "Terakhir dibaca: $lastId",
+                        style = MaterialTheme.typography.labelMedium,
+                        color = MaterialTheme.colorScheme.primary,
+                    )
                 }
                 Spacer(modifier = Modifier.height(AppSpacing.sm))
+            }
+        }
+
+        if (state.modules.isEmpty()) {
+            item {
+                Text(
+                    text = if (state.bookmarkedOnly) {
+                        "Belum ada modul yang ditandai. Ketuk ikon Bookmark di dalam modul untuk menyimpannya."
+                    } else {
+                        "Tidak ada modul pada kategori ini."
+                    },
+                    style = MaterialTheme.typography.bodyMedium,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    modifier = Modifier.padding(AppSpacing.md),
+                )
             }
         }
 
@@ -157,6 +192,7 @@ fun ModuleDetailRoute(
     ModuleDetailScreen(
         state = state,
         onBack = onBack,
+        onToggleBookmark = viewModel::toggleBookmark,
         onAskTutor = { state.module?.id?.let(onAskTutor) },
         onAnswerDrill = viewModel::answerDrill,
         onCheckDrill = viewModel::checkDrill,
@@ -179,6 +215,7 @@ fun ModuleDetailScreen(
     onReplayAudio: () -> Unit,
     onSeekAudio: (Long) -> Unit,
     onSetSpeed: (Float) -> Unit,
+    onToggleBookmark: () -> Unit = {},
     modifier: Modifier = Modifier,
 ) {
     Scaffold(
@@ -194,6 +231,16 @@ fun ModuleDetailScreen(
                     }
                 },
                 actions = {
+                    IconButton(
+                        onClick = onToggleBookmark,
+                        modifier = Modifier.defaultMinSize(minWidth = AppSpacing.minTouchTarget, minHeight = AppSpacing.minTouchTarget),
+                    ) {
+                        Icon(
+                            imageVector = if (state.isBookmarked) Icons.Default.Bookmark else Icons.Default.BookmarkBorder,
+                            contentDescription = if (state.isBookmarked) "Hapus bookmark modul" else "Simpan bookmark modul",
+                            tint = if (state.isBookmarked) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.onSurfaceVariant,
+                        )
+                    }
                     TextButton(
                         onClick = onAskTutor,
                         modifier = Modifier.defaultMinSize(minHeight = AppSpacing.minTouchTarget),
@@ -230,7 +277,7 @@ fun ModuleDetailScreen(
                 )
                 Spacer(modifier = Modifier.height(AppSpacing.xs))
                 Text(
-                    text = "${mod.section.label} • ${mod.difficulty} • ${mod.estimatedMinutes}m • Sumber: ${mod.provenance}",
+                    text = "${mod.section.label} • ${mod.difficulty} • ${mod.estimatedMinutes}m • v1.0 • Lisensi: ${mod.license} (${mod.provenance})",
                     style = MaterialTheme.typography.labelMedium,
                     color = MaterialTheme.colorScheme.onSurfaceVariant,
                 )
@@ -332,17 +379,13 @@ fun ModuleDetailScreen(
                     } else {
                         drill.options.forEach { option ->
                             val isSelected = userAnswer == option
-                            Row(
-                                verticalAlignment = Alignment.CenterVertically,
-                                modifier = Modifier
-                                    .fillMaxWidth()
-                                    .defaultMinSize(minHeight = AppSpacing.minTouchTarget)
-                                    .clickable { onAnswerDrill(drill.id, option) }
-                                    .padding(vertical = AppSpacing.xs),
+                            SelectableOptionRow(
+                                selected = isSelected,
+                                label = option,
+                                role = Role.RadioButton,
+                                onClick = { onAnswerDrill(drill.id, option) },
                             ) {
-                                RadioButton(selected = isSelected, onClick = { onAnswerDrill(drill.id, option) })
-                                Spacer(modifier = Modifier.width(AppSpacing.sm))
-                                Text(text = option, style = MaterialTheme.typography.bodyLarge)
+                                RadioButton(selected = isSelected, onClick = null)
                             }
                         }
                     }

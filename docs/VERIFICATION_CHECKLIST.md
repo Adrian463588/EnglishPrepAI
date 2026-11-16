@@ -3,8 +3,9 @@
 Status: Diverifikasi aktual pada **2026-11-16** (JVM + Robolectric + Lint + Debug APK + Perangkat Fisik `SM-G988B` Android 13 `arm64-v8a`).
 
 ## 1. Spec-Driven Development & Arsitektur
-- [x] **Spec Kit** terpasang & terisi: `.specify/memory/constitution.md`, `specs/001`..`006` (`spec.md`, `plan.md`, `tasks.md`, `acceptance.md`).
-- [x] **BMAD Reviews**: `docs/reviews/bmad-{analyst-goals,architect-choices,ux-journeys,qa-coverage,security-devsecops,release-docs}.md`.
+- [x] **Spec Kit** terpasang & terisi: `.specify/memory/constitution.md`, `specs/001`..`007` (`spec.md`, `plan.md`, `tasks.md`, `acceptance.md`).
+- [x] **BMAD Reviews**: `docs/reviews/bmad-{analyst-goals,architect-choices,ux-journeys,qa-coverage,security-devsecops,release-docs,epic-closure}.md`.
+- [x] **QA & SBOM Traceability Ledger**: `docs/qa/EPIC_STATUS.md` & `docs/qa/LICENSE_AND_SBOM_AUDIT.md` (menilai jujur item terverifikasi vs item yang memerlukan bobot `.litertlm`/`.onnx` eksternal atau penulisan full-pack 140/120/85 butir).
 - [x] **Clean MVVM + UDF + Single `:app` Module**: `ui -> domain <- data`, Hilt DI (`DatabaseModule`, `RepositoryModule`), DRY/KISS/SOLID/YAGNI/Ponytail.
 
 ## 2. Materi, Soal Tryout & Media Offline
@@ -37,10 +38,10 @@ Status: Diverifikasi aktual pada **2026-11-16** (JVM + Robolectric + Lint + Debu
 - [x] **Anti-AI-Slop & Micro-Interactions**: Desain editorial tenang beraksen *deep teal*, transisi `NavHost` + `AnimatedContent` antar soal + sorotan opsi animatif `SelectableOptionRow`, kontrol `hapticsEnabled` & *reduce motion* terhubung di `SemanticStatusColors`, tanpa gradien mencolok, tanpa deretan chip di atas pesan Chat, tanpa tombol mengambang di layar ujian, `imePadding()`, target sentuh `>=48dp`, *font scale* `2.0x` teruji.
 - [x] **Izin & Offline-First**: `dumpsys package` memastikan `android.permission.INTERNET` **tidak** diminta (`RECORD_AUDIO`, `POST_NOTIFICATIONS`, `WAKE_LOCK`, `ACCESS_NETWORK_STATE`, `RECEIVE_BOOT_COMPLETED` saja); `RECORD_AUDIO` dan `POST_NOTIFICATIONS` diminta just-in-time.
 - [x] **Hasil Pengujian Terakhir**:
-  - `.\gradlew.bat testDebugUnitTest`: **27/27 lulus** (0 gagal, 0 error, 0 dilewati — termasuk `ToeflSessionFlowIntegrationTest` & `SecurityHardeningTest`).
-  - `.\gradlew.bat lintDebug`: **0 error**, 74 warning.
-  - `.\gradlew.bat assembleDebug` (`174.8 MB`) & `.\gradlew.bat assembleRelease` (`154.4 MB` — **menyusut ~20.4 MB via R8 + shrinkResources**): **sukses** dengan `mapping.txt` terverifikasi.
-  - Uji perangkat fisik (`SM-G988B`, Android 13 `arm64-v8a`): Debug (`1374 ms` cold start, full TOEFL ITP flow `8/12 benar`, `Est. ITP 555 / 677`, `ProgressScreen` 66% + weak modules) DAN **R8 Release** (`307 ms` cold start, **Profil -> Keamanan & Integritas R8** menampilkan `Mode Release (R8/ProGuard Aktif)` + `Backup OS: Nonaktif`, pemutaran WAV + `Cek` `Benar` berjalan crash-free di `logcat`).
+  - `.\gradlew.bat testDebugUnitTest`: **34/34 lulus** (0 gagal, 0 error, 0 dilewati — termasuk `ToeflSessionFlowIntegrationTest`, `RoomIntegrityAndRecoveryTest`, `SecurityHardeningTest`, dan 8 `UiAndAccessibilityTest`).
+  - `.\gradlew.bat lintDebug`: **0 error**, 78 warning.
+  - `.\gradlew.bat assembleDebug` (`174,932,472` byte) & `.\gradlew.bat assembleRelease` (`154,405,955` byte — **menyusut ~20.5 MB via R8 + shrinkResources**): **sukses** dengan `mapping.txt` terverifikasi.
+  - Uji perangkat fisik (`SM-G988B`, Android 13 `arm64-v8a`): R8 Release (`195–366 ms` cold start) memverifikasi Home polish, Bookmark & Last Read modul, Sample strict guard, Audio Media3 + transkrip mode Latihan, dialog konfirmasi belum dijawab, `ResultsScreen` skor mentah (`Skor Mentah: 7/12 (58%)` + `Dilewati: 1` + `v1.1-raw-deterministic`), `ProgressScreen` (`58%`, modul lemah `ITP-MOD-02..05`), dan status R8 tanpa crash di `logcat`.
 
 ## 7. Repository GitHub, README & Release (`specs/006`)
 - [x] **Repository GitHub (`gh`)**: `https://github.com/Adrian463588/EnglishPrepAI` (publik, branch default `main`), terisi deskripsi resmi & 15 topics (`android`, `jetpack-compose`, `kotlin`, `toefl`, `ielts`, `offline-first`, `on-device-ai`, `gemma-4`, `whisper-onnx`, `r8-proguard`, `devsecops`, `clean-architecture`, `mvvm`, `room-database`, `spec-driven-development`).

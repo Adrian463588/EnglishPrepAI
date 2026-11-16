@@ -132,7 +132,7 @@ class ToeflSessionFlowIntegrationTest {
         }
 
         val overallEst = scoreEstimator.estimate(ExamId.ITP_L1, totalCorrect, totalObj)
-        assertTrue(overallEst.primaryEstimateLabel.startsWith("Est. ITP "))
+        assertTrue(overallEst.primaryEstimateLabel.contains("9/12"))
         assertEquals(9, totalCorrect)
         assertEquals(12, totalObj)
         assertEquals(75, overallEst.accuracyPercent)

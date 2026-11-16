@@ -9,8 +9,10 @@ import com.englishprep.ai.domain.ai.GroundedTutorPromptBuilder
 import com.englishprep.ai.domain.engines.LlmModelState
 import com.englishprep.ai.domain.engines.LocalLlmEngine
 import com.englishprep.ai.domain.models.ExamId
+import com.englishprep.ai.domain.models.ExamMode
 import com.englishprep.ai.domain.repositories.AiAndImportRepository
 import com.englishprep.ai.domain.repositories.ExamCatalogRepository
+import com.englishprep.ai.domain.repositories.SessionProgressRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.Job
@@ -22,7 +24,6 @@ import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.flatMapLatest
 import kotlinx.coroutines.flow.flowOf
 import kotlinx.coroutines.flow.stateIn
-import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
@@ -35,6 +36,7 @@ data class ChatUiState(
     val llmState: LlmModelState = LlmModelState.Unloaded,
     val draftInput: String = "",
     val contextSourceId: String? = null,
+    val strictMockActive: Boolean = false,
 )
 
 @OptIn(ExperimentalCoroutinesApi::class)
@@ -43,6 +45,7 @@ class ChatViewModel @Inject constructor(
     savedStateHandle: SavedStateHandle,
     private val preferences: UserPreferencesRepository,
     private val catalogRepository: ExamCatalogRepository,
+    private val sessionRepository: SessionProgressRepository,
     private val aiRepository: AiAndImportRepository,
     private val llmEngine: LocalLlmEngine,
     private val promptBuilder: GroundedTutorPromptBuilder,
@@ -64,8 +67,10 @@ class ChatViewModel @Inject constructor(
         },
         llmEngine.state,
         draft,
-        combine(streamingText, generating) { s, g -> s to g },
-    ) { settings, msgs, llm, inputText, (stream, isGen) ->
+        combine(streamingText, generating, sessionRepository.observeLatestActiveSession()) { s, g, active ->
+            Triple(s, g, active?.mode == ExamMode.STRICT.name && active.state == "ACTIVE")
+        },
+    ) { settings, msgs, llm, inputText, (stream, isGen, isStrict) ->
         ChatUiState(
             selectedExam = settings.selectedExam,
             threadId = activeThreadId.value,
@@ -75,6 +80,7 @@ class ChatViewModel @Inject constructor(
             llmState = llm,
             draftInput = inputText,
             contextSourceId = initialContextId,
+            strictMockActive = isStrict,
         )
     }.stateIn(
         scope = viewModelScope,
@@ -94,9 +100,17 @@ class ChatViewModel @Inject constructor(
         draft.value = text
     }
 
+    fun clearConversation() {
+        cancelGeneration()
+        val tid = activeThreadId.value ?: return
+        viewModelScope.launch {
+            aiRepository.clearThreadMessages(tid)
+        }
+    }
+
     fun sendMessage() {
         val query = draft.value.trim()
-        if (query.isEmpty() || generating.value) return
+        if (query.isEmpty() || generating.value || uiState.value.strictMockActive) return
         draft.value = ""
 
         generationJob = viewModelScope.launch {

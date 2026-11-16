@@ -55,6 +55,7 @@ fun ChatRoute(
         onDraftChange = viewModel::updateDraft,
         onSend = viewModel::sendMessage,
         onCancel = viewModel::cancelGeneration,
+        onClearChat = viewModel::clearConversation,
     )
 }
 
@@ -67,6 +68,7 @@ fun ChatScreen(
     onDraftChange: (String) -> Unit,
     onSend: () -> Unit,
     onCancel: () -> Unit,
+    onClearChat: () -> Unit = {},
     modifier: Modifier = Modifier,
 ) {
     val modelStatusLabel = when (val llm = state.llmState) {
@@ -98,6 +100,14 @@ fun ChatScreen(
                     }
                 },
                 actions = {
+                    if (state.messages.isNotEmpty()) {
+                        TextButton(
+                            onClick = onClearChat,
+                            modifier = Modifier.defaultMinSize(minHeight = AppSpacing.minTouchTarget),
+                        ) {
+                            Text("Bersihkan")
+                        }
+                    }
                     if (state.llmState !is LlmModelState.Ready) {
                         TextButton(
                             onClick = onOpenProfileAi,
@@ -122,7 +132,16 @@ fun ChatScreen(
                         OutlinedTextField(
                             value = state.draftInput,
                             onValueChange = onDraftChange,
-                            placeholder = { Text("Tanya materi ${state.selectedExam.title}...") },
+                            enabled = !state.strictMockActive,
+                            placeholder = {
+                                Text(
+                                    if (state.strictMockActive) {
+                                        "Tutor dikunci selama Simulasi Strict aktif"
+                                    } else {
+                                        "Tanya materi ${state.selectedExam.title}..."
+                                    },
+                                )
+                            },
                             maxLines = 4,
                             modifier = Modifier.weight(1f),
                         )
@@ -137,7 +156,7 @@ fun ChatScreen(
                         } else {
                             IconButton(
                                 onClick = onSend,
-                                enabled = state.draftInput.isNotBlank(),
+                                enabled = state.draftInput.isNotBlank() && !state.strictMockActive,
                                 modifier = Modifier.defaultMinSize(minWidth = AppSpacing.minTouchTarget, minHeight = AppSpacing.minTouchTarget),
                             ) {
                                 Icon(Icons.AutoMirrored.Filled.Send, contentDescription = "Kirim pertanyaan")
@@ -157,6 +176,28 @@ fun ChatScreen(
             contentPadding = PaddingValues(AppSpacing.md),
             verticalArrangement = Arrangement.spacedBy(AppSpacing.sm),
         ) {
+            if (state.strictMockActive) {
+                item {
+                    Surface(
+                        shape = MaterialTheme.shapes.medium,
+                        color = MaterialTheme.colorScheme.tertiaryContainer,
+                        border = BorderStroke(1.dp, MaterialTheme.colorScheme.outline),
+                        modifier = Modifier.fillMaxWidth(),
+                    ) {
+                        Column(modifier = Modifier.padding(AppSpacing.md)) {
+                            Text(
+                                text = "Mode Simulasi Strict Sedang Aktif",
+                                style = MaterialTheme.typography.titleMedium,
+                            )
+                            Spacer(modifier = Modifier.height(AppSpacing.xs))
+                            Text(
+                                text = "Tutor AI dinonaktifkan sementara selama sesi ujian Strict berlangsung agar hasil latihan tetap jujur.",
+                                style = MaterialTheme.typography.bodyMedium,
+                            )
+                        }
+                    }
+                }
+            }
             if (state.messages.isEmpty() && state.streamingReply.isEmpty()) {
                 item {
                     Surface(

@@ -195,8 +195,23 @@ class QuizGradingEngine @Inject constructor() {
     )
 
     companion object {
-        fun normalizeText(input: String): String =
-            input.trim().lowercase().replace(Regex("\\s+"), " ")
+        private val TRAILING_PUNCTUATION = Regex("[.!?,:;]+$")
+
+        fun normalizeText(input: String): String {
+            val cleaned = input.trim()
+                .lowercase()
+                .replace(Regex("\\s+"), " ")
+                .replace(TRAILING_PUNCTUATION, "")
+                .trim()
+            return when (cleaned) {
+                "t" -> "true"
+                "f" -> "false"
+                "ng" -> "not given"
+                "y" -> "yes"
+                "n" -> "no"
+                else -> cleaned
+            }
+        }
 
         fun splitPipeSet(input: String): Set<String> =
             input.split("|").map(::normalizeText).filter { it.isNotEmpty() }.toSet()

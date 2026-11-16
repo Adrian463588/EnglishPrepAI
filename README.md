@@ -4,8 +4,8 @@
 >
 > **Unduhan APK Terbaru (GitHub Releases):**
 > - **Halaman Rilis:** [English Prep AI v1.0.0 Release](https://github.com/Adrian463588/EnglishPrepAI/releases/latest)
-> - **Unduh Langsung APK (`166.7 MB`, Universal 4-ABI, Sideload QA Build):** [`EnglishPrepAI-v1.0.0-universal-debug.apk`](https://github.com/Adrian463588/EnglishPrepAI/releases/download/v1.0.0/EnglishPrepAI-v1.0.0-universal-debug.apk)
-> - **SHA-256 Checksum:** `FDBFD27005EF2CED76CC90C233F3806B0217996D9010DA9AC0775B118E0025E1`
+> - **Unduh Langsung APK (`166.8 MB`, Universal 4-ABI, Sideload QA Build):** [`EnglishPrepAI-v1.0.0-universal-debug.apk`](https://github.com/Adrian463588/EnglishPrepAI/releases/download/v1.0.0/EnglishPrepAI-v1.0.0-universal-debug.apk)
+> - **SHA-256 Checksum:** `4EEBB1B88966685A81E4F278157806BC0D7AFB195EC115A11790B49B99A3F2DA`
 > - **Build Rilis R8 / Play Store:** R8, ProGuard, dan Resource Shrinking aktif pada varian `release` (`isMinifyEnabled = true`, `isShrinkResources = true`). Developer dapat membangun `.apk` rilis yang ditandatangani dengan `keystore.properties` pribadi lewat `./gradlew assembleRelease`.
 
 ---
@@ -51,7 +51,7 @@ Seluruh tangkapan layar di bawah diambil langsung dari perangkat fisik **Samsung
 | Daftar 5 paket tryout (Practice) | Simulasi exam & audio Media3 | Skor & pembahasan per butir | Analitik progres lokal |
 | :---: | :---: | :---: | :---: |
 | ![Daftar Paket](docs/screenshots/05-practice-packs.png) | ![Exam Listening Audio](docs/screenshots/06-exam-listening.png) | ![Hasil dan Pembahasan](docs/screenshots/07-results.png) | ![Analitik Progres](docs/screenshots/08-progress-analytics.png) |
-| Label jujur `Sample` per paket, durasi, ukuran audio, serta pilihan Mode Latihan & Strict. | Pemutar audio Media3 (`0.85x-1.25x`), opsi beranimasi, serta umpan balik cepat `Cek`. | Estimasi skor non-resmi (`Est. ITP 555/677`), akurasi per seksi, pembahasan, & `Ulangi Soal Salah`. | Akurasi objektif lokal, rincian per seksi, deteksi modul lemah `<80%`, dan riwayat sesi. |
+| Label jujur `Sample` per paket, durasi, ukuran audio, serta Mode Latihan & Tryout Strict. | Pemutar audio Media3 (`0.85x-1.25x`), opsi beranimasi, transkrip mode Latihan & `Cek`. | Skor mentah non-resmi (`Skor Mentah: 7/12`), jumlah dilewati, pembahasan, & `Ulangi Soal Salah`. | Akurasi objektif lokal, rincian per seksi, deteksi modul lemah `<80%`, dan riwayat sesi. |
 
 ### AI offline, SAF import, R8 & pengaturan privasi
 
@@ -76,10 +76,12 @@ EnglishPrepAI/
 │   ├── 003-offline-ai-saf-gemma4-whisper/ # Spec, plan, tasks, acceptance: Gemma 4, Whisper ONNX, SAF
 │   ├── 004-progress-analytics-uiux-a11y/  # Spec, plan, tasks, acceptance: Analytics, Compose a11y
 │   ├── 005-devsecops-r8-hardening/        # Spec, plan, tasks, acceptance: R8/ProGuard, RASP, Keystore
-│   └── 006-github-repo-docs-release/      # Spec, plan, tasks, acceptance: Repo GitHub, README & Release
+│   ├── 006-github-repo-docs-release/      # Spec, plan, tasks, acceptance: Repo GitHub, README & Release
+│   └── 007-epic-audit-polish-gates/       # Spec, plan, tasks, acceptance: Audit EPIC-00..21 & anti-slop craft
 ├── docs/
-│   ├── reviews/                           # Laporan tinjauan BMAD (Analyst, Architect, UX, QA, Security, Release)
-│   ├── screenshots/                       # Tangkapan layar nyata dari perangkat fisik SM-G988B
+│   ├── qa/                                # EPIC_STATUS.md (matrix bukti) & LICENSE_AND_SBOM_AUDIT.md
+│   ├── reviews/                           # Laporan tinjauan BMAD (Analyst, Architect, UX, QA, Security, Release, Closure)
+│   ├── screenshots/                       # 11 tangkapan layar nyata dari perangkat fisik SM-G988B
 │   ├── REFERENCES.md                      # Katalog model Hugging Face, dataset terbuka & referensi GitHub
 │   └── VERIFICATION_CHECKLIST.md          # Checklist bukti uji unit, lint, R8 & perangkat fisik
 ├── content/
@@ -163,7 +165,7 @@ Prasyarat: **JDK 17**, Android SDK (Compile SDK 35), dan Python 3 (opsional bila
 git clone https://github.com/Adrian463588/EnglishPrepAI.git
 cd EnglishPrepAI
 
-# 2. Jalankan seluruh unit test & Robolectric Compose UI test (27 tests)
+# 2. Jalankan seluruh unit test & Robolectric Compose UI test (34 tests)
 ./gradlew testDebugUnitTest
 
 # 3. Jalankan pemeriksaan Android Lint
@@ -245,7 +247,7 @@ Menyimpan preferensi ringan non-relasional: `selected_exam`, `language`, `audio_
 
 ## Ringkasan keamanan & DevSecOps
 
-- **R8 + ProGuard Full Optimization**: Aktif pada build `release` ([`proguard-rules.pro`](app/proguard-rules.pro)) dengan `-repackageclasses 'o'`, redaksi `SourceFile`, dan stripping `android.util.Log` (`v`/`d`/`i`/`w`), mengurangi ukuran APK dari `174.8 MB` (debug) ke `154.4 MB` (unsigned release).
+- **R8 + ProGuard Full Optimization**: Aktif pada build `release` ([`proguard-rules.pro`](app/proguard-rules.pro)) dengan `-repackageclasses 'o'`, redaksi `SourceFile`, dan stripping `android.util.Log` (`v`/`d`/`i`/`w`), mengurangi ukuran APK dari `174.9 MB` (debug) ke `154.4 MB` (unsigned release).
 - **Kebijakan Privasi Offline & Backup**: `INTERNET` permission tidak pernah dideklarasikan di [`AndroidManifest.xml`](app/src/main/AndroidManifest.xml), `android:allowBackup="false"`, serta eksklusi penuh `database`, `sharedpref`, dan `file` pada aturan backup XML.
 - **RASP & Kriptografi Lokal**: `AndroidAppIntegrityInspector` membaca flag debuggable, status debugger, heuristik root dasar, status `allowBackup`, dan SHA-256 sertifikat penandatangan. Verifikasi paket eksternal bertanda tangan memakai `DetachedSignatureVerifier` (`SHA256withECDSA`), sementara kunci lokal memakai `AndroidKeystoreSealer` (`AES/GCM/NoPadding` pada `AndroidKeyStore`).
 - **Catatan batas objektif**: Aplikasi yang berjalan 100% offline tanpa server tepercaya tidak dapat menjamin perlindungan mutlak terhadap pemodifikasian binary pada perangkat yang telah di-root. Kontrol di atas bertujuan meningkatkan transparansi integritas lokal dan biaya analisis balik.
@@ -254,11 +256,11 @@ Menyimpan preferensi ringan non-relasional: `selected_exam`, `language`, `audio_
 
 ## Daftar checklist implementasi & verifikasi
 
-Dokumen rinci tersedia pada [VERIFICATION_CHECKLIST.md](docs/VERIFICATION_CHECKLIST.md) dan referensi model/dataset/repo di [REFERENCES.md](docs/REFERENCES.md).
+Dokumen rinci tersedia pada [VERIFICATION_CHECKLIST.md](docs/VERIFICATION_CHECKLIST.md), [EPIC_STATUS.md](docs/qa/EPIC_STATUS.md), audit lisensi pada [LICENSE_AND_SBOM_AUDIT.md](docs/qa/LICENSE_AND_SBOM_AUDIT.md), dan referensi model/dataset/repo di [REFERENCES.md](docs/REFERENCES.md).
 
-- [x] **Spec-Driven Development**: Konstitusi Spec Kit (`.specify/memory/constitution.md`), 6 fitur terdokumentasi di `specs/001` sampai `specs/006`, serta 6 laporan tinjauan BMAD di `docs/reviews/`.
-- [x] **Materi & Bank Tryout Offline**: 18 modul, 54 drill interaktif, 15 paket soal (`Sample`) across TOEFL ITP Level 1, TOEFL iBT (2026), IELTS Academic, serta 62 berkas WAV offline.
-- [x] **Mesin Inti Aplikasi**: `QuizGradingEngine` (10 tipe tugas), `ExamScoreEstimator` (non-resmi), `Media3AudioEngine` (ExoPlayer `1.5.1`), `WavAudioRecorder`, `WhisperOnnxSpeechEngine` (ORT `1.22.0`), `LiteRtLmGemma4Engine` (`0.13.1`), FTS4 RAG fallback, Room `@Upsert` DB + DataStore, `SafSecurityValidator`, dan `ProgressScreen`.
+- [x] **Spec-Driven Development**: Konstitusi Spec Kit (`.specify/memory/constitution.md`), 7 fitur terdokumentasi di `specs/001` sampai `specs/007`, serta 7 laporan tinjauan BMAD di `docs/reviews/`.
+- [x] **Materi & Bank Tryout Offline**: 18 modul (dengan bookmark & last-read), 54 drill interaktif, 15 paket soal (`Sample`) across TOEFL ITP Level 1, TOEFL iBT (2026), IELTS Academic, serta 62 berkas WAV offline.
+- [x] **Mesin Inti Aplikasi**: `QuizGradingEngine` (10 tipe tugas + normalisasi `TFNG`/`YNNG`), `PackIntegrityValidator` (15 paket valid), `ExamScoreEstimator` (skor mentah deterministik non-resmi `v1.1-raw-deterministic`), `Media3AudioEngine` (ExoPlayer `1.5.1` + transkrip mode Latihan), `WavAudioRecorder` + hapus rekaman, `WhisperOnnxSpeechEngine` (ORT `1.22.0`), `LiteRtLmGemma4Engine` (`0.13.1`), FTS4 RAG fallback (dengan lock Strict Mode), Room `@Upsert` DB + DataStore, `SafSecurityValidator`, dan `ProgressScreen`.
 - [x] **DevSecOps, R8 & RASP**: `isMinifyEnabled = true`, `isShrinkResources = true`, ProGuard hardening, `allowBackup="false"`, ECDSA & AES-GCM, Workflow CI GitHub Actions (`.github/workflows/android-devsecops.yml`).
-- [x] **Pengujian Terverifikasi**: 27/27 unit & Robolectric UI tests lulus (`testDebugUnitTest`), `lintDebug` 0 error, `assembleDebug` & R8 `assembleRelease` sukses (`mapping.txt` terverifikasi), dan QA fisik pada `SM-G988B` (Debug & R8 Release).
+- [x] **Pengujian Terverifikasi**: 34/34 unit, DB recovery & Robolectric Compose UI tests lulus (`testDebugUnitTest`), `lintDebug` 0 error, `assembleDebug` & R8 `assembleRelease` sukses (`mapping.txt` terverifikasi), dan QA fisik pada `SM-G988B` (R8 Release `195-366 ms` cold start).
 - [x] **Distribusi GitHub CLI**: Repository publik `Adrian463588/EnglishPrepAI`, deskripsi, topics, `README.md` dengan tautan unduhan & tangkapan layar real-time, serta GitHub Release `v1.0.0`.

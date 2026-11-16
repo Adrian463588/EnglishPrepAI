@@ -18,6 +18,7 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Check
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.ModalBottomSheet
@@ -122,18 +123,14 @@ fun HomeScreen(
                 modifier = Modifier.fillMaxWidth(),
             ) {
                 Column(modifier = Modifier.padding(AppSpacing.md)) {
+                    val heroTitle = state.activeSessionTitle
+                        ?: state.recommendedPack?.title
+                        ?: state.selectedExam.title
                     Text(
-                        text = if (state.activeSessionId != null) "Lanjutkan Sesi" else "Mulai Cepat",
-                        style = MaterialTheme.typography.labelMedium,
-                        color = MaterialTheme.colorScheme.primary,
-                    )
-                    Spacer(modifier = Modifier.height(AppSpacing.xs))
-                    Text(
-                        text = state.activeSessionTitle
-                            ?: state.recommendedPack?.title
-                            ?: state.selectedExam.title,
+                        text = heroTitle,
                         style = MaterialTheme.typography.titleLarge,
                         color = MaterialTheme.colorScheme.onSurface,
+                        modifier = Modifier.semantics { heading() },
                     )
                     Spacer(modifier = Modifier.height(AppSpacing.xs))
                     Text(
@@ -144,17 +141,19 @@ fun HomeScreen(
                     Spacer(modifier = Modifier.height(AppSpacing.md))
                     Row(
                         horizontalArrangement = Arrangement.spacedBy(AppSpacing.sm),
+                        verticalAlignment = Alignment.CenterVertically,
                         modifier = Modifier.fillMaxWidth(),
                     ) {
                         AppButton(
                             text = if (state.activeSessionId != null) "Lanjutkan" else "Mulai Latihan",
                             onClick = onPrimaryAction,
                         )
-                        AppButton(
-                            text = "Lihat 5 Paket",
+                        TextButton(
                             onClick = onOpenPractice,
-                            outlined = true,
-                        )
+                            modifier = Modifier.defaultMinSize(minHeight = AppSpacing.minTouchTarget),
+                        ) {
+                            Text("Lihat 5 Paket")
+                        }
                     }
                 }
             }
@@ -171,25 +170,22 @@ fun HomeScreen(
 
         state.recommendedModule?.let { module ->
             item {
+                Spacer(modifier = Modifier.height(AppSpacing.xs))
                 SectionHeading(text = "Materi Berikutnya")
-                Spacer(modifier = Modifier.height(AppSpacing.sm))
-                Surface(
-                    shape = MaterialTheme.shapes.medium,
-                    color = MaterialTheme.colorScheme.surface,
-                    border = BorderStroke(1.dp, MaterialTheme.colorScheme.outline),
-                ) {
-                    ModuleRow(
-                        module = module,
-                        masteryPercent = null,
-                        onClick = { onOpenModule(module.id) },
-                    )
-                }
+                Spacer(modifier = Modifier.height(AppSpacing.xs))
+                HorizontalDivider(color = MaterialTheme.colorScheme.outline.copy(alpha = 0.5f))
+                ModuleRow(
+                    module = module,
+                    masteryPercent = null,
+                    onClick = { onOpenModule(module.id) },
+                )
             }
         }
 
         item {
+            Spacer(modifier = Modifier.height(AppSpacing.xs))
             SectionHeading(text = "Tutor AI Lokal (Gemma 4 / FTS)")
-            Spacer(modifier = Modifier.height(AppSpacing.sm))
+            Spacer(modifier = Modifier.height(AppSpacing.xs))
             val llmReady = state.llmState is LlmModelState.Ready
             val detail = when (val llm = state.llmState) {
                 is LlmModelState.Ready -> "Aktif offline: ${llm.modelName} (${llm.variant})"
@@ -204,15 +200,6 @@ fun HomeScreen(
                 actionLabel = "Tanya AI",
                 onAction = onOpenChat,
             )
-            if (!llmReady) {
-                Spacer(modifier = Modifier.height(AppSpacing.xs))
-                TextButton(
-                    onClick = onOpenProfileAi,
-                    modifier = Modifier.defaultMinSize(minHeight = AppSpacing.minTouchTarget),
-                ) {
-                    Text(text = "Atur / Impor Model Gemma 4 di Profil")
-                }
-            }
         }
     }
 

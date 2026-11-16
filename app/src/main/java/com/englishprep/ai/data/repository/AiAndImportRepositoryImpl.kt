@@ -96,6 +96,10 @@ class AiAndImportRepositoryImpl @Inject constructor(
         )
     }
 
+    override suspend fun clearThreadMessages(threadId: String) {
+        chatAndModelDao.clearThreadMessages(threadId)
+    }
+
     override suspend fun importModelFileViaSaf(
         uriString: String,
         expectedFamily: String,

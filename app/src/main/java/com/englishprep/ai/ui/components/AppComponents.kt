@@ -52,6 +52,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.hapticfeedback.HapticFeedbackType
 import androidx.compose.ui.platform.LocalHapticFeedback
+import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.semantics.heading
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.text.font.FontWeight
@@ -321,7 +322,7 @@ fun PackageRow(
                     onClick = onPracticeClick,
                 )
                 AppButton(
-                    text = "Simulasi Strict",
+                    text = if (isSample) "Tryout Strict (Sample)" else "Full Mock Strict",
                     onClick = onStrictClick,
                     outlined = true,
                 )
@@ -658,6 +659,62 @@ fun OfflineModelState(
                     Text(text = actionLabel)
                 }
             }
+        }
+    }
+}
+
+@Composable
+fun SelectableOptionRow(
+    selected: Boolean,
+    label: String,
+    role: Role,
+    onClick: () -> Unit,
+    leading: @Composable () -> Unit,
+) {
+    val statusColors = LocalSemanticStatusColors.current
+    val haptics = LocalHapticFeedback.current
+    val animMs = if (statusColors.reduceMotion) 0 else MotionTokens.PressFeedbackMs
+    val bgColor by animateColorAsState(
+        targetValue = if (selected) {
+            MaterialTheme.colorScheme.primaryContainer.copy(alpha = 0.45f)
+        } else {
+            MaterialTheme.colorScheme.surface
+        },
+        animationSpec = tween(animMs),
+        label = "optionBg",
+    )
+    val borderColor by animateColorAsState(
+        targetValue = if (selected) {
+            MaterialTheme.colorScheme.primary
+        } else {
+            MaterialTheme.colorScheme.outline.copy(alpha = 0.45f)
+        },
+        animationSpec = tween(animMs),
+        label = "optionBorder",
+    )
+
+    Surface(
+        shape = MaterialTheme.shapes.small,
+        color = bgColor,
+        border = BorderStroke(if (selected) 1.5.dp else 1.dp, borderColor),
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(vertical = AppSpacing.xs)
+            .defaultMinSize(minHeight = AppSpacing.minTouchTarget)
+            .clickable(role = role) {
+                if (statusColors.hapticsEnabled) {
+                    haptics.performHapticFeedback(HapticFeedbackType.TextHandleMove)
+                }
+                onClick()
+            },
+    ) {
+        Row(
+            verticalAlignment = Alignment.CenterVertically,
+            modifier = Modifier.padding(horizontal = AppSpacing.sm, vertical = AppSpacing.xs),
+        ) {
+            leading()
+            Spacer(modifier = Modifier.width(AppSpacing.sm))
+            Text(text = label, style = MaterialTheme.typography.bodyLarge)
         }
     }
 }

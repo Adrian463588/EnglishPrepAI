@@ -74,6 +74,7 @@ class ResultsViewModel @Inject constructor(
             val wrongIds = mutableListOf<String>()
             var objCorrect = 0
             var objTotal = 0
+            var objSkipped = 0
 
             bundle.questions.forEach { q ->
                 val ansText = answers[q.id]?.answerJson.orEmpty()
@@ -81,6 +82,7 @@ class ResultsViewModel @Inject constructor(
                 val outcome = gradingEngine.grade(q, ansText, hasAudioRecording = rec != null)
                 if (outcome is GradingOutcome.Objective) {
                     objTotal++
+                    if (outcome.isSkipped) objSkipped++
                     if (outcome.isCorrect) objCorrect++ else wrongIds.add(q.id)
                 }
                 rows += QuestionReviewRow(q, ansText, outcome)
@@ -88,7 +90,7 @@ class ResultsViewModel @Inject constructor(
 
             val examId = ExamId.valueOf(session.examId)
             val evals = sessionDao.getEvaluationsForSession(sessionId)
-            val overall = if (objTotal > 0) scoreEstimator.estimate(examId, objCorrect, objTotal) else null
+            val overall = if (objTotal > 0) scoreEstimator.estimate(examId, objCorrect, objTotal, objSkipped) else null
             val sections = evals.filter { it.section != "OVERALL" }.map {
                 val label = if (it.rawTotal > 0) "${it.rawCorrect}/${it.rawTotal} benar" else "Tugas subyektif"
                 it.section to "$label ${it.scaledScore?.let { s -> "• $s" }.orEmpty()}"

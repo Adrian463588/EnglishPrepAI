@@ -377,6 +377,20 @@ class ExamViewModel @Inject constructor(
         audioPlayer.togglePlayPause()
     }
 
+    fun deleteSpeakingRecording(questionId: String) {
+        audioPlayer.stop()
+        val path = _state.value.recordingPaths[questionId]
+        if (!path.isNullOrBlank()) {
+            runCatching { java.io.File(path).delete() }
+        }
+        _state.update { st ->
+            st.copy(
+                recordingPaths = st.recordingPaths - questionId,
+                speakingMetricsByQuestion = st.speakingMetricsByQuestion - questionId,
+            )
+        }
+    }
+
     fun speakPromptViaTts(text: String) {
         ttsSpeaker.speak(text)
     }
@@ -418,16 +432,22 @@ class ExamViewModel @Inject constructor(
             val moduleStats = mutableMapOf<String, Pair<Int, Int>>()
             var totalObjCorrect = 0
             var totalObjCount = 0
+            var totalObjSkipped = 0
 
             groupedBySection.forEach { (section, secQuestions) ->
                 var secCorrect = 0
                 var secObjTotal = 0
+                var secSkipped = 0
                 secQuestions.forEach { q ->
                     val ans = st.answers[q.id].orEmpty()
                     val outcome = gradingEngine.grade(q, ans, st.recordingPaths.containsKey(q.id))
                     if (outcome is GradingOutcome.Objective) {
                         secObjTotal++
                         totalObjCount++
+                        if (outcome.isSkipped) {
+                            secSkipped++
+                            totalObjSkipped++
+                        }
                         if (outcome.isCorrect) {
                             secCorrect++
                             totalObjCorrect++
@@ -450,7 +470,7 @@ class ExamViewModel @Inject constructor(
                     )
                 }
                 val secEstimate = if (secObjTotal > 0) {
-                    scoreEstimator.estimate(st.examId, secCorrect, secObjTotal)
+                    scoreEstimator.estimate(st.examId, secCorrect, secObjTotal, secSkipped)
                 } else null
                 evaluations += EvaluationEntity(
                     id = "EVAL_${UUID.randomUUID()}",
@@ -467,7 +487,7 @@ class ExamViewModel @Inject constructor(
             }
 
             if (totalObjCount > 0) {
-                val overall = scoreEstimator.estimate(st.examId, totalObjCorrect, totalObjCount)
+                val overall = scoreEstimator.estimate(st.examId, totalObjCorrect, totalObjCount, totalObjSkipped)
                 evaluations += EvaluationEntity(
                     id = "EVAL_OVERALL_${UUID.randomUUID()}",
                     sessionId = sessionId,

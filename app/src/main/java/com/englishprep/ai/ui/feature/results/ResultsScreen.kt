@@ -113,13 +113,14 @@ fun ResultsScreen(
                         val overall = state.overallEstimate
                         if (overall != null) {
                             Text(
-                                text = "${overall.primaryEstimateLabel} • ${overall.rawCorrect}/${overall.rawTotal} benar (${overall.accuracyPercent}%)",
+                                text = overall.primaryEstimateLabel,
                                 style = MaterialTheme.typography.headlineSmall,
                                 color = MaterialTheme.colorScheme.primary,
                             )
                             Spacer(modifier = Modifier.height(AppSpacing.xs))
+                            val answeredCount = overall.rawTotal - overall.skippedCount
                             Text(
-                                text = overall.secondaryNote,
+                                text = "Dijawab: $answeredCount/${overall.rawTotal} • Dilewati: ${overall.skippedCount} • Kebijakan ${overall.policyVersion}\n${overall.secondaryNote}",
                                 style = MaterialTheme.typography.bodyMedium,
                                 color = MaterialTheme.colorScheme.onSurfaceVariant,
                             )

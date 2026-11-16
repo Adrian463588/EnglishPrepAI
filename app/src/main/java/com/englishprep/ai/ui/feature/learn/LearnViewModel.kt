@@ -6,6 +6,7 @@ import androidx.lifecycle.viewModelScope
 import com.englishprep.ai.data.datastore.UserPreferencesRepository
 import com.englishprep.ai.domain.engines.AudioPlaybackState
 import com.englishprep.ai.domain.engines.AudioPlayer
+import com.englishprep.ai.domain.grading.QuizGradingEngine
 import com.englishprep.ai.domain.models.AudioSource
 import com.englishprep.ai.domain.models.CourseModuleItem
 import com.englishprep.ai.domain.models.ExamId
@@ -17,7 +18,6 @@ import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
-import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.flatMapLatest
 import kotlinx.coroutines.flow.stateIn
@@ -29,6 +29,9 @@ data class LearnUiState(
     val isLoading: Boolean = true,
     val selectedExam: ExamId = ExamId.ITP_L1,
     val selectedSection: ExamSection? = null,
+    val bookmarkedOnly: Boolean = false,
+    val bookmarkedIds: Set<String> = emptySet(),
+    val lastReadModuleId: String? = null,
     val modules: List<CourseModuleItem> = emptyList(),
     val masteryByModuleId: Map<String, Int> = emptyMap(),
 )
@@ -42,19 +45,27 @@ class LearnViewModel @Inject constructor(
 ) : ViewModel() {
 
     private val sectionFilter = MutableStateFlow<ExamSection?>(null)
+    private val bookmarkFilter = MutableStateFlow(false)
 
     val uiState: StateFlow<LearnUiState> = preferences.settingsFlow.flatMapLatest { settings ->
         combine(
             catalogRepository.observeModules(settings.selectedExam),
             sessionRepository.observeStudyProgress(settings.selectedExam),
             sectionFilter,
-        ) { modules, progress, filter ->
-            val filtered = if (filter == null) modules else modules.filter { it.section == filter }
+            bookmarkFilter,
+        ) { modules, progress, filter, onlyBookmarked ->
+            val filtered = modules.filter { mod ->
+                (filter == null || mod.section == filter) &&
+                    (!onlyBookmarked || mod.id in settings.bookmarkedModuleIds)
+            }
             val masteryMap = progress.associate { it.moduleId to (it.masteryEstimate * 100f).toInt() }
             LearnUiState(
                 isLoading = false,
                 selectedExam = settings.selectedExam,
                 selectedSection = filter,
+                bookmarkedOnly = onlyBookmarked,
+                bookmarkedIds = settings.bookmarkedModuleIds,
+                lastReadModuleId = settings.lastReadModuleId,
                 modules = filtered,
                 masteryByModuleId = masteryMap,
             )
@@ -68,11 +79,16 @@ class LearnViewModel @Inject constructor(
     fun selectSection(section: ExamSection?) {
         sectionFilter.value = section
     }
+
+    fun toggleBookmarkFilter() {
+        bookmarkFilter.value = !bookmarkFilter.value
+    }
 }
 
 data class ModuleDetailUiState(
     val isLoading: Boolean = true,
     val module: CourseModuleItem? = null,
+    val isBookmarked: Boolean = false,
     val drillAnswers: Map<String, String> = emptyMap(),
     val drillChecked: Map<String, Boolean> = emptyMap(),
     val drillSavedMessage: String? = null,
@@ -82,6 +98,7 @@ data class ModuleDetailUiState(
 @HiltViewModel
 class ModuleDetailViewModel @Inject constructor(
     savedStateHandle: SavedStateHandle,
+    private val preferences: UserPreferencesRepository,
     private val catalogRepository: ExamCatalogRepository,
     private val sessionRepository: SessionProgressRepository,
     private val audioPlayer: AudioPlayer,
@@ -92,8 +109,12 @@ class ModuleDetailViewModel @Inject constructor(
     val uiState: StateFlow<ModuleDetailUiState> = combine(
         _uiState,
         audioPlayer.state,
-    ) { state, audio ->
-        state.copy(audioState = audio)
+        preferences.settingsFlow,
+    ) { state, audio, settings ->
+        state.copy(
+            audioState = audio,
+            isBookmarked = moduleId in settings.bookmarkedModuleIds,
+        )
     }.stateIn(
         scope = viewModelScope,
         started = SharingStarted.WhileSubscribed(5_000L),
@@ -102,6 +123,7 @@ class ModuleDetailViewModel @Inject constructor(
 
     init {
         viewModelScope.launch {
+            preferences.setLastReadModule(moduleId)
             val module = catalogRepository.getModule(moduleId)
             _uiState.update { it.copy(isLoading = false, module = module) }
             module?.audioAssetPath?.let { relPath ->
@@ -111,6 +133,12 @@ class ModuleDetailViewModel @Inject constructor(
                     maxReplays = null,
                 )
             }
+        }
+    }
+
+    fun toggleBookmark() {
+        viewModelScope.launch {
+            preferences.toggleModuleBookmark(moduleId)
         }
     }
 
@@ -124,10 +152,9 @@ class ModuleDetailViewModel @Inject constructor(
     }
 
     fun checkDrill(questionId: String, expectedAnswer: String, acceptedVariants: List<String>) {
-        val current = _uiState.value.drillAnswers[questionId].orEmpty().trim()
-        val normalized = current.lowercase().replace(Regex("\\s+"), " ")
-        val candidates = (acceptedVariants + expectedAnswer).map { it.trim().lowercase().replace(Regex("\\s+"), " ") }
-        val ok = normalized.isNotEmpty() && candidates.any { it == normalized }
+        val current = QuizGradingEngine.normalizeText(_uiState.value.drillAnswers[questionId].orEmpty())
+        val candidates = (acceptedVariants + expectedAnswer).map(QuizGradingEngine::normalizeText)
+        val ok = current.isNotEmpty() && candidates.any { it == current }
         _uiState.update { state ->
             val updatedChecks = state.drillChecked + (questionId to ok)
             state.copy(drillChecked = updatedChecks)

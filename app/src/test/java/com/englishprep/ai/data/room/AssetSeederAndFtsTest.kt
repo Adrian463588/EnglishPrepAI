@@ -5,6 +5,7 @@ import android.content.Context
 import androidx.room.Room
 import androidx.test.core.app.ApplicationProvider
 import com.englishprep.ai.data.repository.ExamCatalogRepositoryImpl
+import com.englishprep.ai.domain.grading.PackIntegrityValidator
 import com.englishprep.ai.domain.models.ExamId
 import com.englishprep.ai.domain.models.PackStatus
 import kotlinx.coroutines.flow.first
@@ -57,8 +58,18 @@ class AssetSeederAndFtsTest {
                 assertEquals(12, pack.availableCount)
                 val bundle = catalogRepo.loadPackBundle(pack.packId)!!
                 assertEquals(12, bundle.questions.size)
+                val issues = PackIntegrityValidator.validateBundle(bundle)
+                assertTrue("Pack ${pack.packId} failed validation: $issues", issues.isEmpty())
             }
         }
+
+        val badPack = catalogRepo.loadPackBundle("ITP-L1-01")!!
+        val brokenBundle = badPack.copy(
+            pack = badPack.pack.copy(status = PackStatus.READY),
+            questions = badPack.questions + badPack.questions.first(),
+        )
+        val detected = PackIntegrityValidator.validateBundle(brokenBundle)
+        assertTrue("Validator must catch duplicate IDs and false READY status", detected.size >= 2)
 
         val ragHits = catalogRepo.searchLocalCurriculum(ExamId.ITP_L1, "succulents water stomata", limit = 3)
         assertTrue("FTS search should find offline curriculum/passage hits", ragHits.isNotEmpty())

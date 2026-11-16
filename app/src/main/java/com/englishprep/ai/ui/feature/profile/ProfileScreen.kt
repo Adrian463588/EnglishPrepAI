@@ -406,10 +406,38 @@ fun ProfileScreen(
             }
             Spacer(modifier = Modifier.height(AppSpacing.sm))
             Text(
-                text = "Lisensi & Kepatuhan: Seluruh 15 paket soal bawaan dan audio WAV adalah materi latihan orisinal berstatus Sample (bukan produk resmi ETS/British Council/IELTS). Skor estimasi & umpan balik AI lokal bukan nilai resmi.",
+                text = "Lisensi & Kepatuhan: Seluruh 15 paket soal bawaan dan audio WAV adalah materi latihan orisinal berstatus Sample (bukan produk resmi ETS/British Council/IELTS). Skor mentah & umpan balik AI lokal bukan nilai resmi.",
                 style = MaterialTheme.typography.bodyMedium,
                 color = MaterialTheme.colorScheme.onSurfaceVariant,
             )
+            var showOssLicenses by remember { mutableStateOf(false) }
+            TextButton(
+                onClick = { showOssLicenses = true },
+                modifier = Modifier.defaultMinSize(minHeight = AppSpacing.minTouchTarget),
+            ) {
+                Text("Lihat Lisensi Open-Source & Pihak Ketiga")
+            }
+            if (showOssLicenses) {
+                AlertDialog(
+                    onDismissRequest = { showOssLicenses = false },
+                    title = { Text("Lisensi Open-Source & Atribusi") },
+                    text = {
+                        Text(
+                            text = "• AndroidX Jetpack Compose, Material 3, Room, DataStore, WorkManager, Navigation, Hilt (Apache-2.0)\n" +
+                                "• AndroidX Media3 ExoPlayer 1.5.1 (Apache-2.0)\n" +
+                                "• Kotlin Standard Library, Coroutines, Serialization (Apache-2.0)\n" +
+                                "• Google LiteRT-LM Android 0.13.1 (Apache-2.0)\n" +
+                                "• Microsoft ONNX Runtime Android 1.22.0 (MIT)\n" +
+                                "• JUnit 4 (EPL-1.0), Robolectric (MIT), Turbine (Apache-2.0)\n\n" +
+                                "TOEFL, TOEFL ITP, dan TOEFL iBT adalah merek dagang ETS. IELTS adalah merek dagang Cambridge Assessment English / British Council / IDP. Aplikasi ini independen dan tidak berafiliasi dengan pemilik merek tersebut.",
+                            style = MaterialTheme.typography.bodySmall,
+                        )
+                    },
+                    confirmButton = {
+                        TextButton(onClick = { showOssLicenses = false }) { Text("Tutup") }
+                    },
+                )
+            }
         }
     }
 

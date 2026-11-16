@@ -8,6 +8,7 @@ import androidx.datastore.preferences.core.edit
 import androidx.datastore.preferences.core.floatPreferencesKey
 import androidx.datastore.preferences.core.intPreferencesKey
 import androidx.datastore.preferences.core.stringPreferencesKey
+import androidx.datastore.preferences.core.stringSetPreferencesKey
 import androidx.datastore.preferences.preferencesDataStore
 import com.englishprep.ai.domain.models.ExamId
 import dagger.hilt.android.qualifiers.ApplicationContext
@@ -44,6 +45,8 @@ data class UserSettings(
     val reminderHour: Int = 20,
     val reminderMinute: Int = 0,
     val fontScaleBoost: Boolean = false,
+    val bookmarkedModuleIds: Set<String> = emptySet(),
+    val lastReadModuleId: String? = null,
 )
 
 @Singleton
@@ -63,6 +66,8 @@ class UserPreferencesRepository @Inject constructor(
         val REMINDER_HOUR = intPreferencesKey("reminder_hour")
         val REMINDER_MINUTE = intPreferencesKey("reminder_minute")
         val FONT_SCALE_BOOST = booleanPreferencesKey("font_scale_boost")
+        val BOOKMARKED_MODULES = stringSetPreferencesKey("bookmarked_module_ids")
+        val LAST_READ_MODULE = stringPreferencesKey("last_read_module_id")
     }
 
     val settingsFlow: Flow<UserSettings> = context.userSettingsDataStore.data.map { prefs ->
@@ -82,6 +87,8 @@ class UserPreferencesRepository @Inject constructor(
             reminderHour = prefs[Keys.REMINDER_HOUR] ?: 20,
             reminderMinute = prefs[Keys.REMINDER_MINUTE] ?: 0,
             fontScaleBoost = prefs[Keys.FONT_SCALE_BOOST] ?: false,
+            bookmarkedModuleIds = prefs[Keys.BOOKMARKED_MODULES] ?: emptySet(),
+            lastReadModuleId = prefs[Keys.LAST_READ_MODULE],
         )
     }
 
@@ -131,5 +138,18 @@ class UserPreferencesRepository @Inject constructor(
 
     suspend fun setFontScaleBoost(enabled: Boolean) {
         context.userSettingsDataStore.edit { it[Keys.FONT_SCALE_BOOST] = enabled }
+    }
+
+    suspend fun toggleModuleBookmark(moduleId: String) {
+        context.userSettingsDataStore.edit { prefs ->
+            val current = prefs[Keys.BOOKMARKED_MODULES] ?: emptySet()
+            prefs[Keys.BOOKMARKED_MODULES] = if (moduleId in current) current - moduleId else current + moduleId
+        }
+    }
+
+    suspend fun setLastReadModule(moduleId: String) {
+        context.userSettingsDataStore.edit { prefs ->
+            prefs[Keys.LAST_READ_MODULE] = moduleId
+        }
     }
 }

@@ -8,7 +8,6 @@ import androidx.compose.animation.AnimatedContent
 import androidx.compose.animation.ContentTransform
 import androidx.compose.animation.EnterTransition
 import androidx.compose.animation.ExitTransition
-import androidx.compose.animation.animateColorAsState
 import androidx.compose.animation.core.tween
 import androidx.compose.animation.fadeIn
 import androidx.compose.animation.fadeOut
@@ -16,7 +15,6 @@ import androidx.compose.animation.slideInHorizontally
 import androidx.compose.animation.slideOutHorizontally
 import androidx.compose.animation.togetherWith
 import androidx.compose.foundation.BorderStroke
-import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -71,10 +69,8 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.hapticfeedback.HapticFeedbackType
 import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.platform.LocalContext
-import androidx.compose.ui.platform.LocalHapticFeedback
 import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.semantics.heading
 import androidx.compose.ui.semantics.semantics
@@ -94,6 +90,7 @@ import com.englishprep.ai.ui.components.AudioPlayerBar
 import com.englishprep.ai.ui.components.InlineFeedback
 import com.englishprep.ai.ui.components.QuestionCard
 import com.englishprep.ai.ui.components.SectionHeading
+import com.englishprep.ai.ui.components.SelectableOptionRow
 import com.englishprep.ai.ui.components.formatTimeMs
 import com.englishprep.ai.ui.theme.AppSpacing
 import com.englishprep.ai.ui.theme.LocalSemanticStatusColors
@@ -121,6 +118,7 @@ fun ExamRoute(
         onStartRecording = viewModel::startSpeakingRecording,
         onStopRecording = viewModel::stopSpeakingRecordingAndTranscribe,
         onPlayOwnRecording = viewModel::playOwnRecording,
+        onDeleteRecording = viewModel::deleteSpeakingRecording,
         onSpeakTts = viewModel::speakPromptViaTts,
         onNext = viewModel::nextQuestion,
         onPrev = viewModel::prevQuestion,
@@ -152,6 +150,7 @@ fun ExamScreen(
     onStartRecording: () -> Boolean,
     onStopRecording: () -> Unit,
     onPlayOwnRecording: (String) -> Unit,
+    onDeleteRecording: (String) -> Unit = {},
     onSpeakTts: (String) -> Unit,
     onNext: () -> Unit,
     onPrev: () -> Unit,
@@ -167,6 +166,7 @@ fun ExamScreen(
 ) {
     val context = LocalContext.current
     var showQuitDialog by remember { mutableStateOf(false) }
+    var showSubmitConfirmDialog by remember { mutableStateOf(false) }
     var micDeniedNote by remember { mutableStateOf(false) }
     val micPermissionLauncher = rememberLauncherForActivityResult(
         contract = ActivityResultContracts.RequestPermission(),
@@ -273,7 +273,9 @@ fun ExamScreen(
                             AppButton(
                                 text = if (isLast) "Kumpulkan" else "Lanjut",
                                 hapticOnTap = isLast,
-                                onClick = { if (isLast) onSubmit() else onNext() },
+                                onClick = {
+                                    if (isLast) showSubmitConfirmDialog = true else onNext()
+                                },
                             )
                         }
                     }
@@ -346,6 +348,7 @@ fun ExamScreen(
                         },
                         onStopRecording = onStopRecording,
                         onPlayOwnRecording = onPlayOwnRecording,
+                        onDeleteRecording = onDeleteRecording,
                         onSpeakTts = onSpeakTts,
                         onToggleAudio = onToggleAudio,
                         onReplayAudio = onReplayAudio,
@@ -375,6 +378,7 @@ fun ExamScreen(
                     },
                     onStopRecording = onStopRecording,
                     onPlayOwnRecording = onPlayOwnRecording,
+                    onDeleteRecording = onDeleteRecording,
                     onSpeakTts = onSpeakTts,
                     onToggleAudio = onToggleAudio,
                     onReplayAudio = onReplayAudio,
@@ -399,6 +403,33 @@ fun ExamScreen(
             },
             dismissButton = {
                 TextButton(onClick = { showQuitDialog = false }) { Text("Batal") }
+            },
+        )
+    }
+
+    if (showSubmitConfirmDialog) {
+        val answeredCount = state.questions.count { !state.answers[it.id].isNullOrBlank() || it.id in state.recordingPaths }
+        val unansweredCount = (state.questions.size - answeredCount).coerceAtLeast(0)
+        AlertDialog(
+            onDismissRequest = { showSubmitConfirmDialog = false },
+            title = { Text("Kumpulkan jawaban sekarang?") },
+            text = {
+                Text(
+                    if (unansweredCount > 0) {
+                        "Soal terjawab: $answeredCount/${state.questions.size}. Masih ada $unansweredCount soal kosong yang akan dihitung dilewati."
+                    } else {
+                        "Semua ${state.questions.size} soal telah dijawab. Lanjut hitung skor non-resmi?"
+                    },
+                )
+            },
+            confirmButton = {
+                TextButton(onClick = {
+                    showSubmitConfirmDialog = false
+                    onSubmit()
+                }) { Text("Kumpulkan Sekarang") }
+            },
+            dismissButton = {
+                TextButton(onClick = { showSubmitConfirmDialog = false }) { Text("Periksa Lagi") }
             },
         )
     }
@@ -491,6 +522,7 @@ private fun QuestionBodyPane(
     onRequestMicAndRecord: () -> Unit,
     onStopRecording: () -> Unit,
     onPlayOwnRecording: (String) -> Unit,
+    onDeleteRecording: (String) -> Unit,
     onSpeakTts: (String) -> Unit,
     onToggleAudio: () -> Unit,
     onReplayAudio: () -> Unit,
@@ -500,6 +532,8 @@ private fun QuestionBodyPane(
 ) {
     val userAnswer = state.answers[q.id].orEmpty()
     val isPractice = state.mode == ExamMode.PRACTICE
+    val displayedAsset = q.audioAssetId?.let { state.assets[it] }
+    var showTranscript by remember(q.id) { mutableStateOf(false) }
 
     LazyColumn(
         modifier = modifier,
@@ -519,7 +553,7 @@ private fun QuestionBodyPane(
             }
         }
 
-        if (state.currentAsset != null) {
+        if (displayedAsset != null) {
             item {
                 AudioPlayerBar(
                     title = state.audioState.currentTitle.ifBlank { "Audio Soal" },
@@ -537,6 +571,30 @@ private fun QuestionBodyPane(
                     onSeekTo = onSeekAudio,
                     onChangeSpeed = onSetAudioSpeed,
                 )
+                if (isPractice && displayedAsset.caption.isNotBlank()) {
+                    Spacer(modifier = Modifier.height(AppSpacing.xs))
+                    TextButton(
+                        onClick = { showTranscript = !showTranscript },
+                        modifier = Modifier.defaultMinSize(minHeight = AppSpacing.minTouchTarget),
+                    ) {
+                        Text(if (showTranscript) "Sembunyikan Transkrip (Mode Latihan)" else "Lihat Transkrip Audio (Mode Latihan)")
+                    }
+                    if (showTranscript) {
+                        Surface(
+                            shape = MaterialTheme.shapes.small,
+                            color = MaterialTheme.colorScheme.surfaceContainerLow,
+                            border = BorderStroke(1.dp, MaterialTheme.colorScheme.outline),
+                            modifier = Modifier.fillMaxWidth(),
+                        ) {
+                            Text(
+                                text = displayedAsset.caption,
+                                style = MaterialTheme.typography.bodyMedium,
+                                color = MaterialTheme.colorScheme.onSurfaceVariant,
+                                modifier = Modifier.padding(AppSpacing.md),
+                            )
+                        }
+                    }
+                }
             }
         }
 
@@ -741,6 +799,12 @@ private fun QuestionBodyPane(
                                     Spacer(modifier = Modifier.width(AppSpacing.xs))
                                     Text("Putar Rekaman Saya")
                                 }
+                                TextButton(
+                                    onClick = { onDeleteRecording(q.id) },
+                                    modifier = Modifier.defaultMinSize(minHeight = AppSpacing.minTouchTarget),
+                                ) {
+                                    Text("Hapus Rekaman", color = MaterialTheme.colorScheme.error)
+                                }
                             }
                         }
 
@@ -819,62 +883,6 @@ private fun QuestionBodyPane(
                     )
                 }
             }
-        }
-    }
-}
-
-@Composable
-private fun SelectableOptionRow(
-    selected: Boolean,
-    label: String,
-    role: Role,
-    onClick: () -> Unit,
-    leading: @Composable () -> Unit,
-) {
-    val statusColors = LocalSemanticStatusColors.current
-    val haptics = LocalHapticFeedback.current
-    val animMs = if (statusColors.reduceMotion) 0 else MotionTokens.PressFeedbackMs
-    val bgColor by animateColorAsState(
-        targetValue = if (selected) {
-            MaterialTheme.colorScheme.primaryContainer.copy(alpha = 0.45f)
-        } else {
-            MaterialTheme.colorScheme.surface
-        },
-        animationSpec = tween(animMs),
-        label = "optionBg",
-    )
-    val borderColor by animateColorAsState(
-        targetValue = if (selected) {
-            MaterialTheme.colorScheme.primary
-        } else {
-            MaterialTheme.colorScheme.outline.copy(alpha = 0.45f)
-        },
-        animationSpec = tween(animMs),
-        label = "optionBorder",
-    )
-
-    Surface(
-        shape = MaterialTheme.shapes.small,
-        color = bgColor,
-        border = BorderStroke(if (selected) 1.5.dp else 1.dp, borderColor),
-        modifier = Modifier
-            .fillMaxWidth()
-            .padding(vertical = AppSpacing.xs)
-            .defaultMinSize(minHeight = AppSpacing.minTouchTarget)
-            .clickable(role = role) {
-                if (statusColors.hapticsEnabled) {
-                    haptics.performHapticFeedback(HapticFeedbackType.TextHandleMove)
-                }
-                onClick()
-            },
-    ) {
-        Row(
-            verticalAlignment = Alignment.CenterVertically,
-            modifier = Modifier.padding(horizontal = AppSpacing.sm, vertical = AppSpacing.xs),
-        ) {
-            leading()
-            Spacer(modifier = Modifier.width(AppSpacing.sm))
-            Text(text = label, style = MaterialTheme.typography.bodyLarge)
         }
     }
 }
