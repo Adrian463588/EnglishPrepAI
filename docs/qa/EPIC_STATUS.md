@@ -1,9 +1,9 @@
 # QA & EPIC Traceability Ledger (`ENGLISH_PREP_EPIC_CHECKLIST`)
 
-- **Project**: English Prep AI (`com.englishprep.ai`, `v1.1.1`, `versionCode = 3`)
-- **Audit Date**: `2026-11-16`
+- **Project**: English Prep AI (`com.englishprep.ai`, `v1.2.0`, `versionCode = 4`)
+- **Audit Date**: `2026-11-17`
 - **Tested Hardware**: Samsung Galaxy `SM-G988B` (Android 13, `arm64-v8a`, `1080x2400`)
-- **Automated Verification**: `40/40` JVM/Robolectric tests pass (`0` skipped), `lintDebug` (`0` errors, `76` warnings), R8 `assembleRelease` (`mapping.txt` verified, `181.11 MB` / `189,908,998` bytes, `aapt2` verified no `INTERNET`/`debuggable`).
+- **Automated Verification**: `43/43` JVM/Robolectric tests pass (`0` skipped), `lintDebug` (`0` errors, `80` warnings), R8 `assembleRelease` (`mapping.txt` `62,186,782` bytes, `181.11 MB` / `189,909,002` bytes, `aapt2` verified `versionCode=4`, `versionName=1.2.0`, `0` `INTERNET`, `0` `application-debuggable`).
 
 > Rule: Items requiring user-imported multi-GB `.litertlm`/`.onnx` weights, independent physical Switch Access sessions, or human linguistic/psychometric peer review across authored items remain `[ ]` (`PARTIAL` / `BLOCKED_EXTERNAL`) until those external artifacts or human reviews are completed.
 
@@ -13,10 +13,10 @@
 
 | Epic | Title | Priority | Status | Primary Evidence Path | Tested Env / API | Defects / Remaining Notes |
 |---|---|---|---|---|---|---|
-| EPIC-00 | SDD, Governance & Quality Gates | P0 | VERIFIED | `.specify/memory/constitution.md`, `specs/001`..`010`, `.github/workflows/android-devsecops.yml`, `docs/qa/LICENSE_AND_SBOM_AUDIT.md` | Windows + JDK 17 + GitHub CI | None |
-| EPIC-01 | Android Foundation & Clean MVVM | P0 | VERIFIED | `app/src/main/java/com/englishprep/ai/**`, `MainActivity.kt` | `SM-G988B` API 33 + JVM | None |
-| EPIC-02 | Navigation, Home & Exam Selector | P0 | VERIFIED | `HomeScreen.kt`, `HomeViewModel.kt`, `UiAndAccessibilityTest.kt`, `docs/screenshots/01-home.png`, `02-exam-switcher.png` | `SM-G988B` API 33 + Robolectric | None |
-| EPIC-03 | Offline Learning Catalog & Lesson Player | P0 | VERIFIED | `LearnScreens.kt`, `LearnViewModel.kt`, `material_bank/`, `docs/screenshots/03-learn-modules.png`, `13-material-bank-oer.png` | `SM-G988B` API 33 + Robolectric | 30 modules, 90 drills, 31 Material Bank PDF digests offline |
+| EPIC-00 | SDD, Governance & Quality Gates | P0 | VERIFIED | `.specify/memory/constitution.md`, `specs/001`..`010`, `specs/ui-ux-redesign/`, `.github/workflows/android-devsecops.yml`, `docs/qa/LICENSE_AND_SBOM_AUDIT.md` | Windows + JDK 17 + GitHub CI | None |
+| EPIC-01 | Android Foundation & Clean MVVM | P0 | VERIFIED | `app/src/main/java/com/englishprep/ai/**`, `MainActivity.kt` | `SM-G988B` API 33 + JVM | Reactive Light/Dark system bar `SideEffect` added in `MainActivity.kt` |
+| EPIC-02 | Navigation, Home & Exam Selector | P0 | VERIFIED | `HomeScreen.kt`, `HomeViewModel.kt`, `UiAndAccessibilityTest.kt`, `docs/screenshots/01-home.png`, `02-exam-switcher.png`, `15-home-light.png` | `SM-G988B` API 33 + Robolectric | Editorial Home (`answered/total`), compact pill selector, P0 Light bar contrast resolved |
+| EPIC-03 | Offline Learning Catalog & Lesson Player | P0 | VERIFIED | `LearnScreens.kt`, `LearnViewModel.kt`, `material_bank/`, `docs/screenshots/03-learn-modules.png`, `04-module-detail.png`, `13-material-bank-oer.png` | `SM-G988B` API 33 + Robolectric | Single-row horizontal `LazyRow` filters + `[Bacaan OER]`, zero raw ID headers in reader |
 | EPIC-04 | Materi TOEFL ITP Level 1 | P0 | PARTIAL | `content/CURRICULUM.md`, `packs/ITP-L1-01..05.json`, `docs/screenshots/05-practice-packs.png` | `SM-G988B` API 33 + `AssetSeederAndFtsTest` | All 5 packs full 140 items (`READY`, 700 Qs); awaits human psychometric review |
 | EPIC-05 | Materi TOEFL iBT (2026) | P0 | PARTIAL | `packs/IBT26-01..05.json`, `ExamScoreEstimator.kt`, `ToeflSessionFlowIntegrationTest.kt` | `SM-G988B` API 33 + JVM | All 5 packs full 120 items (`READY`, 600 Qs); non-adaptive raw metrics + awaits human review |
 | EPIC-06 | Materi IELTS Academic | P0 | PARTIAL | `packs/IELTS-A-01..05.json`, `QuizGradingEngineTest.kt`, `ToeflSessionFlowIntegrationTest.kt` | `SM-G988B` API 33 + JVM | All 5 packs full 85 items (`READY`, 425 Qs); awaits human psychometric review |
@@ -29,25 +29,25 @@
 | EPIC-13 | Scoring & Explanations | P0 | VERIFIED | `ExamScoreEstimator.kt`, `ExamScoreEstimatorTest.kt`, `ResultsScreen.kt`, `docs/screenshots/07-results.png` | JVM + `SM-G988B` API 33 | Raw deterministic metrics + `policyVersion` + skipped count verified |
 | EPIC-14 | Room, DataStore & Data Integrity | P0 | VERIFIED | `EnglishPrepDatabase.kt`, `Daos.kt` (`@Upsert`), `app/schemas/.../1.json`, `RoomIntegrityAndRecoveryTest.kt` | Robolectric SQLite file reopen | `@Upsert` fix verified against `ON DELETE CASCADE` wipe |
 | EPIC-15 | Progress Analytics & Review System | P0 | VERIFIED | `ProgressViewModel.kt`, `ProgressScreen.kt`, `UiAndAccessibilityTest.kt`, `docs/screenshots/08-progress-analytics.png` | `SM-G988B` + Robolectric | Automatic weak module update verified on `ITP-MOD-02..05` |
-| EPIC-16 | SAF, Offline Content & Model Manager | P0/P1 | VERIFIED | `SafSecurityValidator.kt`, `SafSecurityValidatorTest.kt`, `AiAndImportRepositoryImpl.kt`, `ProfileScreen.kt` | JVM (5/5 SAF security tests) + `SM-G988B` | Zip-slip, 0-byte, GGUF mismatch, disk budget & SHA-256 verified |
-| EPIC-17 | Gemma 4 Local Inference Engine | P1 | PARTIAL | `LiteRtLmGemma4Engine.kt`, `ProfileScreen.kt`, `docs/REFERENCES.md` | Compiled `litertlm:0.13.1` + R8 Release | `E17-04`/`E17-05` real `.litertlm` latency/tok-s requires external ~2.6 GB user SAF import |
-| EPIC-18 | AI Tutor Chatbot + Local RAG | P1 | VERIFIED | `ChatViewModel.kt`, `ChatScreen.kt`, `GroundedTutorPromptBuilder.kt`, `RagPromptSanitizerTest.kt`, `docs/screenshots/09-ai-chat-rag.png` | JVM + Robolectric + `SM-G988B` | Prompt injection guard, FTS4 `[ID]` citations, Clear chat & Strict guard verified |
-| EPIC-19 | Profile, Preferences, Reminders & Privacy | P0/P2 | VERIFIED | `ProfileScreen.kt`, `UserPreferencesRepository.kt`, `StudyReminderWorker.kt`, `docs/screenshots/10-profile-ai-saf.png` | Robolectric + `SM-G988B` | OSS licenses modal & trademark disclaimer added |
-| EPIC-20 | UI Design System & Anti-AI-Slop Audit | P0 | VERIFIED | `Theme.kt`, `Tokens.kt`, `AppComponents.kt`, `HomeScreen.kt`, `ic_launcher*.xml`, `UiAndAccessibilityTest.kt` | Robolectric (`w320dp @ 2.0f`, `w960dp` tablet, light/dark, `48dp`) + `SM-G988B` | Custom Adaptive + Monochrome launcher icon, responsive containers & micro-interactions verified across 9 screens |
-| EPIC-21 | Security, Privacy, QA & Release | P0/P1 | VERIFIED | `proguard-rules.pro`, `AndroidAppIntegrityInspector.kt`, `SecurityHardeningTest.kt`, `docs/screenshots/11-profile-security-r8.png` | JVM + R8 `assembleRelease` + `SM-G988B` | `allowBackup=false`, zero `INTERNET`, R8 `307 ms` cold start verified; MobSF/Frida external tooling pending |
+| EPIC-16 | SAF, Offline Content & Model Manager | P0/P1 | VERIFIED | `SafSecurityValidator.kt`, `SafSecurityValidatorTest.kt`, `AiAndImportRepositoryImpl.kt`, `ModelManagerScreen.kt`, `docs/screenshots/14-model-manager.png` | JVM (5/5 SAF security tests) + `SM-G988B` | Dedicated `AppRoute.ModelManager` reachable in 1 tap from Profile/Chat; zip-slip/GGUF/SHA-256 verified |
+| EPIC-17 | Gemma 4 Local Inference Engine | P1 | PARTIAL | `LiteRtLmGemma4Engine.kt`, `ModelManagerScreen.kt`, `docs/REFERENCES.md` | Compiled `litertlm:0.13.1` + R8 Release | `E17-04`/`E17-05` real `.litertlm` latency/tok-s requires external ~2.6 GB user SAF import |
+| EPIC-18 | AI Tutor Chatbot + Local RAG | P1 | VERIFIED | `ChatViewModel.kt`, `ChatScreen.kt`, `GroundedTutorPromptBuilder.kt`, `RagPromptSanitizerTest.kt`, `docs/screenshots/09-ai-chat-rag.png` | JVM + Robolectric + `SM-G988B` | Prompt injection guard, clean `Sumber:` FTS4 citations, Clear chat, ModelManager link & Strict guard verified |
+| EPIC-19 | Profile, Preferences, Reminders & Privacy | P0/P2 | VERIFIED | `ProfileScreen.kt`, `UserPreferencesRepository.kt`, `StudyReminderWorker.kt`, `docs/screenshots/10-profile-ai-saf.png`, `16-profile-light.png` | Robolectric + `SM-G988B` | Grouped into 4 calm sections (`Preferensi`, `Konten Offline`, `AI Offline`, `Privasi & Data`) + scrollable OSS licenses |
+| EPIC-20 | UI Design System & Anti-AI-Slop Audit | P0 | VERIFIED | `Theme.kt`, `Tokens.kt`, `AppComponents.kt`, `HomeScreen.kt`, `ModelManagerScreen.kt`, `docs/design-system.md`, `docs/ux-before-after.md`, `UiAndAccessibilityTest.kt` | Robolectric (`w320dp @ 2.0f`, `360dp`, `412dp`, `w960dp`, light/dark, `48dp`) + `SM-G988B` | Complete UI/UX redesign (`specs/ui-ux-redesign`): P0 Light bar contrast, card-in-card removal, single-row filters, 16 live captures |
+| EPIC-21 | Security, Privacy, QA & Release | P0/P1 | VERIFIED | `proguard-rules.pro`, `AndroidAppIntegrityInspector.kt`, `SecurityHardeningTest.kt`, `docs/screenshots/11-profile-security-r8.png` | JVM + R8 `assembleRelease` + `SM-G988B` | `allowBackup=false`, zero `INTERNET`, `181.11 MB` R8 APK, `0` crashes in `logcat`; MobSF/Frida pending external setup |
 
 ---
 
 ## Detailed Item Verification Checklist (`EPIC-00` .. `EPIC-21`)
 
 ### EPIC-00 - SDD, governance, dan quality gates
-- [x] **E00-01**: AGENTS, PRD, DESIGN, ARSITEKTUR, DATA_SCHEMA, `content/CURRICULUM.md`, `material_bank/MANIFEST.json`, dan `packs/index.json` sinkron (`specs/001`..`009`).
-- [x] **E00-02**: Pipeline Spec Kit (`spec.md`, `plan.md`, `tasks.md`, `acceptance.md`) dijalankan per fitur (`001`..`009`).
+- [x] **E00-01**: AGENTS, PRD, DESIGN, ARSITEKTUR, DATA_SCHEMA, `content/CURRICULUM.md`, `material_bank/MANIFEST.json`, dan `packs/index.json` sinkron (`specs/001`..`010` + `specs/ui-ux-redesign`).
+- [x] **E00-02**: Pipeline Spec Kit (`spec.md`, `plan.md`, `tasks.md`, `acceptance.md`) dijalankan per fitur (`001`..`010` + `ui-ux-redesign`).
 - [x] **E00-03**: Tinjauan BMAD tersimpan di `docs/reviews/bmad-*.md` tanpa menduplikasi backlog `tasks.md`.
 - [x] **E00-04**: Peta traceability tersedia pada tabel matriks di dokumen ini (`docs/qa/EPIC_STATUS.md`).
 - [x] **E00-05**: CI workflow `.github/workflows/android-devsecops.yml` + eksekusi lokal `testDebugUnitTest`, `lintDebug`, `assembleDebug`, `assembleRelease`.
-- [x] **E00-06**: Audit SBOM/lisensi tersedia di `docs/qa/LICENSE_AND_SBOM_AUDIT.md`; 0 rahasia/keystore di Git (`git ls-files`); `.gitignore` mengecualikan PDF referensi berhak cipta ETS/IELTS.
-- [x] **E00-07**: Seluruh perubahan UI & ikon aplikasi dilengkapi 13 tangkapan layar aktual dari `SM-G988B` + pratinjau `app-icon-512.png` di `docs/screenshots/`.
+- [x] **E00-06**: Audit SBOM/lisensi tersedia di `docs/qa/LICENSE_AND_SBOM_AUDIT.md`; 0 rahasia/keystore di Git (`299` berkas terindeks); `.gitignore` mengecualikan PDF referensi berhak cipta ETS/IELTS.
+- [x] **E00-07**: Seluruh perubahan UI & ikon aplikasi dilengkapi 16 tangkapan layar aktual `v1.2.0` (Dark + Light Mode) & arsip `before/` dari `SM-G988B` di `docs/screenshots/`.
 - [x] **E00-08**: Gate kepatuhan bukti ditegakkan; item eksternal berat & audit ahli manusia tetap berstatus `[ ]`.
 
 ### EPIC-01 - Android foundation & Clean MVVM
@@ -92,6 +92,6 @@
 - [x] **E19-01..06**: Bahasa, tema, font scale, reduce motion, haptik, opt-in reminder lokal (`StudyReminderWorker`), backup/delete, dialog lisensi OSS & disclaimer merek dagang.
 
 ### EPIC-20 & EPIC-21 - Design System, Anti-AI-Slop & DevSecOps Release
-- [x] **E20-01..10**: Design tokens (`Tokens.kt`, `Theme.kt`), tata letak adaptif `320dp @ 2.0x` hingga tablet `840dp+` (`ResponsiveScreenContainer`), `FlowRow` CTA/bottom-bar anti-kliping, mikro-interaksi `SelectableOptionRow`/`AudioPlayerBar`/tab progres tipis/Material Bank expand, filter chips `ResultsScreen`, switch row `toggleable`, angka tabular `tnum`, adaptive + monochrome app icon (`ic_launcher*.xml` & 5 mipmap PNG), `UiAndAccessibilityTest` (`14/14`), serta 13 screenshot fisik `SM-G988B`.
-- [x] **E21-01..03,05..09**: Airplane-mode core P0 verified, `40/40` tes + `lintDebug` (0 error, 76 warning) + `assembleRelease` R8 (`181.11 MB`, `mapping.txt`, `-repackageclasses 'o'`, log stripping, `allowBackup=false`, ECDSA/Keystore `SecurityHardeningTest`), zero `INTERNET` permission.
+- [x] **E20-01..10**: Editorial Material 3 tokens (`docs/design-system.md`, `Tokens.kt`, `Theme.kt`), perbaikan P0 kontras status/nav bar Light Mode (`MainActivity.kt`), tata letak adaptif `320dp @ 2.0x` hingga tablet `960dp`, pembersihan kartu bersarang & ID internal, filter horizontal `LazyRow` 1 baris, dedicated `ModelManagerScreen`, `UiAndAccessibilityTest` (`17/17`), `docs/ux-before-after.md`, serta 16 screenshot fisik Dark/Light `SM-G988B`.
+- [x] **E21-01..03,05..09**: Airplane-mode core P0 verified, `43/43` tes + `lintDebug` (0 error, 80 warning) + `assembleRelease` R8 (`181.11 MB` / `189,909,002` bytes, `mapping.txt`, `-repackageclasses 'o'`, log stripping, `allowBackup=false`, ECDSA/Keystore `SecurityHardeningTest`), `aapt2` verified zero `INTERNET` / `debuggable`, zero crash di `logcat`.
 - [ ] **E21-04 (Manual Switch Access / physical external TalkBack device pass)**: Otomasi Compose accessibility (`48dp`, semantics `heading()`, `Role`, `contentDescription`, `fontScale = 2.0f`) lulus di JVM/Robolectric, sedangkan audit manual Switch Access fisik belum dijalankan sebagai sesi terpisah.

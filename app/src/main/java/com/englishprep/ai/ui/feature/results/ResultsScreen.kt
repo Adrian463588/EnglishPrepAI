@@ -1,6 +1,5 @@
 package com.englishprep.ai.ui.feature.results
 
-import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -14,13 +13,17 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
+import androidx.compose.material.icons.filled.CheckCircle
+import androidx.compose.material.icons.filled.ErrorOutline
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.FilterChip
+import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
@@ -43,11 +46,11 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.englishprep.ai.domain.models.GradingOutcome
 import com.englishprep.ai.ui.components.AppButton
-import com.englishprep.ai.ui.components.InlineFeedback
 import com.englishprep.ai.ui.components.ResponsiveScreenContainer
 import com.englishprep.ai.ui.components.SectionHeading
 import com.englishprep.ai.ui.components.tabular
 import com.englishprep.ai.ui.theme.AppSpacing
+import com.englishprep.ai.ui.theme.LocalSemanticStatusColors
 
 @Composable
 fun ResultsRoute(
@@ -82,6 +85,7 @@ fun ResultsScreen(
     modifier: Modifier = Modifier,
 ) {
     var activeFilter by remember { mutableStateOf(ResultFilter.ALL) }
+    val statusColors = LocalSemanticStatusColors.current
 
     Scaffold(
         topBar = {
@@ -129,13 +133,12 @@ fun ResultsScreen(
                 item {
                     Surface(
                         shape = MaterialTheme.shapes.medium,
-                        color = MaterialTheme.colorScheme.primaryContainer.copy(alpha = 0.45f),
-                        border = BorderStroke(1.dp, MaterialTheme.colorScheme.primary.copy(alpha = 0.35f)),
+                        color = MaterialTheme.colorScheme.primaryContainer.copy(alpha = 0.4f),
                         modifier = Modifier.fillMaxWidth(),
                     ) {
                         Column(modifier = Modifier.padding(AppSpacing.md)) {
                             Text(
-                                text = state.sessionTitle,
+                                text = state.sessionTitle.replace(" (PRACTICE)", "").replace(" (STRICT)", ""),
                                 style = MaterialTheme.typography.titleMedium,
                                 modifier = Modifier.semantics { heading() },
                             )
@@ -150,7 +153,7 @@ fun ResultsScreen(
                                 Spacer(modifier = Modifier.height(AppSpacing.xs))
                                 val answeredCount = overall.rawTotal - overall.skippedCount
                                 Text(
-                                    text = "Dijawab: $answeredCount/${overall.rawTotal} • Dilewati: ${overall.skippedCount} • Kebijakan ${overall.policyVersion}\n${overall.secondaryNote}",
+                                    text = "Dijawab: $answeredCount/${overall.rawTotal} • Dilewati: ${overall.skippedCount}\n${overall.secondaryNote}",
                                     style = MaterialTheme.typography.bodyMedium.tabular(),
                                     color = MaterialTheme.colorScheme.onSurfaceVariant,
                                 )
@@ -164,7 +167,7 @@ fun ResultsScreen(
                                 Spacer(modifier = Modifier.height(AppSpacing.sm))
                                 state.sectionSummaries.forEach { (sec, txt) ->
                                     Text(
-                                        text = "• $sec: $txt",
+                                        text = "$sec: $txt",
                                         style = MaterialTheme.typography.bodyMedium.tabular(),
                                     )
                                 }
@@ -201,7 +204,7 @@ fun ResultsScreen(
                 if (filteredRows.isEmpty()) {
                     item {
                         Text(
-                            text = "Tidak ada butir soal pada kategori filter '${activeFilter.label}'.",
+                            text = "Tidak ada butir soal pada kategori '${activeFilter.label}'.",
                             style = MaterialTheme.typography.bodyMedium,
                             color = MaterialTheme.colorScheme.onSurfaceVariant,
                         )
@@ -209,44 +212,51 @@ fun ResultsScreen(
                 }
 
                 items(filteredRows, key = { it.question.id }) { row ->
-                val q = row.question
-                val isCorrect = when (val out = row.outcome) {
-                    is GradingOutcome.Objective -> out.isCorrect
-                    is GradingOutcome.SubjectivePending -> out.meetsMinimumWords
-                }
-                val statusMsg = when (val out = row.outcome) {
-                    is GradingOutcome.Objective -> out.feedbackMessage
-                    is GradingOutcome.SubjectivePending -> out.feedbackMessage
-                }
-                Surface(
-                    shape = MaterialTheme.shapes.medium,
-                    color = MaterialTheme.colorScheme.surface,
-                    border = BorderStroke(1.dp, MaterialTheme.colorScheme.outline),
-                    modifier = Modifier.fillMaxWidth(),
-                ) {
-                    Column(modifier = Modifier.padding(AppSpacing.md)) {
-                        Text(
-                            text = "${q.id} • ${q.section.label}",
-                            style = MaterialTheme.typography.labelMedium,
-                            color = MaterialTheme.colorScheme.primary,
-                        )
-                        Spacer(modifier = Modifier.height(AppSpacing.xs))
+                    val q = row.question
+                    val isCorrect = when (val out = row.outcome) {
+                        is GradingOutcome.Objective -> out.isCorrect
+                        is GradingOutcome.SubjectivePending -> out.meetsMinimumWords
+                    }
+                    val statusMsg = when (val out = row.outcome) {
+                        is GradingOutcome.Objective -> out.feedbackMessage
+                        is GradingOutcome.SubjectivePending -> out.feedbackMessage
+                    }
+                    val tintColor = if (isCorrect) statusColors.success else MaterialTheme.colorScheme.error
+                    Column(
+                        modifier = Modifier.fillMaxWidth(),
+                        verticalArrangement = Arrangement.spacedBy(AppSpacing.xs),
+                    ) {
+                        Row(verticalAlignment = Alignment.CenterVertically) {
+                            Icon(
+                                imageVector = if (isCorrect) Icons.Default.CheckCircle else Icons.Default.ErrorOutline,
+                                contentDescription = null,
+                                tint = tintColor,
+                            )
+                            Spacer(modifier = Modifier.width(AppSpacing.xs))
+                            Text(
+                                text = statusMsg,
+                                style = MaterialTheme.typography.labelLarge,
+                                color = tintColor,
+                                modifier = Modifier.weight(1f),
+                            )
+                            Text(
+                                text = q.section.label,
+                                style = MaterialTheme.typography.labelMedium,
+                                color = MaterialTheme.colorScheme.onSurfaceVariant,
+                            )
+                        }
                         Text(text = q.prompt, style = MaterialTheme.typography.bodyLarge)
-                        Spacer(modifier = Modifier.height(AppSpacing.sm))
                         Text(
                             text = "Jawaban Anda: ${row.userAnswer.ifBlank { "(kosong)" }.replace("|", ", ")}",
                             style = MaterialTheme.typography.bodyMedium,
                             color = MaterialTheme.colorScheme.onSurfaceVariant,
                         )
-                        Spacer(modifier = Modifier.height(AppSpacing.sm))
-                        InlineFeedback(
-                            visible = true,
-                            isSuccess = isCorrect,
-                            title = statusMsg,
-                            body = q.explanation,
+                        Text(
+                            text = q.explanation,
+                            style = MaterialTheme.typography.bodyMedium,
+                            color = MaterialTheme.colorScheme.onSurface,
                         )
                         if (q.rationaleSource.isNotBlank()) {
-                            Spacer(modifier = Modifier.height(AppSpacing.xs))
                             Row(
                                 modifier = Modifier.fillMaxWidth(),
                                 horizontalArrangement = Arrangement.End,
@@ -255,14 +265,14 @@ fun ResultsScreen(
                                     onClick = { onOpenModule(q.rationaleSource) },
                                     modifier = Modifier.defaultMinSize(minHeight = AppSpacing.minTouchTarget),
                                 ) {
-                                    Text("Buka Materi ${q.rationaleSource}")
+                                    Text("Pelajari Materi")
                                 }
                             }
                         }
+                        HorizontalDivider(color = MaterialTheme.colorScheme.outline.copy(alpha = 0.4f))
                     }
                 }
             }
-        }
         }
     }
 }

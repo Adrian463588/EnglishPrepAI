@@ -18,6 +18,7 @@ import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.flatMapLatest
+import kotlinx.coroutines.flow.flowOf
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
 import javax.inject.Inject
@@ -27,6 +28,8 @@ data class HomeUiState(
     val selectedExam: ExamId = ExamId.ITP_L1,
     val activeSessionId: String? = null,
     val activeSessionTitle: String? = null,
+    val activeSessionAnsweredCount: Int = 0,
+    val activeSessionTotalCount: Int = 0,
     val recommendedModule: CourseModuleItem? = null,
     val recommendedPack: ContentPackSummary? = null,
     val averageAccuracyPercent: Int? = null,
@@ -55,13 +58,19 @@ class HomeViewModel @Inject constructor(
         Triple(settings.selectedExam, activeSession, Triple(llmState, switcherOpen, Unit))
     }.flatMapLatest { (examId, activeSession, meta) ->
         val (llmState, switcherOpen, _) = meta
+        val matchingActive = activeSession?.takeIf { it.examId == examId.name }
+        val activeAnswersFlow = if (matchingActive != null) {
+            sessionRepository.observeAnswers(matchingActive.id)
+        } else {
+            flowOf(emptyList())
+        }
         combine(
             catalogRepository.observeModules(examId),
             catalogRepository.observePacks(examId),
             sessionRepository.observeSessions(examId),
             sessionRepository.observeEvaluations(examId),
-            sessionRepository.observeStudyProgress(examId),
-        ) { modules, packs, sessions, evaluations, progressList ->
+            combine(sessionRepository.observeStudyProgress(examId), activeAnswersFlow, ::Pair),
+        ) { modules, packs, sessions, evaluations, (progressList, activeAnswers) ->
             val completedSessions = sessions.filter { it.state == "SUBMITTED" }
             val totalCorrect = evaluations.sumOf { it.rawCorrect }
             val totalQuestions = evaluations.sumOf { it.rawTotal }
@@ -71,12 +80,18 @@ class HomeViewModel @Inject constructor(
             val nextModule = modules.firstOrNull { (progressByMod[it.id]?.masteryEstimate ?: 0f) < 0.8f }
                 ?: modules.firstOrNull()
             val nextPack = packs.firstOrNull()
+            val activePackTotal = matchingActive?.packId?.let { pid ->
+                packs.firstOrNull { it.packId == pid }?.availableCount
+            } ?: 0
+            val answeredCount = activeAnswers.count { it.answerJson.isNotBlank() }
 
             HomeUiState(
                 isLoading = false,
                 selectedExam = examId,
-                activeSessionId = activeSession?.takeIf { it.examId == examId.name }?.id,
-                activeSessionTitle = activeSession?.takeIf { it.examId == examId.name }?.title,
+                activeSessionId = matchingActive?.id,
+                activeSessionTitle = matchingActive?.title,
+                activeSessionAnsweredCount = answeredCount,
+                activeSessionTotalCount = activePackTotal,
                 recommendedModule = nextModule,
                 recommendedPack = nextPack,
                 averageAccuracyPercent = avgAccuracy,

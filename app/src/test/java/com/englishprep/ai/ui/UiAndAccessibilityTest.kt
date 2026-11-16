@@ -11,9 +11,13 @@ import androidx.compose.ui.test.junit4.createComposeRule
 import androidx.compose.ui.test.onNodeWithContentDescription
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.performClick
+import androidx.compose.ui.test.performScrollTo
 import androidx.compose.ui.test.performScrollToNode
 import androidx.compose.ui.unit.Density
 import androidx.compose.ui.unit.dp
+import com.englishprep.ai.data.datastore.ThemeMode
+import com.englishprep.ai.data.datastore.UserSettings
+import com.englishprep.ai.data.room.ModelInstallEntity
 import com.englishprep.ai.domain.engines.LlmModelState
 import com.englishprep.ai.domain.models.ContentPackSummary
 import com.englishprep.ai.domain.models.ExamId
@@ -38,6 +42,7 @@ import com.englishprep.ai.ui.feature.learn.LearnScreen
 import com.englishprep.ai.ui.feature.learn.LearnUiState
 import com.englishprep.ai.ui.feature.practice.PracticeScreen
 import com.englishprep.ai.ui.feature.practice.PracticeUiState
+import com.englishprep.ai.ui.feature.profile.ModelManagerScreen
 import com.englishprep.ai.ui.feature.profile.ProfileScreen
 import com.englishprep.ai.ui.feature.profile.ProfileUiState
 import com.englishprep.ai.ui.feature.progress.ProgressScreen
@@ -181,14 +186,14 @@ class UiAndAccessibilityTest {
                         strictMockActive = true,
                     ),
                     onBack = {},
-                    onOpenProfileAi = {},
+                    onOpenModelManager = {},
                     onDraftChange = {},
                     onSend = { sentCount++ },
                     onCancel = {},
                 )
             }
         }
-        composeRule.onNodeWithText("Tanpa LLM • Mode ringkasan FTS lokal").assertIsDisplayed()
+        composeRule.onNodeWithText("Tanpa LLM • Ringkasan FTS aktif (Ketuk kelola)").assertIsDisplayed()
         composeRule.onNodeWithText("Mode Simulasi Strict Sedang Aktif").assertIsDisplayed()
         composeRule.onNodeWithContentDescription("Kirim pertanyaan").assertHeightIsAtLeast(48.dp).performClick()
         assertEquals("Strict mode must prevent sending chat queries", 0, sentCount)
@@ -408,6 +413,7 @@ class UiAndAccessibilityTest {
                     state = LearnUiState(
                         isLoading = false,
                         selectedExam = ExamId.ITP_L1,
+                        materialBankOnly = true,
                         materialBankEntries = listOf(sampleEntry),
                         expandedMaterialId = sampleEntry.id,
                     ),
@@ -417,11 +423,10 @@ class UiAndAccessibilityTest {
                 )
             }
         }
-        composeRule.onNodeWithText("Bank Materi OER & Panduan PDF (1)").assertIsDisplayed()
-        composeRule.onNode(hasScrollAction()).performScrollToNode(hasText("Tanya AI tentang materi ini"))
-        composeRule.onNodeWithText("Gerunds and Infinitives").assertIsDisplayed()
-        composeRule.onNodeWithText("Gerunds are -ing forms of verbs used as nouns.").assertIsDisplayed()
-        composeRule.onNodeWithText("Tanya AI tentang materi ini").assertHeightIsAtLeast(48.dp).performClick()
+        composeRule.onNodeWithText("Bacaan OER (1)").performScrollTo().assertIsDisplayed().assertHeightIsAtLeast(48.dp)
+        composeRule.onNodeWithText("Gerunds and Infinitives").performScrollTo().assertIsDisplayed()
+        composeRule.onNodeWithText("Gerunds are -ing forms of verbs used as nouns.").performScrollTo().assertIsDisplayed()
+        composeRule.onNodeWithText("Tanya AI tentang bacaan ini").performScrollTo().assertHeightIsAtLeast(48.dp).performClick()
         assertEquals("MB-OER-GRAM-01-SEC-1", tutorSrc)
     }
 
@@ -480,9 +485,9 @@ class UiAndAccessibilityTest {
                 }
             }
         }
-        composeRule.onNodeWithText("Kembali").assertIsDisplayed().assertHeightIsAtLeast(48.dp)
-        composeRule.onNodeWithText("Cek").assertIsDisplayed().assertHeightIsAtLeast(48.dp)
-        composeRule.onNodeWithText("Lanjut").assertIsDisplayed().assertHeightIsAtLeast(48.dp).performClick()
+        composeRule.onNodeWithText("Sebelumnya").assertIsDisplayed().assertHeightIsAtLeast(48.dp)
+        composeRule.onNodeWithText("Periksa").assertIsDisplayed().assertHeightIsAtLeast(48.dp)
+        composeRule.onNodeWithText("Berikutnya").assertIsDisplayed().assertHeightIsAtLeast(48.dp).performClick()
         assertTrue(nextClicked)
     }
 
@@ -608,9 +613,123 @@ class UiAndAccessibilityTest {
         composeRule.onNodeWithText("Getar Haptik Saat Selesai").assertHeightIsAtLeast(48.dp).performClick()
         assertEquals(false, hapticsToggledTo)
         composeRule.onNode(hasScrollAction()).performScrollToNode(hasText("Lihat Lisensi Open-Source & Pihak Ketiga"))
+        composeRule.onNodeWithText("Lihat Lisensi Open-Source & Pihak Ketiga").assertHeightIsAtLeast(48.dp).performClick()
+        composeRule.onNodeWithText("Lisensi Open-Source & Atribusi").assertIsDisplayed()
         composeRule.onNodeWithText(
-            "1.725 butir READY",
+            "Seluruh 30 modul, 15 paket tryout penuh (1.725 butir READY)",
             substring = true,
         ).assertIsDisplayed()
+    }
+
+    @Test
+    @Config(qualifiers = "w360dp-h640dp")
+    fun `home screen on 360dp phone shows real session progress and 48dp touch targets in light mode`() {
+        composeRule.setContent {
+            EnglishPrepTheme(darkTheme = false) {
+                HomeScreen(
+                    state = HomeUiState(
+                        isLoading = false,
+                        selectedExam = ExamId.IELTS_ACADEMIC,
+                        activeSessionId = "SES-1",
+                        activeSessionTitle = "IELTS Paket 1 (PRACTICE)",
+                        activeSessionAnsweredCount = 12,
+                        activeSessionTotalCount = 85,
+                        averageAccuracyPercent = 72,
+                        completedSessionCount = 2,
+                    ),
+                    onOpenSwitcher = {},
+                    onDismissSwitcher = {},
+                    onSelectExam = {},
+                    onPrimaryAction = {},
+                    onOpenModule = {},
+                    onOpenPractice = {},
+                    onOpenChat = {},
+                    onOpenProfileAi = {},
+                )
+            }
+        }
+        composeRule.onNodeWithText("English Prep").assertIsDisplayed()
+        composeRule.onNodeWithText("12 dari 85 soal").assertIsDisplayed()
+        composeRule.onNodeWithText("Akurasi: 72% • 2 sesi selesai").assertIsDisplayed()
+        composeRule.onNodeWithText("Lanjutkan").assertIsDisplayed().assertHeightIsAtLeast(48.dp)
+        composeRule.onNodeWithText("Tutor AI").performScrollTo().assertIsDisplayed().assertHeightIsAtLeast(48.dp)
+    }
+
+    @Test
+    @Config(qualifiers = "w412dp-h915dp")
+    fun `model manager screen displays installed model expandable details and saf picker dialog`() {
+        var gemmaTriggered = false
+        val installed = ModelInstallEntity(
+            id = "MDL-1",
+            displayName = "Gemma 4 E2B",
+            family = "GEMMA4",
+            modelVariant = "E2B-it",
+            runtime = "LiteRT-LM 0.13.1",
+            format = ".litertlm",
+            quantization = "INT4",
+            sha256 = "ABCDEF1234567890ABCDEF",
+            sizeBytes = 2_600L * 1024L * 1024L,
+            privateStoragePath = "/data/user/0/com.englishprep.ai/files/models/gemma4.litertlm",
+            sourceDocumentUri = null,
+            status = "READY",
+            installedAt = 1L,
+            licenseId = "Gemma Terms",
+        )
+        composeRule.setContent {
+            EnglishPrepTheme(darkTheme = true) {
+                ModelManagerScreen(
+                    state = ProfileUiState(
+                        settings = UserSettings(themeMode = ThemeMode.DARK),
+                        installedModels = listOf(installed),
+                    ),
+                    onBack = {},
+                    onImportGemma4 = { gemmaTriggered = true },
+                    onImportWhisper = {},
+                    onActivateModel = {},
+                    onDeleteModel = {},
+                    onOpenExternalUrl = {},
+                    onDismissBanner = {},
+                )
+            }
+        }
+        composeRule.onNodeWithText("Gemma 4 E2B").assertIsDisplayed()
+        composeRule.onNodeWithText("Detail teknis").assertHeightIsAtLeast(48.dp).performClick()
+        composeRule.onNodeWithText("Runtime: LiteRT-LM 0.13.1 • Format: .litertlm").assertIsDisplayed()
+        composeRule.onNodeWithText("Impor model dari perangkat").performScrollTo().assertHeightIsAtLeast(48.dp).performClick()
+        composeRule.onNodeWithText("Gemma 4 (.litertlm)").assertHeightIsAtLeast(48.dp).performClick()
+        assertTrue(gemmaTriggered)
+    }
+
+    @Test
+    fun `profile screen separates model manager behind single tap row`() {
+        var openedManager = false
+        composeRule.setContent {
+            EnglishPrepTheme {
+                ProfileScreen(
+                    state = ProfileUiState(),
+                    onSelectLanguage = {},
+                    onSelectTheme = {},
+                    onSelectSpeed = {},
+                    onToggleFontBoost = {},
+                    onToggleReduceMotion = {},
+                    onToggleHaptics = {},
+                    onToggleReminder = {},
+                    onImportGemma4 = {},
+                    onImportWhisper = {},
+                    onImportPack = {},
+                    onActivateModel = {},
+                    onDeleteModel = {},
+                    onOpenExternalUrl = {},
+                    onExportBackup = {},
+                    onRestoreBackup = {},
+                    onDeleteAllData = {},
+                    onDismissBanner = {},
+                    onOpenModelManager = { openedManager = true },
+                )
+            }
+        }
+        composeRule.onNode(hasScrollAction()).performScrollToNode(hasText("Kelola Model AI"))
+        composeRule.onNodeWithText("Kelola Model AI").assertHeightIsAtLeast(48.dp).performClick()
+        assertTrue(openedManager)
     }
 }

@@ -2,16 +2,13 @@ package com.englishprep.ai.ui.feature.progress
 
 import androidx.compose.animation.core.animateFloatAsState
 import androidx.compose.animation.core.tween
-import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.Canvas
-import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.defaultMinSize
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
@@ -36,6 +33,7 @@ import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.englishprep.ai.ui.components.AppButton
+import com.englishprep.ai.ui.components.PreferenceRow
 import com.englishprep.ai.ui.components.ProgressSummary
 import com.englishprep.ai.ui.components.ResponsiveScreenContainer
 import com.englishprep.ai.ui.components.SectionHeading
@@ -87,25 +85,18 @@ fun ProgressScreen(
         ) {
             item {
                 Text(
-                    text = "Analitik Progres • ${state.selectedExam.title}",
+                    text = "Progres ${state.selectedExam.title}",
                     style = MaterialTheme.typography.headlineMedium,
                     modifier = Modifier.semantics { heading() },
-                )
-                Spacer(modifier = Modifier.height(AppSpacing.xs))
-                Text(
-                    text = "Seluruh statistik dihitung lokal dari riwayat latihan nyata di perangkat.",
-                    style = MaterialTheme.typography.bodyMedium,
-                    color = MaterialTheme.colorScheme.onSurfaceVariant,
                 )
             }
 
             item {
                 val summaryCard: @Composable (Modifier) -> Unit = { cardMod ->
                     ProgressSummary(
-                        title = "Ringkasan Objektif",
+                        title = "Ringkasan Latihan",
                         accuracyPercent = state.overallAccuracyPercent,
                         completedSessions = state.recentSessions.size,
-                        subtitle = state.selectedExam.scaleLabel,
                         modifier = cardMod,
                     )
                 }
@@ -128,33 +119,24 @@ fun ProgressScreen(
 
             if (state.recentSessions.isEmpty() && state.weakModules.isEmpty()) {
                 item {
-                    Surface(
-                        shape = MaterialTheme.shapes.medium,
-                        color = MaterialTheme.colorScheme.surfaceContainerLow,
-                        border = BorderStroke(1.dp, MaterialTheme.colorScheme.outline),
-                        modifier = Modifier.fillMaxWidth(),
-                    ) {
-                        Column(modifier = Modifier.padding(AppSpacing.md)) {
-                            Text(
-                                text = "Belum Ada Riwayat Tryout",
-                                style = MaterialTheme.typography.titleMedium,
-                            )
-                            Spacer(modifier = Modifier.height(AppSpacing.xs))
-                            Text(
-                                text = "Selesaikan satu paket latihan atau simulasi agar grafik tren akurasi dan pemetaan kelemahan per seksi tampil di sini.",
-                                style = MaterialTheme.typography.bodyMedium,
-                                color = MaterialTheme.colorScheme.onSurfaceVariant,
-                            )
-                            Spacer(modifier = Modifier.height(AppSpacing.md))
-                            AppButton(text = "Mulai Paket Pertama", onClick = onOpenPractice)
-                        }
+                    Column(verticalArrangement = Arrangement.spacedBy(AppSpacing.sm)) {
+                        Text(
+                            text = "Belum Ada Riwayat Tryout",
+                            style = MaterialTheme.typography.titleMedium,
+                        )
+                        Text(
+                            text = "Selesaikan satu paket latihan atau simulasi agar statistik akurasi per seksi dan modul lemah tampil di sini.",
+                            style = MaterialTheme.typography.bodyMedium,
+                            color = MaterialTheme.colorScheme.onSurfaceVariant,
+                        )
+                        AppButton(text = "Mulai Paket Pertama", onClick = onOpenPractice)
                     }
                 }
             }
 
             if (state.recentTrendPercents.size >= 2 && !isExpanded) {
                 item {
-                    SectionHeading(text = "Tren Akurasi Sesi Terakhir")
+                    SectionHeading(text = "Tren Sesi Terbaru")
                     Spacer(modifier = Modifier.height(AppSpacing.sm))
                     TrendChartCard(points = state.recentTrendPercents)
                 }
@@ -162,104 +144,78 @@ fun ProgressScreen(
 
             if (state.sectionRows.isNotEmpty()) {
                 item {
-                    SectionHeading(text = "Akurasi per Seksi")
+                    SectionHeading(text = "Performa per Seksi")
                     Spacer(modifier = Modifier.height(AppSpacing.sm))
-                    Surface(
-                        shape = MaterialTheme.shapes.medium,
-                        color = MaterialTheme.colorScheme.surface,
-                        border = BorderStroke(1.dp, MaterialTheme.colorScheme.outline),
-                        modifier = Modifier.fillMaxWidth(),
-                    ) {
-                        Column(
-                            modifier = Modifier.padding(AppSpacing.md),
-                            verticalArrangement = Arrangement.spacedBy(AppSpacing.md),
-                        ) {
-                            state.sectionRows.forEach { row ->
-                                val animProg by animateFloatAsState(
-                                    targetValue = (row.percent / 100f).coerceIn(0f, 1f),
-                                    animationSpec = tween(if (reduceMotion) 0 else MotionTokens.AnswerCheckMs),
-                                    label = "secBar_${row.section}",
-                                )
-                                Column {
-                                    Row(
-                                        modifier = Modifier.fillMaxWidth(),
-                                        horizontalArrangement = Arrangement.SpaceBetween,
-                                    ) {
-                                        Text(text = row.section, style = MaterialTheme.typography.titleMedium)
-                                        Text(
-                                            text = "${row.correct}/${row.total} (${row.percent}%)",
-                                            style = MaterialTheme.typography.bodyMedium.tabular(),
-                                        )
-                                    }
-                                    Spacer(modifier = Modifier.height(AppSpacing.xs))
-                                    LinearProgressIndicator(
-                                        progress = { animProg },
-                                        modifier = Modifier.fillMaxWidth(),
+                    Column(verticalArrangement = Arrangement.spacedBy(AppSpacing.md)) {
+                        state.sectionRows.forEach { row ->
+                            val animProg by animateFloatAsState(
+                                targetValue = (row.percent / 100f).coerceIn(0f, 1f),
+                                animationSpec = tween(if (reduceMotion) 0 else MotionTokens.AnswerCheckMs),
+                                label = "secBar_${row.section}",
+                            )
+                            Column {
+                                Row(
+                                    modifier = Modifier.fillMaxWidth(),
+                                    horizontalArrangement = Arrangement.SpaceBetween,
+                                ) {
+                                    Text(text = row.section, style = MaterialTheme.typography.titleMedium)
+                                    Text(
+                                        text = "${row.correct}/${row.total} (${row.percent}%)",
+                                        style = MaterialTheme.typography.bodyMedium.tabular(),
+                                        color = MaterialTheme.colorScheme.onSurfaceVariant,
                                     )
                                 }
+                                Spacer(modifier = Modifier.height(AppSpacing.xs))
+                                LinearProgressIndicator(
+                                    progress = { animProg },
+                                    modifier = Modifier.fillMaxWidth(),
+                                )
                             }
                         }
                     }
                 }
             }
 
-        if (state.weakModules.isNotEmpty()) {
-            item {
-                SectionHeading(text = "Modul Perlu Penguatan (<80%)")
-            }
-            items(state.weakModules, key = { it.id }) { prog ->
-                val pct = (prog.masteryEstimate * 100).toInt()
-                Row(
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .defaultMinSize(minHeight = AppSpacing.minTouchTarget)
-                        .clickable { onOpenModule(prog.moduleId) }
-                        .padding(vertical = AppSpacing.sm),
-                    horizontalArrangement = Arrangement.SpaceBetween,
-                    verticalAlignment = Alignment.CenterVertically,
-                ) {
-                    Column(modifier = Modifier.weight(1f)) {
-                        Text(text = prog.moduleId, style = MaterialTheme.typography.titleMedium)
-                        Text(
-                            text = "${prog.correct}/${prog.attempts} latihan benar ($pct%)",
-                            style = MaterialTheme.typography.bodyMedium,
-                            color = MaterialTheme.colorScheme.onSurfaceVariant,
-                        )
-                    }
-                    Text("Buka Materi", style = MaterialTheme.typography.labelLarge, color = MaterialTheme.colorScheme.primary)
+            if (state.recentSessions.isNotEmpty()) {
+                item {
+                    HorizontalDivider(color = MaterialTheme.colorScheme.outline.copy(alpha = 0.4f))
+                    Spacer(modifier = Modifier.height(AppSpacing.sm))
+                    SectionHeading(text = "Percobaan Terbaru")
                 }
-                HorizontalDivider()
+                items(state.recentSessions, key = { it.id }) { ses ->
+                    val modeText = if (ses.mode == "STRICT") "Simulasi Strict" else "Mode Latihan"
+                    PreferenceRow(
+                        title = ses.title.replace(" (PRACTICE)", "").replace(" (STRICT)", ""),
+                        subtitle = modeText,
+                        onClick = { onOpenResults(ses.id) },
+                        trailing = {
+                            Text("Hasil", style = MaterialTheme.typography.labelLarge, color = MaterialTheme.colorScheme.primary)
+                        },
+                    )
+                    HorizontalDivider(color = MaterialTheme.colorScheme.outline.copy(alpha = 0.35f))
+                }
             }
-        }
 
-        if (state.recentSessions.isNotEmpty()) {
-            item {
-                SectionHeading(text = "Riwayat Sesi Selesai")
-            }
-            items(state.recentSessions, key = { it.id }) { ses ->
-                Row(
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .defaultMinSize(minHeight = AppSpacing.minTouchTarget)
-                        .clickable { onOpenResults(ses.id) }
-                        .padding(vertical = AppSpacing.sm),
-                    horizontalArrangement = Arrangement.SpaceBetween,
-                    verticalAlignment = Alignment.CenterVertically,
-                ) {
-                    Column(modifier = Modifier.weight(1f)) {
-                        Text(text = ses.title, style = MaterialTheme.typography.titleMedium)
-                        Text(
-                            text = "Mode ${ses.mode}",
-                            style = MaterialTheme.typography.labelMedium,
-                            color = MaterialTheme.colorScheme.onSurfaceVariant,
-                        )
-                    }
-                    Text("Lihat Hasil", style = MaterialTheme.typography.labelLarge, color = MaterialTheme.colorScheme.primary)
+            if (state.weakModules.isNotEmpty()) {
+                item {
+                    HorizontalDivider(color = MaterialTheme.colorScheme.outline.copy(alpha = 0.4f))
+                    Spacer(modifier = Modifier.height(AppSpacing.sm))
+                    SectionHeading(text = "Perlu Diperkuat (<80%)")
                 }
-                HorizontalDivider()
+                items(state.weakModules, key = { it.id }) { prog ->
+                    val pct = (prog.masteryEstimate * 100).toInt()
+                    PreferenceRow(
+                        title = prog.moduleId,
+                        subtitle = "${prog.correct}/${prog.attempts} benar ($pct%)",
+                        onClick = { onOpenModule(prog.moduleId) },
+                        trailing = {
+                            Text("Pelajari", style = MaterialTheme.typography.labelLarge, color = MaterialTheme.colorScheme.primary)
+                        },
+                    )
+                    HorizontalDivider(color = MaterialTheme.colorScheme.outline.copy(alpha = 0.35f))
+                }
             }
         }
-    }
     }
 }
 
@@ -273,14 +229,13 @@ private fun TrendChartCard(
     Surface(
         shape = MaterialTheme.shapes.medium,
         color = MaterialTheme.colorScheme.surfaceContainerLow,
-        border = BorderStroke(1.dp, MaterialTheme.colorScheme.outline),
         modifier = modifier.fillMaxWidth(),
     ) {
         Column(modifier = Modifier.padding(AppSpacing.md)) {
             Canvas(
                 modifier = Modifier
                     .fillMaxWidth()
-                    .height(110.dp),
+                    .height(100.dp),
             ) {
                 val stepX = size.width / (points.size - 1).coerceAtLeast(1)
                 drawLine(gridColor, Offset(0f, size.height * 0.5f), Offset(size.width, size.height * 0.5f), 1.dp.toPx())
@@ -299,7 +254,7 @@ private fun TrendChartCard(
             }
             Spacer(modifier = Modifier.height(AppSpacing.xs))
             Text(
-                text = "Urutan kronologis: ${points.joinToString(" → ") { "$it%" }}",
+                text = "Urutan sesi: ${points.joinToString(" → ") { "$it%" }}",
                 style = MaterialTheme.typography.labelMedium.tabular(),
                 color = MaterialTheme.colorScheme.onSurfaceVariant,
             )

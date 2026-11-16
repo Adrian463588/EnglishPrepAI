@@ -19,6 +19,7 @@ sealed interface AppRoute {
     @Serializable data class Chat(val contextSourceId: String? = null) : AppRoute
     @Serializable data object Progress : AppRoute
     @Serializable data object Profile : AppRoute
+    @Serializable data object ModelManager : AppRoute
 }
 
 enum class TopLevelDestination(

@@ -1,6 +1,5 @@
 package com.englishprep.ai.ui.feature.home
 
-import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -19,6 +18,7 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.filled.ArrowForward
 import androidx.compose.material.icons.filled.Check
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.ExperimentalMaterial3Api
@@ -45,11 +45,11 @@ import com.englishprep.ai.domain.models.ExamId
 import com.englishprep.ai.ui.components.AppButton
 import com.englishprep.ai.ui.components.ExamSelector
 import com.englishprep.ai.ui.components.ModuleRow
-import com.englishprep.ai.ui.components.OfflineModelState
-import com.englishprep.ai.ui.components.ProgressSummary
+import com.englishprep.ai.ui.components.PreferenceRow
 import com.englishprep.ai.ui.components.ResponsiveScreenContainer
 import com.englishprep.ai.ui.components.SectionHeading
 import com.englishprep.ai.ui.components.rememberIsExpandedWidth
+import com.englishprep.ai.ui.components.tabular
 import com.englishprep.ai.ui.theme.AppSpacing
 
 @Composable
@@ -70,7 +70,7 @@ fun HomeRoute(
         onPrimaryAction = { viewModel.startPrimaryAction(onOpenSession) },
         onOpenModule = onOpenModule,
         onOpenPractice = onOpenPractice,
-        onOpenChat = { onOpenChat(state.recommendedModule?.id) },
+        onOpenChat = { onOpenChat(null) },
         onOpenProfileAi = onOpenProfileAi,
     )
 }
@@ -101,57 +101,65 @@ fun HomeScreen(
     ResponsiveScreenContainer(maxWidth = if (isExpanded) 960.dp else 720.dp, modifier = modifier) {
         LazyColumn(
             modifier = Modifier.fillMaxSize(),
-            contentPadding = PaddingValues(horizontal = AppSpacing.md, vertical = AppSpacing.sm + 4.dp),
-            verticalArrangement = Arrangement.spacedBy(AppSpacing.sm + 4.dp),
+            contentPadding = PaddingValues(horizontal = AppSpacing.md, vertical = AppSpacing.md),
+            verticalArrangement = Arrangement.spacedBy(AppSpacing.md),
         ) {
             item {
-                Text(
-                    text = "English Prep AI",
-                    style = MaterialTheme.typography.headlineMedium,
-                    color = MaterialTheme.colorScheme.onSurface,
-                    modifier = Modifier.semantics { heading() },
-                )
-                Spacer(modifier = Modifier.height(AppSpacing.xs))
-                Text(
-                    text = "Mode offline penuh • Materi, tryout, audio & AI lokal di perangkat.",
-                    style = MaterialTheme.typography.bodyMedium,
-                    color = MaterialTheme.colorScheme.onSurfaceVariant,
-                )
+                Column(verticalArrangement = Arrangement.spacedBy(AppSpacing.sm)) {
+                    Text(
+                        text = "English Prep",
+                        style = MaterialTheme.typography.headlineMedium,
+                        color = MaterialTheme.colorScheme.onSurface,
+                        modifier = Modifier.semantics { heading() },
+                    )
+                    ExamSelector(
+                        activeExam = state.selectedExam,
+                        onOpenSwitcher = onOpenSwitcher,
+                    )
+                }
             }
 
             item {
-                ExamSelector(
-                    activeExam = state.selectedExam,
-                    onOpenSwitcher = onOpenSwitcher,
-                )
-            }
+                val cleanHeroTitle = (state.activeSessionTitle ?: state.recommendedPack?.title ?: state.selectedExam.title)
+                    .replace(" (PRACTICE)", "")
+                    .replace(" (STRICT)", "")
+                val progressLine = when {
+                    state.activeSessionId != null && state.activeSessionTotalCount > 0 ->
+                        "${state.activeSessionAnsweredCount} dari ${state.activeSessionTotalCount} soal"
+                    state.recommendedPack != null ->
+                        "${state.recommendedPack.availableCount} soal • ${state.recommendedPack.durationMinutes} mnt"
+                    else -> null
+                }
 
-            item {
-                val heroCard: @Composable (Modifier) -> Unit = { cardMod ->
+                val heroBlock: @Composable (Modifier) -> Unit = { blockMod ->
                     Surface(
                         shape = MaterialTheme.shapes.medium,
-                        color = MaterialTheme.colorScheme.primaryContainer.copy(alpha = 0.45f),
-                        border = BorderStroke(1.dp, MaterialTheme.colorScheme.primary.copy(alpha = 0.3f)),
-                        modifier = cardMod.fillMaxWidth(),
+                        color = MaterialTheme.colorScheme.primaryContainer.copy(alpha = 0.4f),
+                        modifier = blockMod.fillMaxWidth(),
                     ) {
                         Column(modifier = Modifier.padding(AppSpacing.md)) {
-                            val heroTitle = state.activeSessionTitle
-                                ?: state.recommendedPack?.title
-                                ?: state.selectedExam.title
                             Text(
-                                text = heroTitle,
-                                style = MaterialTheme.typography.titleLarge,
-                                color = MaterialTheme.colorScheme.onSurface,
-                                maxLines = 3,
-                                overflow = TextOverflow.Ellipsis,
-                                modifier = Modifier.semantics { heading() },
+                                text = if (state.activeSessionId != null) "Lanjutkan belajar" else "Mulai latihan",
+                                style = MaterialTheme.typography.labelLarge,
+                                color = MaterialTheme.colorScheme.primary,
                             )
                             Spacer(modifier = Modifier.height(AppSpacing.xs))
                             Text(
-                                text = state.selectedExam.subtitle,
-                                style = MaterialTheme.typography.bodyMedium,
-                                color = MaterialTheme.colorScheme.onSurfaceVariant,
+                                text = cleanHeroTitle,
+                                style = MaterialTheme.typography.titleLarge,
+                                color = MaterialTheme.colorScheme.onSurface,
+                                maxLines = 2,
+                                overflow = TextOverflow.Ellipsis,
+                                modifier = Modifier.semantics { heading() },
                             )
+                            if (progressLine != null) {
+                                Spacer(modifier = Modifier.height(AppSpacing.xs))
+                                Text(
+                                    text = progressLine,
+                                    style = MaterialTheme.typography.bodyMedium.tabular(),
+                                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                                )
+                            }
                             Spacer(modifier = Modifier.height(AppSpacing.md))
                             FlowRow(
                                 horizontalArrangement = Arrangement.spacedBy(AppSpacing.sm),
@@ -166,45 +174,55 @@ fun HomeScreen(
                                     onClick = onOpenPractice,
                                     modifier = Modifier.defaultMinSize(minHeight = AppSpacing.minTouchTarget),
                                 ) {
-                                    Text("Lihat 5 Paket")
+                                    Text("Semua paket")
                                 }
                             }
                         }
                     }
                 }
-                val summaryCard: @Composable (Modifier) -> Unit = { sumMod ->
-                    ProgressSummary(
-                        title = "Ringkasan ${state.selectedExam.title}",
-                        accuracyPercent = state.averageAccuracyPercent,
-                        completedSessions = state.completedSessionCount,
-                        subtitle = state.selectedExam.scaleLabel,
-                        modifier = sumMod,
-                    )
+
+                val progressSummaryRow: @Composable (Modifier) -> Unit = { sumMod ->
+                    Column(modifier = sumMod.fillMaxWidth()) {
+                        SectionHeading(text = "Progres belajar")
+                        Spacer(modifier = Modifier.height(AppSpacing.xs))
+                        Text(
+                            text = if (state.averageAccuracyPercent != null && state.completedSessionCount > 0) {
+                                "Akurasi: ${state.averageAccuracyPercent}% • ${state.completedSessionCount} sesi selesai"
+                            } else {
+                                "Belum ada sesi selesai"
+                            },
+                            style = MaterialTheme.typography.bodyLarge.tabular(),
+                            color = if (state.averageAccuracyPercent != null) {
+                                MaterialTheme.colorScheme.onSurface
+                            } else {
+                                MaterialTheme.colorScheme.onSurfaceVariant
+                            },
+                        )
+                    }
                 }
 
                 if (isExpanded) {
                     Row(
                         modifier = Modifier.fillMaxWidth(),
-                        horizontalArrangement = Arrangement.spacedBy(AppSpacing.md),
+                        horizontalArrangement = Arrangement.spacedBy(AppSpacing.lg),
                         verticalAlignment = Alignment.Top,
                     ) {
-                        heroCard(Modifier.weight(1.15f))
-                        summaryCard(Modifier.weight(0.85f))
+                        heroBlock(Modifier.weight(1.25f))
+                        progressSummaryRow(Modifier.weight(0.75f).padding(top = AppSpacing.sm))
                     }
                 } else {
-                    Column(verticalArrangement = Arrangement.spacedBy(AppSpacing.sm + 4.dp)) {
-                        heroCard(Modifier)
-                        summaryCard(Modifier)
-                    }
+                    heroBlock(Modifier)
+                    Spacer(modifier = Modifier.height(AppSpacing.md))
+                    progressSummaryRow(Modifier)
                 }
             }
 
             state.recommendedModule?.let { module ->
                 item {
+                    HorizontalDivider(color = MaterialTheme.colorScheme.outline.copy(alpha = 0.4f))
+                    Spacer(modifier = Modifier.height(AppSpacing.md))
+                    SectionHeading(text = "Pelajaran berikutnya")
                     Spacer(modifier = Modifier.height(AppSpacing.xs))
-                    SectionHeading(text = "Materi Berikutnya")
-                    Spacer(modifier = Modifier.height(AppSpacing.xs))
-                    HorizontalDivider(color = MaterialTheme.colorScheme.outline.copy(alpha = 0.5f))
                     ModuleRow(
                         module = module,
                         masteryPercent = null,
@@ -214,22 +232,33 @@ fun HomeScreen(
             }
 
             item {
-                Spacer(modifier = Modifier.height(AppSpacing.xs))
-                SectionHeading(text = "Tutor AI Lokal (Gemma 4 / FTS)")
-                Spacer(modifier = Modifier.height(AppSpacing.xs))
-                val llmReady = state.llmState is LlmModelState.Ready
-                val detail = when (val llm = state.llmState) {
-                    is LlmModelState.Ready -> "Aktif offline: ${llm.modelName} (${llm.variant})"
-                    is LlmModelState.Loading -> "Memuat model lokal: ${llm.modelName}..."
-                    is LlmModelState.Error -> llm.message
-                    LlmModelState.Unloaded -> "Model belum diimpor; pencarian materi FTS offline tetap aktif."
+                val aiSubtitle = when (val llm = state.llmState) {
+                    is LlmModelState.Ready -> "${llm.modelName} siap offline"
+                    is LlmModelState.Loading -> "Memuat ${llm.modelName}..."
+                    is LlmModelState.Error -> "Pencarian materi offline aktif"
+                    LlmModelState.Unloaded -> "Pencarian materi offline aktif"
                 }
-                OfflineModelState(
-                    modelLabel = "Asisten Belajar Offline",
-                    isReady = llmReady,
-                    detail = detail,
-                    actionLabel = "Tanya AI",
-                    onAction = onOpenChat,
+                PreferenceRow(
+                    title = "Tutor AI",
+                    subtitle = aiSubtitle,
+                    onClick = onOpenChat,
+                    trailing = {
+                        Row(
+                            verticalAlignment = Alignment.CenterVertically,
+                            horizontalArrangement = Arrangement.spacedBy(AppSpacing.xs),
+                        ) {
+                            Text(
+                                text = "Tanya AI",
+                                style = MaterialTheme.typography.labelLarge,
+                                color = MaterialTheme.colorScheme.primary,
+                            )
+                            Icon(
+                                imageVector = Icons.AutoMirrored.Filled.ArrowForward,
+                                contentDescription = null,
+                                tint = MaterialTheme.colorScheme.primary,
+                            )
+                        }
+                    },
                 )
             }
         }
@@ -249,11 +278,11 @@ fun HomeScreen(
             ) {
                 SectionHeading(text = "Pilih Target Ujian")
                 Spacer(modifier = Modifier.height(AppSpacing.sm))
-                ExamId.entries.forEach { exam ->
+                ExamId.entries.forEachIndexed { idx, exam ->
                     val selected = exam == state.selectedExam
                     Surface(
-                        shape = MaterialTheme.shapes.medium,
-                        color = if (selected) MaterialTheme.colorScheme.primaryContainer.copy(alpha = 0.5f) else MaterialTheme.colorScheme.surface,
+                        shape = MaterialTheme.shapes.small,
+                        color = if (selected) MaterialTheme.colorScheme.primaryContainer.copy(alpha = 0.45f) else MaterialTheme.colorScheme.surface,
                         modifier = Modifier
                             .fillMaxWidth()
                             .defaultMinSize(minHeight = AppSpacing.minTouchTarget)
@@ -266,8 +295,9 @@ fun HomeScreen(
                         ) {
                             Column(modifier = Modifier.weight(1f)) {
                                 Text(text = exam.title, style = MaterialTheme.typography.titleMedium)
+                                Spacer(modifier = Modifier.height(2.dp))
                                 Text(
-                                    text = "${exam.subtitle} • ${exam.scaleLabel}",
+                                    text = exam.subtitle,
                                     style = MaterialTheme.typography.bodyMedium,
                                     color = MaterialTheme.colorScheme.onSurfaceVariant,
                                 )
@@ -281,9 +311,11 @@ fun HomeScreen(
                             }
                         }
                     }
-                    Spacer(modifier = Modifier.height(AppSpacing.sm))
+                    if (idx < ExamId.entries.lastIndex) {
+                        HorizontalDivider(color = MaterialTheme.colorScheme.outline.copy(alpha = 0.3f))
+                    }
                 }
-                Spacer(modifier = Modifier.height(AppSpacing.md))
+                Spacer(modifier = Modifier.height(AppSpacing.lg))
             }
         }
     }

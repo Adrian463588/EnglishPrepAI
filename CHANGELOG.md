@@ -1,5 +1,17 @@
 # Changelog
 
+## 1.2.0 - 2026-11-17
+### Fixed & Redesigned (`specs/ui-ux-redesign`)
+- **P0 System Bar Contrast Fix (`MainActivity.kt`)**: Added reactive `SideEffect` syncing `WindowCompat.getInsetsController` (`isAppearanceLightStatusBars = !useDark`, `isAppearanceLightNavigationBars = !useDark`), fixing invisible white status bar icons on `#FAF9F6` Warm Paper when `ThemeMode.LIGHT` is active on a Dark-mode OS.
+- **Editorial Material 3 System (`docs/design-system.md`)**: Eliminated nested card-inside-card boxes, promotional hero subtitles, repeated exam scale copy, and raw internal database IDs (`ITP-MOD-01`, `CHOICE_SINGLE`, `ITP01-L01`) from primary learner UI surfaces.
+- **Screen-by-Screen UX Redesign**:
+  - **Home (`HomeScreen.kt`, `HomeViewModel.kt`)**: Minimal header, compact pill exam switcher, reactive Room session progress (`X dari Y soal`), ONE focal Continue/Start CTA, hairline `Progres belajar` & `Pelajaran berikutnya` rows, and direct `Tutor AI ->` link (`onOpenChat(null)`).
+  - **Learn & Module Detail (`LearnScreens.kt`, `LearnViewModel.kt`)**: Single-row horizontal `LazyRow` filter strip (`Structure`), single `[Bacaan OER (31)]` mode switch, divider-separated module rows, and calm editorial reader using `section.label` TopBar without card stacks.
+  - **Practice & Exam (`PracticeScreen.kt`, `ExamScreen.kt`, `AppComponents.kt`)**: Tonal `PackageRow`, compact `AudioPlayerBar` with `[1.0x v]` dropdown in Practice mode, borderless question prompt layout, symmetric bottom action bar (`Sebelumnya` / `Periksa` / `Berikutnya`) with `imePadding()` & `navigationBarsPadding()`, and preserved Practice/Strict security rules.
+  - **Profile & Dedicated Model Manager (`ProfileScreen.kt`, `ModelManagerScreen.kt`, `AppDestinations.kt`)**: Reorganized Profile into 4 grouped sections (`Preferensi`, `Konten Offline`, `AI Offline`, `Privasi & Data`) with interactive `Keamanan & Integritas R8 >` modal and scrollable OSS license dialog; extracted AI weights/SAF importer/HF catalog into `AppRoute.ModelManager` reachable in 1 tap from Profile or Chat.
+  - **AI Tutor, Progress & Results (`ChatScreen.kt`, `ProgressScreen.kt`, `ResultsScreen.kt`)**: Clean `Tutor AI` header with clickable model-status link, formatted `Sumber: ...` citations, 4-section Progress hierarchy gating trend charts to `>= 2` sessions, and divider-separated Results review rows.
+- **Verification (`v1.2.0` / `versionCode = 4`)**: `43/43` unit & Robolectric Compose UI tests pass (`UiAndAccessibilityTest`: 17 tests across `320dp @ 2.0f`, `360dp`, `412dp`, `960dp`, Light & Dark modes, `48dp` targets, `ModelManager`), `lintDebug` `0` errors (`80` warnings), `assembleDebug` (`210,392,353` bytes / `200.65 MB`, SHA-256 `0073C9875E9941D1E8E792ED43DE1C3C9F742E1403D116D460B0346EC55715DC`), R8 `assembleRelease` (`189,909,002` bytes / `181.11 MB` + `mapping.txt`), `aapt2` verified no `INTERNET`/`debuggable`, and live Dark + Light physical QA on `SM-G988B` across 16 refreshed screenshots with `0` crashes in `logcat`.
+
 ## 1.1.1 — 2026-11-16
 ### Added & Improved
 - **DevSecOps Hardening & GitHub Actions CI/CD Fix (`specs/010`)**:

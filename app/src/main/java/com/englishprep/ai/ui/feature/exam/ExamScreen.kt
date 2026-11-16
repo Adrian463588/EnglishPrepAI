@@ -203,29 +203,50 @@ fun ExamScreen(
                     title = {
                         Column {
                             val countLabel = if (state.questions.isNotEmpty()) {
-                                "Soal ${state.currentIndex + 1}/${state.questions.size}"
+                                "Soal ${state.currentIndex + 1} dari ${state.questions.size}"
                             } else {
                                 "Ujian"
                             }
                             val timerText = when {
-                                state.remainingMs != null -> "Sisa ${formatTimeMs(state.remainingMs)}"
+                                state.remainingMs != null -> formatTimeMs(state.remainingMs)
                                 else -> formatTimeMs(state.elapsedMs)
                             }
+                            Row(
+                                modifier = Modifier.fillMaxWidth(),
+                                horizontalArrangement = Arrangement.SpaceBetween,
+                                verticalAlignment = Alignment.CenterVertically,
+                            ) {
+                                Text(
+                                    text = countLabel,
+                                    style = MaterialTheme.typography.titleMedium.tabular(),
+                                    maxLines = 1,
+                                    overflow = TextOverflow.Ellipsis,
+                                    modifier = Modifier.weight(1f),
+                                )
+                                Spacer(modifier = Modifier.width(AppSpacing.sm))
+                                Text(
+                                    text = timerText,
+                                    style = MaterialTheme.typography.titleMedium.tabular(),
+                                    color = if (state.remainingMs != null) {
+                                        MaterialTheme.colorScheme.primary
+                                    } else {
+                                        MaterialTheme.colorScheme.onSurfaceVariant
+                                    },
+                                )
+                            }
+                            val modePrefix = if (state.mode == ExamMode.STRICT) "Simulasi Strict" else "Mode Latihan"
+                            val statusLine = if (state.savedBadgeText.isNotEmpty()) {
+                                "$modePrefix • ${state.savedBadgeText}"
+                            } else {
+                                modePrefix
+                            }
                             Text(
-                                text = "$countLabel • $timerText",
-                                style = MaterialTheme.typography.titleMedium.tabular(),
+                                text = statusLine,
+                                style = MaterialTheme.typography.labelSmall,
+                                color = MaterialTheme.colorScheme.onSurfaceVariant,
                                 maxLines = 1,
                                 overflow = TextOverflow.Ellipsis,
                             )
-                            if (state.savedBadgeText.isNotEmpty()) {
-                                Text(
-                                    text = "${state.mode.name} • ${state.savedBadgeText}",
-                                    style = MaterialTheme.typography.labelSmall,
-                                    color = MaterialTheme.colorScheme.onSurfaceVariant,
-                                    maxLines = 1,
-                                    overflow = TextOverflow.Ellipsis,
-                                )
-                            }
                         }
                     },
                     navigationIcon = {
@@ -282,7 +303,7 @@ fun ExamScreen(
                                 enabled = state.currentIndex > 0,
                                 modifier = Modifier.defaultMinSize(minHeight = AppSpacing.minTouchTarget),
                             ) {
-                                Text("Kembali")
+                                Text("Sebelumnya")
                             }
                         }
                         val checkButton: @Composable () -> Unit = {
@@ -291,12 +312,12 @@ fun ExamScreen(
                                 enabled = state.answers[q.id]?.isNotBlank() == true,
                                 modifier = Modifier.defaultMinSize(minHeight = AppSpacing.minTouchTarget),
                             ) {
-                                Text("Cek")
+                                Text("Periksa")
                             }
                         }
                         val nextOrSubmitButton: @Composable () -> Unit = {
                             AppButton(
-                                text = if (isLast) "Kumpulkan" else "Lanjut",
+                                text = if (isLast) "Kumpulkan" else "Berikutnya",
                                 hapticOnTap = isLast,
                                 onClick = {
                                     if (isLast) showSubmitConfirmDialog = true else onNext()
@@ -529,7 +550,6 @@ private fun PassagePane(passage: PassageItem, modifier: Modifier = Modifier) {
     Surface(
         shape = MaterialTheme.shapes.medium,
         color = MaterialTheme.colorScheme.surfaceContainerLow,
-        border = BorderStroke(1.dp, MaterialTheme.colorScheme.outline),
         modifier = modifier,
     ) {
         Column(
@@ -603,7 +623,7 @@ private fun QuestionBodyPane(
         if (displayedAsset != null) {
             item {
                 AudioPlayerBar(
-                    title = state.audioState.currentTitle.ifBlank { "Audio Soal" },
+                    title = "Audio ${q.section.label}",
                     isPlaying = state.audioState.isPlaying,
                     positionMs = state.audioState.positionMs,
                     durationMs = state.audioState.durationMs,
@@ -619,18 +639,16 @@ private fun QuestionBodyPane(
                     onChangeSpeed = onSetAudioSpeed,
                 )
                 if (isPractice && displayedAsset.caption.isNotBlank()) {
-                    Spacer(modifier = Modifier.height(AppSpacing.xs))
                     TextButton(
                         onClick = { showTranscript = !showTranscript },
                         modifier = Modifier.defaultMinSize(minHeight = AppSpacing.minTouchTarget),
                     ) {
-                        Text(if (showTranscript) "Sembunyikan Transkrip (Mode Latihan)" else "Lihat Transkrip Audio (Mode Latihan)")
+                        Text(if (showTranscript) "Sembunyikan Transkrip" else "Lihat Transkrip Audio (Mode Latihan)")
                     }
                     if (showTranscript) {
                         Surface(
                             shape = MaterialTheme.shapes.small,
                             color = MaterialTheme.colorScheme.surfaceContainerLow,
-                            border = BorderStroke(1.dp, MaterialTheme.colorScheme.outline),
                             modifier = Modifier.fillMaxWidth(),
                         ) {
                             Text(
@@ -646,8 +664,9 @@ private fun QuestionBodyPane(
         }
 
         item {
+            val sectionHeader = if (q.section == ExamSection.STRUCTURE) "Structure" else q.section.label
             QuestionCard(
-                headerLabel = "${q.section.label} • ${q.taskType.name}",
+                headerLabel = sectionHeader,
                 prompt = q.prompt,
             ) {
                 when (q.taskType) {
@@ -886,7 +905,7 @@ private fun QuestionBodyPane(
                         val sttStatusNote = if (state.sttState is SttModelState.Ready) {
                             "Transkrip otomatis (Whisper ONNX — dapat diedit)"
                         } else {
-                            "Catatan / transkrip manual (Whisper ONNX opsional di Profil > AI Offline)"
+                            "Catatan / transkrip manual (Whisper ONNX di Profil > AI Offline)"
                         }
                         OutlinedTextField(
                             value = userAnswer,

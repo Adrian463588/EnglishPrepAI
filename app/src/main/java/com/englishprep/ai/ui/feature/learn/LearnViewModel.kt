@@ -32,6 +32,7 @@ data class LearnUiState(
     val selectedExam: ExamId = ExamId.ITP_L1,
     val selectedSection: ExamSection? = null,
     val bookmarkedOnly: Boolean = false,
+    val materialBankOnly: Boolean = false,
     val bookmarkedIds: Set<String> = emptySet(),
     val lastReadModuleId: String? = null,
     val modules: List<CourseModuleItem> = emptyList(),
@@ -50,6 +51,7 @@ class LearnViewModel @Inject constructor(
 
     private val sectionFilter = MutableStateFlow<ExamSection?>(null)
     private val bookmarkFilter = MutableStateFlow(false)
+    private val materialBankFilter = MutableStateFlow(false)
     private val expandedMaterialId = MutableStateFlow<String?>(null)
 
     val uiState: StateFlow<LearnUiState> = preferences.settingsFlow.flatMapLatest { settings ->
@@ -58,8 +60,8 @@ class LearnViewModel @Inject constructor(
             sessionRepository.observeStudyProgress(settings.selectedExam),
             flow { emit(catalogRepository.getMaterialBankEntries(settings.selectedExam)) },
             sectionFilter,
-            combine(bookmarkFilter, expandedMaterialId, ::Pair),
-        ) { modules, progress, materials, filter, (onlyBookmarked, expandedId) ->
+            combine(bookmarkFilter, materialBankFilter, expandedMaterialId, ::Triple),
+        ) { modules, progress, materials, filter, (onlyBookmarked, onlyMaterialBank, expandedId) ->
             val filtered = modules.filter { mod ->
                 (filter == null || mod.section == filter) &&
                     (!onlyBookmarked || mod.id in settings.bookmarkedModuleIds)
@@ -73,6 +75,7 @@ class LearnViewModel @Inject constructor(
                 selectedExam = settings.selectedExam,
                 selectedSection = filter,
                 bookmarkedOnly = onlyBookmarked,
+                materialBankOnly = onlyMaterialBank,
                 bookmarkedIds = settings.bookmarkedModuleIds,
                 lastReadModuleId = settings.lastReadModuleId,
                 modules = filtered,
@@ -89,11 +92,19 @@ class LearnViewModel @Inject constructor(
 
     fun selectSection(section: ExamSection?) {
         bookmarkFilter.value = false
+        materialBankFilter.value = false
         sectionFilter.value = section
     }
 
     fun toggleBookmarkFilter() {
+        materialBankFilter.value = false
         bookmarkFilter.value = !bookmarkFilter.value
+    }
+
+    fun selectMaterialBank() {
+        bookmarkFilter.value = false
+        sectionFilter.value = null
+        materialBankFilter.value = !materialBankFilter.value
     }
 
     fun toggleMaterialExpanded(id: String) {

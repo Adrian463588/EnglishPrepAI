@@ -33,12 +33,14 @@ import androidx.compose.material.icons.automirrored.filled.KeyboardArrowRight
 import androidx.compose.material.icons.filled.CheckCircle
 import androidx.compose.material.icons.filled.ErrorOutline
 import androidx.compose.material.icons.filled.Info
+import androidx.compose.material.icons.filled.KeyboardArrowDown
 import androidx.compose.material.icons.filled.Pause
 import androidx.compose.material.icons.filled.PlayArrow
 import androidx.compose.material.icons.filled.Replay
-import androidx.compose.material.icons.filled.SwapHoriz
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
+import androidx.compose.material3.DropdownMenu
+import androidx.compose.material3.DropdownMenuItem
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
@@ -51,7 +53,9 @@ import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.graphicsLayer
@@ -191,49 +195,31 @@ fun ExamSelector(
     modifier: Modifier = Modifier,
 ) {
     Surface(
-        shape = MaterialTheme.shapes.medium,
+        shape = MaterialTheme.shapes.small,
         color = MaterialTheme.colorScheme.surfaceContainerLow,
-        border = BorderStroke(1.dp, MaterialTheme.colorScheme.outline),
+        border = BorderStroke(1.dp, MaterialTheme.colorScheme.outline.copy(alpha = 0.55f)),
         modifier = modifier
-            .fillMaxWidth()
             .defaultMinSize(minHeight = AppSpacing.minTouchTarget)
             .clickable(onClick = onOpenSwitcher),
     ) {
         Row(
-            modifier = Modifier.padding(horizontal = AppSpacing.md, vertical = AppSpacing.sm + 4.dp),
+            modifier = Modifier.padding(horizontal = AppSpacing.md, vertical = AppSpacing.sm + 2.dp),
             verticalAlignment = Alignment.CenterVertically,
-            horizontalArrangement = Arrangement.SpaceBetween,
+            horizontalArrangement = Arrangement.spacedBy(AppSpacing.sm),
         ) {
-            Column(modifier = Modifier.weight(1f)) {
-                Text(
-                    text = activeExam.title,
-                    style = MaterialTheme.typography.titleMedium,
-                    color = MaterialTheme.colorScheme.onSurface,
-                )
-                Spacer(modifier = Modifier.height(2.dp))
-                Text(
-                    text = activeExam.scaleLabel,
-                    style = MaterialTheme.typography.bodyMedium,
-                    color = MaterialTheme.colorScheme.onSurfaceVariant,
-                )
-            }
-            Spacer(modifier = Modifier.width(AppSpacing.sm))
-            Row(
-                verticalAlignment = Alignment.CenterVertically,
-                modifier = Modifier.defaultMinSize(minHeight = AppSpacing.minTouchTarget),
-            ) {
-                Icon(
-                    imageVector = Icons.Default.SwapHoriz,
-                    contentDescription = "Ganti jenis ujian",
-                    tint = MaterialTheme.colorScheme.primary,
-                )
-                Spacer(modifier = Modifier.width(AppSpacing.xs))
-                Text(
-                    text = "Ganti",
-                    style = MaterialTheme.typography.labelLarge,
-                    color = MaterialTheme.colorScheme.primary,
-                )
-            }
+            Text(
+                text = activeExam.title,
+                style = MaterialTheme.typography.titleMedium,
+                color = MaterialTheme.colorScheme.onSurface,
+                maxLines = 1,
+                overflow = TextOverflow.Ellipsis,
+                modifier = Modifier.weight(1f, fill = false),
+            )
+            Icon(
+                imageVector = Icons.Default.KeyboardArrowDown,
+                contentDescription = "Ganti jenis ujian",
+                tint = MaterialTheme.colorScheme.primary,
+            )
         }
     }
 }
@@ -263,27 +249,25 @@ fun ModuleRow(
                     text = module.title,
                     style = MaterialTheme.typography.titleMedium,
                     color = MaterialTheme.colorScheme.onSurface,
+                    maxLines = 2,
+                    overflow = TextOverflow.Ellipsis,
                 )
                 Spacer(modifier = Modifier.height(AppSpacing.xs))
+                val shortSection = if (module.section.name == "STRUCTURE") "Structure" else module.section.label
                 FlowRow(
                     horizontalArrangement = Arrangement.spacedBy(AppSpacing.sm),
                     verticalArrangement = Arrangement.spacedBy(AppSpacing.xs),
                 ) {
                     Text(
-                        text = module.section.label,
-                        style = MaterialTheme.typography.labelMedium,
-                        color = MaterialTheme.colorScheme.primary,
-                    )
-                    Text(
-                        text = "${module.difficulty} • ${module.estimatedMinutes}m",
-                        style = MaterialTheme.typography.labelMedium,
+                        text = "$shortSection • ${module.difficulty} • ${module.estimatedMinutes} mnt",
+                        style = MaterialTheme.typography.bodySmall,
                         color = MaterialTheme.colorScheme.onSurfaceVariant,
                     )
-                    if (masteryPercent != null) {
+                    if (masteryPercent != null && masteryPercent > 0) {
                         Text(
-                            text = "Penguasaan $masteryPercent%",
-                            style = MaterialTheme.typography.labelMedium,
-                            color = MaterialTheme.colorScheme.secondary,
+                            text = "• $masteryPercent%",
+                            style = MaterialTheme.typography.labelMedium.tabular(),
+                            color = MaterialTheme.colorScheme.primary,
                         )
                     }
                 }
@@ -296,7 +280,7 @@ fun ModuleRow(
             )
         }
     }
-    HorizontalDivider(color = MaterialTheme.colorScheme.outline.copy(alpha = 0.5f))
+    HorizontalDivider(color = MaterialTheme.colorScheme.outline.copy(alpha = 0.4f))
 }
 
 @OptIn(ExperimentalLayoutApi::class)
@@ -312,7 +296,6 @@ fun PackageRow(
     Surface(
         shape = MaterialTheme.shapes.medium,
         color = MaterialTheme.colorScheme.surfaceContainerLow,
-        border = BorderStroke(1.dp, MaterialTheme.colorScheme.outline),
         modifier = modifier.fillMaxWidth(),
     ) {
         Column(modifier = Modifier.padding(AppSpacing.md)) {
@@ -330,14 +313,14 @@ fun PackageRow(
                         } else {
                             "Ready • ${pack.availableCount} soal"
                         },
-                        style = MaterialTheme.typography.labelMedium,
+                        style = MaterialTheme.typography.labelMedium.tabular(),
                         color = if (isSample) MaterialTheme.colorScheme.onTertiaryContainer else MaterialTheme.colorScheme.onPrimaryContainer,
-                        modifier = Modifier.padding(horizontal = AppSpacing.sm, vertical = AppSpacing.xs),
+                        modifier = Modifier.padding(horizontal = AppSpacing.sm, vertical = 2.dp),
                     )
                 }
                 Text(
-                    text = "${pack.durationMinutes}m latihan • ${"%.1f".format(audioMb)} MB audio",
-                    style = MaterialTheme.typography.labelMedium,
+                    text = "${pack.durationMinutes} mnt • ${"%.1f".format(audioMb)} MB audio",
+                    style = MaterialTheme.typography.labelMedium.tabular(),
                     color = MaterialTheme.colorScheme.onSurfaceVariant,
                     modifier = Modifier.align(Alignment.CenterVertically),
                 )
@@ -353,6 +336,8 @@ fun PackageRow(
                 text = pack.theme,
                 style = MaterialTheme.typography.bodyMedium,
                 color = MaterialTheme.colorScheme.onSurfaceVariant,
+                maxLines = 2,
+                overflow = TextOverflow.Ellipsis,
             )
             Spacer(modifier = Modifier.height(AppSpacing.md))
             FlowRow(
@@ -375,36 +360,30 @@ fun PackageRow(
 
 @Composable
 fun QuestionCard(
-    headerLabel: String,
+    headerLabel: String?,
     prompt: String,
     modifier: Modifier = Modifier,
     content: @Composable () -> Unit,
 ) {
-    Surface(
-        shape = MaterialTheme.shapes.medium,
-        color = MaterialTheme.colorScheme.surface,
-        border = BorderStroke(1.dp, MaterialTheme.colorScheme.outline),
-        modifier = modifier.fillMaxWidth(),
-    ) {
-        Column(modifier = Modifier.padding(AppSpacing.md)) {
+    Column(modifier = modifier.fillMaxWidth()) {
+        if (!headerLabel.isNullOrBlank()) {
             Text(
                 text = headerLabel,
-                style = MaterialTheme.typography.labelMedium,
+                style = MaterialTheme.typography.labelLarge,
                 color = MaterialTheme.colorScheme.primary,
             )
-            Spacer(modifier = Modifier.height(AppSpacing.sm))
-            Text(
-                text = prompt,
-                style = MaterialTheme.typography.bodyLarge,
-                color = MaterialTheme.colorScheme.onSurface,
-            )
-            Spacer(modifier = Modifier.height(AppSpacing.md))
-            content()
+            Spacer(modifier = Modifier.height(AppSpacing.xs))
         }
+        Text(
+            text = prompt,
+            style = MaterialTheme.typography.bodyLarge,
+            color = MaterialTheme.colorScheme.onSurface,
+        )
+        Spacer(modifier = Modifier.height(AppSpacing.md))
+        content()
     }
 }
 
-@OptIn(ExperimentalLayoutApi::class)
 @Composable
 fun AudioPlayerBar(
     title: String,
@@ -424,50 +403,84 @@ fun AudioPlayerBar(
     modifier: Modifier = Modifier,
 ) {
     val replayLocked = maxReplays != null && replaysUsed >= maxReplays
+    val displayTitle = remember(title) {
+        title.replace(Regex("\\s*\\([A-Z0-9-]+\\)$"), "").ifBlank { "Audio Soal" }
+    }
+    var speedMenuOpen by remember { mutableStateOf(false) }
+
     Surface(
         shape = MaterialTheme.shapes.medium,
         color = MaterialTheme.colorScheme.surfaceContainerLow,
-        border = BorderStroke(1.dp, MaterialTheme.colorScheme.outline),
         modifier = modifier.fillMaxWidth(),
     ) {
-        Column(modifier = Modifier.padding(AppSpacing.md)) {
+        Column(modifier = Modifier.padding(horizontal = AppSpacing.md, vertical = AppSpacing.sm)) {
             Row(
                 verticalAlignment = Alignment.CenterVertically,
-                horizontalArrangement = Arrangement.SpaceBetween,
                 modifier = Modifier.fillMaxWidth(),
             ) {
-                Row(
-                    verticalAlignment = Alignment.CenterVertically,
-                    modifier = Modifier.weight(1f),
+                IconButton(
+                    onClick = onTogglePlay,
+                    enabled = !replayLocked || isPlaying,
+                    modifier = Modifier.size(AppSpacing.minTouchTarget),
                 ) {
-                    IconButton(
-                        onClick = onTogglePlay,
-                        enabled = !replayLocked || isPlaying,
-                        modifier = Modifier.size(AppSpacing.minTouchTarget),
-                    ) {
-                        Icon(
-                            imageVector = if (isPlaying) Icons.Default.Pause else Icons.Default.PlayArrow,
-                            contentDescription = if (isPlaying) "Jeda audio" else "Putar audio",
-                            tint = MaterialTheme.colorScheme.primary,
-                        )
-                    }
-                    Spacer(modifier = Modifier.width(AppSpacing.sm))
-                    Column {
-                        Text(
-                            text = title,
-                            style = MaterialTheme.typography.titleMedium,
-                            color = MaterialTheme.colorScheme.onSurface,
-                            maxLines = 2,
-                            overflow = TextOverflow.Ellipsis,
-                        )
-                        val durLabel = formatTimeMs(durationMs)
-                        val posLabel = formatTimeMs(positionMs)
-                        val replayInfo = if (maxReplays != null) " • Putar $replaysUsed/$maxReplays" else ""
-                        Text(
-                            text = "$posLabel / $durLabel$replayInfo",
-                            style = MaterialTheme.typography.labelMedium.tabular(),
-                            color = MaterialTheme.colorScheme.onSurfaceVariant,
-                        )
+                    Icon(
+                        imageVector = if (isPlaying) Icons.Default.Pause else Icons.Default.PlayArrow,
+                        contentDescription = if (isPlaying) "Jeda audio" else "Putar audio",
+                        tint = MaterialTheme.colorScheme.primary,
+                    )
+                }
+                Spacer(modifier = Modifier.width(AppSpacing.xs))
+                Column(modifier = Modifier.weight(1f)) {
+                    Text(
+                        text = displayTitle,
+                        style = MaterialTheme.typography.titleSmall,
+                        color = MaterialTheme.colorScheme.onSurface,
+                        maxLines = 1,
+                        overflow = TextOverflow.Ellipsis,
+                    )
+                    val durLabel = formatTimeMs(durationMs)
+                    val posLabel = formatTimeMs(positionMs)
+                    val replayInfo = if (maxReplays != null) " • Putar $replaysUsed/$maxReplays" else ""
+                    Text(
+                        text = "$posLabel / $durLabel$replayInfo",
+                        style = MaterialTheme.typography.labelMedium.tabular(),
+                        color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    )
+                }
+                if (allowSpeedControl) {
+                    Box {
+                        TextButton(
+                            onClick = { speedMenuOpen = true },
+                            modifier = Modifier.defaultMinSize(minWidth = AppSpacing.minTouchTarget, minHeight = AppSpacing.minTouchTarget),
+                        ) {
+                            Text(
+                                text = "${speed}x",
+                                style = MaterialTheme.typography.labelLarge.tabular(),
+                            )
+                            Icon(
+                                imageVector = Icons.Default.KeyboardArrowDown,
+                                contentDescription = "Atur kecepatan audio",
+                            )
+                        }
+                        DropdownMenu(
+                            expanded = speedMenuOpen,
+                            onDismissRequest = { speedMenuOpen = false },
+                        ) {
+                            listOf(0.85f, 1.0f, 1.25f).forEach { targetSpeed ->
+                                DropdownMenuItem(
+                                    text = {
+                                        Text(
+                                            text = "${targetSpeed}x",
+                                            fontWeight = if (kotlin.math.abs(speed - targetSpeed) < 0.05f) FontWeight.Bold else FontWeight.Normal,
+                                        )
+                                    },
+                                    onClick = {
+                                        speedMenuOpen = false
+                                        onChangeSpeed(targetSpeed)
+                                    },
+                                )
+                            }
+                        }
                     }
                 }
                 IconButton(
@@ -488,58 +501,15 @@ fun AudioPlayerBar(
                         value = positionMs.toFloat().coerceIn(0f, durationMs.toFloat()),
                         onValueChange = { onSeekTo(it.toLong()) },
                         valueRange = 0f..durationMs.toFloat(),
+                        modifier = Modifier.fillMaxWidth(),
                     )
                 } else {
                     LinearProgressIndicator(
                         progress = { (positionMs.toFloat() / durationMs.toFloat()).coerceIn(0f, 1f) },
                         modifier = Modifier
                             .fillMaxWidth()
-                            .padding(vertical = AppSpacing.sm),
+                            .padding(vertical = AppSpacing.xs),
                     )
-                }
-            }
-
-            if (allowSpeedControl) {
-                val animMs = if (LocalSemanticStatusColors.current.reduceMotion) 0 else MotionTokens.PressFeedbackMs
-                FlowRow(
-                    horizontalArrangement = Arrangement.spacedBy(AppSpacing.sm),
-                    verticalArrangement = Arrangement.spacedBy(AppSpacing.xs),
-                ) {
-                    listOf(0.85f, 1.0f, 1.25f).forEach { targetSpeed ->
-                        val selected = kotlin.math.abs(speed - targetSpeed) < 0.05f
-                        val chipBg by animateColorAsState(
-                            targetValue = if (selected) {
-                                MaterialTheme.colorScheme.primaryContainer.copy(alpha = 0.7f)
-                            } else {
-                                MaterialTheme.colorScheme.surfaceContainerLow
-                            },
-                            animationSpec = tween(animMs),
-                            label = "speedChipBg",
-                        )
-                        Surface(
-                            shape = MaterialTheme.shapes.small,
-                            color = chipBg,
-                            border = BorderStroke(
-                                width = 1.dp,
-                                color = if (selected) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.outline.copy(alpha = 0.5f),
-                            ),
-                            modifier = Modifier
-                                .defaultMinSize(minWidth = AppSpacing.minTouchTarget, minHeight = AppSpacing.minTouchTarget)
-                                .clickable(role = Role.RadioButton) { onChangeSpeed(targetSpeed) },
-                        ) {
-                            Box(
-                                modifier = Modifier.padding(horizontal = AppSpacing.md, vertical = AppSpacing.sm),
-                                contentAlignment = Alignment.Center,
-                            ) {
-                                Text(
-                                    text = "${targetSpeed}x",
-                                    style = MaterialTheme.typography.labelLarge.tabular(),
-                                    fontWeight = if (selected) FontWeight.Bold else FontWeight.Medium,
-                                    color = if (selected) MaterialTheme.colorScheme.onPrimaryContainer else MaterialTheme.colorScheme.onSurfaceVariant,
-                                )
-                            }
-                        }
-                    }
                 }
             }
 
@@ -568,29 +538,42 @@ fun ProgressSummary(
     title: String,
     accuracyPercent: Int?,
     completedSessions: Int,
-    subtitle: String,
+    subtitle: String? = null,
     modifier: Modifier = Modifier,
 ) {
     Surface(
         shape = MaterialTheme.shapes.medium,
         color = MaterialTheme.colorScheme.surfaceContainerLow,
-        border = BorderStroke(1.dp, MaterialTheme.colorScheme.outline),
         modifier = modifier.fillMaxWidth(),
     ) {
         Column(modifier = Modifier.padding(AppSpacing.md)) {
-            Text(
-                text = title,
-                style = MaterialTheme.typography.titleMedium,
-                color = MaterialTheme.colorScheme.onSurface,
-            )
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceBetween,
+                verticalAlignment = Alignment.CenterVertically,
+            ) {
+                Text(
+                    text = title,
+                    style = MaterialTheme.typography.titleMedium,
+                    color = MaterialTheme.colorScheme.onSurface,
+                    modifier = Modifier.weight(1f),
+                )
+                if (accuracyPercent != null) {
+                    Text(
+                        text = "$accuracyPercent%",
+                        style = MaterialTheme.typography.titleLarge.tabular(),
+                        color = MaterialTheme.colorScheme.primary,
+                    )
+                }
+            }
             Spacer(modifier = Modifier.height(AppSpacing.xs))
             Text(
                 text = if (accuracyPercent != null) {
-                    "Akurasi rata-rata $accuracyPercent% • $completedSessions sesi selesai"
+                    "Akurasi rata-rata • $completedSessions sesi selesai"
                 } else {
-                    "Belum ada sesi selesai • Mulai latihan singkat untuk memetakan kekuatan"
+                    "Belum ada riwayat sesi selesai"
                 },
-                style = MaterialTheme.typography.bodyMedium,
+                style = MaterialTheme.typography.bodyMedium.tabular(),
                 color = MaterialTheme.colorScheme.onSurfaceVariant,
             )
             if (accuracyPercent != null) {
@@ -600,11 +583,60 @@ fun ProgressSummary(
                     modifier = Modifier.fillMaxWidth(),
                 )
             }
-            Spacer(modifier = Modifier.height(AppSpacing.xs))
+            if (!subtitle.isNullOrBlank()) {
+                Spacer(modifier = Modifier.height(AppSpacing.xs))
+                Text(
+                    text = subtitle,
+                    style = MaterialTheme.typography.labelMedium,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                )
+            }
+        }
+    }
+}
+
+@Composable
+fun PreferenceRow(
+    title: String,
+    subtitle: String? = null,
+    onClick: () -> Unit,
+    modifier: Modifier = Modifier,
+    trailing: (@Composable () -> Unit)? = null,
+) {
+    Row(
+        modifier = modifier
+            .fillMaxWidth()
+            .defaultMinSize(minHeight = AppSpacing.minTouchTarget)
+            .clickable(onClick = onClick)
+            .padding(vertical = AppSpacing.sm + 2.dp),
+        horizontalArrangement = Arrangement.SpaceBetween,
+        verticalAlignment = Alignment.CenterVertically,
+    ) {
+        Column(modifier = Modifier.weight(1f)) {
             Text(
-                text = subtitle,
-                style = MaterialTheme.typography.labelMedium,
-                color = MaterialTheme.colorScheme.onSurfaceVariant,
+                text = title,
+                style = MaterialTheme.typography.titleMedium,
+                color = MaterialTheme.colorScheme.onSurface,
+            )
+            if (!subtitle.isNullOrBlank()) {
+                Spacer(modifier = Modifier.height(2.dp))
+                Text(
+                    text = subtitle,
+                    style = MaterialTheme.typography.bodyMedium,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    maxLines = 2,
+                    overflow = TextOverflow.Ellipsis,
+                )
+            }
+        }
+        Spacer(modifier = Modifier.width(AppSpacing.sm))
+        if (trailing != null) {
+            trailing()
+        } else {
+            Icon(
+                imageVector = Icons.AutoMirrored.Filled.KeyboardArrowRight,
+                contentDescription = null,
+                tint = MaterialTheme.colorScheme.onSurfaceVariant,
             )
         }
     }
@@ -686,7 +718,6 @@ fun OfflineModelState(
     Surface(
         shape = MaterialTheme.shapes.small,
         color = MaterialTheme.colorScheme.surfaceContainerLow,
-        border = BorderStroke(1.dp, MaterialTheme.colorScheme.outline),
         modifier = modifier.fillMaxWidth(),
     ) {
         Row(

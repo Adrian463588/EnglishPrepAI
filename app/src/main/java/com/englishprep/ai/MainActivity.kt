@@ -27,11 +27,14 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
+import androidx.compose.runtime.SideEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.platform.LocalDensity
+import androidx.compose.ui.platform.LocalView
 import androidx.compose.ui.unit.Density
+import androidx.core.view.WindowCompat
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.navigation.NavDestination.Companion.hasRoute
 import androidx.navigation.NavGraph.Companion.findStartDestination
@@ -48,6 +51,7 @@ import com.englishprep.ai.ui.feature.home.HomeRoute
 import com.englishprep.ai.ui.feature.learn.LearnRoute
 import com.englishprep.ai.ui.feature.learn.ModuleDetailRoute
 import com.englishprep.ai.ui.feature.practice.PracticeRoute
+import com.englishprep.ai.ui.feature.profile.ModelManagerRoute
 import com.englishprep.ai.ui.feature.profile.ProfileRoute
 import com.englishprep.ai.ui.feature.progress.ProgressRoute
 import com.englishprep.ai.ui.feature.results.ResultsRoute
@@ -82,6 +86,15 @@ class MainActivity : ComponentActivity() {
                 Density(currentDensity.density, (currentDensity.fontScale * 1.25f).coerceAtMost(2.0f))
             } else {
                 currentDensity
+            }
+
+            val view = LocalView.current
+            if (!view.isInEditMode) {
+                SideEffect {
+                    val controller = WindowCompat.getInsetsController(window, view)
+                    controller.isAppearanceLightStatusBars = !useDark
+                    controller.isAppearanceLightNavigationBars = !useDark
+                }
             }
 
             CompositionLocalProvider(LocalDensity provides effectiveDensity) {
@@ -190,8 +203,8 @@ fun EnglishPrepRootApp() {
                             onOpenSession = { sid -> navController.navigate(AppRoute.Exam(sid)) },
                             onOpenModule = { mid -> navController.navigate(AppRoute.ModuleDetail(mid)) },
                             onOpenPractice = { navigateToTopLevel(TopLevelDestination.PRACTICE) },
-                            onOpenChat = { src -> navController.navigate(AppRoute.Chat(src)) },
-                            onOpenProfileAi = { navigateToTopLevel(TopLevelDestination.PROFILE) },
+                            onOpenChat = { navController.navigate(AppRoute.Chat(null)) },
+                            onOpenProfileAi = { navController.navigate(AppRoute.ModelManager) },
                         )
                     }
                     composable<AppRoute.Learn> {
@@ -235,7 +248,7 @@ fun EnglishPrepRootApp() {
                     composable<AppRoute.Chat> {
                         ChatRoute(
                             onBack = { navController.popBackStack() },
-                            onOpenProfileAi = { navigateToTopLevel(TopLevelDestination.PROFILE) },
+                            onOpenModelManager = { navController.navigate(AppRoute.ModelManager) },
                         )
                     }
                     composable<AppRoute.Progress> {
@@ -246,7 +259,14 @@ fun EnglishPrepRootApp() {
                         )
                     }
                     composable<AppRoute.Profile> {
-                        ProfileRoute()
+                        ProfileRoute(
+                            onOpenModelManager = { navController.navigate(AppRoute.ModelManager) },
+                        )
+                    }
+                    composable<AppRoute.ModelManager> {
+                        ModelManagerRoute(
+                            onBack = { navController.popBackStack() },
+                        )
                     }
                 }
             }

@@ -1,6 +1,6 @@
 package com.englishprep.ai.ui.feature.chat
 
-import androidx.compose.foundation.BorderStroke
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -51,14 +51,14 @@ import com.englishprep.ai.ui.theme.LocalSemanticStatusColors
 @Composable
 fun ChatRoute(
     onBack: () -> Unit,
-    onOpenProfileAi: () -> Unit,
+    onOpenModelManager: () -> Unit,
     viewModel: ChatViewModel = hiltViewModel(),
 ) {
     val state by viewModel.uiState.collectAsStateWithLifecycle()
     ChatScreen(
         state = state,
         onBack = onBack,
-        onOpenProfileAi = onOpenProfileAi,
+        onOpenModelManager = onOpenModelManager,
         onDraftChange = viewModel::updateDraft,
         onSend = viewModel::sendMessage,
         onCancel = viewModel::cancelGeneration,
@@ -71,27 +71,36 @@ fun ChatRoute(
 fun ChatScreen(
     state: ChatUiState,
     onBack: () -> Unit,
-    onOpenProfileAi: () -> Unit,
+    onOpenModelManager: () -> Unit,
     onDraftChange: (String) -> Unit,
     onSend: () -> Unit,
     onCancel: () -> Unit,
     onClearChat: () -> Unit = {},
     modifier: Modifier = Modifier,
 ) {
+    val llmUnloaded = state.llmState !is LlmModelState.Ready
     val modelStatusLabel = when (val llm = state.llmState) {
         is LlmModelState.Ready -> "Offline Gemma 4: ${llm.modelName}"
         is LlmModelState.Loading -> "Memuat ${llm.modelName}..."
-        is LlmModelState.Error -> "Runtime error • Fallback FTS aktif"
-        LlmModelState.Unloaded -> "Tanpa LLM • Mode ringkasan FTS lokal"
+        is LlmModelState.Error -> "Model offline tidak siap • Ringkasan FTS aktif"
+        LlmModelState.Unloaded -> "Tanpa LLM • Ringkasan FTS aktif (Ketuk kelola)"
     }
 
     Scaffold(
         topBar = {
             TopAppBar(
                 title = {
-                    Column {
+                    Column(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .defaultMinSize(minHeight = AppSpacing.minTouchTarget)
+                            .let { base ->
+                                if (llmUnloaded) base.clickable(onClick = onOpenModelManager) else base
+                            },
+                        verticalArrangement = Arrangement.Center,
+                    ) {
                         Text(
-                            text = "Tutor AI Offline",
+                            text = "Tutor AI",
                             style = MaterialTheme.typography.titleMedium,
                             maxLines = 1,
                             overflow = TextOverflow.Ellipsis,
@@ -99,7 +108,7 @@ fun ChatScreen(
                         Text(
                             text = modelStatusLabel,
                             style = MaterialTheme.typography.labelSmall,
-                            color = MaterialTheme.colorScheme.onSurfaceVariant,
+                            color = if (llmUnloaded) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.onSurfaceVariant,
                             maxLines = 1,
                             overflow = TextOverflow.Ellipsis,
                         )
@@ -120,14 +129,6 @@ fun ChatScreen(
                             modifier = Modifier.defaultMinSize(minHeight = AppSpacing.minTouchTarget),
                         ) {
                             Text("Bersihkan")
-                        }
-                    }
-                    if (state.llmState !is LlmModelState.Ready) {
-                        TextButton(
-                            onClick = onOpenProfileAi,
-                            modifier = Modifier.defaultMinSize(minHeight = AppSpacing.minTouchTarget),
-                        ) {
-                            Text("Impor AI")
                         }
                     }
                 },
@@ -203,42 +204,40 @@ fun ChatScreen(
                 state = listState,
                 modifier = Modifier.fillMaxSize(),
                 contentPadding = PaddingValues(AppSpacing.md),
-                verticalArrangement = Arrangement.spacedBy(AppSpacing.sm),
+                verticalArrangement = Arrangement.spacedBy(AppSpacing.sm + 2.dp),
             ) {
-            if (state.strictMockActive) {
-                item {
-                    Surface(
-                        shape = MaterialTheme.shapes.medium,
-                        color = MaterialTheme.colorScheme.tertiaryContainer,
-                        border = BorderStroke(1.dp, MaterialTheme.colorScheme.outline),
-                        modifier = Modifier.fillMaxWidth(),
-                    ) {
-                        Column(modifier = Modifier.padding(AppSpacing.md)) {
-                            Text(
-                                text = "Mode Simulasi Strict Sedang Aktif",
-                                style = MaterialTheme.typography.titleMedium,
-                            )
-                            Spacer(modifier = Modifier.height(AppSpacing.xs))
-                            Text(
-                                text = "Tutor AI dinonaktifkan sementara selama sesi ujian Strict berlangsung agar hasil latihan tetap jujur.",
-                                style = MaterialTheme.typography.bodyMedium,
-                            )
+                if (state.strictMockActive) {
+                    item {
+                        Surface(
+                            shape = MaterialTheme.shapes.small,
+                            color = MaterialTheme.colorScheme.tertiaryContainer,
+                            modifier = Modifier.fillMaxWidth(),
+                        ) {
+                            Column(modifier = Modifier.padding(AppSpacing.md)) {
+                                Text(
+                                    text = "Mode Simulasi Strict Sedang Aktif",
+                                    style = MaterialTheme.typography.titleMedium,
+                                )
+                                Spacer(modifier = Modifier.height(AppSpacing.xs))
+                                Text(
+                                    text = "Tutor AI dinonaktifkan sementara selama simulasi Strict berlangsung.",
+                                    style = MaterialTheme.typography.bodyMedium,
+                                )
+                            }
                         }
                     }
                 }
-            }
-            if (state.messages.isEmpty() && state.streamingReply.isEmpty()) {
-                item {
-                    Surface(
-                        shape = MaterialTheme.shapes.medium,
-                        color = MaterialTheme.colorScheme.surfaceContainerLow,
-                        border = BorderStroke(1.dp, MaterialTheme.colorScheme.outline),
-                        modifier = Modifier.fillMaxWidth(),
-                    ) {
-                        Column(modifier = Modifier.padding(AppSpacing.md)) {
+                if (state.messages.isEmpty() && state.streamingReply.isEmpty()) {
+                    item {
+                        Column(
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .padding(vertical = AppSpacing.lg),
+                        ) {
                             Text(
                                 text = "Asisten Belajar Lokal (${state.selectedExam.title})",
                                 style = MaterialTheme.typography.titleMedium,
+                                color = MaterialTheme.colorScheme.onSurface,
                             )
                             Spacer(modifier = Modifier.height(AppSpacing.xs))
                             Text(
@@ -249,71 +248,84 @@ fun ChatScreen(
                         }
                     }
                 }
-            }
 
-            items(state.messages, key = { it.id }) { msg ->
-                val isUser = msg.role == "USER"
-                Box(
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .padding(
-                            start = if (isUser) AppSpacing.xl else 0.dp,
-                            end = if (isUser) 0.dp else AppSpacing.lg,
-                        ),
-                ) {
-                    Surface(
-                        shape = MaterialTheme.shapes.medium,
-                        color = if (isUser) MaterialTheme.colorScheme.primaryContainer.copy(alpha = 0.6f) else MaterialTheme.colorScheme.surfaceContainerLow,
-                        border = BorderStroke(1.dp, MaterialTheme.colorScheme.outline.copy(alpha = 0.7f)),
-                        modifier = Modifier.fillMaxWidth(),
+                items(state.messages, key = { it.id }) { msg ->
+                    val isUser = msg.role == "USER"
+                    Box(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(
+                                start = if (isUser) AppSpacing.xl else 0.dp,
+                                end = if (isUser) 0.dp else AppSpacing.lg,
+                            ),
                     ) {
-                        Column(modifier = Modifier.padding(AppSpacing.md)) {
-                            Text(
-                                text = if (isUser) "Anda" else "Tutor Lokal",
-                                style = MaterialTheme.typography.labelMedium,
-                                color = MaterialTheme.colorScheme.primary,
-                            )
-                            Spacer(modifier = Modifier.height(AppSpacing.xs))
-                            Text(
-                                text = msg.text,
-                                style = MaterialTheme.typography.bodyLarge,
-                            )
-                            msg.citationsJson?.takeIf { it.isNotBlank() }?.let { cites ->
+                        Surface(
+                            shape = MaterialTheme.shapes.medium,
+                            color = if (isUser) {
+                                MaterialTheme.colorScheme.primaryContainer.copy(alpha = 0.5f)
+                            } else {
+                                MaterialTheme.colorScheme.surfaceContainerLow
+                            },
+                            modifier = Modifier.fillMaxWidth(),
+                        ) {
+                            Column(modifier = Modifier.padding(AppSpacing.md)) {
+                                Text(
+                                    text = if (isUser) "Anda" else "Tutor Lokal",
+                                    style = MaterialTheme.typography.labelMedium,
+                                    color = MaterialTheme.colorScheme.primary,
+                                )
                                 Spacer(modifier = Modifier.height(AppSpacing.xs))
                                 Text(
-                                    text = "Referensi lokal: $cites",
-                                    style = MaterialTheme.typography.labelSmall,
-                                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                                    text = msg.text,
+                                    style = MaterialTheme.typography.bodyLarge,
                                 )
+                                val cleanCitations = formatCitationLabels(msg.citationsJson)
+                                if (cleanCitations.isNotEmpty()) {
+                                    Spacer(modifier = Modifier.height(AppSpacing.xs))
+                                    Text(
+                                        text = "Sumber: $cleanCitations",
+                                        style = MaterialTheme.typography.labelSmall,
+                                        color = MaterialTheme.colorScheme.onSurfaceVariant,
+                                    )
+                                }
+                            }
+                        }
+                    }
+                }
+
+                if (state.streamingReply.isNotEmpty()) {
+                    item {
+                        Surface(
+                            shape = MaterialTheme.shapes.medium,
+                            color = MaterialTheme.colorScheme.surfaceContainerLow,
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .padding(end = AppSpacing.lg),
+                        ) {
+                            Column(modifier = Modifier.padding(AppSpacing.md)) {
+                                Text(
+                                    text = "Tutor Lokal (menulis...)",
+                                    style = MaterialTheme.typography.labelMedium,
+                                    color = MaterialTheme.colorScheme.primary,
+                                )
+                                Spacer(modifier = Modifier.height(AppSpacing.xs))
+                                Text(text = state.streamingReply, style = MaterialTheme.typography.bodyLarge)
                             }
                         }
                     }
                 }
             }
-
-            if (state.streamingReply.isNotEmpty()) {
-                item {
-                    Surface(
-                        shape = MaterialTheme.shapes.medium,
-                        color = MaterialTheme.colorScheme.surfaceContainerLow,
-                        border = BorderStroke(1.dp, MaterialTheme.colorScheme.primary),
-                        modifier = Modifier
-                            .fillMaxWidth()
-                            .padding(end = AppSpacing.lg),
-                    ) {
-                        Column(modifier = Modifier.padding(AppSpacing.md)) {
-                            Text(
-                                text = "Tutor Lokal (menulis...)",
-                                style = MaterialTheme.typography.labelMedium,
-                                color = MaterialTheme.colorScheme.primary,
-                            )
-                            Spacer(modifier = Modifier.height(AppSpacing.xs))
-                            Text(text = state.streamingReply, style = MaterialTheme.typography.bodyLarge)
-                        }
-                    }
-                }
-            }
-        }
         }
     }
+}
+
+private fun formatCitationLabels(rawJson: String?): String {
+    if (rawJson.isNullOrBlank()) return ""
+    return rawJson
+        .removePrefix("[")
+        .removeSuffix("]")
+        .split(",")
+        .map { it.trim().trim('"', '\'') }
+        .filter { it.isNotEmpty() }
+        .joinToString(", ")
 }

@@ -82,20 +82,28 @@ fun PracticeScreen(
             verticalArrangement = Arrangement.spacedBy(AppSpacing.md),
         ) {
             item {
-                Text(
-                    text = "Tryout ${state.selectedExam.title}",
-                    style = MaterialTheme.typography.headlineMedium,
-                    modifier = Modifier.semantics { heading() },
-                )
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.SpaceBetween,
+                    verticalAlignment = Alignment.CenterVertically,
+                ) {
+                    Text(
+                        text = "Tryout ${state.selectedExam.title}",
+                        style = MaterialTheme.typography.headlineMedium,
+                        modifier = Modifier
+                            .weight(1f)
+                            .semantics { heading() },
+                    )
+                }
                 Spacer(modifier = Modifier.height(AppSpacing.xs))
                 Text(
-                    text = "5 paket soal orisinal per jenis tes. Mode Latihan menampilkan pembahasan cepat & pengatur kecepatan audio; Mode Strict meniru batas ulang & timer ujian.",
+                    text = "Pilih Mode Latihan (pembahasan langsung) atau Full Mock Strict (timer & batas putar ujian).",
                     style = MaterialTheme.typography.bodyMedium,
                     color = MaterialTheme.colorScheme.onSurfaceVariant,
                 )
                 Spacer(modifier = Modifier.height(AppSpacing.sm))
                 AppButton(
-                    text = "Impor Paket Soal Eksternal (SAF JSON/ZIP)",
+                    text = "Impor Paket Soal (SAF)",
                     onClick = onImportPack,
                     outlined = true,
                 )
