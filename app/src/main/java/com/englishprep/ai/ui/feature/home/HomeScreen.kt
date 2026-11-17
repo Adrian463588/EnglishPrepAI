@@ -227,6 +227,8 @@ fun HomeScreen(
                         module = module,
                         masteryPercent = null,
                         onClick = { onOpenModule(module.id) },
+                        contentPadding = PaddingValues(vertical = AppSpacing.sm + 4.dp),
+                        showDivider = true,
                     )
                 }
             }

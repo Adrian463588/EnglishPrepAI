@@ -12,6 +12,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.imePadding
+import androidx.compose.foundation.layout.navigationBarsPadding
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.layout.widthIn
@@ -80,10 +81,10 @@ fun ChatScreen(
 ) {
     val llmUnloaded = state.llmState !is LlmModelState.Ready
     val modelStatusLabel = when (val llm = state.llmState) {
-        is LlmModelState.Ready -> "Offline Gemma 4: ${llm.modelName}"
+        is LlmModelState.Ready -> "Gemma 4: ${llm.modelName}"
         is LlmModelState.Loading -> "Memuat ${llm.modelName}..."
-        is LlmModelState.Error -> "Model offline tidak siap • Ringkasan FTS aktif"
-        LlmModelState.Unloaded -> "Tanpa LLM • Ringkasan FTS aktif (Ketuk kelola)"
+        is LlmModelState.Error -> "Model offline error • Kelola"
+        LlmModelState.Unloaded -> "Mode FTS aktif • Kelola model"
     }
 
     Scaffold(
@@ -135,7 +136,13 @@ fun ChatScreen(
             )
         },
         bottomBar = {
-            Surface(tonalElevation = 1.dp, modifier = Modifier.fillMaxWidth().imePadding()) {
+            Surface(
+                tonalElevation = 1.dp,
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .navigationBarsPadding()
+                    .imePadding(),
+            ) {
                 Column(horizontalAlignment = Alignment.CenterHorizontally) {
                     HorizontalDivider()
                     Row(

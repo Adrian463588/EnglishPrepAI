@@ -202,11 +202,10 @@ fun ProgressScreen(
                     Spacer(modifier = Modifier.height(AppSpacing.sm))
                     SectionHeading(text = "Perlu Diperkuat (<80%)")
                 }
-                items(state.weakModules, key = { it.id }) { prog ->
-                    val pct = (prog.masteryEstimate * 100).toInt()
+                items(state.weakModules, key = { it.moduleId }) { prog ->
                     PreferenceRow(
-                        title = prog.moduleId,
-                        subtitle = "${prog.correct}/${prog.attempts} benar ($pct%)",
+                        title = prog.moduleTitle,
+                        subtitle = "${prog.correct}/${prog.attempts} benar (${prog.percent}%)",
                         onClick = { onOpenModule(prog.moduleId) },
                         trailing = {
                             Text("Pelajari", style = MaterialTheme.typography.labelLarge, color = MaterialTheme.colorScheme.primary)

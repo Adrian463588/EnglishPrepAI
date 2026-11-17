@@ -1,0 +1,14 @@
+# Acceptance Checklist: English Prep AI UI/UX Redesign (`specs/ui-redesign/acceptance.md`)
+
+Verification status updated after full automated Gradle/Lint/R8 build checks (`47/47` tests passed) and live physical hardware Mobile MCP regression on `RRCN3008VYE` (`SM-G988B`, Android 13):
+
+- [x] **FIG-01**: Official FigCraft project `design/EnglishPrepAI-Redesign.figcraft` exists with all 16 organized pages (`00 — Foundations` .. `15 — States & Accessibility`), shared variables (`design/tokens.json`), reusable components, and visually inspected exports in `design/exports/`.
+- [x] **UI-01 (P0 IME & Status Bar Fix)**: Opening the keyboard on `ChatScreen` (`docs/screenshots/redesign/chat-ime-reply.png`) and `ExamScreen` Writing (`docs/screenshots/redesign/exam-writing-ime.png`) keeps TopAppBar & message/prompt area visible above the composer/action bar, and secondary screens exhibit zero double status bar padding.
+- [x] **UI-02 (Home & Learn Parity)**: `HomeScreen` aligns cleanly on 16dp vertical margin (`x=42`), `ExamSelector` exposes single merged `>=48dp` target (`Ganti jenis ujian (...)`), real Room `X dari Y soal` and `moduleTitle` data render without raw codes, and `LearnScreens` formats examples legibly.
+- [x] **UI-03 (Practice & Exam Listening/Reading/Writing/Speaking)**: Practice has zero duplicated SAF settings button; Exam bottom actions (`Kembali`/`Periksa`/`Lanjut`/`Selesai`) never wrap mid-word on narrow phones (`>=48dp` targets); Reading tonal trigger & Navigator single-row filters are clean (`passage-sheet.png`, `navigator-sheet.png`); Writing includes optional `Panduan Rubrik` disclosure (`exam-writing-rubric.png`); strict exam safeguards remain intact.
+- [x] **UI-04 (Results, Progress, Profile, Model Manager & Tutor)**: `ProgressScreen` & `ResultsScreen` display curriculum module titles and mixed-case `ExamSection.label` strings without `ITP-MOD-*` or uppercase enums (`progress-ielts-dark.png`, `progress-itp-light.png`, `results-dark.png`); Profile/ModelManager separation and clean Chat header/citations pass verification.
+- [x] **QA-01 (Automated & Visual Regression)**: `testDebugUnitTest` (`47/47` passing, `0` skipped), `lintDebug` (`0` errors), R8 `assembleRelease` (`0` `INTERNET`, `0` `application-debuggable`), physical device Mobile MCP screenshot regression (Dark, Light, Keyboard Open), and zero crashes in `logcat`.
+- [x] **DOC-01**: All 8 required documents under `docs/ui-ux/` + `specs/ui-redesign/` completed honestly with observed evidence.
+
+## Remaining External Hardware / Manual Checks Preserved Unchecked
+- [ ] **E07-04 / E10-05 / E17-04 / E17-05 / E21-04**: Real multi-GB `.litertlm` Gemma 4 model inference benchmark, real `.onnx` Whisper STT transcription latency test, external human TalkBack full-screen traversal sign-off, and multi-day soak telemetry remain intentionally unchecked pending physical weight bundles / manual QA session.

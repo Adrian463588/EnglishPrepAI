@@ -4,8 +4,9 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.englishprep.ai.data.datastore.UserPreferencesRepository
 import com.englishprep.ai.data.room.ExamSessionEntity
-import com.englishprep.ai.data.room.StudyProgressEntity
 import com.englishprep.ai.domain.models.ExamId
+import com.englishprep.ai.domain.models.ExamSection
+import com.englishprep.ai.domain.repositories.ExamCatalogRepository
 import com.englishprep.ai.domain.repositories.SessionProgressRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.ExperimentalCoroutinesApi
@@ -23,6 +24,14 @@ data class SectionAccuracyRow(
     val percent: Int,
 )
 
+data class WeakModuleRow(
+    val moduleId: String,
+    val moduleTitle: String,
+    val correct: Int,
+    val attempts: Int,
+    val percent: Int,
+)
+
 data class ProgressUiState(
     val isLoading: Boolean = true,
     val selectedExam: ExamId = ExamId.ITP_L1,
@@ -30,31 +39,40 @@ data class ProgressUiState(
     val sectionRows: List<SectionAccuracyRow> = emptyList(),
     val recentTrendPercents: List<Int> = emptyList(),
     val recentSessions: List<ExamSessionEntity> = emptyList(),
-    val weakModules: List<StudyProgressEntity> = emptyList(),
+    val weakModules: List<WeakModuleRow> = emptyList(),
 )
 
 @OptIn(ExperimentalCoroutinesApi::class)
 @HiltViewModel
 class ProgressViewModel @Inject constructor(
     private val preferences: UserPreferencesRepository,
+    private val catalogRepository: ExamCatalogRepository,
     private val sessionRepository: SessionProgressRepository,
 ) : ViewModel() {
 
     val uiState: StateFlow<ProgressUiState> = preferences.settingsFlow.flatMapLatest { settings ->
         val exam = settings.selectedExam
         combine(
+            catalogRepository.observeModules(exam),
             sessionRepository.observeSessions(exam),
             sessionRepository.observeEvaluations(exam),
             sessionRepository.observeStudyProgress(exam),
-        ) { sessions, evals, studyProgress ->
+        ) { modules, sessions, evals, studyProgress ->
+            val modulesById = modules.associateBy { it.id }
             val submitted = sessions.filter { it.state == "SUBMITTED" }
             val sectionGroups = evals.filter { it.section != "OVERALL" && it.rawTotal > 0 }
                 .groupBy { it.section }
                 .map { (sec, list) ->
+                    val secEnum = ExamSection.entries.firstOrNull { it.name == sec }
+                    val secLabel = when {
+                        secEnum == ExamSection.STRUCTURE -> "Structure"
+                        secEnum != null -> secEnum.label
+                        else -> sec
+                    }
                     val c = list.sumOf { it.rawCorrect }
                     val t = list.sumOf { it.rawTotal }
                     val pct = if (t > 0) (c * 100f / t).toInt() else 0
-                    SectionAccuracyRow(sec, c, t, pct)
+                    SectionAccuracyRow(secLabel, c, t, pct)
                 }
 
             val overallEvals = evals.filter { it.section == "OVERALL" && it.rawTotal > 0 }
@@ -69,7 +87,18 @@ class ProgressViewModel @Inject constructor(
                 .takeLast(8)
                 .map { if (it.rawTotal > 0) (it.rawCorrect * 100f / it.rawTotal).toInt() else 0 }
 
-            val weakMods = studyProgress.filter { it.masteryEstimate < 0.8f }.sortedBy { it.masteryEstimate }
+            val weakMods = studyProgress
+                .filter { it.masteryEstimate < 0.8f }
+                .sortedBy { it.masteryEstimate }
+                .map { prog ->
+                    WeakModuleRow(
+                        moduleId = prog.moduleId,
+                        moduleTitle = modulesById[prog.moduleId]?.title ?: prog.moduleId,
+                        correct = prog.correct,
+                        attempts = prog.attempts,
+                        percent = (prog.masteryEstimate * 100).toInt(),
+                    )
+                }
 
             ProgressUiState(
                 isLoading = false,

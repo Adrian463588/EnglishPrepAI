@@ -49,15 +49,13 @@ class HomeViewModel @Inject constructor(
 
     private val showSwitcher = MutableStateFlow(false)
 
-    val uiState: StateFlow<HomeUiState> = combine(
+    private val coreDataFlow = combine(
         preferences.settingsFlow,
         sessionRepository.observeLatestActiveSession(),
         llmEngine.state,
-        showSwitcher,
-    ) { settings, activeSession, llmState, switcherOpen ->
-        Triple(settings.selectedExam, activeSession, Triple(llmState, switcherOpen, Unit))
-    }.flatMapLatest { (examId, activeSession, meta) ->
-        val (llmState, switcherOpen, _) = meta
+    ) { settings, activeSession, llmState ->
+        Triple(settings.selectedExam, activeSession, llmState)
+    }.flatMapLatest { (examId, activeSession, llmState) ->
         val matchingActive = activeSession?.takeIf { it.examId == examId.name }
         val activeAnswersFlow = if (matchingActive != null) {
             sessionRepository.observeAnswers(matchingActive.id)
@@ -97,9 +95,15 @@ class HomeViewModel @Inject constructor(
                 averageAccuracyPercent = avgAccuracy,
                 completedSessionCount = completedSessions.size,
                 llmState = llmState,
-                showExamSwitcher = switcherOpen,
             )
         }
+    }
+
+    val uiState: StateFlow<HomeUiState> = combine(
+        coreDataFlow,
+        showSwitcher,
+    ) { core, switcherOpen ->
+        core.copy(showExamSwitcher = switcherOpen)
     }.stateIn(
         scope = viewModelScope,
         started = SharingStarted.WhileSubscribed(5_000L),

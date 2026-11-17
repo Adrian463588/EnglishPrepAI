@@ -92,8 +92,15 @@ class ResultsViewModel @Inject constructor(
             val evals = sessionDao.getEvaluationsForSession(sessionId)
             val overall = if (objTotal > 0) scoreEstimator.estimate(examId, objCorrect, objTotal, objSkipped) else null
             val sections = evals.filter { it.section != "OVERALL" }.map {
-                val label = if (it.rawTotal > 0) "${it.rawCorrect}/${it.rawTotal} benar" else "Tugas subyektif"
-                it.section to "$label ${it.scaledScore?.let { s -> "• $s" }.orEmpty()}"
+                val secEnum = com.englishprep.ai.domain.models.ExamSection.entries.firstOrNull { s -> s.name == it.section }
+                val secName = when {
+                    secEnum == com.englishprep.ai.domain.models.ExamSection.STRUCTURE -> "Structure"
+                    secEnum != null -> secEnum.label
+                    else -> it.section
+                }
+                val pct = if (it.rawTotal > 0) (it.rawCorrect * 100f / it.rawTotal).toInt() else null
+                val ratio = if (it.rawTotal > 0 && pct != null) "${it.rawCorrect}/${it.rawTotal} ($pct%)" else "Tugas subyektif"
+                secName to ratio
             }
 
             _uiState.update {

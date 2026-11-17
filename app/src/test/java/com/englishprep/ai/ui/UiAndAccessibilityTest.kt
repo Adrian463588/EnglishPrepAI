@@ -27,6 +27,7 @@ import com.englishprep.ai.domain.models.GradingOutcome
 import com.englishprep.ai.domain.models.MaterialBankEntry
 import com.englishprep.ai.domain.models.MediaAssetItem
 import com.englishprep.ai.domain.models.PackStatus
+import com.englishprep.ai.domain.models.PassageItem
 import com.englishprep.ai.domain.models.QuestionItem
 import com.englishprep.ai.domain.models.TaskType
 import com.englishprep.ai.domain.security.SecurityPostureEvaluator
@@ -47,6 +48,7 @@ import com.englishprep.ai.ui.feature.profile.ProfileScreen
 import com.englishprep.ai.ui.feature.profile.ProfileUiState
 import com.englishprep.ai.ui.feature.progress.ProgressScreen
 import com.englishprep.ai.ui.feature.progress.ProgressUiState
+import com.englishprep.ai.ui.feature.progress.WeakModuleRow
 import com.englishprep.ai.ui.feature.results.QuestionReviewRow
 import com.englishprep.ai.ui.feature.results.ResultsScreen
 import com.englishprep.ai.ui.feature.results.ResultsUiState
@@ -113,7 +115,7 @@ class UiAndAccessibilityTest {
         composeRule.onNodeWithText("Mulai Latihan").assertIsDisplayed().assertHeightIsAtLeast(48.dp).performClick()
         assertTrue(primaryTapped)
 
-        composeRule.onNodeWithContentDescription("Ganti jenis ujian").performClick()
+        composeRule.onNodeWithContentDescription("Ganti jenis ujian (${ExamId.ITP_L1.title})").performClick()
         assertTrue(switcherOpened)
 
         composeRule.onNode(hasScrollAction()).performScrollToNode(hasText("Tanya AI"))
@@ -193,7 +195,7 @@ class UiAndAccessibilityTest {
                 )
             }
         }
-        composeRule.onNodeWithText("Tanpa LLM • Ringkasan FTS aktif (Ketuk kelola)").assertIsDisplayed()
+        composeRule.onNodeWithText("Mode FTS aktif • Kelola model").assertIsDisplayed()
         composeRule.onNodeWithText("Mode Simulasi Strict Sedang Aktif").assertIsDisplayed()
         composeRule.onNodeWithContentDescription("Kirim pertanyaan").assertHeightIsAtLeast(48.dp).performClick()
         assertEquals("Strict mode must prevent sending chat queries", 0, sentCount)
@@ -335,7 +337,7 @@ class UiAndAccessibilityTest {
         }
         composeRule.onNodeWithText("Lihat Transkrip Audio (Mode Latihan)").assertIsDisplayed().performClick()
         composeRule.onNodeWithText("Speaker A: Have you finished the lab?").assertIsDisplayed()
-        composeRule.onNodeWithText("Kumpulkan").assertHeightIsAtLeast(48.dp).performClick()
+        composeRule.onNodeWithText("Selesai").assertHeightIsAtLeast(48.dp).performClick()
         composeRule.onNodeWithText("Kumpulkan jawaban sekarang?").assertIsDisplayed()
         composeRule.onNodeWithText("Kumpulkan Sekarang").performClick()
         assertTrue(submitted)
@@ -485,9 +487,9 @@ class UiAndAccessibilityTest {
                 }
             }
         }
-        composeRule.onNodeWithText("Sebelumnya").assertIsDisplayed().assertHeightIsAtLeast(48.dp)
+        composeRule.onNodeWithText("Kembali").assertIsDisplayed().assertHeightIsAtLeast(48.dp)
         composeRule.onNodeWithText("Periksa").assertIsDisplayed().assertHeightIsAtLeast(48.dp)
-        composeRule.onNodeWithText("Berikutnya").assertIsDisplayed().assertHeightIsAtLeast(48.dp).performClick()
+        composeRule.onNodeWithText("Lanjut").assertIsDisplayed().assertHeightIsAtLeast(48.dp).performClick()
         assertTrue(nextClicked)
     }
 
@@ -731,5 +733,177 @@ class UiAndAccessibilityTest {
         composeRule.onNode(hasScrollAction()).performScrollToNode(hasText("Kelola Model AI"))
         composeRule.onNodeWithText("Kelola Model AI").assertHeightIsAtLeast(48.dp).performClick()
         assertTrue(openedManager)
+    }
+
+    @Test
+    @Config(qualifiers = "w360dp-h640dp")
+    fun `360dp exam screen shows Kembali Periksa Lanjut at 48dp and reading tonal trigger`() {
+        val passage = PassageItem(
+            id = "PAS-1",
+            packId = "ITP-L1-01",
+            title = "Glacial Meltwater Channels",
+            body = "Academic passage body text.",
+        )
+        val q = QuestionItem(
+            id = "ITP-L1-01-Q091",
+            packId = "ITP-L1-01",
+            section = ExamSection.READING,
+            taskType = TaskType.CHOICE_SINGLE,
+            prompt = "What is the main focus of the passage?",
+            options = listOf("Hydrology", "Botany"),
+            answer = "Hydrology",
+            explanation = "Reason",
+            rationaleSource = "ITP-MOD-09",
+            passageId = "PAS-1",
+        )
+        var openedPassage = false
+        composeRule.setContent {
+            EnglishPrepTheme {
+                ExamScreen(
+                    state = ExamUiState(
+                        isLoading = false,
+                        examId = ExamId.ITP_L1,
+                        mode = ExamMode.PRACTICE,
+                        questions = listOf(q, q.copy(id = "ITP-L1-01-Q092")),
+                        passages = mapOf("PAS-1" to passage),
+                    ),
+                    onBack = {},
+                    onSelectAnswer = { _, _ -> },
+                    onToggleMulti = { _, _ -> },
+                    onSetMatching = { _, _, _ -> },
+                    onAppendSequence = { _, _ -> },
+                    onRemoveLastSequence = {},
+                    onToggleFlag = {},
+                    onCheckPractice = {},
+                    onEvaluateSubjective = {},
+                    onStartPrepCountdown = {},
+                    onStartRecording = { false },
+                    onStopRecording = {},
+                    onPlayOwnRecording = {},
+                    onSpeakTts = {},
+                    onNext = {},
+                    onPrev = {},
+                    onGoTo = {},
+                    onSetNavigator = {},
+                    onSetPassageSheet = { openedPassage = it },
+                    onToggleAudio = {},
+                    onReplayAudio = {},
+                    onSeekAudio = {},
+                    onSetAudioSpeed = {},
+                    onSubmit = {},
+                )
+            }
+        }
+        composeRule.onNodeWithText("Kembali").assertIsDisplayed().assertHeightIsAtLeast(48.dp)
+        composeRule.onNodeWithText("Periksa").assertIsDisplayed().assertHeightIsAtLeast(48.dp)
+        composeRule.onNodeWithText("Lanjut").assertIsDisplayed().assertHeightIsAtLeast(48.dp)
+        composeRule.onNodeWithText("Baca teks: Glacial Meltwater Channels")
+            .assertIsDisplayed()
+            .assertHeightIsAtLeast(48.dp)
+            .performClick()
+        assertTrue(openedPassage)
+    }
+
+    @Test
+    fun `writing task toggles optional rubric criteria panel`() {
+        val writingQ = QuestionItem(
+            id = "IELTS-W2",
+            packId = "IELTS-A-01",
+            section = ExamSection.WRITING,
+            taskType = TaskType.WRITING_RESPONSE,
+            prompt = "Discuss both views on urban public transport investment.",
+            answer = "",
+            explanation = "Sample approach",
+            rationaleSource = "IELTS-MOD-06",
+            minWords = 250,
+            rubricCriteria = listOf("Task response", "Coherence and cohesion"),
+        )
+        composeRule.setContent {
+            EnglishPrepTheme {
+                ExamScreen(
+                    state = ExamUiState(
+                        isLoading = false,
+                        examId = ExamId.IELTS_ACADEMIC,
+                        mode = ExamMode.PRACTICE,
+                        questions = listOf(writingQ),
+                    ),
+                    onBack = {},
+                    onSelectAnswer = { _, _ -> },
+                    onToggleMulti = { _, _ -> },
+                    onSetMatching = { _, _, _ -> },
+                    onAppendSequence = { _, _ -> },
+                    onRemoveLastSequence = {},
+                    onToggleFlag = {},
+                    onCheckPractice = {},
+                    onEvaluateSubjective = {},
+                    onStartPrepCountdown = {},
+                    onStartRecording = { false },
+                    onStopRecording = {},
+                    onPlayOwnRecording = {},
+                    onSpeakTts = {},
+                    onNext = {},
+                    onPrev = {},
+                    onGoTo = {},
+                    onSetNavigator = {},
+                    onSetPassageSheet = {},
+                    onToggleAudio = {},
+                    onReplayAudio = {},
+                    onSeekAudio = {},
+                    onSetAudioSpeed = {},
+                    onSubmit = {},
+                )
+            }
+        }
+        composeRule.onNodeWithText("Panduan Rubrik").assertIsDisplayed().assertHeightIsAtLeast(48.dp).performClick()
+        composeRule.onNodeWithText("Kriteria penilaian lokal (non-resmi): Task response • Coherence and cohesion")
+            .assertIsDisplayed()
+    }
+
+    @Test
+    fun `progress screen renders human readable weak module title instead of raw module id`() {
+        composeRule.setContent {
+            EnglishPrepTheme {
+                ProgressScreen(
+                    state = ProgressUiState(
+                        isLoading = false,
+                        selectedExam = ExamId.ITP_L1,
+                        overallAccuracyPercent = 65,
+                        weakModules = listOf(
+                            WeakModuleRow(
+                                moduleId = "ITP-MOD-04",
+                                moduleTitle = "Inversion & Parallel Structure",
+                                correct = 3,
+                                attempts = 6,
+                                percent = 50,
+                            ),
+                        ),
+                    ),
+                    onOpenResults = {},
+                    onOpenModule = {},
+                    onOpenPractice = {},
+                )
+            }
+        }
+        composeRule.onNode(hasScrollAction()).performScrollToNode(hasText("Inversion & Parallel Structure"))
+        composeRule.onNodeWithText("Inversion & Parallel Structure").assertIsDisplayed()
+        composeRule.onNodeWithText("ITP-MOD-04").assertDoesNotExist()
+    }
+
+    @Test
+    fun `chat screen displays clean non-truncated FTS header and model action`() {
+        composeRule.setContent {
+            EnglishPrepTheme {
+                ChatScreen(
+                    state = ChatUiState(llmState = LlmModelState.Unloaded),
+                    onBack = {},
+                    onOpenModelManager = {},
+                    onDraftChange = {},
+                    onSend = {},
+                    onCancel = {},
+                )
+            }
+        }
+        composeRule.onNodeWithText("Tutor AI").assertIsDisplayed()
+        composeRule.onNodeWithText("Mode FTS aktif • Kelola model").assertIsDisplayed()
     }
 }

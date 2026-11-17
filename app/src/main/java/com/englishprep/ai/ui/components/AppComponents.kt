@@ -17,6 +17,7 @@ import androidx.compose.foundation.layout.BoxScope
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.ExperimentalLayoutApi
 import androidx.compose.foundation.layout.FlowRow
+import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.defaultMinSize
@@ -63,7 +64,9 @@ import androidx.compose.ui.hapticfeedback.HapticFeedbackType
 import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.platform.LocalHapticFeedback
 import androidx.compose.ui.semantics.Role
+import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.semantics.heading
+import androidx.compose.ui.semantics.role
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
@@ -200,6 +203,10 @@ fun ExamSelector(
         border = BorderStroke(1.dp, MaterialTheme.colorScheme.outline.copy(alpha = 0.55f)),
         modifier = modifier
             .defaultMinSize(minHeight = AppSpacing.minTouchTarget)
+            .semantics(mergeDescendants = true) {
+                role = Role.Button
+                contentDescription = "Ganti jenis ujian (${activeExam.title})"
+            }
             .clickable(onClick = onOpenSwitcher),
     ) {
         Row(
@@ -217,7 +224,7 @@ fun ExamSelector(
             )
             Icon(
                 imageVector = Icons.Default.KeyboardArrowDown,
-                contentDescription = "Ganti jenis ujian",
+                contentDescription = null,
                 tint = MaterialTheme.colorScheme.primary,
             )
         }
@@ -231,13 +238,15 @@ fun ModuleRow(
     masteryPercent: Int?,
     onClick: () -> Unit,
     modifier: Modifier = Modifier,
+    contentPadding: PaddingValues = PaddingValues(horizontal = AppSpacing.md, vertical = AppSpacing.sm + 4.dp),
+    showDivider: Boolean = true,
 ) {
     Column(
         modifier = modifier
             .fillMaxWidth()
             .defaultMinSize(minHeight = AppSpacing.minTouchTarget)
             .clickable(onClick = onClick)
-            .padding(horizontal = AppSpacing.md, vertical = AppSpacing.sm + 4.dp),
+            .padding(contentPadding),
     ) {
         Row(
             modifier = Modifier.fillMaxWidth(),
@@ -280,7 +289,9 @@ fun ModuleRow(
             )
         }
     }
-    HorizontalDivider(color = MaterialTheme.colorScheme.outline.copy(alpha = 0.4f))
+    if (showDivider) {
+        HorizontalDivider(color = MaterialTheme.colorScheme.outline.copy(alpha = 0.4f))
+    }
 }
 
 @OptIn(ExperimentalLayoutApi::class)
@@ -336,7 +347,7 @@ fun PackageRow(
                 text = pack.theme,
                 style = MaterialTheme.typography.bodyMedium,
                 color = MaterialTheme.colorScheme.onSurfaceVariant,
-                maxLines = 2,
+                maxLines = 3,
                 overflow = TextOverflow.Ellipsis,
             )
             Spacer(modifier = Modifier.height(AppSpacing.md))

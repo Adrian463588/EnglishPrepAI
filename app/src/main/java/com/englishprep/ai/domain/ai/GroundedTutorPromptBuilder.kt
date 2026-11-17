@@ -57,14 +57,14 @@ class GroundedTutorPromptBuilder @Inject constructor() {
     ): String {
         if (snippets.isEmpty()) {
             return "Model Gemma 4 offline belum dipasang, dan belum ada kecocokan langsung di catatan ${examId.title} untuk '${userQuery.take(60)}'. " +
-                "Anda dapat membuka tab Materi atau mengimpor model Gemma 4 (.litertlm) melalui Profil > AI Offline."
+                "Anda dapat membuka tab Materi atau mengimpor model Gemma 4 (.litertlm) melalui Profil > Kelola Model AI."
         }
         return buildString {
             appendLine("Ringkasan Materi Lokal (${examId.title} · tanpa LLM aktif):")
             snippets.forEach { s ->
                 appendLine("• [${s.sourceId}] ${s.title}: ${sanitizeSnippet(s.excerpt)}")
             }
-            append("\nCatatan: Pasang model Gemma 4 (.litertlm) di Profil > AI Offline untuk penjelasan interaktif mendalam.")
+            append("\nCatatan: Pasang model Gemma 4 (.litertlm) di Profil > Kelola Model AI untuk penjelasan interaktif mendalam.")
         }
     }
 }

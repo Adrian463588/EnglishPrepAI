@@ -61,7 +61,7 @@ fun PracticeScreen(
     state: PracticeUiState,
     onStartPractice: (com.englishprep.ai.domain.models.ContentPackSummary) -> Unit,
     onStartStrict: (com.englishprep.ai.domain.models.ContentPackSummary) -> Unit,
-    onImportPack: () -> Unit,
+    @Suppress("UNUSED_PARAMETER") onImportPack: () -> Unit = {},
     onDismissMessage: () -> Unit,
     modifier: Modifier = Modifier,
 ) {
@@ -100,12 +100,6 @@ fun PracticeScreen(
                     text = "Pilih Mode Latihan (pembahasan langsung) atau Full Mock Strict (timer & batas putar ujian).",
                     style = MaterialTheme.typography.bodyMedium,
                     color = MaterialTheme.colorScheme.onSurfaceVariant,
-                )
-                Spacer(modifier = Modifier.height(AppSpacing.sm))
-                AppButton(
-                    text = "Impor Paket Soal (SAF)",
-                    onClick = onImportPack,
-                    outlined = true,
                 )
             }
 

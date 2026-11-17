@@ -42,7 +42,7 @@
 
 ## Tampilan aplikasi secara real-time per menu dan fitur
 
-Seluruh tangkapan layar di bawah diambil langsung dari perangkat fisik **Samsung Galaxy (`SM-G988B`, Android 13, `arm64-v8a`)** yang menjalankan build rilis R8 `v1.2.0` (tersedia perbandingan lengkap pada [docs/ux-before-after.md](docs/ux-before-after.md) dan arsip pra-redesain di `docs/screenshots/before/`).
+Seluruh tangkapan layar di bawah diambil langsung dari perangkat fisik **Samsung Galaxy (`SM-G988B`, Android 13, `arm64-v8a`)** yang menjalankan build rilis R8 `v1.2.0` (lihat juga dokumentasi lengkap redesain FigCraft pada [docs/ui-ux/before-after.md](docs/ui-ux/before-after.md), tangkapan layar pasca-perbaikan IME & inset di `docs/screenshots/redesign/`, serta arsip pra-redesain di `docs/screenshots/before/`).
 
 ### Navigasi utama, mode terang/gelap & pembelajaran
 
@@ -63,7 +63,7 @@ Seluruh tangkapan layar di bawah diambil langsung dari perangkat fisik **Samsung
 | ![Hasil dan Pembahasan](docs/screenshots/07-results.png) | ![Analitik Progres](docs/screenshots/08-progress-analytics.png) | ![Tutor AI RAG](docs/screenshots/09-ai-chat-rag.png) | ![Profil R8](docs/screenshots/11-profile-security-r8.png) | ![Kelola Model AI](docs/screenshots/14-model-manager.png) |
 | Filter `Semua`/`Salah`/`Dilewati`/`Benar` tanpa kartu ganda hingga 140 butir. | Ringkasan akurasi lokal, performa seksi bermetrik sampel nyata, dan deteksi modul lemah. | Kutipan modul FTS4 offline, tombol model-status & penguncian otomatis saat Strict Exam aktif. | Kelompok `Preferensi`, `Konten Offline`, `AI Offline`, `Privasi & Data` + dialog status R8 (lihat juga [`16-profile-light.png`](docs/screenshots/16-profile-light.png)). | Layar khusus status terpasang, spesifikasi teknis Gemma 4 / Whisper ONNX & impor SAF. |
 
-> Tangkap layar tambahan tersedia di folder [`docs/screenshots/`](docs/screenshots/): [`10-profile-ai-saf.png`](docs/screenshots/10-profile-ai-saf.png), [`13-material-bank-oer.png`](docs/screenshots/13-material-bank-oer.png), dan [`16-profile-light.png`](docs/screenshots/16-profile-light.png).
+> Tangkap layar tambahan tersedia di folder [`docs/screenshots/`](docs/screenshots/) (termasuk sub-folder [`redesign/`](docs/screenshots/redesign/) berisi 19 tangkapan layar pasca-redesain untuk Chat & Writing dengan keyboard IME terbuka, Progress IELTS/ITP tanpa ID mentah, Reading sheet, Dark & Light Mode) serta aset desain resmi FigCraft di [`design/`](design/).
 
 ---
 
@@ -86,11 +86,17 @@ EnglishPrepAI/
 │   ├── 008-material-bank-full-packs/      # Spec, plan, tasks, acceptance: Bank Materi PDF, 30 modul, 1.725 soal
 │   ├── 009-uiux-responsive-icon-polish/   # Spec, plan, tasks, acceptance: Audit UI/UX responsif & ikon adaptif aplikasi
 │   ├── 010-devsecops-ci-hardening-release/# Spec, plan, tasks, acceptance: Perbaikan CI/CD DevSecOps, R8 & guard ML offline
-│   └── ui-ux-redesign/                    # Audit penuh anti-AI-slop, perbaikan Light status bar & ModelManager (`v1.2.0`)
+│   ├── ui-ux-redesign/                    # Audit awal anti-AI-slop, perbaikan Light status bar & ModelManager (`v1.2.0`)
+│   └── ui-redesign/                       # Spec Kit audit Mobile MCP & FigCraft (`M-01..M-08`, IME & status bar fix)
+├── design/
+│   ├── EnglishPrepAI-Redesign.figcraft    # Sumber desain resmi FigCraft (16 halaman, komponen & variabel token)
+│   ├── tokens.json                        # Token warna Light/Dark, tipografi & spasi
+│   └── exports/                           # 16 ekspor referensi visual (`00-foundations.png`..`15-states-accessibility.png`)
 ├── docs/
 │   ├── qa/                                # EPIC_STATUS.md (matrix bukti) & LICENSE_AND_SBOM_AUDIT.md
-│   ├── reviews/                           # Laporan tinjauan BMAD (Analyst..DevSecOps CI & UI/UX Redesign)
-│   ├── screenshots/                       # 16 tangkapan layar v1.2.0 Dark/Light SM-G988B, before/ & app-icon-512.png
+│   ├── reviews/                           # Laporan tinjauan BMAD (Analyst..DevSecOps CI & UI Redesign)
+│   ├── ui-ux/                             # 8 dokumen audit & regresi visual FigCraft vs live device (`audit.md`..`acceptance-checklist.md`)
+│   ├── screenshots/                       # 16 tangkapan layar v1.2.0, 19 tangkapan layar `redesign/`, `before/` & `app-icon-512.png`
 │   ├── design-system.md                   # Token editorial Material 3, tipografi & kontras Dark/Light
 │   ├── ui-audit.md                        # Ringkasan inventaris temuan audit UI/UX perangkat fisik
 │   ├── ux-before-after.md                 # Perbandingan screen-by-screen Before (`v1.1.1`) vs After (`v1.2.0`)
@@ -148,7 +154,7 @@ EnglishPrepAI/
         │           ├── feature/           # 10 layar + ViewModel UDF (home, learn, practice, exam, results, chat, progress, profile + ModelManager)
         │           ├── navigation/        # Type-safe Compose Navigation routes
         │           └── theme/             # Palette deep teal, Tokens (MotionTokens, AppSpacing), Theme
-        └── test/                          # 43 unit & Robolectric integration/UI accessibility tests
+        └── test/                          # 47 unit & Robolectric integration/UI accessibility tests
 ```
 
 ---
@@ -187,7 +193,7 @@ Prasyarat: **JDK 17**, Android SDK (Compile SDK 35), dan Python 3 (opsional bila
 git clone https://github.com/Adrian463588/EnglishPrepAI.git
 cd EnglishPrepAI
 
-# 2. Jalankan seluruh unit test & Robolectric Compose UI test (43 tests)
+# 2. Jalankan seluruh unit test & Robolectric Compose UI test (47 tests)
 ./gradlew testDebugUnitTest
 
 # 3. Jalankan pemeriksaan Android Lint
@@ -282,12 +288,12 @@ Menyimpan preferensi ringan non-relasional: `selected_exam`, `language`, `audio_
 
 Dokumen rinci tersedia pada [VERIFICATION_CHECKLIST.md](docs/VERIFICATION_CHECKLIST.md), [EPIC_STATUS.md](docs/qa/EPIC_STATUS.md), audit lisensi pada [LICENSE_AND_SBOM_AUDIT.md](docs/qa/LICENSE_AND_SBOM_AUDIT.md), dan referensi model/dataset/repo di [REFERENCES.md](docs/REFERENCES.md).
 
-- [x] **Spec-Driven Development**: Konstitusi Spec Kit (`.specify/memory/constitution.md`), seluruh spesifikasi di `specs/001`..`010` + `specs/ui-ux-redesign/`, serta 11 laporan tinjauan BMAD di `docs/reviews/`.
+- [x] **Spec-Driven Development**: Konstitusi Spec Kit (`.specify/memory/constitution.md`), seluruh spesifikasi di `specs/001`..`010` + `specs/ui-ux-redesign/` + `specs/ui-redesign/`, serta 12 laporan tinjauan BMAD di `docs/reviews/`.
 - [x] **Bank Materi PDF, 30 Modul & 15 Paket Penuh (1.725 Soal)**: 17 PDF Material Bank (`31` entri studi + indeks FTS4 pada `[Bacaan OER]`), 30 modul (dengan bookmark & last-read), 90 drill interaktif, 15 paket soal berstatus `READY` penuh (`5x140` ITP, `5x120` iBT 2026, `5x85` IELTS Academic), serta 390 berkas audio MS IMA-ADPCM offline (`57.00 MB`).
 - [x] **Mesin Inti Aplikasi**: `QuizGradingEngine` (10 tipe tugas + normalisasi `TFNG`/`YNNG`), `PackIntegrityValidator` (15 paket penuh valid), `ExamScoreEstimator` (skor mentah deterministik non-resmi `v1.1-raw-deterministic`), `Media3AudioEngine` (ExoPlayer `1.5.1` IMA-ADPCM + kontinuitas audio antarmulti-soal), `QuestionNavigatorSheetContent` (navigator terfilter 140 item + legenda), `WavAudioRecorder` + hapus rekaman, `WhisperOnnxSpeechEngine` (ORT `1.22.0`), `LiteRtLmGemma4Engine` (`0.13.1`), FTS4 RAG fallback (dengan lock Strict Mode), Room `@Upsert` DB upgrade non-destruktif + DataStore, `SafSecurityValidator`, dan `ModelManagerScreen`.
-- [x] **UI/UX Editorial Anti-AI-Slop & Redesain `v1.2.0` (`specs/ui-ux-redesign`)**: Perbaikan P0 kontras status/nav bar pada Light Mode (`MainActivity.kt`), penghapusan kartu bersarang & ID internal, filter horizontal `LazyRow` 1 baris, pemutar audio ringkas (`1.0x v`), Profil 4 kelompok + `ModelManagerScreen` terpisah, dukungan adaptif `320dp @ 2.0x` hingga `960dp`, serta ikon aplikasi adaptif + monochrome (`docs/screenshots/app-icon-512.png`).
+- [x] **UI/UX Editorial Anti-AI-Slop & Redesain FigCraft (`specs/ui-redesign`)**: Sumber desain resmi FigCraft (`design/EnglishPrepAI-Redesign.figcraft` + `design/tokens.json` + 16 ekspor), perbaikan P0 double IME collapse pada `ChatScreen` & `Writing` saat keyboard aktif (`MainActivity.kt`), penghapusan dead gap TopAppBar sekunder, resolusi judul modul asli di `ProgressScreen` (`ProgressViewModel.kt`), pemendekan aksi bottom bar (`Kembali`/`Periksa`/`Lanjut`/`Selesai`), banner Reading tonal + single-row Navigator `LazyRow` + `Panduan Rubrik` opsional, serta ikon adaptif + monochrome (`docs/screenshots/app-icon-512.png`).
 - [x] **DevSecOps, R8 & RASP**: `isMinifyEnabled = true`, `isShrinkResources = true`, `isDebuggable = false`, `vcsInfo.include = false`, `usesCleartextTraffic="false"`, `allowBackup="false"`, ProGuard hardening, ECDSA & AES-GCM, serta Workflow CI GitHub Actions (`.github/workflows/android-devsecops.yml`) dengan pemindai kebocoran kredensial, guard ML offline, dan inspeksi `aapt2` pada Release APK.
-- [x] **Pengujian Terverifikasi**: 43/43 unit, DB migration/upgrade & Robolectric Compose UI tests lulus (`testDebugUnitTest`), `lintDebug` 0 error (`80` warning), `assembleDebug` & R8 `assembleRelease` sukses (`mapping.txt` terverifikasi, `aapt2` bebas `INTERNET`/`debuggable`), dan QA fisik `v1.2.0` Light + Dark Mode pada `SM-G988B` dengan nol crash di `logcat`.
+- [x] **Pengujian Terverifikasi**: 47/47 unit, DB migration/upgrade & Robolectric Compose UI tests lulus (`testDebugUnitTest`, 21 tes UI/a11y), `lintDebug` 0 error (`81` warning), `assembleDebug` & R8 `assembleRelease` sukses (`mapping.txt` terverifikasi, `aapt2` bebas `INTERNET`/`debuggable`), dan QA fisik `v1.2.0` Light + Dark Mode + Keyboard Open pada `SM-G988B` dengan nol crash di `logcat`.
 - [x] **Distribusi GitHub CLI**: Repository publik `Adrian463588/EnglishPrepAI`, deskripsi, topics, `README.md` dengan tautan unduhan & 16 tangkapan layar real-time (Dark + Light Mode) + ikon aplikasi, serta GitHub Release `v1.2.0`.
 
 ---

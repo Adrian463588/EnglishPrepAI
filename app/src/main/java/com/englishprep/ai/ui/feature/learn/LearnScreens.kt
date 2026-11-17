@@ -437,7 +437,7 @@ fun ModuleDetailScreen(
                     Spacer(modifier = Modifier.height(AppSpacing.md))
                     LessonBlock(title = "Konsep & Aturan Inti", body = mod.theory)
                     Spacer(modifier = Modifier.height(AppSpacing.md))
-                    LessonBlock(title = "Contoh Kerja", body = mod.workedExample)
+                    LessonBlock(title = "Contoh Kerja", body = mod.workedExample.replace(" | ", "\n"))
                     Spacer(modifier = Modifier.height(AppSpacing.md))
                     LessonBlock(title = "Kesalahan Umum", body = mod.commonMistake)
                     Spacer(modifier = Modifier.height(AppSpacing.sm))

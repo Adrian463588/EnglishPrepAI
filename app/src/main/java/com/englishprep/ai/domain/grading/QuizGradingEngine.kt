@@ -41,7 +41,7 @@ class QuizGradingEngine @Inject constructor() {
             earnedPoints = if (ok) question.points else 0,
             maxPoints = question.points,
             normalizedUserAnswer = norm,
-            feedbackMessage = if (ok) "Benar." else "Kurang tepat. Kunci: ${question.answer}",
+            feedbackMessage = if (ok) "Benar" else "Kurang tepat. Kunci: ${question.answer}",
         )
     }
 
@@ -58,7 +58,7 @@ class QuizGradingEngine @Inject constructor() {
             earnedPoints = if (ok) question.points else 0,
             maxPoints = question.points,
             normalizedUserAnswer = selected.sorted().joinToString("|"),
-            feedbackMessage = if (ok) "Benar." else "Kurang tepat. Pilihan benar: ${question.answer.replace("|", ", ")}",
+            feedbackMessage = if (ok) "Benar" else "Kurang tepat. Pilihan benar: ${question.answer.replace("|", ", ")}",
         )
     }
 
@@ -91,7 +91,7 @@ class QuizGradingEngine @Inject constructor() {
             earnedPoints = if (ok) question.points else 0,
             maxPoints = question.points,
             normalizedUserAnswer = norm,
-            feedbackMessage = if (ok) "Benar." else "Kurang tepat. Jawaban diterima: ${question.answer}",
+            feedbackMessage = if (ok) "Benar" else "Kurang tepat. Jawaban diterima: ${question.answer}",
         )
     }
 

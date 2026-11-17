@@ -31,16 +31,19 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.imePadding
+import androidx.compose.foundation.layout.navigationBarsPadding
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.layout.widthIn
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
+import androidx.compose.material.icons.automirrored.filled.KeyboardArrowRight
 import androidx.compose.material.icons.automirrored.filled.MenuBook
 import androidx.compose.material.icons.filled.Flag
 import androidx.compose.material.icons.filled.GridView
@@ -291,7 +294,13 @@ fun ExamScreen(
         },
         bottomBar = {
             if (q != null) {
-                Surface(tonalElevation = 2.dp, modifier = Modifier.fillMaxWidth().imePadding()) {
+                Surface(
+                    tonalElevation = 2.dp,
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .navigationBarsPadding()
+                        .imePadding(),
+                ) {
                     Column(horizontalAlignment = Alignment.CenterHorizontally) {
                         HorizontalDivider()
                         val showCheck = state.mode == ExamMode.PRACTICE &&
@@ -303,7 +312,7 @@ fun ExamScreen(
                                 enabled = state.currentIndex > 0,
                                 modifier = Modifier.defaultMinSize(minHeight = AppSpacing.minTouchTarget),
                             ) {
-                                Text("Sebelumnya")
+                                Text("Kembali", maxLines = 1)
                             }
                         }
                         val checkButton: @Composable () -> Unit = {
@@ -312,12 +321,12 @@ fun ExamScreen(
                                 enabled = state.answers[q.id]?.isNotBlank() == true,
                                 modifier = Modifier.defaultMinSize(minHeight = AppSpacing.minTouchTarget),
                             ) {
-                                Text("Periksa")
+                                Text("Periksa", maxLines = 1)
                             }
                         }
                         val nextOrSubmitButton: @Composable () -> Unit = {
                             AppButton(
-                                text = if (isLast) "Kumpulkan" else "Berikutnya",
+                                text = if (isLast) "Selesai" else "Lanjut",
                                 hapticOnTap = isLast,
                                 onClick = {
                                     if (isLast) showSubmitConfirmDialog = true else onNext()
@@ -538,6 +547,7 @@ fun ExamScreen(
                 passage = passageModal,
                 modifier = Modifier
                     .fillMaxWidth()
+                    .navigationBarsPadding()
                     .heightIn(max = 560.dp)
                     .padding(AppSpacing.md),
             )
@@ -609,13 +619,43 @@ private fun QuestionBodyPane(
     ) {
         if (currentPassage != null) {
             item {
-                OutlinedButton(
-                    onClick = onOpenPassageSheet,
-                    modifier = Modifier.defaultMinSize(minHeight = AppSpacing.minTouchTarget),
+                Surface(
+                    shape = MaterialTheme.shapes.medium,
+                    color = MaterialTheme.colorScheme.surfaceContainerLow,
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .defaultMinSize(minHeight = AppSpacing.minTouchTarget)
+                        .clickable(onClick = onOpenPassageSheet),
                 ) {
-                    Icon(Icons.AutoMirrored.Filled.MenuBook, contentDescription = null)
-                    Spacer(modifier = Modifier.width(AppSpacing.sm))
-                    Text("Baca Teks: ${currentPassage.title}")
+                    Row(
+                        modifier = Modifier.padding(horizontal = AppSpacing.md, vertical = AppSpacing.sm + 4.dp),
+                        verticalAlignment = Alignment.CenterVertically,
+                        horizontalArrangement = Arrangement.spacedBy(AppSpacing.sm),
+                    ) {
+                        Icon(
+                            imageVector = Icons.AutoMirrored.Filled.MenuBook,
+                            contentDescription = null,
+                            tint = MaterialTheme.colorScheme.primary,
+                        )
+                        Text(
+                            text = "Baca teks: ${currentPassage.title}",
+                            style = MaterialTheme.typography.titleSmall,
+                            color = MaterialTheme.colorScheme.onSurface,
+                            maxLines = 2,
+                            overflow = TextOverflow.Ellipsis,
+                            modifier = Modifier.weight(1f),
+                        )
+                        Text(
+                            text = "Buka",
+                            style = MaterialTheme.typography.labelLarge,
+                            color = MaterialTheme.colorScheme.primary,
+                        )
+                        Icon(
+                            imageVector = Icons.AutoMirrored.Filled.KeyboardArrowRight,
+                            contentDescription = null,
+                            tint = MaterialTheme.colorScheme.primary,
+                        )
+                    }
                 }
             }
         }
@@ -782,17 +822,50 @@ private fun QuestionBodyPane(
                     TaskType.WRITING_RESPONSE -> {
                         val wc = QuizGradingEngine.countWords(userAnswer)
                         val minW = q.minWords ?: 50
-                        Text(
-                            text = "Jumlah kata: $wc / min. $minW kata • Disimpan otomatis",
-                            style = MaterialTheme.typography.labelMedium,
-                            color = if (wc >= minW) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.onSurfaceVariant,
-                        )
+                        var showRubric by remember(q.id) { mutableStateOf(false) }
+                        val criteria = remember(q.id) {
+                            q.rubricCriteria.ifEmpty {
+                                listOf("Task response", "Coherence & cohesion", "Lexical precision", "Grammatical accuracy")
+                            }
+                        }
+                        Row(
+                            modifier = Modifier.fillMaxWidth(),
+                            horizontalArrangement = Arrangement.SpaceBetween,
+                            verticalAlignment = Alignment.CenterVertically,
+                        ) {
+                            Text(
+                                text = "Jumlah kata: $wc / min. $minW kata • Disimpan otomatis",
+                                style = MaterialTheme.typography.labelMedium,
+                                color = if (wc >= minW) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.onSurfaceVariant,
+                                modifier = Modifier.weight(1f),
+                            )
+                            TextButton(
+                                onClick = { showRubric = !showRubric },
+                                modifier = Modifier.defaultMinSize(minHeight = AppSpacing.minTouchTarget),
+                            ) {
+                                Text(if (showRubric) "Tutup Rubrik" else "Panduan Rubrik")
+                            }
+                        }
+                        if (showRubric) {
+                            Surface(
+                                shape = MaterialTheme.shapes.small,
+                                color = MaterialTheme.colorScheme.surfaceContainerLow,
+                                modifier = Modifier.fillMaxWidth(),
+                            ) {
+                                Text(
+                                    text = "Kriteria penilaian lokal (non-resmi): ${criteria.joinToString(" • ")}",
+                                    style = MaterialTheme.typography.bodySmall,
+                                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                                    modifier = Modifier.padding(AppSpacing.md),
+                                )
+                            }
+                        }
                         Spacer(modifier = Modifier.height(AppSpacing.sm))
                         OutlinedTextField(
                             value = userAnswer,
                             onValueChange = { onSelectAnswer(q.id, it) },
                             label = { Text("Tulis jawaban Anda di sini") },
-                            minLines = 6,
+                            minLines = 5,
                             modifier = Modifier.fillMaxWidth(),
                         )
                         Spacer(modifier = Modifier.height(AppSpacing.sm))
@@ -905,7 +978,7 @@ private fun QuestionBodyPane(
                         val sttStatusNote = if (state.sttState is SttModelState.Ready) {
                             "Transkrip otomatis (Whisper ONNX — dapat diedit)"
                         } else {
-                            "Catatan / transkrip manual (Whisper ONNX di Profil > AI Offline)"
+                            "Catatan / transkrip manual (Whisper ONNX di Profil > Kelola Model AI)"
                         }
                         OutlinedTextField(
                             value = userAnswer,
@@ -977,6 +1050,7 @@ internal fun QuestionNavigatorSheetContent(
     Column(
         modifier = modifier
             .fillMaxWidth()
+            .navigationBarsPadding()
             .padding(horizontal = AppSpacing.md),
     ) {
         SectionHeading(text = "Navigasi Soal ($answeredTotal/${questions.size} terjawab)")
@@ -995,22 +1069,24 @@ internal fun QuestionNavigatorSheetContent(
         }
         Spacer(modifier = Modifier.height(AppSpacing.sm))
         if (sections.size > 1) {
-            FlowRow(
+            LazyRow(
                 horizontalArrangement = Arrangement.spacedBy(AppSpacing.sm),
-                verticalArrangement = Arrangement.spacedBy(AppSpacing.xs),
             ) {
-                FilterChip(
-                    selected = selectedSection == null,
-                    onClick = { selectedSection = null },
-                    label = { Text("Semua (${questions.size})") },
-                    modifier = Modifier.defaultMinSize(minHeight = AppSpacing.minTouchTarget),
-                )
-                sections.forEach { sec ->
+                item {
+                    FilterChip(
+                        selected = selectedSection == null,
+                        onClick = { selectedSection = null },
+                        label = { Text("Semua (${questions.size})") },
+                        modifier = Modifier.defaultMinSize(minHeight = AppSpacing.minTouchTarget),
+                    )
+                }
+                items(sections, key = { it.name }) { sec ->
                     val secCount = questions.count { it.section == sec }
+                    val shortName = if (sec == ExamSection.STRUCTURE) "Structure" else sec.label
                     FilterChip(
                         selected = selectedSection == sec,
                         onClick = { selectedSection = sec },
-                        label = { Text("${sec.label} ($secCount)") },
+                        label = { Text("$shortName ($secCount)") },
                         modifier = Modifier.defaultMinSize(minHeight = AppSpacing.minTouchTarget),
                     )
                 }
